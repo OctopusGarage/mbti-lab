@@ -1,0 +1,36 @@
+{
+  "app": {
+    "title": "MBTI Lab",
+    "subtitle": "Professional Personality Test · Discover Your True Self"
+  },
+  "home": {
+    "startShort": "Short · 60 Q",
+    "startFull": "Full · 93 Q",
+    "shortDesc": "~10–15 minutes",
+    "fullDesc": "~20–25 minutes",
+    "viewLastResult": "View last result →",
+    "lastResultLabel": "Last result:"
+  },
+  "test": {
+    "progress": "Q {current} / {total}",
+    "prev": "← Previous"
+  },
+  "result": {
+    "yourType": "Your Personality Type",
+    "rarity": "Global Rarity",
+    "description": "Personality Profile",
+    "strengths": "Core Strengths",
+    "careers": "Career Paths",
+    "famous": "Famous People Like You",
+    "bestMatch": "Best Match",
+    "cognitiveStack": "Cognitive Stack",
+    "shareBtn": "Generate Share Image",
+    "retake": "Retake Test",
+    "dimLabel": {
+      "EI": ["Extraverted E", "Introverted I"],
+      "NS": ["Intuitive N", "Observant S"],
+      "FT": ["Feeling F", "Thinking T"],
+      "JP": ["Judging J", "Prospecting P"]
+    }
+  }
+}

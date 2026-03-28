@@ -1,0 +1,36 @@
+{
+  "app": {
+    "title": "MBTI Lab",
+    "subtitle": "专业人格测试 · 发现真实的自己"
+  },
+  "home": {
+    "startShort": "精简版 · 60 题",
+    "startFull": "完整版 · 93 题",
+    "shortDesc": "约 10–15 分钟",
+    "fullDesc": "约 20–25 分钟",
+    "viewLastResult": "查看上次结果 →",
+    "lastResultLabel": "上次测试结果："
+  },
+  "test": {
+    "progress": "第 {current} / {total} 题",
+    "prev": "← 上一题"
+  },
+  "result": {
+    "yourType": "你的人格类型",
+    "rarity": "全球占比",
+    "description": "人格解读",
+    "strengths": "核心优势",
+    "careers": "适合职业",
+    "famous": "著名同类型人物",
+    "bestMatch": "最佳匹配",
+    "cognitiveStack": "认知功能栈",
+    "shareBtn": "生成分享图片",
+    "retake": "重新测试",
+    "dimLabel": {
+      "EI": ["外向 E", "内向 I"],
+      "NS": ["直觉 N", "感知 S"],
+      "FT": ["情感 F", "思维 T"],
+      "JP": ["判断 J", "随性 P"]
+    }
+  }
+}
