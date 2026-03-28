@@ -8,7 +8,7 @@
       <div class="sc-type">{{ type }}</div>
       <div class="sc-nickname">{{ typeData.nickname[locale] }}</div>
       <div class="sc-desc">{{ typeData.description[locale] }}</div>
-      <div class="sc-url">mbti-lab.github.io</div>
+      <div class="sc-url">octopusgarage.github.io/mbti-lab</div>
     </div>
   </div>
 </template>
