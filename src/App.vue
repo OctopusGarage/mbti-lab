@@ -1,6 +1,6 @@
 <template>
   <RouterView />
-  <a class="og-brand" href="https://octopusgarage.com" target="_blank" rel="noopener">🐙 OctopusGarage</a>
+  <div class="og-brand">🐙 OctopusGarage</div>
 </template>
 
 <script setup>
@@ -38,11 +38,8 @@ body {
   right: 14px;
   font-size: 11px;
   color: rgba(45, 58, 140, 0.3);
-  text-decoration: none;
   letter-spacing: 0.3px;
-  pointer-events: auto;
+  pointer-events: none;
   z-index: 50;
-  transition: color 0.2s;
 }
-.og-brand:hover { color: var(--blue-mid); }
 </style>
