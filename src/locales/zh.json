@@ -24,7 +24,7 @@
     "famous": "著名同类型人物",
     "bestMatch": "最佳匹配",
     "cognitiveStack": "认知功能栈",
-    "shareBtn": "生成分享图片",
+    "shareBtn": "分享",
     "retake": "重新测试",
     "dimLabel": {
       "EI": ["外向 E", "内向 I"],
@@ -32,5 +32,15 @@
       "FT": ["情感 F", "思维 T"],
       "JP": ["判断 J", "随性 P"]
     }
+  },
+  "share": {
+    "shareResult": "分享我的结果",
+    "shareApp": "推荐给朋友",
+    "shareToX": "分享到 X",
+    "saveImage": "保存图片",
+    "copyLink": "复制链接",
+    "copied": "已复制 ✓",
+    "xTextResult": "我的 MBTI 是 {type}！快来测测你的性格 👉 https://octopusgarage.github.io/mbti-lab",
+    "xTextApp": "推荐一个很有趣的 MBTI 性格测试，快来试试！👉 https://octopusgarage.github.io/mbti-lab"
   }
 }

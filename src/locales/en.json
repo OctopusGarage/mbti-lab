@@ -24,7 +24,7 @@
     "famous": "Famous People Like You",
     "bestMatch": "Best Match",
     "cognitiveStack": "Cognitive Stack",
-    "shareBtn": "Generate Share Image",
+    "shareBtn": "Share",
     "retake": "Retake Test",
     "dimLabel": {
       "EI": ["Extraverted E", "Introverted I"],
@@ -32,5 +32,15 @@
       "FT": ["Feeling F", "Thinking T"],
       "JP": ["Judging J", "Prospecting P"]
     }
+  },
+  "share": {
+    "shareResult": "Share My Result",
+    "shareApp": "Recommend to Friends",
+    "shareToX": "Share on X",
+    "saveImage": "Save Image",
+    "copyLink": "Copy Link",
+    "copied": "Copied ✓",
+    "xTextResult": "My MBTI type is {type}! Come find out yours 👉 https://octopusgarage.github.io/mbti-lab",
+    "xTextApp": "Check out this interesting MBTI personality test! 👉 https://octopusgarage.github.io/mbti-lab"
   }
 }
