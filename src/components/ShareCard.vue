@@ -9,7 +9,10 @@
       <div class="sc-body">
         <!-- top bar -->
         <div class="sc-topbar">
-          <span class="sc-site">MBTI Lab</span>
+          <div class="sc-site-group">
+            <span class="sc-site">MBTI Lab</span>
+            <span class="sc-brand">🐙 OctopusGarage</span>
+          </div>
           <span class="sc-rarity-pill">全球占比 {{ typeData.rarity }}</span>
         </div>
 
@@ -184,12 +187,22 @@ defineExpose({ capture })
   align-items: center;
   margin-bottom: 20px;
 }
+.sc-site-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
 .sc-site {
   font-size: 13px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: rgba(255,255,255,0.45);
   font-weight: 600;
+}
+.sc-brand {
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.25);
 }
 .sc-rarity-pill {
   font-size: 11px;
