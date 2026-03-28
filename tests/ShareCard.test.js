@@ -1,6 +1,6 @@
-import { mount } from '@vue/test-utils'
+import { mount, flushPromises } from '@vue/test-utils'
 import { createI18n } from 'vue-i18n'
-import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { describe, it, expect, vi } from 'vitest'
 import ShareCard from '../src/components/ShareCard.vue'
 import zh from '../src/locales/zh.json'
 import en from '../src/locales/en.json'
@@ -22,8 +22,7 @@ describe('ShareCard', () => {
   it('renders a QR code image after mount', async () => {
     const wrapper = mountCard()
     // wait for the async QRCode.toDataURL to resolve
-    await new Promise(r => setTimeout(r, 0))
-    await wrapper.vm.$nextTick()
+    await flushPromises()
     const img = wrapper.find('img.sc-qr')
     expect(img.exists()).toBe(true)
     expect(img.attributes('src')).toBe('data:image/png;base64,MOCK')

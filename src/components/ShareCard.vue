@@ -67,8 +67,11 @@ const qrDataUrl = ref('')
 
 const APP_URL = 'https://octopusgarage.github.io/mbti-lab'
 
+let qrReady = null
+
 onMounted(async () => {
-  qrDataUrl.value = await QRCode.toDataURL(APP_URL, { width: 88, margin: 1, color: { dark: '#ffffff', light: '#00000000' } })
+  qrReady = QRCode.toDataURL(APP_URL, { width: 88, margin: 1, color: { dark: '#ffffff', light: '#00000000' } })
+  qrDataUrl.value = await qrReady
 })
 
 const typeData = computed(() => types[props.type] ?? {
@@ -109,6 +112,7 @@ const accentColors = {
 }
 
 async function capture() {
+  if (qrReady) await qrReady  // ensure QR is rendered before capture
   const canvas = await html2canvas(cardEl.value, {
     scale: 2,
     useCORS: true,
