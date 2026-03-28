@@ -1,0 +1,14 @@
+{
+  "name": "MBTI Lab",
+  "short_name": "MBTI Lab",
+  "description": "专业双语 MBTI 人格测试 · Professional Bilingual Personality Test",
+  "start_url": "/mbti-lab/",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#1a1a2e",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/mbti-lab/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/mbti-lab/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
