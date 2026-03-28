@@ -53,7 +53,9 @@ defineEmits(['answer'])
   transition: all 0.15s ease;
   box-shadow: var(--shadow);
 }
-.option:hover { border-color: var(--blue-mid); transform: translateY(-1px); }
+@media (hover: hover) {
+  .option:hover { border-color: var(--blue-mid); transform: translateY(-1px); }
+}
 .option.selected { border-color: var(--blue-mid); background: var(--blue-light); }
 
 .option-letter {
