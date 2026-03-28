@@ -41,6 +41,7 @@
     "copyLink": "Copy Link",
     "copied": "Copied ✓",
     "xTextResult": "My MBTI type is {type}! Come find out yours 👉 https://octopusgarage.github.io/mbti-lab",
-    "xTextApp": "Check out this interesting MBTI personality test! 👉 https://octopusgarage.github.io/mbti-lab"
+    "xTextApp": "Check out this interesting MBTI personality test! 👉 https://octopusgarage.github.io/mbti-lab",
+    "scanLabel": "Scan to take the test"
   }
 }

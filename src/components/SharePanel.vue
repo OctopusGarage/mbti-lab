@@ -1,7 +1,7 @@
 <template>
   <Teleport to="body">
   <div class="sp-overlay" @click.self="$emit('close')">
-    <div class="sp-sheet">
+    <div class="sp-sheet" role="dialog" aria-modal="true">
       <div class="sp-handle" />
 
       <template v-if="type">
@@ -36,8 +36,9 @@
 </template>
 
 <script setup>
-import { ref, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { APP_URL } from '../config.js'
 
 const props = defineProps({
   type: { type: String, default: null },
@@ -47,8 +48,6 @@ const emit = defineEmits(['close'])
 
 const { t } = useI18n()
 const copied = ref(false)
-
-const APP_URL = 'https://octopusgarage.github.io/mbti-lab'
 
 let copyTimer = null
 
@@ -72,7 +71,13 @@ async function copyLink() {
   }
 }
 
+function handleKeydown(e) {
+  if (e.key === 'Escape') emit('close')
+}
+
+onMounted(() => { document.addEventListener('keydown', handleKeydown) })
 onUnmounted(() => {
+  document.removeEventListener('keydown', handleKeydown)
   clearTimeout(copyTimer)
 })
 

@@ -45,7 +45,7 @@
 
         <!-- footer with QR code -->
         <div class="sc-footer">
-          <span class="sc-url-label">扫码测测你的</span>
+          <span class="sc-url-label">{{ $t('share.scanLabel') }}</span>
           <img v-if="qrDataUrl" class="sc-qr" :src="qrDataUrl" alt="QR" />
         </div>
       </div>
@@ -59,13 +59,12 @@ import { useI18n } from 'vue-i18n'
 import html2canvas from 'html2canvas'
 import QRCode from 'qrcode'
 import { types } from '../data/types.js'
+import { APP_URL } from '../config.js'
 
 const props = defineProps({ type: String })
 const { locale } = useI18n()
 const cardEl = ref(null)
 const qrDataUrl = ref('')
-
-const APP_URL = 'https://octopusgarage.github.io/mbti-lab'
 
 let qrReady = null
 
