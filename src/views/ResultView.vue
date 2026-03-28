@@ -8,9 +8,16 @@
       <ResultCard :type="result.type" :percents="result.percents" />
 
       <div class="actions">
-        <button class="btn-share" @click="onShare">{{ $t('result.shareBtn') }}</button>
+        <button class="btn-share" @click="showPanel = true">{{ $t('result.shareBtn') }}</button>
         <router-link to="/" class="btn-retake">{{ $t('result.retake') }}</router-link>
       </div>
+
+      <SharePanel
+        v-if="showPanel"
+        :type="result.type"
+        :onSaveImage="() => shareCardRef?.capture()"
+        @close="showPanel = false"
+      />
 
       <ShareCard ref="shareCardRef" :type="result.type" />
     </template>
@@ -27,24 +34,21 @@ import { ref, onMounted } from 'vue'
 import LangToggle from '../components/LangToggle.vue'
 import ResultCard from '../components/ResultCard.vue'
 import ShareCard from '../components/ShareCard.vue'
+import SharePanel from '../components/SharePanel.vue'
 import { useHistory } from '../composables/useHistory.js'
 
 const { loadResult } = useHistory()
 const result = ref(null)
 const shareCardRef = ref(null)
+const showPanel = ref(false)
 
 onMounted(() => {
-  // prefer fresh result from sessionStorage; fall back to localStorage
   const fresh = sessionStorage.getItem('mbti_result')
   if (fresh) {
     try { result.value = JSON.parse(fresh) } catch { /* ignore */ }
   }
   if (!result.value) result.value = loadResult()
 })
-
-async function onShare() {
-  await shareCardRef.value?.capture()
-}
 </script>
 
 <style scoped>
