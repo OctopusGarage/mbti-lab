@@ -1,8 +1,20 @@
 <template>
   <div class="home">
     <header class="home-header">
+      <button class="btn-share-icon" @click="showPanel = true" :title="$t('share.shareApp')">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+          <polyline points="16 6 12 2 8 6"/>
+          <line x1="12" y1="2" x2="12" y2="15"/>
+        </svg>
+      </button>
       <LangToggle />
     </header>
+
+    <SharePanel
+      v-if="showPanel"
+      @close="showPanel = false"
+    />
 
     <main class="home-main">
       <h1 class="title">{{ $t('app.title') }}</h1>
@@ -38,12 +50,14 @@ import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import LangToggle from '../components/LangToggle.vue'
+import SharePanel from '../components/SharePanel.vue'
 import { useHistory } from '../composables/useHistory.js'
 
 const router = useRouter()
 const { locale } = useI18n()
 const { loadResult } = useHistory()
 const lastResult = ref(null)
+const showPanel = ref(false)
 
 onMounted(() => { lastResult.value = loadResult() })
 
@@ -63,8 +77,24 @@ function start(isShort) {
 .home-header {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
   padding: 20px 24px;
 }
+.btn-share-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.btn-share-icon:hover { background: white; }
 .home-main {
   flex: 1;
   display: flex;
