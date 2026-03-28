@@ -36,7 +36,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const props = defineProps({
@@ -45,30 +45,36 @@ const props = defineProps({
 })
 const emit = defineEmits(['close'])
 
-const { locale } = useI18n()
+const { t } = useI18n()
 const copied = ref(false)
 
 const APP_URL = 'https://octopusgarage.github.io/mbti-lab'
 
+let copyTimer = null
+
 function shareResultToX() {
-  const text = locale.value === 'zh'
-    ? `我的 MBTI 是 ${props.type}！快来测测你的性格 👉 ${APP_URL}`
-    : `My MBTI type is ${props.type}! Come find out yours 👉 ${APP_URL}`
+  const text = t('share.xTextResult', { type: props.type })
   window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`, '_blank')
 }
 
 function shareAppToX() {
-  const text = locale.value === 'zh'
-    ? `推荐一个很有趣的 MBTI 性格测试，快来试试！👉 ${APP_URL}`
-    : `Check out this interesting MBTI personality test! 👉 ${APP_URL}`
+  const text = t('share.xTextApp')
   window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`, '_blank')
 }
 
 async function copyLink() {
-  await navigator.clipboard.writeText(APP_URL)
-  copied.value = true
-  setTimeout(() => { copied.value = false }, 2000)
+  try {
+    await navigator.clipboard.writeText(APP_URL)
+    copied.value = true
+    copyTimer = setTimeout(() => { copied.value = false }, 2000)
+  } catch {
+    // clipboard permission denied or insecure context
+  }
 }
+
+onUnmounted(() => {
+  clearTimeout(copyTimer)
+})
 
 function saveImage() {
   props.onSaveImage?.()
