@@ -9,7 +9,7 @@
       <QuestionCard
         v-if="currentQuestion"
         :question="currentQuestion"
-        :selected="answers[currentIndex]"
+        :selected="null"
         @answer="onAnswer"
       />
     </main>

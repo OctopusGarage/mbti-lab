@@ -1,10 +1,10 @@
 <template>
   <div ref="cardEl" class="share-card">
-    <div class="sc-bg">
+    <div class="sc-bg" :style="bgStyle">
       <!-- decorative circles -->
-      <div class="circle c1" />
+      <div class="circle c1" :style="{ background: accent }" />
       <div class="circle c2" />
-      <div class="circle c3" />
+      <div class="circle c3" :style="{ background: accent }" />
 
       <div class="sc-body">
         <!-- top bar -->
@@ -15,7 +15,7 @@
 
         <!-- type + nickname -->
         <div class="sc-hero">
-          <div class="sc-type">{{ type }}</div>
+          <div class="sc-type" :style="{ color: accent }">{{ type }}</div>
           <div class="sc-nickname">{{ typeData.nickname[locale] }}</div>
         </div>
 
@@ -35,11 +35,11 @@
         <div class="sc-bottom">
           <div class="sc-stack">
             <span class="sc-stack-label">Cognitive Stack</span>
-            <span class="sc-stack-value">{{ typeData.cognitiveStack }}</span>
+            <span class="sc-stack-value" :style="{ color: accent }">{{ typeData.cognitiveStack }}</span>
           </div>
           <div class="sc-match">
             <span class="sc-stack-label">Best Match</span>
-            <span class="sc-stack-value">{{ typeData.bestMatch.join(' · ') }}</span>
+            <span class="sc-stack-value" :style="{ color: accent }">{{ typeData.bestMatch.join(' · ') }}</span>
           </div>
         </div>
 
@@ -64,6 +64,12 @@ const typeData = computed(() => types[props.type] ?? {
   nickname: { zh: '', en: '' }, rarity: '', description: { zh: '', en: '' },
   strengths: { zh: [], en: [] }, cognitiveStack: '', bestMatch: [],
 })
+
+const bgStyle = computed(() => {
+  const c = COLORS[props.type] ?? ['#1a1a2e', '#302b63', '#24243e']
+  return { background: `linear-gradient(145deg, ${c[0]}, ${c[1]}, ${c[2]})` }
+})
+const accent = computed(() => accentColors[props.type] ?? '#e2c96e')
 
 const COLORS = {
   INTJ: ['#0f0c29', '#302b63', '#24243e'],
@@ -109,16 +115,18 @@ defineExpose({ capture })
 
 <style scoped>
 .share-card {
-  position: absolute;
-  left: -9999px;
+  position: fixed;
+  left: 0;
   top: 0;
   width: 540px;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: -1;
 }
 
 .sc-bg {
   width: 540px;
   height: 540px;
-  background: linear-gradient(145deg, v-bind("COLORS[type]?.[0] ?? '#1a1a2e'"), v-bind("COLORS[type]?.[1] ?? '#2d3a8c'"), v-bind("COLORS[type]?.[2] ?? '#0f3460'"));
   position: relative;
   overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -131,7 +139,6 @@ defineExpose({ capture })
 }
 .c1 {
   width: 320px; height: 320px;
-  background: v-bind("accentColors[type] ?? '#e2c96e'");
   top: -80px; right: -80px;
 }
 .c2 {
@@ -141,7 +148,6 @@ defineExpose({ capture })
 }
 .c3 {
   width: 100px; height: 100px;
-  background: v-bind("accentColors[type] ?? '#e2c96e'");
   bottom: 120px; right: 60px;
   opacity: 0.08;
 }
@@ -186,7 +192,6 @@ defineExpose({ capture })
   font-weight: 900;
   letter-spacing: 6px;
   line-height: 1;
-  color: v-bind("accentColors[type] ?? '#e2c96e'");
 }
 .sc-nickname {
   font-size: 18px;
@@ -233,7 +238,6 @@ defineExpose({ capture })
 .sc-stack-value {
   font-size: 13px;
   font-weight: 700;
-  color: v-bind("accentColors[type] ?? '#e2c96e'");
   letter-spacing: 1px;
 }
 
