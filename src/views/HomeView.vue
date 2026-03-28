@@ -25,6 +25,10 @@
           {{ lastResult.type }} · {{ $t('home.viewLastResult') }}
         </router-link>
       </div>
+
+      <router-link to="/types" class="types-link">
+        {{ locale === 'zh' ? '📖 查看 16 种人格附录' : '📖 Browse 16 Types' }}
+      </router-link>
     </main>
   </div>
 </template>
@@ -32,10 +36,12 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import LangToggle from '../components/LangToggle.vue'
 import { useHistory } from '../composables/useHistory.js'
 
 const router = useRouter()
+const { locale } = useI18n()
 const { loadResult } = useHistory()
 const lastResult = ref(null)
 
@@ -115,4 +121,11 @@ function start(isShort) {
 .last-label { color: var(--ink-light); }
 .last-type { color: var(--blue-mid); font-weight: 600; text-decoration: none; }
 .last-type:hover { text-decoration: underline; }
+.types-link {
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--ink-light);
+  text-decoration: none;
+}
+.types-link:hover { color: var(--blue); }
 </style>
