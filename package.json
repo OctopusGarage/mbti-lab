@@ -12,6 +12,7 @@
   "dependencies": {
     "echarts": "^5.5.0",
     "html2canvas": "^1.4.1",
+    "qrcode": "^1.5.4",
     "vue": "^3.4.0",
     "vue-i18n": "^9.13.0",
     "vue-router": "^4.3.0"

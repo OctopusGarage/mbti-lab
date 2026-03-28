@@ -43,22 +43,33 @@
           </div>
         </div>
 
-        <!-- url -->
-        <div class="sc-url">octopusgarage.github.io/mbti-lab</div>
+        <!-- footer with QR code -->
+        <div class="sc-footer">
+          <span class="sc-url-label">扫码测测你的</span>
+          <img v-if="qrDataUrl" class="sc-qr" :src="qrDataUrl" alt="QR" />
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import html2canvas from 'html2canvas'
+import QRCode from 'qrcode'
 import { types } from '../data/types.js'
 
 const props = defineProps({ type: String })
 const { locale } = useI18n()
 const cardEl = ref(null)
+const qrDataUrl = ref('')
+
+const APP_URL = 'https://octopusgarage.github.io/mbti-lab'
+
+onMounted(async () => {
+  qrDataUrl.value = await QRCode.toDataURL(APP_URL, { width: 88, margin: 1, color: { dark: '#ffffff', light: '#00000000' } })
+})
 
 const typeData = computed(() => types[props.type] ?? {
   nickname: { zh: '', en: '' }, rarity: '', description: { zh: '', en: '' },
@@ -241,9 +252,19 @@ defineExpose({ capture })
   letter-spacing: 1px;
 }
 
-.sc-url {
+.sc-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sc-url-label {
   font-size: 10px;
   color: rgba(255,255,255,0.25);
   letter-spacing: 1px;
+}
+.sc-qr {
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
 }
 </style>
