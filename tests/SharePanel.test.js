@@ -1,17 +1,24 @@
-import { mount } from '@vue/test-utils'
+import { mount, flushPromises } from '@vue/test-utils'
 import { createI18n } from 'vue-i18n'
-import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import SharePanel from '../src/components/SharePanel.vue'
 import zh from '../src/locales/zh.json'
 import en from '../src/locales/en.json'
 
+let wrapper
+afterEach(() => {
+  wrapper?.unmount()
+  wrapper = null
+})
+
 function mountPanel(props = {}) {
   const i18n = createI18n({ legacy: false, locale: 'zh', messages: { zh, en } })
-  return mount(SharePanel, {
+  wrapper = mount(SharePanel, {
     props,
     global: { plugins: [i18n] },
     attachTo: document.body,
   })
+  return wrapper
 }
 
 describe('SharePanel', () => {
@@ -23,20 +30,20 @@ describe('SharePanel', () => {
   })
 
   it('shows only Section B when type is not provided', () => {
-    const wrapper = mountPanel()
-    expect(wrapper.find('[data-section="result"]').exists()).toBe(false)
-    expect(wrapper.find('[data-section="app"]').exists()).toBe(true)
+    mountPanel()
+    expect(!!document.querySelector('[data-section="result"]')).toBe(false)
+    expect(!!document.querySelector('[data-section="app"]')).toBe(true)
   })
 
   it('shows both sections when type is provided', () => {
-    const wrapper = mountPanel({ type: 'INFJ' })
-    expect(wrapper.find('[data-section="result"]').exists()).toBe(true)
-    expect(wrapper.find('[data-section="app"]').exists()).toBe(true)
+    mountPanel({ type: 'INFJ' })
+    expect(!!document.querySelector('[data-section="result"]')).toBe(true)
+    expect(!!document.querySelector('[data-section="app"]')).toBe(true)
   })
 
   it('opens X with type-specific text when sharing result', async () => {
-    const wrapper = mountPanel({ type: 'INFJ', onSaveImage: vi.fn() })
-    await wrapper.find('[data-action="share-result-x"]').trigger('click')
+    mountPanel({ type: 'INFJ', onSaveImage: vi.fn() })
+    await document.querySelector('[data-action="share-result-x"]').click()
     expect(window.open).toHaveBeenCalledWith(
       expect.stringContaining('twitter.com/intent/tweet'),
       '_blank'
@@ -46,8 +53,8 @@ describe('SharePanel', () => {
   })
 
   it('opens X with app text when sharing app', async () => {
-    const wrapper = mountPanel()
-    await wrapper.find('[data-action="share-app-x"]').trigger('click')
+    mountPanel()
+    await document.querySelector('[data-action="share-app-x"]').click()
     expect(window.open).toHaveBeenCalledWith(
       expect.stringContaining('twitter.com/intent/tweet'),
       '_blank'
@@ -57,25 +64,25 @@ describe('SharePanel', () => {
   })
 
   it('copies app URL to clipboard and shows copied feedback', async () => {
-    const wrapper = mountPanel()
-    const copyBtn = wrapper.find('[data-action="copy-link"]')
-    expect(copyBtn.text()).toBe('复制链接')
-    await copyBtn.trigger('click')
-    await wrapper.vm.$nextTick()
+    mountPanel()
+    const copyBtn = document.querySelector('[data-action="copy-link"]')
+    expect(copyBtn.textContent.trim()).toContain('复制链接')
+    copyBtn.click()
+    await flushPromises()
     expect(navigator.clipboard.writeText).toHaveBeenCalledWith('https://octopusgarage.github.io/mbti-lab')
-    expect(copyBtn.text()).toBe('已复制 ✓')
+    expect(document.querySelector('[data-action="copy-link"]').textContent.trim()).toContain('已复制 ✓')
   })
 
   it('emits close when backdrop is clicked', async () => {
-    const wrapper = mountPanel()
-    await wrapper.find('.sp-overlay').trigger('click')
+    mountPanel()
+    await document.querySelector('.sp-overlay').click()
     expect(wrapper.emitted('close')).toBeTruthy()
   })
 
   it('calls onSaveImage and emits close when save image is clicked', async () => {
     const onSaveImage = vi.fn()
-    const wrapper = mountPanel({ type: 'INFJ', onSaveImage })
-    await wrapper.find('[data-action="save-image"]').trigger('click')
+    mountPanel({ type: 'INFJ', onSaveImage })
+    await document.querySelector('[data-action="save-image"]').click()
     expect(onSaveImage).toHaveBeenCalled()
     expect(wrapper.emitted('close')).toBeTruthy()
   })

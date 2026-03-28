@@ -1,4 +1,5 @@
 <template>
+  <Teleport to="body">
   <div class="sp-overlay" @click.self="$emit('close')">
     <div class="sp-sheet">
       <div class="sp-handle" />
@@ -25,12 +26,13 @@
           {{ $t('share.shareToX') }}
         </button>
         <button class="sp-btn" data-action="copy-link" @click="copyLink">
-          <span class="sp-icon-link" aria-hidden="true"></span>
+          <span class="sp-icon-link">🔗</span>
           {{ copied ? $t('share.copied') : $t('share.copyLink') }}
         </button>
       </div>
     </div>
   </div>
+  </Teleport>
 </template>
 
 <script setup>
