@@ -3,72 +3,67 @@
 > A professional, bilingual (Chinese/English) MBTI personality test — beautifully designed, accurate, and shareable.
 
 🔗 **[octopusgarage.github.io/mbti-lab](https://octopusgarage.github.io/mbti-lab/)**
+📖 中文 | English
 
 ---
 
 ## Features
 
-- **Bilingual** — full Chinese/English toggle across all questions, results, and UI
+- **16 personality types** — the complete MBTI framework, based on Jung's psychological types
 - **Two versions** — Short (60 questions, ~10 min) or Full (93 questions, ~20 min)
 - **Rich results** — type reveal animation, personality description, strengths, careers, famous people, best matches
 - **Data visualization** — four-dimension score bars + five-axis radar chart
 - **Share card** — one-tap export to image, unique gradient design per type
 - **16-type appendix** — browse any personality type's full profile at any time
-- **PWA** — add to home screen on iOS/Android; runs as a standalone app
-- **Local history** — last result saved in browser, accessible on next visit
+- **Bilingual** — Chinese / English, switch anytime
+- **Offline capable** — works without internet after first load
+- **History** — last result saved locally in your browser
 
 ---
 
-## Tech Stack
+## What Is MBTI?
 
-| Layer | Choice |
+The **Myers-Briggs Type Indicator** categorizes personality into 16 types along four dimensions:
+
+| Dimension | Poles |
 |---|---|
-| Framework | Vue 3 + Vite |
-| Routing | Vue Router 4 |
-| i18n | vue-i18n 9 |
-| Charts | ECharts (radar chart) |
-| Image export | html2canvas |
-| Deployment | GitHub Actions → GitHub Pages |
+| Energy | Extraversion (E) — Introversion (I) |
+| Perception | Sensing (S) — Intuition (N) |
+| Judgment | Thinking (T) — Feeling (F) |
+| Lifestyle | Judging (J) — Perceiving (P) |
+
+Your result is a 4-letter type (e.g., INFP, ENTJ) that describes your natural preferences.
 
 ---
 
-## Getting Started
+## Add to Home Screen
 
-```bash
-git clone https://github.com/OctopusGarage/mbti-lab.git
-cd mbti-lab
-npm install
-npm run dev
-```
+Run MBTI Lab as a standalone app on your phone or desktop — no app store needed.
 
-Open `http://localhost:5173/mbti-lab/`
+### iOS (Safari)
 
----
+1. Open [octopusgarage.github.io/mbti-lab](https://octopusgarage.github.io/mbti-lab/) in Safari
+2. Tap the **Share** button at the bottom of the screen
+3. Scroll down and tap **"Add to Home Screen"**
+4. Tap **Add** in the top right corner
 
-## Project Structure
+### Android (Chrome)
 
-```
-src/
-├── views/          # HomeView · TestView · ResultView · TypesView
-├── components/     # QuestionCard · ProgressBar · DimensionBars
-│                   # RadarChart · ResultCard · ShareCard · LangToggle
-├── composables/    # useTest (scoring logic) · useHistory (localStorage)
-├── data/           # questions.js (93 questions) · types.js (16 types)
-├── locales/        # zh.json · en.json
-└── i18n/           # vue-i18n setup
-```
+1. Open the site in Chrome
+2. Tap the menu icon (⋮) in the top right
+3. Tap **"Install app"** or **"Add to Home screen"**
+
+### Desktop (Chrome / Edge)
+
+1. Open the site in Chrome or Edge
+2. Click the install icon (⬇) in the address bar
+3. Click **"Install"**
 
 ---
 
-## Scoring
+## Related Projects
 
-Four dimensions (E/I · N/S · F/T · J/P) are scored independently. Each question has a `dimension` and `direction` field. Choosing A or B increments the corresponding letter's count. Final type is determined by the dominant side of each dimension.
-
----
-
-## Deployment
-
-Push to `main` — GitHub Actions builds and deploys via the official `actions/deploy-pages` action.
+- [IQ Lab](https://github.com/OctopusGarage/cognitive-lab) — Professional IQ test based on Raven's Progressive Matrices
 
 ---
 
