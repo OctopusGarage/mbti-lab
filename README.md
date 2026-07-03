@@ -1,71 +1,71 @@
 # MBTI Lab
 
-> A professional, bilingual (Chinese/English) MBTI personality test — beautifully designed, accurate, and shareable.
+A bilingual MBTI personality test with rich results, share cards, and offline-friendly browser delivery.
 
-🔗 **[octopusgarage.github.io/mbti-lab](https://octopusgarage.github.io/mbti-lab/)**
-📖 中文 | English
+[![Deploy](https://github.com/OctopusGarage/mbti-lab/actions/workflows/deploy.yml/badge.svg)](https://github.com/OctopusGarage/mbti-lab/actions/workflows/deploy.yml)
+[![Vue](https://img.shields.io/badge/Vue-3-42b883?logo=vuedotjs&logoColor=white)](https://vuejs.org)
+[![Vite](https://img.shields.io/badge/Vite-6-646cff?logo=vite&logoColor=white)](https://vite.dev)
+![License](https://img.shields.io/badge/license-MIT-yellow)
 
----
+**Live:** https://octopusgarage.github.io/mbti-lab/
+
+## Why
+
+Personality tests often hide the useful report behind registration, ads, or a paywall. MBTI Lab keeps the whole flow in the browser: answer, see the result, export a share card, and leave without giving up personal data.
 
 ## Features
 
-- **16 personality types** — the complete MBTI framework, based on Jung's psychological types
-- **Two versions** — Short (60 questions, ~10 min) or Full (93 questions, ~20 min)
-- **Rich results** — type reveal animation, personality description, strengths, careers, famous people, best matches
-- **Data visualization** — four-dimension score bars + five-axis radar chart
-- **Share card** — one-tap export to image, unique gradient design per type
-- **16-type appendix** — browse any personality type's full profile at any time
-- **Bilingual** — Chinese / English, switch anytime
-- **Offline capable** — works without internet after first load
-- **History** — last result saved locally in your browser
+- **16 personality types** - complete four-letter type output with descriptions and matches.
+- **Two test lengths** - short mode with 60 questions, full mode with 93 questions.
+- **Rich report** - strengths, careers, representative people, compatible types, and type appendix.
+- **Visual results** - dimension bars and a radar chart powered by ECharts.
+- **Share card** - export a designed result image with a QR code back to the app.
+- **Bilingual** - Chinese and English can be switched at any time.
+- **Offline capable** - works as a PWA after first load.
+- **Private by default** - result history stays in local browser storage.
 
----
+## Quick Start
 
-## What Is MBTI?
+```bash
+npm install
+npm run dev
+```
 
-The **Myers-Briggs Type Indicator** categorizes personality into 16 types along four dimensions:
+Open `http://localhost:5173/mbti-lab/`.
 
-| Dimension | Poles |
+Production checks:
+
+```bash
+npm run build
+npm test
+```
+
+## Product Flow
+
+| Step | What happens |
 |---|---|
-| Energy | Extraversion (E) — Introversion (I) |
-| Perception | Sensing (S) — Intuition (N) |
-| Judgment | Thinking (T) — Feeling (F) |
-| Lifestyle | Judging (J) — Perceiving (P) |
+| Choose mode | Pick short or full assessment based on time available. |
+| Answer questions | Progress is tracked locally while the user moves through the test. |
+| Reveal type | The app computes the four MBTI dimensions and shows the type profile. |
+| Explore report | Users can inspect strengths, careers, matches, and the 16-type appendix. |
+| Share | Export an image card without signing in. |
 
-Your result is a 4-letter type (e.g., INFP, ENTJ) that describes your natural preferences.
+## Tech Stack
 
----
+Vue 3, Vite, Vue Router, Vue I18n, ECharts, html2canvas, QRCode, Vitest.
 
 ## Add to Home Screen
 
-Run MBTI Lab as a standalone app on your phone or desktop — no app store needed.
+MBTI Lab can run as a standalone app:
 
-### iOS (Safari)
+- **iOS:** open in Safari, tap Share, choose "Add to Home Screen".
+- **Android:** open in Chrome, choose "Install app" or "Add to Home screen".
+- **Desktop:** open in Chrome or Edge, use the install action in the address bar.
 
-1. Open [octopusgarage.github.io/mbti-lab](https://octopusgarage.github.io/mbti-lab/) in Safari
-2. Tap the **Share** button at the bottom of the screen
-3. Scroll down and tap **"Add to Home Screen"**
-4. Tap **Add** in the top right corner
+## Related
 
-### Android (Chrome)
-
-1. Open the site in Chrome
-2. Tap the menu icon (⋮) in the top right
-3. Tap **"Install app"** or **"Add to Home screen"**
-
-### Desktop (Chrome / Edge)
-
-1. Open the site in Chrome or Edge
-2. Click the install icon (⬇) in the address bar
-3. Click **"Install"**
-
----
-
-## Related Projects
-
-- [IQ Lab](https://github.com/OctopusGarage/cognitive-lab) — Professional IQ test based on Raven's Progressive Matrices
-
----
+- [Bracket Guess](https://github.com/OctopusGarage/bracket-guess) - a browser-only bracket picker and poster exporter.
+- [OctopusGarage](https://github.com/OctopusGarage) - small tools for AI agents, local automation, and browser-native products.
 
 ## License
 
