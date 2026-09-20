@@ -61,7 +61,7 @@ jobs:
         if: always()
         run: |
           mkdir -p .ralph/export
-          git add -N --all -- . ':!.ralph'
+          git add -N --all
           git diff --binary "${RALPH_BASE:-HEAD}" -- . ":!.ralph" > .ralph/export/change.patch
       - uses: actions/upload-artifact@v4
         if: always()
