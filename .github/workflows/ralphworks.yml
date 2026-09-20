@@ -36,14 +36,11 @@ jobs:
         with:
           node-version: 24
       - name: Checkout RalphWorks
-        uses: actions/checkout@v4
-        with:
-          repository: labali-fox/ralphworks
-          token: ${{ secrets.RALPHWORKS_REPO_TOKEN }}
-          path: .ralph/runner
-          persist-credentials: false
+        env:
+          GH_TOKEN: ${{ secrets.RALPHWORKS_REPO_TOKEN }}
+        run: gh repo clone labali-fox/ralphworks "$RUNNER_TEMP/ralphworks" -- --depth 1
       - name: Build RalphWorks
-        run: pnpm --dir .ralph/runner install --frozen-lockfile && pnpm --dir .ralph/runner build
+        run: pnpm --dir "$RUNNER_TEMP/ralphworks" install --frozen-lockfile && pnpm --dir "$RUNNER_TEMP/ralphworks" build
       - run: |
           if [ -f pnpm-lock.yaml ]; then pnpm install --frozen-lockfile
           elif [ -f package-lock.json ]; then npm ci
@@ -59,7 +56,7 @@ jobs:
             mkdir -p ~/.pi/agent
             cp .ralphworks/models.json ~/.pi/agent/models.json
           fi
-      - run: node .ralph/runner/dist/cli.js run "$RALPH_TASK" --executor host
+      - run: node "$RUNNER_TEMP/ralphworks/dist/cli.js" run "$RALPH_TASK" --executor host
       - name: Export inspectable patch
         if: always()
         run: |
