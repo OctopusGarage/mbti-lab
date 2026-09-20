@@ -1,0 +1,75 @@
+name: RalphWorks
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: RalphWorks task file
+        required: true
+        default: ralphworks.yaml
+      request_id:
+        description: Dispatch correlation ID
+        required: false
+
+run-name: RalphWorks ${{ inputs.request_id }}
+
+jobs:
+  ralph:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      RALPH_TASK: ${{ inputs.task }}
+      RALPHWORKS_MODEL: ${{ vars.RALPHWORKS_MODEL }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+      ZAI_CODING_CN_API_KEY: ${{ secrets.ZAI_CODING_CN_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.13.1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Checkout RalphWorks
+        uses: actions/checkout@v4
+        with:
+          repository: labali-fox/ralphworks
+          token: ${{ secrets.RALPHWORKS_REPO_TOKEN }}
+          path: .ralph/runner
+          persist-credentials: false
+      - name: Build RalphWorks
+        run: pnpm --dir .ralph/runner install --frozen-lockfile && pnpm --dir .ralph/runner build
+      - run: |
+          if [ -f pnpm-lock.yaml ]; then pnpm install --frozen-lockfile
+          elif [ -f package-lock.json ]; then npm ci
+          elif [ -f yarn.lock ]; then yarn install --frozen-lockfile
+          fi
+      - run: echo "RALPH_BASE=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+      - run: |
+          git config user.name 'ralphworks[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+      - name: Prepare optional Pi model config
+        run: |
+          if [ -f .ralphworks/models.json ]; then
+            mkdir -p ~/.pi/agent
+            cp .ralphworks/models.json ~/.pi/agent/models.json
+          fi
+      - run: node .ralph/runner/dist/cli.js run "$RALPH_TASK" --executor host
+      - name: Export inspectable patch
+        if: always()
+        run: |
+          mkdir -p .ralph/export
+          git add -N --all -- . ':!.ralph'
+          git diff --binary "${RALPH_BASE:-HEAD}" -- . ":!.ralph" > .ralph/export/change.patch
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ralphworks-result
+          path: |
+            .ralph/export/change.patch
+            .ralph/runs/
