@@ -23,8 +23,8 @@
     </template>
 
     <div v-else class="no-result">
-      <p>No result found.</p>
-      <router-link to="/">← Back to home</router-link>
+      <p>{{ $t('result.notFound') }}</p>
+      <router-link to="/">{{ $t('result.backHome') }}</router-link>
     </div>
   </div>
 </template>
