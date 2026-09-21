@@ -57,6 +57,7 @@ The workflow uses repository variable `RALPHWORKS_MODEL`, the selected model pro
 | Share | Export an image card without signing in. |
 
 To start an assessment, choose a test length on the home page — short with 60 questions or full with 93 — and the question loop begins at `/test`.
+After the final question, the app opens the result report at `/result` with the four-letter type, per-dimension percentages, and a radar chart, and the last result is kept in local browser storage so the home page can link back to it for later viewing.
 
 ## Tech Stack
 
