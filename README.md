@@ -56,6 +56,8 @@ The workflow uses repository variable `RALPHWORKS_MODEL`, the selected model pro
 | Explore report | Users can inspect strengths, careers, matches, and the 16-type appendix. |
 | Share | Export an image card without signing in. |
 
+To start an assessment, choose a test length on the home page — short with 60 questions or full with 93 — and the question loop begins at `/test`.
+
 ## Tech Stack
 
 Vue 3, Vite, Vue Router, Vue I18n, ECharts, html2canvas, QRCode, Vitest.
