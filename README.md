@@ -2,7 +2,7 @@
 
 A bilingual MBTI personality test with rich results, share cards, and offline-friendly browser delivery.
 
-Your most recent assessment result is saved in the browser, so you can revisit the full report at any time after completing the test.
+Your most recent assessment result is saved in the browser, so you can revisit the full report in the same browser at any time after completing the test.
 
 [![Deploy](https://github.com/OctopusGarage/mbti-lab/actions/workflows/deploy.yml/badge.svg)](https://github.com/OctopusGarage/mbti-lab/actions/workflows/deploy.yml)
 [![Vue](https://img.shields.io/badge/Vue-3-42b883?logo=vuedotjs&logoColor=white)](https://vuejs.org)
