@@ -2,7 +2,7 @@ import { mount } from '@vue/test-utils'
 import { nextTick } from 'vue'
 import { createI18n } from 'vue-i18n'
 import { createRouter, createMemoryHistory } from 'vue-router'
-import { describe, it, expect, beforeEach, afterEach } from 'vitest'
+import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest'
 import ResultView from '../src/views/ResultView.vue'
 import zh from '../src/locales/zh.json'
 import en from '../src/locales/en.json'
@@ -10,6 +10,13 @@ import en from '../src/locales/en.json'
 let wrapper
 
 beforeEach(() => {
+  const stored = new Map()
+  vi.stubGlobal('localStorage', {
+    getItem: key => stored.get(key) ?? null,
+    setItem: (key, value) => stored.set(key, String(value)),
+    removeItem: key => stored.delete(key),
+    clear: () => stored.clear(),
+  })
   sessionStorage.clear()
   localStorage.clear()
 })
@@ -17,6 +24,7 @@ beforeEach(() => {
 afterEach(() => {
   wrapper?.unmount()
   wrapper = null
+  vi.unstubAllGlobals()
 })
 
 async function mountView(locale = 'zh', { stubs } = {}) {
@@ -62,7 +70,7 @@ describe('ResultView empty state', () => {
   })
 
   it('updates both texts when switching language with the existing toggle, without remount', async () => {
-    mountView('zh')
+    await mountView('zh')
     const empty = wrapper.find('.no-result')
     expect(empty.text()).toContain('暂无测试结果。')
 
