@@ -48,6 +48,8 @@ Maintainers can add the `ralphworks:run` label to an open issue to start a check
 
 The workflow uses repository variable `RALPHWORKS_MODEL`, the selected model provider's secret, variable `RALPHWORKS_ISSUE_CHECK`, and secret `RALPHWORKS_ISSUE_TOKEN` for branch, PR, and issue delivery. The issue run uses at most five iterations, 30 minutes, and $3 of reported model cost. See the [RalphWorks usage guide](https://github.com/OctopusGarage/ralphworks/blob/main/docs/USAGE.md#issue-to-draft-pr-workflow) for setup and retry behavior.
 
+Usage details for every RalphWorks workflow live in [`docs/USAGE.md`](https://github.com/OctopusGarage/ralphworks/blob/main/docs/USAGE.md) in the RalphWorks repository.
+
 The RalphWorks usage guide also explains how maintainers can retry an interrupted issue run.
 
 ## Product Flow
