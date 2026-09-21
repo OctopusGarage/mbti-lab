@@ -40,6 +40,12 @@ npm run build
 npm test
 ```
 
+## RalphWorks issue workflow
+
+Maintainers can add the `ralphworks:run` label to an open issue to start a checked RalphWorks run. The workflow uses the issue title and body as the task, runs `npm test -- --run && npm run build`, and opens a draft PR when the task completes and the checks pass. The PR must be reviewed before merging; a failed run posts its Actions link on the issue and removes the trigger label.
+
+The workflow uses repository variable `RALPHWORKS_MODEL`, the selected model provider's secret, variable `RALPHWORKS_ISSUE_CHECK`, and secret `RALPHWORKS_ISSUE_TOKEN` for branch, PR, and issue delivery. The issue run uses at most five iterations, 30 minutes, and $3 of reported model cost. See the [RalphWorks usage guide](https://github.com/OctopusGarage/ralphworks/blob/main/docs/USAGE.md#issue-to-draft-pr-workflow) for setup and retry behavior.
+
 ## Product Flow
 
 | Step | What happens |
