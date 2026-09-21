@@ -18,6 +18,7 @@ jobs:
       issues: read
     env:
       GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
       ISSUE_NUMBER: ${{ github.event.issue.number }}
       LABEL_ACTOR: ${{ github.event.sender.login }}
       RALPHWORKS_MODEL: ${{ vars.RALPHWORKS_MODEL }}
@@ -98,14 +99,14 @@ jobs:
           set -e
           echo "exit_code=$status" >> "$GITHUB_OUTPUT"
       - name: Export run result and patch
-        if: always()
+        if: always() && steps.ralph.outcome != 'skipped'
         run: |
           mkdir -p .ralph/export
           git add -N --all
           git diff --binary "${RALPH_BASE:-HEAD}" -- . ':!.ralph' > .ralph/export/change.patch
           git rev-parse "${RALPH_BASE:-HEAD}" > .ralph/export/base-sha.txt
       - uses: actions/upload-artifact@v4
-        if: always()
+        if: always() && steps.ralph.outcome != 'skipped'
         with:
           name: ralphworks-issue-result
           path: |
@@ -125,6 +126,7 @@ jobs:
       actions: read
     env:
       GH_TOKEN: ${{ secrets.RALPHWORKS_ISSUE_TOKEN }}
+      GH_REPO: ${{ github.repository }}
       ISSUE_NUMBER: ${{ github.event.issue.number }}
       RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
       BRANCH: ralphworks/issue-${{ github.event.issue.number }}
