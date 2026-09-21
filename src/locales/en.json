@@ -26,6 +26,8 @@
     "cognitiveStack": "Cognitive Stack",
     "shareBtn": "Share",
     "retake": "Retake Test",
+    "notFound": "No result found.",
+    "backHome": "← Back to home",
     "dimLabel": {
       "EI": ["Extraverted E", "Introverted I"],
       "NS": ["Intuitive N", "Observant S"],

@@ -26,6 +26,8 @@
     "cognitiveStack": "认知功能栈",
     "shareBtn": "分享",
     "retake": "重新测试",
+    "notFound": "暂无测试结果。",
+    "backHome": "← 返回首页",
     "dimLabel": {
       "EI": ["外向 E", "内向 I"],
       "NS": ["直觉 N", "感知 S"],
