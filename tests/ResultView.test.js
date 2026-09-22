@@ -96,6 +96,17 @@ describe('ResultView empty state', () => {
     expect(wrapper.find('.no-result').exists()).toBe(false)
     expect(wrapper.findComponent({ name: 'ResultCard' }).exists()).toBe(true)
   })
+
+  it('renders the empty state for a corrupted session entry instead of crashing ResultCard', async () => {
+    sessionStorage.setItem('mbti_result', JSON.stringify({
+      type: 'XNFJ', // invalid letter for position 1
+      percents: { EI: { E: 30, I: 70 }, NS: { N: 65, S: 35 }, FT: { F: 60, T: 40 }, JP: { J: 55, P: 45 } },
+    }))
+    await mountView('zh', { stubs: { ResultCard: true, ShareCard: true } })
+
+    expect(wrapper.find('.no-result').exists()).toBe(true)
+    expect(wrapper.findComponent({ name: 'ResultCard' }).exists()).toBe(false)
+  })
 })
 
 function linkHref(wrapper) {

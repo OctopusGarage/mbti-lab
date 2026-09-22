@@ -52,14 +52,14 @@ import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import LangToggle from '../components/LangToggle.vue'
 import SharePanel from '../components/SharePanel.vue'
-import { useHistory } from '../composables/useHistory.js'
+import { useResultStore } from '../composables/useResultStore.js'
 
 const router = useRouter()
-const { loadResult } = useHistory()
+const { load } = useResultStore()
 const lastResult = ref(null)
 const showPanel = ref(false)
 
-onMounted(() => { lastResult.value = loadResult() })
+onMounted(() => { lastResult.value = load() })
 
 function start(isShort) {
   sessionStorage.setItem('mbti_short', isShort ? '1' : '0')
