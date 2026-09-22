@@ -9,11 +9,18 @@
     "shortDesc": "~10–15 minutes",
     "fullDesc": "~20–25 minutes",
     "viewLastResult": "View last result →",
-    "lastResultLabel": "Last result:"
+    "lastResultLabel": "Last result:",
+    "browseTypes": "📖 Browse 16 Types"
   },
   "test": {
     "progress": "Q {current} / {total}",
-    "prev": "← Previous"
+    "prev": "← Previous",
+    "or": "or"
+  },
+  "types": {
+    "backHome": "Home",
+    "title": "16 Personality Types",
+    "backToList": "All types"
   },
   "result": {
     "yourType": "Your Personality Type",

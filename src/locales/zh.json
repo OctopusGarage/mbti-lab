@@ -9,11 +9,18 @@
     "shortDesc": "约 10–15 分钟",
     "fullDesc": "约 20–25 分钟",
     "viewLastResult": "查看上次结果 →",
-    "lastResultLabel": "上次测试结果："
+    "lastResultLabel": "上次测试结果：",
+    "browseTypes": "📖 查看 16 种人格附录"
   },
   "test": {
     "progress": "第 {current} / {total} 题",
-    "prev": "← 上一题"
+    "prev": "← 上一题",
+    "or": "或"
+  },
+  "types": {
+    "backHome": "返回首页",
+    "title": "16 种人格类型",
+    "backToList": "返回列表"
   },
   "result": {
     "yourType": "你的人格类型",
