@@ -1,89 +1,114 @@
 import { describe, it, expect } from 'vitest'
-import { getShareTheme, COLORS, ACCENT_COLORS, FALLBACK_GRADIENT, FALLBACK_ACCENT } from '../src/utils/shareTheme.js'
+import { getShareTheme } from '../src/utils/shareTheme.js'
 
-const ALL_16_TYPES = [
-  'INTJ', 'INTP', 'ENTJ', 'ENTP',
-  'INFJ', 'INFP', 'ENFJ', 'ENFP',
-  'ISTJ', 'ISFJ', 'ESTJ', 'ESFJ',
-  'ISTP', 'ISFP', 'ESTP', 'ESFP',
-]
+const EXPECTED = {
+  INTJ: {
+    bgStyle: { background: 'linear-gradient(145deg, #0f0c29, #302b63, #24243e)' },
+    accent: '#c8a8ff',
+  },
+  INTP: {
+    bgStyle: { background: 'linear-gradient(145deg, #141e30, #243b55, #1a2a3a)' },
+    accent: '#88ccff',
+  },
+  ENTJ: {
+    bgStyle: { background: 'linear-gradient(145deg, #1a0533, #3b0066, #5c1080)' },
+    accent: '#e0a0ff',
+  },
+  ENTP: {
+    bgStyle: { background: 'linear-gradient(145deg, #0f2027, #203a43, #2c5364)' },
+    accent: '#80e8ff',
+  },
+  INFJ: {
+    bgStyle: { background: 'linear-gradient(145deg, #1a1a2e, #16213e, #0f3460)' },
+    accent: '#e2c96e',
+  },
+  INFP: {
+    bgStyle: { background: 'linear-gradient(145deg, #1e0038, #3a0068, #240050)' },
+    accent: '#d4a8ff',
+  },
+  ENFJ: {
+    bgStyle: { background: 'linear-gradient(145deg, #0d2137, #1a3a5c, #2a5a8c)' },
+    accent: '#88d8ff',
+  },
+  ENFP: {
+    bgStyle: { background: 'linear-gradient(145deg, #1a0030, #3d0060, #6a0090)' },
+    accent: '#e0a8ff',
+  },
+  ISTJ: {
+    bgStyle: { background: 'linear-gradient(145deg, #0a1628, #162540, #1e3a5a)' },
+    accent: '#88d8a0',
+  },
+  ISFJ: {
+    bgStyle: { background: 'linear-gradient(145deg, #1a0a28, #3d1a50, #5a2870)' },
+    accent: '#d8a8e0',
+  },
+  ESTJ: {
+    bgStyle: { background: 'linear-gradient(145deg, #0a1e0a, #1a3a1a, #2a5a2a)' },
+    accent: '#a8e0a8',
+  },
+  ESFJ: {
+    bgStyle: { background: 'linear-gradient(145deg, #1e0a1a, #40183a, #5a2050)' },
+    accent: '#e0a8d0',
+  },
+  ISTP: {
+    bgStyle: { background: 'linear-gradient(145deg, #0a0a1e, #1a1a40, #2a2a60)' },
+    accent: '#a8c8ff',
+  },
+  ISFP: {
+    bgStyle: { background: 'linear-gradient(145deg, #1e0a12, #3a1228, #5a1e3e)' },
+    accent: '#ffa8c8',
+  },
+  ESTP: {
+    bgStyle: { background: 'linear-gradient(145deg, #1e0a00, #3a1800, #5a2800)' },
+    accent: '#ffc888',
+  },
+  ESFP: {
+    bgStyle: { background: 'linear-gradient(145deg, #1e0012, #3a0025, #5a003a)' },
+    accent: '#ffa8e0',
+  },
+}
+
+const FALLBACK_BG_STYLE = {
+  background: 'linear-gradient(145deg, #1a1a2e, #302b63, #24243e)',
+}
+const FALLBACK_ACCENT = '#e2c96e'
+
+const ALL_16_TYPES = Object.keys(EXPECTED)
 
 describe('getShareTheme', () => {
   describe('all 16 MBTI types', () => {
     ALL_16_TYPES.forEach(type => {
-      it(`returns valid theme for ${type}`, () => {
+      it(`${type} returns correct bgStyle and accent`, () => {
         const theme = getShareTheme(type)
-        expect(theme).toHaveProperty('bgStyle')
-        expect(theme).toHaveProperty('accent')
-        expect(theme.bgStyle).toHaveProperty('background')
-        expect(typeof theme.bgStyle.background).toBe('string')
-        expect(theme.bgStyle.background).toContain('linear-gradient(145deg')
-        expect(typeof theme.accent).toBe('string')
-        expect(theme.accent).toMatch(/^#[0-9a-fA-F]{6}$/)
+        expect(theme.bgStyle).toEqual(EXPECTED[type].bgStyle)
+        expect(theme.accent).toBe(EXPECTED[type].accent)
       })
     })
   })
 
-  describe('gradient and accent match COLORS and ACCENT_COLORS', () => {
-    ALL_16_TYPES.forEach(type => {
-      it(`${type}`, () => {
-        const theme = getShareTheme(type)
-        const expectedGradient = `linear-gradient(145deg, ${COLORS[type][0]}, ${COLORS[type][1]}, ${COLORS[type][2]})`
-        expect(theme.bgStyle.background).toBe(expectedGradient)
-        expect(theme.accent).toBe(ACCENT_COLORS[type])
-      })
-    })
-  })
-
-  describe('fallback behavior', () => {
-    it('returns fallback gradient for unknown type', () => {
+  describe('fallback for invalid inputs', () => {
+    it('unknown type "XXXX"', () => {
       const theme = getShareTheme('XXXX')
-      const expectedGradient = `linear-gradient(145deg, ${FALLBACK_GRADIENT[0]}, ${FALLBACK_GRADIENT[1]}, ${FALLBACK_GRADIENT[2]})`
-      expect(theme.bgStyle.background).toBe(expectedGradient)
-    })
-
-    it('returns fallback accent for unknown type', () => {
-      const theme = getShareTheme('XXXX')
+      expect(theme.bgStyle).toEqual(FALLBACK_BG_STYLE)
       expect(theme.accent).toBe(FALLBACK_ACCENT)
     })
 
-    it('returns fallback for empty string', () => {
+    it('empty string', () => {
       const theme = getShareTheme('')
-      expect(theme.bgStyle.background).toContain('linear-gradient(145deg')
+      expect(theme.bgStyle).toEqual(FALLBACK_BG_STYLE)
       expect(theme.accent).toBe(FALLBACK_ACCENT)
     })
 
-    it('returns fallback for null/undefined', () => {
-      // @ts-ignore - intentionally passing invalid values
-      const themeNull = getShareTheme(null)
-      expect(themeNull.bgStyle.background).toContain('linear-gradient(145deg')
-      expect(themeNull.accent).toBe(FALLBACK_ACCENT)
-
-      // @ts-ignore
-      const themeUndefined = getShareTheme(undefined)
-      expect(themeUndefined.bgStyle.background).toContain('linear-gradient(145deg')
-      expect(themeUndefined.accent).toBe(FALLBACK_ACCENT)
-    })
-  })
-
-  describe('exports', () => {
-    it('exports COLORS with all 16 types', () => {
-      expect(Object.keys(COLORS).sort()).toEqual(ALL_16_TYPES.sort())
+    it('null', () => {
+      const theme = getShareTheme(null)
+      expect(theme.bgStyle).toEqual(FALLBACK_BG_STYLE)
+      expect(theme.accent).toBe(FALLBACK_ACCENT)
     })
 
-    it('exports ACCENT_COLORS with all 16 types', () => {
-      expect(Object.keys(ACCENT_COLORS).sort()).toEqual(ALL_16_TYPES.sort())
-    })
-
-    it('FALLBACK_GRADIENT has 3 color stops', () => {
-      expect(FALLBACK_GRADIENT).toHaveLength(3)
-      FALLBACK_GRADIENT.forEach(color => {
-        expect(color).toMatch(/^#[0-9a-fA-F]{6}$/)
-      })
-    })
-
-    it('FALLBACK_ACCENT is a valid hex color', () => {
-      expect(FALLBACK_ACCENT).toMatch(/^#[0-9a-fA-F]{6}$/)
+    it('undefined', () => {
+      const theme = getShareTheme(undefined)
+      expect(theme.bgStyle).toEqual(FALLBACK_BG_STYLE)
+      expect(theme.accent).toBe(FALLBACK_ACCENT)
     })
   })
 })

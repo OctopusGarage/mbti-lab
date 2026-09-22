@@ -57,5 +57,3 @@ export function getShareTheme(type) {
     accent,
   }
 }
-
-export { COLORS, ACCENT_COLORS, FALLBACK_GRADIENT, FALLBACK_ACCENT }
