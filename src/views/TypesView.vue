@@ -1,8 +1,8 @@
 <template>
   <div class="types-page">
     <header class="types-header">
-      <router-link to="/" class="back-btn">← {{ locale === 'zh' ? '返回首页' : 'Home' }}</router-link>
-      <h1 class="page-title">{{ locale === 'zh' ? '16 种人格类型' : '16 Personality Types' }}</h1>
+      <router-link to="/" class="back-btn">← {{ $t('types.backHome') }}</router-link>
+      <h1 class="page-title">{{ $t('types.title') }}</h1>
       <LangToggle />
     </header>
 
@@ -33,7 +33,7 @@
     <!-- detail view -->
     <div v-else class="detail-wrap">
       <button class="detail-back" @click="selected = null">
-        ← {{ locale === 'zh' ? '返回列表' : 'All types' }}
+        ← {{ $t('types.backToList') }}
       </button>
       <ResultCard :type="selected" :percents="mockPercents(selected)" />
     </div>

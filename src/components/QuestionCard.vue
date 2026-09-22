@@ -10,7 +10,7 @@
           <span class="option-letter">A</span>
           <span class="option-text">{{ question[locale].a }}</span>
         </button>
-        <div class="divider">{{ locale === 'zh' ? '或' : 'or' }}</div>
+        <div class="divider">{{ $t('test.or') }}</div>
         <button
           class="option"
           :class="{ selected: selected === 'b' }"
