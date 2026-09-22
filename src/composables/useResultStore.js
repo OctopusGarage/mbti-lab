@@ -85,11 +85,5 @@ export function useResultStore() {
     return parseEntry(localStorage.getItem(HISTORY_KEY))
   }
 
-  // Forget everything: pending handoff and history.
-  function clear() {
-    sessionStorage.removeItem(SESSION_KEY)
-    localStorage.removeItem(HISTORY_KEY)
-  }
-
-  return { submit, load, clear }
+  return { submit, load }
 }

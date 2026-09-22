@@ -158,16 +158,3 @@ describe('load: malformed entries return null', () => {
     expect(useResultStore().load()).toEqual({ type: 'INFP', percents: RESULT_A.percents })
   })
 })
-
-describe('clear', () => {
-  it('removes both the pending handoff and the history', () => {
-    const { submit, clear, load } = useResultStore()
-    submit(RESULT_A)
-
-    clear()
-
-    expect(sessionStorage.raw(SESSION_KEY)).toBeNull()
-    expect(localStorage.raw(HISTORY_KEY)).toBeNull()
-    expect(load()).toBeNull()
-  })
-})
