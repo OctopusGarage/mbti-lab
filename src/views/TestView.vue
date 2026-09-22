@@ -29,11 +29,11 @@ import ProgressBar from '../components/ProgressBar.vue'
 import QuestionCard from '../components/QuestionCard.vue'
 import LangToggle from '../components/LangToggle.vue'
 import { useTest } from '../composables/useTest.js'
-import { useHistory } from '../composables/useHistory.js'
+import { useResultStore } from '../composables/useResultStore.js'
 import { questions as allQuestions } from '../data/questions.js'
 
 const router = useRouter()
-const { saveResult } = useHistory()
+const { submit } = useResultStore()
 const { questions, currentIndex, answers, loadQuestions, answer, goBack, isComplete, result } = useTest()
 
 onMounted(() => {
@@ -49,8 +49,7 @@ function onAnswer(choice) {
 
 watch(isComplete, (val) => {
   if (val && result.value) {
-    saveResult(result.value)
-    sessionStorage.setItem('mbti_result', JSON.stringify(result.value))
+    submit(result.value)
     router.push('/result')
   }
 })

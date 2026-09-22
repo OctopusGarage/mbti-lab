@@ -35,19 +35,15 @@ import LangToggle from '../components/LangToggle.vue'
 import ResultCard from '../components/ResultCard.vue'
 import ShareCard from '../components/ShareCard.vue'
 import SharePanel from '../components/SharePanel.vue'
-import { useHistory } from '../composables/useHistory.js'
+import { useResultStore } from '../composables/useResultStore.js'
 
-const { loadResult } = useHistory()
+const { load } = useResultStore()
 const result = ref(null)
 const shareCardRef = ref(null)
 const showPanel = ref(false)
 
 onMounted(() => {
-  const fresh = sessionStorage.getItem('mbti_result')
-  if (fresh) {
-    try { result.value = JSON.parse(fresh) } catch { /* ignore */ }
-  }
-  if (!result.value) result.value = loadResult()
+  result.value = load()
 })
 </script>
 
