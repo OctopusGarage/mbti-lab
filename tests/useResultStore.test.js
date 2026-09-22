@@ -157,4 +157,10 @@ describe('load: malformed entries return null', () => {
 
     expect(useResultStore().load()).toEqual({ type: 'INFP', percents: RESULT_A.percents })
   })
+
+  it('trims whitespace around a stored type', () => {
+    putSession({ type: '  enfp\t', percents: RESULT_A.percents })
+
+    expect(useResultStore().load().type).toBe('ENFP')
+  })
 })
