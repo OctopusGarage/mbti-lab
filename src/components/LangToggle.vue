@@ -1,5 +1,11 @@
 <template>
-  <button class="lang-toggle" @click="toggle">
+  <button
+    class="lang-toggle"
+    @click="toggle"
+    :aria-label="
+      $t(locale === 'zh' ? 'app.switchToEnglish' : 'app.switchToChinese')
+    "
+  >
     {{ locale === 'zh' ? 'EN' : '中' }}
   </button>
 </template>
@@ -14,7 +20,9 @@ function toggle() {
 
 <style scoped>
 .lang-toggle {
-  background: rgba(255,255,255,0.9);
+  min-width: 44px;
+  min-height: 44px;
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--cream-border);
   border-radius: 20px;
   padding: 6px 16px;
@@ -25,5 +33,7 @@ function toggle() {
   letter-spacing: 0.5px;
   transition: background 0.2s;
 }
-.lang-toggle:hover { background: var(--white); }
+.lang-toggle:hover {
+  background: var(--white);
+}
 </style>

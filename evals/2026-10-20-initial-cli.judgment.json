@@ -1,0 +1,2613 @@
+{
+  "schemaVersion": 1,
+  "evaluatedAt": "2026-10-20T05:43:11.237Z",
+  "provenance": {
+    "method": "codex-cli",
+    "evaluator": "ChatGPT, acting as a single bilingual editorial evaluator",
+    "model": null,
+    "limitations": [
+      "This is one AI judgment; interpretation of tone, translation significance and neighboring-type distinction may differ between reviewers.",
+      "Assessment covers only the supplied text. No tools, files, external sources or independent verification were used.",
+      "Supplied report hashes were not independently verified, and no current source hashes were supplied. This response cannot establish freshness or a complete gate PASS.",
+      "Editorial differentiation does not establish psychometric validity, measured individual abilities or predictive accuracy.",
+      "Evidence excerpts illustrate findings; scores consider the supplied highlights, seven sections, three actions, four strength tags and all framing notes in each case."
+    ]
+  },
+  "sourceHashes": {
+    "src/data/reportContent.js": "283c8eef4d53e1124ac460618000cff49722cb734976c70e7a7cd27d3169ee10",
+    "src/utils/report.js": "44b8df9b3724aeb16d22ccc0f8f9d090940d3943b092259de344df3ff5c91473",
+    "src/utils/dimensions.js": "8620162afd15f50c6193e3f7cb297f6310465205d207721802058f199e95daea",
+    "src/data/types.js": "52cec301b880e774700ef2544b27b2fe26ca5615f9f3cc13c2e28fc7c87f1f19",
+    "src/locales/zh.json": "9e4ef20576f771e0b2f576f8f9158bb7449ef4460fe0a0e5e2acf38859fea980",
+    "src/locales/en.json": "34514eed386477610dd89bd2149feb3542885d6b0957ad454460868f443debd0",
+    "evals/rubric.json": "aec7e2d78867a7681979c4b839e399a32780e6bd2b9808b966198baadc55e525",
+    "evals/cases.json": "bcb10e93e7ad5d755197237fbe78a4a147166c643fe4f59f954b1f99af3db608",
+    "evals/judgment.schema.json": "e854dd7b2d1d6a900fb89a46ecdfd210c260e2386ae52ee42b59ad888d475aa7",
+    "evals/response.schema.json": "6658c8933d12d122971d3aa7bf164030790950ea26879a775a0b1a86f72b2888"
+  },
+  "results": [
+    {
+      "id": "INTJ.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report limits prediction claims and makes shared planning subject to agreement. The four strength tags remain categorical aspirations, especially strategic vision and analytical ability; explicit reflection framing supports acceptance but does not establish those abilities.",
+          "evidence": [
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "不意味着你总能预测未来"
+            },
+            {
+              "caseId": "INTJ.zh",
+              "path": "framing.editorialNote",
+              "quote": "也不是关系、职业或能力预测"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "Highlights, framework-building, visible reasoning and all three exercises align. English omits the explicit invitation to ask about present feelings during future planning, as well as the shopping example; the former slightly reduces the relationship recommendation's balance.",
+          "evidence": [
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.sections.3.text",
+              "quote": "谈未来时也问问当下的感受"
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.3.text",
+              "quote": "Future plans provide reassurance only when both people can negotiate them."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor INTP, this case starts with the destination and tests a planned route; INTP starts by questioning criteria and premises. That difference extends beyond generic planning.",
+          "evidence": [
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.highlights.0",
+              "quote": "先找方向，再选路线"
+            },
+            {
+              "caseId": "INTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你会想知道“最好”是价格、口味还是安静程度"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All three actions identify a situation and feasible response: a twenty-minute assumption test, asking a friend's support preference, and exchanging one reason and missing constraints. Each supplies usable language and preserves participation.",
+          "evidence": [
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.actions.0.step",
+              "quote": "用20分钟做一个可验证的小版本，只检查一个假设。"
+            },
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "你想让我先听，还是一起找办法？"
+            },
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.actions.2.step",
+              "quote": "写出一条判断依据，再请对方补充遗漏条件。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Acceptable reflective framing; strength labels should not be presented elsewhere as measured abilities.",
+        "English compression removes an explicit present-feelings check during future planning."
+      ],
+      "reportHash": "96e7102d79ce50ae7bc3278383bcb66deead194dc56722abc6896842dbd22dd8"
+    },
+    {
+      "id": "INTJ.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The text rejects future-prediction claims and requires negotiation in shared plans. Strategic vision, self-discipline, sharp analysis and goal orientation are unqualified positive labels, acceptable here only as framed reflection prompts.",
+          "evidence": [
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "not a claim that you predict the future"
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "framing.editorialNote",
+              "quote": "not individual facts detected from your answers"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The highlights and three actions preserve the Chinese practical direction. English shortens daily examples and drops asking about present feelings when discussing the future, leaving negotiation but less explicit emotional attention.",
+          "evidence": [
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.3.text",
+              "quote": "Future plans provide reassurance only when both people can negotiate them."
+            },
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.sections.3.text",
+              "quote": "谈未来时也问问当下的感受"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "INTJ organizes around an eventual aim and tests an assumption within its framework. Neighbor INTP interrogates what the question's criteria mean before choosing an answer. These are distinct editorial starting points.",
+          "evidence": [
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.4.text",
+              "quote": "Separate the eventual aim, current evidence and first deliverable."
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.0.text",
+              "quote": "Asked for the best restaurant, you first define the criteria."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The stalled-plan action bounds an experiment to twenty minutes; the friendship action checks wanted support; the collaboration action shares evidence and requests missing conditions. All have concrete contexts and speakable examples.",
+          "evidence": [
+            {
+              "caseId": "INTJ.en",
+              "path": "report.actions.0.step",
+              "quote": "Spend twenty minutes testing one assumption in a small version."
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.actions.1.phrase",
+              "quote": "Would listening or working out options help?"
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.actions.2.step",
+              "quote": "Share one reason and ask about missing constraints."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The close-relationship section would retain more of the Chinese recommendation by explicitly checking present feelings.",
+        "The strength tags are reflective descriptors, not verified personal attributes."
+      ],
+      "reportHash": "48d5ff81107ec874d2f8d06bab16ebd666d6b5bdaf7f7afcfc4db7369e195df1"
+    },
+    {
+      "id": "INTP.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The case rejects superior-conclusion guarantees and explicitly considers resources and task boundaries rather than attributing procrastination solely to type. Logical rigor, creativity, objectivity and self-drive remain aspirational tags under the disclaimer.",
+          "evidence": [
+            {
+              "caseId": "INTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "不代表你的结论总比别人准确"
+            },
+            {
+              "caseId": "INTP.zh",
+              "path": "report.sections.5.text",
+              "quote": "拖延未必是类型造成，资源和任务边界也值得检查"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "The English preserves premise-checking, conversational context, emotional acknowledgment, provisional expression, exploration-versus-delivery and reversible action. Shortened examples do not materially change permissions or the three recommendations.",
+          "evidence": [
+            {
+              "caseId": "INTP.zh",
+              "path": "report.sections.3.text",
+              "quote": "允许自己的感受先有一个不完整版本"
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.3.text",
+              "quote": "Feelings can be expressed in a provisional form"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against INTJ, INTP investigates the assumptions defining a question and needs stopping conditions for branching inquiry. INTJ instead makes an intended destination and route visible.",
+          "evidence": [
+            {
+              "caseId": "INTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能对一个问题为什么成立，比对尽快选出答案更感兴趣"
+            },
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.highlights.0",
+              "quote": "先找方向，再选路线"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The exercises offer a two-criterion research cutoff, an everyday example with an invitation to hear more, and a timed solitude break with reconnection. Each is small, observable and supported by example language.",
+          "evidence": [
+            {
+              "caseId": "INTP.zh",
+              "path": "report.actions.0.step",
+              "quote": "列出两个必需条件，满足后选一个可逆方案。"
+            },
+            {
+              "caseId": "INTP.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "拿这件小事举例，你想听细节吗？"
+            },
+            {
+              "caseId": "INTP.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "我想整理半小时，之后来找你聊。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Strong alignment between the report's branching-inquiry theme and its stopping-condition exercise.",
+        "Positive ability tags remain unmeasured despite the otherwise careful calibration."
+      ],
+      "reportHash": "dbf79d00760115d1169cbae87bb02f3dfb5126142b1f8e71f343b4866103af89"
+    },
+    {
+      "id": "INTP.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report denies guaranteed superior reasoning, acknowledges scope and resource constraints, and permits incomplete emotional expression. Logical rigor and objective analysis are still categorical strength labels, moderated by explicit reflection framing.",
+          "evidence": [
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.0.text",
+              "quote": "it does not guarantee superior conclusions"
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "framing.editorialNote",
+              "quote": "not individual facts detected from your answers"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "The translation consistently preserves the central distinctions across highlights, sections and actions: inquiry versus sufficient choice, analysis versus emotional response, and exploration versus delivery. Reconnection and permission to express unfinished feelings survive compression.",
+          "evidence": [
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.4.text",
+              "quote": "Separate exploration from delivery and save further questions for another round."
+            },
+            {
+              "caseId": "INTP.zh",
+              "path": "report.sections.4.text",
+              "quote": "把探索时间和交付时间分开，记录下一轮的问题"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Neighbor INTJ tests an assumption while developing a goal-directed framework. INTP first defines the criteria behind a question and manages research branches through a stopping condition.",
+          "evidence": [
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.0.text",
+              "quote": "Asked for the best restaurant, you first define the criteria."
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.4.text",
+              "quote": "Test one assumption while the framework develops."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Two essential criteria make research stoppable; an everyday example makes explanation testable; a half-hour break makes solitude predictable. The three contexts and phrases support feasible action without demanding a personality change.",
+          "evidence": [
+            {
+              "caseId": "INTP.en",
+              "path": "report.actions.0.phrase",
+              "quote": "These two conditions are enough for a first try."
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.actions.1.step",
+              "quote": "Start with one everyday example and offer more detail."
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.actions.2.phrase",
+              "quote": "I need half an hour to think, then I will come back."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Natural compression retains the Chinese practical and interpersonal boundaries.",
+        "Strength labels should continue to be interpreted as prompts rather than demonstrated capabilities."
+      ],
+      "reportHash": "eb6597ad4d1fe1f478182f65baf974083909499a587a59a83a88ca7878b579f3"
+    },
+    {
+      "id": "ENTJ.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Support requires permission, silence is not treated as agreement, and capacity limits counter overwork. Leadership, decisiveness, strategic planning and execution are categorical positive tags but explicitly not measured ability predictions.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.zh",
+              "path": "report.sections.3.text",
+              "quote": "区分“我希望我们解决”与“你现在必须回答”"
+            },
+            {
+              "caseId": "ENTJ.zh",
+              "path": "framing.editorialNote",
+              "quote": "也不是关系、职业或能力预测"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "Goals, capacity, welcomed support and all actions align. English retains the prohibition on demanding immediate resolution but omits explicitly arranging a mutually workable time, making the alternative less concrete.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.zh",
+              "path": "report.sections.3.text",
+              "quote": "约一个双方能投入的时间"
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.3.text",
+              "quote": "Separate wanting resolution from demanding an immediate answer."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "Both ENTJ and ESTJ organize groups and check constraints, so overlap is substantial. ENTJ nevertheless emphasizes mobilizing people and resources toward outcomes and redistributing capacity; ESTJ emphasizes usable rules and explaining their purpose.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "把愿望转成目标，再寻找能推动它的人和资源"
+            },
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "责任是否清楚，以及有没有可执行的规则"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Hearing one concern per participant, asking the scope of welcomed help, and choosing one task to redistribute are observable responses to the report's specific risks. All three include usable phrases; redistribution appropriately requires agreeing ownership.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.zh",
+              "path": "report.actions.0.step",
+              "quote": "先让每人说一个顾虑，再整理可选决定。"
+            },
+            {
+              "caseId": "ENTJ.zh",
+              "path": "report.actions.1.step",
+              "quote": "询问支持范围，只承担被欢迎的部分。"
+            },
+            {
+              "caseId": "ENTJ.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "这项需要重新分工，我现在的容量到这里。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "ENTJ and ESTJ share substantial coordination advice, with the clearest distinction in resource mobilization versus rule-based organization.",
+        "The English close-relationship section loses a useful scheduling instruction."
+      ],
+      "reportHash": "e95aa9ea1c896524dba6ab95250addc33f3829d61f51fa03f54aaf61c0ffb37d"
+    },
+    {
+      "id": "ENTJ.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report rejects compulsory productivity in friendship, checks welcomed involvement and recommends rest and redistribution. Leadership and execution tags remain broad aspirations under the reflection disclaimer.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.2.text",
+              "quote": "a relationship is not a tally of problems solved"
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "framing.editorialNote",
+              "quote": "not individual facts detected from your answers"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The highlights and actions preserve consent, capacity and decision-making themes. The relationship section compresses away the Chinese instruction to agree on a time both can engage, although it retains the boundary against demanding an immediate answer.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.3.text",
+              "quote": "Separate wanting resolution from demanding an immediate answer."
+            },
+            {
+              "caseId": "ENTJ.zh",
+              "path": "report.sections.3.text",
+              "quote": "约一个双方能投入的时间"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ENTJ's outcome-and-capacity framing differs from ESTJ's standards-and-methods framing, although both offer similar group-coordination advice. Redistributing overload gives ENTJ a concrete emphasis beyond merely being decisive.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.highlights.2",
+              "quote": "Track capacity as well as progress"
+            },
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.highlights.1",
+              "quote": "Explain the purpose of rules"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The three exercises operationalize stalled discussion, taking over help and covering team gaps. Each asks for a bounded conversation or one task change and includes a practical phrase without guaranteeing others' cooperation.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.actions.0.step",
+              "quote": "Hear one concern from each person before summarizing choices."
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.actions.1.phrase",
+              "quote": "How far would you like my help to go?"
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.actions.2.step",
+              "quote": "Choose one task to redistribute with clear ownership."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The contrast with ESTJ is useful but less pronounced than some other neighboring pairs.",
+        "A mutually agreed discussion time would make the translated relationship advice more complete."
+      ],
+      "reportHash": "cecf2c442b2479bb900ab8cc1222392fe1a14c874cc186b3beba45e07efbdcb4"
+    },
+    {
+      "id": "ENTP.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report distinguishes debate from personal hurt, asks permission before introducing other perspectives, and requires owning commitments. Innovation, speed, expression and challenge tags are aspirational rather than measured under the supplied framing.",
+          "evidence": [
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.actions.1.step",
+              "quote": "先复述影响，再询问是否讨论其他视角。"
+            },
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.sections.4.text",
+              "quote": "不能默认为别人替所有未完成的尝试善后"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 3,
+          "rationale": "Most highlights, sections and actions align, but the hurt-friend action materially loses an explicit permission boundary. Chinese requires asking whether to discuss other perspectives; English says to reflect before offering one. Recognition of pain does not itself preserve the opt-in.",
+          "evidence": [
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.actions.1.step",
+              "quote": "先复述影响，再询问是否讨论其他视角。"
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.actions.1.step",
+              "quote": "Reflect the impact before offering another viewpoint."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against ENFP, ENTP gives specific attention to testing rules, debate and distinguishing intellectual counterargument from personal experience. ENFP instead focuses on associative self-sharing and letting the friend's story finish.",
+          "evidence": [
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.sections.2.text",
+              "quote": "辩论的节奏可能让他觉得感受也需要举证"
+            },
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.sections.2.text",
+              "quote": "接着分享自己的类似故事或想到新的出路"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "A thirty-minute single experiment, reflecting hurt before asking about perspectives, and retaining a meeting time while negotiating the route are small, contextual actions. Each has a feasible example and preserves another person's choice.",
+          "evidence": [
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.actions.0.step",
+              "quote": "只选一个做30分钟实验，其余放进清单。"
+            },
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "这件事让你很难受，我理解得对吗？"
+            },
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "集合时间照旧，路线你愿意再讨论吗？"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Bilingual fidelity fails the minimum: restore the explicit question about whether another perspective is wanted in the English action.",
+        "This omission is a consent-related recommendation loss, not a wholesale translation reversal."
+      ],
+      "reportHash": "ae8e2755ec409e4300cf5270a9989772f21bfe098bcf68d0ddff13578afbb475"
+    },
+    {
+      "id": "ENTP.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report cautions against demanding proof of hurt, evading responsibility and leaving completion to others. The translated action's missing opt-in merits correction, but offering a viewpoint is not inherently unsafe. Strength tags remain unmeasured aspirations.",
+          "evidence": [
+            {
+              "caseId": "ENTP.en",
+              "path": "report.sections.2.text",
+              "quote": "debate may sound like a demand for proof"
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.sections.4.text",
+              "quote": "you still need to own your agreed share of completion"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 3,
+          "rationale": "The second action changes an explicit permission check into a sequence of reflection followed by offering a viewpoint. Other themes translate well, but this materially weakens the Chinese boundary at the exact moment a friend shares hurt.",
+          "evidence": [
+            {
+              "caseId": "ENTP.en",
+              "path": "report.actions.1.step",
+              "quote": "Reflect the impact before offering another viewpoint."
+            },
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.actions.1.step",
+              "quote": "先复述影响，再询问是否讨论其他视角。"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ENTP's specific risk is turning a personal account into a debate, whereas neighbor ENFP risks redirecting it through a related story. The recommended listening adjustments address different conversational mechanisms.",
+          "evidence": [
+            {
+              "caseId": "ENTP.en",
+              "path": "report.sections.2.text",
+              "quote": "Check whether you are discussing an idea or hearing a personal account."
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.2.text",
+              "quote": "Ask what else they want to add before sharing your association."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "The thirty-minute experiment and fixed meeting-time examples are concrete. The hurt-friend action is also observable and has a useful acknowledgment phrase, but should explicitly ask whether another viewpoint is wanted instead of proceeding after reflection.",
+          "evidence": [
+            {
+              "caseId": "ENTP.en",
+              "path": "report.actions.0.step",
+              "quote": "Test one for thirty minutes and list the others for later."
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.actions.1.phrase",
+              "quote": "This really hurt you. Have I understood?"
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.actions.2.phrase",
+              "quote": "The meeting time stays. Shall we revisit the route?"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Bilingual fidelity fails: acknowledgment and permission to introduce a competing perspective are different steps.",
+        "Revise the second action to ask whether another viewpoint would help."
+      ],
+      "reportHash": "8fd60d2a5a8865c0985b54627600bf9091f0bd1dcc5eca3dd78f38a54f057807"
+    },
+    {
+      "id": "INFJ.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Mind-reading is expressly rejected, interpretations must be checked, and emotional support has limits. Insight, empathy, vision and conviction remain positive labels under reflection framing rather than demonstrated personal capacities.",
+          "evidence": [
+            {
+              "caseId": "INFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "不意味着你能直接读懂别人"
+            },
+            {
+              "caseId": "INFJ.zh",
+              "path": "report.sections.2.text",
+              "quote": "你不必为了证明重视一直在线"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Both languages retain meaning-making, tentative interpretation, sustainable listening, concrete needs and observable work steps. The English invitation to continue tomorrow preserves the Chinese step's arranged reconnection, with slightly more explicit negotiation.",
+          "evidence": [
+            {
+              "caseId": "INFJ.zh",
+              "path": "report.sections.6.text",
+              "quote": "把观察说成“我有一个猜测”，邀请对方补充"
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.6.text",
+              "quote": "Introduce a guess as a guess"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "INFJ links experiences into a continuing interpretation and checks it with the person. Neighbor INFP tests choices against personal values and gives preferences a negotiable form. This is a concrete difference in attention, despite shared empathy advice.",
+          "evidence": [
+            {
+              "caseId": "INFJ.zh",
+              "path": "report.sections.2.text",
+              "quote": "记得前几次谈话的细节，试着把它们连起来"
+            },
+            {
+              "caseId": "INFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "先问一个选择是否符合自己在乎的东西"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The actions turn inferred hesitation into one checkable observation, fatigue into a ten-minute boundary and reconnection, and an unspoken hope into a direct request for company. All three have usable phrases and manageable scope.",
+          "evidence": [
+            {
+              "caseId": "INFJ.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "我猜你有些犹豫，还是我理解错了？"
+            },
+            {
+              "caseId": "INFJ.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "我还能听十分钟，明天我们再接着聊。"
+            },
+            {
+              "caseId": "INFJ.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "今天我想被陪一会儿，暂时不用建议。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The explicit requirement to verify interpretations effectively counters an insight-as-mind-reading stereotype.",
+        "The strength tags still require their reflection framing."
+      ],
+      "reportHash": "4ed5db5322225af37d46d413bd66d0e566cb36829751da5c111d38b0711115a2"
+    },
+    {
+      "id": "INFJ.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report directly rejects mind-reading, separates guesses from facts and responsibilities, and supports listening limits. The insight and vision tags are broad aspirations, not established abilities.",
+          "evidence": [
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "it does not let you read minds"
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.5.text",
+              "quote": "separate facts, guesses and responsibilities"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All three highlights and exercises retain their practical meaning. Across the sections, interpretation remains tentative, needs become specific requests, and ordinary companionship remains valid without a profound explanation.",
+          "evidence": [
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.6.text",
+              "quote": "Ordinary companionship can matter without a profound conversation."
+            },
+            {
+              "caseId": "INFJ.zh",
+              "path": "report.sections.6.text",
+              "quote": "关系里允许一次普通而不深刻的陪伴"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with INFP's personal-value alignment, INFJ emphasizes connecting recurring interpersonal details and testing the resulting interpretation. Its correction invitation is specific to that emphasis.",
+          "evidence": [
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.2.text",
+              "quote": "You may connect details across several conversations with a friend."
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.sections.0.text",
+              "quote": "whether a choice fits what matters to you"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "One observation with correction, a remaining-time limit with proposed reconnection, and a request for company without advice are each observable, feasible and clearly contextualized. The example phrases model uncertainty and agency.",
+          "evidence": [
+            {
+              "caseId": "INFJ.en",
+              "path": "report.actions.0.phrase",
+              "quote": "I wonder if you are hesitant. Am I mistaken?"
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "report.actions.1.phrase",
+              "quote": "I have ten more minutes; can we continue tomorrow?"
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "report.actions.2.phrase",
+              "quote": "I would like some company today, without advice yet."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Tentative interpretation and explicit correction are consistent throughout the report.",
+        "The tags should remain visibly connected to the reflection disclaimer."
+      ],
+      "reportHash": "7853369557a6b7a004c7d8a640f6ddae10a54f02f6baa6782d2310c829bf5166"
+    },
+    {
+      "id": "INFP.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report refuses to define the reader's actual values, separates outcomes from global self-worth and acknowledges sleep, pressure and difficulty. Sensitivity, values, creativity and empathy tags remain unmeasured reflective aspirations.",
+          "evidence": [
+            {
+              "caseId": "INFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "不能代替了解你真实的价值"
+            },
+            {
+              "caseId": "INFP.zh",
+              "path": "report.sections.5.text",
+              "quote": "不必靠更严厉地评价自己获得动力"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 3,
+          "rationale": "Most content aligns, but the third action changes a material recommendation. Chinese selects a work-specific revision and then addresses emotions; English selects a revision before assessing the self. This replaces emotional processing with the very self-assessment the context identifies as problematic.",
+          "evidence": [
+            {
+              "caseId": "INFP.zh",
+              "path": "report.actions.2.step",
+              "quote": "圈出一条针对作品的具体修改，再处理情绪。"
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.actions.2.step",
+              "quote": "Choose one concrete revision before assessing yourself."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "INFP centers internal value alignment, meaningful drafts and separating criticism from identity. Neighbor ISFP grounds preference in immediate environment, pace and sensory experience. The distinction is concrete despite shared boundary-setting advice.",
+          "evidence": [
+            {
+              "caseId": "INFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "先问一个选择是否符合自己在乎的东西"
+            },
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你会留意环境、节奏和有没有自然体验的空间"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "The ten-minute draft, capacity-based refusal and one work-specific revision are all feasible and have useful phrases. The third action's instruction to handle emotions afterward is less specific and may feel rigid; offering a pause or allowing either order would improve it.",
+          "evidence": [
+            {
+              "caseId": "INFP.zh",
+              "path": "report.actions.0.step",
+              "quote": "先用十分钟写一段或做一个草稿。"
+            },
+            {
+              "caseId": "INFP.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "这次我做不了全部，但可以帮这一点。"
+            },
+            {
+              "caseId": "INFP.zh",
+              "path": "report.actions.2.step",
+              "quote": "圈出一条针对作品的具体修改，再处理情绪。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Bilingual fidelity fails the minimum because emotional processing becomes self-assessment in the English third action.",
+        "The Chinese third action could allow emotional regulation before selecting a revision rather than prescribing a fixed order."
+      ],
+      "reportHash": "ba635781e05ced985369cafa4380a4002afbdcef15ac587bf8c70ce3006565de"
+    },
+    {
+      "id": "INFP.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report protects individual values and separates outcomes from identity. The third action's self-assessment wording weakens that message but does not explicitly demand negative self-judgment. Sensitivity, creativity and empathy tags remain aspirations under reflection framing.",
+          "evidence": [
+            {
+              "caseId": "INFP.en",
+              "path": "report.sections.0.text",
+              "quote": "This profile cannot define your values"
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.sections.5.text",
+              "quote": "Separate disliking an outcome from judging your entire self"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 3,
+          "rationale": "The third action substitutes assessing yourself for processing emotions. In a context explicitly about feedback becoming self-judgment, this is a material change in practical recommendation, even though the phrase and wider report still protect identity.",
+          "evidence": [
+            {
+              "caseId": "INFP.en",
+              "path": "report.actions.2.step",
+              "quote": "Choose one concrete revision before assessing yourself."
+            },
+            {
+              "caseId": "INFP.zh",
+              "path": "report.actions.2.step",
+              "quote": "圈出一条针对作品的具体修改，再处理情绪。"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "INFP's focus is inner agreement with values and giving meaning an actionable form. ISFP emphasizes environmental comfort, pace and sensory experience. This provides a specific distinction from a one-letter neighbor.",
+          "evidence": [
+            {
+              "caseId": "INFP.en",
+              "path": "report.sections.0.text",
+              "quote": "Inner agreement supports effort"
+            },
+            {
+              "caseId": "ISFP.en",
+              "path": "report.sections.0.text",
+              "quote": "A trip suggests environment and pace before a detailed argument."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "The draft and refusal actions are concrete and bounded. The feedback action includes an observable revision and useful identity-separating phrase, but 'before assessing yourself' is ambiguous and inconsistent with the stated goal of avoiding global self-judgment.",
+          "evidence": [
+            {
+              "caseId": "INFP.en",
+              "path": "report.actions.0.step",
+              "quote": "Spend ten minutes making one paragraph or rough draft."
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.actions.1.phrase",
+              "quote": "I cannot do all of this, but I can help with this part."
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.actions.2.phrase",
+              "quote": "This part can change; it is not my whole identity."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Bilingual fidelity fails: replace self-assessment with attending to emotions while keeping feedback specific to the work.",
+        "The defect is localized; it is not a wholesale reversal of the report's self-worth message."
+      ],
+      "reportHash": "e9037dbe854c37647ff57fe87e2eda177564ef6c19cd720a975a52744f3b941c"
+    },
+    {
+      "id": "ENFJ.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The case explicitly releases responsibility for everyone's development and mood, checks requested help and makes care reciprocal. Charisma, coordination, empathy and positive influence are aspirational labels, not measured capacities.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "不代表你必须负责所有人的成长或情绪"
+            },
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.sections.5.text",
+              "quote": "大家是否请求了这种帮助"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "Shared direction, reciprocal support, capacity checks and feedback distinctions survive. The second English example asks whether the friend wants to finish before planning, whereas Chinese asks permission for subsequent joint next-step thinking; permission shifts slightly toward the wrong stage.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "你先说完，我再陪你想下一步好吗？"
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.actions.1.phrase",
+              "quote": "Would you like to finish telling me before we plan?"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ENFJ and ESFJ share inclusion and overresponsibility themes. ENFJ specifically attends to people's development and future encouragement; ESFJ emphasizes daily contact, practical arrangements and routines. The distinction is present but partly blurred by shared scripts.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.sections.2.text",
+              "quote": "帮助他看到更有希望的路线"
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "共同习惯和及时回应能带来安心"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Checking a calendar before answering, reflecting a friend's experience before next-step discussion, and requesting ten minutes of listening are small, contextual practices. All three provide usable language and allow reciprocal support.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "我核对一下时间，今晚给你确定答复。"
+            },
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.actions.1.step",
+              "quote": "复述他的经历后询问下一步需要。"
+            },
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "今天能听我讲十分钟吗？我也有点累。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The growth-oriented encouragement theme distinguishes this case from ESFJ, though much boundary advice overlaps.",
+        "The English encouragement example should ask whether planning is wanted."
+      ],
+      "reportHash": "8662c6d66593a00a215ef0ec476b55006dfdbc36f7b77cb02fd70867ce3430c5"
+    },
+    {
+      "id": "ENFJ.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Participation is voluntary, help should be requested, and dissent and personal capacity are legitimate. Charisma and positive influence are broad positive labels moderated by the reflection note.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "you are not responsible for everyone’s development or mood"
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.sections.5.text",
+              "quote": "whether the help was requested"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The sections and highlights preserve shared purpose, capacity and reciprocity. The second action's step retains a needs check, but its phrase assumes a planning stage more than the Chinese permission-seeking phrase does; this is a minor internal and translation weakness.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.actions.1.phrase",
+              "quote": "Would you like to finish telling me before we plan?"
+            },
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "你先说完，我再陪你想下一步好吗？"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ENFJ's future-oriented encouragement and development focus differs from ESFJ's reassurance through routines and timely responses. Both still share many inclusion, scheduling and support-boundary recommendations.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.sections.2.text",
+              "quote": "their strengths and possible future"
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "Shared routines and timely responses can reassure you"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "Calendar checking and a ten-minute support request are clear and feasible. Reflecting a friend's experience is also practical, but the example should ask whether next-step planning is wanted rather than imply that planning will follow.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.actions.0.phrase",
+              "quote": "I will check my time and confirm tonight."
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.actions.1.phrase",
+              "quote": "Would you like to finish telling me before we plan?"
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.actions.2.phrase",
+              "quote": "Could you hear me for ten minutes? I am tired too."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The second action's phrase is less consent-sensitive than its own step.",
+        "The listening request is understandable, though 'Could you listen to me' is more natural than 'Could you hear me' here."
+      ],
+      "reportHash": "41cb0343bde51f741cb3b3a03e8852f8379ec8350a0625aa6bd3edb8a68fee07"
+    },
+    {
+      "id": "ENFP.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The case explicitly allows calm, fatigue and repetition and refuses compulsory enthusiasm. The four tags are broadly aspirational; '创意无限' is conspicuous hyperbole and should not be understood as unlimited measured ability.",
+          "evidence": [
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "不意味着你总要热情或必须让每个选择特别"
+            },
+            {
+              "caseId": "ENFP.zh",
+              "path": "framing.editorialNote",
+              "quote": "也不是关系、职业或能力预测"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Both languages preserve possibility and connection, separating interest from commitment, finishing another person's story, flexible agreements and minimum project action. The four tags and all framing notes retain their intended status, including matching creativity hyperbole.",
+          "evidence": [
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.sections.2.text",
+              "quote": "允许信任逐渐建立，检查实际互动是否双向"
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.2.text",
+              "quote": "Let trust develop through reciprocal interaction"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with ENTP, ENFP's conversational risk is enthusiastic associative self-sharing, not debate or counterargument. Its capacity checks also frame excitement as distinct from sustainable commitment.",
+          "evidence": [
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.sections.2.text",
+              "quote": "接着分享自己的类似故事或想到新的出路"
+            },
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.sections.2.text",
+              "quote": "辩论的节奏可能让他觉得感受也需要举证"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Checking existing commitments before tomorrow's answer, asking whether a friend has finished, and completing a ten-minute minimum with a recorded next step are bounded and observable. Each has a clear context and usable phrase.",
+          "evidence": [
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "我很想参加，明天确认能不能安排。"
+            },
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "还有什么你想说的？我先听完。"
+            },
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.actions.2.step",
+              "quote": "完成十分钟的最低版本并记录下一步。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The report successfully permits low energy rather than requiring a permanently enthusiastic persona.",
+        "The unlimited-creativity tag is avoidable exaggeration even under reflection framing."
+      ],
+      "reportHash": "2c95c854b20b359972414e54ff1abb645a7e3e3a55c486ddc6b894ec8689811a"
+    },
+    {
+      "id": "ENFP.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The text permits changing energy, gradual trust and negotiated reliability. Enthusiasm, creativity, charm and curiosity tags are aspirational; 'Boundless creativity' is inflated wording, although explicit framing prevents treating it as a measured fact.",
+          "evidence": [
+            {
+              "caseId": "ENFP.en",
+              "path": "strengthTags.1",
+              "quote": "Boundless creativity"
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.0.text",
+              "quote": "you do not have to be enthusiastic at all times"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "The highlights, relationship boundaries and three actions preserve the Chinese meaning. Practical details, reciprocal trust, separating excitement from capacity and maintaining a small action despite fading interest all survive natural compression.",
+          "evidence": [
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.5.text",
+              "quote": "mistaking excitement for capacity"
+            },
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.sections.5.text",
+              "quote": "把短期兴奋当成长期容量"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ENFP attends to warmth, association and reciprocal personal storytelling; ENTP addresses competing viewpoints and personal accounts being treated as debate. The listening recommendations target different behaviors.",
+          "evidence": [
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.2.text",
+              "quote": "a fast response can redirect what they wanted to say"
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.sections.2.text",
+              "quote": "debate may sound like a demand for proof"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The three actions provide a delayed confirmation after checking commitments, an explicit conversational pause, and a ten-minute minimum with a recorded next action. Contexts and example phrases make each feasible without requiring sustained enthusiasm.",
+          "evidence": [
+            {
+              "caseId": "ENFP.en",
+              "path": "report.actions.0.phrase",
+              "quote": "I would love to join; I will confirm tomorrow."
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.actions.1.step",
+              "quote": "Ask whether the person has finished before adding yours."
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.actions.2.step",
+              "quote": "Complete a ten-minute minimum and note the next action."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Boundless creativity is hyperbolic; a less absolute strength tag would better match the report's restraint.",
+        "The practical recommendations remain well aligned across languages."
+      ],
+      "reportHash": "ab6e34b0fc3df846eaeec43b1c40d94290b0d0c5a20316bacaffc90f7eb622ee"
+    },
+    {
+      "id": "ISTJ.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The case rejects equating familiarity with correctness or type with refusal of novelty. Reliability, detail, execution and integrity tags remain positive generalizations under explicit reflection framing.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "不能证明哪种做法永远正确"
+            },
+            {
+              "caseId": "ISTJ.zh",
+              "path": "framing.editorialNote",
+              "quote": "也不是关系、职业或能力预测"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Both languages preserve checking conditions, distinguishing essential constraints from habits, updating experience and communicating care. The English second action adds willing participation consistently with the Chinese question; all three exercises retain their practical meaning.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.sections.3.text",
+              "quote": "稳定不是所有安排永远不动"
+            },
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.sections.3.text",
+              "quote": "rather than plans that never move"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ISTJ begins with verified conditions and tested methods; one-letter neighbor INTJ begins with the activity's final purpose and a directional framework. Their experiments respectively update familiar practice and test a planned assumption.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "先检查一件事有哪些已知条件、承诺是否明确"
+            },
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "先问它最终要解决什么"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The actions ask for a reason before retaining one essential condition, invite a partner to own one preparation check, and trial one low-risk step with comparison. All three are bounded and include speakable examples.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "时间可以调，但请提前告诉我。"
+            },
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "这部分你能负责核对吗？"
+            },
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.actions.2.step",
+              "quote": "先在低风险步骤试一次并比较结果。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The stability-as-explained-change framing avoids a rigid anti-novelty stereotype.",
+        "The actions distinguish updating experience from abandoning all standards."
+      ],
+      "reportHash": "38f3722907c6bc835179ace15d7520337bba2b8ca91795cb57d1b25e212f560d"
+    },
+    {
+      "id": "ISTJ.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Familiar methods are explicitly revisable, personal preferences are separated from safety needs, and shared preparation requires willingness. The four strength labels remain unmeasured positive descriptors under the disclaimer.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "familiarity does not make a method permanently right"
+            },
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.sections.1.text",
+              "quote": "distinguish safety or timing needs from personal preferences"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Compression retains the Chinese report's essential checks, emotional expression, flexible stability and small trials. All action contexts, steps and phrases preserve their purpose; the willing-partner wording clarifies rather than changes agency.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.sections.4.text",
+              "quote": "Separate necessary checks from steps that have outlived their use."
+            },
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.sections.4.text",
+              "quote": "把流程中的必要检查与已经失去作用的步骤分开"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Unlike INTJ's purpose-first trip framing, ISTJ foregrounds known conditions and actual transport and budget. Its small trials update established methods rather than primarily develop a future-oriented framework.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "A trip raises dates, transport and actual budget."
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "rest, connection or discovery before hotel bookings"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action supplies a recognizable trigger, a small step and practical language: clarify a change, share one check, or test a low-risk method. Results are observed rather than guaranteed, and collaboration is requested.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.actions.0.step",
+              "quote": "Ask why and keep one essential condition."
+            },
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.actions.1.phrase",
+              "quote": "Could you take responsibility for checking this?"
+            },
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.actions.2.step",
+              "quote": "Test a low-risk step and compare the result."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Clear editorial distinction from INTJ through concrete known conditions and revisable experience.",
+        "Strength labels should retain their explicit non-measurement framing."
+      ],
+      "reportHash": "1bdcefd4965ed8c42e3d841793f02fa4f0e170f1339b5ffd1cc25134c2fba9ba"
+    },
+    {
+      "id": "ISFJ.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly refuses an assigned caretaker role, permits declining support and rejects compensatory overhelping. Attentiveness, memory, loyalty and practical skill tags remain aspirational; memory is not measured by these examples.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "不意味着你天生应该承担照顾者角色"
+            },
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.sections.2.text",
+              "quote": "也不需要补偿成更多额外帮助"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Both versions preserve invisible effort, concrete requests, reciprocal care, realistic commitments and accepting different methods. The English cleanup phrase omits stating a wish to rest, but the shared-task request and capacity boundary survive.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.sections.2.text",
+              "quote": "拒绝某一时段的请求，不等于拒绝友情"
+            },
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.sections.2.text",
+              "quote": "Declining one request does not reject the friendship"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ISFJ and ESFJ both address invisible care work. ISFJ gives more attention to remembered preferences, follow-up and silently redoing help; ESFJ emphasizes active group contact and interpreting response frequency. Distinction is concrete but overlapping.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.sections.2.text",
+              "quote": "之后还会问事情有没有好一些"
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.sections.2.text",
+              "quote": "而不是用更多讯息试探"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The exercises specify checking energy before promising, requesting one cleanup responsibility and checking necessary results without redoing all help. Each is feasible, linked to invisible overwork and supported by usable language.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "我今天能帮这一部分，其余需要另安排。"
+            },
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "下次你能负责收尾吗？我也想休息。"
+            },
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.actions.2.step",
+              "quote": "只确认必要结果，不把全部重做。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The caretaker-role disclaimer and permission not to compensate for refusal are particularly useful.",
+        "The memory strength tag remains an unverified ability label.",
+        "ISFJ and ESFJ share considerable practical-care content."
+      ],
+      "reportHash": "900a6e37c30d455542b1d3f41a0d900ee4132170085ecf07c23fab3fc02491f7"
+    },
+    {
+      "id": "ISFJ.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report denies an obligatory caretaker role and supports receiving care, refusing requests and leaving others' responsibilities with them. Strong memory and practical skills are unmeasured labels, acceptable only under the reflection framing.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "the profile does not assign you a caretaker role"
+            },
+            {
+              "caseId": "ISFJ.en",
+              "path": "strengthTags.1",
+              "quote": "Strong memory"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "The English preserves the Chinese report's central situations and boundaries across all sections and actions. Minor shortening of the cleanup phrase and feedback detail does not remove the concrete shared responsibility or right to ask about standards.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.sections.4.text",
+              "quote": "ask about the standard rather than trying to infer every expectation"
+            },
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.sections.4.text",
+              "quote": "你也可以询问判断标准，避免只能靠猜测达到期待"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ISFJ emphasizes sustained follow-up and accepting help without redoing it. ESFJ emphasizes contact preferences and not testing a bond through additional messages. Both retain substantial common advice about sharing care work.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.sections.2.text",
+              "quote": "Patient listening and later follow-up can reassure a friend."
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.sections.2.text",
+              "quote": "rather than sending more messages to test the bond"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All three exercises contain a concrete trigger and small response: limit a promise after checking energy, ask for cleanup, and accept a necessary outcome without rework. The phrases are usable and do not require agreement to every request.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.actions.0.phrase",
+              "quote": "I can help with this part today; the rest needs another plan."
+            },
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.actions.1.phrase",
+              "quote": "Could you handle the cleanup next time?"
+            },
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.actions.2.step",
+              "quote": "Check the necessary outcome without redoing everything."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Practical boundaries are consistently preserved in translation.",
+        "Strong memory should not be mistaken for a tested cognitive ability."
+      ],
+      "reportHash": "ede571f5f92333be0a3e12a35a1a9df14b714a862fd26fe05358cd543ad45531"
+    },
+    {
+      "id": "ESTJ.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Rules are revisable, participation requires confirmation, and mistakes are not expanded into judgments of character. Organization, execution, rule awareness and responsibility tags remain broad positive descriptors under reflection framing.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.sections.4.text",
+              "quote": "不把一次失误扩写成人的态度"
+            },
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "不能证明你总有正确标准"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The distinction between outcomes and methods, explaining rules and checking support needs is preserved. The Chinese phrase '陪你听' is awkward for offering to listen to the friend; English conveys the intended listening-versus-doing choice more naturally.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "你现在需要我陪你听，还是一起做？"
+            },
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.actions.2.phrase",
+              "quote": "Would listening or doing something together help?"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ESTJ centers executable rules, standard-setting and separating required results from flexible methods. ENTJ centers turning goals into coordinated resources and tracking capacity. Shared organizing advice limits the contrast, but the rule-purpose emphasis is concrete.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.sections.6.text",
+              "quote": "说明规则背后的目的，再询问有无更适合的实施方法"
+            },
+            {
+              "caseId": "ENTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "把愿望转成目标，再寻找能推动它的人和资源"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "Inviting one concern and trialing another method with an agreed outcome and checkpoint are clear. The third action also has a feasible purpose check, but its example phrase is awkward and should directly offer listening rather than '陪你听'.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "定这个方案前，有什么实际困难？"
+            },
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.actions.1.step",
+              "quote": "只对齐成果和检查时间，试行一轮。"
+            },
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "你现在需要我陪你听，还是一起做？"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Revise the third action's Chinese phrase to make offering to listen idiomatic.",
+        "The outcome-versus-method distinction is useful, though shared with ENTJ's collaboration advice."
+      ],
+      "reportHash": "528a4ee88e2c6d50fc3bcdc3e4eb684c44dcc6dc29a170f3548c25e98abce515"
+    },
+    {
+      "id": "ESTJ.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Standards are open to revision, consent to participation is checked, and feedback avoids character judgments. The tags are unqualified aspirations; rule-consciousness and responsibility should not imply moral superiority.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.sections.1.text",
+              "quote": "participation still needs confirmation"
+            },
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.sections.4.text",
+              "quote": "rather than turning one failure into a judgment of attitude"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The translation preserves central recommendations across the highlights, sections and actions. English clarifies an awkward Chinese listening phrase, while 'Rule-conscious' and 'Strong responsibility' are somewhat unnatural strength-label English rather than meaning reversals.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.actions.2.phrase",
+              "quote": "Would listening or doing something together help?"
+            },
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "你现在需要我陪你听，还是一起做？"
+            },
+            {
+              "caseId": "ESTJ.en",
+              "path": "strengthTags.3",
+              "quote": "Strong responsibility"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ESTJ's attention to rule purpose and flexible implementation differs from ENTJ's attention to capacity and goal mobilization. Both share checkpoints and ownership, so distinction is adequate rather than especially sharp.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.highlights.1",
+              "quote": "Explain the purpose of rules"
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.highlights.2",
+              "quote": "Track capacity as well as progress"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The exercises specify one opportunity for constraints, a single trial with outcome and checkpoint alignment, and checking whether a friend wants listening or action. Each has a clear situation and usable phrase.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.actions.0.phrase",
+              "quote": "What practical difficulty should we address first?"
+            },
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.actions.1.step",
+              "quote": "Align outcome and checkpoint, then try it once."
+            },
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.actions.2.phrase",
+              "quote": "Would listening or doing something together help?"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The English action wording is clearer than the corresponding Chinese listening phrase.",
+        "Use more idiomatic strength labels, especially for responsibility and rule awareness."
+      ],
+      "reportHash": "104e8788c99ccc450c41514d5f2a63e60691032509066512b8053a288823913a"
+    },
+    {
+      "id": "ESFJ.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The case rejects compulsory relationship maintenance, repeated testing and assigning care to whoever notices first. Care, cohesion, dedication and social ability tags remain aspirational; the report counters the self-sacrifice implication of dedication.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "不能把维护关系变成义务"
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.sections.3.text",
+              "quote": "不必默认为谁更细心谁负责"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Both languages retain reassurance through daily response, permission for silence, explicit sharing of preparations and protected focus time. The highlights, all three actions and framing notes align without material boundary loss.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.sections.2.text",
+              "quote": "而不是用更多讯息试探"
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.sections.2.text",
+              "quote": "rather than sending more messages to test the bond"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "Compared with ENFJ's future-oriented encouragement, ESFJ concentrates on daily contact, routines and practical inclusion. These concrete situations distinguish it, although much advice about capacity and shared coordination is common.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "共同习惯和及时回应能带来安心"
+            },
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.sections.2.text",
+              "quote": "帮助他看到更有希望的路线"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Contact rhythm is negotiated directly, attendance confirmation is assigned through a specific request, and a three-o'clock response boundary protects focus. All three examples are small, practical and tied to the report's concerns.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "你忙的时候，我们怎样联系会舒服？"
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "你能负责确认人数吗？我安排地点。"
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "我三点前在做这项，之后可以回复你。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The concrete contact-rhythm action avoids treating silence as evidence of rejection.",
+        "Dedication should remain a reflective aspiration, not an expectation of unpaid emotional work."
+      ],
+      "reportHash": "6cdb455fae3f79ee6201a30c1ddfc8f6dc5e28a91a243edfa072f50354acd3e2"
+    },
+    {
+      "id": "ESFJ.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The text allows differing needs, quiet participation and limits on repairing others' dissatisfaction. The four positive tags are unmeasured and could imply an obligatory caring role without the report's explicit counterbalance.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "pleasing everyone is not your role"
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.sections.5.text",
+              "quote": "not every dissatisfaction is yours to repair"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "The translation preserves practical inclusion, direct contact negotiation, shared responsibility, feedback specificity and protected time. Compression of examples does not change the central recommendations or permissions.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.sections.3.text",
+              "quote": "rather than assigning them to whoever notices first"
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.sections.3.text",
+              "quote": "不必默认为谁更细心谁负责"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ESFJ focuses on reassurance through routines and timely responses, whereas ENFJ focuses on encouragement toward a possible future. Both still rely on similar inclusion and scope-setting advice.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "Shared routines and timely responses can reassure you"
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.sections.2.text",
+              "quote": "their strengths and possible future"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action supplies a specific conversation or boundary: agree on contact, request number confirmation while arranging the venue, and state a focus block ending at three. The examples preserve both parties' agency.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.actions.0.phrase",
+              "quote": "How shall we stay in touch when you are busy?"
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.actions.1.phrase",
+              "quote": "Could you confirm numbers while I arrange the venue?"
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.actions.2.phrase",
+              "quote": "I am working on this until three; then I can reply."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Strong bilingual preservation of the report's concrete shared-work and contact recommendations.",
+        "Neighbor distinction is adequate but shares many caring-and-capacity themes with ENFJ and ISFJ."
+      ],
+      "reportHash": "da77e366d88fada7557debb5d8b1745ccf79f1b7f8ad9b6769c0176bc08ac422"
+    },
+    {
+      "id": "ISTP.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Practical orientation is not equated with emotional indifference, and experiments affecting others require permission. Hands-on ability, calm judgment, adaptability and technical expertise are aspirational tags rather than verified skills.",
+          "evidence": [
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "不意味着你对意义或感受没有兴趣"
+            },
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.sections.4.text",
+              "quote": "先确认许可与条件"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Observation, practical learning, short updates, negotiated solitude and emotional aftermath survive across both languages. All three actions preserve their timing and purpose; the English retains consent for experiments affecting others.",
+          "evidence": [
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.sections.3.text",
+              "quote": "事情修好了，情绪未必已经结束"
+            },
+            {
+              "caseId": "ISTP.en",
+              "path": "report.sections.3.text",
+              "quote": "the practical repair may finish before the other person has finished explaining their experience"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against INTP, ISTP starts by observing a working mechanism and testing directly rather than defining the premises of a question. Its concrete update and repair-aftermath actions reflect that practical entry point.",
+          "evidence": [
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "先看眼前问题怎样运作、哪里可以直接试一下"
+            },
+            {
+              "caseId": "INTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能对一个问题为什么成立，比对尽快选出答案更感兴趣"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "A half-hour progress update, a one-hour solitude break with return, and a question about remaining impact each address a recognizable situation. They are short, observable and supported by usable language without demanding constant conversation.",
+          "evidence": [
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "我在查原因，半小时后告诉你。"
+            },
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "我休息一小时，之后我们再聊。"
+            },
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "事情处理了，你还有哪部分想说？"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The distinction between practical repair and emotional completion is concrete and useful.",
+        "Technical expertise remains an unverified strength tag despite the non-ability framing."
+      ],
+      "reportHash": "38eb75d50d9fe1124872d7d07290891492ece67e89ec201010897ee3e3ce6497"
+    },
+    {
+      "id": "ISTP.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report rejects emotional-indifference assumptions and requires consent when experiments affect others. Technical mastery is an especially strong ability label; explicit non-measurement framing keeps it an aspiration rather than an established fact.",
+          "evidence": [
+            {
+              "caseId": "ISTP.en",
+              "path": "report.sections.4.text",
+              "quote": "confirm the conditions and consent"
+            },
+            {
+              "caseId": "ISTP.en",
+              "path": "strengthTags.3",
+              "quote": "Technical mastery"
+            },
+            {
+              "caseId": "ISTP.en",
+              "path": "framing.editorialNote",
+              "quote": "not individual facts detected from your answers"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Both versions retain practice-based understanding, legible progress, predictable reconnection and attention to unresolved emotional impact. The shortened blindspots section still preserves the central communication recommendation through the close and growth sections.",
+          "evidence": [
+            {
+              "caseId": "ISTP.en",
+              "path": "report.sections.1.text",
+              "quote": "Tell others what you are checking and when you will respond"
+            },
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.sections.1.text",
+              "quote": "说清目前在检查什么、何时给答复"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ISTP inspects mechanisms and tests directly; INTP examines why a question works and defines its criteria. The difference is a concrete mode of inquiry rather than a generic claim of independence.",
+          "evidence": [
+            {
+              "caseId": "ISTP.en",
+              "path": "report.sections.0.text",
+              "quote": "inspect how a problem works and what can be tested directly"
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.0.text",
+              "quote": "understanding why a question works"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All actions have a trigger, an observable step and usable language: update during silent repair, state and keep a return time, and ask about unheard impact after a fix. The burden is modest and the connection to the report is direct.",
+          "evidence": [
+            {
+              "caseId": "ISTP.en",
+              "path": "report.actions.0.phrase",
+              "quote": "I am checking the cause; I will update you in half an hour."
+            },
+            {
+              "caseId": "ISTP.en",
+              "path": "report.actions.1.phrase",
+              "quote": "I need an hour’s break, then we can talk."
+            },
+            {
+              "caseId": "ISTP.en",
+              "path": "report.actions.2.phrase",
+              "quote": "It is handled. What else would you like me to understand?"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Technical mastery overstates what the examples can establish; a softer tag would better match the framing.",
+        "Practical action and necessary communication are balanced consistently."
+      ],
+      "reportHash": "c5d88247dbf55254a5fd81d62cf20b7e1520a2f8a164c82ea4c0513f7b90ea28"
+    },
+    {
+      "id": "ISFP.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report permits early boundaries and rejects reducing the reader to mood-based choices. Aesthetic sensitivity, authenticity, adaptability and artistic talent are aspirational tags; artistic talent is not established by the supplied text.",
+          "evidence": [
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "不意味着你只能凭心情"
+            },
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.sections.5.text",
+              "quote": "边界不需要等到忍无可忍才能成立"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "Sensory experience, explicit preferences, pause-and-return and revision scope align. English changes interpreting disagreement as lack of respect into interpreting it as rejection, and the highlight changes the Chinese limit of intolerable discomfort to exhaustion; these are minor shifts in emotional framing.",
+          "evidence": [
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.sections.5.text",
+              "quote": "把不同意见当成不被尊重"
+            },
+            {
+              "caseId": "ISFP.en",
+              "path": "report.sections.5.text",
+              "quote": "interpreting disagreement as rejection"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ISFP grounds preference in environment, pace and immediate sensory engagement, while INFP centers internal values and the meaning of a choice. The report's examples make this distinction tangible despite shared feedback and boundary themes.",
+          "evidence": [
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.sections.1.text",
+              "quote": "具体的气味、声音和小细节可能让你更投入"
+            },
+            {
+              "caseId": "INFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "先问一个选择是否符合自己在乎的东西"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The exercises specify a quiet venue preference with flexible timing, a ten-minute pause instead of total withdrawal, and a request for revision scope while preserving a focus. Each is small, contextual and provides a usable phrase.",
+          "evidence": [
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "我想选安静一点的地方，时间可以灵活。"
+            },
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "我需要慢一点说，十分钟后继续好吗？"
+            },
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "你想调整哪一部分？我想保留这个重点。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Respect and rejection are related but distinct interpretations; aligning that wording would improve fidelity.",
+        "Artistic talent remains an unmeasured ability claim in tag form, moderated by the reflection disclaimer."
+      ],
+      "reportHash": "22ac4dcf8f5fc065185f51b99bf6a66c02d95805d5c5d640cc1ecce79996489d"
+    },
+    {
+      "id": "ISFP.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The case supports early limits, personal pace and negotiated revision without treating disagreement as proof of worth. Artistic talent is a strong unqualified ability tag, accepted only as an aspiration under the explicit framing.",
+          "evidence": [
+            {
+              "caseId": "ISFP.en",
+              "path": "strengthTags.3",
+              "quote": "Artistic talent"
+            },
+            {
+              "caseId": "ISFP.en",
+              "path": "framing.editorialNote",
+              "quote": "not individual facts detected from your answers"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The three actions and central experience-and-expression themes are preserved. Rejection replaces lack of respect in blindspots, and exhaustion replaces reaching an intolerable limit in the highlight, slightly altering the emotional mechanism rather than reversing the advice.",
+          "evidence": [
+            {
+              "caseId": "ISFP.en",
+              "path": "report.sections.5.text",
+              "quote": "interpreting disagreement as rejection"
+            },
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.sections.5.text",
+              "quote": "把不同意见当成不被尊重"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ISFP's sensory examples and environmental preferences differ concretely from INFP's inner agreement and personal meaning. The shared need to communicate preferences does not erase these different entry points.",
+          "evidence": [
+            {
+              "caseId": "ISFP.en",
+              "path": "report.sections.1.text",
+              "quote": "Sensory details in a walk or shared cooking can invite engagement."
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.sections.0.text",
+              "quote": "Inner agreement supports effort"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "A venue preference, a timed conversational pause and a question about revision scope each provide an observable response and practical language. The phrases preserve negotiation and do not require the reader to justify every preference.",
+          "evidence": [
+            {
+              "caseId": "ISFP.en",
+              "path": "report.actions.0.phrase",
+              "quote": "I prefer somewhere quiet; the time can be flexible."
+            },
+            {
+              "caseId": "ISFP.en",
+              "path": "report.actions.1.phrase",
+              "quote": "I need a slower pace. Can we continue in ten minutes?"
+            },
+            {
+              "caseId": "ISFP.en",
+              "path": "report.actions.2.phrase",
+              "quote": "Which part should change? I would like to keep this focus."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Align rejection with the Chinese concern about feeling disrespected if closer emotional fidelity is desired.",
+        "Artistic talent is stronger than the report's evidence warrants as a personal attribute."
+      ],
+      "reportHash": "50b0f0f750224d4968a2c19911314b5cc3c82740f4684f144603e9f3ff105a0b"
+    },
+    {
+      "id": "ESTP.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly checks cost, reversibility and willingness rather than praising speed without limits. Humor must be welcome and risk has stopping conditions. Action, observation, charisma and crisis-handling tags remain aspirational, not certified capacities.",
+          "evidence": [
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "仍需要先确认条件和大家愿不愿意"
+            },
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.sections.4.text",
+              "quote": "明确停止条件和责任范围"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "English preserves practical trials, fixed versus flexible conditions, welcome humor, emotional aftermath and follow-through. Omitted travel detail and some contextual stress language are natural compression; the three actions retain their risks, consent checks and support choices.",
+          "evidence": [
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.actions.1.step",
+              "quote": "告知影响并确认参与者愿意。"
+            },
+            {
+              "caseId": "ESTP.en",
+              "path": "report.actions.1.step",
+              "quote": "Explain the impact and confirm willingness."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ESTP and ISTP both use direct trials and practical feedback. ESTP emphasizes coordinating live changes with a group and checking downstream costs; ISTP emphasizes making quiet independent work visible and negotiating solitude. The distinction is usable but overlapping.",
+          "evidence": [
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.sections.1.text",
+              "quote": "行动前给一次确认机会"
+            },
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.sections.1.text",
+              "quote": "说清目前在检查什么、何时给答复"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "All three actions have a context, small step and example: check risk and a stopping rule, confirm a half-hour delay, and ask whether to talk or walk. The first phrase leaves both the risk and stop trigger as placeholders; one ordinary concrete example would make it stronger.",
+          "evidence": [
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "可以先试，出现这个情况就停。"
+            },
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "这样会晚半小时，大家接受吗？"
+            },
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "你想先聊完，还是出去走一会儿？"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The first exercise is usable but underspecified about an actual stopping trigger.",
+        "Crisis handling is a broad ability tag, not an evaluated crisis-response capability."
+      ],
+      "reportHash": "dbd0269e509af168c63f74a2259f195e55806233ca4a12fbf1da46e91dd5afc7"
+    },
+    {
+      "id": "ESTP.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Speed is explicitly qualified by cost, risk, willingness and stopping conditions, and emotional support is not reduced to activity. Crisis handling and sharp observation remain aspirational labels under the non-prediction framing.",
+          "evidence": [
+            {
+              "caseId": "ESTP.en",
+              "path": "report.sections.0.text",
+              "quote": "faster is not always better"
+            },
+            {
+              "caseId": "ESTP.en",
+              "path": "report.sections.4.text",
+              "quote": "Give risky experiments a stopping condition and clear responsibility."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "The English preserves the Chinese report's central limits on improvisation, group confirmation, welcome humor, explicit promises and later effects. All actions maintain the same practical recommendation and agency despite shorter examples in the sections.",
+          "evidence": [
+            {
+              "caseId": "ESTP.en",
+              "path": "report.sections.5.text",
+              "quote": "Checking later effects is part of responsible action too."
+            },
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.sections.5.text",
+              "quote": "回头检查也属于负责任的行动"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ESTP brings others into immediate changes and checks their impact; ISTP makes silent problem-solving progress and reconnection predictable. Both share practical experimentation, so the distinction is situational rather than exclusive.",
+          "evidence": [
+            {
+              "caseId": "ESTP.en",
+              "path": "report.sections.1.text",
+              "quote": "Give people one chance to confirm"
+            },
+            {
+              "caseId": "ISTP.en",
+              "path": "report.sections.1.text",
+              "quote": "Tell others what you are checking and when you will respond"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "The delay-confirmation and talking-versus-walking actions are concrete and usable. The risk action is feasible but its sample phrase leaves the stop condition entirely unspecified; a low-stakes example would improve application without expanding the task.",
+          "evidence": [
+            {
+              "caseId": "ESTP.en",
+              "path": "report.actions.0.phrase",
+              "quote": "We can try; we stop if this happens."
+            },
+            {
+              "caseId": "ESTP.en",
+              "path": "report.actions.1.phrase",
+              "quote": "This adds half an hour. Does that work for everyone?"
+            },
+            {
+              "caseId": "ESTP.en",
+              "path": "report.actions.2.phrase",
+              "quote": "Would you like to finish talking or take a walk?"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Replace the generic stop-condition placeholder with an ordinary example for stronger actionability.",
+        "The crisis-handling tag should not imply emergency competence."
+      ],
+      "reportHash": "83fc5ee0cf7da84b40c9f2210d009b2371d72518b336ad1f689049a2f234f796"
+    },
+    {
+      "id": "ESFP.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The case expressly permits quiet and fatigue, rejects compulsory cheerfulness and does not promise that companionship fixes sadness. Energy, practical ability, aesthetic taste and warmth remain aspirational tags under reflection framing.",
+          "evidence": [
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "不能规定你的情绪"
+            },
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.sections.2.text",
+              "quote": "若这次没有明显改善，不等于陪伴失败"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "Present connection, permission for sadness, capacity checks and all three actions align. English drops the specific spending-based avoidance example in blindspots, preserving activity-based avoidance but narrowing the practical warning.",
+          "evidence": [
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.sections.5.text",
+              "quote": "用消费或活动暂时避开担忧"
+            },
+            {
+              "caseId": "ESFP.en",
+              "path": "report.sections.5.text",
+              "quote": "avoiding worries through activity"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ESFP emphasizes shared immediate experiences and the pressure to make someone happy; ENFP emphasizes possibilities, stories and associative redirection. Concrete examples distinguish them, although invitation checks and ten-minute follow-through advice overlap.",
+          "evidence": [
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.sections.2.text",
+              "quote": "对方不一定准备好马上开心起来"
+            },
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.sections.2.text",
+              "quote": "接着分享自己的类似故事或想到新的出路"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The actions bound invitations through budget and energy, offer a friend talk or a walk without requiring recovery, and schedule and record a ten-minute recurring task. Each has a recognizable context and usable phrase.",
+          "evidence": [
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "这周我参加这一场，其他先不答应。"
+            },
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "不用急着好起来，你想聊还是走走？"
+            },
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.actions.2.step",
+              "quote": "安排十分钟固定动作并记录完成。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The report usefully separates support from making someone happy immediately.",
+        "English omits spending as a specific avoidance behavior.",
+        "The ten-minute task example relies on the step for its recurring schedule and recording detail."
+      ],
+      "reportHash": "e341d8176c8264515078aee5d6c9739972e10f74eede5536da7f581602f14765"
+    },
+    {
+      "id": "ESFP.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report validates quiet, fatigue and sadness, and expressly allows support without immediate improvement. The four positive tags remain broad aspirations rather than measured personal capacities.",
+          "evidence": [
+            {
+              "caseId": "ESFP.en",
+              "path": "report.sections.2.text",
+              "quote": "even without an immediate improvement"
+            },
+            {
+              "caseId": "ESFP.en",
+              "path": "report.sections.6.text",
+              "quote": "Your contribution includes honesty and care, not only bringing energy to the room."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The translation preserves highlights, flexible shared agreements, emotional permission and the three action steps. It omits spending-based avoidance from blindspots. 'Leave the others open' is also less explicit than the Chinese statement that other invitations are not yet accepted, though it does not promise attendance.",
+          "evidence": [
+            {
+              "caseId": "ESFP.en",
+              "path": "report.sections.5.text",
+              "quote": "avoiding worries through activity"
+            },
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.sections.5.text",
+              "quote": "用消费或活动暂时避开担忧"
+            },
+            {
+              "caseId": "ESFP.en",
+              "path": "report.actions.0.phrase",
+              "quote": "I will leave the others open."
+            },
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "这周我参加这一场，其他先不答应。"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ESFP centers immediate shared experience and resisting pressure to cheer someone up. ENFP centers possibilities and associations that can redirect a story. Both use similar capacity and minimum-action exercises, limiting the sharpness of their distinction.",
+          "evidence": [
+            {
+              "caseId": "ESFP.en",
+              "path": "report.sections.2.text",
+              "quote": "They may not be ready to feel better."
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.2.text",
+              "quote": "a similar experience or a new possibility to mind"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "The three actions are feasible: confirm one invitation after checking capacity, ask about talk versus a different setting, and schedule and record ten minutes of work. The invitation phrase could state non-acceptance of the others more clearly; the task phrase relies on the step for scheduling and recording.",
+          "evidence": [
+            {
+              "caseId": "ESFP.en",
+              "path": "report.actions.0.phrase",
+              "quote": "I can join this one this week; I will leave the others open."
+            },
+            {
+              "caseId": "ESFP.en",
+              "path": "report.actions.1.phrase",
+              "quote": "There is no rush to feel better. Talk or walk?"
+            },
+            {
+              "caseId": "ESFP.en",
+              "path": "report.actions.2.step",
+              "quote": "Schedule and record a ten-minute regular action."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "A clearer invitation phrase would explicitly say the other invitations are not confirmed.",
+        "Spending-based avoidance is lost in translation.",
+        "Across the full evaluation, ENTP and INFP bilingual fidelity scores fall below the required minimum; the supplied set does not meet the editorial all-cases threshold."
+      ],
+      "reportHash": "31a1ce8ed84436b52f6c17846dbf2eb56064573b59e212dce31cf01e4d94fcd8"
+    }
+  ]
+}

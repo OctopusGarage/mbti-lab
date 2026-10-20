@@ -1,30 +1,40 @@
 <template>
-  <div class="types-page">
+  <div class="types-page" :class="{ 'has-report': selected }">
     <header class="types-header">
-      <router-link to="/" class="back-btn">← {{ $t('types.backHome') }}</router-link>
+      <router-link to="/" class="back-btn"
+        >← {{ $t('types.backHome') }}</router-link
+      >
       <h1 class="page-title">{{ $t('types.title') }}</h1>
       <LangToggle />
     </header>
 
     <!-- type grid -->
     <div v-if="!selected" class="grid-wrap">
-      <div
-        v-for="group in groups"
-        :key="group.label"
-        class="group"
-      >
-        <div class="group-label">{{ group.label }}</div>
+      <label class="search-label"
+        >{{ $t('types.search') }}
+        <input
+          v-model="search"
+          type="search"
+          :placeholder="$t('types.searchHint')"
+        />
+      </label>
+      <p v-if="invalidType" role="status">{{ $t('types.invalidType') }}</p>
+      <p v-if="!filteredGroups.length" role="status">
+        {{ $t('types.noMatches') }}
+      </p>
+      <div v-for="group in filteredGroups" :key="group.label" class="group">
+        <div class="group-label">{{ $t('types.groups.' + group.label) }}</div>
         <div class="type-grid">
           <button
             v-for="t in group.types"
             :key="t"
             class="type-chip"
             :style="{ '--accent': groupColor(group.label) }"
-            @click="selected = t"
+            :data-type="t"
+            @click="select(t)"
           >
             <span class="chip-code">{{ t }}</span>
             <span class="chip-nick">{{ types[t].nickname[locale] }}</span>
-            <span class="chip-rarity">{{ types[t].rarity }}</span>
           </button>
         </div>
       </div>
@@ -32,61 +42,120 @@
 
     <!-- detail view -->
     <div v-else class="detail-wrap">
-      <button class="detail-back" @click="selected = null">
+      <button class="detail-back" @click="select(null)">
         ← {{ $t('types.backToList') }}
       </button>
-      <ResultCard :type="selected" :percents="mockPercents(selected)" />
+      <ResultCard
+        ref="reader"
+        :key="selected"
+        :type="selected"
+        @neighbor="select"
+      />
+      <ReportDock @contents="reader?.contents?.()" @share="showPanel = true" />
+      <SharePanel
+        v-if="showPanel"
+        :type="selected"
+        :personal="false"
+        @close="showPanel = false"
+      />
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { computed, watch, nextTick, ref } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import LangToggle from '../components/LangToggle.vue'
+import ReportDock from '../components/ReportDock.vue'
+import SharePanel from '../components/SharePanel.vue'
 import ResultCard from '../components/ResultCard.vue'
 import { types } from '../data/types.js'
 
 const { locale } = useI18n()
-const selected = ref(null)
+const reader = ref(null)
+const showPanel = ref(false)
+const router = useRouter()
+const route = useRoute()
+const selected = computed(() => {
+  const type =
+    typeof route.query.type === 'string' ? route.query.type.toUpperCase() : ''
+  return Object.hasOwn(types, type) ? type : null
+})
+const invalidType = computed(
+  () => route.query.type !== undefined && !selected.value,
+)
+const search = computed({
+  get: () => (typeof route.query.q === 'string' ? route.query.q : ''),
+  set: (q) => router.replace({ query: { ...route.query, q: q || undefined } }),
+})
+const filteredGroups = computed(() => {
+  const needle = search.value.trim().toLowerCase()
+  return groups
+    .map((group) => ({
+      ...group,
+      types: group.types.filter((code) =>
+        [code, types[code].nickname.zh, types[code].nickname.en]
+          .join(' ')
+          .toLowerCase()
+          .includes(needle),
+      ),
+    }))
+    .filter((group) => group.types.length)
+})
+function select(type) {
+  router.push({
+    path: '/types',
+    query: { ...route.query, type: type || undefined },
+  })
+}
+watch(selected, async (type, previous) => {
+  showPanel.value = false
+  await nextTick()
+  window.scrollTo?.({ top: 0 })
+  const target = type
+    ? document.querySelector('.type-letters')
+    : document.querySelector(`[data-type="${previous}"]`) ||
+      document.querySelector('input[type="search"]')
+  target?.focus({ preventScroll: true })
+})
 
 const groups = [
-  { label: 'Analysts',   types: ['INTJ', 'INTP', 'ENTJ', 'ENTP'] },
-  { label: 'Diplomats',  types: ['INFJ', 'INFP', 'ENFJ', 'ENFP'] },
-  { label: 'Sentinels',  types: ['ISTJ', 'ISFJ', 'ESTJ', 'ESFJ'] },
-  { label: 'Explorers',  types: ['ISTP', 'ISFP', 'ESTP', 'ESFP'] },
+  { label: 'Analysts', types: ['INTJ', 'INTP', 'ENTJ', 'ENTP'] },
+  { label: 'Diplomats', types: ['INFJ', 'INFP', 'ENFJ', 'ENFP'] },
+  { label: 'Sentinels', types: ['ISTJ', 'ISFJ', 'ESTJ', 'ESFJ'] },
+  { label: 'Explorers', types: ['ISTP', 'ISFP', 'ESTP', 'ESFP'] },
 ]
 
 const GROUP_COLORS = {
-  Analysts:  '#5c6bc0',
+  Analysts: '#5c6bc0',
   Diplomats: '#4caf90',
   Sentinels: '#e08000',
   Explorers: '#c0405c',
 }
 
-function groupColor(label) { return GROUP_COLORS[label] ?? '#5c6bc0' }
-
-// Generate representative percents so the bars/radar look sensible
-function mockPercents(type) {
-  const map = {
-    E: 65, I: 65, N: 65, S: 65, F: 65, T: 65, J: 65, P: 65,
-  }
-  const opp = { E:'I', I:'E', N:'S', S:'N', F:'T', T:'F', J:'P', P:'J' }
-  const dims = { EI: ['E','I'], NS: ['N','S'], FT: ['F','T'], JP: ['J','P'] }
-  const result = {}
-  for (const [dim, [a, b]] of Object.entries(dims)) {
-    const dominant = type.includes(a) ? a : b
-    const other = opp[dominant]
-    result[dim] = {
-      [dominant]: map[dominant],
-      [other]: 100 - map[dominant],
-    }
-  }
-  return result
+function groupColor(label) {
+  return GROUP_COLORS[label] ?? '#5c6bc0'
 }
 </script>
 
 <style scoped>
+.has-report {
+  padding-bottom: calc(96px + env(safe-area-inset-bottom));
+}
+.search-label {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+}
+.search-label input {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--blue-light);
+  border-radius: 10px;
+  padding: 12px;
+  font: inherit;
+}
 .types-page {
   min-height: 100dvh;
   background: var(--bg);
@@ -111,7 +180,9 @@ function mockPercents(type) {
   text-decoration: none;
   white-space: nowrap;
 }
-.back-btn:hover { color: var(--blue); }
+.back-btn:hover {
+  color: var(--blue);
+}
 .page-title {
   flex: 1;
   text-align: center;
@@ -191,5 +262,7 @@ function mockPercents(type) {
   cursor: pointer;
   text-align: left;
 }
-.detail-back:hover { color: var(--blue); }
+.detail-back:hover {
+  color: var(--blue);
+}
 </style>

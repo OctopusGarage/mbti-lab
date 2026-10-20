@@ -48,7 +48,10 @@ function hasFinitePercents(percents) {
   return DIMENSIONS.every(({ key, letters }) => {
     const dim = percents[key]
     if (!dim || typeof dim !== 'object') return false
-    return letters.every((letter) => Number.isFinite(dim[letter]))
+    return letters.every(
+      (letter) =>
+        Number.isFinite(dim[letter]) && dim[letter] >= 0 && dim[letter] <= 100,
+    )
   })
 }
 
@@ -64,26 +67,103 @@ function parseEntry(raw) {
   if (!value || typeof value !== 'object') return null
   const type = normalizeType(value.type)
   if (!type || !hasFinitePercents(value.percents)) return null
-  return { ...value, type }
+  const percents = Object.fromEntries(
+    DIMENSIONS.map(({ key, letters }) => [
+      key,
+      Object.fromEntries(
+        letters.map((letter) => [letter, value.percents[key][letter]]),
+      ),
+    ]),
+  )
+  return { ...value, type, percents }
 }
 
+// Memory is a fallback for denied writes, never a cache of successful history.
+let handoff = null
+let volatile = null
+let ignoreSession = false
 export function useResultStore() {
-  // Persist a completed result: stamp it once and write the same entry to
-  // the fresh handoff (session) and the history (local).
   function submit(result) {
-    const entry = { ...result, completedAt: Date.now() }
-    sessionStorage.setItem(SESSION_KEY, JSON.stringify(entry))
-    localStorage.setItem(HISTORY_KEY, JSON.stringify(entry))
+    const entry = parseEntry(
+      JSON.stringify({ ...result, completedAt: Date.now() }),
+    )
+    if (!entry) throw new Error('Invalid assessment result')
+    handoff = null
+    try {
+      sessionStorage.setItem(SESSION_KEY, JSON.stringify(entry))
+      ignoreSession = false
+    } catch {
+      handoff = entry
+      ignoreSession = true
+    }
+    let persisted = false
+    try {
+      localStorage.setItem(HISTORY_KEY, JSON.stringify(entry))
+      persisted = true
+    } catch {
+      /* retain this result in memory */
+    }
+    volatile = persisted ? null : entry
+    return persisted
   }
-
-  // Resolve the result to display: the fresh handoff first (consumed on
-  // read), then the persisted history. null when nothing valid remains.
+  function peek() {
+    if (handoff) return handoff
+    try {
+      const fresh = ignoreSession
+        ? null
+        : parseEntry(sessionStorage.getItem(SESSION_KEY))
+      if (fresh) return fresh
+    } catch {
+      /* continue independently */
+    }
+    if (volatile) return volatile
+    try {
+      return parseEntry(localStorage.getItem(HISTORY_KEY))
+    } catch {
+      return null
+    }
+  }
   function load() {
-    const fresh = parseEntry(sessionStorage.getItem(SESSION_KEY))
-    sessionStorage.removeItem(SESSION_KEY)
+    let fresh = handoff
+    handoff = null
+    try {
+      if (!fresh && !ignoreSession)
+        fresh = parseEntry(sessionStorage.getItem(SESSION_KEY))
+    } catch {
+      /* history or memory remains available */
+    }
+    try {
+      sessionStorage.removeItem(SESSION_KEY)
+    } catch {
+      // Consume once even when the physical entry cannot be removed.
+      ignoreSession = true
+    }
     if (fresh) return fresh
-    return parseEntry(localStorage.getItem(HISTORY_KEY))
+    if (volatile) return volatile
+    try {
+      return parseEntry(localStorage.getItem(HISTORY_KEY))
+    } catch {
+      return null
+    }
   }
-
-  return { submit, load }
+  function isPersisted(entry) {
+    if (!entry) return false
+    try {
+      const saved = parseEntry(localStorage.getItem(HISTORY_KEY))
+      return (
+        !!saved &&
+        saved.type === entry.type &&
+        saved.completedAt === entry.completedAt &&
+        DIMENSIONS.every(({ key, letters }) =>
+          letters.every(
+            (letter) =>
+              saved.percents[key][letter] === entry.percents[key][letter],
+          ),
+        )
+      )
+    } catch {
+      return false
+    }
+  }
+  return { submit, load, peek, isPersisted }
 }

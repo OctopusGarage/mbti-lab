@@ -13,9 +13,10 @@ export function useTest() {
     currentIndex.value = 0
   }
 
-  function answer(choice) {
+  function answer(choice, advance = true) {
+    if (!['a', 'b'].includes(choice)) return
     answers.value[currentIndex.value] = choice
-    if (currentIndex.value < questions.value.length - 1) {
+    if (advance && currentIndex.value < questions.value.length - 1) {
       currentIndex.value++
     }
   }

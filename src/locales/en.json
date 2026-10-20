@@ -1,7 +1,9 @@
 {
   "app": {
     "title": "MBTI Lab",
-    "subtitle": "Professional Personality Test · Discover Your True Self"
+    "subtitle": "Professional Personality Test · Discover Your True Self",
+    "switchToEnglish": "Switch to English",
+    "switchToChinese": "Switch to Chinese"
   },
   "home": {
     "startShort": "Short · 60 Q",
@@ -10,17 +12,38 @@
     "fullDesc": "~20–25 minutes",
     "viewLastResult": "View last result →",
     "lastResultLabel": "Last result:",
-    "browseTypes": "📖 Browse 16 Types"
+    "browseTypes": "📖 Browse 16 Types",
+    "resume": "Continue · Q {current} / {total}",
+    "restartConfirm": "Start over and replace your unfinished assessment?",
+    "completedAt": "Completed",
+    "unknownDate": "Completion time unknown",
+    "resultSaved": "Saved in this browser"
   },
   "test": {
     "progress": "Q {current} / {total}",
     "prev": "← Previous",
-    "or": "or"
+    "or": "or",
+    "invalidDraft": "Your saved progress could not be restored. Start a new assessment.",
+    "storageWarning": "Progress cannot be saved to this browser. Refreshing or closing the page may lose it.",
+    "finishError": "Could not prepare your result. Your answers are retained; please retry.",
+    "progressLabel": "Question progress",
+    "exit": "Back to home",
+    "saved": "Progress saved in this browser. You can return home and continue later."
   },
   "types": {
     "backHome": "Home",
     "title": "16 Personality Types",
-    "backToList": "All types"
+    "backToList": "All types",
+    "search": "Find a personality type",
+    "searchHint": "Type code or Chinese / English nickname",
+    "noMatches": "No matching types found.",
+    "invalidType": "This type link is invalid. Choose a type from the list.",
+    "groups": {
+      "Analysts": "Analysts",
+      "Diplomats": "Diplomats",
+      "Sentinels": "Sentinels",
+      "Explorers": "Explorers"
+    }
   },
   "result": {
     "yourType": "Your Personality Type",
@@ -36,11 +59,25 @@
     "notFound": "No result found.",
     "backHome": "← Back to home",
     "dimLabel": {
-      "EI": ["Extraverted E", "Introverted I"],
-      "NS": ["Intuitive N", "Observant S"],
-      "FT": ["Feeling F", "Thinking T"],
-      "JP": ["Judging J", "Prospecting P"]
-    }
+      "EI": [
+        "Extraverted E",
+        "Introverted I"
+      ],
+      "NS": [
+        "Intuitive N",
+        "Observant S"
+      ],
+      "FT": [
+        "Feeling F",
+        "Thinking T"
+      ],
+      "JP": [
+        "Judging J",
+        "Prospecting P"
+      ]
+    },
+    "unsaved": "This result is available now but could not be saved in this browser.",
+    "radarNote": "The radar shows E, N, F and J answer proportions, not ability or accuracy."
   },
   "share": {
     "shareResult": "Share My Result",
@@ -49,8 +86,49 @@
     "saveImage": "Save Image",
     "copyLink": "Copy Link",
     "copied": "Copied ✓",
-    "xTextResult": "My MBTI type is {type}! Come find out yours 👉 https://octopusgarage.github.io/mbti-lab",
-    "xTextApp": "Check out this interesting MBTI personality test! 👉 https://octopusgarage.github.io/mbti-lab",
-    "scanLabel": "Scan to take the test"
+    "xTextResult": "My MBTI type is {type}! Come find out yours 👉 {url}",
+    "xTextApp": "Check out this interesting MBTI personality test! 👉 {url}",
+    "scanLabel": "Scan to take the test",
+    "retry": "Retry",
+    "generating": "Preparing image…",
+    "imageError": "Could not generate the image. Please retry.",
+    "download": "Download image",
+    "imageHint": "Preview the image, then download or press and hold to save.",
+    "copyFallback": "Copy failed. Select and copy this link manually.",
+    "close": "Close",
+    "copyResult": "Copy result text",
+    "captionPreview": "Sharing text preview",
+    "shareType": "Share this type",
+    "xTextType": "Explore the {type} personality type 👉 {url}"
+  },
+  "report": {
+    "overview": "Three points to reflect on",
+    "contents": "Contents",
+    "dimensions": "Your answer proportions",
+    "showChart": "Show radar chart",
+    "percentNote": "Percentages describe this answer set, not ability, accuracy or population percentiles.",
+    "closeNote": "45–55% is a display convention for close proportions, not a statistical confidence interval. It does not change scoring or type selection.",
+    "editorialNote": "These are type-based examples and reflection prompts, not individual facts detected from your answers or predictions about relationships, careers or ability. Keep what resonates.",
+    "cardLabel": "Self-reflection",
+    "cardNote": "Use these prompts to reflect on real situations, beyond a type label.",
+    "sections": {
+      "core": "Core perspective",
+      "daily": "Everyday life",
+      "friendship": "Friendship",
+      "close": "Close relationships",
+      "work": "Learning and work",
+      "blindspots": "Strengths and blind spots",
+      "growth": "Actions to try"
+    },
+    "actions": "Report actions",
+    "neighbors": "Explore adjacent types",
+    "neighborNote": "Each type below differs by one letter. Use the descriptions for comparison; they are not runner-up scores, match predictions or a reclassification.",
+    "neighborDimensions": {
+      "EI": "Expression and quiet: compare thinking through interaction with taking time to reflect first.",
+      "NS": "Understanding information: compare attention to possibilities with attention to concrete experience.",
+      "FT": "Disagreement: compare impact on people with the reasoning behind an approach; both can matter.",
+      "JP": "Making plans: compare clear agreements with room to adapt."
+    },
+    "closeLabel": "Both sides close"
   }
 }

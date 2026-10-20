@@ -13,7 +13,6 @@
             <span class="sc-site">MBTI Lab</span>
             <span class="sc-brand">🐙 OctopusGarage</span>
           </div>
-          <span class="sc-rarity-pill">全球占比 {{ typeData.rarity }}</span>
         </div>
 
         <!-- type + nickname -->
@@ -23,7 +22,7 @@
         </div>
 
         <!-- description -->
-        <div class="sc-desc">{{ typeData.description[locale] }}</div>
+        <div class="sc-desc">{{ highlights.join(' · ') }}</div>
 
         <!-- strengths -->
         <div class="sc-strengths">
@@ -31,19 +30,13 @@
             v-for="s in typeData.strengths[locale].slice(0, 4)"
             :key="s"
             class="sc-tag"
-          >{{ s }}</span>
+            >{{ s }}</span
+          >
         </div>
 
-        <!-- bottom row -->
-        <div class="sc-bottom">
-          <div class="sc-stack">
-            <span class="sc-stack-label">Cognitive Stack</span>
-            <span class="sc-stack-value" :style="{ color: accent }">{{ typeData.cognitiveStack }}</span>
-          </div>
-          <div class="sc-match">
-            <span class="sc-stack-label">Best Match</span>
-            <span class="sc-stack-value" :style="{ color: accent }">{{ typeData.bestMatch.join(' · ') }}</span>
-          </div>
+        <div class="sc-editorial-note">
+          <span class="sc-note-label">{{ $t('report.cardLabel') }}</span>
+          <p>{{ $t('report.cardNote') }}</p>
         </div>
 
         <!-- footer with QR code -->
@@ -57,13 +50,13 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
-import html2canvas from 'html2canvas'
 import QRCode from 'qrcode'
 import { types } from '../data/types.js'
 import { APP_URL } from '../config.js'
 import { getShareTheme } from '../utils/shareTheme.js'
+import { getReport } from '../utils/report.js'
 
 const props = defineProps({ type: String })
 const { locale } = useI18n()
@@ -72,32 +65,79 @@ const qrDataUrl = ref('')
 
 let qrReady = null
 
-onMounted(async () => {
-  qrReady = QRCode.toDataURL(APP_URL, { width: 88, margin: 1, color: { dark: '#ffffff', light: '#00000000' } })
-  qrDataUrl.value = await qrReady
+function prepareQr() {
+  if (!qrReady) {
+    qrReady = QRCode.toDataURL(APP_URL, {
+      width: 160,
+      margin: 4,
+      color: { dark: '#111111', light: '#ffffff' },
+    }).then((url) => {
+      qrDataUrl.value = url
+      return url
+    })
+    // A failed prefetch is reported by capture, not as an unhandled mount error.
+    qrReady.catch(() => {})
+  }
+  return qrReady
+}
+onMounted(() => {
+  prepareQr()
 })
 
-const typeData = computed(() => types[props.type] ?? {
-  nickname: { zh: '', en: '' }, rarity: '', description: { zh: '', en: '' },
-  strengths: { zh: [], en: [] }, cognitiveStack: '', bestMatch: [],
-})
+const typeData = computed(
+  () =>
+    types[props.type] ?? {
+      nickname: { zh: '', en: '' },
+      strengths: { zh: [], en: [] },
+    },
+)
+
+const highlights = computed(
+  () => getReport(props.type, locale.value)?.highlights ?? [],
+)
 
 const theme = computed(() => getShareTheme(props.type))
 const bgStyle = computed(() => theme.value.bgStyle)
 const accent = computed(() => theme.value.accent)
 
 async function capture() {
-  if (qrReady) await qrReady  // ensure QR is rendered before capture
+  try {
+    await prepareQr()
+  } catch (error) {
+    qrReady = null
+    throw error
+  }
+  await nextTick()
+  await document.fonts?.ready
+  await Promise.all(
+    Array.from(cardEl.value.querySelectorAll('img')).map((img) =>
+      img.decode?.(),
+    ),
+  )
+  // Fonts and images can change layout. Reject overflow after they settle so
+  // translations cannot silently produce clipped PNGs.
+  const card = cardEl.value
+  for (const element of card.querySelectorAll(
+    '.sc-body, .sc-desc, .sc-nickname, .sc-strengths, .sc-editorial-note',
+  )) {
+    if (
+      element.scrollHeight > element.clientHeight + 1 ||
+      element.scrollWidth > element.clientWidth + 1
+    ) {
+      throw new Error('Card content does not fit')
+    }
+  }
+  const { default: html2canvas } = await import('html2canvas')
   const canvas = await html2canvas(cardEl.value, {
     scale: 2,
     useCORS: true,
     backgroundColor: null,
+    onclone(_doc, clone) {
+      clone.style.visibility = 'visible'
+      clone.style.zIndex = '0'
+    },
   })
-  const url = canvas.toDataURL('image/png')
-  const a = document.createElement('a')
-  a.href = url
-  a.download = `mbti-${props.type}.png`
-  a.click()
+  return canvas.toDataURL('image/png')
 }
 
 defineExpose({ capture })
@@ -128,17 +168,23 @@ defineExpose({ capture })
   opacity: 0.12;
 }
 .c1 {
-  width: 320px; height: 320px;
-  top: -80px; right: -80px;
+  width: 320px;
+  height: 320px;
+  top: -80px;
+  right: -80px;
 }
 .c2 {
-  width: 200px; height: 200px;
+  width: 200px;
+  height: 200px;
   background: white;
-  bottom: -60px; left: -40px;
+  bottom: -60px;
+  left: -40px;
 }
 .c3 {
-  width: 100px; height: 100px;
-  bottom: 120px; right: 60px;
+  width: 100px;
+  height: 100px;
+  bottom: 120px;
+  right: 60px;
   opacity: 0.08;
 }
 
@@ -169,24 +215,17 @@ defineExpose({ capture })
   font-size: 13px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.45);
+  color: rgba(255, 255, 255, 0.45);
   font-weight: 600;
 }
 .sc-brand {
   font-size: 9px;
   letter-spacing: 1px;
-  color: rgba(255,255,255,0.25);
+  color: rgba(255, 255, 255, 0.25);
 }
-.sc-rarity-pill {
-  font-size: 11px;
-  padding: 4px 14px;
-  border-radius: 20px;
-  background: rgba(255,255,255,0.1);
-  color: rgba(255,255,255,0.6);
-  letter-spacing: 0.5px;
+.sc-hero {
+  margin-bottom: 16px;
 }
-
-.sc-hero { margin-bottom: 16px; }
 .sc-type {
   font-size: 80px;
   font-weight: 900;
@@ -195,7 +234,7 @@ defineExpose({ capture })
 }
 .sc-nickname {
   font-size: 18px;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255, 255, 255, 0.75);
   margin-top: 4px;
   letter-spacing: 0.5px;
 }
@@ -203,42 +242,41 @@ defineExpose({ capture })
 .sc-desc {
   font-size: 12.5px;
   line-height: 1.7;
-  color: rgba(255,255,255,0.55);
-  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 16px;
   flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  overflow-wrap: anywhere;
 }
 
 .sc-strengths {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 .sc-tag {
   font-size: 11px;
   padding: 5px 12px;
   border-radius: 20px;
-  border: 1px solid rgba(255,255,255,0.2);
-  color: rgba(255,255,255,0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
   letter-spacing: 0.3px;
 }
 
-.sc-bottom {
-  display: flex;
-  gap: 32px;
-  margin-bottom: 20px;
+.sc-editorial-note {
+  font-size: 11px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 18px;
+  overflow-wrap: anywhere;
 }
-.sc-stack, .sc-match { display: flex; flex-direction: column; gap: 3px; }
-.sc-stack-label {
-  font-size: 9px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.35);
-}
-.sc-stack-value {
-  font-size: 13px;
+.sc-note-label {
+  display: block;
+  color: #e2c96e;
   font-weight: 700;
-  letter-spacing: 1px;
+  margin-bottom: 4px;
 }
 
 .sc-footer {
@@ -248,12 +286,12 @@ defineExpose({ capture })
 }
 .sc-url-label {
   font-size: 10px;
-  color: rgba(255,255,255,0.25);
+  color: rgba(255, 255, 255, 0.25);
   letter-spacing: 1px;
 }
 .sc-qr {
-  width: 44px;
-  height: 44px;
+  width: 80px;
+  height: 80px;
   border-radius: 4px;
 }
 </style>

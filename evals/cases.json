@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "INTJ.zh",
+      "type": "INTJ",
+      "locale": "zh"
+    },
+    {
+      "id": "INTJ.en",
+      "type": "INTJ",
+      "locale": "en"
+    },
+    {
+      "id": "INTP.zh",
+      "type": "INTP",
+      "locale": "zh"
+    },
+    {
+      "id": "INTP.en",
+      "type": "INTP",
+      "locale": "en"
+    },
+    {
+      "id": "ENTJ.zh",
+      "type": "ENTJ",
+      "locale": "zh"
+    },
+    {
+      "id": "ENTJ.en",
+      "type": "ENTJ",
+      "locale": "en"
+    },
+    {
+      "id": "ENTP.zh",
+      "type": "ENTP",
+      "locale": "zh"
+    },
+    {
+      "id": "ENTP.en",
+      "type": "ENTP",
+      "locale": "en"
+    },
+    {
+      "id": "INFJ.zh",
+      "type": "INFJ",
+      "locale": "zh"
+    },
+    {
+      "id": "INFJ.en",
+      "type": "INFJ",
+      "locale": "en"
+    },
+    {
+      "id": "INFP.zh",
+      "type": "INFP",
+      "locale": "zh"
+    },
+    {
+      "id": "INFP.en",
+      "type": "INFP",
+      "locale": "en"
+    },
+    {
+      "id": "ENFJ.zh",
+      "type": "ENFJ",
+      "locale": "zh"
+    },
+    {
+      "id": "ENFJ.en",
+      "type": "ENFJ",
+      "locale": "en"
+    },
+    {
+      "id": "ENFP.zh",
+      "type": "ENFP",
+      "locale": "zh"
+    },
+    {
+      "id": "ENFP.en",
+      "type": "ENFP",
+      "locale": "en"
+    },
+    {
+      "id": "ISTJ.zh",
+      "type": "ISTJ",
+      "locale": "zh"
+    },
+    {
+      "id": "ISTJ.en",
+      "type": "ISTJ",
+      "locale": "en"
+    },
+    {
+      "id": "ISFJ.zh",
+      "type": "ISFJ",
+      "locale": "zh"
+    },
+    {
+      "id": "ISFJ.en",
+      "type": "ISFJ",
+      "locale": "en"
+    },
+    {
+      "id": "ESTJ.zh",
+      "type": "ESTJ",
+      "locale": "zh"
+    },
+    {
+      "id": "ESTJ.en",
+      "type": "ESTJ",
+      "locale": "en"
+    },
+    {
+      "id": "ESFJ.zh",
+      "type": "ESFJ",
+      "locale": "zh"
+    },
+    {
+      "id": "ESFJ.en",
+      "type": "ESFJ",
+      "locale": "en"
+    },
+    {
+      "id": "ISTP.zh",
+      "type": "ISTP",
+      "locale": "zh"
+    },
+    {
+      "id": "ISTP.en",
+      "type": "ISTP",
+      "locale": "en"
+    },
+    {
+      "id": "ISFP.zh",
+      "type": "ISFP",
+      "locale": "zh"
+    },
+    {
+      "id": "ISFP.en",
+      "type": "ISFP",
+      "locale": "en"
+    },
+    {
+      "id": "ESTP.zh",
+      "type": "ESTP",
+      "locale": "zh"
+    },
+    {
+      "id": "ESTP.en",
+      "type": "ESTP",
+      "locale": "en"
+    },
+    {
+      "id": "ESFP.zh",
+      "type": "ESFP",
+      "locale": "zh"
+    },
+    {
+      "id": "ESFP.en",
+      "type": "ESFP",
+      "locale": "en"
+    }
+  ]
+}

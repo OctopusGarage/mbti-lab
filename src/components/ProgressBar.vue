@@ -1,7 +1,18 @@
 <template>
   <div class="progress-wrap">
-    <div class="progress-label">{{ $t('test.progress', { current: current + 1, total }) }}</div>
-    <div class="progress-track">
+    <div class="progress-label">
+      {{ $t('test.progress', { current: current + 1, total }) }}
+    </div>
+    <div
+      v-if="total > 0"
+      class="progress-track"
+      role="progressbar"
+      :aria-label="$t('test.progressLabel')"
+      :aria-valuenow="current + 1"
+      :aria-valuemin="1"
+      :aria-valuemax="total"
+      :aria-valuetext="$t('test.progress', { current: current + 1, total })"
+    >
       <div class="progress-fill" :style="{ width: pct + '%' }" />
     </div>
   </div>
@@ -10,7 +21,9 @@
 <script setup>
 import { computed } from 'vue'
 const props = defineProps({ current: Number, total: Number })
-const pct = computed(() => Math.round(((props.current + 1) / props.total) * 100))
+const pct = computed(() =>
+  Math.round(((props.current + 1) / props.total) * 100),
+)
 </script>
 
 <style scoped>

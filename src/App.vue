@@ -34,12 +34,25 @@ body {
 
 .og-brand {
   position: fixed;
-  bottom: 10px;
+  bottom: calc(10px + env(safe-area-inset-bottom));
   right: 14px;
   font-size: 11px;
   color: rgba(45, 58, 140, 0.3);
   letter-spacing: 0.3px;
   pointer-events: none;
   z-index: 50;
+}
+
+:where(button, a, textarea, input, summary):focus-visible {
+  outline: 3px solid var(--blue-mid);
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 </style>

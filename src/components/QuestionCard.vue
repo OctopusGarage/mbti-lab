@@ -1,10 +1,10 @@
 <template>
-  <Transition name="fade" mode="out-in">
     <div class="question-card" :key="question.id">
       <div class="options">
         <button
           class="option"
           :class="{ selected: selected === 'a' }"
+          :disabled="disabled" :aria-pressed="selected === 'a'"
           @click="$emit('answer', 'a')"
         >
           <span class="option-letter">A</span>
@@ -14,6 +14,7 @@
         <button
           class="option"
           :class="{ selected: selected === 'b' }"
+          :disabled="disabled" :aria-pressed="selected === 'b'"
           @click="$emit('answer', 'b')"
         >
           <span class="option-letter">B</span>
@@ -21,13 +22,12 @@
         </button>
       </div>
     </div>
-  </Transition>
 </template>
 
 <script setup>
 import { useI18n } from 'vue-i18n'
 const { locale } = useI18n()
-defineProps({ question: Object, selected: String })
+defineProps({ question: Object, selected: String, disabled: Boolean })
 defineEmits(['answer'])
 </script>
 
@@ -85,8 +85,4 @@ defineEmits(['answer'])
   letter-spacing: 1px;
 }
 
-/* transition */
-.fade-enter-active, .fade-leave-active { transition: opacity 0.2s, transform 0.2s; }
-.fade-enter-from { opacity: 0; transform: translateX(20px); }
-.fade-leave-to { opacity: 0; transform: translateX(-20px); }
 </style>
