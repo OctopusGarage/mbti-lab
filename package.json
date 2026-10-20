@@ -7,7 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "test:e2e": "playwright test",
+    "test:e2e:chromium": "playwright test --project=chromium",
+    "test:e2e:install": "playwright install chromium firefox webkit",
+    "test:e2e:ui": "playwright test --ui",
+    "eval:check": "node scripts/eval-check.mjs",
+    "eval:ai": "node scripts/eval-ai.mjs"
   },
   "dependencies": {
     "echarts": "^6.1.0",
@@ -18,9 +24,11 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "@vitejs/plugin-vue": "^5.0.0",
     "@vue/test-utils": "^2.4.0",
     "jsdom": "^24.0.0",
+    "jsqr": "^1.4.0",
     "sharp": "^0.35.4",
     "vite": "^6.4.3",
     "vitest": "^5.0.1"

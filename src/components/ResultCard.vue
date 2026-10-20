@@ -1,83 +1,86 @@
 <template>
-  <div class="result-card">
+  <div v-if="typeData && report" class="result-card">
     <!-- Type reveal -->
     <div class="type-hero">
-      <div class="type-letters">
+      <h1 class="type-letters" tabindex="-1">
         <span
           v-for="(letter, i) in typeLetters"
           :key="i"
           class="type-letter"
           :style="{ animationDelay: i * 0.15 + 's' }"
-        >{{ letter }}</span>
-      </div>
+          >{{ letter }}</span
+        >
+      </h1>
       <div class="type-nickname">{{ typeData.nickname[locale] }}</div>
-      <div class="type-rarity">{{ $t('result.rarity') }} {{ typeData.rarity }}</div>
     </div>
 
-    <!-- Description -->
-    <div class="section cream-section">
-      <h3 class="section-title serif">{{ $t('result.description') }}</h3>
-      <p class="description serif">{{ typeData.description[locale] }}</p>
-    </div>
+    <section class="section cream-section">
+      <h2 class="section-title">{{ $t('report.overview') }}</h2>
+      <ul class="report-highlights">
+        <li v-for="line in report.highlights" :key="line">{{ line }}</li>
+      </ul>
+      <p class="editorial-note">{{ $t('report.editorialNote') }}</p>
+    </section>
 
-    <!-- Visualization -->
-    <div class="section viz-section">
+    <section v-if="percents" class="section viz-section">
+      <h2 class="section-title">{{ $t('report.dimensions') }}</h2>
+      <p class="percent-note">{{ $t('report.percentNote') }}</p>
       <DimensionBars :percents="percents" />
-      <RadarChart :percents="percents" />
-    </div>
-
-    <!-- Details -->
-    <div class="section cream-section">
-      <div class="detail-block">
-        <h4 class="detail-title">{{ $t('result.strengths') }}</h4>
-        <div class="tags">
-          <span v-for="s in typeData.strengths[locale]" :key="s" class="tag">{{ s }}</span>
-        </div>
-      </div>
-      <div class="detail-block">
-        <h4 class="detail-title">{{ $t('result.careers') }}</h4>
-        <div class="tags">
-          <span v-for="c in typeData.careers[locale]" :key="c" class="tag">{{ c }}</span>
-        </div>
-      </div>
-      <div class="detail-block">
-        <h4 class="detail-title">{{ $t('result.famous') }}</h4>
-        <div class="tags">
-          <span v-for="f in typeData.famous" :key="f" class="tag tag-gold">{{ f }}</span>
-        </div>
-      </div>
-      <div class="detail-row">
-        <div class="detail-block half">
-          <h4 class="detail-title">{{ $t('result.bestMatch') }}</h4>
-          <div class="tags">
-            <span v-for="m in typeData.bestMatch" :key="m" class="tag tag-blue">{{ m }}</span>
-          </div>
-        </div>
-        <div class="detail-block half">
-          <h4 class="detail-title">{{ $t('result.cognitiveStack') }}</h4>
-          <div class="cognitive">{{ typeData.cognitiveStack }}</div>
-        </div>
-      </div>
-    </div>
+      <p class="percent-note">{{ $t('report.closeNote') }}</p>
+      <details class="chart-details" @toggle="chartOpen = $event.target.open">
+        <summary>{{ $t('report.showChart') }}</summary>
+        <RadarChart v-if="chartOpen" :percents="percents" />
+        <p class="percent-note">{{ $t('result.radarNote') }}</p>
+      </details>
+    </section>
+    <ReportReader ref="reader" :report="report" />
+    <section class="section cream-section neighbors">
+      <h2 class="section-title">{{ $t('report.neighbors') }}</h2>
+      <p class="percent-note">{{ $t('report.neighborNote') }}</p>
+      <ul>
+        <li v-for="neighbor in neighbors" :key="neighbor.type">
+          <button
+            class="neighbor-type"
+            @click="$emit('neighbor', neighbor.type)"
+          >
+            {{ neighbor.type }} · {{ types[neighbor.type].nickname[locale] }}
+          </button>
+          <p>{{ $t('report.neighborDimensions.' + neighbor.dimension) }}</p>
+        </li>
+      </ul>
+    </section>
   </div>
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, ref, defineAsyncComponent } from 'vue'
 import { useI18n } from 'vue-i18n'
 import DimensionBars from './DimensionBars.vue'
-import RadarChart from './RadarChart.vue'
+import ReportReader from './ReportReader.vue'
+import { getReport, getNeighbors } from '../utils/report.js'
 import { types } from '../data/types.js'
 
+const RadarChart = defineAsyncComponent(() => import('./RadarChart.vue'))
+
+defineEmits(['neighbor'])
+const reader = ref(null)
+defineExpose({ contents: () => reader.value?.contents() })
 const props = defineProps({ type: String, percents: Object })
 const { locale } = useI18n()
 
 const typeData = computed(() => types[props.type])
 const typeLetters = computed(() => props.type?.split('') ?? [])
+const report = computed(() => getReport(props.type, locale.value))
+const chartOpen = ref(false)
+const neighbors = computed(() => getNeighbors(props.type))
 </script>
 
 <style scoped>
-.result-card { display: flex; flex-direction: column; gap: 0; }
+.result-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
 
 /* Hero */
 .type-hero {
@@ -101,15 +104,28 @@ const typeLetters = computed(() => props.type?.split('') ?? [])
   animation: letterReveal 0.4s forwards;
 }
 @keyframes letterReveal {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.type-nickname { font-size: 18px; color: rgba(255,255,255,0.85); margin-bottom: 8px; }
-.type-rarity { font-size: 13px; color: rgba(255,255,255,0.5); letter-spacing: 1px; }
+.type-nickname {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 8px;
+}
 
 /* Sections */
-.section { padding: 28px 24px; }
-.cream-section { background: var(--cream); }
+.section {
+  padding: 28px 24px;
+}
+.cream-section {
+  background: var(--cream);
+}
 
 .section-title {
   font-size: 14px;
@@ -118,47 +134,57 @@ const typeLetters = computed(() => props.type?.split('') ?? [])
   color: var(--gold);
   margin-bottom: 12px;
 }
-.description {
-  font-size: 15px;
-  line-height: 1.85;
-  color: var(--ink);
-}
-.serif { font-family: Georgia, 'Times New Roman', serif; }
-
-/* Viz */
 .viz-section {
   background: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 28px 24px;
 }
 
-/* Details */
-.detail-block { margin-bottom: 20px; }
-.detail-block:last-child { margin-bottom: 0; }
-.detail-title { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
-.tags { display: flex; flex-wrap: wrap; gap: 8px; }
-.tag {
-  padding: 5px 12px;
-  background: white;
-  border: 1px solid var(--cream-border);
-  border-radius: 20px;
-  font-size: 12px;
-  color: var(--ink);
+.report-highlights {
+  padding-left: 22px;
+  line-height: 1.8;
 }
-.tag-gold { background: #fef3d8; border-color: #e8c96e; color: #8a6000; }
-.tag-blue { background: var(--blue-light); border-color: var(--blue-mid); color: var(--blue); font-weight: 700; }
-
-.detail-row { display: flex; gap: 16px; }
-.detail-block.half { flex: 1; }
-
-.cognitive {
-  font-family: 'Courier New', monospace;
+.report-highlights li + li {
+  margin-top: 8px;
+}
+.editorial-note,
+.percent-note {
+  color: var(--ink-light);
   font-size: 13px;
-  color: var(--blue-mid);
-  letter-spacing: 1px;
+  line-height: 1.8;
+  margin-top: 16px;
+}
+.chart-details {
+  margin-top: 20px;
+}
+.chart-details summary {
+  min-height: 44px;
+  padding: 12px 0;
+  cursor: pointer;
+  color: var(--blue);
   font-weight: 600;
+}
+.chart-details .radar-chart {
+  margin: auto;
+}
+.neighbors ul {
+  display: grid;
+  gap: 20px;
+  list-style: none;
+  margin-top: 20px;
+}
+.neighbors li p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 6px;
+}
+.neighbor-type {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--cream-border);
+  background: white;
+  color: var(--blue);
+  border-radius: 12px;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
 }
 </style>

@@ -1,7 +1,9 @@
 {
   "app": {
     "title": "MBTI Lab",
-    "subtitle": "专业人格测试 · 发现真实的自己"
+    "subtitle": "专业人格测试 · 发现真实的自己",
+    "switchToEnglish": "切换到英文",
+    "switchToChinese": "切换到中文"
   },
   "home": {
     "startShort": "精简版 · 60 题",
@@ -10,17 +12,38 @@
     "fullDesc": "约 20–25 分钟",
     "viewLastResult": "查看上次结果 →",
     "lastResultLabel": "上次测试结果：",
-    "browseTypes": "📖 查看 16 种人格附录"
+    "browseTypes": "📖 查看 16 种人格附录",
+    "resume": "继续答题 · 第 {current} / {total} 题",
+    "restartConfirm": "重新开始将替换尚未完成的答题进度，是否继续？",
+    "completedAt": "完成于",
+    "unknownDate": "完成时间未知",
+    "resultSaved": "已保存在当前浏览器"
   },
   "test": {
     "progress": "第 {current} / {total} 题",
     "prev": "← 上一题",
-    "or": "或"
+    "or": "或",
+    "invalidDraft": "已保存的进度无法恢复，请重新开始。",
+    "storageWarning": "当前浏览器无法保存进度，刷新或关闭页面后可能丢失。",
+    "finishError": "暂时无法生成结果，答案仍保留，请重试。",
+    "progressLabel": "答题进度",
+    "exit": "返回首页",
+    "saved": "进度已保存在当前浏览器，可返回首页后继续。"
   },
   "types": {
     "backHome": "返回首页",
     "title": "16 种人格类型",
-    "backToList": "返回列表"
+    "backToList": "返回列表",
+    "search": "搜索人格类型",
+    "searchHint": "输入类型代码或中英昵称",
+    "noMatches": "没有找到匹配的类型。",
+    "invalidType": "此类型链接无效，请从列表中选择。",
+    "groups": {
+      "Analysts": "分析型",
+      "Diplomats": "理想型",
+      "Sentinels": "守护型",
+      "Explorers": "探索型"
+    }
   },
   "result": {
     "yourType": "你的人格类型",
@@ -36,11 +59,25 @@
     "notFound": "暂无测试结果。",
     "backHome": "← 返回首页",
     "dimLabel": {
-      "EI": ["外向 E", "内向 I"],
-      "NS": ["直觉 N", "感知 S"],
-      "FT": ["情感 F", "思维 T"],
-      "JP": ["判断 J", "随性 P"]
-    }
+      "EI": [
+        "外向 E",
+        "内向 I"
+      ],
+      "NS": [
+        "直觉 N",
+        "感知 S"
+      ],
+      "FT": [
+        "情感 F",
+        "思维 T"
+      ],
+      "JP": [
+        "判断 J",
+        "随性 P"
+      ]
+    },
+    "unsaved": "本次结果仍可查看，但未能保存在当前浏览器中。",
+    "radarNote": "雷达图表示 E、N、F、J 的答题比例，不代表能力或准确率。"
   },
   "share": {
     "shareResult": "分享我的结果",
@@ -49,8 +86,49 @@
     "saveImage": "保存图片",
     "copyLink": "复制链接",
     "copied": "已复制 ✓",
-    "xTextResult": "我的 MBTI 是 {type}！快来测测你的性格 👉 https://octopusgarage.github.io/mbti-lab",
-    "xTextApp": "推荐一个很有趣的 MBTI 性格测试，快来试试！👉 https://octopusgarage.github.io/mbti-lab",
-    "scanLabel": "扫码测测你的"
+    "xTextResult": "我的 MBTI 是 {type}！快来测测你的性格 👉 {url}",
+    "xTextApp": "推荐一个很有趣的 MBTI 性格测试，快来试试！👉 {url}",
+    "scanLabel": "扫码测测你的",
+    "retry": "重试",
+    "generating": "正在生成图片…",
+    "imageError": "图片生成失败，请重试。",
+    "download": "下载图片",
+    "imageHint": "请先预览，再下载或长按图片保存。",
+    "copyFallback": "复制失败，请选中下方链接手动复制。",
+    "close": "关闭",
+    "copyResult": "复制结果文案",
+    "captionPreview": "即将分享的文案",
+    "shareType": "分享类型介绍",
+    "xTextType": "来读读 {type} 的人格类型介绍 👉 {url}"
+  },
+  "report": {
+    "overview": "三个观察重点",
+    "contents": "阅读目录",
+    "dimensions": "本次答题倾向",
+    "showChart": "展开雷达图",
+    "percentNote": "百分比来自本次答案的分布，不是能力得分、准确率或人群百分位。",
+    "closeNote": "45%–55% 在这里作为“两侧接近”的展示约定，不是统计置信区间；它不会改变原有计分或类型。",
+    "editorialNote": "以下是按类型编写的生活示例和反思提示，不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测。保留有共鸣的部分即可。",
+    "cardLabel": "自我探索",
+    "cardNote": "把有共鸣的提示带回生活中验证，不必把自己固定在类型标签里。",
+    "sections": {
+      "core": "核心视角",
+      "daily": "日常相处",
+      "friendship": "朋友之间",
+      "close": "亲近关系",
+      "work": "学习与工作",
+      "blindspots": "优势与盲点",
+      "growth": "可以尝试的行动"
+    },
+    "actions": "报告操作",
+    "neighbors": "也可以读读相邻类型",
+    "neighborNote": "以下类型各有一个字母不同，可帮助比较不同描述；它们不是次高得分、最佳配对或重新判定的结果。",
+    "neighborDimensions": {
+      "EI": "表达与独处：比较在互动中思考和先留出整理时间。",
+      "NS": "理解信息：比较关注可能性与关注具体经历。",
+      "FT": "面对分歧：比较对人的影响与方案的依据，两者都值得考虑。",
+      "JP": "安排事情：比较明确约定与保留调整空间。"
+    },
+    "closeLabel": "两侧接近"
   }
 }

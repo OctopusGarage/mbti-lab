@@ -11,6 +11,9 @@
       </div>
       <div class="dim-pcts">
         <span>{{ firstPct(key, dim) }}%</span>
+        <span v-if="closeDimensions[key]" class="close-label">{{
+          $t('report.closeLabel')
+        }}</span>
         <span>{{ secondPct(key, dim) }}%</span>
       </div>
     </div>
@@ -20,32 +23,55 @@
 <script setup>
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { interpretDimensions } from '../utils/dimensions.js'
 
 const props = defineProps({ percents: Object })
-const { t } = useI18n()
+const { tm } = useI18n()
 
-const labels = computed(() => t('result.dimLabel'))
+const labels = computed(() => tm('result.dimLabel'))
+const closeDimensions = computed(() =>
+  Object.fromEntries(
+    interpretDimensions(props.percents).map((note) => [note.key, note.close]),
+  ),
+)
 
 const FIRST = { EI: 'E', NS: 'N', FT: 'F', JP: 'J' }
 const SECOND = { EI: 'I', NS: 'S', FT: 'T', JP: 'P' }
 
-function firstPct(key, dim) { return dim[FIRST[key]] }
-function secondPct(key, dim) { return dim[SECOND[key]] }
+function firstPct(key, dim) {
+  return dim[FIRST[key]]
+}
+function secondPct(key, dim) {
+  return dim[SECOND[key]]
+}
 </script>
 
 <style scoped>
-.dim-bars { display: flex; flex-direction: column; gap: 18px; }
+.dim-bars {
+  display: flex;
+  flex: 1 1 260px;
+  min-width: 0;
+  flex-direction: column;
+  gap: 18px;
+}
 
-.dim-row { display: flex; flex-direction: column; gap: 6px; }
+.dim-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
 
 .dim-labels {
   display: flex;
   justify-content: space-between;
+  gap: 12px;
   font-size: 12px;
   color: var(--ink-light);
   font-weight: 500;
 }
-.dim-label.right { text-align: right; }
+.dim-label.right {
+  text-align: right;
+}
 
 .bar-track {
   height: 8px;
@@ -70,7 +96,17 @@ function secondPct(key, dim) { return dim[SECOND[key]] }
   transform: translateX(-50%);
 }
 
+.close-label {
+  color: var(--ink-light);
+  background: var(--cream);
+  padding: 2px 8px;
+  border-radius: 10px;
+  text-align: center;
+}
+
 .dim-pcts {
+  align-items: center;
+  gap: 8px;
   display: flex;
   justify-content: space-between;
   font-size: 11px;

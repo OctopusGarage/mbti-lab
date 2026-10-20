@@ -12,9 +12,9 @@ let wrapper
 beforeEach(() => {
   const stored = new Map()
   vi.stubGlobal('localStorage', {
-    getItem: key => stored.get(key) ?? null,
+    getItem: (key) => stored.get(key) ?? null,
     setItem: (key, value) => stored.set(key, String(value)),
-    removeItem: key => stored.delete(key),
+    removeItem: (key) => stored.delete(key),
     clear: () => stored.clear(),
   })
   sessionStorage.clear()
@@ -87,10 +87,18 @@ describe('ResultView empty state', () => {
   })
 
   it('does not render the empty state when a valid result exists', async () => {
-    sessionStorage.setItem('mbti_result', JSON.stringify({
-      type: 'INFJ',
-      percents: { EI: { E: 30, I: 70 }, NS: { N: 65, S: 35 }, FT: { F: 60, T: 40 }, JP: { J: 55, P: 45 } },
-    }))
+    sessionStorage.setItem(
+      'mbti_result',
+      JSON.stringify({
+        type: 'INFJ',
+        percents: {
+          EI: { E: 30, I: 70 },
+          NS: { N: 65, S: 35 },
+          FT: { F: 60, T: 40 },
+          JP: { J: 55, P: 45 },
+        },
+      }),
+    )
     await mountView('zh', { stubs: { ResultCard: true, ShareCard: true } })
 
     expect(wrapper.find('.no-result').exists()).toBe(false)
@@ -98,10 +106,18 @@ describe('ResultView empty state', () => {
   })
 
   it('renders the empty state for a corrupted session entry instead of crashing ResultCard', async () => {
-    sessionStorage.setItem('mbti_result', JSON.stringify({
-      type: 'XNFJ', // invalid letter for position 1
-      percents: { EI: { E: 30, I: 70 }, NS: { N: 65, S: 35 }, FT: { F: 60, T: 40 }, JP: { J: 55, P: 45 } },
-    }))
+    sessionStorage.setItem(
+      'mbti_result',
+      JSON.stringify({
+        type: 'XNFJ', // invalid letter for position 1
+        percents: {
+          EI: { E: 30, I: 70 },
+          NS: { N: 65, S: 35 },
+          FT: { F: 60, T: 40 },
+          JP: { J: 55, P: 45 },
+        },
+      }),
+    )
     await mountView('zh', { stubs: { ResultCard: true, ShareCard: true } })
 
     expect(wrapper.find('.no-result').exists()).toBe(true)
@@ -112,3 +128,44 @@ describe('ResultView empty state', () => {
 function linkHref(wrapper) {
   return wrapper.find('.no-result a').attributes('href')
 }
+
+it('retains the result on capture failure and offers a retry', async () => {
+  sessionStorage.setItem(
+    'mbti_result',
+    JSON.stringify({
+      type: 'INFJ',
+      percents: {
+        EI: { E: 30, I: 70 },
+        NS: { N: 65, S: 35 },
+        FT: { F: 60, T: 40 },
+        JP: { J: 55, P: 45 },
+      },
+    }),
+  )
+  const capture = vi
+    .fn()
+    .mockRejectedValueOnce(Error('canvas failed'))
+    .mockResolvedValue('data:image/png;base64,EXPORT')
+  await mountView('en', {
+    stubs: {
+      ResultCard: true,
+      SharePanel: {
+        template:
+          '<button class="save-test" @click="onSaveImage()">save</button>',
+        props: ['onSaveImage'],
+      },
+      ShareCard: { template: '<div/>', methods: { capture } },
+    },
+  })
+  await wrapper.find('.btn-share').trigger('click')
+  await wrapper.find('.save-test').trigger('click')
+  const { flushPromises } = await import('@vue/test-utils')
+  await flushPromises()
+  expect(wrapper.find('[role="alert"]').text()).toContain('Could not generate')
+  expect(wrapper.find('.no-result').exists()).toBe(false)
+  await wrapper.find('.retry-export').trigger('click')
+  await flushPromises()
+  expect(wrapper.find('.export-preview img').attributes('src')).toBe(
+    'data:image/png;base64,EXPORT',
+  )
+})

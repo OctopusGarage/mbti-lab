@@ -1,0 +1,2718 @@
+{
+  "schemaVersion": 1,
+  "evaluatedAt": "2026-10-20T05:36:03.646Z",
+  "provenance": {
+    "method": "codex-agent-review",
+    "evaluator": "Codex agent /root/ai_evals, editorial assessment during the implementation session",
+    "model": null,
+    "limitations": [
+      "Actual AI-authored reading and judgment of all 32 cases, not an external API run or deterministic keyword score. Exact underlying model identifier is unavailable.",
+      "A single evaluator wrote this judgment and the validation tooling; this is not a blinded assessment, a human expert review or independent external replication.",
+      "Scores concern editorial safety, bilingual fidelity, differentiation and actionability only. They do not validate MBTI psychometrics, diagnose individuals or certify predictive accuracy.",
+      "Case input includes report output, first four visible share strength tags, and report/share framing. Unrendered legacy biographies, rarity, celebrity typings and match metadata are not certified; UI rendering is tested separately.",
+      "The deterministic gate verifies current input hashes, complete coverage, schema and literal evidence. It cannot prove semantic correctness or that a future evaluator actually read every passage."
+    ]
+  },
+  "sourceHashes": {
+    "src/data/reportContent.js": "283c8eef4d53e1124ac460618000cff49722cb734976c70e7a7cd27d3169ee10",
+    "src/utils/report.js": "44b8df9b3724aeb16d22ccc0f8f9d090940d3943b092259de344df3ff5c91473",
+    "src/utils/dimensions.js": "8620162afd15f50c6193e3f7cb297f6310465205d207721802058f199e95daea",
+    "src/data/types.js": "52cec301b880e774700ef2544b27b2fe26ca5615f9f3cc13c2e28fc7c87f1f19",
+    "src/locales/zh.json": "9e4ef20576f771e0b2f576f8f9158bb7449ef4460fe0a0e5e2acf38859fea980",
+    "src/locales/en.json": "34514eed386477610dd89bd2149feb3542885d6b0957ad454460868f443debd0",
+    "evals/rubric.json": "aec7e2d78867a7681979c4b839e399a32780e6bd2b9808b966198baadc55e525",
+    "evals/cases.json": "bcb10e93e7ad5d755197237fbe78a4a147166c643fe4f59f954b1f99af3db608",
+    "evals/judgment.schema.json": "e854dd7b2d1d6a900fb89a46ecdfd210c260e2386ae52ee42b59ad888d475aa7",
+    "evals/response.schema.json": "6658c8933d12d122971d3aa7bf164030790950ea26879a775a0b1a86f72b2888"
+  },
+  "results": [
+    {
+      "id": "INTJ.zh",
+      "reportHash": "96e7102d79ce50ae7bc3278383bcb66deead194dc56722abc6896842dbd22dd8",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "核心明确否认预测未来与把生活项目化，亲近关系要求双方协商，盲点提醒压力和信息不足。分享卡的“分析力强”仍是概括性优势标签，宜与自我探索说明一起理解。",
+          "evidence": [
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "面对一件还没开始的事，你可能先问它最终要解决什么，再决定投入多少精力。朋友提议旅行，你关注的往往不是立刻订哪家酒店，而是这次大家想休息、见面还是探索新地方。你喜欢让选择有方向，也愿意独立检查别人的建议。这样的描述适合用来观察你的决策起点，不"
+            },
+            {
+              "caseId": "INTJ.zh",
+              "path": "framing.editorialNote",
+              "quote": "以下是按类型编写的生活示例和反思提示，不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测。保留有共鸣的部分即可。"
+            },
+            {
+              "caseId": "INTJ.zh",
+              "path": "framing.cardNote",
+              "quote": "把有共鸣的提示带回生活中验证，不必把自己固定在类型标签里。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "七节与三项行动的主要意图对应，20分钟小验证和先问倾听需求均保留。英文省略日常购物减少重复决定、亲近关系也问当下感受的细节，属于不逆转建议的压缩。",
+          "evidence": [
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "面对一件还没开始的事，你可能先问它最终要解决什么，再决定投入多少精力。朋友提议旅行，你关注的往往不是立刻订哪家酒店，而是这次大家想休息、见面还是探索新地方。你喜欢让选择有方向，也愿意独立检查别人的建议。这样的描述适合用来观察你的决策起点，不"
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "Before starting, you may ask what the activity is meant to accomplish. A trip raises the question of rest, connection or"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "与INTP先定义“最好”的条件、核查推理不同，本篇从旅行目标、长线方向与使决策依据可见切入。目标与知识框架并非仅是通用的友善沟通建议。",
+          "evidence": [
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "面对一件还没开始的事，你可能先问它最终要解决什么，再决定投入多少精力。朋友提议旅行，你关注的往往不是立刻订哪家酒店，而是这次大家想休息、见面还是探索新地方。你喜欢让选择有方向，也愿意独立检查别人的建议。这样的描述适合用来观察你的决策起点，不"
+            },
+            {
+              "caseId": "INTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能对一个问题为什么成立，比对尽快选出答案更感兴趣。朋友问哪家餐厅最好，你会想知道“最好”是价格、口味还是安静程度，也可能顺手想到例外。你喜欢把概念和条件拆开，看看推理是否连得上。这是一种理解问题的习惯，不代表你的结论总比别人准确；生活中"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "三项行动分别给出20分钟小版本、方案前确认倾听需求、分享一条依据并询问遗漏条件，范围小且有可直接使用的话术，与长期规划和协作段落呼应。",
+          "evidence": [
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.actions.0.step",
+              "quote": "用20分钟做一个可验证的小版本，只检查一个假设。"
+            },
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.actions.1.step",
+              "quote": "在给出方案前确认这次对话的需要。"
+            },
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.actions.2.step",
+              "quote": "写出一条判断依据，再请对方补充遗漏条件。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "English compresses a few everyday and present-feeling examples; no reversal of consent or practical advice. Share strength tags are general reflections, not measured abilities."
+      ]
+    },
+    {
+      "id": "INTJ.en",
+      "reportHash": "48d5ff81107ec874d2f8d06bab16ebd666d6b5bdaf7f7afcfc4db7369e195df1",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The core explicitly rejects future prediction and the close section requires mutual negotiation. Stress and evidence qualify blind spots. The share tag Sharp analysis remains an aspirational generalization under the reflection framing.",
+          "evidence": [
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "Before starting, you may ask what the activity is meant to accomplish. A trip raises the question of rest, connection or"
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "framing.editorialNote",
+              "quote": "These are type-based examples and reflection prompts, not individual facts detected from your answers or predictions abo"
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "framing.cardNote",
+              "quote": "Use these prompts to reflect on real situations, beyond a type label."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The twenty-minute trial and listening-versus-analysis invitation align. English compresses the shopping example and the explicit request to ask about present feelings; the overall collaborative planning and reconnection advice survives.",
+          "evidence": [
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "Before starting, you may ask what the activity is meant to accomplish. A trip raises the question of rest, connection or"
+            },
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "面对一件还没开始的事，你可能先问它最终要解决什么，再决定投入多少精力。朋友提议旅行，你关注的往往不是立刻订哪家酒店，而是这次大家想休息、见面还是探索新地方。你喜欢让选择有方向，也愿意独立检查别人的建议。这样的描述适合用来观察你的决策起点，不"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "INTJ starts with purpose and direction before route selection, whereas INTP starts by defining restaurant criteria and testing premises. Making a strategic route visible and testing one assumption gives the two reports distinct editorial centers.",
+          "evidence": [
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "Before starting, you may ask what the activity is meant to accomplish. A trip raises the question of rest, connection or"
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may enjoy understanding why a question works more than choosing an answer quickly. Asked for the best restaurant, yo"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All three actions have a recognizable trigger and usable phrase: a twenty-minute test, asking what support a friend wants, and sharing one reason before asking about missing constraints. They are feasible and preserve the other person’s choice.",
+          "evidence": [
+            {
+              "caseId": "INTJ.en",
+              "path": "report.actions.0.step",
+              "quote": "Spend twenty minutes testing one assumption in a small version."
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.actions.1.step",
+              "quote": "Ask what support they want before offering a solution."
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.actions.2.step",
+              "quote": "Share one reason and ask about missing constraints."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "English compresses a few everyday and present-feeling examples; no reversal of consent or practical advice. Share strength tags are general reflections, not measured abilities."
+      ]
+    },
+    {
+      "id": "INTP.zh",
+      "reportHash": "dbf79d00760115d1169cbae87bb02f3dfb5126142b1f8e71f343b4866103af89",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "核心否认结论优越，盲点同时考虑资源与任务边界，没有把拖延诊断为类型缺陷。分享卡“逻辑严密”等仍是笼统优势，但正文对不愿思考的判断有明确修正。",
+          "evidence": [
+            {
+              "caseId": "INTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能对一个问题为什么成立，比对尽快选出答案更感兴趣。朋友问哪家餐厅最好，你会想知道“最好”是价格、口味还是安静程度，也可能顺手想到例外。你喜欢把概念和条件拆开，看看推理是否连得上。这是一种理解问题的习惯，不代表你的结论总比别人准确；生活中"
+            },
+            {
+              "caseId": "INTP.zh",
+              "path": "framing.editorialNote",
+              "quote": "以下是按类型编写的生活示例和反思提示，不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测。保留有共鸣的部分即可。"
+            },
+            {
+              "caseId": "INTP.zh",
+              "path": "framing.cardNote",
+              "quote": "把有共鸣的提示带回生活中验证，不必把自己固定在类型标签里。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "主要结构与三项行动相符，两个必需条件、日常例子和半小时后主动联系均保留。英文亲近段的“access to a loved one’s inner world”比中文“坦诚谈论”略强，仍由双方空间与沟通约定约束。",
+          "evidence": [
+            {
+              "caseId": "INTP.zh",
+              "path": "report.sections.3.text",
+              "quote": "你可能希望亲近关系允许各自保留思考空间，也能坦诚谈论不容易说出口的想法。独处没有说明时容易像失联，随时回应的要求又可能让你难以集中。把暂时离开和长期回避分开，约好具体回来联系的时间。讨论需求时，允许自己的感受先有一个不完整版本；只有完全解释"
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.3.text",
+              "quote": "You may want both uninterrupted thinking and honest access to a loved one’s inner world. Unexplained solitude can feel l"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "INTP围绕前提、解释分支与停止研究条件展开；INTJ围绕目标、路线与验证长计划展开。餐厅标准和电影世界规则的例子让概念探索区别于方向规划。",
+          "evidence": [
+            {
+              "caseId": "INTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能对一个问题为什么成立，比对尽快选出答案更感兴趣。朋友问哪家餐厅最好，你会想知道“最好”是价格、口味还是安静程度，也可能顺手想到例外。你喜欢把概念和条件拆开，看看推理是否连得上。这是一种理解问题的习惯，不代表你的结论总比别人准确；生活中"
+            },
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "面对一件还没开始的事，你可能先问它最终要解决什么，再决定投入多少精力。朋友提议旅行，你关注的往往不是立刻订哪家酒店，而是这次大家想休息、见面还是探索新地方。你喜欢让选择有方向，也愿意独立检查别人的建议。这样的描述适合用来观察你的决策起点，不"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "两个必需条件之后试一个可逆方案、用日常例子解释以及半小时后回来联系，均包含可观察的行为和短句，没有要求先解决全部理论或情绪。",
+          "evidence": [
+            {
+              "caseId": "INTP.zh",
+              "path": "report.actions.0.step",
+              "quote": "列出两个必需条件，满足后选一个可逆方案。"
+            },
+            {
+              "caseId": "INTP.zh",
+              "path": "report.actions.1.step",
+              "quote": "先讲一个日常例子，再问要不要展开推理。"
+            },
+            {
+              "caseId": "INTP.zh",
+              "path": "report.actions.2.step",
+              "quote": "给独处一个结束时间，并主动联系。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The English phrase about access to a loved one’s inner world could be softened to honest conversation; surrounding boundary language prevents a material reversal."
+      ]
+    },
+    {
+      "id": "INTP.en",
+      "reportHash": "eb6597ad4d1fe1f478182f65baf974083909499a587a59a83a88ca7878b579f3",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report rejects guaranteed superior conclusions, considers scope and resources behind delays, and discourages assuming a listener cannot think. Logical rigor on the share card is a general strength label rather than evidence of tested ability.",
+          "evidence": [
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may enjoy understanding why a question works more than choosing an answer quickly. Asked for the best restaurant, yo"
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "framing.editorialNote",
+              "quote": "These are type-based examples and reflection prompts, not individual facts detected from your answers or predictions abo"
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "framing.cardNote",
+              "quote": "Use these prompts to reflect on real situations, beyond a type label."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The two essential criteria, everyday example and timed reconnection actions match. “Honest access to a loved one’s inner world” sounds more entitled than the Chinese wish for honest conversation, though the surrounding autonomy and agreement language limits the drift.",
+          "evidence": [
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.3.text",
+              "quote": "You may want both uninterrupted thinking and honest access to a loved one’s inner world. Unexplained solitude can feel l"
+            },
+            {
+              "caseId": "INTP.zh",
+              "path": "report.sections.3.text",
+              "quote": "你可能希望亲近关系允许各自保留思考空间，也能坦诚谈论不容易说出口的想法。独处没有说明时容易像失联，随时回应的要求又可能让你难以集中。把暂时离开和长期回避分开，约好具体回来联系的时间。讨论需求时，允许自己的感受先有一个不完整版本；只有完全解释"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "INTP examines what makes a restaurant best and follows explanatory branches, while INTJ identifies an activity’s purpose and plans a route. A stopping condition for research is more specific than the neighbor’s strategic small experiment.",
+          "evidence": [
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may enjoy understanding why a question works more than choosing an answer quickly. Asked for the best restaurant, yo"
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "Before starting, you may ask what the activity is meant to accomplish. A trip raises the question of rest, connection or"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The actions limit research with two criteria, offer an everyday example before more reasoning, and put an end time on quiet. Each supplies a clear situation and a phrase that can be used without completing an elaborate analysis.",
+          "evidence": [
+            {
+              "caseId": "INTP.en",
+              "path": "report.actions.0.step",
+              "quote": "Choose two essential criteria, then test a reversible option."
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.actions.1.step",
+              "quote": "Start with one everyday example and offer more detail."
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.actions.2.step",
+              "quote": "Give the break an end time and reconnect yourself."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The English phrase about access to a loved one’s inner world could be softened to honest conversation; surrounding boundary language prevents a material reversal."
+      ]
+    },
+    {
+      "id": "ENTJ.zh",
+      "reportHash": "e95aa9ea1c896524dba6ab95250addc33f3829d61f51fa03f54aaf61c0ffb37d",
+      "criteria": {
+        "editorialSafety": {
+          "score": 5,
+          "rationale": "正文反复区分推进与接管，指出沉默并非同意，支持需要许可，并将疲劳与资源不足纳入解释。配合反思说明，领导力标签没有被展开成个人能力保证。",
+          "evidence": [
+            {
+              "caseId": "ENTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能习惯把愿望转成目标，再寻找能推动它的人和资源。朋友说想一起旅行，你很快想到预算、日期和谁负责订票；讨论一个问题，你想知道接下来能做什么。推进是你的关注点，但它不等于掌控一切或总是适合带领别人。有些交流只是一起想象，有些情绪还没有准备好"
+            },
+            {
+              "caseId": "ENTJ.zh",
+              "path": "framing.editorialNote",
+              "quote": "以下是按类型编写的生活示例和反思提示，不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测。保留有共鸣的部分即可。"
+            },
+            {
+              "caseId": "ENTJ.zh",
+              "path": "framing.cardNote",
+              "quote": "把有共鸣的提示带回生活中验证，不必把自己固定在类型标签里。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "中英文都保留目标资源、讨论前留提问时间、支持范围和重新分工的主线。英文对焦虑等情绪词有压缩，但保留不强求立即回答、休息及重新分配责任的实际建议。",
+          "evidence": [
+            {
+              "caseId": "ENTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能习惯把愿望转成目标，再寻找能推动它的人和资源。朋友说想一起旅行，你很快想到预算、日期和谁负责订票；讨论一个问题，你想知道接下来能做什么。推进是你的关注点，但它不等于掌控一切或总是适合带领别人。有些交流只是一起想象，有些情绪还没有准备好"
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may turn a wish into a goal and look for resources to move it forward. A trip becomes dates, budget and responsibili"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ENTJ从愿望转成目标和组织资源出发，ESTJ从责任、可执行规则与已知标准出发。前者特别建议保留暂时看不到产出的学习时间，区别于后者让流程和方法可调整。",
+          "evidence": [
+            {
+              "caseId": "ENTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能习惯把愿望转成目标，再寻找能推动它的人和资源。朋友说想一起旅行，你很快想到预算、日期和谁负责订票；讨论一个问题，你想知道接下来能做什么。推进是你的关注点，但它不等于掌控一切或总是适合带领别人。有些交流只是一起想象，有些情绪还没有准备好"
+            },
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先关注事情怎样组织、责任是否清楚，以及有没有可执行的规则。朋友提议旅行，你会快速问出发时间、预算和分工，希望大家不用一直猜。现实条件和明确约定帮助你推进，但不代表每个场合都需要统一流程。类型描述可以用来观察你的习惯，不能证明你总有正确"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "讨论前每人一个顾虑、接手朋友困难前问支持边界、挑一项任务重新分配，均明确触发场景与下一步，尤其避免把协作建议变成更多个人加班。",
+          "evidence": [
+            {
+              "caseId": "ENTJ.zh",
+              "path": "report.actions.0.step",
+              "quote": "先让每人说一个顾虑，再整理可选决定。"
+            },
+            {
+              "caseId": "ENTJ.zh",
+              "path": "report.actions.1.step",
+              "quote": "询问支持范围，只承担被欢迎的部分。"
+            },
+            {
+              "caseId": "ENTJ.zh",
+              "path": "report.actions.2.step",
+              "quote": "列出一件应重新分配的任务，约定负责人。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "No material issue found within the editorial scope; this is not evidence of leadership aptitude or psychometric validity."
+      ]
+    },
+    {
+      "id": "ENTJ.en",
+      "reportHash": "cecf2c442b2479bb900ab8cc1222392fe1a14c874cc186b3beba45e07efbdcb4",
+      "criteria": {
+        "editorialSafety": {
+          "score": 5,
+          "rationale": "Momentum is repeatedly bounded by consent, silence is distinguished from agreement, and fatigue is treated as a constraint rather than weak willpower. Reflection framing prevents leadership tags from functioning as guaranteed individual predictions.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may turn a wish into a goal and look for resources to move it forward. A trip becomes dates, budget and responsibili"
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "framing.editorialNote",
+              "quote": "These are type-based examples and reflection prompts, not individual facts detected from your answers or predictions abo"
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "framing.cardNote",
+              "quote": "Use these prompts to reflect on real situations, beyond a type label."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Both versions preserve goals and resources, a question period, permission before help, and redistributed workload. Compression does not drop the practical distinctions between wanting resolution and demanding an immediate answer, or between willpower and capacity.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may turn a wish into a goal and look for resources to move it forward. A trip becomes dates, budget and responsibili"
+            },
+            {
+              "caseId": "ENTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能习惯把愿望转成目标，再寻找能推动它的人和资源。朋友说想一起旅行，你很快想到预算、日期和谁负责订票；讨论一个问题，你想知道接下来能做什么。推进是你的关注点，但它不等于掌控一切或总是适合带领别人。有些交流只是一起想象，有些情绪还没有准备好"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ENTJ turns wishes into goals and assembles resources; ESTJ first seeks responsibility and usable rules. Low-pressure learning outside the original goal is a distinct counterweight to ENTJ momentum, while ESTJ focuses on revisable process.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may turn a wish into a goal and look for resources to move it forward. A trip becomes dates, budget and responsibili"
+            },
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice organization, responsibility and usable rules first. A trip prompts dates, budget and ownership so people"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Hear one concern per participant, ask how far help should go, and choose one task to redistribute with ownership. These are observable moves with realistic phrases and directly address premature closure, takeover and overload.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.actions.0.step",
+              "quote": "Hear one concern from each person before summarizing choices."
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.actions.1.step",
+              "quote": "Ask what involvement they welcome."
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.actions.2.step",
+              "quote": "Choose one task to redistribute with clear ownership."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "No material issue found within the editorial scope; this is not evidence of leadership aptitude or psychometric validity."
+      ]
+    },
+    {
+      "id": "ENTP.zh",
+      "reportHash": "ae8e2755ec409e4300cf5270a9989772f21bfe098bcf68d0ddff13578afbb475",
+      "criteria": {
+        "editorialSafety": {
+          "score": 5,
+          "rationale": "辩论与受伤经历明确区分，先确认影响而非要求对方举证；收尾属于自己的责任，改变计划需要协商。没有把机敏或质疑写成免于承担后果的许可。",
+          "evidence": [
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先看一件事还能怎样做，再决定是否接受现成答案。朋友提议固定路线，你会想到另一条更有趣的走法；讨论规则时，你也许想知道它在特殊情况下是否仍成立。新角度和试探让你保持投入，但这不等于必须反对所有共识。辨别值得重新打开的问题和已经足够好用的"
+            },
+            {
+              "caseId": "ENTP.zh",
+              "path": "framing.editorialNote",
+              "quote": "以下是按类型编写的生活示例和反思提示，不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测。保留有共鸣的部分即可。"
+            },
+            {
+              "caseId": "ENTP.zh",
+              "path": "framing.cardNote",
+              "quote": "把有共鸣的提示带回生活中验证，不必把自己固定在类型标签里。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "脑洞与承诺、个人经历与辩题、每轮一个实验及保留集合时间的区别在两种语言中一致；三项话术也保留先确认理解、再谈其他视角的顺序。",
+          "evidence": [
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先看一件事还能怎样做，再决定是否接受现成答案。朋友提议固定路线，你会想到另一条更有趣的走法；讨论规则时，你也许想知道它在特殊情况下是否仍成立。新角度和试探让你保持投入，但这不等于必须反对所有共识。辨别值得重新打开的问题和已经足够好用的"
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may first ask how else something could be done. A fixed route suggests alternatives; a rule invites a test case. Fre"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "与ENFP围绕热情、连接和容量不同，ENTP聚焦替代解释、测试规则与辩论时机。区分“可反驳的细节”与需要先被理解的处境，形成清楚的内容差异。",
+          "evidence": [
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先看一件事还能怎样做，再决定是否接受现成答案。朋友提议固定路线，你会想到另一条更有趣的走法；讨论规则时，你也许想知道它在特殊情况下是否仍成立。新角度和试探让你保持投入，但这不等于必须反对所有共识。辨别值得重新打开的问题和已经足够好用的"
+            },
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先感受一件事带来什么可能，以及它怎样连接自己在乎的人和想法。朋友提起旅行，你容易想到新的体验、途中会遇见谁，或这次能留下什么故事。兴趣和连接能带动投入，但不意味着你总要热情或必须让每个选择特别。这个类型提供一种观察视角，真实状态仍会受"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "30分钟只测一个方向、复述受伤影响并确认理解、保留集合时间再协商路线，均可直接操作，并把创新与稳定承诺同时保留。",
+          "evidence": [
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.actions.0.step",
+              "quote": "只选一个做30分钟实验，其余放进清单。"
+            },
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.actions.1.step",
+              "quote": "先复述影响，再询问是否讨论其他视角。"
+            },
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.actions.2.step",
+              "quote": "保留一个已经确认的承诺再协商变化。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "No material defect found; shared trip and friendship settings still support a distinct emphasis on alternatives and debate boundaries."
+      ]
+    },
+    {
+      "id": "ENTP.en",
+      "reportHash": "8fd60d2a5a8865c0985b54627600bf9091f0bd1dcc5eca3dd78f38a54f057807",
+      "criteria": {
+        "editorialSafety": {
+          "score": 5,
+          "rationale": "Painful personal accounts are distinguished from debate, responsibilities are explicitly owned, and changed plans need negotiation. The report does not reward argument at another person’s expense or excuse unfinished commitments as a type trait.",
+          "evidence": [
+            {
+              "caseId": "ENTP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may first ask how else something could be done. A fixed route suggests alternatives; a rule invites a test case. Fre"
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "framing.editorialNote",
+              "quote": "These are type-based examples and reflection prompts, not individual facts detected from your answers or predictions abo"
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "framing.cardNote",
+              "quote": "Use these prompts to reflect on real situations, beyond a type label."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Both languages consistently distinguish brainstorming from commitment and debate from personal experience. One experiment per round, a thirty-minute limit and a fixed meeting time survive in the actions, with no reversal of the listening-first order.",
+          "evidence": [
+            {
+              "caseId": "ENTP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may first ask how else something could be done. A fixed route suggests alternatives; a rule invites a test case. Fre"
+            },
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先看一件事还能怎样做，再决定是否接受现成答案。朋友提议固定路线，你会想到另一条更有趣的走法；讨论规则时，你也许想知道它在特殊情况下是否仍成立。新角度和试探让你保持投入，但这不等于必须反对所有共识。辨别值得重新打开的问题和已经足够好用的"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ENTP centers alternative explanations, rule test cases and the timing of debate; ENFP centers warmth, association and protecting capacity beneath enthusiasm. The personal-account-versus-argument distinction is specific, even though both need follow-through.",
+          "evidence": [
+            {
+              "caseId": "ENTP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may first ask how else something could be done. A fixed route suggests alternatives; a rule invites a test case. Fre"
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice possibilities and connections to people or ideas that matter to you. A trip suggests experiences and stor"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "A thirty-minute test, a reflected account of hurt, and a retained meeting time make three bounded actions. The phrases support exploration without handing cleanup to others or treating an emotional account as an argument to win.",
+          "evidence": [
+            {
+              "caseId": "ENTP.en",
+              "path": "report.actions.0.step",
+              "quote": "Test one for thirty minutes and list the others for later."
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.actions.1.step",
+              "quote": "Reflect the impact before offering another viewpoint."
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.actions.2.step",
+              "quote": "Keep one confirmed commitment while negotiating changes."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "No material defect found; shared trip and friendship settings still support a distinct emphasis on alternatives and debate boundaries."
+      ]
+    },
+    {
+      "id": "INFJ.zh",
+      "reportHash": "4ed5db5322225af37d46d413bd66d0e566cb36829751da5c111d38b0711115a2",
+      "criteria": {
+        "editorialSafety": {
+          "score": 5,
+          "rationale": "核心明确否认读心，盲点区分事实、猜测和责任；倾听限时、允许普通陪伴及一次没猜中不代表整段关系，均防止神秘化洞察与过度承担。",
+          "evidence": [
+            {
+              "caseId": "INFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先留意一件事对人意味着什么，以及表面事件背后有没有持续的线索。朋友提起换工作，你想到的也许不只是收入，而是他想过怎样的生活。你愿意慢慢形成判断，偏好有意义的投入。这种关注可以帮助理解复杂经历，却不意味着你能直接读懂别人；猜到一个可能的"
+            },
+            {
+              "caseId": "INFJ.zh",
+              "path": "framing.editorialNote",
+              "quote": "以下是按类型编写的生活示例和反思提示，不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测。保留有共鸣的部分即可。"
+            },
+            {
+              "caseId": "INFJ.zh",
+              "path": "framing.cardNote",
+              "quote": "把有共鸣的提示带回生活中验证，不必把自己固定在类型标签里。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "两种语言都以意义与持续线索开场，保留向本人核实、倾听边界、具体请求和小结果验证方向。英文压缩长句，但未删去拒绝读心和避免过度解读的关键限制。",
+          "evidence": [
+            {
+              "caseId": "INFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先留意一件事对人意味着什么，以及表面事件背后有没有持续的线索。朋友提起换工作，你想到的也许不只是收入，而是他想过怎样的生活。你愿意慢慢形成判断，偏好有意义的投入。这种关注可以帮助理解复杂经历，却不意味着你能直接读懂别人；猜到一个可能的"
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice what an event means to someone and look for a continuing pattern. A job change raises questions about the"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "INFJ关注事件对他人的意义和跨谈话线索，需要校验解释；INFP先问选择是否符合自己的价值与内在认可。两者都重视感受，但理解模式与个人价值的出发点清楚不同。",
+          "evidence": [
+            {
+              "caseId": "INFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先留意一件事对人意味着什么，以及表面事件背后有没有持续的线索。朋友提起换工作，你想到的也许不只是收入，而是他想过怎样的生活。你愿意慢慢形成判断，偏好有意义的投入。这种关注可以帮助理解复杂经历，却不意味着你能直接读懂别人；猜到一个可能的"
+            },
+            {
+              "caseId": "INFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先问一个选择是否符合自己在乎的东西，再考虑怎样融入外部安排。朋友提议旅行，你想象的也许是那段时间会留下什么感受，以及是否有自由体验的空间。内在认可有助于你投入，但它并不要求每件事都带有特别意义。类型可以提示一个关注点，不能代替了解你真"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "提出一个可被纠正的观察、只再倾听十分钟并约明天、直接请求陪伴而非建议，均具体且保护双方边界。没有把猜测写成需要对方接受的结论。",
+          "evidence": [
+            {
+              "caseId": "INFJ.zh",
+              "path": "report.actions.0.step",
+              "quote": "只提出一个观察，让对方确认或纠正。"
+            },
+            {
+              "caseId": "INFJ.zh",
+              "path": "report.actions.1.step",
+              "quote": "说明这次能聊多久，并约下一次联系。"
+            },
+            {
+              "caseId": "INFJ.zh",
+              "path": "report.actions.2.step",
+              "quote": "把期待转成一个具体请求。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "No material issue found; the text explicitly prevents treating pattern sensitivity as mind-reading."
+      ]
+    },
+    {
+      "id": "INFJ.en",
+      "reportHash": "7853369557a6b7a004c7d8a640f6ddae10a54f02f6baa6782d2310c829bf5166",
+      "criteria": {
+        "editorialSafety": {
+          "score": 5,
+          "rationale": "The core explicitly rejects mind-reading. Facts, guesses and responsibilities are separated, and one missed signal is not treated as proof about a whole relationship. Timed listening and ordinary companionship counter overinterpretation without diagnosing the reader.",
+          "evidence": [
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice what an event means to someone and look for a continuing pattern. A job change raises questions about the"
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "framing.editorialNote",
+              "quote": "These are type-based examples and reflection prompts, not individual facts detected from your answers or predictions abo"
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "framing.cardNote",
+              "quote": "Use these prompts to reflect on real situations, beyond a type label."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Meaning and continuing patterns, checking with the person, listening boundaries, concrete requests and small observable tests remain aligned. English condensation preserves both the no-mind-reading qualification and the warning against defining someone prematurely.",
+          "evidence": [
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice what an event means to someone and look for a continuing pattern. A job change raises questions about the"
+            },
+            {
+              "caseId": "INFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先留意一件事对人意味着什么，以及表面事件背后有没有持续的线索。朋友提起换工作，你想到的也许不只是收入，而是他想过怎样的生活。你愿意慢慢形成判断，偏好有意义的投入。这种关注可以帮助理解复杂经历，却不意味着你能直接读懂别人；猜到一个可能的"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "INFJ tracks meaning and patterns across another person’s experiences and checks those interpretations. INFP begins with whether a choice fits personal values. Shared sensitivity does not erase the distinction between interpreting a pattern and expressing inner agreement.",
+          "evidence": [
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice what an event means to someone and look for a continuing pattern. A job change raises questions about the"
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may ask whether a choice fits what matters to you before fitting it into external plans. A trip suggests feelings an"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Offer one correctable observation, state ten remaining minutes and arrange tomorrow, or ask for company without advice. The examples turn insight into a checkable question and make support both specific and sustainable.",
+          "evidence": [
+            {
+              "caseId": "INFJ.en",
+              "path": "report.actions.0.step",
+              "quote": "Offer one observation and invite correction."
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "report.actions.1.step",
+              "quote": "State your remaining time and arrange to reconnect."
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "report.actions.2.step",
+              "quote": "Turn the hope into a specific request."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "No material issue found; the text explicitly prevents treating pattern sensitivity as mind-reading."
+      ]
+    },
+    {
+      "id": "INFP.zh",
+      "reportHash": "ba635781e05ced985369cafa4380a4002afbdcef15ac587bf8c70ce3006565de",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "核心不替读者定义价值，盲点把结果不满意与自我否定分开，并提到睡眠和任务难度。分享卡“感受力强”等是概括性标签，正文的可选择反思框架降低固定能力判断风险。",
+          "evidence": [
+            {
+              "caseId": "INFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先问一个选择是否符合自己在乎的东西，再考虑怎样融入外部安排。朋友提议旅行，你想象的也许是那段时间会留下什么感受，以及是否有自由体验的空间。内在认可有助于你投入，但它并不要求每件事都带有特别意义。类型可以提示一个关注点，不能代替了解你真"
+            },
+            {
+              "caseId": "INFP.zh",
+              "path": "framing.editorialNote",
+              "quote": "以下是按类型编写的生活示例和反思提示，不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测。保留有共鸣的部分即可。"
+            },
+            {
+              "caseId": "INFP.zh",
+              "path": "framing.cardNote",
+              "quote": "把有共鸣的提示带回生活中验证，不必把自己固定在类型标签里。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "十分钟起步和有限拒绝均忠实对应。第三项中文先选针对作品的修改、再处理情绪，英文写成先修改再评价自己，弱化了处理情绪的原意但仍支持不全盘否定自我。",
+          "evidence": [
+            {
+              "caseId": "INFP.zh",
+              "path": "report.actions.2.step",
+              "quote": "圈出一条针对作品的具体修改，再处理情绪。"
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.actions.2.step",
+              "quote": "Choose one concrete revision before assessing yourself."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "INFP以价值、想象和作品意义为中心，ISFP从环境、感官体验和个人节奏切入。INFP让故事与个人目标支持启动，ISFP强调示范与直接体验，足以区分两篇温和边界建议。",
+          "evidence": [
+            {
+              "caseId": "INFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先问一个选择是否符合自己在乎的东西，再考虑怎样融入外部安排。朋友提议旅行，你想象的也许是那段时间会留下什么感受，以及是否有自由体验的空间。内在认可有助于你投入，但它并不要求每件事都带有特别意义。类型可以提示一个关注点，不能代替了解你真"
+            },
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先感受眼前体验是否舒服、是否符合自己在乎的东西，再决定要不要参与。朋友提议旅行，你会留意环境、节奏和有没有自然体验的空间，而不一定急着说明一套理由。细致感受和个人认可有助于选择，但不意味着你只能凭心情。类型提供的是一个观察入口，具体需"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "十分钟写一段、说明容量与可帮助部分、选一条针对作品的修改，均有低负担起点；第三项短句明确作品一处不代表全部自我，符合正文避免过度自责的目标。",
+          "evidence": [
+            {
+              "caseId": "INFP.zh",
+              "path": "report.actions.0.step",
+              "quote": "先用十分钟写一段或做一个草稿。"
+            },
+            {
+              "caseId": "INFP.zh",
+              "path": "report.actions.1.step",
+              "quote": "只说明容量和可提供的部分。"
+            },
+            {
+              "caseId": "INFP.zh",
+              "path": "report.actions.2.step",
+              "quote": "圈出一条针对作品的具体修改，再处理情绪。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Minor bilingual drift in the final action: emotional processing becomes assessing yourself in English. The non-identification phrase retains the protective intent."
+      ]
+    },
+    {
+      "id": "INFP.en",
+      "reportHash": "e9037dbe854c37647ff57fe87e2eda177564ef6c19cd720a975a52744f3b941c",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The core does not claim to define the reader’s values, and sleep and task difficulty are considered before self-judgment. Share tags such as Deep sensitivity remain broad labels, qualified by the optional reflection frame rather than measured emotional ability.",
+          "evidence": [
+            {
+              "caseId": "INFP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may ask whether a choice fits what matters to you before fitting it into external plans. A trip suggests feelings an"
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "framing.editorialNote",
+              "quote": "These are type-based examples and reflection prompts, not individual facts detected from your answers or predictions abo"
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "framing.cardNote",
+              "quote": "Use these prompts to reflect on real situations, beyond a type label."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The ten-minute start and capacity-based refusal align. The third Chinese step pairs one work revision with later emotional processing; English says “before assessing yourself,” shifting that last clause toward self-evaluation. Its example still rejects equating work with identity.",
+          "evidence": [
+            {
+              "caseId": "INFP.en",
+              "path": "report.actions.2.step",
+              "quote": "Choose one concrete revision before assessing yourself."
+            },
+            {
+              "caseId": "INFP.zh",
+              "path": "report.actions.2.step",
+              "quote": "圈出一条针对作品的具体修改，再处理情绪。"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "INFP begins with inner values and links stories to personal purpose; ISFP begins with comfort, sensory experience and pace. Their shared boundaries advice is anchored in different routes to engagement and learning.",
+          "evidence": [
+            {
+              "caseId": "INFP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may ask whether a choice fits what matters to you before fitting it into external plans. A trip suggests feelings an"
+            },
+            {
+              "caseId": "ISFP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice whether an experience feels comfortable and fits what matters to you. A trip suggests environment and pac"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "A ten-minute draft and bounded offer of help are clear. The feedback step is workable, but “before assessing yourself” could more directly say to separate a concrete revision from self-worth and leave room to process feelings.",
+          "evidence": [
+            {
+              "caseId": "INFP.en",
+              "path": "report.actions.0.step",
+              "quote": "Spend ten minutes making one paragraph or rough draft."
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.actions.1.step",
+              "quote": "State your capacity and the part you can offer."
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.actions.2.step",
+              "quote": "Choose one concrete revision before assessing yourself."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Minor bilingual drift in the final action: emotional processing becomes assessing yourself in English. The non-identification phrase retains the protective intent."
+      ]
+    },
+    {
+      "id": "ENFJ.zh",
+      "reportHash": "8662c6d66593a00a215ef0ec476b55006dfdbc36f7b77cb02fd70867ce3430c5",
+      "criteria": {
+        "editorialSafety": {
+          "score": 5,
+          "rationale": "核心不要求负责每个人成长与情绪，鼓励前先倾听并允许不同优先事项；独处不被视为关系失败，容量、许可和双向支持均有明确位置。领导标签没有变成接管他人的正当理由。",
+          "evidence": [
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先看一群人有没有共同方向，以及每个人能否愿意参与。朋友组织旅行，你既关心计划，也留意谁还没表态、谁可能不方便。你希望事情推进时关系也被照顾，喜欢看到人的潜力。这可以成为支持协作的关注点，却不代表你必须负责所有人的成长或情绪。一个人暂时"
+            },
+            {
+              "caseId": "ENFJ.zh",
+              "path": "framing.editorialNote",
+              "quote": "以下是按类型编写的生活示例和反思提示，不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测。保留有共鸣的部分即可。"
+            },
+            {
+              "caseId": "ENFJ.zh",
+              "path": "framing.cardNote",
+              "quote": "把有共鸣的提示带回生活中验证，不必把自己固定在类型标签里。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "共同方向、联系频率、日程确认与双向照顾保持一致。第二项英文话术“before we plan”较中文“再陪你想下一步好吗”少一点对是否进入计划的明确选择，正文仍要求先问需要。",
+          "evidence": [
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "你先说完，我再陪你想下一步好吗？"
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.actions.1.phrase",
+              "quote": "Would you like to finish telling me before we plan?"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ENFJ侧重共同方向、发展潜力和鼓励，ESFJ侧重日常回应、熟悉安排与具体分担。两者不少段落都围绕情绪协调和容量，差异存在但比INTJ/INTP等组合更细微。",
+          "evidence": [
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先看一群人有没有共同方向，以及每个人能否愿意参与。朋友组织旅行，你既关心计划，也留意谁还没表态、谁可能不方便。你希望事情推进时关系也被照顾，喜欢看到人的潜力。这可以成为支持协作的关注点，却不代表你必须负责所有人的成长或情绪。一个人暂时"
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先关注大家能否舒服相处，以及日常安排有没有照顾到真实需要。朋友提议旅行，你会问谁能参加、谁有什么不方便，希望计划既可执行又让人愿意来。共同习惯和及时回应能带来安心，但这不意味着你必须让所有人满意。类型描述提示的是一个可能的关注点，不能"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "核对日程今晚答复、鼓励前让朋友说完、请求十分钟倾听，都可执行。鼓励动作的话术略容易预设接下来要规划，可改为先问想不想讨论下一步以更贴合上下文。",
+          "evidence": [
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.actions.0.step",
+              "quote": "先看日程，明确可承担范围再答复。"
+            },
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.actions.1.step",
+              "quote": "复述他的经历后询问下一步需要。"
+            },
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.actions.2.step",
+              "quote": "提出一次具体而有限的倾听请求。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "ENFJ and ESFJ share several care/capacity motifs; direction and encouragement differentiate ENFJ. Optional planning wording could be clearer in action two."
+      ]
+    },
+    {
+      "id": "ENFJ.en",
+      "reportHash": "41cb0343bde51f741cb3b3a03e8852f8379ec8350a0625aa6bd3edb8a68fee07",
+      "criteria": {
+        "editorialSafety": {
+          "score": 5,
+          "rationale": "The report explicitly limits responsibility for others’ development and mood, permits different priorities, and makes care reciprocal. Contact and help are negotiated rather than justified by leadership labels or assumed superior insight.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice shared direction and whether people can participate willingly. A trip raises both planning questions and "
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "framing.editorialNote",
+              "quote": "These are type-based examples and reflection prompts, not individual facts detected from your answers or predictions abo"
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "framing.cardNote",
+              "quote": "Use these prompts to reflect on real situations, beyond a type label."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "Shared direction, contact frequency and reciprocal care align. “Before we plan” in the second English phrase assumes planning a little more than the Chinese invitation to consider next steps; the surrounding action and report still ask permission.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.actions.1.phrase",
+              "quote": "Would you like to finish telling me before we plan?"
+            },
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "你先说完，我再陪你想下一步好吗？"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ENFJ emphasizes shared direction, development and encouragement; ESFJ emphasizes everyday responses, routines and practical shared work. Many scenes still overlap around emotional coordination and capacity, so the distinction is serviceable rather than sharply unique.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice shared direction and whether people can participate willingly. A trip raises both planning questions and "
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice whether people feel included and practical arrangements meet their needs. A trip prompts availability and"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "Confirming tonight and requesting ten minutes of listening are clear and bounded. The encouragement phrase is usable but could explicitly ask whether planning is wanted after the friend finishes, instead of lightly presuming that transition.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.actions.0.step",
+              "quote": "Check your schedule and offer a clear scope."
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.actions.1.step",
+              "quote": "Reflect the experience before asking about next steps."
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.actions.2.step",
+              "quote": "Make a concrete, limited request for listening."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "ENFJ and ESFJ share several care/capacity motifs; direction and encouragement differentiate ENFJ. Optional planning wording could be clearer in action two."
+      ]
+    },
+    {
+      "id": "ENFP.zh",
+      "reportHash": "2c95c854b20b359972414e54ff1abb645a7e3e3a55c486ddc6b894ec8689811a",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "正文允许平静、重复、疲惫与不热闹，避免要求持续表演热情；信任需双向互动、承诺需核对容量。分享卡“创意无限”略夸张，因明确反思说明而不是能力预测，保留为轻微局限。",
+          "evidence": [
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先感受一件事带来什么可能，以及它怎样连接自己在乎的人和想法。朋友提起旅行，你容易想到新的体验、途中会遇见谁，或这次能留下什么故事。兴趣和连接能带动投入，但不意味着你总要热情或必须让每个选择特别。这个类型提供一种观察视角，真实状态仍会受"
+            },
+            {
+              "caseId": "ENFP.zh",
+              "path": "framing.editorialNote",
+              "quote": "以下是按类型编写的生活示例和反思提示，不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测。保留有共鸣的部分即可。"
+            },
+            {
+              "caseId": "ENFP.zh",
+              "path": "framing.cardNote",
+              "quote": "把有共鸣的提示带回生活中验证，不必把自己固定在类型标签里。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "可能性与连接、兴趣不等于承诺、让朋友先说完、三步成果和十分钟最低版本均对应。英文减少旅途与细节描写，但没有改变自由与可靠共存、信任逐步建立的意思。",
+          "evidence": [
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先感受一件事带来什么可能，以及它怎样连接自己在乎的人和想法。朋友提起旅行，你容易想到新的体验、途中会遇见谁，或这次能留下什么故事。兴趣和连接能带动投入，但不意味着你总要热情或必须让每个选择特别。这个类型提供一种观察视角，真实状态仍会受"
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice possibilities and connections to people or ideas that matter to you. A trip suggests experiences and stor"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ENFP围绕热情中的容量、故事共鸣与关系互惠，ENTP围绕替代方案、规则反例与辩论边界。共同的点子和收尾话题被不同的人际风险与行动重点区分。",
+          "evidence": [
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先感受一件事带来什么可能，以及它怎样连接自己在乎的人和想法。朋友提起旅行，你容易想到新的体验、途中会遇见谁，或这次能留下什么故事。兴趣和连接能带动投入，但不意味着你总要热情或必须让每个选择特别。这个类型提供一种观察视角，真实状态仍会受"
+            },
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先看一件事还能怎样做，再决定是否接受现成答案。朋友提议固定路线，你会想到另一条更有趣的走法；讨论规则时，你也许想知道它在特殊情况下是否仍成立。新角度和试探让你保持投入，但这不等于必须反对所有共识。辨别值得重新打开的问题和已经足够好用的"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "明天确认邀请、先听完对方再讲联想、完成十分钟最低版本并记下一步，都有明确的暂停或完成边界，不要求靠持续兴奋支撑全部承诺。",
+          "evidence": [
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.actions.0.step",
+              "quote": "先检查已有承诺，再给确定答复。"
+            },
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.actions.1.step",
+              "quote": "先问是否讲完，再分享自己的联想。"
+            },
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.actions.2.step",
+              "quote": "完成十分钟的最低版本并记录下一步。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The legacy share strength tag Boundless creativity / 创意无限 is hyperbolic; the report itself explicitly permits ordinary energy and limited capacity."
+      ]
+    },
+    {
+      "id": "ENFP.en",
+      "reportHash": "ab6e34b0fc3df846eaeec43b1c40d94290b0d0c5a20316bacaffc90f7eb622ee",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report allows calm, repetition and fatigue instead of performing enthusiasm, checks reciprocal trust and separates excitement from capacity. The visible Boundless creativity tag is hyperbolic even under reflection framing, a minor weakness rather than a promised measured ability.",
+          "evidence": [
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice possibilities and connections to people or ideas that matter to you. A trip suggests experiences and stor"
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "framing.editorialNote",
+              "quote": "These are type-based examples and reflection prompts, not individual facts detected from your answers or predictions abo"
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "framing.cardNote",
+              "quote": "Use these prompts to reflect on real situations, beyond a type label."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Both versions preserve possibility and connection, interest versus commitment, listening before associations, three visible steps and the ten-minute minimum. Shorter English scenes do not alter gradual trust, negotiated freedom or capacity checks.",
+          "evidence": [
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice possibilities and connections to people or ideas that matter to you. A trip suggests experiences and stor"
+            },
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先感受一件事带来什么可能，以及它怎样连接自己在乎的人和想法。朋友提起旅行，你容易想到新的体验、途中会遇见谁，或这次能留下什么故事。兴趣和连接能带动投入，但不意味着你总要热情或必须让每个选择特别。这个类型提供一种观察视角，真实状态仍会受"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ENFP protects capacity beneath enthusiasm and checks reciprocal warmth; ENTP tests alternative routes and separates debate from personal accounts. Both generate ideas, but the emotional association and overpromising pattern here gives different practical advice.",
+          "evidence": [
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice possibilities and connections to people or ideas that matter to you. A trip suggests experiences and stor"
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may first ask how else something could be done. A fixed route suggests alternatives; a rule invites a test case. Fre"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Confirm tomorrow after checking promises, ask if the speaker has finished, and complete a ten-minute minimum with a next-action note. Every action can be observed and the phrases make a realistic commitment rather than an enthusiastic guarantee.",
+          "evidence": [
+            {
+              "caseId": "ENFP.en",
+              "path": "report.actions.0.step",
+              "quote": "Check existing promises before confirming."
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.actions.1.step",
+              "quote": "Ask whether the person has finished before adding yours."
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.actions.2.step",
+              "quote": "Complete a ten-minute minimum and note the next action."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The legacy share strength tag Boundless creativity / 创意无限 is hyperbolic; the report itself explicitly permits ordinary energy and limited capacity."
+      ]
+    },
+    {
+      "id": "ISTJ.zh",
+      "reportHash": "38f3722907c6bc835179ace15d7520337bba2b8ca91795cb57d1b25e212f560d",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "核心明确熟悉方法并非永远正确，稳定允许变化，不把不同做法视为不认真；压力下检查资源。分享卡“执行力强”等仍是概括优势，未展开为保证职业表现。",
+          "evidence": [
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先检查一件事有哪些已知条件、承诺是否明确，再决定怎样稳妥完成。朋友提议旅行，你会问日期、交通和实际预算，而不是只停在想象中。已有经验和清楚的规则能帮助你判断，但不代表你拒绝新事物。类型提示的是关注起点，不能证明哪种做法永远正确；遇到条"
+            },
+            {
+              "caseId": "ISTJ.zh",
+              "path": "framing.editorialNote",
+              "quote": "以下是按类型编写的生活示例和反思提示，不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测。保留有共鸣的部分即可。"
+            },
+            {
+              "caseId": "ISTJ.zh",
+              "path": "framing.cardNote",
+              "quote": "把有共鸣的提示带回生活中验证，不必把自己固定在类型标签里。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "已知条件、稳定承诺、区分个人习惯与必要要求、低风险方法尝试都一致。英文把第二项行动说成willing partner，补足中文话术中本就以询问呈现的自愿性，没有意义反转。",
+          "evidence": [
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先检查一件事有哪些已知条件、承诺是否明确，再决定怎样稳妥完成。朋友提议旅行，你会问日期、交通和实际预算，而不是只停在想象中。已有经验和清楚的规则能帮助你判断，但不代表你拒绝新事物。类型提示的是关注起点，不能证明哪种做法永远正确；遇到条"
+            },
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may check known conditions and clear commitments before acting. A trip raises dates, transport and actual budget. Ex"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ISTJ强调核对经验、默默准备与更新熟悉方法，ESTJ更强调组织他人、规则目的与可自主的方法。两者都使用责任、标准、进度等词，差异可辨但部分段落重复较多。",
+          "evidence": [
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先检查一件事有哪些已知条件、承诺是否明确，再决定怎样稳妥完成。朋友提议旅行，你会问日期、交通和实际预算，而不是只停在想象中。已有经验和清楚的规则能帮助你判断，但不代表你拒绝新事物。类型提示的是关注起点，不能证明哪种做法永远正确；遇到条"
+            },
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先关注事情怎样组织、责任是否清楚，以及有没有可执行的规则。朋友提议旅行，你会快速问出发时间、预算和分工，希望大家不用一直猜。现实条件和明确约定帮助你推进，但不代表每个场合都需要统一流程。类型描述可以用来观察你的习惯，不能证明你总有正确"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "保留一项重要条件、请伙伴负责一次核对、低风险试一小段，均有可观察动作。第二项“列出一项任务”可更明确确认对方容量；现有话术以提问呈现，仍属可用。",
+          "evidence": [
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.actions.0.step",
+              "quote": "问清原因，只保留真正重要的一个条件。"
+            },
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.actions.1.step",
+              "quote": "列出一项让伙伴确认的任务。"
+            },
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.actions.2.step",
+              "quote": "先在低风险步骤试一次并比较结果。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "ISTJ/ESTJ have some shared standard-and-responsibility language. The Chinese preparation action could name partner capacity as explicitly as English does."
+      ]
+    },
+    {
+      "id": "ISTJ.en",
+      "reportHash": "1bdcefd4965ed8c42e3d841793f02fa4f0e170f1339b5ffd1cc25134c2fba9ba",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Familiarity is not treated as permanent correctness, change can coexist with dependability, and resource shortages qualify pressure. Strong execution remains a broad share-card strength, not an assurance of job performance.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may check known conditions and clear commitments before acting. A trip raises dates, transport and actual budget. Ex"
+            },
+            {
+              "caseId": "ISTJ.en",
+              "path": "framing.editorialNote",
+              "quote": "These are type-based examples and reflection prompts, not individual facts detected from your answers or predictions abo"
+            },
+            {
+              "caseId": "ISTJ.en",
+              "path": "framing.cardNote",
+              "quote": "Use these prompts to reflect on real situations, beyond a type label."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Known conditions, commitments, essential versus preferred requirements and low-risk experiments align. “A willing partner” in the English sharing action makes explicit the permission already implied by the Chinese question, without changing the intended division of preparation.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may check known conditions and clear commitments before acting. A trip raises dates, transport and actual budget. Ex"
+            },
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先检查一件事有哪些已知条件、承诺是否明确，再决定怎样稳妥完成。朋友提议旅行，你会问日期、交通和实际预算，而不是只停在想象中。已有经验和清楚的规则能帮助你判断，但不代表你拒绝新事物。类型提示的是关注起点，不能证明哪种做法永远正确；遇到条"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ISTJ checks experience and quietly prepares; ESTJ visibly coordinates people and explains rules. Both rely on standards and responsibility, so the distinction is present through the private preparation versus group organization scenes but less sharp than some other pairs.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may check known conditions and clear commitments before acting. A trip raises dates, transport and actual budget. Ex"
+            },
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice organization, responsibility and usable rules first. A trip prompts dates, budget and ownership so people"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Ask why a plan changed, offer one preparation check to a willing partner, and test a low-risk step. The examples retain a real essential constraint while giving change and shared responsibility concrete room.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.actions.0.step",
+              "quote": "Ask why and keep one essential condition."
+            },
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.actions.1.step",
+              "quote": "Assign one check to a willing partner."
+            },
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.actions.2.step",
+              "quote": "Test a low-risk step and compare the result."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "ISTJ/ESTJ have some shared standard-and-responsibility language. The Chinese preparation action could name partner capacity as explicitly as English does."
+      ]
+    },
+    {
+      "id": "ISFJ.zh",
+      "reportHash": "900a6e37c30d455542b1d3f41a0d900ee4132170085ecf07c23fab3fc02491f7",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "核心不赋予照顾者义务，拒绝一次请求无需额外补偿，别人责任可交还；这纠正了固定自我牺牲的风险。“记忆力强”分享标签仍是笼统能力联想，需保留反思语境。",
+          "evidence": [
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先留意眼前的人需要什么，以及怎样用实际行动让生活顺畅。朋友提议旅行，你想到谁容易累、有什么饮食限制、需要带什么。熟悉的经历能帮助你照顾细节，也让承诺更有连续性。这不意味着你天生应该承担照顾者角色。类型可以提示关注点，不能规定责任；别人"
+            },
+            {
+              "caseId": "ISFJ.zh",
+              "path": "framing.editorialNote",
+              "quote": "以下是按类型编写的生活示例和反思提示，不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测。保留有共鸣的部分即可。"
+            },
+            {
+              "caseId": "ISFJ.zh",
+              "path": "framing.cardNote",
+              "quote": "把有共鸣的提示带回生活中验证，不必把自己固定在类型标签里。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "照顾细节、隐形投入、拒绝不等于拒绝友情、具体分担和不重做别人帮助均对应。英文清理话术省略“我也想休息”，但其他段落和行动容量要求保留自我照顾目标。",
+          "evidence": [
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先留意眼前的人需要什么，以及怎样用实际行动让生活顺畅。朋友提议旅行，你想到谁容易累、有什么饮食限制、需要带什么。熟悉的经历能帮助你照顾细节，也让承诺更有连续性。这不意味着你天生应该承担照顾者角色。类型可以提示关注点，不能规定责任；别人"
+            },
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice immediate needs and practical ways to make life smoother. A trip brings fatigue, food needs and preparati"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ISFJ从熟悉细节、记住偏好与默默投入切入，ESFJ从群体联系、回应频率与公开安排切入。两个报告在照顾、分担和疲惫方面重合较多，仍能通过安静投入与主动联络区分。",
+          "evidence": [
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先留意眼前的人需要什么，以及怎样用实际行动让生活顺畅。朋友提议旅行，你想到谁容易累、有什么饮食限制、需要带什么。熟悉的经历能帮助你照顾细节，也让承诺更有连续性。这不意味着你天生应该承担照顾者角色。类型可以提示关注点，不能规定责任；别人"
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先关注大家能否舒服相处，以及日常安排有没有照顾到真实需要。朋友提议旅行，你会问谁能参加、谁有什么不方便，希望计划既可执行又让人愿意来。共同习惯和及时回应能带来安心，但这不意味着你必须让所有人满意。类型描述提示的是一个可能的关注点，不能"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "核对精力给有限承诺、请对方负责收尾、只核对必要结果不重做，都是可执行的小动作；话术不要求牺牲边界来证明友情，也允许接受不同方法。",
+          "evidence": [
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.actions.0.step",
+              "quote": "先核对精力，只给可实现的承诺。"
+            },
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.actions.1.step",
+              "quote": "提出一个具体的分担请求。"
+            },
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.actions.2.step",
+              "quote": "只确认必要结果，不把全部重做。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Minor English compression of the cleanup phrase leaves the rest request implicit. Strong memory is a reflective type tag, not an assessed cognitive ability."
+      ]
+    },
+    {
+      "id": "ISFJ.en",
+      "reportHash": "ede571f5f92333be0a3e12a35a1a9df14b714a862fd26fe05358cd543ad45531",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The profile explicitly refuses to assign a caretaker role, makes refusal legitimate without compensation, and returns others’ responsibilities. Strong memory on the share card is a broad ability association, qualified by the reflection note rather than demonstrated by answers.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice immediate needs and practical ways to make life smoother. A trip brings fatigue, food needs and preparati"
+            },
+            {
+              "caseId": "ISFJ.en",
+              "path": "framing.editorialNote",
+              "quote": "These are type-based examples and reflection prompts, not individual facts detected from your answers or predictions abo"
+            },
+            {
+              "caseId": "ISFJ.en",
+              "path": "framing.cardNote",
+              "quote": "Use these prompts to reflect on real situations, beyond a type label."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Detail-based care, invisible work, refusal without rejecting friendship and accepting differently performed help align. English shortens the cleanup phrase by omitting the wish to rest, but capacity and receiving care remain explicit throughout the case.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice immediate needs and practical ways to make life smoother. A trip brings fatigue, food needs and preparati"
+            },
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先留意眼前的人需要什么，以及怎样用实际行动让生活顺畅。朋友提议旅行，你想到谁容易累、有什么饮食限制、需要带什么。熟悉的经历能帮助你照顾细节，也让承诺更有连续性。这不意味着你天生应该承担照顾者角色。类型可以提示关注点，不能规定责任；别人"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ISFJ centers remembered details and quiet invisible preparation, whereas ESFJ centers active contact and keeping a group coordinated. Care, workload and fatigue overlap substantially, but the scenes supply a usable quiet-support versus outward-coordination distinction.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice immediate needs and practical ways to make life smoother. A trip brings fatigue, food needs and preparati"
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice whether people feel included and practical arrangements meet their needs. A trip prompts availability and"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Offer only a realistic part, ask for cleanup next time, and check the necessary outcome without redoing help. The actions have clear triggers and short phrases that make hidden effort and personal limits negotiable.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.actions.0.step",
+              "quote": "Check energy and offer a realistic part."
+            },
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.actions.1.step",
+              "quote": "Ask for one concrete shared responsibility."
+            },
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.actions.2.step",
+              "quote": "Check the necessary outcome without redoing everything."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Minor English compression of the cleanup phrase leaves the rest request implicit. Strong memory is a reflective type tag, not an assessed cognitive ability."
+      ]
+    },
+    {
+      "id": "ESTJ.zh",
+      "reportHash": "528a4ee88e2c6d50fc3bcdc3e4eb684c44dcc6dc29a170f3548c25e98abce515",
+      "criteria": {
+        "editorialSafety": {
+          "score": 5,
+          "rationale": "正文不把现成标准视为永远正确，强调愿不愿意、是否累、方法可不同；反馈针对观察事实而不是人的态度。结构服务人而非用类型授权控制，边界与责任均清楚。",
+          "evidence": [
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先关注事情怎样组织、责任是否清楚，以及有没有可执行的规则。朋友提议旅行，你会快速问出发时间、预算和分工，希望大家不用一直猜。现实条件和明确约定帮助你推进，但不代表每个场合都需要统一流程。类型描述可以用来观察你的习惯，不能证明你总有正确"
+            },
+            {
+              "caseId": "ESTJ.zh",
+              "path": "framing.editorialNote",
+              "quote": "以下是按类型编写的生活示例和反思提示，不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测。保留有共鸣的部分即可。"
+            },
+            {
+              "caseId": "ESTJ.zh",
+              "path": "framing.cardNote",
+              "quote": "把有共鸣的提示带回生活中验证，不必把自己固定在类型标签里。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "两种语言都保留规则目的、必要条件与灵活方法的区别，以及先问倾听还是行动。英文压缩组织场景，但成果与做法分开、尝试不同方法和一次反馈均一致。",
+          "evidence": [
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先关注事情怎样组织、责任是否清楚，以及有没有可执行的规则。朋友提议旅行，你会快速问出发时间、预算和分工，希望大家不用一直猜。现实条件和明确约定帮助你推进，但不代表每个场合都需要统一流程。类型描述可以用来观察你的习惯，不能证明你总有正确"
+            },
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice organization, responsibility and usable rules first. A trip prompts dates, budget and ownership so people"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ESTJ围绕规则、可执行责任与结果标准，ENTJ围绕愿望转目标和资源投入。让别人的方法试一轮是本篇对统一流程的修正，区别于ENTJ对推进与容量的修正。",
+          "evidence": [
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先关注事情怎样组织、责任是否清楚，以及有没有可执行的规则。朋友提议旅行，你会快速问出发时间、预算和分工，希望大家不用一直猜。现实条件和明确约定帮助你推进，但不代表每个场合都需要统一流程。类型描述可以用来观察你的习惯，不能证明你总有正确"
+            },
+            {
+              "caseId": "ENTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能习惯把愿望转成目标，再寻找能推动它的人和资源。朋友说想一起旅行，你很快想到预算、日期和谁负责订票；讨论一个问题，你想知道接下来能做什么。推进是你的关注点，但它不等于掌控一切或总是适合带领别人。有些交流只是一起想象，有些情绪还没有准备好"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "定案前留一次实际困难表达、对齐成果后试伙伴方法、拆任务前确认要倾听或行动，均有明确话术和试行范围，能在工作与朋友场景直接使用。",
+          "evidence": [
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.actions.0.step",
+              "quote": "先给一次提出顾虑的机会。"
+            },
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.actions.1.step",
+              "quote": "只对齐成果和检查时间，试行一轮。"
+            },
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.actions.2.step",
+              "quote": "在拆任务之前确认对话目的。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "No material defect found; rules and responsibility are consistently qualified by participation, evidence and revisability."
+      ]
+    },
+    {
+      "id": "ESTJ.en",
+      "reportHash": "104e8788c99ccc450c41514d5f2a63e60691032509066512b8053a288823913a",
+      "criteria": {
+        "editorialSafety": {
+          "score": 5,
+          "rationale": "Familiar standards can be revised, willingness and fatigue matter, and feedback targets observed work instead of personal attitude. Structure serves participants and does not authorize control or turn one mistake into a judgment of character.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice organization, responsibility and usable rules first. A trip prompts dates, budget and ownership so people"
+            },
+            {
+              "caseId": "ESTJ.en",
+              "path": "framing.editorialNote",
+              "quote": "These are type-based examples and reflection prompts, not individual facts detected from your answers or predictions abo"
+            },
+            {
+              "caseId": "ESTJ.en",
+              "path": "framing.cardNote",
+              "quote": "Use these prompts to reflect on real situations, beyond a type label."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Rule purpose, necessary conditions versus flexible methods, and listening versus doing are preserved. Both versions separate outcomes from prescribed methods and permit one trial with a checkpoint; English compression does not remove participant choice.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice organization, responsibility and usable rules first. A trip prompts dates, budget and ownership so people"
+            },
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先关注事情怎样组织、责任是否清楚，以及有没有可执行的规则。朋友提议旅行，你会快速问出发时间、预算和分工，希望大家不用一直猜。现实条件和明确约定帮助你推进，但不代表每个场合都需要统一流程。类型描述可以用来观察你的习惯，不能证明你总有正确"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ESTJ starts with usable rules, ownership and standards; ENTJ starts with converting wishes to goals and mobilizing resources. Trying a colleague’s method while aligning the outcome specifically addresses process uniformity rather than simply slowing goal pursuit.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice organization, responsibility and usable rules first. A trip prompts dates, budget and ownership so people"
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may turn a wish into a goal and look for resources to move it forward. A trip becomes dates, budget and responsibili"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Offer one constraint check before closing a discussion, agree on an outcome and trial another method, and ask what kind of support is wanted. Each action translates a specific report tension into an observable change without abandoning responsibility.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.actions.0.step",
+              "quote": "Offer one opportunity to raise constraints."
+            },
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.actions.1.step",
+              "quote": "Align outcome and checkpoint, then try it once."
+            },
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.actions.2.step",
+              "quote": "Check the purpose before breaking down tasks."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "No material defect found; rules and responsibility are consistently qualified by participation, evidence and revisability."
+      ]
+    },
+    {
+      "id": "ESFJ.zh",
+      "reportHash": "6cdb455fae3f79ee6201a30c1ddfc8f6dc5e28a91a243edfa072f50354acd3e2",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "明确维护关系不是义务、安静不等于疏远，也不按谁更细心默认家务责任；反馈针对工作而非认可程度。分享卡忠诚奉献仍是理想化标签，但正文鼓励说不与保护专注时段。",
+          "evidence": [
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先关注大家能否舒服相处，以及日常安排有没有照顾到真实需要。朋友提议旅行，你会问谁能参加、谁有什么不方便，希望计划既可执行又让人愿意来。共同习惯和及时回应能带来安心，但这不意味着你必须让所有人满意。类型描述提示的是一个可能的关注点，不能"
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "framing.editorialNote",
+              "quote": "以下是按类型编写的生活示例和反思提示，不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测。保留有共鸣的部分即可。"
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "framing.cardNote",
+              "quote": "把有共鸣的提示带回生活中验证，不必把自己固定在类型标签里。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "日常回应、询问联系节奏、明确确认人数分工、三点后回复的行动均准确对应。英文压缩具体例子，保留关系猜测需核实和分担不能默认落在某一人身上的核心。",
+          "evidence": [
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先关注大家能否舒服相处，以及日常安排有没有照顾到真实需要。朋友提议旅行，你会问谁能参加、谁有什么不方便，希望计划既可执行又让人愿意来。共同习惯和及时回应能带来安心，但这不意味着你必须让所有人满意。类型描述提示的是一个可能的关注点，不能"
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice whether people feel included and practical arrangements meet their needs. A trip prompts availability and"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ESFJ强调日常安排、联系习惯与具体分工，ENFJ强调共同方向、鼓励和潜力。两者都处理情绪协调与容量，差异主要在例子和任务对象，达到可辨但未特别鲜明。",
+          "evidence": [
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先关注大家能否舒服相处，以及日常安排有没有照顾到真实需要。朋友提议旅行，你会问谁能参加、谁有什么不方便，希望计划既可执行又让人愿意来。共同习惯和及时回应能带来安心，但这不意味着你必须让所有人满意。类型描述提示的是一个可能的关注点，不能"
+            },
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先看一群人有没有共同方向，以及每个人能否愿意参与。朋友组织旅行，你既关心计划，也留意谁还没表态、谁可能不方便。你希望事情推进时关系也被照顾，喜欢看到人的潜力。这可以成为支持协作的关注点，却不代表你必须负责所有人的成长或情绪。一个人暂时"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "不连续试探而问联系节奏、明确请人确认人数、说明三点前专注之后回复，三项都给出具体情境和可实施表达，与关系核实和分担段落高度对应。",
+          "evidence": [
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.actions.0.step",
+              "quote": "询问偏好的联系节奏，不连续试探。"
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.actions.1.step",
+              "quote": "提出一项明确的分担任务。"
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.actions.2.step",
+              "quote": "给专注时段与回应时间。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "ENFJ/ESFJ differentiation is relatively subtle; daily routine and concrete shared work keep ESFJ distinct enough for editorial comparison."
+      ]
+    },
+    {
+      "id": "ESFJ.en",
+      "reportHash": "da77e366d88fada7557debb5d8b1745ccf79f1b7f8ad9b6769c0176bc08ac422",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Maintaining relationships is not a duty, quiet is not equated with rejection, and chores are not assigned to whoever notices first. Dedication on the share card is somewhat idealized, but the report makes refusal and protected focused work legitimate.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice whether people feel included and practical arrangements meet their needs. A trip prompts availability and"
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "framing.editorialNote",
+              "quote": "These are type-based examples and reflection prompts, not individual facts detected from your answers or predictions abo"
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "framing.cardNote",
+              "quote": "Use these prompts to reflect on real situations, beyond a type label."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Everyday contact, asking about preferred frequency, confirming numbers and replying after three align across languages. The shorter English retains checking assumptions and explicitly sharing work rather than leaving it to the most attentive person.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice whether people feel included and practical arrangements meet their needs. A trip prompts availability and"
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先关注大家能否舒服相处，以及日常安排有没有照顾到真实需要。朋友提议旅行，你会问谁能参加、谁有什么不方便，希望计划既可执行又让人愿意来。共同习惯和及时回应能带来安心，但这不意味着你必须让所有人满意。类型描述提示的是一个可能的关注点，不能"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ESFJ emphasizes ordinary routines, contact habits and practical division of tasks, while ENFJ emphasizes shared direction and encouragement. Their capacity and relationship-checking passages overlap, leaving a recognizable but relatively subtle editorial distinction.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice whether people feel included and practical arrangements meet their needs. A trip prompts availability and"
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice shared direction and whether people can participate willingly. A trip raises both planning questions and "
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Ask a direct contact-preference question, assign the specific numbers check while arranging a venue, and protect work until three with a response time. These are modest and observable, with usable phrases rather than a vague instruction to improve harmony.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.actions.0.step",
+              "quote": "Ask about comfortable contact instead of testing it."
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.actions.1.step",
+              "quote": "Request one defined contribution."
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.actions.2.step",
+              "quote": "State a protected block and response time."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "ENFJ/ESFJ differentiation is relatively subtle; daily routine and concrete shared work keep ESFJ distinct enough for editorial comparison."
+      ]
+    },
+    {
+      "id": "ISTP.zh",
+      "reportHash": "38eb75d50d9fe1124872d7d07290891492ece67e89ec201010897ee3e3ce6497",
+      "criteria": {
+        "editorialSafety": {
+          "score": 5,
+          "rationale": "核心否认对意义感受无兴趣，也不把动手视为能力测定；涉及他人试验先确认许可。独处有回来时间，修好事情后仍承认情绪影响，没有用自主性回避关系责任。",
+          "evidence": [
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先看眼前问题怎样运作、哪里可以直接试一下，再决定需不需要更长的讨论。朋友提议旅行，你会留意实际条件，也愿意到现场再调整。观察与动手能让理解更具体，但不意味着你对意义或感受没有兴趣。类型提示的是一种可能的切入点，不是能力判断；有些问题需"
+            },
+            {
+              "caseId": "ISTP.zh",
+              "path": "framing.editorialNote",
+              "quote": "以下是按类型编写的生活示例和反思提示，不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测。保留有共鸣的部分即可。"
+            },
+            {
+              "caseId": "ISTP.zh",
+              "path": "framing.cardNote",
+              "quote": "把有共鸣的提示带回生活中验证，不必把自己固定在类型标签里。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "观察试做、关键进度、独处时限、处理完事情仍询问情绪影响等一致。中文盲点的持续关系需求在英文略压缩，但亲近段和第三项行动仍完整表达同一需要。",
+          "evidence": [
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先看眼前问题怎样运作、哪里可以直接试一下，再决定需不需要更长的讨论。朋友提议旅行，你会留意实际条件，也愿意到现场再调整。观察与动手能让理解更具体，但不意味着你对意义或感受没有兴趣。类型提示的是一种可能的切入点，不是能力判断；有些问题需"
+            },
+            {
+              "caseId": "ISTP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may inspect how a problem works and what can be tested directly. For a trip, practical conditions matter while some "
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ISTP通过设备检查、交通条件与低风险动手试做理解，INTP先检查概念前提与解释分支。两个报告都需要说明与独处边界，但具体反馈与理论停止条件形成明确区别。",
+          "evidence": [
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先看眼前问题怎样运作、哪里可以直接试一下，再决定需不需要更长的讨论。朋友提议旅行，你会留意实际条件，也愿意到现场再调整。观察与动手能让理解更具体，但不意味着你对意义或感受没有兴趣。类型提示的是一种可能的切入点，不是能力判断；有些问题需"
+            },
+            {
+              "caseId": "INTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能对一个问题为什么成立，比对尽快选出答案更感兴趣。朋友问哪家餐厅最好，你会想知道“最好”是价格、口味还是安静程度，也可能顺手想到例外。你喜欢把概念和条件拆开，看看推理是否连得上。这是一种理解问题的习惯，不代表你的结论总比别人准确；生活中"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "半小时后给进度、一小时后恢复联系、事情修好仍问还有什么想表达，均有具体时间或问题；动作短小，符合正文不必变成一直说话的人的目标。",
+          "evidence": [
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.actions.0.step",
+              "quote": "给一个简短检查进度和答复时间。"
+            },
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.actions.1.step",
+              "quote": "说明什么时候恢复联系并按时回来。"
+            },
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.actions.2.step",
+              "quote": "询问是否还有影响没有被听见。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "No material defect found; practical repair, autonomy and emotional impact are balanced explicitly."
+      ]
+    },
+    {
+      "id": "ISTP.en",
+      "reportHash": "c5d88247dbf55254a5fd81d62cf20b7e1520a2f8a164c82ea4c0513f7b90ea28",
+      "criteria": {
+        "editorialSafety": {
+          "score": 5,
+          "rationale": "Hands-on observation is explicitly not indifference to feelings, and experiments affecting others require consent. Solitude has a return time and practical repair does not erase emotional impact. Autonomy is supported without excusing disappearance or guaranteed technical competence.",
+          "evidence": [
+            {
+              "caseId": "ISTP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may inspect how a problem works and what can be tested directly. For a trip, practical conditions matter while some "
+            },
+            {
+              "caseId": "ISTP.en",
+              "path": "framing.editorialNote",
+              "quote": "These are type-based examples and reflection prompts, not individual facts detected from your answers or predictions abo"
+            },
+            {
+              "caseId": "ISTP.en",
+              "path": "framing.cardNote",
+              "quote": "Use these prompts to reflect on real situations, beyond a type label."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Observation, trials, progress visibility, a time frame for solitude and impact after repair remain consistent. English shortens one blind-spot reference to ongoing relational needs, but both the close section and final action preserve that concern.",
+          "evidence": [
+            {
+              "caseId": "ISTP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may inspect how a problem works and what can be tested directly. For a trip, practical conditions matter while some "
+            },
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先看眼前问题怎样运作、哪里可以直接试一下，再决定需不需要更长的讨论。朋友提议旅行，你会留意实际条件，也愿意到现场再调整。观察与动手能让理解更具体，但不意味着你对意义或感受没有兴趣。类型提示的是一种可能的切入点，不是能力判断；有些问题需"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ISTP inspects a faulty device and uses observable practice; INTP defines a question and follows theoretical branches. Both need communication and quiet, but concrete repair with progress updates differs from research stopping conditions and explanation structure.",
+          "evidence": [
+            {
+              "caseId": "ISTP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may inspect how a problem works and what can be tested directly. For a trip, practical conditions matter while some "
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may enjoy understanding why a question works more than choosing an answer quickly. Asked for the best restaurant, yo"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "A half-hour update, an hour’s break with return, and a question about remaining hurt make clear and feasible communication points. The phrases address others’ uncertainty without requiring constant reporting or treating a repaired object as a repaired relationship.",
+          "evidence": [
+            {
+              "caseId": "ISTP.en",
+              "path": "report.actions.0.step",
+              "quote": "Give one update and a response time."
+            },
+            {
+              "caseId": "ISTP.en",
+              "path": "report.actions.1.step",
+              "quote": "State when contact resumes and return then."
+            },
+            {
+              "caseId": "ISTP.en",
+              "path": "report.actions.2.step",
+              "quote": "Ask what impact has not yet been heard."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "No material defect found; practical repair, autonomy and emotional impact are balanced explicitly."
+      ]
+    },
+    {
+      "id": "ISFP.zh",
+      "reportHash": "22ac4dcf8f5fc065185f51b99bf6a66c02d95805d5c5d640cc1ecce79996489d",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "正文不要求只凭心情，也允许温和表达明确边界、分开作品修改与个人价值。“艺术天赋”分享标签仍略像固定能力，因此虽有反思说明，安全性评分保留一档。",
+          "evidence": [
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先感受眼前体验是否舒服、是否符合自己在乎的东西，再决定要不要参与。朋友提议旅行，你会留意环境、节奏和有没有自然体验的空间，而不一定急着说明一套理由。细致感受和个人认可有助于选择，但不意味着你只能凭心情。类型提供的是一个观察入口，具体需"
+            },
+            {
+              "caseId": "ISFP.zh",
+              "path": "framing.editorialNote",
+              "quote": "以下是按类型编写的生活示例和反思提示，不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测。保留有共鸣的部分即可。"
+            },
+            {
+              "caseId": "ISFP.zh",
+              "path": "framing.cardNote",
+              "quote": "把有共鸣的提示带回生活中验证，不必把自己固定在类型标签里。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "体验、个人节奏、具体修改范围与十分钟后继续对话大致相符。第二项英文“Ask for one need”不如中文“先讲一个需要”自然，可能被读成向他人索要需求，但话术清楚表达自己要慢一点。",
+          "evidence": [
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.actions.1.step",
+              "quote": "先讲一个需要，不把对话全部结束。"
+            },
+            {
+              "caseId": "ISFP.en",
+              "path": "report.actions.1.step",
+              "quote": "Ask for one need without ending the whole conversation."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ISFP先感受环境、节奏与具体感官细节，INFP先问价值与意义，学习分别偏直接示范与故事兴趣。相似的边界建议因此有不同触发点，并非只替换类型名。",
+          "evidence": [
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先感受眼前体验是否舒服、是否符合自己在乎的东西，再决定要不要参与。朋友提议旅行，你会留意环境、节奏和有没有自然体验的空间，而不一定急着说明一套理由。细致感受和个人认可有助于选择，但不意味着你只能凭心情。类型提供的是一个观察入口，具体需"
+            },
+            {
+              "caseId": "INFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先问一个选择是否符合自己在乎的东西，再考虑怎样融入外部安排。朋友提议旅行，你想象的也许是那段时间会留下什么感受，以及是否有自由体验的空间。内在认可有助于你投入，但它并不要求每件事都带有特别意义。类型可以提示一个关注点，不能代替了解你真"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "说出安静地点与时间弹性、十分钟后继续、询问修改范围并保留重点，均具有具体条件和可说的话，不要求先证明对方全错才能表达界限。",
+          "evidence": [
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.actions.0.step",
+              "quote": "说出一个喜欢的体验和一个避开条件。"
+            },
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.actions.1.step",
+              "quote": "先讲一个需要，不把对话全部结束。"
+            },
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.actions.2.step",
+              "quote": "询问具体修改范围，再决定怎样回应。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "English action two has awkward wording: Ask for one need should say State one need. Artistic talent is a broad reflective tag rather than tested ability."
+      ]
+    },
+    {
+      "id": "ISFP.en",
+      "reportHash": "50b0f0f750224d4968a2c19911314b5cc3c82740f4684f144603e9f3ff105a0b",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report avoids reducing choice to mood and distinguishes revising work from rejecting a person. The visible Artistic talent tag is an ability stereotype even under reflection framing, so safety is adequate with a specific minor reservation.",
+          "evidence": [
+            {
+              "caseId": "ISFP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice whether an experience feels comfortable and fits what matters to you. A trip suggests environment and pac"
+            },
+            {
+              "caseId": "ISFP.en",
+              "path": "framing.editorialNote",
+              "quote": "These are type-based examples and reflection prompts, not individual facts detected from your answers or predictions abo"
+            },
+            {
+              "caseId": "ISFP.en",
+              "path": "framing.cardNote",
+              "quote": "Use these prompts to reflect on real situations, beyond a type label."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "Experience, personal pace, revision scope and the ten-minute pause align. “Ask for one need” is awkward compared with the Chinese instruction to state one need; the example phrase clarifies the intended slower pace and reconnection.",
+          "evidence": [
+            {
+              "caseId": "ISFP.en",
+              "path": "report.actions.1.step",
+              "quote": "Ask for one need without ending the whole conversation."
+            },
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.actions.1.step",
+              "quote": "先讲一个需要，不把对话全部结束。"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ISFP centers comfort, sensory details and direct experience; INFP centers personal meaning, imagination and stories. Specific learning and activity examples anchor the shared boundary advice in different attention patterns.",
+          "evidence": [
+            {
+              "caseId": "ISFP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice whether an experience feels comfortable and fits what matters to you. A trip suggests environment and pac"
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may ask whether a choice fits what matters to you before fitting it into external plans. A trip suggests feelings an"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "The quiet-place preference, ten-minute pause and revision-scope question are usable and concrete. The second step’s “Ask for one need” should be rephrased as “State one need”; the supplied phrase keeps the intended action understandable.",
+          "evidence": [
+            {
+              "caseId": "ISFP.en",
+              "path": "report.actions.0.step",
+              "quote": "State one desired experience and one condition."
+            },
+            {
+              "caseId": "ISFP.en",
+              "path": "report.actions.1.step",
+              "quote": "Ask for one need without ending the whole conversation."
+            },
+            {
+              "caseId": "ISFP.en",
+              "path": "report.actions.2.step",
+              "quote": "Ask for specific revision scope."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "English action two has awkward wording: Ask for one need should say State one need. Artistic talent is a broad reflective tag rather than tested ability."
+      ]
+    },
+    {
+      "id": "ESTP.zh",
+      "reportHash": "dbd0269e509af168c63f74a2259f195e55806233ca4a12fbf1da46e91dd5afc7",
+      "criteria": {
+        "editorialSafety": {
+          "score": 5,
+          "rationale": "正文反复要求风险、成本、参与者同意、停止条件与后续检查，避免把行动快写成无后果冒险；支持朋友先询问，玩笑需被欢迎。没有职业或危机能力保证。",
+          "evidence": [
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先注意眼前有什么可用条件，以及怎样试一个办法让事情发生。朋友提议旅行，你会很快想到实际玩法，到现场还能根据情况调整。直接参与和即时反馈帮助你判断，但不意味着越快越好。类型描述可以提示行动起点，不能保证判断没有风险；涉及他人、较大成本或"
+            },
+            {
+              "caseId": "ESTP.zh",
+              "path": "framing.editorialNote",
+              "quote": "以下是按类型编写的生活示例和反思提示，不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测。保留有共鸣的部分即可。"
+            },
+            {
+              "caseId": "ESTP.zh",
+              "path": "framing.cardNote",
+              "quote": "把有共鸣的提示带回生活中验证，不必把自己固定在类型标签里。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "实际尝试、临时改变需确认、朋友想聊还是走走、完成包括收尾等均对齐。英文更简洁，但仍保留不能把未知成本交给别人和先确认承诺的实质。",
+          "evidence": [
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先注意眼前有什么可用条件，以及怎样试一个办法让事情发生。朋友提议旅行，你会很快想到实际玩法，到现场还能根据情况调整。直接参与和即时反馈帮助你判断，但不意味着越快越好。类型描述可以提示行动起点，不能保证判断没有风险；涉及他人、较大成本或"
+            },
+            {
+              "caseId": "ESTP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice usable conditions and a practical move that gets things going. Direct participation and quick feedback he"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ESTP从可用条件、现场解决问题与风险反馈展开，ESFP从参与、气氛和陪伴回应展开。前者停止条件与后续影响的练习区别于后者允许难过和长期任务反馈。",
+          "evidence": [
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先注意眼前有什么可用条件，以及怎样试一个办法让事情发生。朋友提议旅行，你会很快想到实际玩法，到现场还能根据情况调整。直接参与和即时反馈帮助你判断，但不意味着越快越好。类型描述可以提示行动起点，不能保证判断没有风险；涉及他人、较大成本或"
+            },
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先关注当下体验和人与人之间的回应，愿意通过参与感受一件事是否适合。朋友提议旅行，你想到一起吃什么、现场有什么好玩，以及大家能否放松。鲜活体验和连接帮助你投入，但不代表你必须一直热闹。类型描述可以作为观察视角，不能规定你的情绪；安静、疲"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "试做前确认一项风险和停止条件、改计划说明晚半小时并确认、先问聊完还是走走，均具体且不强迫参与；停止条件要由当事人在实际情境补充，框架仍可直接使用。",
+          "evidence": [
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.actions.0.step",
+              "quote": "确认一个风险和停止条件再动手。"
+            },
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.actions.1.step",
+              "quote": "告知影响并确认参与者愿意。"
+            },
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.actions.2.step",
+              "quote": "先询问想说还是想做。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "No material defect found; the stopping-condition phrase is intentionally a template whose actual condition must be specified in context."
+      ]
+    },
+    {
+      "id": "ESTP.en",
+      "reportHash": "83fc5ee0cf7da84b40c9f2210d009b2371d72518b336ad1f689049a2f234f796",
+      "criteria": {
+        "editorialSafety": {
+          "score": 5,
+          "rationale": "Risk, cost, willingness, stopping conditions and follow-up are explicit throughout. Humor and activity require the friend’s welcome, and fast action does not excuse skipped impact. The report avoids promising crisis competence from a type label.",
+          "evidence": [
+            {
+              "caseId": "ESTP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice usable conditions and a practical move that gets things going. Direct participation and quick feedback he"
+            },
+            {
+              "caseId": "ESTP.en",
+              "path": "framing.editorialNote",
+              "quote": "These are type-based examples and reflection prompts, not individual facts detected from your answers or predictions abo"
+            },
+            {
+              "caseId": "ESTP.en",
+              "path": "framing.cardNote",
+              "quote": "Use these prompts to reflect on real situations, beyond a type label."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Practical trials, consent to changed plans, talk-versus-walk support and follow-through align. The concise English retains risk boundaries and clear responsibility rather than turning flexibility into permission for unannounced changes.",
+          "evidence": [
+            {
+              "caseId": "ESTP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice usable conditions and a practical move that gets things going. Direct participation and quick feedback he"
+            },
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先注意眼前有什么可用条件，以及怎样试一个办法让事情发生。朋友提议旅行，你会很快想到实际玩法，到现场还能根据情况调整。直接参与和即时反馈帮助你判断，但不意味着越快越好。类型描述可以提示行动起点，不能保证判断没有风险；涉及他人、较大成本或"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ESTP focuses on usable conditions, improvisational fixes and risk feedback; ESFP focuses on shared response, atmosphere and permission not to be cheerful. Stopping conditions and impact checks give ESTP a distinct action center.",
+          "evidence": [
+            {
+              "caseId": "ESTP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice usable conditions and a practical move that gets things going. Direct participation and quick feedback he"
+            },
+            {
+              "caseId": "ESFP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice present experience and the response between people, learning what fits through participation. A trip sugg"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Check a risk and stop condition, explain a half-hour delay and ask acceptance, and offer talking or walking. The stop-condition phrase is a template for a real situation, while the step clearly requires filling it in before action.",
+          "evidence": [
+            {
+              "caseId": "ESTP.en",
+              "path": "report.actions.0.step",
+              "quote": "Check one risk and a stopping condition."
+            },
+            {
+              "caseId": "ESTP.en",
+              "path": "report.actions.1.step",
+              "quote": "Explain the impact and confirm willingness."
+            },
+            {
+              "caseId": "ESTP.en",
+              "path": "report.actions.2.step",
+              "quote": "Ask about talking or doing first."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "No material defect found; the stopping-condition phrase is intentionally a template whose actual condition must be specified in context."
+      ]
+    },
+    {
+      "id": "ESFP.zh",
+      "reportHash": "e341d8176c8264515078aee5d6c9739972e10f74eede5536da7f581602f14765",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "明确允许安静疲惫与不表演开心，陪伴不要求立刻让人好起来；预算精力先核对。分享卡“感染力”等标签仍概括化，但正文清楚否认价值只来自热闹，未把情绪表现设为义务。",
+          "evidence": [
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先关注当下体验和人与人之间的回应，愿意通过参与感受一件事是否适合。朋友提议旅行，你想到一起吃什么、现场有什么好玩，以及大家能否放松。鲜活体验和连接帮助你投入，但不代表你必须一直热闹。类型描述可以作为观察视角，不能规定你的情绪；安静、疲"
+            },
+            {
+              "caseId": "ESFP.zh",
+              "path": "framing.editorialNote",
+              "quote": "以下是按类型编写的生活示例和反思提示，不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测。保留有共鸣的部分即可。"
+            },
+            {
+              "caseId": "ESFP.zh",
+              "path": "framing.cardNote",
+              "quote": "把有共鸣的提示带回生活中验证，不必把自己固定在类型标签里。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "当下体验、参与与负责分开、先问倾诉或换环境、十分钟长期任务动作均一致。英文陪伴话术简化为Talk or walk，但保留不用急着好起来的关键许可。",
+          "evidence": [
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先关注当下体验和人与人之间的回应，愿意通过参与感受一件事是否适合。朋友提议旅行，你想到一起吃什么、现场有什么好玩，以及大家能否放松。鲜活体验和连接帮助你投入，但不代表你必须一直热闹。类型描述可以作为观察视角，不能规定你的情绪；安静、疲"
+            },
+            {
+              "caseId": "ESFP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice present experience and the response between people, learning what fits through participation. A trip sugg"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ESFP关注参与带来的连接与气氛回应，ESTP关注可用条件、即时问题与风险边界。ESFP允许不马上开心和给远期任务小反馈，区别于ESTP的停止条件与行动后检查。",
+          "evidence": [
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先关注当下体验和人与人之间的回应，愿意通过参与感受一件事是否适合。朋友提议旅行，你想到一起吃什么、现场有什么好玩，以及大家能否放松。鲜活体验和连接帮助你投入，但不代表你必须一直热闹。类型描述可以作为观察视角，不能规定你的情绪；安静、疲"
+            },
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先注意眼前有什么可用条件，以及怎样试一个办法让事情发生。朋友提议旅行，你会很快想到实际玩法，到现场还能根据情况调整。直接参与和即时反馈帮助你判断，但不意味着越快越好。类型描述可以提示行动起点，不能保证判断没有风险；涉及他人、较大成本或"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "只确认一个邀请、先问想说还是换环境、安排并记录十分钟动作，均有观察得到的范围。话术让低落朋友不用急着好起来，同时避免用更多活动替代倾听。",
+          "evidence": [
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.actions.0.step",
+              "quote": "检查预算与精力，只确认一项。"
+            },
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.actions.1.step",
+              "quote": "先确认他需要继续说还是换环境。"
+            },
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.actions.2.step",
+              "quote": "安排十分钟固定动作并记录完成。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The English Talk or walk? phrase is a little abrupt for someone upset; the preceding no-rush sentence keeps the intended support and choice clear."
+      ]
+    },
+    {
+      "id": "ESFP.en",
+      "reportHash": "31a1ce8ed84436b52f6c17846dbf2eb56064573b59e212dce31cf01e4d94fcd8",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The core explicitly allows quiet and fatigue, and support need not produce instant happiness. Energy and budget are checked before commitment. Infectious energy remains a broad share tag, but the case clearly rejects cheerfulness as a required performance.",
+          "evidence": [
+            {
+              "caseId": "ESFP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice present experience and the response between people, learning what fits through participation. A trip sugg"
+            },
+            {
+              "caseId": "ESFP.en",
+              "path": "framing.editorialNote",
+              "quote": "These are type-based examples and reflection prompts, not individual facts detected from your answers or predictions abo"
+            },
+            {
+              "caseId": "ESFP.en",
+              "path": "framing.cardNote",
+              "quote": "Use these prompts to reflect on real situations, beyond a type label."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "Present experience, joining versus organizing, listening versus a change of setting, and a regular ten-minute action align. “Talk or walk?” shortens the Chinese support question, but the permission not to feel better immediately is retained.",
+          "evidence": [
+            {
+              "caseId": "ESFP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice present experience and the response between people, learning what fits through participation. A trip sugg"
+            },
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "你可能先关注当下体验和人与人之间的回应，愿意通过参与感受一件事是否适合。朋友提议旅行，你想到一起吃什么、现场有什么好玩，以及大家能否放松。鲜活体验和连接帮助你投入，但不代表你必须一直热闹。类型描述可以作为观察视角，不能规定你的情绪；安静、疲"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ESFP centers response, participation and emotional company; ESTP centers practical moves and risks. Allowing sadness and building feedback into longer tasks creates distinct advice beyond their shared enjoyment of activity.",
+          "evidence": [
+            {
+              "caseId": "ESFP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice present experience and the response between people, learning what fits through participation. A trip sugg"
+            },
+            {
+              "caseId": "ESTP.en",
+              "path": "report.sections.0.text",
+              "quote": "You may notice usable conditions and a practical move that gets things going. Direct participation and quick feedback he"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "Confirm one invitation after checking capacity, ask which support fits, and record a ten-minute routine. “Talk or walk?” is terse and could sound abrupt despite the caring preceding sentence; the intended choice and agency remain clear.",
+          "evidence": [
+            {
+              "caseId": "ESFP.en",
+              "path": "report.actions.0.step",
+              "quote": "Check energy and budget, then confirm one."
+            },
+            {
+              "caseId": "ESFP.en",
+              "path": "report.actions.1.step",
+              "quote": "Ask whether talking or another setting helps."
+            },
+            {
+              "caseId": "ESFP.en",
+              "path": "report.actions.2.step",
+              "quote": "Schedule and record a ten-minute regular action."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The English Talk or walk? phrase is a little abrupt for someone upset; the preceding no-rush sentence keeps the intended support and choice clear."
+      ]
+    }
+  ]
+}
