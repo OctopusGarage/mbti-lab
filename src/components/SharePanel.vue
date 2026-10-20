@@ -109,7 +109,7 @@ const resultText = computed(() =>
   props.type
     ? t(props.personal ? 'share.xTextResult' : 'share.xTextType', {
         type: props.type,
-        url: typeShareUrl(props.type),
+        url: typeShareUrl(props.type, APP_URL, locale.value),
       })
     : '',
 )

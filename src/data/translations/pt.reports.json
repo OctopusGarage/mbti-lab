@@ -1,0 +1,530 @@
+{
+  "INTJ": {
+    "highlights": [
+      "Defina a direção antes do caminho",
+      "Torne seu raciocínio visível",
+      "Teste planos de longo prazo em pequenos passos"
+    ],
+    "sections": [
+      "Antes de começar, você talvez pergunte o que a atividade pretende alcançar. Uma viagem levanta a questão de descansar, se conectar ou descobrir algo antes de reservar o hotel. Direção e avaliação independente são importantes para você. Esse é um possível ponto de partida para decisões, e não uma afirmação de que você prevê o futuro ou precisa transformar a vida em um projeto.",
+      "Em uma conversa movimentada sobre o fim de semana, você talvez compare orçamento, distância e conflitos de agenda antes de enviar uma proposta curta. As outras pessoas veem a resposta sem ver seu raciocínio. Explique um motivo e deixe um detalhe aberto a mudanças. Assim, a preparação se torna um recurso que o grupo pode usar, em vez de uma decisão tomada em nome dele.",
+      "Uma dificuldade recorrente talvez chame sua atenção para um padrão. Você quer uma solução duradoura, enquanto a pessoa amiga talvez precise primeiro elaborar a decepção. Pergunte se escutar ou analisar ajudaria hoje. Você pode pedir para concluir um pensamento e, ao mesmo tempo, abrir espaço para os sentimentos; examinar um problema não exige definir quem a pessoa é.",
+      "Você talvez demonstre carinho cumprindo promessas, planejando ou oferecendo ajuda prática. Uma pessoa próxima talvez precise de contato frequente. Expectativas não ditas podem fazer o silêncio parecer distância e as perguntas parecerem interferência. Diga quanto tempo precisa ficar sem companhia e tome a iniciativa de retomar o contato. Planos futuros só oferecem segurança quando as duas pessoas podem negociá-los.",
+      "Um modelo de referência talvez ajude você a aprender; objetivos claros e decisões independentes talvez ajudem você a trabalhar. Separe o objetivo final, as evidências atuais e a primeira entrega. Teste uma hipótese enquanto o modelo se desenvolve. Diga aos colegas o que está definido e o que é provisório, para que saibam onde suas contribuições podem fazer diferença.",
+      "Pensar no longo prazo ajuda a perceber riscos, a independência ajuda a resistir à pressão do grupo e o planejamento reduz o retrabalho. Com poucas evidências, esses pontos fortes podem se transformar em otimização prolongada ou impaciência com outras pessoas. O estresse pode intensificar essa reação. Antes de descartar uma preocupação, pergunte que limitação a outra pessoa está percebendo. Um plano revisado e utilizável pode funcionar melhor do que um plano completo que ninguém mais conhece.",
+      "Torne seu raciocínio acessível: um objetivo, um motivo e uma pergunta ainda em aberto. Faça um pequeno experimento antes de se comprometer com todos os detalhes. Nos relacionamentos, pratique compreender a experiência antes de resolvê-la. Escolha um dos exercícios abaixo para experimentar; crescer não precisa se tornar mais um projeto abrangente."
+    ],
+    "actions": [
+      {
+        "context": "Um plano não sai do papel",
+        "step": "Dedique vinte minutos a testar uma hipótese em uma versão pequena.",
+        "phrase": "Vou testar esta parte nas condições reais."
+      },
+      {
+        "context": "Uma pessoa amiga volta a falar de uma dificuldade",
+        "step": "Pergunte que apoio ela quer antes de oferecer uma solução.",
+        "phrase": "Ajudaria mais eu escutar ou pensarmos em opções?"
+      },
+      {
+        "context": "Uma pessoa com quem você trabalha propõe outro caminho",
+        "step": "Compartilhe um motivo e pergunte sobre limitações que você não considerou.",
+        "phrase": "Este é o meu motivo. Que condição estou deixando de considerar?"
+      }
+    ]
+  },
+  "INTP": {
+    "highlights": [
+      "Examine a premissa",
+      "Siga a curiosidade para se aprofundar",
+      "Dê ao pensamento um caminho para a ação"
+    ],
+    "sections": [
+      "Você talvez goste mais de compreender a lógica de uma pergunta do que de escolher uma resposta rapidamente. Quando alguém pergunta qual é o melhor restaurante, você primeiro define os critérios. Examinar pressupostos pode ajudar, mas não garante conclusões superiores. Algumas decisões cotidianas se beneficiam de uma resposta suficiente e da chance de seguir em frente.",
+      "Uma afirmação conhecida talvez leve você a pensar em uma exceção; uma conversa sobre um filme talvez leve às regras daquele universo. Enquanto isso, opções demais de compra podem adiar uma aquisição simples. Verifique se a conversa é uma troca casual ou uma análise. Dê à sua curiosidade um ponto de entrada e às decisões comuns uma condição clara para encerrar a busca.",
+      "Um assunto favorito pode fazer você falar bastante, enquanto entrar em conversas informais é mais difícil. Seu cuidado talvez apareça em informações e explicações, embora a pessoa amiga precise primeiro de uma resposta emocional. Mostre que compreendeu a preocupação antes de oferecer uma análise. Se um conceito não estiver sendo entendido, tente um exemplo cotidiano em vez de presumir que a pessoa não quer pensar.",
+      "Você talvez queira tanto pensar sem interrupções quanto ter acesso sincero ao mundo interior de alguém querido. Ficar sem companhia e sem explicar pode parecer um desaparecimento. Combinem quando vão retomar o contato. Os sentimentos podem ser expressos de forma provisória; esperar até conseguir explicá-los por completo pode deixar a outra pessoa esperando por muito mais tempo do que você imagina.",
+      "Uma pergunta de aprendizado talvez abra muitas ramificações. Explicações melhores podem levar você a querer refazer o trabalho, enquanto os colegas precisam de uma data de entrega. Separe exploração de entrega e guarde outras perguntas para uma próxima rodada. Verifique se o resultado atende à tarefa real, além de avaliar se o raciocínio é elegante.",
+      "A curiosidade encontra alternativas, a lógica detecta lacunas e a independência preserva o espaço para discordar. Sob pressão, isso pode virar pesquisa sem fim, reconstruções repetidas ou decisões adiadas. Um escopo pouco claro e a falta de recursos também importam. Identifique as incógnitas que realmente afetam a escolha e então faça um pequeno movimento reversível para aprender mais.",
+      "Deixe a exploração e a ação se apoiarem. Defina uma condição para encerrar a busca, teste uma resposta e depois investigue o que o teste revela. Comece as explicações com um exemplo e a conclusão atual. Nos relacionamentos, expresse uma necessidade sem exigir uma teoria completa sobre ela. Os exercícios abaixo preservam a curiosidade e tornam o próximo passo mais confiável."
+    ],
+    "actions": [
+      {
+        "context": "A pesquisa não termina",
+        "step": "Escolha dois critérios essenciais e teste uma opção reversível.",
+        "phrase": "Estas duas condições bastam para uma primeira tentativa."
+      },
+      {
+        "context": "Uma explicação está difícil de acompanhar",
+        "step": "Comece com um exemplo cotidiano e ofereça mais detalhes.",
+        "phrase": "Aqui vai um exemplo. Ajudaria explicar o raciocínio?"
+      },
+      {
+        "context": "Você precisa de silêncio",
+        "step": "Diga quando a pausa termina e tome a iniciativa de retomar o contato.",
+        "phrase": "Preciso de meia hora para pensar, depois eu volto."
+      }
+    ]
+  },
+  "ENTJ": {
+    "highlights": [
+      "Transforme desejos em próximos passos",
+      "Verifique se o silêncio significa concordância",
+      "Acompanhe a capacidade disponível, além do progresso"
+    ],
+    "sections": [
+      "Você talvez transforme um desejo em objetivo e procure recursos para fazê-lo avançar. Uma viagem vira datas, orçamento e responsabilidades. Avançar importa, mas isso não torna você responsável por todas as decisões. Algumas conversas são um exercício de imaginar em conjunto, e alguns sentimentos ainda não estão prontos para virar tarefas. Verifique o propósito antes de organizar.",
+      "Quando uma conversa em grupo empaca, você talvez resuma as opções e proponha um prazo. Você percebe gargalos e coordena com naturalidade. As outras pessoas podem gostar disso ou ainda precisar de espaço para expressar preocupações. Reserve um momento para perguntas e confirme as responsabilidades; o silêncio não significa necessariamente concordância com a direção que você escolheu.",
+      "Uma pessoa amiga em dificuldade talvez receba ajuda prática, contatos ou uma divisão da tarefa em etapas. Pergunte de qual dificuldade ela quer cuidar e até que ponto deseja seu envolvimento. Se o conselho não for seguido, explore o obstáculo. Uma conversa pode oferecer companhia sem um resultado mensurável; um relacionamento não é uma contagem de problemas resolvidos.",
+      "Você talvez queira tratar divergências importantes de forma explícita. Uma pessoa próxima talvez precise de mais tempo para compreender seus sentimentos. Separe o desejo de resolver da exigência de uma resposta imediata. Ao planejar em conjunto, conversem sobre a capacidade disponível, além dos objetivos. Participar das decisões pode oferecer mais segurança do que receber um plano completo feito pela outra pessoa.",
+      "Responsáveis e resultados bem definidos talvez ajudem você a aprender e trabalhar. Responsabilidades ambíguas podem levar você a assumir o controle. Verifique onde falta apoio, dê aos colegas espaço para escolher os métodos e combinem entregas e pontos de acompanhamento. Preserve algum aprendizado sem pressão, cujo valor ainda não seja evidente; interesses podem surgir fora do plano original.",
+      "Organização e capacidade de decisão podem tirar uma equipe da estagnação. Também podem restringir opções cedo demais, apressar a adaptação ou compensar a falta de recursos com excesso de trabalho. Diferencie limitações reais de hábitos conhecidos. Sob pressão, a firmeza pode sinalizar cansaço. Descansar e redistribuir tarefas pode ajudar mais do que exigir ainda mais força de vontade pessoal.",
+      "Deixe outras pessoas influenciarem a direção do seu impulso de agir. Escute as preocupações antes de propor uma decisão e pergunte antes de assumir a condução da ajuda. Reserve tempo que não precise provar sua produtividade. Os exercícios abaixo conectam objetivos com consentimento, liberdade de colaboração e sua própria capacidade."
+    ],
+    "actions": [
+      {
+        "context": "Uma discussão empaca",
+        "step": "Escute uma preocupação de cada pessoa antes de resumir as escolhas.",
+        "phrase": "Que condição ainda não discutimos?"
+      },
+      {
+        "context": "Você quer assumir o controle do problema de uma pessoa amiga",
+        "step": "Pergunte que nível de envolvimento ela deseja.",
+        "phrase": "Até onde você gostaria que minha ajuda fosse?"
+      },
+      {
+        "context": "Você continua cobrindo as lacunas da equipe",
+        "step": "Escolha uma tarefa para redistribuir, com responsabilidade bem definida.",
+        "phrase": "Precisamos redistribuir isto; minha capacidade vai até aqui."
+      }
+    ]
+  },
+  "ENTP": {
+    "highlights": [
+      "Novos ângulos despertam o envolvimento",
+      "Separe ideias de promessas",
+      "Deixe um resultado visível da exploração"
+    ],
+    "sections": [
+      "Você talvez primeiro pergunte de que outra forma algo poderia ser feito. Um caminho fixo sugere alternativas; uma regra convida a um caso de teste. Novos ângulos mantêm seu interesse, mas você não precisa reabrir todos os acordos. Diferencie questões que vale a pena explorar de combinações que já funcionam bem o suficiente.",
+      "Uma ideia em uma conversa em grupo pode rapidamente virar outras três. Você talvez esteja imaginando possibilidades enquanto outra pessoa já está fazendo reservas. Deixe claro o que é uma troca de ideias e o que é um compromisso. Novas experiências podem continuar tendo aventura, enquanto um horário de encontro confiável evita que todos fiquem esperando indefinidamente.",
+      "Perguntas, humor e pontos de vista concorrentes podem dar energia às suas conversas. Quando uma pessoa amiga conta uma experiência dolorosa, debater pode soar como uma exigência de provas. Verifique se vocês estão discutindo uma ideia ou escutando um relato pessoal. Reconheça as circunstâncias dela antes de apresentar uma exceção; a compreensão também pode sustentar uma conversa animada.",
+      "Você talvez queira novidades e espaço para ideias em evolução em um relacionamento próximo. A outra pessoa talvez precise de contato previsível. Separe o que pode ser flexível das promessas importantes e cumpra por iniciativa própria as partes definidas. Durante um conflito, descreva o impacto que você escutou antes de buscar outra interpretação. Assumir um erro específico deixa espaço para negociações futuras.",
+      "Seu aprendizado talvez conecte rapidamente vários campos. Começar e destravar problemas pode despertar mais interesse do que concluir etapas repetitivas. Mantenha uma lista de experimentos e escolha uma ideia por rodada. As pessoas com quem você trabalha podem complementar seus pontos fortes, mas você ainda precisa assumir sua parte combinada na conclusão, em vez de presumir que alguém vai organizar as pontas de todas as tentativas.",
+      "As associações revelam alternativas, o raciocínio rápido lida com mudanças e o questionamento expõe pressupostos. Isso também pode criar ramificações demais, planos instáveis ou explicações engenhosas que evitam responsabilidades. A sobrecarga também importa. Faça uma pausa nas novas opções e liste o que você prometeu, incluindo o que vai concluir ou retirar explicitamente.",
+      "Dê às ideias um lugar para se concretizarem: um pequeno experimento e uma condição para encerrá-lo. Diferencie debate de escuta e deixe a pessoa amiga confirmar o que você compreendeu. Mantenha firme um compromisso importante enquanto negocia flexibilidade em outros pontos. Esses exercícios ajudam as pessoas a participar da sua curiosidade com confiança e mostram qual exploração produziu algo útil."
+    ],
+    "actions": [
+      {
+        "context": "Surgem várias direções",
+        "step": "Teste uma por trinta minutos e anote as outras para depois.",
+        "phrase": "Nesta rodada, vamos testar esta ideia; as outras podem esperar."
+      },
+      {
+        "context": "Uma pessoa amiga conta algo que a magoou",
+        "step": "Mostre que compreendeu o impacto e depois pergunte se outra perspectiva ajudaria.",
+        "phrase": "Isso magoou muito você. Entendi direito?"
+      },
+      {
+        "context": "Você quer mudar um plano",
+        "step": "Mantenha um compromisso confirmado enquanto negocia mudanças.",
+        "phrase": "O horário do encontro continua o mesmo. Vamos rever o caminho?"
+      }
+    ]
+  },
+  "INFJ": {
+    "highlights": [
+      "Perceba o significado das experiências",
+      "Confirme sua compreensão com a pessoa",
+      "Escutar profundamente exige limites"
+    ],
+    "sections": [
+      "Você talvez perceba o que um acontecimento significa para alguém e procure um padrão que se mantém ao longo do tempo. Uma mudança de emprego levanta questões sobre a vida que a pessoa amiga deseja, além da renda. O significado sustenta sua atenção, mas não permite ler pensamentos. Confira sua interpretação com a pessoa cuja experiência você está tentando compreender.",
+      "Em uma conversa sobre o fim de semana, você talvez observe os interesses das pessoas antes de sugerir um plano confortável. Assuntos familiares convidam ao aprofundamento; barulho prolongado pode pedir um tempo sem companhia. A atenção ao clima pode se transformar, silenciosamente, em um papel de coordenação que ninguém atribuiu a você. Inclua sua própria preferência e permita que uma atividade atenda a algumas necessidades, em vez de todas.",
+      "Você talvez conecte detalhes de várias conversas com uma pessoa amiga. Isso pode transmitir compreensão ou definir a pessoa antes da hora. Apresente o padrão como uma pergunta. Explique quando precisar de uma pausa depois de escutar profundamente. Uma resposta sustentável, com limites, constrói mais continuidade do que escutar até a exaustão e depois desaparecer.",
+      "Você talvez espere que uma pessoa próxima compreenda o que está implícito e compartilhe um senso de direção. Esperanças não ditas podem transformar uma pequena falha na sensação de não ser visto. Transforme a resposta desejada em um pedido específico. Conversem sobre uma questão de cada vez e permitam necessidades diferentes. A compreensão se desenvolve; um sinal não percebido não explica um relacionamento inteiro.",
+      "Saber por que o trabalho importa pode sustentar seu esforço. Você talvez transforme comentários dispersos em uma direção, mas a execução ainda exige fatos, tempo e responsáveis. Defina um primeiro passo observável. Compartilhe perguntas antes de aperfeiçoar o plano e considere revisões práticas como possíveis ajudas para concretizar o valor que importa para você.",
+      "A observação cuidadosa revela necessidades não ditas; a compreensão de longo prazo dá continuidade às experiências. O custo pode ser interpretar demais, ter expectativas altas ou carregar as emoções de outras pessoas. Sob estresse, separe fatos, suposições e responsabilidades. Faça uma pergunta concreta em vez de prolongar indefinidamente uma história preocupante.",
+      "Deixe espaço para conferir sua compreensão. Apresente uma suposição como suposição, expresse suas necessidades em comportamentos concretos e teste uma direção por meio de um pequeno resultado. A companhia cotidiana pode importar sem uma conversa profunda. Esses exercícios conectam significado com limites e ação, sem exigir uma explicação completa antes de você falar."
+    ],
+    "actions": [
+      {
+        "context": "Você percebe algo que não foi dito",
+        "step": "Apresente uma observação e convide a pessoa a corrigir sua impressão.",
+        "phrase": "Fiquei pensando se você está com alguma hesitação. Entendi errado?"
+      },
+      {
+        "context": "Escutar deixa você sem energia",
+        "step": "Diga quanto tempo ainda tem e combine quando vão retomar o contato.",
+        "phrase": "Tenho mais dez minutos; podemos continuar amanhã?"
+      },
+      {
+        "context": "Você espera que alguém compreenda",
+        "step": "Transforme a esperança em um pedido específico.",
+        "phrase": "Hoje eu gostaria de companhia, ainda sem conselhos."
+      }
+    ]
+  },
+  "INFP": {
+    "highlights": [
+      "Verifique se uma escolha parece autêntica",
+      "Expresse suas preferências para poder negociá-las",
+      "Pequenas ações não precisam esperar pelo ânimo"
+    ],
+    "sections": [
+      "Você talvez pergunte se uma escolha combina com o que importa para você antes de encaixá-la em planos externos. Uma viagem sugere sentimentos e espaço para explorar. A concordância interior sustenta o esforço, mas nem toda tarefa precisa parecer especial. Este perfil não pode definir seus valores; um trabalho necessário e pouco interessante no momento também pode começar aos poucos.",
+      "Você talvez perceba qual atividade prefere antes de conseguir explicar. Uma caminhada desperta associações, enquanto os planos cotidianos se beneficiam de espaço para mudanças. O silêncio não informa suas preferências às outras pessoas. Diga uma coisa de que você gosta e uma condição desconfortável, sem precisar apresentar um plano alternativo completo.",
+      "A experiência de uma pessoa amiga talvez leve você a compreender os sentimentos dela e a rejeitar rótulos simplistas. Você valoriza o espaço para a complexidade. Cuidar intensamente também pode deixar suas próprias necessidades de lado. Você pode compreender sem concordar. Se os conselhos vierem cedo demais, peça para a pessoa escutar primeiro, em vez de esperar que sua decepção explique a necessidade.",
+      "Você talvez queira que uma pessoa próxima escute com abertura pensamentos ainda em formação. A correria ou uma resposta seca podem parecer evidências de que você não importa. Verifique o que aconteceu antes de descrever o impacto. Explique tanto a necessidade de espaço quanto a de cuidado; as diferenças não exigem demonstrações idênticas de compromisso.",
+      "Histórias, interesses e propósitos pessoais talvez ajudem você a aprender. Tarefas sem conexão e retornos exclusivamente negativos podem dificultar o começo. Encontre uma necessidade concreta atendida pela tarefa e reduza a primeira ação a dez minutos. Um rascunho permite revisões sem dar a outra pessoa a autoridade final sobre o significado do seu trabalho.",
+      "A atenção aos valores protege a sinceridade, a imaginação abre possibilidades e a empatia dá espaço às experiências. Isso também pode vir acompanhado de autocrítica, espera pelo ânimo certo ou dificuldade de recusar. Sono, pressão e dificuldade da tarefa importam. Separe não gostar de um resultado de julgar quem você é por inteiro e então mude uma condição sobre a qual consiga agir.",
+      "Transforme algo importante para você em ação por meio de uma pequena prática. Ao estabelecer um limite, diga o que pode oferecer, sem justificar longamente a recusa. Aproveite um ponto útil do retorno recebido e avalie o restante. Esses exercícios dão às necessidades e ideias uma forma negociável, preservando seu significado pessoal."
+    ],
+    "actions": [
+      {
+        "context": "Uma ideia importante ainda não começou",
+        "step": "Dedique dez minutos a produzir um parágrafo ou um rascunho.",
+        "phrase": "Posso dar a isso um começo imperfeito."
+      },
+      {
+        "context": "Dizer não parece magoar",
+        "step": "Diga qual é sua capacidade e que parte você pode oferecer.",
+        "phrase": "Não consigo fazer tudo isso, mas posso ajudar com esta parte."
+      },
+      {
+        "context": "O retorno sobre o trabalho vira um julgamento sobre você",
+        "step": "Escolha uma revisão concreta no trabalho e depois abra espaço para elaborar suas emoções.",
+        "phrase": "Esta parte pode mudar; ela não é minha identidade inteira."
+      }
+    ]
+  },
+  "ENFJ": {
+    "highlights": [
+      "Perceba a direção e a participação",
+      "Escute antes de incentivar",
+      "Torne o cuidado recíproco"
+    ],
+    "sections": [
+      "Você talvez perceba a direção compartilhada e se as pessoas conseguem participar por vontade própria. Uma viagem levanta tanto questões de planejamento quanto a preocupação com alguém que ainda não falou. Apoiar a participação é útil, mas você não é responsável pelo desenvolvimento ou pelo humor de todas as pessoas. Um envolvimento menor pode refletir prioridades diferentes, em vez de uma necessidade de mais incentivo.",
+      "Você talvez convide pessoas mais quietas a participar de uma conversa em grupo e transforme opiniões dispersas em uma proposta utilizável. Nos encontros, você ajuda quem acabou de chegar a entrar na conversa. Manter constantemente o clima pode ser cansativo. Escolha a coordenação que deseja oferecer e compartilhe o restante. Uma pausa também pode dar a alguém tempo para pensar.",
+      "Você talvez lembre uma pessoa amiga desanimada dos pontos fortes dela e de um futuro possível. O incentivo pode chegar antes que ela termine de descrever a perda. Escute primeiro e pergunte sobre os próximos passos. Um conselho não precisa ser adotado para validar a amizade. Compartilhe suas dificuldades também, para que o cuidado circule nos dois sentidos.",
+      "Você talvez queira continuidade e conversas em tempo oportuno sobre necessidades importantes. Uma resposta breve ou um tempo sem companhia podem levar a perguntas extras em busca de segurança. Combinem a frequência de contato e diferenciem cuidado de verificações repetidas. Diga o que ajudaria, convide a pessoa a propor outra abordagem e experimentem um acordo temporário, em vez de tentar sustentar todas as expectativas por suposições.",
+      "Um público definido e um propósito compartilhado talvez motivem seu aprendizado e trabalho. Você consegue coordenar divergências e dar retornos, mas talvez aceite coisas demais para evitar decepções. Verifique tempo e recursos antes de assumir compromissos. Ao dar um retorno, separe incentivo, observações e mudanças solicitadas; o avanço da equipe não precisa depender de você administrar a energia de cada pessoa.",
+      "A conexão ajuda a construir acordos, a expressão esclarece a direção e o apoio ajuda as pessoas a começar. O custo pode ser assumir responsabilidades demais, absorver a insatisfação ou omitir discordâncias necessárias. Verifique se a tarefa é sua e se a ajuda foi solicitada. Escopo e divergência podem tornar a cooperação mais sustentável, em vez de necessariamente enfraquecê-la.",
+      "Dê ao cuidado um limite claro. Pergunte que ajuda a pessoa quer, reserve tempo para conferir sua agenda antes de aceitar pedidos e apresente sua posição antes de convidar respostas. Esses exercícios preservam a conexão e tornam sua capacidade real visível. Assim, as pessoas que você apoia também podem se tornar parceiras no apoio a você."
+    ],
+    "actions": [
+      {
+        "context": "Chega um pedido extra",
+        "step": "Confira sua agenda e ofereça um escopo claro.",
+        "phrase": "Vou conferir meu tempo e confirmar hoje à noite."
+      },
+      {
+        "context": "Você quer incentivar imediatamente",
+        "step": "Mostre que compreendeu a experiência antes de perguntar sobre os próximos passos.",
+        "phrase": "Você gostaria de terminar de me contar antes de planejarmos?"
+      },
+      {
+        "context": "Você também precisa de apoio",
+        "step": "Faça um pedido concreto e delimitado para que escutem você.",
+        "phrase": "Você poderia me escutar por dez minutos? Também estou sentindo cansaço."
+      }
+    ]
+  },
+  "ENFP": {
+    "highlights": [
+      "Encontre energia nas possibilidades e nas conexões",
+      "Verifique sua capacidade antes de assumir compromissos",
+      "Dê à inspiração um pequeno passo visível"
+    ],
+    "sections": [
+      "Você talvez perceba possibilidades e conexões com pessoas ou ideias importantes para você. Uma viagem sugere experiências e histórias. O interesse pode dar energia ao esforço, mas você não precisa sentir entusiasmo o tempo todo. Sua energia e as circunstâncias também importam; calma e repetição podem ser partes escolhidas da sua vida.",
+      "Uma ideia em uma conversa em grupo pode despertar muitas outras. Você ajuda as pessoas a enxergar novas experiências, enquanto os detalhes práticos talvez fiquem atrás da empolgação. Separe interesse de compromisso e mantenha uma rotina para conferir horário, transporte e orçamento. Diga quando precisar descansar, em vez de continuar encenando sua versão mais animada.",
+      "A história de uma pessoa amiga talvez traga rapidamente à sua mente uma experiência parecida ou uma nova possibilidade. O envolvimento afetuoso ajuda, mas uma resposta rápida pode redirecionar o que ela queria dizer. Pergunte o que mais ela quer acrescentar antes de compartilhar sua associação. Deixe a confiança se desenvolver por meio de interações recíprocas, além da empolgação de uma única conversa.",
+      "Você talvez queira espaço para crescer e explorar, junto com contato emocional sincero. Acordos estáveis podem parecer limitantes, enquanto mudanças frequentes podem deixar uma pessoa próxima insegura. Fixem o que precisa de confiabilidade e negociem o restante. Conversem sobre um acontecimento de cada vez, em vez de todas as preocupações futuras. Liberdade e cuidado confiável podem coexistir em um acordo ajustável.",
+      "O interesse pode iniciar o aprendizado rapidamente, especialmente quando o conhecimento se conecta à vida. Um trabalho novo e significativo talvez precise de estrutura para concluir as partes repetitivas. Divida uma ideia em três passos visíveis e marque um acompanhamento. Esclareça sua parte e a data de entrega para que as pessoas com quem você trabalha consigam acompanhar o desenvolvimento que aconteceu na sua cabeça.",
+      "As associações abrem oportunidades, o acolhimento constrói conexões e a flexibilidade permite mudar de caminho. O custo pode ser fazer promessas demais, confundir empolgação com capacidade ou abandonar uma direção depois de uma decepção. A falta de descanso também importa. Entre os compromissos atuais, decida o que manter, pausar e encerrar. Concluir uma tarefa pode abrir espaço para explorar.",
+      "Proteja a capacidade que sustenta o entusiasmo. Reserve um intervalo para confirmar convites, deixe as pessoas terminarem suas histórias e dê a um projeto importante uma pequena ação regular. Esses exercícios ajudam interesses e promessas a se apoiarem, sem fazer da sua energia a única coisa que os mantém de pé."
+    ],
+    "actions": [
+      {
+        "context": "Um convite desperta empolgação",
+        "step": "Confira os compromissos já assumidos antes de confirmar.",
+        "phrase": "Eu adoraria participar; confirmo amanhã."
+      },
+      {
+        "context": "Uma história desperta muitas associações",
+        "step": "Pergunte se a pessoa terminou antes de acrescentar as suas.",
+        "phrase": "Tem mais alguma coisa que você quer dizer?"
+      },
+      {
+        "context": "O interesse por um projeto diminui",
+        "step": "Conclua um mínimo de dez minutos e anote a próxima ação.",
+        "phrase": "Este pequeno passo basta por hoje; o próximo está anotado."
+      }
+    ]
+  },
+  "ISTJ": {
+    "highlights": [
+      "Confira as condições e os compromissos",
+      "Explique as mudanças para manter a confiança",
+      "Atualize a experiência por meio de pequenos testes"
+    ],
+    "sections": [
+      "Você talvez confira as condições conhecidas e os compromissos claros antes de agir. Uma viagem levanta questões sobre datas, transporte e orçamento real. A experiência ajuda na sua avaliação, mas a familiaridade não torna um método certo para sempre. Esse é um ponto de partida para observar, e não uma afirmação de que você resiste a novidades. Condições alteradas merecem uma nova verificação.",
+      "Em um plano em grupo, você talvez acompanhe discretamente o ponto de partida e os preparativos que faltam. Cumprir promessas e manter a ordem pode reduzir atritos. As outras pessoas talvez vejam seriedade sem perceber o esforço por trás da estabilidade. Apresente cedo os requisitos essenciais e diferencie necessidades de segurança ou horário de preferências pessoais.",
+      "Você talvez apoie uma pessoa amiga com um método testado ou uma tarefa prática. Primeiro, verifique o que torna essa situação diferente. Ações confiáveis podem vir acompanhadas de uma breve expressão verbal de carinho. Quando a pessoa quiser conversar mais, definir um horário pode tornar essa troca uma parte confiável do relacionamento.",
+      "Pontualidade, cuidado cotidiano e promessas cumpridas talvez deem segurança a você. Uma pessoa próxima talvez precise de mais expressão emocional ou novidades. Explique os acordos importantes e como avisar sobre mudanças; pergunte que resposta ela deseja. Estabilidade pode significar mudanças compreensíveis e confiabilidade contínua, em vez de planos que nunca mudam.",
+      "Etapas claras talvez ajudem no aprendizado; padrões e responsáveis definidos talvez ajudem no trabalho. Separe verificações necessárias de etapas que já perderam a utilidade. Experimente um método de baixo custo e avalie o resultado. Compartilhe o progresso e os riscos antes da conclusão, para que as pessoas com quem você trabalha possam fornecer recursos que faltam enquanto eles ainda podem ajudar.",
+      "A atenção aos detalhes evita lacunas, a confiabilidade cria expectativas e a prática constante constrói experiência. O custo pode ser apreensão diante de mudanças, desconfiança de outros métodos ou trabalho prolongado para manter todos os padrões. Confira também os recursos. Preserve a restrição importante, permitindo que etapas menos importantes sejam imperfeitas.",
+      "Deixe a confiabilidade incluir flexibilidade: uma pequena margem, uma verificação das condições que mudaram e um experimento de baixo custo. Fale sobre o carinho, em vez de depender das ações para explicar todos os sentimentos. Os exercícios abaixo preservam padrões e promessas, reduzindo o peso de manter tudo por conta própria."
+    ],
+    "actions": [
+      {
+        "context": "Um plano muda",
+        "step": "Pergunte o motivo e preserve uma condição essencial.",
+        "phrase": "O horário pode mudar; por favor, me avise antes."
+      },
+      {
+        "context": "Você faz todos os preparativos",
+        "step": "Passe uma verificação para alguém que tenha disposição para ajudar.",
+        "phrase": "Você poderia assumir a responsabilidade por conferir isto?"
+      },
+      {
+        "context": "Um método novo parece incerto",
+        "step": "Teste uma etapa de baixo risco e compare o resultado.",
+        "phrase": "Vamos experimentar esta pequena parte e ver o que acontece."
+      }
+    ]
+  },
+  "ISFJ": {
+    "highlights": [
+      "O cuidado costuma estar nos detalhes",
+      "Torne visível o esforço que ninguém vê",
+      "Inclua sua própria capacidade"
+    ],
+    "sections": [
+      "Você talvez perceba necessidades imediatas e maneiras práticas de facilitar a vida. Uma viagem faz você pensar em cansaço, necessidades alimentares e preparativos. A experiência familiar sustenta o cuidado e a continuidade, mas o perfil não atribui a você o papel de cuidar de todos. As responsabilidades das outras pessoas podem continuar com elas; suas necessidades também pertencem ao plano.",
+      "Você talvez lembre das preferências ao escolher um local e arrume tudo depois de um encontro. O trabalho de ajudar pode ficar invisível, sem que as outras pessoas percebam seu custo. Diga o que deseja oferecer e o que precisa ser dividido. Permita um método diferente; um encontro imperfeito não significa que você deixou de cuidar.",
+      "Escutar com paciência e retomar o assunto depois pode dar segurança a uma pessoa amiga. O medo de magoar alguém talvez faça você esconder sua própria opinião. Compreensão e discordância podem coexistir. Verifique sua energia e o tempo disponível para oferecer apoio repetidamente. Recusar um pedido não rejeita a amizade nem exige compensação com esforço extra.",
+      "Você talvez demonstre carinho por meio de tarefas cotidianas e detalhes lembrados, e queira que esse esforço seja reconhecido. Se você presumir que o reconhecimento vai acontecer, o ressentimento pode crescer. Peça uma resposta específica ou uma tarefa compartilhada, em vez de uma prova geral de carinho. Pergunte como a outra pessoa demonstra cuidado e redistribuam as responsabilidades em conjunto.",
+      "Demonstrações e etapas que podem ser repetidas talvez ajudem você a aprender. Qualidade e consideração sustentam seu trabalho, mas você talvez resolva dificuldades por conta própria para não sobrecarregar colegas. Compartilhe cedo a carga real de trabalho. Uma revisão não precisa desconsiderar todo o seu esforço; pergunte sobre o padrão esperado em vez de tentar deduzir cada expectativa.",
+      "A atenção aos detalhes percebe pequenas necessidades, a paciência sustenta a continuidade e as promessas tornam o cotidiano confiável. O custo pode ser excesso de trabalho oculto, cansaço ignorado ou aceitar coisas demais. Defina de quem é a responsabilidade por cada tarefa e devolva uma que possa ser compartilhada. O cuidado que inclui sua capacidade tem mais chances de continuar recíproco.",
+      "Torne o cuidado visível e negociável. Confira sua energia antes de dizer sim, peça uma ação concreta e aceite ajuda que seja diferente do seu método. Esses exercícios conectam confiabilidade com limites, abrindo espaço para você receber cuidado, além de prepará-lo para outras pessoas."
+    ],
+    "actions": [
+      {
+        "context": "Você quer dizer sim imediatamente",
+        "step": "Confira sua energia e ofereça uma parte realista.",
+        "phrase": "Posso ajudar com esta parte hoje; o restante precisa de outro plano."
+      },
+      {
+        "context": "Seu esforço parece passar despercebido",
+        "step": "Peça uma divisão concreta de responsabilidade.",
+        "phrase": "Você poderia cuidar da limpeza da próxima vez?"
+      },
+      {
+        "context": "A ajuda é diferente do seu método",
+        "step": "Confira o resultado necessário sem refazer tudo.",
+        "phrase": "Assim também funciona. Agradeço por cuidar desta parte."
+      }
+    ]
+  },
+  "ESTJ": {
+    "highlights": [
+      "Use a clareza para reduzir suposições",
+      "Explique o propósito das regras",
+      "Combinem resultados sem fixar todos os métodos"
+    ],
+    "sections": [
+      "Você talvez perceba primeiro a organização, a responsabilidade e as regras utilizáveis. Uma viagem leva a datas, orçamento e responsáveis definidos, para que as pessoas não precisem adivinhar. Acordos claros ajudam no avanço, mas nem todo contexto precisa de um processo uniforme. Novas condições e necessidades diferentes merecem uma oportunidade de revisar padrões conhecidos.",
+      "Você talvez resuma opções e distribua responsabilidades quando a discussão se prolonga. A coordenação evita confusão, mas a participação ainda precisa ser confirmada. Reserve tempo para perguntas e separe condições necessárias de métodos flexíveis. Explicar o motivo de uma regra ajuda as pessoas a apresentar dificuldades antes da execução.",
+      "Uma pessoa amiga talvez receba passos práticos ou ajuda com uma primeira ação. Verifique se ela quer agir ou ter tempo para expressar a decepção. Em uma discordância, mantenha as evidências visíveis enquanto escuta as limitações. Um método diferente também pode ser responsável, especialmente se entregar o resultado combinado.",
+      "Promessas cumpridas e tarefas cotidianas resolvidas talvez expressem compromisso para você. Uma pessoa próxima talvez também queira uma resposta emocional. Conversem sobre disposição e cansaço junto com a divisão do trabalho. Experimentem um acordo e depois o revisem; mudanças exigem comunicação, mas não significam automaticamente falta de confiabilidade.",
+      "Padrões claros e verificações de progresso talvez sustentem o trabalho e o aprendizado. Esclareça um objetivo ambíguo antes da execução, deixando espaço para novas evidências. Combinem pontos de acompanhamento sem determinar todos os métodos. Descreva um erro observado e a mudança solicitada, em vez de transformar uma falha em um julgamento de atitude.",
+      "A organização reduz lacunas, a responsabilidade sustenta a conclusão e a comunicação direta reduz suposições. Isso pode virar exigências prematuras de uniformidade, impaciência ou o hábito de assumir o controle repetidamente. Verifique os recursos, além do ritmo. Pergunte o que está travado e quais padrões importam; depois, dê a outro método uma pequena oportunidade justa de teste.",
+      "Deixe a estrutura servir às pessoas. Explique seu propósito, convide alternativas viáveis e verifique se a ajuda é desejada. Defina uma área em que os colegas possam decidir de forma independente e avaliem juntos. Esses exercícios mantêm a clareza e permitem que as outras pessoas assumam sua parte; um processo ajustável pode ser mais sustentável do que a supervisão constante."
+    ],
+    "actions": [
+      {
+        "context": "Você quer encerrar uma discussão",
+        "step": "Ofereça uma oportunidade para apresentar limitações.",
+        "phrase": "Que dificuldade prática devemos resolver primeiro?"
+      },
+      {
+        "context": "Uma pessoa da equipe usa outro método",
+        "step": "Alinhem o resultado e o ponto de acompanhamento e depois façam um teste.",
+        "phrase": "O objetivo é o mesmo; vamos testar seu método."
+      },
+      {
+        "context": "Uma pessoa amiga precisa de apoio",
+        "step": "Verifique o propósito antes de dividir as tarefas em etapas.",
+        "phrase": "Ajudaria mais eu escutar ou fazermos algo juntos?"
+      }
+    ]
+  },
+  "ESFJ": {
+    "highlights": [
+      "Conecte-se por meio das respostas cotidianas",
+      "O silêncio não precisa significar distância",
+      "Torne concretos o cuidado e o trabalho compartilhado"
+    ],
+    "sections": [
+      "Você talvez perceba se as pessoas se sentem incluídas e se os arranjos práticos atendem às necessidades delas. Uma viagem leva a pensar na disponibilidade e nas limitações individuais. Rotinas compartilhadas e respostas em tempo oportuno podem dar segurança a você, mas agradar a todos não é seu papel. Suas próprias necessidades diferentes também pertencem ao relacionamento.",
+      "Você talvez procure saber como está uma pessoa mais quieta do grupo e lembre das preferências durante um encontro. Detalhes atenciosos reduzem barreiras, mas podem virar trabalho invisível. Defina sua parte e peça uma contribuição específica. Permita o silêncio sem tentar consertar o clima imediatamente; as pessoas não precisam demonstrar entusiasmo constante para fazer parte.",
+      "Você talvez ofereça companhia rapidamente e conselhos práticos, ao mesmo tempo que deseja uma resposta clara. Um tempo maior para elaborar as coisas não significa necessariamente distância. Pergunte sobre as preferências de contato, em vez de mandar mais mensagens para testar o vínculo. Discordância e amizade podem coexistir. Diga quanto tempo tem disponível para que o apoio seja sustentável para as duas pessoas.",
+      "Contato diário, detalhes lembrados e combinações compartilhadas talvez importem para você. Uma resposta curta pode fazer você duvidar de si. Verifique a energia e os hábitos da pessoa antes de pedir a resposta que deseja. Deixem tarefas domésticas e planos explícitos, em vez de atribuí-los a quem percebe primeiro. Pedidos específicos permitem tratar a insatisfação antes que ela vire uma acusação generalizada.",
+      "Parcerias, públicos e etapas bem definidos talvez sustentem seu esforço. Apoiar todas as pessoas pode interromper seu próprio trabalho concentrado. Reserve e explique um período protegido. Um retorno precisa de fatos e pedidos, além de incentivo. Ao receber críticas, peça um exemplo específico para que as revisões se concentrem no trabalho, em vez da sua sensação de aprovação.",
+      "A consideração favorece a participação, a cooperação facilita tarefas e o cuidado em tempo oportuno transmite segurança. O custo pode ser assumir responsabilidade por cada expressão, buscar reafirmação repetidamente ou assumir compromissos demais. Papéis pouco claros também importam. Confira a necessidade e os limites da sua participação antes de ajudar; nem toda insatisfação cabe a você resolver.",
+      "Faça da harmonia uma forma negociável de cooperação. Diga qual é sua capacidade, confira uma suposição sobre o relacionamento com uma pergunta direta e peça uma contribuição específica em uma atividade. Esses exercícios preservam o acolhimento e mostram que você tem seu próprio tempo, suas opiniões e momentos em que precisa de apoio."
+    ],
+    "actions": [
+      {
+        "context": "As respostas parecem breves demais",
+        "step": "Pergunte sobre uma forma confortável de manter contato, em vez de testá-la.",
+        "phrase": "Como podemos manter contato quando você estiver sem tempo?"
+      },
+      {
+        "context": "Você cuida de todos os preparativos",
+        "step": "Peça uma contribuição bem definida.",
+        "phrase": "Você poderia confirmar o número de pessoas enquanto eu organizo o local?"
+      },
+      {
+        "context": "Os pedidos interrompem sua concentração",
+        "step": "Diga qual período está reservado e quando vai responder.",
+        "phrase": "Estou trabalhando nisto até as três; depois posso responder."
+      }
+    ]
+  },
+  "ISTP": {
+    "highlights": [
+      "Compreenda por meio da observação e da prática",
+      "Torne visíveis os avanços importantes",
+      "Negocie a autonomia de forma explícita"
+    ],
+    "sections": [
+      "Você talvez examine como um problema funciona e o que pode ser testado diretamente. Em uma viagem, as condições práticas importam, enquanto algumas escolhas podem esperar até a chegada. A observação prática favorece a compreensão, mas não implica indiferença ao significado ou aos sentimentos. Algumas experiências precisam de escuta, e algumas promessas precisam de mais do que deixar para decidir depois.",
+      "Você talvez confirme as condições essenciais de transporte e encontro sem escrever um roteiro completo. Diante de um aparelho com defeito, você examina antes de explicar. Diga às outras pessoas o que está verificando e quando vai responder, para que o silêncio não vire incerteza. Identifique os detalhes flexíveis antes que uma mudança de última hora seja necessária.",
+      "Você talvez apoie uma pessoa amiga fazendo algo em conjunto ou resolvendo uma dificuldade prática. Ela talvez precise de algumas palavras para saber que você escutou. Mostre que compreendeu um problema e pergunte se agir ajudaria. Combinar a duração e a forma da conversa pode dar lugar tanto ao apoio prático quanto à comunicação.",
+      "Você talvez precise de autonomia e não goste de verificações constantes. Uma pessoa próxima ainda precisa saber quando o contato será retomado e quais promessas continuam valendo. Dê um prazo ao tempo sem companhia. Depois de resolver uma questão, verifique também seu impacto emocional; o reparo prático pode terminar antes de a outra pessoa concluir a explicação de sua experiência.",
+      "Demonstração, prática e retornos visíveis talvez ajudem no aprendizado. Combinem entregas e pontos de acompanhamento no trabalho para que as outras pessoas vejam o progresso sem relatórios longos. Teste um método novo com baixo risco. Quando outras pessoas forem afetadas, confirme as condições e o consentimento, em vez de presumir que um experimento pessoal é aceitável para todos.",
+      "A observação localiza problemas, a ação flexível lida com mudanças e a prática independente encontra métodos utilizáveis. O custo pode ser explicação insuficiente ou conversas adiadas. O estresse pode aumentar o afastamento. Verifique que resposta é necessária e o que você pode oferecer; uma comunicação breve e concreta pode reduzir a incerteza sem virar uma conversa longa.",
+      "Dê à autonomia uma forma clara de comunicação: uma atualização do progresso, um horário para retornar depois de ficar sem companhia e uma pergunta sobre o apoio desejado. Explique uma combinação recorrente uma vez, com antecedência. Esses exercícios tornam suas ações compreensíveis e a cooperação mais fácil, sem pedir que você passe a falar o tempo todo."
+    ],
+    "actions": [
+      {
+        "context": "Você está consertando algo em silêncio",
+        "step": "Dê uma atualização e diga quando vai responder.",
+        "phrase": "Estou verificando a causa; trago uma atualização em meia hora."
+      },
+      {
+        "context": "Você precisa ficar sem companhia",
+        "step": "Diga quando vai retomar o contato e volte nesse horário.",
+        "phrase": "Preciso de uma hora de pausa, depois podemos conversar."
+      },
+      {
+        "context": "A questão foi resolvida, mas a mágoa continua",
+        "step": "Pergunte que impacto ainda não foi escutado.",
+        "phrase": "Isso já foi resolvido. O que mais você gostaria que eu compreendesse?"
+      }
+    ]
+  },
+  "ISFP": {
+    "highlights": [
+      "Descubra preferências por meio da experiência",
+      "Combine pequenas ações com palavras",
+      "Diga seus limites antes da exaustão"
+    ],
+    "sections": [
+      "Você talvez perceba se uma experiência é confortável e combina com o que importa para você. Uma viagem sugere ambiente e ritmo antes de uma argumentação detalhada. A sensibilidade favorece a escolha, mas suas preferências também podem ser explicadas por meio de condições e exemplos para alguém que não sente da mesma maneira.",
+      "Você talvez prefira uma atividade sem querer que a discussão vire uma disputa. Detalhes sensoriais de uma caminhada ou de cozinhar em conjunto podem convidar ao envolvimento. Pequenas ações atenciosas expressam carinho. Diga uma experiência que você deseja e uma condição que quer evitar; caso contrário, as pessoas podem presumir que qualquer opção é igualmente confortável.",
+      "Você talvez respeite as escolhas de uma pessoa amiga e ofereça companhia tranquila ou uma atividade em conjunto. Uma resposta breve e específica ainda ajuda essa pessoa a saber que foi escutada. Ao discordar, você pode nomear seu próprio sentimento ou limite sem provar que ela está inteiramente errada. Peça uma pausa em uma conversa intensa e combinem quando continuar.",
+      "Você talvez queira espaço para seu ritmo e suas preferências, expressando carinho por meio de pequenas ações. Uma pessoa próxima talvez também precise de palavras. Compartilhe brevemente um sentimento ainda provisório, em vez de esperar pela clareza completa. Explique que espaço não é rejeição e preserve algumas escolhas como decisões independentes suas. Respeitar a diferença começa por saber onde ela está.",
+      "A experiência direta e a prática visível talvez favoreçam o aprendizado. Peça um exemplo concreto e o escopo da revisão quando o retorno sobre o trabalho for vago. Comece com uma ação administrável e observe seu efeito. A expressão pessoal e as necessidades de um público podem coexistir por meio de uma revisão negociada.",
+      "A sensibilidade percebe mudanças, a sinceridade protege escolhas e a flexibilidade responde ao presente. O custo pode ser comunicação tardia, interpretar discordância como rejeição ou concordar para evitar conflito. O cansaço também importa. Diferencie um estado temporário de uma necessidade contínua e faça um pedido específico antes de chegar ao seu limite.",
+      "Dê aos sentimentos uma forma compreensível: uma preferência observável, um limite claro e uma distinção entre alterar o trabalho e rejeitar quem você é. Esses exercícios conectam experiência com comunicação, para que você mantenha seu próprio ritmo enquanto ajuda as outras pessoas a planejar com você."
+    ],
+    "actions": [
+      {
+        "context": "Um plano deixa sua preferência de fora",
+        "step": "Diga uma experiência desejada e uma condição.",
+        "phrase": "Prefiro um lugar tranquilo; o horário pode ser flexível."
+      },
+      {
+        "context": "A discordância faz você se afastar",
+        "step": "Expresse uma necessidade sem encerrar toda a conversa.",
+        "phrase": "Preciso de um ritmo mais calmo. Podemos continuar em dez minutos?"
+      },
+      {
+        "context": "O retorno sobre o trabalho parece pessoal",
+        "step": "Peça um escopo específico para a revisão.",
+        "phrase": "Qual parte precisa mudar? Eu gostaria de manter este foco."
+      }
+    ]
+  },
+  "ESTP": {
+    "highlights": [
+      "Aprenda por meio de testes práticos",
+      "Inclua as outras pessoas nas mudanças",
+      "Agir inclui dar continuidade"
+    ],
+    "sections": [
+      "Você talvez perceba condições aproveitáveis e uma ação prática que coloca as coisas em movimento. Participação direta e retornos rápidos ajudam na avaliação, mas mais rápido nem sempre é melhor. Quando houver custos, riscos ou compromissos de outras pessoas envolvidos, verifique as condições e a disposição delas antes de agir.",
+      "Você talvez sugira começar em um lugar e decidir a próxima parada ao chegar. O improviso pode resolver um problema e, ao mesmo tempo, surpreender alguém que se preparou com antecedência. Esclareça horários fixos, custos e detalhes flexíveis. Dê às pessoas uma oportunidade de confirmar, para que a mudança continue sendo uma experiência compartilhada, em vez de uma instrução repentina.",
+      "Você talvez convide uma pessoa amiga preocupada para uma caminhada ou atividade. Ela talvez precise terminar de falar primeiro. Pergunte se conversar ou se movimentar ajudaria. O humor pode aliviar a tensão se for bem-vindo; o silêncio também pode ser uma pausa necessária. Permanecer presente diante de uma expressão mais lenta é uma forma concreta de participar.",
+      "Experiências compartilhadas e respostas diretas talvez importem em um relacionamento próximo. Planos de longo prazo podem parecer menos urgentes do que o presente, mas uma resposta que não vem pode parecer falta de compromisso. Defina o que você pode prometer e o que continua flexível. Depois de resolver a questão visível, reconheça também seu impacto.",
+      "Prática e retornos imediatos talvez ajudem no aprendizado. Você consegue lidar com trabalhos inesperados, enquanto tarefas repetidas se beneficiam de uma verificação regular. Defina um pequeno resultado visível e confira a conclusão. Registros permitem que a próxima pessoa assuma o trabalho. Dê aos experimentos arriscados uma condição de parada e uma responsabilidade clara.",
+      "A ação rompe a estagnação, o improviso lida com mudanças e a observação mantém a discussão ligada à realidade. O custo pode ser subestimar o acompanhamento posterior, prometer antes de verificar a capacidade ou usar atividades para evitar uma conversa difícil. Faça uma breve pausa para nomear o problema real. Verificar os efeitos posteriores também faz parte de agir com responsabilidade.",
+      "Acrescente confirmação e conclusão à ação rápida. Verifique uma condição importante antes de um teste, pergunte que apoio é desejado e dê às promessas importantes um prazo confiável. Esses exercícios tornam mais fácil confiar na flexibilidade, preservando espaço para aventuras compartilhadas e ajustes práticos."
+    ],
+    "actions": [
+      {
+        "context": "Você quer experimentar imediatamente",
+        "step": "Verifique um risco e uma condição de parada.",
+        "phrase": "Podemos tentar; paramos se isto acontecer."
+      },
+      {
+        "context": "O plano de uma atividade muda",
+        "step": "Explique o impacto e confirme a disposição das pessoas.",
+        "phrase": "Isso acrescenta meia hora. Funciona para todo mundo?"
+      },
+      {
+        "context": "Você quer colocar uma pessoa amiga preocupada em movimento",
+        "step": "Pergunte primeiro se ela prefere conversar ou fazer algo.",
+        "phrase": "Você gostaria de terminar de falar ou dar uma caminhada?"
+      }
+    ]
+  },
+  "ESFP": {
+    "highlights": [
+      "Conecte-se pela participação e pela troca de respostas",
+      "A companhia não precisa gerar felicidade instantânea",
+      "Dê aos planos de longo prazo pequenos ciclos de retorno"
+    ],
+    "sections": [
+      "Você talvez perceba a experiência presente e a troca de respostas entre as pessoas, aprendendo o que combina por meio da participação. Uma viagem sugere comida, atividades e bem-estar em conjunto. Uma conexão animada sustenta o esforço, mas você não precisa demonstrar alegria o tempo todo. Silêncio, cansaço e preocupações de longo prazo também são partes reais da vida.",
+      "Fotos e recomendações talvez ajudem você a dar vida a um plano em grupo. Nos encontros, você responde ao clima e prefere detalhes flexíveis. Separe participar de organizar e confira horários importantes e orçamento. Você pode descansar em vez de encenar felicidade; os relacionamentos precisam de espaço para as mudanças na sua energia.",
+      "Você talvez ofereça companhia, atividades e uma resposta rápida a uma pessoa amiga preocupada. Ela talvez ainda não esteja pronta para se sentir melhor. Pergunte se prefere continuar falando ou mudar de ambiente. Uma experiência compartilhada pode ajudar sem tomar conta da história dela. Apoiar pode significar que ela não está sem companhia, mesmo sem uma melhora imediata.",
+      "Experiências compartilhadas, cuidado prático e expressão imediata talvez criem conexão para você. A necessidade de alguém de planejar ou ficar em silêncio pode parecer perda de afeto. Pergunte a que essa necessidade atende e experimentem um pequeno acordo. A estabilidade não precisa eliminar as novidades, e o cuidado pode ser expresso de maneiras diferentes da sua.",
+      "Exemplos, interação e retornos concretos talvez ajudem no aprendizado. As pessoas e as necessidades do momento envolvem você no trabalho, enquanto tarefas repetitivas ou com resultados distantes se beneficiam de marcos claros. Conclua um pequeno bloco e escreva o próximo passo. Um retorno pode combinar incentivo com uma mudança específica que você pode experimentar.",
+      "A atenção ao presente favorece a adaptação, o acolhimento reduz o estranhamento e a participação constrói experiências compartilhadas. O custo pode ser reprimir o desconforto para manter o clima, evitar preocupações por meio de atividades ou aceitar coisas demais. Verifique o cansaço e diferencie um alívio breve de um problema que precisa de um tempo próprio.",
+      "Dê à conexão do presente uma estrutura de continuidade. Confira energia e orçamento antes de participar, permita a tristeza ao oferecer apoio e defina uma pequena ação regular para uma tarefa mais longa. Esses exercícios preservam o envolvimento e tornam visível a continuidade. Sua contribuição inclui sinceridade e cuidado, além de trazer energia ao ambiente."
+    ],
+    "actions": [
+      {
+        "context": "Chegam vários convites",
+        "step": "Confira energia e orçamento e então confirme um.",
+        "phrase": "Posso participar deste nesta semana; vou deixar os outros em aberto."
+      },
+      {
+        "context": "Você quer animar uma pessoa amiga",
+        "step": "Pergunte se conversar ou mudar de ambiente ajuda.",
+        "phrase": "Não há pressa para se sentir melhor. Conversar ou caminhar?"
+      },
+      {
+        "context": "Uma tarefa mais longa continua sendo adiada",
+        "step": "Agende e registre uma ação regular de dez minutos.",
+        "phrase": "Hoje vou concluir este pequeno bloco."
+      }
+    ]
+  }
+}

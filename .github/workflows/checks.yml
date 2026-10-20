@@ -1,4 +1,4 @@
-name: Tests, browser E2E and report evaluations
+name: Tests, browser E2E and content evaluations
 
 on:
   pull_request:
@@ -24,6 +24,7 @@ jobs:
       - run: npm ci
       - run: npm test -- --run
       - run: npm run eval:check
+      - run: npm run eval:questions:check
       - run: npm audit --audit-level=high
       - run: npm run build
       - run: npx playwright install --with-deps chromium firefox webkit

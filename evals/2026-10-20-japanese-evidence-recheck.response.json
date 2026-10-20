@@ -1,0 +1,642 @@
+{
+  "evaluator": "ChatGPT, independent AI editorial assessment",
+  "model": null,
+  "limitations": [
+    "Assessment covers exactly the eight supplied Japanese targets and their supplied English references; no earlier judgments were used.",
+    "All supplied highlights, seven sections, three actions, four strength tags and framing notes were reviewed. This is editorial assessment, not clinical or psychometric certification.",
+    "No tools or external verification were used. Supplied report hashes were not independently recomputed or checked for freshness.",
+    "These eight results cannot establish the rubric's full 128-case PASS decision. UI rendering and psychometric validity were not assessed."
+  ],
+  "results": [
+    {
+      "id": "INTJ.ja",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Optional tendencies, negotiated plans and support preferences preserve autonomy. All framing notes appropriately limit interpretation. The four strength tags remain aspirational; sharp analysis and self-discipline should not be interpreted as measured abilities.",
+          "evidence": [
+            {
+              "caseId": "INTJ.ja",
+              "path": "framing.editorialNote",
+              "quote": "あなたの回答から検出した個人の事実や、人間関係・キャリア・能力に関する予測ではありません。"
+            },
+            {
+              "caseId": "INTJ.ja",
+              "path": "report.sections.3.text",
+              "quote": "将来の計画が安心につながるのは、双方がその内容を話し合って調整できるときです。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All highlights, sections and actions preserve the source's direction-first planning, visible reasoning, listening permission and small experiments. Strength tags and every framing note retain their intended meaning without consequential omission.",
+          "evidence": [
+            {
+              "caseId": "INTJ.ja",
+              "path": "report.sections.1.text",
+              "quote": "理由を一つ伝え、細部を一つは変更できるようにしておきましょう。"
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.1.text",
+              "quote": "Explain one reason and leave one detail open to change."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor INTP, INTJ emphasizes an eventual objective, provisional framework and first deliverable. INTP instead addresses branching inquiry and separating exploration from delivery. The distinction affects the recommended work process.",
+          "evidence": [
+            {
+              "caseId": "INTJ.ja",
+              "path": "report.sections.4.text",
+              "quote": "最終的な目的、現時点の根拠、最初の成果物を分けて考えましょう。"
+            },
+            {
+              "caseId": "INTP.ja",
+              "path": "report.sections.4.text",
+              "quote": "探究と納品を分け、さらに調べたい問いは次の機会に残しましょう。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All three actions provide distinct triggers, feasible observable steps and usable phrases: test one assumption for twenty minutes, ask a recurring-problem friend what support helps, and explain one reason while inviting missing constraints. They directly implement the report without demanding agreement.",
+          "evidence": [
+            {
+              "caseId": "INTJ.ja",
+              "path": "report.actions.0.step",
+              "quote": "20分を使い、小さな形で前提を一つ確かめてみましょう。"
+            },
+            {
+              "caseId": "INTJ.ja",
+              "path": "report.actions.1.phrase",
+              "quote": "話を聞くのと、選択肢を一緒に考えるのと、どちらが助けになる？"
+            },
+            {
+              "caseId": "INTJ.ja",
+              "path": "report.actions.2.phrase",
+              "quote": "こう考えた理由はこれです。見落としている条件はありますか？"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Nonblocking: declarative strength tags and generalized benefits in the blindspots section depend on the explicit reflection framing for appropriate interpretation."
+      ]
+    },
+    {
+      "id": "INTP.ja",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly rejects guaranteed intellectual superiority, respects emotional needs and allows provisional expression. Framing correctly limits percentages, nearby types and ability claims. Logical rigor and objective analysis remain aspirational tags rather than established personal facts.",
+          "evidence": [
+            {
+              "caseId": "INTP.ja",
+              "path": "report.sections.0.text",
+              "quote": "前提の検討は役立ちますが、より優れた結論を保証するものではありません。"
+            },
+            {
+              "caseId": "INTP.ja",
+              "path": "framing.editorialNote",
+              "quote": "ここにあるのはタイプに基づく例と振り返りのための問いです。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All seven sections, highlights and actions preserve premise examination, stopping conditions, reversible decisions and reconnecting after solitude. The tags and framing are faithful; minor register choices do not alter practical meaning.",
+          "evidence": [
+            {
+              "caseId": "INTP.ja",
+              "path": "report.sections.3.text",
+              "quote": "気持ちは、まだ整理しきれていない形で伝えてもかまいません。"
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.3.text",
+              "quote": "Feelings can be expressed in a provisional form; waiting until you can fully explain them may leave the other person waiting much longer than you realize."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "INTP's restaurant example focuses on defining the criteria behind a question, whereas INTJ's trip example selects the purpose before logistics. This distinguishes conceptual inquiry from goal-led direction, reinforced by INTP's stopping-condition advice.",
+          "evidence": [
+            {
+              "caseId": "INTP.ja",
+              "path": "report.sections.0.text",
+              "quote": "いちばんよいレストランを聞かれると、まず判断基準を定めたくなるのでしょう。"
+            },
+            {
+              "caseId": "INTJ.ja",
+              "path": "report.sections.0.text",
+              "quote": "旅行なら、ホテルを予約するより先に、休息、交流、発見のどれを求めているのかが気になります。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action has a clear context and concrete next move: two essential criteria and a reversible test, one everyday example with permission for detail, and a timed break followed by self-initiated reconnection. All example phrases are immediately usable.",
+          "evidence": [
+            {
+              "caseId": "INTP.ja",
+              "path": "report.actions.0.step",
+              "quote": "必須の基準を二つ選び、元に戻せる選択肢を試しましょう。"
+            },
+            {
+              "caseId": "INTP.ja",
+              "path": "report.actions.1.phrase",
+              "quote": "例えば、こういうことです。理由も説明しましょうか？"
+            },
+            {
+              "caseId": "INTP.ja",
+              "path": "report.actions.2.phrase",
+              "quote": "30分考える時間が欲しい。その後で戻ってくるね。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Nonblocking: the strength tags describe desirable intellectual qualities broadly; the accompanying framing is necessary to prevent ability-based interpretation."
+      ]
+    },
+    {
+      "id": "ENTJ.ja",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Consent, participation, capacity and freedom to choose methods are consistently protected. Overwork is met with redistribution rather than moral pressure. Leadership and execution tags are assertive aspirations, qualified by explicit framing rather than evidence of individual competence.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.ja",
+              "path": "report.sections.1.text",
+              "quote": "沈黙は、あなたが選んだ方向への賛成を意味するとは限りません。"
+            },
+            {
+              "caseId": "ENTJ.ja",
+              "path": "framing.editorialNote",
+              "quote": "あなたの回答から検出した個人の事実や、人間関係・キャリア・能力に関する予測ではありません。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "The translation preserves every section's organizing-versus-consent tension, all three highlights and all actions. Resource limits, low-pressure learning, negotiated participation and the complete framing survive naturally. Tags retain their source meanings.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.ja",
+              "path": "report.sections.4.text",
+              "quote": "どこで支援が足りないかを確かめ、同僚には方法を選ぶ余地を残し、成果物と確認の機会を合意しておきましょう。"
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.4.text",
+              "quote": "Check where support is missing, give colleagues room to choose their methods, and agree on outputs and checkpoints."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ENTJ responds to stalled coordination by hearing concerns before narrowing choices. One-letter neighbor ENFJ focuses on including quiet members and sharing emotional coordination. Both address groups, but their attention and corrective actions differ concretely.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.ja",
+              "path": "report.actions.0.step",
+              "quote": "選択肢をまとめる前に、一人ひとりから懸念を一つ聞きましょう。"
+            },
+            {
+              "caseId": "ENFJ.ja",
+              "path": "report.sections.1.text",
+              "quote": "グループのチャットで静かな人にも声をかけ、散らばった意見を実行できる提案にまとめるかもしれません。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "All three actions supply recognizable situations, observable steps and useful phrases. Hearing concerns and asking a friend's preferred involvement are readily feasible. Redistributing one task is concrete but assumes some authority or cooperation; proposing reassignment would work across more roles.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.ja",
+              "path": "report.actions.0.phrase",
+              "quote": "まだ話し合えていない条件は何ですか？"
+            },
+            {
+              "caseId": "ENTJ.ja",
+              "path": "report.actions.1.phrase",
+              "quote": "どこまで手伝ってほしい？"
+            },
+            {
+              "caseId": "ENTJ.ja",
+              "path": "report.actions.2.step",
+              "quote": "仕事を一つ選び、担当を明確にして割り振り直しましょう。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Nonblocking: action three could explicitly offer requesting or negotiating reassignment when the reader cannot assign work.",
+        "Nonblocking: the blindspots opening states organizational benefits broadly; reflection framing prevents treating them as measured capabilities."
+      ]
+    },
+    {
+      "id": "ENTP.ja",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report protects painful personal accounts from unwanted debate, preserves negotiated commitments and assigns responsibility for one's own completion. No diagnostic or deterministic claims appear. Quick-thinking and articulation tags remain aspirational, while the responsibility-avoidance warning is contextual rather than a fixed moral judgment.",
+          "evidence": [
+            {
+              "caseId": "ENTP.ja",
+              "path": "report.sections.2.text",
+              "quote": "今しているのは考えについての議論なのか、個人の体験を聞くことなのかを確かめましょう。"
+            },
+            {
+              "caseId": "ENTP.ja",
+              "path": "framing.editorialNote",
+              "quote": "ここにあるのはタイプに基づく例と振り返りのための問いです。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All highlights, sections and actions preserve alternative generation, brainstorm-versus-promise labeling, responsibility and permission before offering another viewpoint. The acknowledgment phrase and surrounding step retain the source's division of functions. Tags and framing remain faithful.",
+          "evidence": [
+            {
+              "caseId": "ENTP.ja",
+              "path": "report.actions.1.step",
+              "quote": "受けた影響を言葉にし、別の視点を伝えることが役立つか尋ねましょう。"
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.actions.1.step",
+              "quote": "Reflect the impact, then ask whether another viewpoint would help."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor ENFP, ENTP specifically examines debate being mistaken for a demand for proof. ENFP instead addresses personal associations redirecting a friend's story. The resulting listening corrections target different conversational mechanisms.",
+          "evidence": [
+            {
+              "caseId": "ENTP.ja",
+              "path": "report.sections.2.text",
+              "quote": "ただ、友人がつらい体験を話しているとき、議論は証拠を求めているように聞こえることがあります。"
+            },
+            {
+              "caseId": "ENFP.ja",
+              "path": "report.sections.2.text",
+              "quote": "自分の連想を話す前に、ほかに付け加えたいことがないか尋ねましょう。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The three actions offer a bounded thirty-minute experiment, acknowledgment and permission around a friend's hurt, and negotiation while preserving a confirmed meeting time. Each has a clear trigger and usable phrase. The second phrase models acknowledgment and checking understanding; its step supplies the additional permission question.",
+          "evidence": [
+            {
+              "caseId": "ENTP.ja",
+              "path": "report.actions.0.step",
+              "quote": "一つを30分試し、ほかは後のために書き留めましょう。"
+            },
+            {
+              "caseId": "ENTP.ja",
+              "path": "report.actions.1.phrase",
+              "quote": "それは本当につらかったんだね。そう受け取って合っている？"
+            },
+            {
+              "caseId": "ENTP.ja",
+              "path": "report.actions.2.phrase",
+              "quote": "集合時間はそのままにしよう。行き方は見直してもいい？"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Nonblocking: action two could also model the permission question explicitly in its phrase, although the step already states it clearly.",
+        "Nonblocking: quick-thinking language requires the reflection framing to avoid implying tested cognitive ability."
+      ]
+    },
+    {
+      "id": "INFJ.ja",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly rejects mind-reading, invites correction and separates facts from guesses and responsibilities. Listening boundaries and specific requests protect both parties. Insight, empathy, vision and conviction tags remain aspirational under the complete reflection framing.",
+          "evidence": [
+            {
+              "caseId": "INFJ.ja",
+              "path": "report.sections.0.text",
+              "quote": "意味を考えることは注意を向ける助けになりますが、心を読めるわけではありません。"
+            },
+            {
+              "caseId": "INFJ.ja",
+              "path": "framing.editorialNote",
+              "quote": "あなたの回答から検出した個人の事実や、人間関係・キャリア・能力に関する予測ではありません。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "All highlights, sections and actions retain meaning-making, checking interpretations, bounded listening and concrete requests. Tags and framing are faithful. The daily section's 長く続く騒がしさは一人の時間を必要にする is understandable but awkwardly makes noise the grammatical subject needing solitude.",
+          "evidence": [
+            {
+              "caseId": "INFJ.ja",
+              "path": "report.sections.1.text",
+              "quote": "なじみのある話題は深い話を促し、長く続く騒がしさは一人の時間を必要にすることもあります。"
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.1.text",
+              "quote": "Familiar topics invite depth; sustained noise may call for time alone."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "INFJ focuses on linking another person's experiences into a tentative pattern and checking that interpretation. One-letter neighbor INFP centers whether choices fit the reader's own values. This is a specific difference in attention, beyond shared empathy or boundaries.",
+          "evidence": [
+            {
+              "caseId": "INFJ.ja",
+              "path": "report.sections.2.text",
+              "quote": "気づいたパターンは、問いの形で伝えましょう。"
+            },
+            {
+              "caseId": "INFP.ja",
+              "path": "report.sections.0.text",
+              "quote": "外からの計画に合わせる前に、その選択が自分の大切なものと合っているかを考えることがあるかもしれません。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action is small and observable: offer one observation with correction invited, state remaining listening time and negotiate continuation, or turn an unspoken hope into a concrete request. All three phrases demonstrate agency and leave room for the other person's response.",
+          "evidence": [
+            {
+              "caseId": "INFJ.ja",
+              "path": "report.actions.0.phrase",
+              "quote": "少しためらっているのかなと思ったけれど、違う？"
+            },
+            {
+              "caseId": "INFJ.ja",
+              "path": "report.actions.1.phrase",
+              "quote": "あと10分なら聞けるよ。続きは明日にしてもいい？"
+            },
+            {
+              "caseId": "INFJ.ja",
+              "path": "report.actions.2.phrase",
+              "quote": "今日はそばにいてほしい。助言はまだなくて大丈夫。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Nonblocking: revise the daily section's noise-and-solitude sentence for more natural Japanese syntax.",
+        "Nonblocking: generalized claims about noticing unspoken needs are adequately constrained by explicit correction and anti-mind-reading language."
+      ]
+    },
+    {
+      "id": "INFP.ja",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report refuses to define the reader's values, distinguishes understanding from agreement and avoids equating work feedback with identity. Sleep and pressure are ordinary contextual factors, not diagnoses. All four strength tags remain reflective aspirations under the supplied framing.",
+          "evidence": [
+            {
+              "caseId": "INFP.ja",
+              "path": "report.sections.0.text",
+              "quote": "このプロフィールがあなたの価値観を決めるわけではありません。"
+            },
+            {
+              "caseId": "INFP.ja",
+              "path": "framing.editorialNote",
+              "quote": "ここにあるのはタイプに基づく例と振り返りのための問いです。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "Every highlight, section and action retains the source's values, negotiable preferences, imperfect starts and feedback boundaries. Tags and framing preserve meaning. The closing sentence of the close section is syntactically awkward and less direct than the source, but its central permission for different expressions of care survives.",
+          "evidence": [
+            {
+              "caseId": "INFP.ja",
+              "path": "report.sections.3.text",
+              "quote": "違いがあっても、同じ方法で大切に思う気持ちを示す必要はありません。"
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.sections.3.text",
+              "quote": "Explain both a need for space and a need for care; difference does not require identical demonstrations of commitment."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "INFP explicitly addresses protecting personal meaning while accepting revision and starting an imperfect draft. One-letter neighbor INFJ emphasizes checking interpretations of other people. These are distinct practical tensions, even though both reports value meaning and sensitivity.",
+          "evidence": [
+            {
+              "caseId": "INFP.ja",
+              "path": "report.sections.4.text",
+              "quote": "下書きを出せば修正ができますが、作品の意味を最終的に決める権限まで相手に渡すことにはなりません。"
+            },
+            {
+              "caseId": "INFJ.ja",
+              "path": "report.sections.0.text",
+              "quote": "理解しようとしている体験の持ち主に、自分の解釈を確かめましょう。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The actions give recognizable triggers and manageable steps: a ten-minute paragraph or draft, a capacity-based partial offer, and one concrete revision followed by emotional processing. Their phrases work as either spoken boundaries or self-directed reminders without requiring a particular mood.",
+          "evidence": [
+            {
+              "caseId": "INFP.ja",
+              "path": "report.actions.0.step",
+              "quote": "10分を使い、一段落の文章や粗い下書きを作ってみましょう。"
+            },
+            {
+              "caseId": "INFP.ja",
+              "path": "report.actions.1.phrase",
+              "quote": "全部はできないけれど、この部分なら手伝えるよ。"
+            },
+            {
+              "caseId": "INFP.ja",
+              "path": "report.actions.2.step",
+              "quote": "作品の具体的な修正を一つ選び、その後は感情を整理する時間を取りましょう。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Nonblocking: the final close-section sentence could state more naturally that people may express care in different ways.",
+        "Nonblocking: partial assistance is a useful example rather than an obligation; the report's capacity framing supports declining more fully when necessary."
+      ]
+    },
+    {
+      "id": "ENFJ.ja",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Voluntary participation, requested help, reciprocal care and limits on responsibility are explicit throughout. Repeated checking is distinguished from care without diagnosing the reader. Charisma and positive-influence tags are broad aspirations, appropriately limited by the reflection framing.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.ja",
+              "path": "report.sections.0.text",
+              "quote": "参加を支えることは役立ちますが、全員の成長や気分に責任を持つ必要はありません。"
+            },
+            {
+              "caseId": "ENFJ.ja",
+              "path": "framing.editorialNote",
+              "quote": "あなたの回答から検出した個人の事実や、人間関係・キャリア・能力に関する予測ではありません。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "All highlights, sections, actions, tags and framing retain participation, listening before encouragement, scope and reciprocal support. In the work section, translating offer feedback as 意見を伝える weakens the specific feedback context slightly, although the following sentence restores it through observations and requested changes.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.ja",
+              "path": "report.sections.4.text",
+              "quote": "意見の相違を調整し、意見を伝える力がある一方、がっかりさせないために引き受けすぎることもあります。"
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.sections.4.text",
+              "quote": "You can coordinate disagreement and offer feedback, but may accept too much to avoid disappointment."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ENFJ addresses premature encouragement about a friend's future and asks for reciprocal support. One-letter neighbor ENTJ instead offers contacts or task breakdowns and must negotiate involvement. These distinguish motivational caretaking from practical problem ownership.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.ja",
+              "path": "report.sections.2.text",
+              "quote": "ただ、失ったものについて話し終える前に、励ましが届いてしまうこともあります。"
+            },
+            {
+              "caseId": "ENTJ.ja",
+              "path": "report.sections.2.text",
+              "quote": "困っている友人に、具体的な手助けや人の紹介、作業の分解を提供するかもしれません。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "All three actions have clear contexts, feasible steps and usable phrases: check capacity before replying, receive the experience before planning, and request ten minutes of listening. Minor incompleteness remains in the examples: the first models delayed confirmation rather than the eventual scope, and the second models an invitation rather than explicit reflection.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.ja",
+              "path": "report.actions.0.phrase",
+              "quote": "時間を確認して、今夜返事をします。"
+            },
+            {
+              "caseId": "ENFJ.ja",
+              "path": "report.actions.1.phrase",
+              "quote": "これからのことを考える前に、まず最後まで話したい？"
+            },
+            {
+              "caseId": "ENFJ.ja",
+              "path": "report.actions.2.phrase",
+              "quote": "10分だけ話を聞いてもらえる？ 私も疲れているんだ。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Nonblocking: action examples could demonstrate the offered scope and reflective acknowledgment more fully.",
+        "Nonblocking: preserve the specific meaning of feedback more explicitly in the work section."
+      ]
+    },
+    {
+      "id": "ENFP.ja",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The body explicitly permits calm, repetition and rest, and separates enthusiasm from capacity. Negotiated reliability and listening protect others' agency. The boundless-creativity tag is exaggerated aspirational language, acceptable at four under explicit reflection framing but weaker than the body's careful qualification.",
+          "evidence": [
+            {
+              "caseId": "ENFP.ja",
+              "path": "report.sections.0.text",
+              "quote": "興味は努力の原動力になりますが、いつも熱心である必要はありません。"
+            },
+            {
+              "caseId": "ENFP.ja",
+              "path": "framing.editorialNote",
+              "quote": "あなたの回答から検出した個人の事実や、人間関係・キャリア・能力に関する予測ではありません。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All highlights, seven sections and actions faithfully preserve connection-led possibilities, capacity checks, listening turns, reliable agreements and small finishing routines. Strength tags retain the source's aspiration and exaggeration; all framing distinctions remain intact.",
+          "evidence": [
+            {
+              "caseId": "ENFP.ja",
+              "path": "report.sections.1.text",
+              "quote": "興味があることと実行の約束を分け、時間、移動手段、予算を確認する習慣を持ちましょう。"
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.1.text",
+              "quote": "Separate interest from commitment and keep a routine for time, transport and budget."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor ENTP, ENFP emphasizes enthusiasm exceeding available capacity and checking existing promises. ENTP emphasizes questioning arrangements, experimental alternatives and distinguishing debate from personal testimony. Shared idea-generation themes therefore do not erase practical distinction.",
+          "evidence": [
+            {
+              "caseId": "ENFP.ja",
+              "path": "report.sections.5.text",
+              "quote": "一方、約束を増やしすぎたり、興奮を余力と取り違えたり、落胆して方向性そのものを否定したりすることもあります。"
+            },
+            {
+              "caseId": "ENTP.ja",
+              "path": "report.sections.0.text",
+              "quote": "探る価値のある問いと、すでに十分機能している取り決めを分けてみましょう。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The three actions specify manageable responses to an exciting invitation, conversational associations and fading project interest. Checking promises, inviting the speaker to finish, and completing ten minutes while recording the next action are observable. Each phrase is practical and preserves room for choice.",
+          "evidence": [
+            {
+              "caseId": "ENFP.ja",
+              "path": "report.actions.0.step",
+              "quote": "返事を確定する前に、すでにした約束を確認しましょう。"
+            },
+            {
+              "caseId": "ENFP.ja",
+              "path": "report.actions.1.phrase",
+              "quote": "ほかにも話しておきたいことはある？"
+            },
+            {
+              "caseId": "ENFP.ja",
+              "path": "report.actions.2.step",
+              "quote": "最低限の10分の作業を終え、次の行動を書き留めましょう。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Nonblocking: the boundless-creativity strength tag is more absolute than the surrounding prose; a less expansive label would improve calibration.",
+        "Nonblocking: the ten-minute minimum is reasonable as an optional exercise and should remain subordinate to the report's explicit permission to rest."
+      ]
+    }
+  ]
+}

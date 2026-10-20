@@ -34,7 +34,7 @@
             @click="select(t)"
           >
             <span class="chip-code">{{ t }}</span>
-            <span class="chip-nick">{{ types[t].nickname[locale] }}</span>
+            <span class="chip-nick">{{ presentation(t)?.nickname }}</span>
           </button>
         </div>
       </div>
@@ -71,8 +71,10 @@ import ReportDock from '../components/ReportDock.vue'
 import SharePanel from '../components/SharePanel.vue'
 import ResultCard from '../components/ResultCard.vue'
 import { types } from '../data/types.js'
+import { getTypePresentation } from '../data/localizedContent.js'
 
 const { locale } = useI18n()
+const presentation = type => getTypePresentation(type, locale.value)
 const reader = ref(null)
 const showPanel = ref(false)
 const router = useRouter()
@@ -95,7 +97,7 @@ const filteredGroups = computed(() => {
     .map((group) => ({
       ...group,
       types: group.types.filter((code) =>
-        [code, types[code].nickname.zh, types[code].nickname.en]
+        [code, presentation(code)?.nickname, types[code].nickname.zh, types[code].nickname.en]
           .join(' ')
           .toLowerCase()
           .includes(needle),
@@ -265,4 +267,11 @@ function groupColor(label) {
 .detail-back:hover {
   color: var(--blue);
 }
+</style>
+
+<style scoped>
+.types-header { display: grid; grid-template-columns: 1fr auto; }
+.back-btn { grid-column: 1; grid-row: 1; }
+.page-title { grid-column: 1 / -1; grid-row: 2; overflow-wrap: anywhere; }
+.types-header > :last-child { grid-column: 2; grid-row: 1; justify-self: end; }
 </style>

@@ -1,4 +1,4 @@
-import { mount } from '@vue/test-utils'
+import { mount, flushPromises } from '@vue/test-utils'
 import { createI18n } from 'vue-i18n'
 import { expect, it } from 'vitest'
 import LangToggle from '../src/components/LangToggle.vue'
@@ -28,12 +28,15 @@ it('exposes the current question and total to assistive technology', async () =>
     wrapper.unmount()
   }
 })
-it('names the language switching action in both languages', async () => {
+it('offers eight named languages and labels the selector in the active language', async () => {
   const wrapper = mount(LangToggle, { global })
   try {
-    expect(wrapper.attributes('aria-label')).toBe('Switch to Chinese')
-    await wrapper.trigger('click')
-    expect(wrapper.attributes('aria-label')).toBe('切换到英文')
+    expect(wrapper.find('select').attributes('aria-label')).toBe(en.app.language)
+    expect(wrapper.findAll('option')).toHaveLength(8)
+    await wrapper.find('select').setValue('zh')
+    await flushPromises()
+    expect(wrapper.find('select').attributes('aria-label')).toBe(zh.app.language)
+    expect(localStorage.getItem('mbti_lab_locale')).toBe('zh')
   } finally {
     wrapper.unmount()
   }

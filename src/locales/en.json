@@ -3,7 +3,12 @@
     "title": "MBTI Lab",
     "subtitle": "Professional Personality Test · Discover Your True Self",
     "switchToEnglish": "Switch to English",
-    "switchToChinese": "Switch to Chinese"
+    "switchToChinese": "Switch to Chinese",
+    "language": "Language",
+    "languageLoading": "Loading language…",
+    "languageError": "Could not load this language. Your current language and answers are unchanged. Try again.",
+    "languageRetry": "Retry",
+    "languageUnsaved": "This language is active, but your browser could not save the preference."
   },
   "home": {
     "startShort": "Short · 60 Q",
@@ -35,7 +40,7 @@
     "title": "16 Personality Types",
     "backToList": "All types",
     "search": "Find a personality type",
-    "searchHint": "Type code or Chinese / English nickname",
+    "searchHint": "Type code or personality name",
     "noMatches": "No matching types found.",
     "invalidType": "This type link is invalid. Choose a type from the list.",
     "groups": {

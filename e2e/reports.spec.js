@@ -1,6 +1,6 @@
 import { test, expect, TYPES, sample, seedResult, language } from './helpers.js'
 
-for (const locale of ['zh','en']) {
+for (const locale of ['zh','en','es','fr','de','pt','ja','ko']) {
   test(`all sixteen ${locale} reports render and contents navigate accessibly`, async ({ page }) => {
     for (const type of TYPES) {
       await page.goto(`./#/types?type=${type}`)
@@ -52,10 +52,10 @@ test('search, deep links, invalid types, neighbor links and browser history pres
 })
 
 for (const width of [320,375,768,1280]) {
-  test(`bilingual reports and dialog fit ${width}px viewport with dock clearance`, async ({ page }) => {
+  test(`multilingual reports and dialog fit ${width}px viewport with dock clearance`, async ({ page }) => {
     await page.setViewportSize({ width, height: 800 })
     await seedResult(page)
-    for (const locale of ['zh', 'en']) {
+    for (const locale of ['zh','en','es','fr','de','pt','ja','ko']) {
       await language(page, locale)
       await page.goto('./')
       await expect(page.locator('.cards .start-card')).toHaveCount(2)

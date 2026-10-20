@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "purpose": "Semantic review of every translated A/B question against its English source, without changing scoring.",
+  "checks": [
+    "Meaning: preserve the specific preference, feeling or behavior expressed, including intensity and alternatives.",
+    "Polarity: A must retain English A's meaning and B English B's meaning; never reverse the alternatives or their logical direction.",
+    "Qualifiers: preserve explicit usually, often, sometimes, rarely, even, more, first, after, before and similar limits; natural equivalents are acceptable.",
+    "Context: preserve settings, people, timing, objects and conditions that distinguish the question.",
+    "Read all 93 pairs and judge both options individually. Do not infer semantic quality from schema, matching IDs, language detection or counts.",
+    "Natural local wording, conventional loanwords and equivalent paraphrase are acceptable. Report substantive meaning differences, not stylistic preferences. An awkward translation only becomes an issue if it changes or obscures the assessed preference.",
+    "For an issue, quote the exact complete source and translated option, explain the semantic difference, and suggest a faithful replacement in the target language. Do not fabricate quotations or verdicts."
+  ],
+  "limitations": ["An AI linguistic review cannot establish psychometric validity, scoring validity or measurement equivalence across cultures."]
+}

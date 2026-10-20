@@ -2,12 +2,12 @@
 import { describe, expect, it } from 'vitest'
 import { readFileSync } from 'node:fs'
 import { ROOT } from '../scripts/eval-lib.mjs'
-import { loadSuite, validateEvaluation } from '../scripts/eval-lib.mjs'
+import { loadSuite, validateEvaluation, validateJudgeResponse } from '../scripts/eval-lib.mjs'
 
 function validArtifact() {
   const suite = loadSuite()
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     evaluatedAt: new Date().toISOString(),
     provenance: {
       method: 'codex-agent-review', evaluator: 'Synthetic validator test fixture; not a semantic review', model: null,
@@ -15,7 +15,7 @@ function validArtifact() {
     },
     sourceHashes: suite.sourceHashes,
     results: suite.cases.map((item) => {
-      const counterpart = suite.cases.find((c) => c.type === item.type && c.locale !== item.locale)
+      const counterpart = suite.cases.find((c) => c.type === item.type && c.locale === (item.locale === 'en' ? 'zh' : 'en'))
       const neighbor = suite.cases.find((c) => c.type !== item.type && c.locale === item.locale)
       const evidence = (c) => ({ caseId: c.id, path: 'report.sections.0.text', quote: c.report.sections[0].text.slice(0, 50) })
       return {
@@ -39,12 +39,40 @@ function rejects(change, message) {
   expect(verdict.errors.join('\n')).toMatch(message)
 }
 
+describe('multilingual evaluation coverage', () => {
+  it('loads all 128 real reports and localized strength tags without browser globals', () => {
+    const suite = loadSuite()
+    expect(suite.cases).toHaveLength(128)
+    expect(new Set(suite.cases.map(c => c.locale))).toEqual(new Set(['zh', 'en', 'es', 'fr', 'de', 'pt', 'ja', 'ko']))
+    const spanish = suite.cases.find(c => c.id === 'INTJ.es')
+    expect(spanish.report.sections[0].text).not.toBe(suite.cases.find(c => c.id === 'INTJ.en').report.sections[0].text)
+    expect(spanish.strengthTags[0]).toBe('Visión estratégica')
+    expect(suite.sourceHashes['src/data/translations/es.reports.json']).toMatch(/^[a-f0-9]{64}$/)
+  })
+  it('allows supplied source references without treating them as extra targets', () => {
+    const suite = loadSuite()
+    const cases = suite.cases.filter(c => c.locale === 'zh').slice(0, 8)
+    const references = cases.map(c => suite.cases.find(p => p.type === c.type && p.locale === 'en'))
+    const ids = new Set(cases.map(c => c.id))
+    const response = {evaluator: 'Synthetic validation fixture', model: null, limitations: ['Validator fixture only.'], results: validArtifact().results.filter(r => ids.has(r.id)).map(({reportHash, ...r}) => r)}
+    expect(validateJudgeResponse(response, cases, references)).toEqual([])
+    response.results[0].criteria.editorialSafety.evidence[0].caseId = 'INTJ.fr'
+    expect(validateJudgeResponse(response, cases, references).join('\n')).toMatch(/unsupplied/)
+  })
+  it('requires English fidelity evidence for every translated locale', () => {
+    const artifact = validArtifact()
+    const target = artifact.results.find(c => c.id === 'INTJ.es')
+    target.criteria.bilingualFidelity.evidence[1] = {caseId: 'INTJ.zh', path: 'report.sections.0.text', quote: loadSuite().cases.find(c => c.id === 'INTJ.zh').report.sections[0].text.slice(0, 50)}
+    expect(validateEvaluation(artifact).errors.join('\n')).toMatch(/English|counterpart/)
+  })
+})
+
 describe('stored AI judgment gate', () => {
   it('accepts complete current supported evidence without pretending to judge semantics', () => {
     expect(validateEvaluation(validArtifact())).toMatchObject({ passed: true, errors: [] })
   })
-  it('requires all 32 unique type and language cases', () => {
-    rejects((a) => a.results.pop(), /32|missing/i)
+  it('requires all 128 unique type and language cases', () => {
+    rejects((a) => a.results.pop(), /128|missing/i)
     rejects((a) => { a.results[1] = structuredClone(a.results[0]) }, /duplicate|missing/i)
   })
   it('rejects stale sources, case snapshots and rubric hashes', () => {
@@ -59,6 +87,7 @@ describe('stored AI judgment gate', () => {
   it('rejects missing, fabricated and irrelevant evidence', () => {
     rejects((a) => { a.results[0].criteria.actionability.evidence = [] }, /evidence|minItems/i)
     rejects((a) => { a.results[0].criteria.editorialSafety.evidence[0].quote = 'A fabricated quote absent from the source.' }, /quote/i)
+    rejects((a) => { a.results.find(r => r.id === 'INTJ.ja').criteria.editorialSafety.evidence = [{caseId: 'INTJ.ja', path: 'strengthTags.2', quote: '鋭い分析力'}] }, /quote/i)
     rejects((a) => { a.results[0].criteria.editorialSafety.evidence[0].path = '__proto__.x' }, /path/i)
     rejects((a) => { a.results[0].criteria.bilingualFidelity.evidence.pop() }, /other language|counterpart/i)
     rejects((a) => { a.results[0].criteria.typeDifferentiation.evidence.pop() }, /other type|comparison/i)
@@ -121,7 +150,7 @@ it('preserves the last accepted judgment when CLI is missing, exits unsuccessful
   }
 })
 
-it('runs four eight-case judges concurrently and accepts only complete independently supported results', async () => {
+it('runs 16 eight-target judges with bounded concurrency and English references and accepts only complete independently supported results', async () => {
   const { mkdtempSync, cpSync, mkdirSync, writeFileSync, rmSync } = await import('node:fs')
   const { tmpdir } = await import('node:os')
   const { join } = await import('node:path')
@@ -139,13 +168,15 @@ it('runs four eight-case judges concurrently and accepts only complete independe
     // Synchronous start logs + delayed completion prove overlapping processes.
     writeFileSync(`${bin}/codex`, `#!${process.execPath}
 import fs from 'node:fs';let input='';process.stdin.on('data',c=>input+=c);process.stdin.on('end',()=>{
-const cases=JSON.parse(input.split('CASES:\\n')[1]);
+const supplied=JSON.parse(input.split('CASES:\\n')[1]);
+const targetIds=JSON.parse(input.split('TARGET_CASE_IDS:\\n')[1].split('\\n\\nCASES:')[0]);
+const cases=supplied.filter(c=>targetIds.includes(c.id));
 const ids=cases.map(c=>c.id);fs.appendFileSync('calls.jsonl',JSON.stringify({event:'start',ids,run:process.env.FIXTURE_MODE})+'\\n');
 const barrier=setInterval(()=>{
 const starts=fs.readFileSync('calls.jsonl','utf8').trim().split('\\n').map(JSON.parse).filter(c=>c.event==='start'&&c.run===process.env.FIXTURE_MODE);
 if(starts.length<4)return;clearInterval(barrier);
 const ev=c=>({caseId:c.id,path:'report.sections.0.text',quote:c.report.sections[0].text.slice(0,50)});
-const results=cases.map(c=>({id:c.id,criticalFlags:[],findings:[],criteria:Object.fromEntries(['editorialSafety','bilingualFidelity','typeDifferentiation','actionability'].map(k=>[k,{score:process.env.FIXTURE_MODE==='low'&&c.id==='INTJ.zh'&&k==='actionability'?3:4,rationale:'Synthetic runner fixture checks case aggregation and evidence; it is not an actual editorial assessment.',evidence:[ev(c),...(k==='bilingualFidelity'?[ev(cases.find(p=>p.type===c.type&&p.locale!==c.locale))]:k==='typeDifferentiation'?[ev(cases.find(p=>p.type!==c.type&&p.locale===c.locale))]:[])]}]))}));
+const results=cases.map(c=>({id:c.id,criticalFlags:[],findings:[],criteria:Object.fromEntries(['editorialSafety','bilingualFidelity','typeDifferentiation','actionability'].map(k=>[k,{score:process.env.FIXTURE_MODE==='low'&&c.id==='INTJ.zh'&&k==='actionability'?3:4,rationale:'Synthetic runner fixture checks case aggregation and evidence; it is not an actual editorial assessment.',evidence:[ev(c),...(k==='bilingualFidelity'?[ev(supplied.find(p=>p.type===c.type&&p.locale===(c.locale==='en'?'zh':'en')))]:k==='typeDifferentiation'?[ev(cases.find(p=>p.type!==c.type&&p.locale===c.locale))]:[])]}]))}));
 if(process.env.FIXTURE_MODE==='missing'&&ids.includes('INTJ.zh'))results.pop();
 fs.writeFileSync(process.argv[process.argv.indexOf('--output-last-message')+1],JSON.stringify({evaluator:'Synthetic fixture, never a real semantic review',model:null,limitations:['Synthetic subprocess integration fixture only.'],results}));
 fs.appendFileSync('calls.jsonl',JSON.stringify({event:'end',ids})+'\\n');
@@ -158,13 +189,17 @@ fs.appendFileSync('calls.jsonl',JSON.stringify({event:'end',ids})+'\\n');
     expect(success.status, success.stderr).toBe(0)
     const calls = readFileSync(`${directory}/calls.jsonl`, 'utf8').trim().split('\n').map(JSON.parse)
     expect(calls.slice(0, 4).every((c) => c.event === 'start')).toBe(true)
-    expect(calls.filter((c) => c.event === 'start').map((c) => c.ids.length)).toEqual([8, 8, 8, 8])
+    expect(calls.filter((c) => c.event === 'start').map((c) => c.ids.length)).toEqual(Array(16).fill(8))
+    let active = 0; let peak = 0
+    for (const call of calls) { active += call.event === 'start' ? 1 : -1; peak = Math.max(peak, active) }
+    expect(peak).toBe(4)
+    expect(active).toBe(0)
     const accepted = readFileSync(artifactPath, 'utf8')
     const artifact = JSON.parse(accepted)
-    expect(artifact.results).toHaveLength(32)
-    expect(new Set(artifact.results.map((r) => r.id)).size).toBe(32)
-    expect(artifact.provenance.evaluator).toMatch(/four|4/i)
-    expect(artifact.provenance.limitations.filter((s) => /Batch \d/.test(s))).toHaveLength(4)
+    expect(artifact.results).toHaveLength(128)
+    expect(new Set(artifact.results.map((r) => r.id)).size).toBe(128)
+    expect(artifact.provenance.evaluator).toMatch(/16/)
+    expect(artifact.provenance.limitations.filter((s) => /Batch \d/.test(s))).toHaveLength(16)
     const missing = run('missing')
     expect(missing.status).toBe(1)
     expect(missing.stderr).toMatch(/8|missing|coverage/i)
@@ -173,7 +208,7 @@ fs.appendFileSync('calls.jsonl',JSON.stringify({event:'end',ids})+'\\n');
     expect(low.status).toBe(1)
     expect(low.stderr).toMatch(/threshold/)
     expect(readFileSync(artifactPath, 'utf8')).toBe(accepted)
-    expect(JSON.parse(readFileSync(`${directory}/evals/failed.judgment.json`, 'utf8')).results).toHaveLength(32)
+    expect(JSON.parse(readFileSync(`${directory}/evals/failed.judgment.json`, 'utf8')).results).toHaveLength(128)
   } finally {
     rmSync(directory, { recursive: true, force: true })
   }

@@ -1,0 +1,108 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "locale": {
+      "type": "string"
+    },
+    "evaluator": {
+      "type": "string"
+    },
+    "model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "a": {
+            "type": "string",
+            "enum": [
+              "pass",
+              "issue"
+            ]
+          },
+          "b": {
+            "type": "string",
+            "enum": [
+              "pass",
+              "issue"
+            ]
+          },
+          "issues": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "option": {
+                  "type": "string",
+                  "enum": [
+                    "a",
+                    "b"
+                  ]
+                },
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "meaning",
+                    "polarity",
+                    "qualifier",
+                    "context"
+                  ]
+                },
+                "sourceQuote": {
+                  "type": "string"
+                },
+                "translationQuote": {
+                  "type": "string"
+                },
+                "explanation": {
+                  "type": "string"
+                },
+                "suggestedTranslation": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "option",
+                "kind",
+                "sourceQuote",
+                "translationQuote",
+                "explanation",
+                "suggestedTranslation"
+              ]
+            }
+          }
+        },
+        "required": [
+          "id",
+          "a",
+          "b",
+          "issues"
+        ]
+      }
+    }
+  },
+  "required": [
+    "locale",
+    "evaluator",
+    "model",
+    "limitations",
+    "reviews"
+  ]
+}

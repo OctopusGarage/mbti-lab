@@ -11,7 +11,7 @@
           >{{ letter }}</span
         >
       </h1>
-      <div class="type-nickname">{{ typeData.nickname[locale] }}</div>
+      <div class="type-nickname">{{ typeData.nickname }}</div>
     </div>
 
     <section class="section cream-section">
@@ -43,7 +43,7 @@
             class="neighbor-type"
             @click="$emit('neighbor', neighbor.type)"
           >
-            {{ neighbor.type }} · {{ types[neighbor.type].nickname[locale] }}
+            {{ neighbor.type }} · {{ getTypePresentation(neighbor.type, locale)?.nickname }}
           </button>
           <p>{{ $t('report.neighborDimensions.' + neighbor.dimension) }}</p>
         </li>
@@ -58,7 +58,7 @@ import { useI18n } from 'vue-i18n'
 import DimensionBars from './DimensionBars.vue'
 import ReportReader from './ReportReader.vue'
 import { getReport, getNeighbors } from '../utils/report.js'
-import { types } from '../data/types.js'
+import { getTypePresentation } from '../data/localizedContent.js'
 
 const RadarChart = defineAsyncComponent(() => import('./RadarChart.vue'))
 
@@ -68,7 +68,7 @@ defineExpose({ contents: () => reader.value?.contents() })
 const props = defineProps({ type: String, percents: Object })
 const { locale } = useI18n()
 
-const typeData = computed(() => types[props.type])
+const typeData = computed(() => getTypePresentation(props.type, locale.value))
 const typeLetters = computed(() => props.type?.split('') ?? [])
 const report = computed(() => getReport(props.type, locale.value))
 const chartOpen = ref(false)

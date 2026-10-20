@@ -1,9 +1,84 @@
 {
-  "version": 1,
+  "version": 2,
   "cases": [
     {
       "id": "INTJ.zh",
       "type": "INTJ",
+      "locale": "zh"
+    },
+    {
+      "id": "INTP.zh",
+      "type": "INTP",
+      "locale": "zh"
+    },
+    {
+      "id": "ENTJ.zh",
+      "type": "ENTJ",
+      "locale": "zh"
+    },
+    {
+      "id": "ENTP.zh",
+      "type": "ENTP",
+      "locale": "zh"
+    },
+    {
+      "id": "INFJ.zh",
+      "type": "INFJ",
+      "locale": "zh"
+    },
+    {
+      "id": "INFP.zh",
+      "type": "INFP",
+      "locale": "zh"
+    },
+    {
+      "id": "ENFJ.zh",
+      "type": "ENFJ",
+      "locale": "zh"
+    },
+    {
+      "id": "ENFP.zh",
+      "type": "ENFP",
+      "locale": "zh"
+    },
+    {
+      "id": "ISTJ.zh",
+      "type": "ISTJ",
+      "locale": "zh"
+    },
+    {
+      "id": "ISFJ.zh",
+      "type": "ISFJ",
+      "locale": "zh"
+    },
+    {
+      "id": "ESTJ.zh",
+      "type": "ESTJ",
+      "locale": "zh"
+    },
+    {
+      "id": "ESFJ.zh",
+      "type": "ESFJ",
+      "locale": "zh"
+    },
+    {
+      "id": "ISTP.zh",
+      "type": "ISTP",
+      "locale": "zh"
+    },
+    {
+      "id": "ISFP.zh",
+      "type": "ISFP",
+      "locale": "zh"
+    },
+    {
+      "id": "ESTP.zh",
+      "type": "ESTP",
+      "locale": "zh"
+    },
+    {
+      "id": "ESFP.zh",
+      "type": "ESFP",
       "locale": "zh"
     },
     {
@@ -12,19 +87,9 @@
       "locale": "en"
     },
     {
-      "id": "INTP.zh",
-      "type": "INTP",
-      "locale": "zh"
-    },
-    {
       "id": "INTP.en",
       "type": "INTP",
       "locale": "en"
-    },
-    {
-      "id": "ENTJ.zh",
-      "type": "ENTJ",
-      "locale": "zh"
     },
     {
       "id": "ENTJ.en",
@@ -32,19 +97,9 @@
       "locale": "en"
     },
     {
-      "id": "ENTP.zh",
-      "type": "ENTP",
-      "locale": "zh"
-    },
-    {
       "id": "ENTP.en",
       "type": "ENTP",
       "locale": "en"
-    },
-    {
-      "id": "INFJ.zh",
-      "type": "INFJ",
-      "locale": "zh"
     },
     {
       "id": "INFJ.en",
@@ -52,19 +107,9 @@
       "locale": "en"
     },
     {
-      "id": "INFP.zh",
-      "type": "INFP",
-      "locale": "zh"
-    },
-    {
       "id": "INFP.en",
       "type": "INFP",
       "locale": "en"
-    },
-    {
-      "id": "ENFJ.zh",
-      "type": "ENFJ",
-      "locale": "zh"
     },
     {
       "id": "ENFJ.en",
@@ -72,19 +117,9 @@
       "locale": "en"
     },
     {
-      "id": "ENFP.zh",
-      "type": "ENFP",
-      "locale": "zh"
-    },
-    {
       "id": "ENFP.en",
       "type": "ENFP",
       "locale": "en"
-    },
-    {
-      "id": "ISTJ.zh",
-      "type": "ISTJ",
-      "locale": "zh"
     },
     {
       "id": "ISTJ.en",
@@ -92,19 +127,9 @@
       "locale": "en"
     },
     {
-      "id": "ISFJ.zh",
-      "type": "ISFJ",
-      "locale": "zh"
-    },
-    {
       "id": "ISFJ.en",
       "type": "ISFJ",
       "locale": "en"
-    },
-    {
-      "id": "ESTJ.zh",
-      "type": "ESTJ",
-      "locale": "zh"
     },
     {
       "id": "ESTJ.en",
@@ -112,19 +137,9 @@
       "locale": "en"
     },
     {
-      "id": "ESFJ.zh",
-      "type": "ESFJ",
-      "locale": "zh"
-    },
-    {
       "id": "ESFJ.en",
       "type": "ESFJ",
       "locale": "en"
-    },
-    {
-      "id": "ISTP.zh",
-      "type": "ISTP",
-      "locale": "zh"
     },
     {
       "id": "ISTP.en",
@@ -132,19 +147,9 @@
       "locale": "en"
     },
     {
-      "id": "ISFP.zh",
-      "type": "ISFP",
-      "locale": "zh"
-    },
-    {
       "id": "ISFP.en",
       "type": "ISFP",
       "locale": "en"
-    },
-    {
-      "id": "ESTP.zh",
-      "type": "ESTP",
-      "locale": "zh"
     },
     {
       "id": "ESTP.en",
@@ -152,14 +157,489 @@
       "locale": "en"
     },
     {
-      "id": "ESFP.zh",
-      "type": "ESFP",
-      "locale": "zh"
-    },
-    {
       "id": "ESFP.en",
       "type": "ESFP",
       "locale": "en"
+    },
+    {
+      "id": "INTJ.es",
+      "type": "INTJ",
+      "locale": "es"
+    },
+    {
+      "id": "INTP.es",
+      "type": "INTP",
+      "locale": "es"
+    },
+    {
+      "id": "ENTJ.es",
+      "type": "ENTJ",
+      "locale": "es"
+    },
+    {
+      "id": "ENTP.es",
+      "type": "ENTP",
+      "locale": "es"
+    },
+    {
+      "id": "INFJ.es",
+      "type": "INFJ",
+      "locale": "es"
+    },
+    {
+      "id": "INFP.es",
+      "type": "INFP",
+      "locale": "es"
+    },
+    {
+      "id": "ENFJ.es",
+      "type": "ENFJ",
+      "locale": "es"
+    },
+    {
+      "id": "ENFP.es",
+      "type": "ENFP",
+      "locale": "es"
+    },
+    {
+      "id": "ISTJ.es",
+      "type": "ISTJ",
+      "locale": "es"
+    },
+    {
+      "id": "ISFJ.es",
+      "type": "ISFJ",
+      "locale": "es"
+    },
+    {
+      "id": "ESTJ.es",
+      "type": "ESTJ",
+      "locale": "es"
+    },
+    {
+      "id": "ESFJ.es",
+      "type": "ESFJ",
+      "locale": "es"
+    },
+    {
+      "id": "ISTP.es",
+      "type": "ISTP",
+      "locale": "es"
+    },
+    {
+      "id": "ISFP.es",
+      "type": "ISFP",
+      "locale": "es"
+    },
+    {
+      "id": "ESTP.es",
+      "type": "ESTP",
+      "locale": "es"
+    },
+    {
+      "id": "ESFP.es",
+      "type": "ESFP",
+      "locale": "es"
+    },
+    {
+      "id": "INTJ.fr",
+      "type": "INTJ",
+      "locale": "fr"
+    },
+    {
+      "id": "INTP.fr",
+      "type": "INTP",
+      "locale": "fr"
+    },
+    {
+      "id": "ENTJ.fr",
+      "type": "ENTJ",
+      "locale": "fr"
+    },
+    {
+      "id": "ENTP.fr",
+      "type": "ENTP",
+      "locale": "fr"
+    },
+    {
+      "id": "INFJ.fr",
+      "type": "INFJ",
+      "locale": "fr"
+    },
+    {
+      "id": "INFP.fr",
+      "type": "INFP",
+      "locale": "fr"
+    },
+    {
+      "id": "ENFJ.fr",
+      "type": "ENFJ",
+      "locale": "fr"
+    },
+    {
+      "id": "ENFP.fr",
+      "type": "ENFP",
+      "locale": "fr"
+    },
+    {
+      "id": "ISTJ.fr",
+      "type": "ISTJ",
+      "locale": "fr"
+    },
+    {
+      "id": "ISFJ.fr",
+      "type": "ISFJ",
+      "locale": "fr"
+    },
+    {
+      "id": "ESTJ.fr",
+      "type": "ESTJ",
+      "locale": "fr"
+    },
+    {
+      "id": "ESFJ.fr",
+      "type": "ESFJ",
+      "locale": "fr"
+    },
+    {
+      "id": "ISTP.fr",
+      "type": "ISTP",
+      "locale": "fr"
+    },
+    {
+      "id": "ISFP.fr",
+      "type": "ISFP",
+      "locale": "fr"
+    },
+    {
+      "id": "ESTP.fr",
+      "type": "ESTP",
+      "locale": "fr"
+    },
+    {
+      "id": "ESFP.fr",
+      "type": "ESFP",
+      "locale": "fr"
+    },
+    {
+      "id": "INTJ.de",
+      "type": "INTJ",
+      "locale": "de"
+    },
+    {
+      "id": "INTP.de",
+      "type": "INTP",
+      "locale": "de"
+    },
+    {
+      "id": "ENTJ.de",
+      "type": "ENTJ",
+      "locale": "de"
+    },
+    {
+      "id": "ENTP.de",
+      "type": "ENTP",
+      "locale": "de"
+    },
+    {
+      "id": "INFJ.de",
+      "type": "INFJ",
+      "locale": "de"
+    },
+    {
+      "id": "INFP.de",
+      "type": "INFP",
+      "locale": "de"
+    },
+    {
+      "id": "ENFJ.de",
+      "type": "ENFJ",
+      "locale": "de"
+    },
+    {
+      "id": "ENFP.de",
+      "type": "ENFP",
+      "locale": "de"
+    },
+    {
+      "id": "ISTJ.de",
+      "type": "ISTJ",
+      "locale": "de"
+    },
+    {
+      "id": "ISFJ.de",
+      "type": "ISFJ",
+      "locale": "de"
+    },
+    {
+      "id": "ESTJ.de",
+      "type": "ESTJ",
+      "locale": "de"
+    },
+    {
+      "id": "ESFJ.de",
+      "type": "ESFJ",
+      "locale": "de"
+    },
+    {
+      "id": "ISTP.de",
+      "type": "ISTP",
+      "locale": "de"
+    },
+    {
+      "id": "ISFP.de",
+      "type": "ISFP",
+      "locale": "de"
+    },
+    {
+      "id": "ESTP.de",
+      "type": "ESTP",
+      "locale": "de"
+    },
+    {
+      "id": "ESFP.de",
+      "type": "ESFP",
+      "locale": "de"
+    },
+    {
+      "id": "INTJ.pt",
+      "type": "INTJ",
+      "locale": "pt"
+    },
+    {
+      "id": "INTP.pt",
+      "type": "INTP",
+      "locale": "pt"
+    },
+    {
+      "id": "ENTJ.pt",
+      "type": "ENTJ",
+      "locale": "pt"
+    },
+    {
+      "id": "ENTP.pt",
+      "type": "ENTP",
+      "locale": "pt"
+    },
+    {
+      "id": "INFJ.pt",
+      "type": "INFJ",
+      "locale": "pt"
+    },
+    {
+      "id": "INFP.pt",
+      "type": "INFP",
+      "locale": "pt"
+    },
+    {
+      "id": "ENFJ.pt",
+      "type": "ENFJ",
+      "locale": "pt"
+    },
+    {
+      "id": "ENFP.pt",
+      "type": "ENFP",
+      "locale": "pt"
+    },
+    {
+      "id": "ISTJ.pt",
+      "type": "ISTJ",
+      "locale": "pt"
+    },
+    {
+      "id": "ISFJ.pt",
+      "type": "ISFJ",
+      "locale": "pt"
+    },
+    {
+      "id": "ESTJ.pt",
+      "type": "ESTJ",
+      "locale": "pt"
+    },
+    {
+      "id": "ESFJ.pt",
+      "type": "ESFJ",
+      "locale": "pt"
+    },
+    {
+      "id": "ISTP.pt",
+      "type": "ISTP",
+      "locale": "pt"
+    },
+    {
+      "id": "ISFP.pt",
+      "type": "ISFP",
+      "locale": "pt"
+    },
+    {
+      "id": "ESTP.pt",
+      "type": "ESTP",
+      "locale": "pt"
+    },
+    {
+      "id": "ESFP.pt",
+      "type": "ESFP",
+      "locale": "pt"
+    },
+    {
+      "id": "INTJ.ja",
+      "type": "INTJ",
+      "locale": "ja"
+    },
+    {
+      "id": "INTP.ja",
+      "type": "INTP",
+      "locale": "ja"
+    },
+    {
+      "id": "ENTJ.ja",
+      "type": "ENTJ",
+      "locale": "ja"
+    },
+    {
+      "id": "ENTP.ja",
+      "type": "ENTP",
+      "locale": "ja"
+    },
+    {
+      "id": "INFJ.ja",
+      "type": "INFJ",
+      "locale": "ja"
+    },
+    {
+      "id": "INFP.ja",
+      "type": "INFP",
+      "locale": "ja"
+    },
+    {
+      "id": "ENFJ.ja",
+      "type": "ENFJ",
+      "locale": "ja"
+    },
+    {
+      "id": "ENFP.ja",
+      "type": "ENFP",
+      "locale": "ja"
+    },
+    {
+      "id": "ISTJ.ja",
+      "type": "ISTJ",
+      "locale": "ja"
+    },
+    {
+      "id": "ISFJ.ja",
+      "type": "ISFJ",
+      "locale": "ja"
+    },
+    {
+      "id": "ESTJ.ja",
+      "type": "ESTJ",
+      "locale": "ja"
+    },
+    {
+      "id": "ESFJ.ja",
+      "type": "ESFJ",
+      "locale": "ja"
+    },
+    {
+      "id": "ISTP.ja",
+      "type": "ISTP",
+      "locale": "ja"
+    },
+    {
+      "id": "ISFP.ja",
+      "type": "ISFP",
+      "locale": "ja"
+    },
+    {
+      "id": "ESTP.ja",
+      "type": "ESTP",
+      "locale": "ja"
+    },
+    {
+      "id": "ESFP.ja",
+      "type": "ESFP",
+      "locale": "ja"
+    },
+    {
+      "id": "INTJ.ko",
+      "type": "INTJ",
+      "locale": "ko"
+    },
+    {
+      "id": "INTP.ko",
+      "type": "INTP",
+      "locale": "ko"
+    },
+    {
+      "id": "ENTJ.ko",
+      "type": "ENTJ",
+      "locale": "ko"
+    },
+    {
+      "id": "ENTP.ko",
+      "type": "ENTP",
+      "locale": "ko"
+    },
+    {
+      "id": "INFJ.ko",
+      "type": "INFJ",
+      "locale": "ko"
+    },
+    {
+      "id": "INFP.ko",
+      "type": "INFP",
+      "locale": "ko"
+    },
+    {
+      "id": "ENFJ.ko",
+      "type": "ENFJ",
+      "locale": "ko"
+    },
+    {
+      "id": "ENFP.ko",
+      "type": "ENFP",
+      "locale": "ko"
+    },
+    {
+      "id": "ISTJ.ko",
+      "type": "ISTJ",
+      "locale": "ko"
+    },
+    {
+      "id": "ISFJ.ko",
+      "type": "ISFJ",
+      "locale": "ko"
+    },
+    {
+      "id": "ESTJ.ko",
+      "type": "ESTJ",
+      "locale": "ko"
+    },
+    {
+      "id": "ESFJ.ko",
+      "type": "ESFJ",
+      "locale": "ko"
+    },
+    {
+      "id": "ISTP.ko",
+      "type": "ISTP",
+      "locale": "ko"
+    },
+    {
+      "id": "ISFP.ko",
+      "type": "ISFP",
+      "locale": "ko"
+    },
+    {
+      "id": "ESTP.ko",
+      "type": "ESTP",
+      "locale": "ko"
+    },
+    {
+      "id": "ESFP.ko",
+      "type": "ESFP",
+      "locale": "ko"
     }
   ]
 }

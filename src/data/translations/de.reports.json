@@ -1,0 +1,530 @@
+{
+  "INTJ": {
+    "highlights": [
+      "Die Richtung vor dem Weg klären",
+      "Die eigene Begründung sichtbar machen",
+      "Langfristige Pläne in kleinen Schritten prüfen"
+    ],
+    "sections": [
+      "Bevor Sie anfangen, fragen Sie sich vielleicht, was eine Aktivität bewirken soll. Bei einer Reise geht es erst um Erholung, Verbundenheit oder Entdeckungen und dann um Hotelbuchungen. Richtung und eigenständiges Urteilen sind Ihnen wichtig. Das ist ein möglicher Ausgangspunkt für Entscheidungen, keine Behauptung, dass Sie die Zukunft vorhersagen oder das Leben in ein Projekt verwandeln müssen.",
+      "In einem lebhaften Chat über das Wochenende vergleichen Sie vielleicht Budget, Entfernung und widersprüchliche Pläne, bevor Sie einen kurzen Vorschlag schreiben. Andere sehen die Antwort, ohne Ihre Überlegungen zu kennen. Erklären Sie einen Grund und lassen Sie ein Detail veränderbar. So wird Vorbereitung zu einer Ressource für die Gruppe statt zu einer Entscheidung in ihrem Namen.",
+      "Eine wiederkehrende Schwierigkeit lenkt Ihren Blick vielleicht auf ein Muster. Sie möchten eine dauerhafte Lösung, während Ihr Freund vielleicht zunächst seine Enttäuschung verarbeiten möchte. Fragen Sie, ob heute Zuhören oder Analyse helfen würde. Sie können darum bitten, einen Gedanken zu Ende zu führen, und zugleich Gefühlen Raum geben; ein Problem zu untersuchen verlangt nicht, den Menschen festzulegen.",
+      "Vielleicht zeigen Sie Zuneigung durch eingehaltene Versprechen, Planung oder praktische Hilfe. Ein nahestehender Mensch braucht möglicherweise häufigen Kontakt. Unausgesprochene Erwartungen können Ruhe wie Distanz und Fragen wie Einmischung wirken lassen. Geben Sie dem Alleinsein einen Zeitrahmen und melden Sie sich selbst wieder. Zukunftspläne geben nur dann Sicherheit, wenn beide darüber verhandeln können.",
+      "Ein Denkmodell hilft Ihnen vielleicht beim Lernen; klare Ziele und eigenständige Entscheidungen helfen Ihnen möglicherweise bei der Arbeit. Trennen Sie das langfristige Ziel, die derzeitigen Belege und das erste abzuliefernde Ergebnis. Prüfen Sie eine Annahme, während das Modell entsteht. Sagen Sie Kollegen, was feststeht und was vorläufig ist, damit sie wissen, wo ihre Rückmeldung etwas bewirken kann.",
+      "Langfristiges Denken erkennt Risiken, Unabhängigkeit widersteht Gruppendruck, und Planung verringert Nacharbeit. Bei wenigen Belegen können diese Stärken zu endlosem Optimieren oder Ungeduld mit anderen werden. Stress kann das verstärken. Fragen Sie vor dem Verwerfen eines Einwands, welche Einschränkung die andere Person sieht. Ein brauchbarer überarbeiteter Plan kann besser sein als ein vollständiger, den niemand mitträgt.",
+      "Machen Sie Ihre Überlegungen zugänglich: ein Ziel, ein Grund und eine offene Frage. Versuchen Sie ein kleines Experiment, bevor Sie jedes Detail festlegen. Üben Sie in Beziehungen, erst das Erleben zu verstehen und dann nach Lösungen zu suchen. Wählen Sie eine der folgenden Übungen; Entwicklung muss kein weiteres umfassendes Projekt werden."
+    ],
+    "actions": [
+      {
+        "context": "Ein Plan kommt nicht in Gang",
+        "step": "Prüfen Sie zwanzig Minuten lang eine Annahme anhand einer kleinen Version.",
+        "phrase": "Ich werde diesen Teil unter realen Bedingungen prüfen."
+      },
+      {
+        "context": "Ein Freund schildert wiederholt eine Schwierigkeit",
+        "step": "Fragen Sie vor einem Lösungsvorschlag, welche Unterstützung er möchte.",
+        "phrase": "Würde Zuhören helfen oder das gemeinsame Suchen nach Möglichkeiten?"
+      },
+      {
+        "context": "Ein Arbeitspartner schlägt einen anderen Weg vor",
+        "step": "Nennen Sie einen Grund und fragen Sie nach übersehenen Einschränkungen.",
+        "phrase": "Das ist meine Begründung. Welche Bedingung übersehe ich?"
+      }
+    ]
+  },
+  "INTP": {
+    "highlights": [
+      "Die Voraussetzung prüfen",
+      "Der Neugier in die Tiefe folgen",
+      "Dem Denken einen Weg ins Handeln geben"
+    ],
+    "sections": [
+      "Vielleicht verstehen Sie lieber, warum eine Frage so aufgebaut ist, als schnell eine Antwort zu wählen. Fragt jemand nach dem besten Restaurant, klären Sie zuerst die Kriterien. Annahmen zu prüfen kann helfen, garantiert aber keine überlegenen Schlussfolgerungen. Bei manchen Alltagsentscheidungen sind eine ausreichende Antwort und die Möglichkeit weiterzugehen hilfreich.",
+      "Eine vertraute Behauptung lädt vielleicht zur Suche nach einer Ausnahme ein; ein Filmgespräch führt Sie zu den Regeln seiner Welt. Zu viele Einkaufsmöglichkeiten können dagegen einen einfachen Kauf verzögern. Prüfen Sie, ob das Gespräch ein lockerer Austausch oder eine Analyse ist. Geben Sie Ihrer Neugier einen Einstieg und alltäglichen Entscheidungen eine klare Abbruchbedingung.",
+      "Ein Lieblingsthema kann Sie gesprächig machen, während Ihnen der Einstieg in Smalltalk schwerer fällt. Zuwendung zeigt sich vielleicht als Information und Erklärung, obwohl Ihr Freund zuerst eine emotionale Reaktion braucht. Geben Sie sein Anliegen wieder, bevor Sie analysieren. Kommt ein Begriff nicht an, versuchen Sie ein Alltagsbeispiel, statt mangelnde Denkbereitschaft anzunehmen.",
+      "Vielleicht wünschen Sie sich sowohl ungestörtes Nachdenken als auch ehrlichen Zugang zur inneren Welt eines geliebten Menschen. Unerklärter Rückzug kann sich wie Verschwinden anfühlen. Vereinbaren Sie, wann Sie wieder Kontakt aufnehmen. Gefühle dürfen vorläufig ausgedrückt werden; warten Sie auf eine vollständige Erklärung, wartet Ihr Gegenüber womöglich viel länger, als Sie bemerken.",
+      "Eine Frage beim Lernen kann viele weitere Fragen aufwerfen. Bessere Erklärungen verleiten Sie vielleicht dazu, Arbeit neu aufzubauen, während Kollegen einen Liefertermin brauchen. Trennen Sie Erkundung und Abgabe und heben Sie weitere Fragen für die nächste Runde auf. Prüfen Sie neben der Eleganz der Begründung auch, ob das Ergebnis die tatsächliche Aufgabe erfüllt.",
+      "Neugier findet Alternativen, Logik entdeckt Lücken, und Unabhängigkeit hält Widerspruch möglich. Unter Druck können daraus endlose Recherche, wiederholtes Neuaufbauen oder vertagte Entscheidungen werden. Unklarer Umfang und fehlende Ressourcen spielen ebenfalls eine Rolle. Benennen Sie die Unbekannten, die die Wahl wirklich beeinflussen, und machen Sie einen kleinen umkehrbaren Schritt, um mehr zu erfahren.",
+      "Lassen Sie Erkundung und Handeln einander unterstützen. Legen Sie eine Abbruchbedingung fest, testen Sie eine Antwort und untersuchen Sie dann, was der Test zeigt. Beginnen Sie Erklärungen mit einem Beispiel und Ihrer aktuellen Schlussfolgerung. Äußern Sie in Beziehungen ein Bedürfnis, ohne eine vollständige Theorie dazu zu verlangen. Die Übungen erhalten Ihre Neugier und machen den nächsten Schritt verlässlicher."
+    ],
+    "actions": [
+      {
+        "context": "Die Recherche nimmt kein Ende",
+        "step": "Wählen Sie zwei wesentliche Kriterien und testen Sie dann eine umkehrbare Möglichkeit.",
+        "phrase": "Diese beiden Bedingungen reichen für einen ersten Versuch."
+      },
+      {
+        "context": "Eine Erklärung ist schwer verständlich",
+        "step": "Beginnen Sie mit einem Alltagsbeispiel und bieten Sie weitere Einzelheiten an.",
+        "phrase": "Hier ist ein Beispiel. Würde die Begründung helfen?"
+      },
+      {
+        "context": "Sie brauchen Ruhe",
+        "step": "Nennen Sie ein Ende der Pause und melden Sie sich selbst wieder.",
+        "phrase": "Ich brauche eine halbe Stunde zum Nachdenken, dann komme ich zurück."
+      }
+    ]
+  },
+  "ENTJ": {
+    "highlights": [
+      "Wünsche in nächste Schritte umsetzen",
+      "Prüfen, ob Schweigen Zustimmung bedeutet",
+      "Die verfügbare Kraft ebenso wie den Fortschritt beachten"
+    ],
+    "sections": [
+      "Vielleicht machen Sie aus einem Wunsch ein Ziel und suchen Ressourcen, um es voranzubringen. Eine Reise wird zu Terminen, Budget und Zuständigkeiten. Schwung ist wichtig, macht Sie aber nicht für jede Entscheidung verantwortlich. Manche Gespräche sind gemeinsames Träumen, und manche Gefühle sind noch nicht bereit, zu Aufgaben zu werden. Klären Sie den Zweck, bevor Sie organisieren.",
+      "Stockt ein Gruppenchat, fassen Sie vielleicht Möglichkeiten zusammen und schlagen eine Frist vor. Sie erkennen Engpässe und koordinieren ganz selbstverständlich. Andere schätzen das möglicherweise oder brauchen noch Raum für Bedenken. Planen Sie Zeit für Fragen ein und bestätigen Sie Zuständigkeiten; Schweigen bedeutet nicht unbedingt Zustimmung zu Ihrer gewählten Richtung.",
+      "Ein Freund in Schwierigkeiten erhält von Ihnen vielleicht praktische Hilfe, Kontakte oder eine Aufteilung in Aufgaben. Fragen Sie, welche Schwierigkeit er angehen möchte und wie stark Sie sich beteiligen sollen. Wird ein Rat nicht umgesetzt, erkunden Sie das Hindernis. Ein Gespräch kann Gemeinschaft ohne messbares Ergebnis bieten; eine Beziehung ist keine Bilanz gelöster Probleme.",
+      "Vielleicht möchten Sie wichtige Meinungsverschiedenheiten ausdrücklich ansprechen. Ein nahestehender Mensch braucht womöglich länger, um seine Gefühle zu verstehen. Trennen Sie den Wunsch nach einer Lösung von der Forderung nach einer sofortigen Antwort. Besprechen Sie bei gemeinsamen Plänen neben Zielen auch verfügbare Kräfte. Mitentscheiden zu können kann mehr Sicherheit geben als ein vollständiger Plan für die andere Person.",
+      "Klare Zuständigkeiten und Ergebnisse helfen Ihnen vielleicht beim Lernen und Arbeiten. Unklare Verantwortung kann Sie verleiten, alles zu übernehmen. Prüfen Sie, wo Unterstützung fehlt, lassen Sie Kollegen ihre Methoden wählen und vereinbaren Sie Ergebnisse und Zwischenstände. Behalten Sie etwas Lernen ohne Leistungsdruck bei, dessen Wert noch nicht offensichtlich ist; Interessen können außerhalb des ursprünglichen Plans entstehen.",
+      "Organisation und Entschlossenheit können ein Team aus dem Stillstand führen. Sie können aber auch Möglichkeiten früh einengen, Anpassung beschleunigen oder Ressourcenlücken durch übermäßige Arbeit ausgleichen. Unterscheiden Sie echte Einschränkungen von vertrauten Gewohnheiten. Unter Druck kann Härte auf Müdigkeit hindeuten. Erholung und Neuverteilung helfen womöglich mehr als eine weitere Forderung nach persönlicher Willenskraft.",
+      "Lassen Sie andere die Richtung Ihres Tatendrangs mitbestimmen. Hören Sie Bedenken an, bevor Sie eine Entscheidung vorschlagen, und fragen Sie, bevor Sie Unterstützung übernehmen. Bewahren Sie Zeit, die ihre Produktivität nicht beweisen muss. Die Übungen verbinden Ziele mit Zustimmung, Freiheit in der Zusammenarbeit und Ihren eigenen Kräften."
+    ],
+    "actions": [
+      {
+        "context": "Eine Diskussion stockt",
+        "step": "Hören Sie von jeder Person ein Bedenken an, bevor Sie Möglichkeiten zusammenfassen.",
+        "phrase": "Welche Bedingung haben wir noch nicht besprochen?"
+      },
+      {
+        "context": "Sie möchten das Problem eines Freundes übernehmen",
+        "step": "Fragen Sie, welche Beteiligung ihm willkommen ist.",
+        "phrase": "Wie weit soll meine Hilfe gehen?"
+      },
+      {
+        "context": "Sie gleichen ständig Lücken im Team aus",
+        "step": "Wählen Sie eine Aufgabe zur Neuverteilung mit klarer Zuständigkeit.",
+        "phrase": "Wir müssen das neu verteilen; hier endet meine Kapazität."
+      }
+    ]
+  },
+  "ENTP": {
+    "highlights": [
+      "Neue Blickwinkel wecken Interesse",
+      "Ideen von Versprechen trennen",
+      "Ein sichtbares Ergebnis der Erkundung hinterlassen"
+    ],
+    "sections": [
+      "Vielleicht fragen Sie zuerst, wie sich etwas anders machen ließe. Eine feste Route weckt Alternativen; eine Regel lädt zum Testfall ein. Neue Blickwinkel halten Ihr Interesse wach, aber Sie müssen nicht jede Vereinbarung wieder öffnen. Unterscheiden Sie lohnende Fragen von Absprachen, die bereits gut genug funktionieren.",
+      "Aus einer Idee im Gruppenchat können schnell drei weitere werden. Vielleicht stellen Sie sich Möglichkeiten vor, während jemand anders schon bucht. Kennzeichnen Sie eine Ideensammlung als Ideensammlung und eine Zusage als Zusage. Neue Erlebnisse dürfen abenteuerlich bleiben, während eine verlässliche Treffzeit endloses Warten verhindert.",
+      "Fragen, Humor und gegensätzliche Ansichten können Ihre Gespräche beleben. Erzählt ein Freund von einer schmerzlichen Erfahrung, kann eine Debatte wie eine Beweisforderung klingen. Prüfen Sie, ob Sie eine Idee diskutieren oder einen persönlichen Bericht hören. Würdigen Sie seine Umstände, bevor Sie eine Ausnahme nennen; Verständnis kann ebenfalls lebhafte Gespräche fördern.",
+      "Vielleicht wünschen Sie sich in einer engen Beziehung Neues und Raum für sich wandelnde Ideen. Jemand anders braucht möglicherweise vorhersehbaren Kontakt. Trennen Sie flexible Bereiche von wichtigen Versprechen und erfüllen Sie feste Zusagen selbst. Beschreiben Sie im Konflikt erst die gehörten Auswirkungen, bevor Sie nach einer anderen Deutung suchen. Einen konkreten Fehler einzugestehen lässt Raum für künftige Verhandlungen.",
+      "Beim Lernen verknüpfen Sie vielleicht schnell mehrere Gebiete. Anfangen und Probleme aufbrechen kann spannender sein als routinemäßige Arbeiten zum Abschluss. Führen Sie eine Liste von Experimenten und wählen Sie pro Runde eine Idee. Andere können Ihre Stärken ergänzen, doch Sie bleiben für Ihren vereinbarten Anteil am Abschluss verantwortlich, statt anzunehmen, jemand räume jeden Versuch hinter Ihnen auf.",
+      "Verknüpfungen zeigen Alternativen, schnelles Denken bewältigt Veränderungen, und Hinterfragen legt Annahmen offen. Daraus können auch zu viele Zweige, wechselnde Pläne oder geschickte Erklärungen zur Vermeidung von Verantwortung entstehen. Überlastung zählt ebenfalls. Stoppen Sie neue Möglichkeiten vorübergehend und listen Sie Ihre Zusagen auf, einschließlich dessen, was Sie abschließen oder ausdrücklich zurücknehmen.",
+      "Geben Sie Ideen einen Landepunkt: ein kleines Experiment und eine Abbruchbedingung. Unterscheiden Sie Debattieren von Zuhören und lassen Sie Ihren Freund bestätigen, was Sie verstanden haben. Halten Sie eine wichtige Zusage stabil, während Sie andere Spielräume aushandeln. So können Menschen Ihrer Neugier vertrauensvoll folgen, und es wird sichtbar, welche Erkundung etwas Nützliches erbracht hat."
+    ],
+    "actions": [
+      {
+        "context": "Mehrere Richtungen tun sich auf",
+        "step": "Testen Sie eine dreißig Minuten lang und notieren Sie die übrigen für später.",
+        "phrase": "In dieser Runde testen wir diese Idee; die anderen können warten."
+      },
+      {
+        "context": "Ein Freund erzählt von einer Verletzung",
+        "step": "Geben Sie die Auswirkungen wieder und fragen Sie dann, ob eine andere Sicht helfen würde.",
+        "phrase": "Das hat Sie wirklich verletzt. Habe ich Sie richtig verstanden?"
+      },
+      {
+        "context": "Sie möchten einen Plan ändern",
+        "step": "Halten Sie eine bestätigte Zusage ein, während Sie Änderungen aushandeln.",
+        "phrase": "Die Treffzeit bleibt. Wollen wir die Route noch einmal besprechen?"
+      }
+    ]
+  },
+  "INFJ": {
+    "highlights": [
+      "Bedeutung in Erfahrungen erkennen",
+      "Das eigene Verständnis mit der Person prüfen",
+      "Tiefes Zuhören braucht Grenzen"
+    ],
+    "sections": [
+      "Vielleicht bemerken Sie, was ein Ereignis für jemanden bedeutet, und suchen nach einem fortlaufenden Muster. Ein Stellenwechsel wirft Fragen nach dem gewünschten Leben Ihres Freundes auf, nicht nur nach dem Einkommen. Bedeutung unterstützt Ihre Aufmerksamkeit, erlaubt aber kein Gedankenlesen. Prüfen Sie Ihre Deutung mit der Person, deren Erleben Sie verstehen möchten.",
+      "In einem Chat über das Wochenende beobachten Sie vielleicht erst die Interessen der anderen, bevor Sie einen angenehmen Plan vorschlagen. Vertraute Themen laden zur Tiefe ein; anhaltender Lärm kann Zeit allein nötig machen. Aufmerksamkeit für die Stimmung kann unbemerkt zu einer koordinierenden Rolle werden, die niemand vergeben hat. Beziehen Sie Ihre eigene Vorliebe ein und erlauben Sie einer Aktivität, einige statt sämtliche Bedürfnisse zu erfüllen.",
+      "Vielleicht verknüpfen Sie Details aus mehreren Gesprächen mit einem Freund. Das kann sich verständnisvoll oder vorschnell festlegend anfühlen. Bieten Sie das Muster als Frage an. Erklären Sie, wann Sie nach intensivem Zuhören eine Pause brauchen. Eine tragfähige Antwort mit Grenzen schafft mehr Kontinuität als Zuhören bis zur Erschöpfung und anschließendes Verschwinden.",
+      "Vielleicht hoffen Sie, dass ein nahestehender Mensch Andeutungen versteht und eine gemeinsame Richtung teilt. Unausgesprochene Hoffnungen können einen kleinen Fehlgriff zum Gefühl machen, nicht gesehen zu werden. Formulieren Sie die gewünschte Reaktion als konkrete Bitte. Besprechen Sie ein Thema nach dem anderen und lassen Sie unterschiedliche Bedürfnisse zu. Verständnis wächst; ein übersehenes Signal erklärt keine ganze Beziehung.",
+      "Zu wissen, warum eine Arbeit wichtig ist, kann Ihren Einsatz unterstützen. Vielleicht machen Sie aus verstreuten Rückmeldungen eine Richtung, doch die Umsetzung braucht weiterhin Fakten, Zeit und Zuständigkeiten. Definieren Sie einen beobachtbaren ersten Schritt. Teilen Sie Fragen, bevor der Plan ausgereift ist, und betrachten Sie praktische Änderungen als mögliche Hilfe, den Ihnen wichtigen Wert zu verwirklichen.",
+      "Genaues Beobachten zeigt unausgesprochene Bedürfnisse; langfristiges Verstehen verbindet Erfahrungen. Der Preis können Überinterpretation, hohe Erwartungen oder das Tragen fremder Gefühle sein. Trennen Sie unter Stress Fakten, Vermutungen und Verantwortlichkeiten. Stellen Sie eine konkrete Frage, statt eine beunruhigende Geschichte endlos weiterzuspinnen.",
+      "Lassen Sie Raum, Ihr Verständnis zu überprüfen. Benennen Sie eine Vermutung als Vermutung, drücken Sie Bedürfnisse durch konkrete Verhaltenswünsche aus und prüfen Sie eine Richtung anhand eines kleinen Ergebnisses. Gewöhnliche Gesellschaft kann auch ohne tiefgründiges Gespräch wichtig sein. Die Übungen verbinden Bedeutung mit Grenzen und Handeln, ohne vor dem Sprechen eine vollständige Erklärung zu verlangen."
+    ],
+    "actions": [
+      {
+        "context": "Sie spüren etwas Unausgesprochenes",
+        "step": "Teilen Sie eine Beobachtung und laden Sie zur Korrektur ein.",
+        "phrase": "Ich frage mich, ob Sie zögern. Liege ich falsch?"
+      },
+      {
+        "context": "Zuhören macht Sie müde",
+        "step": "Nennen Sie die verbleibende Zeit und vereinbaren Sie einen weiteren Kontakt.",
+        "phrase": "Ich habe noch zehn Minuten; können wir morgen weitersprechen?"
+      },
+      {
+        "context": "Sie hoffen, verstanden zu werden",
+        "step": "Machen Sie aus der Hoffnung eine konkrete Bitte.",
+        "phrase": "Ich hätte heute gern etwas Gesellschaft, zunächst ohne Ratschläge."
+      }
+    ]
+  },
+  "INFP": {
+    "highlights": [
+      "Prüfen, ob sich eine Wahl authentisch anfühlt",
+      "Vorlieben ausdrücken, um sie auszuhandeln",
+      "Kleine Schritte müssen nicht auf die richtige Stimmung warten"
+    ],
+    "sections": [
+      "Vielleicht fragen Sie vor der Einordnung in äußere Pläne, ob eine Entscheidung zu dem passt, was Ihnen wichtig ist. Eine Reise weckt Gefühle und den Wunsch nach Erkundungsraum. Innere Zustimmung unterstützt Ihren Einsatz, aber nicht jede Aufgabe muss sich besonders anfühlen. Dieses Profil kann Ihre Werte nicht bestimmen; auch notwendige, derzeit uninteressante Arbeit darf behutsam beginnen.",
+      "Vielleicht spüren Sie eine bevorzugte Aktivität, bevor Sie sie erklären können. Ein Spaziergang weckt Verknüpfungen, während Alltagspläne von Veränderungsspielraum profitieren. Schweigen verrät anderen Ihre Vorliebe nicht. Nennen Sie etwas, das Ihnen gefällt, und einen unangenehmen Umstand, ohne einen vollständigen Alternativplan zu benötigen.",
+      "Die Erfahrung eines Freundes lädt Sie vielleicht ein, seine Gefühle zu verstehen und vereinfachenden Etiketten zu widerstehen. Sie schätzen Raum für Vielschichtigkeit. Tiefe Anteilnahme kann aber auch Ihre eigenen Bedürfnisse verdrängen. Sie können verstehen, ohne zuzustimmen. Kommen Ratschläge zu schnell, bitten Sie darum, zuerst gehört zu werden, statt darauf zu hoffen, dass Enttäuschung das Bedürfnis erklärt.",
+      "Vielleicht wünschen Sie sich, dass ein nahestehender Mensch vorläufige Gedanken unvoreingenommen anhört. Beschäftigtsein oder eine schroffe Antwort können wie Belege wirken, dass Sie unwichtig sind. Klären Sie zuerst, was passiert ist, bevor Sie die Wirkung beschreiben. Erklären Sie sowohl Ihr Bedürfnis nach Freiraum als auch nach Zuwendung; Unterschiede verlangen keine identischen Zeichen von Verbindlichkeit.",
+      "Geschichten, Interessen und persönliche Ziele helfen Ihnen vielleicht beim Lernen. Zusammenhanglose Aufgaben und rein negative Rückmeldungen können den Einstieg erschweren. Finden Sie ein konkretes Bedürfnis, dem die Aufgabe dient, und verkleinern Sie den ersten Schritt auf zehn Minuten. Ein Entwurf lädt zur Überarbeitung ein, ohne jemand anderem das letzte Wort über die Bedeutung Ihrer Arbeit zu geben.",
+      "Wertebewusstsein schützt Aufrichtigkeit, Fantasie eröffnet Möglichkeiten, und Einfühlungsvermögen gibt Erfahrungen Raum. Damit können auch Selbstkritik, Warten auf die richtige Stimmung oder das Vermeiden eines Neins einhergehen. Schlaf, Druck und Aufgabenschwierigkeit zählen mit. Trennen Sie Unzufriedenheit mit einem Ergebnis von einem Urteil über Ihr ganzes Selbst und verändern Sie dann eine beeinflussbare Bedingung.",
+      "Machen Sie etwas, das Ihnen wichtig ist, durch eine kleine Übung umsetzbar. Sagen Sie beim Setzen einer Grenze, was Sie anbieten können, ohne das Nein ausführlich beweisen zu müssen. Nehmen Sie einen hilfreichen Punkt aus einer Rückmeldung mit und prüfen Sie den Rest. Die Übungen geben Bedürfnissen und Ideen eine verhandelbare Form und bewahren ihre persönliche Bedeutung."
+    ],
+    "actions": [
+      {
+        "context": "Eine wichtige Idee hat noch keinen Anfang",
+        "step": "Erstellen Sie in zehn Minuten einen Absatz oder einen groben Entwurf.",
+        "phrase": "Ich darf ihr einen unvollkommenen Anfang geben."
+      },
+      {
+        "context": "Ein Nein fühlt sich verletzend an",
+        "step": "Nennen Sie Ihre Kapazität und den Teil, den Sie anbieten können.",
+        "phrase": "Ich kann nicht alles übernehmen, aber bei diesem Teil helfen."
+      },
+      {
+        "context": "Rückmeldung wird zum Selbsturteil",
+        "step": "Wählen Sie eine konkrete Änderung an der Arbeit und geben Sie sich dann Raum, Ihre Gefühle zu verarbeiten.",
+        "phrase": "Dieser Teil kann sich ändern; er ist nicht meine ganze Identität."
+      }
+    ]
+  },
+  "ENFJ": {
+    "highlights": [
+      "Richtung und Beteiligung wahrnehmen",
+      "Vor dem Ermutigen zuhören",
+      "Fürsorge wechselseitig gestalten"
+    ],
+    "sections": [
+      "Vielleicht bemerken Sie eine gemeinsame Richtung und ob Menschen freiwillig mitmachen können. Eine Reise wirft Planungsfragen auf und lenkt Ihren Blick auf jemanden, der noch nichts gesagt hat. Beteiligung zu unterstützen ist hilfreich, aber Sie sind nicht für die Entwicklung oder Stimmung aller verantwortlich. Geringere Beteiligung kann andere Prioritäten ausdrücken statt mehr Ermutigung zu erfordern.",
+      "Vielleicht laden Sie stille Mitglieder eines Gruppenchats zum Mitreden ein und machen aus verstreuten Meinungen einen brauchbaren Vorschlag. Bei Treffen helfen Sie Neulingen ins Gespräch. Ständig die Stimmung aufrechtzuerhalten kann müde machen. Wählen Sie die Koordination, die Sie anbieten möchten, und teilen Sie den Rest. Eine Pause kann jemandem auch Zeit zum Nachdenken geben.",
+      "Vielleicht erinnern Sie einen entmutigten Freund an seine Stärken und mögliche Zukunft. Ermutigung kann kommen, bevor er seinen Verlust zu Ende beschrieben hat. Hören Sie zuerst zu und fragen Sie nach nächsten Schritten. Ein Rat muss nicht angenommen werden, um die Freundschaft zu bestätigen. Teilen Sie auch Ihre Schwierigkeiten, damit Zuwendung in beide Richtungen fließen kann.",
+      "Vielleicht wünschen Sie sich Kontinuität und rechtzeitige Gespräche über wichtige Bedürfnisse. Eine kurze Antwort oder Alleinsein kann zusätzliche Fragen auslösen, um Sicherheit zurückzugewinnen. Vereinbaren Sie die Kontakthäufigkeit und unterscheiden Sie Zuwendung von wiederholtem Nachfragen. Sagen Sie, was helfen würde, laden Sie zu einem anderen Ansatz ein und erproben Sie eine vorläufige Vereinbarung, statt jede Erwartung durch Vermutungen aufrechtzuerhalten.",
+      "Ein klarer Adressatenkreis und ein gemeinsamer Zweck motivieren vielleicht Ihr Lernen und Arbeiten. Sie können Meinungsverschiedenheiten koordinieren und Rückmeldung geben, nehmen aber womöglich zu viel an, um Enttäuschungen zu vermeiden. Prüfen Sie vor Zusagen Zeit und Ressourcen. Trennen Sie in Rückmeldungen Ermutigung, Beobachtungen und gewünschte Änderungen; der Schwung des Teams muss nicht davon abhängen, dass Sie die Energie aller steuern.",
+      "Verbindung hilft, Einigkeit aufzubauen, Ausdruck klärt die Richtung, und Unterstützung erleichtert den Anfang. Der Preis können übermäßige Verantwortung, das Aufnehmen fremder Unzufriedenheit oder zurückgehaltener notwendiger Widerspruch sein. Prüfen Sie, ob die Aufgabe Ihnen gehört und die Hilfe gewünscht wurde. Begrenzter Umfang und Widerspruch können Zusammenarbeit tragfähiger machen, statt sie zwangsläufig zu schwächen.",
+      "Geben Sie Fürsorge eine klare Grenze. Fragen Sie nach gewünschter Hilfe, lassen Sie vor Zusagen Zeit zur Kalenderprüfung und nennen Sie Ihre Position, bevor Sie um Antworten bitten. Die Übungen erhalten Verbindung und zeigen Ihre tatsächliche Kapazität. Menschen, die Sie unterstützen, können dadurch auch zu Partnern bei Ihrer Unterstützung werden."
+    ],
+    "actions": [
+      {
+        "context": "Eine zusätzliche Anfrage kommt",
+        "step": "Prüfen Sie Ihren Kalender und bieten Sie einen klaren Umfang an.",
+        "phrase": "Ich prüfe meine Zeit und bestätige es heute Abend."
+      },
+      {
+        "context": "Sie möchten sofort ermutigen",
+        "step": "Geben Sie das Erleben wieder, bevor Sie nach nächsten Schritten fragen.",
+        "phrase": "Möchten Sie erst zu Ende erzählen, bevor wir planen?"
+      },
+      {
+        "context": "Auch Sie brauchen Unterstützung",
+        "step": "Bitten Sie konkret und zeitlich begrenzt ums Zuhören.",
+        "phrase": "Könnten Sie mir zehn Minuten zuhören? Ich bin auch müde."
+      }
+    ]
+  },
+  "ENFP": {
+    "highlights": [
+      "Energie in Möglichkeiten und Verbindungen finden",
+      "Vor Zusagen die eigene Kapazität prüfen",
+      "Inspiration einen sichtbaren kleinen Schritt geben"
+    ],
+    "sections": [
+      "Vielleicht bemerken Sie Möglichkeiten und Verbindungen zu Menschen oder Ideen, die Ihnen wichtig sind. Eine Reise weckt Vorstellungen von Erlebnissen und Geschichten. Interesse kann Energie geben, aber Sie müssen nicht immer begeistert sein. Auch Energie und Umstände zählen; Ruhe und Wiederholung können bewusst gewählte Teile Ihres Lebens sein.",
+      "Eine Idee im Gruppenchat kann viele weitere anregen. Sie zeigen anderen neue Erlebnisse auf, während praktische Details hinter der Begeisterung zurückbleiben. Trennen Sie Interesse von einer Zusage und behalten Sie eine Routine für Zeit, Transport und Budget bei. Sprechen Sie Ihr Ruhebedürfnis aus, statt weiter die lebhafte Version Ihrer selbst darzustellen.",
+      "Die Geschichte eines Freundes ruft vielleicht schnell eine ähnliche Erfahrung oder neue Möglichkeit hervor. Herzliche Beteiligung hilft, doch eine schnelle Antwort kann seine Erzählung umlenken. Fragen Sie vor Ihrer eigenen Verknüpfung, was er noch ergänzen möchte. Lassen Sie Vertrauen durch wechselseitigen Austausch wachsen, nicht nur durch die Begeisterung eines einzelnen Gesprächs.",
+      "Vielleicht wünschen Sie sich Raum zum Wachsen und Erkunden neben ehrlichem emotionalem Kontakt. Feste Absprachen können einengend wirken, häufige Änderungen dagegen einen nahestehenden Menschen verunsichern. Legen Sie fest, was Verlässlichkeit braucht, und verhandeln Sie den Rest. Besprechen Sie jeweils ein Ereignis statt aller Zukunftssorgen. Freiheit und verlässliche Zuwendung können in einer anpassbaren Vereinbarung Platz haben.",
+      "Interesse kann Lernen schnell in Gang bringen, besonders wenn Wissen mit dem Leben verbunden ist. Sinnvolle neue Arbeit braucht womöglich Struktur für routinemäßige Arbeiten zum Abschluss. Teilen Sie eine Idee in drei sichtbare Schritte und planen Sie einen Zwischenstand. Klären Sie Ihren Anteil und den Abgabetermin, damit andere der Entwicklung in Ihrem Kopf folgen können.",
+      "Verknüpfungen eröffnen Chancen, Herzlichkeit schafft Verbindungen, und Flexibilität verändert Wege. Der Preis können zu viele Zusagen, die Verwechslung von Begeisterung und Kapazität oder das Verwerfen einer Richtung nach Enttäuschung sein. Fehlende Erholung zählt ebenfalls. Entscheiden Sie bei bestehenden Zusagen, was bleibt, pausiert oder endet. Eine abgeschlossene Aufgabe kann Raum zum Erkunden schaffen.",
+      "Schützen Sie die Kraft hinter Ihrer Begeisterung. Lassen Sie bei Einladungen Zeit bis zur Bestätigung, lassen Sie andere ausreden und geben Sie einem wichtigen Projekt eine kleine regelmäßige Handlung. Die Übungen helfen Interessen und Zusagen, einander zu tragen, ohne dass allein Ihre Energie alles zusammenhält."
+    ],
+    "actions": [
+      {
+        "context": "Eine Einladung begeistert Sie",
+        "step": "Prüfen Sie bestehende Zusagen, bevor Sie bestätigen.",
+        "phrase": "Ich wäre gern dabei; ich bestätige es morgen."
+      },
+      {
+        "context": "Eine Geschichte weckt viele Verknüpfungen",
+        "step": "Fragen Sie vor Ihrem Beitrag, ob die Person fertig erzählt hat.",
+        "phrase": "Gibt es noch etwas, das Sie sagen möchten?"
+      },
+      {
+        "context": "Das Interesse an einem Projekt lässt nach",
+        "step": "Erledigen Sie ein Minimum von zehn Minuten und notieren Sie den nächsten Schritt.",
+        "phrase": "Dieser kleine Schritt reicht heute; der nächste ist aufgeschrieben."
+      }
+    ]
+  },
+  "ISTJ": {
+    "highlights": [
+      "Bedingungen und Zusagen prüfen",
+      "Änderungen erklären und verlässlich bleiben",
+      "Erfahrung durch kleine Versuche aktualisieren"
+    ],
+    "sections": [
+      "Vielleicht prüfen Sie vor dem Handeln bekannte Bedingungen und klare Zusagen. Eine Reise wirft Fragen zu Terminen, Transport und tatsächlichem Budget auf. Erfahrung hilft beim Urteilen, doch Vertrautheit macht eine Methode nicht dauerhaft richtig. Das ist ein Ausgangspunkt für Beobachtung, keine Behauptung, dass Sie Neues ablehnen. Veränderte Bedingungen verdienen eine erneute Prüfung.",
+      "Bei einem Gruppenplan behalten Sie vielleicht still den Abfahrtsort und fehlende Vorbereitungen im Blick. Eingehaltene Versprechen und Ordnung können Reibung verringern. Andere sehen womöglich Ernsthaftigkeit, ohne die Mühe hinter der Stabilität zu erkennen. Nennen Sie wesentliche Anforderungen früh und unterscheiden Sie Sicherheits- oder Zeitbedürfnisse von persönlichen Vorlieben.",
+      "Vielleicht unterstützen Sie einen Freund mit einer bewährten Methode oder einer praktischen Aufgabe. Prüfen Sie zuerst, was diese Situation anders macht. Verlässliches Handeln lässt sich mit einem kurzen ausgesprochenen Zeichen von Zuneigung verbinden. Wünscht ein Freund mehr Gespräch, kann eine klare Zeit den Austausch zu einem verlässlichen Teil der Beziehung machen.",
+      "Pünktlichkeit, alltägliche Fürsorge und eingehaltene Versprechen geben Ihnen vielleicht Sicherheit. Ein nahestehender Mensch braucht möglicherweise mehr Gefühlsausdruck oder Neues. Erklären Sie wichtige Absprachen und wie Änderungen mitgeteilt werden sollen; fragen Sie nach der gewünschten Reaktion. Stabilität kann nachvollziehbare Veränderungen und anhaltende Verlässlichkeit bedeuten statt Pläne, die sich nie ändern.",
+      "Klare Schritte unterstützen vielleicht Ihr Lernen; Standards und Zuständigkeiten helfen bei der Arbeit. Trennen Sie notwendige Prüfungen von überholten Schritten. Versuchen Sie eine kostengünstige Methode und beurteilen Sie das Ergebnis. Teilen Sie Fortschritt und Risiken vor dem Abschluss, damit andere fehlende Ressourcen beisteuern können, solange diese noch helfen.",
+      "Detailgenauigkeit verhindert Lücken, Verlässlichkeit schafft Erwartungen, und stetige Übung baut Erfahrung auf. Der Preis können Angst vor Veränderung, Misstrauen gegenüber anderen Methoden oder längere Arbeit zur Einhaltung jedes Standards sein. Prüfen Sie auch die Ressourcen. Bewahren Sie die wichtige Vorgabe und erlauben Sie weniger wichtigen Schritten, unvollkommen zu sein.",
+      "Lassen Sie Verlässlichkeit auch Flexibilität einschließen: einen kleinen Puffer, eine Prüfung veränderter Bedingungen und ein kostengünstiges Experiment. Sprechen Sie über Zuneigung, statt jedes Gefühl allein durch Taten erklären zu wollen. Die Übungen erhalten Standards und Zusagen und verringern zugleich die Last, alles allein aufrechtzuerhalten."
+    ],
+    "actions": [
+      {
+        "context": "Ein Plan ändert sich",
+        "step": "Fragen Sie nach dem Grund und behalten Sie eine wesentliche Bedingung bei.",
+        "phrase": "Die Zeit kann sich ändern; sagen Sie mir bitte vorher Bescheid."
+      },
+      {
+        "context": "Sie erledigen die gesamte Vorbereitung",
+        "step": "Übertragen Sie eine Prüfung an einen dazu bereiten Partner.",
+        "phrase": "Könnten Sie die Verantwortung für diese Prüfung übernehmen?"
+      },
+      {
+        "context": "Eine neue Methode wirkt ungewiss",
+        "step": "Testen Sie einen risikoarmen Schritt und vergleichen Sie das Ergebnis.",
+        "phrase": "Probieren wir diesen kleinen Teil aus und sehen, was passiert."
+      }
+    ]
+  },
+  "ISFJ": {
+    "highlights": [
+      "Fürsorge zeigt sich oft im Detail",
+      "Unsichtbare Mühe sichtbar machen",
+      "Die eigene Kapazität einbeziehen"
+    ],
+    "sections": [
+      "Vielleicht bemerken Sie unmittelbare Bedürfnisse und praktische Wege, das Leben leichter zu machen. Eine Reise lässt Sie an Müdigkeit, Ernährungsbedürfnisse und Vorbereitungen denken. Vertraute Erfahrung unterstützt Fürsorge und Kontinuität, doch dieses Profil weist Ihnen keine versorgende Rolle zu. Die Verantwortlichkeiten anderer dürfen bei ihnen bleiben; auch Ihre Bedürfnisse gehören in den Plan.",
+      "Vielleicht berücksichtigen Sie bei der Ortswahl Vorlieben und räumen nach einem Treffen auf. Hilfreiche Arbeit kann unsichtbar bleiben, sodass andere ihren Aufwand nicht kennen. Sagen Sie, was Sie anbieten möchten und was geteilt werden muss. Lassen Sie eine andere Methode zu; eine unvollkommene Veranstaltung bedeutet nicht, dass Ihre Fürsorge versagt hat.",
+      "Geduldiges Zuhören und späteres Nachfragen können einem Freund Sicherheit geben. Aus Angst, jemanden zu verletzen, bleibt Ihre eigene Meinung vielleicht verborgen. Verständnis und Widerspruch können nebeneinander bestehen. Prüfen Sie Ihre Kraft und die verfügbare Zeit für wiederholte Unterstützung. Eine Bitte abzulehnen bedeutet keine Ablehnung der Freundschaft und verlangt keinen Ausgleich durch zusätzliche Mühe.",
+      "Vielleicht zeigen Sie Zuneigung durch Alltagsaufgaben und gemerkte Details und wünschen sich Anerkennung dafür. Wird Anerkennung nur vorausgesetzt, kann Groll wachsen. Bitten Sie um eine konkrete Reaktion oder geteilte Aufgabe statt um einen allgemeinen Beweis der Zuneigung. Fragen Sie, wie die andere Person Fürsorge zeigt, und verteilen Sie Verantwortung gemeinsam neu.",
+      "Vorführungen und wiederholbare Schritte helfen Ihnen vielleicht beim Lernen. Qualität und Rücksicht unterstützen Ihre Arbeit, doch möglicherweise lösen Sie Schwierigkeiten allein, um Kollegen nicht zu belasten. Teilen Sie die tatsächliche Arbeitslast früh mit. Eine Überarbeitung muss nicht Ihre gesamte Mühe abwerten; fragen Sie nach dem Maßstab, statt jede Erwartung zu erraten.",
+      "Detailgenauigkeit erkennt kleine Bedürfnisse, Geduld unterstützt Kontinuität, und Zusagen machen den Alltag verlässlich. Der Preis können verborgene Überlastung, übergangene Müdigkeit oder zu viele Zusagen sein. Benennen Sie für jede Aufgabe die zuständige Person und geben Sie eine teilbare Aufgabe ab. Fürsorge, die Ihre Kapazität einschließt, kann eher wechselseitig bleiben.",
+      "Machen Sie Fürsorge sichtbar und verhandelbar. Prüfen Sie vor einem Ja Ihre Energie, bitten Sie um eine konkrete Handlung und nehmen Sie Hilfe an, die Ihrer eigenen Methode nicht entspricht. Die Übungen verbinden Verlässlichkeit mit Grenzen und geben Ihnen Raum, Fürsorge zu empfangen und sie für andere vorzubereiten."
+    ],
+    "actions": [
+      {
+        "context": "Sie möchten sofort ja sagen",
+        "step": "Prüfen Sie Ihre Energie und bieten Sie einen realistischen Anteil an.",
+        "phrase": "Ich kann heute bei diesem Teil helfen; für den Rest brauchen wir einen anderen Plan."
+      },
+      {
+        "context": "Ihre Mühe scheint ungesehen",
+        "step": "Bitten Sie um eine konkrete gemeinsame Verantwortungsübernahme.",
+        "phrase": "Könnten Sie beim nächsten Mal das Aufräumen übernehmen?"
+      },
+      {
+        "context": "Hilfe sieht anders aus als Ihre Methode",
+        "step": "Prüfen Sie das notwendige Ergebnis, ohne alles neu zu machen.",
+        "phrase": "So funktioniert es auch. Danke, dass Sie diesen Teil übernommen haben."
+      }
+    ]
+  },
+  "ESTJ": {
+    "highlights": [
+      "Durch Klarheit Vermutungen reduzieren",
+      "Den Zweck von Regeln erklären",
+      "Ergebnisse vereinbaren, ohne jede Methode festzulegen"
+    ],
+    "sections": [
+      "Vielleicht fallen Ihnen zuerst Organisation, Verantwortung und brauchbare Regeln auf. Eine Reise regt Termine, Budget und Zuständigkeiten an, damit niemand raten muss. Klare Absprachen helfen beim Vorankommen, doch nicht jede Situation braucht ein einheitliches Verfahren. Neue Bedingungen und unterschiedliche Bedürfnisse verdienen die Möglichkeit, vertraute Standards zu überarbeiten.",
+      "Dauert eine Diskussion lange, fassen Sie vielleicht Möglichkeiten zusammen und verteilen Zuständigkeiten. Koordination verhindert Verwirrung, doch Beteiligung braucht weiterhin Bestätigung. Lassen Sie Zeit für Fragen und trennen Sie notwendige Bedingungen von flexiblen Methoden. Erklären Sie den Grund einer Regel, können andere Schwierigkeiten vor der Umsetzung ansprechen.",
+      "Ein Freund erhält von Ihnen vielleicht praktische Schritte oder Hilfe bei einer ersten Handlung. Prüfen Sie, ob er handeln oder Zeit zum Ausdruck seiner Enttäuschung haben möchte. Halten Sie bei Uneinigkeit die Belege sichtbar und hören Sie zugleich Einschränkungen an. Auch eine andere Methode kann verantwortungsvoll sein, besonders wenn sie das vereinbarte Ergebnis liefert.",
+      "Eingehaltene Zusagen und erledigte Alltagsaufgaben drücken für Sie vielleicht Verbindlichkeit aus. Ein nahestehender Mensch wünscht sich womöglich zusätzlich eine emotionale Reaktion. Besprechen Sie neben der Arbeitsteilung auch Bereitschaft und Müdigkeit. Erproben Sie eine Vereinbarung und überprüfen Sie sie; Veränderung braucht Kommunikation, bedeutet aber nicht automatisch Unzuverlässigkeit.",
+      "Klare Standards und Fortschrittsprüfungen unterstützen vielleicht Arbeit und Lernen. Klären Sie ein uneindeutiges Ziel gemeinsam vor der Umsetzung und lassen Sie Raum für neue Erkenntnisse. Vereinbaren Sie Zwischenstände, ohne jede Methode vorzuschreiben. Beschreiben Sie einen beobachteten Fehler und die gewünschte Änderung, statt ein einzelnes Scheitern zu einem Urteil über die Haltung zu machen.",
+      "Organisation verringert Lücken, Verantwortung unterstützt den Abschluss, und Direktheit reduziert Rätselraten. Daraus können frühe Forderungen nach Einheitlichkeit, Ungeduld oder wiederholtes Übernehmen entstehen. Prüfen Sie Ressourcen ebenso wie Tempo. Fragen Sie, was blockiert ist und welche Standards zählen, und geben Sie einer anderen Methode dann einen fairen kleinen Versuch.",
+      "Lassen Sie Struktur den Menschen dienen. Erklären Sie ihren Zweck, laden Sie zu praktikablen Alternativen ein und prüfen Sie, ob Hilfe gewünscht ist. Definieren Sie einen Bereich, in dem Kollegen selbst entscheiden können, und überprüfen Sie ihn gemeinsam. Die Übungen erhalten Klarheit und ermöglichen anderen, ihren Teil zu verantworten; ein anpassbarer Ablauf kann tragfähiger sein als ständige Aufsicht."
+    ],
+    "actions": [
+      {
+        "context": "Sie möchten eine Diskussion beenden",
+        "step": "Geben Sie einmal Gelegenheit, Einschränkungen anzusprechen.",
+        "phrase": "Welche praktische Schwierigkeit sollten wir zuerst angehen?"
+      },
+      {
+        "context": "Ein Kollege nutzt eine andere Methode",
+        "step": "Stimmen Sie Ergebnis und Zwischenprüfung ab und versuchen Sie es einmal.",
+        "phrase": "Das Ziel ist gemeinsam; testen wir Ihre Methode."
+      },
+      {
+        "context": "Ein Freund braucht Unterstützung",
+        "step": "Klären Sie den Zweck, bevor Sie Aufgaben aufteilen.",
+        "phrase": "Würde Zuhören helfen oder gemeinsam etwas zu tun?"
+      }
+    ]
+  },
+  "ESFJ": {
+    "highlights": [
+      "Durch alltägliche Reaktionen Verbindung schaffen",
+      "Ruhe muss keine Distanz bedeuten",
+      "Fürsorge und gemeinsame Arbeit konkret machen"
+    ],
+    "sections": [
+      "Vielleicht bemerken Sie, ob Menschen sich einbezogen fühlen und praktische Absprachen ihre Bedürfnisse erfüllen. Eine Reise wirft Fragen nach Verfügbarkeit und individuellen Einschränkungen auf. Gemeinsame Gewohnheiten und rechtzeitige Antworten können Ihnen Sicherheit geben, doch es ist nicht Ihre Rolle, alle zufriedenzustellen. Auch Ihre eigenen abweichenden Bedürfnisse gehören in die Beziehung.",
+      "Vielleicht fragen Sie bei einem stillen Gruppenmitglied nach und merken sich Vorlieben bei einem Treffen. Rücksichtsvolle Details senken Hürden, können aber zu unsichtbarer Arbeit werden. Definieren Sie Ihren Anteil und bitten Sie um einen konkreten Beitrag. Lassen Sie Ruhe zu, ohne sofort die Stimmung zu reparieren; Menschen müssen keine ständige Begeisterung zeigen, um dazuzugehören.",
+      "Vielleicht bieten Sie rasch Gesellschaft und praktische Ratschläge an und wünschen sich dabei eine klare Reaktion. Langsameres Verarbeiten bedeutet nicht zwangsläufig Distanz. Fragen Sie nach Kontaktvorlieben, statt mit weiteren Nachrichten die Bindung zu testen. Widerspruch kann neben Freundschaft bestehen. Nennen Sie Ihre verfügbare Zeit, damit Unterstützung für beide tragfähig bleibt.",
+      "Täglicher Kontakt, gemerkte Details und gemeinsame Absprachen sind Ihnen vielleicht wichtig. Eine kurze Antwort kann Selbstzweifel auslösen. Klären Sie Energie und Gewohnheiten, bevor Sie um eine gewünschte Reaktion bitten. Machen Sie Aufgaben und Pläne ausdrücklich, statt sie der Person zu überlassen, die sie zuerst bemerkt. Konkrete Bitten erlauben, Unzufriedenheit anzusprechen, bevor sie zum pauschalen Vorwurf wird.",
+      "Klare Partner, Adressaten und Schritte unterstützen vielleicht Ihren Einsatz. Alle zu unterstützen kann Ihre eigene konzentrierte Arbeit unterbrechen. Legen Sie einen geschützten Zeitblock fest und erklären Sie ihn. Rückmeldung braucht neben Ermutigung Fakten und Bitten. Fragen Sie bei Kritik nach einem konkreten Beispiel, damit Änderungen die Arbeit betreffen statt Ihr Gefühl, Anerkennung zu finden.",
+      "Rücksicht hilft bei der Beteiligung, Zusammenarbeit erleichtert Aufgaben, und rechtzeitige Fürsorge gibt Sicherheit. Der Preis können Verantwortung für jeden Gesichtsausdruck, wiederholtes Suchen nach Bestätigung oder übermäßige Zusagen sein. Auch unklare Zuständigkeiten können dazu beitragen. Prüfen Sie vor dem Helfen Bedarf und Zuständigkeit; nicht jede Unzufriedenheit müssen Sie beheben.",
+      "Gestalten Sie Harmonie als verhandelbare Zusammenarbeit. Nennen Sie Ihre Kapazität, prüfen Sie eine Vermutung zur Beziehung mit einer direkten Frage und bitten Sie um einen konkreten Beitrag zu einer Aktivität. Die Übungen bewahren Wärme und zeigen zugleich, dass Sie eigene Zeit, Ansichten und Momente haben, in denen Sie Unterstützung brauchen."
+    ],
+    "actions": [
+      {
+        "context": "Antworten wirken zu knapp",
+        "step": "Fragen Sie nach einem angenehmen Kontakt, statt ihn zu testen.",
+        "phrase": "Wie wollen wir in Kontakt bleiben, wenn Sie viel zu tun haben?"
+      },
+      {
+        "context": "Sie erledigen alle Vorbereitungen",
+        "step": "Bitten Sie um einen klar abgegrenzten Beitrag.",
+        "phrase": "Könnten Sie die Personenzahl bestätigen, während ich den Ort organisiere?"
+      },
+      {
+        "context": "Anfragen unterbrechen Ihre Konzentration",
+        "step": "Nennen Sie einen geschützten Zeitblock und einen Antwortzeitpunkt.",
+        "phrase": "Ich arbeite bis drei daran; danach kann ich antworten."
+      }
+    ]
+  },
+  "ISTP": {
+    "highlights": [
+      "Durch Beobachtung und Praxis verstehen",
+      "Wichtige Fortschritte sichtbar machen",
+      "Autonomie ausdrücklich aushandeln"
+    ],
+    "sections": [
+      "Vielleicht untersuchen Sie, wie ein Problem funktioniert und was sich direkt testen lässt. Bei einer Reise zählen praktische Bedingungen, während manche Entscheidungen bis zur Ankunft warten können. Praktische Beobachtung unterstützt das Verständnis, bedeutet aber keine Gleichgültigkeit gegenüber Sinn oder Gefühlen. Manche Erfahrungen brauchen Zuhören, und manche Zusagen verlangen mehr als eine spätere Entscheidung.",
+      "Vielleicht bestätigen Sie wesentliche Transport- und Treffbedingungen, ohne einen vollständigen Reiseplan zu schreiben. Ein defektes Gerät untersuchen Sie, bevor Sie Erklärungen geben. Sagen Sie anderen, was Sie prüfen und wann Sie antworten, damit Ruhe nicht zu Ungewissheit wird. Kennzeichnen Sie flexible Details, bevor eine kurzfristige Änderung nötig ist.",
+      "Vielleicht unterstützen Sie einen Freund durch gemeinsames Tun oder die Lösung einer praktischen Schwierigkeit. Er braucht womöglich ein paar Worte, um zu wissen, dass Sie ihn gehört haben. Geben Sie ein Problem wieder und fragen Sie, ob Handeln helfen würde. Eine Absprache über Dauer und Form des Gesprächs kann praktischer Unterstützung und Kommunikation gleichermaßen Platz geben.",
+      "Vielleicht brauchen Sie Autonomie und mögen ständiges Nachfragen nicht. Ein nahestehender Mensch muss dennoch wissen, wann der Kontakt weitergeht und welche Zusagen bestehen bleiben. Geben Sie dem Alleinsein einen Zeitrahmen. Prüfen Sie nach der Lösung eines Problems auch seine emotionale Wirkung; die praktische Reparatur kann fertig sein, bevor die andere Person ihr Erleben zu Ende erklärt hat.",
+      "Vorführung, Übung und sichtbare Rückmeldung helfen vielleicht beim Lernen. Vereinbaren Sie bei der Arbeit Ergebnisse und Zwischenstände, damit andere Fortschritte ohne lange Berichte sehen können. Testen Sie eine neue Methode mit geringem Risiko. Sind andere betroffen, klären Sie Bedingungen und Zustimmung, statt anzunehmen, ein persönliches Experiment sei für alle akzeptabel.",
+      "Beobachtung findet Probleme, flexibles Handeln bewältigt Veränderung, und eigenständige Übung findet brauchbare Methoden. Der Preis können unzureichende Erklärungen oder verschobene Gespräche sein. Stress kann Rückzug verstärken. Prüfen Sie, welche Reaktion gebraucht wird und was Sie anbieten können; kurze, konkrete Kommunikation kann Ungewissheit verringern, ohne zur langen Diskussion zu werden.",
+      "Geben Sie Autonomie klare Anknüpfungspunkte: eine Fortschrittsmeldung, eine Rückkehrzeit nach dem Alleinsein und eine Frage zur gewünschten Unterstützung. Erklären Sie eine häufig wiederkehrende Absprache einmal im Voraus. Die Übungen machen Ihr Handeln verständlich und Zusammenarbeit leichter, ohne ständige Gesprächigkeit zu verlangen."
+    ],
+    "actions": [
+      {
+        "context": "Sie reparieren still etwas",
+        "step": "Geben Sie einen Zwischenstand und nennen Sie einen Antwortzeitpunkt.",
+        "phrase": "Ich prüfe die Ursache; in einer halben Stunde gebe ich Bescheid."
+      },
+      {
+        "context": "Sie brauchen Zeit allein",
+        "step": "Sagen Sie, wann der Kontakt weitergeht, und kehren Sie dann zurück.",
+        "phrase": "Ich brauche eine Stunde Pause, dann können wir sprechen."
+      },
+      {
+        "context": "Das Problem ist gelöst, die Verletzung bleibt",
+        "step": "Fragen Sie, welche Auswirkungen noch nicht gehört wurden.",
+        "phrase": "Es ist erledigt. Was soll ich darüber hinaus verstehen?"
+      }
+    ]
+  },
+  "ISFP": {
+    "highlights": [
+      "Vorlieben durch Erfahrung finden",
+      "Kleine Taten mit Worten verbinden",
+      "Grenzen vor der Erschöpfung aussprechen"
+    ],
+    "sections": [
+      "Vielleicht bemerken Sie, ob eine Erfahrung sich angenehm anfühlt und zu dem passt, was Ihnen wichtig ist. Eine Reise lässt Sie vor einer ausführlichen Begründung an Umgebung und Tempo denken. Sensibilität unterstützt Ihre Wahl, doch Sie können Ihre Vorlieben auch jemandem, der anders empfindet, durch Bedingungen und Beispiele erklären.",
+      "Vielleicht bevorzugen Sie eine Aktivität, ohne die Diskussion zum Wettstreit machen zu wollen. Sinneseindrücke beim Spaziergang oder gemeinsamen Kochen laden zur Beteiligung ein. Kleine aufmerksame Taten zeigen Zuneigung. Nennen Sie ein gewünschtes Erlebnis und einen zu vermeidenden Umstand; sonst nehmen andere vielleicht an, jede Möglichkeit sei gleich angenehm.",
+      "Vielleicht respektieren Sie die Entscheidungen eines Freundes und bieten stille Gesellschaft oder eine gemeinsame Aktivität an. Eine kurze, konkrete Antwort zeigt ihm dennoch, dass er gehört wurde. Bei Uneinigkeit können Sie Ihr eigenes Gefühl oder Ihre Grenze benennen, ohne ihm vollständig unrecht geben zu müssen. Bitten Sie in einem nachdrücklichen Gespräch um eine Pause und vereinbaren Sie die Fortsetzung.",
+      "Vielleicht wünschen Sie sich Raum für Ihr eigenes Tempo und Ihre Vorlieben und zeigen Zuneigung durch kleine Taten. Ein nahestehender Mensch braucht möglicherweise auch Worte. Teilen Sie ein kurzes, vorläufiges Gefühl, statt auf völlige Klarheit zu warten. Erklären Sie, dass Freiraum keine Ablehnung ist, und treffen Sie einige Entscheidungen weiterhin eigenständig. Unterschiede zu respektieren beginnt damit, sie zu kennen.",
+      "Direkte Erfahrung und sichtbare Übung unterstützen vielleicht das Lernen. Bitten Sie bei vagen Rückmeldungen zur Arbeit um ein konkretes Beispiel und den Umfang der Überarbeitung. Beginnen Sie mit einer überschaubaren Handlung und beobachten Sie ihre Wirkung. Persönlicher Ausdruck und die Bedürfnisse eines Publikums können durch eine ausgehandelte Überarbeitung nebeneinander bestehen.",
+      "Sensibilität bemerkt Veränderung, Aufrichtigkeit schützt Entscheidungen, und Flexibilität reagiert auf die Gegenwart. Der Preis können verspätete Kommunikation, als Ablehnung verstandener Widerspruch oder Zustimmung zur Konfliktvermeidung sein. Auch Müdigkeit zählt. Unterscheiden Sie einen vorübergehenden Zustand von einem anhaltenden Bedürfnis und äußern Sie eine konkrete Bitte, bevor Sie Ihre Grenze erreichen.",
+      "Geben Sie Gefühlen eine verständliche Form: eine erkennbare Vorliebe, eine klare Grenze und die Unterscheidung zwischen einer Änderung der Arbeit und der Ablehnung Ihrer selbst. Die Übungen verbinden Erfahrung mit Kommunikation, damit Sie Ihr Tempo behalten und anderen zugleich beim gemeinsamen Planen helfen können."
+    ],
+    "actions": [
+      {
+        "context": "Ein Plan lässt Ihre Vorliebe aus",
+        "step": "Nennen Sie ein gewünschtes Erlebnis und eine Bedingung.",
+        "phrase": "Ich möchte lieber an einen ruhigen Ort; die Zeit kann flexibel sein."
+      },
+      {
+        "context": "Uneinigkeit lässt Sie sich zurückziehen",
+        "step": "Bitten Sie um die Erfüllung eines Bedürfnisses, ohne das ganze Gespräch zu beenden.",
+        "phrase": "Ich brauche ein langsameres Tempo. Können wir in zehn Minuten weitermachen?"
+      },
+      {
+        "context": "Rückmeldung fühlt sich persönlich an",
+        "step": "Fragen Sie nach dem konkreten Umfang der Überarbeitung.",
+        "phrase": "Welcher Teil soll sich ändern? Diesen Schwerpunkt würde ich gern behalten."
+      }
+    ]
+  },
+  "ESTP": {
+    "highlights": [
+      "Durch praktische Versuche lernen",
+      "Andere bei Veränderungen einbeziehen",
+      "Zum Handeln gehört das Dranbleiben"
+    ],
+    "sections": [
+      "Vielleicht bemerken Sie nutzbare Bedingungen und einen praktischen Schritt, der etwas in Gang bringt. Direkte Beteiligung und schnelle Rückmeldung helfen beim Urteilen, doch schneller ist nicht immer besser. Wenn Kosten, Risiken oder Zusagen anderer betroffen sind, prüfen Sie vor dem Handeln Bedingungen und Bereitschaft.",
+      "Vielleicht schlagen Sie vor, an einem Ort zu beginnen und dort den nächsten Halt zu entscheiden. Improvisation kann ein Problem lösen und zugleich jemanden überraschen, der sich vorbereitet hat. Klären Sie feste Zeiten, Kosten und flexible Details. Geben Sie Gelegenheit zur Bestätigung, damit Veränderung eine gemeinsame Erfahrung statt einer plötzlichen Anweisung bleibt.",
+      "Vielleicht laden Sie einen besorgten Freund zu einem Spaziergang oder einer Aktivität ein. Er muss womöglich zuerst zu Ende sprechen. Fragen Sie, ob ein Gespräch oder Bewegung helfen würde. Humor kann Spannung lösen, wenn er willkommen ist; auch Schweigen kann eine nötige Pause sein. Bei langsamem Erzählen dabeizubleiben ist eine konkrete Form der Beteiligung.",
+      "Gemeinsame Erlebnisse und direkte Reaktionen sind Ihnen in einer engen Beziehung vielleicht wichtig. Langfristige Pläne können weniger dringend als die Gegenwart wirken, doch eine fehlende Antwort kann sich wie fehlende Verbindlichkeit anfühlen. Legen Sie fest, was Sie versprechen können und was flexibel bleibt. Erkennen Sie nach der Lösung des sichtbaren Problems auch seine Auswirkungen an.",
+      "Übung und unmittelbare Rückmeldung helfen vielleicht beim Lernen. Sie können unerwartete Arbeit bewältigen, während wiederkehrende Aufgaben von einer regelmäßigen Prüfung profitieren. Definieren Sie ein kleines sichtbares Ergebnis und prüfen Sie den Abschluss. Aufzeichnungen erlauben der nächsten Person die Übernahme. Geben Sie riskanten Experimenten eine Abbruchbedingung und klare Verantwortung.",
+      "Handeln durchbricht Stillstand, Improvisation bewältigt Veränderung, und Beobachtung erdet Diskussionen. Der Preis können unterschätzte Nacharbeit, Zusagen ohne Kapazitätsprüfung oder Aktivität zum Vermeiden eines schwierigen Gesprächs sein. Halten Sie kurz inne, um das tatsächliche Problem zu benennen. Spätere Auswirkungen zu prüfen gehört ebenfalls zu verantwortlichem Handeln.",
+      "Ergänzen Sie schnelles Handeln um Bestätigung und Abschluss. Prüfen Sie vor einem Versuch eine wichtige Bedingung, fragen Sie nach gewünschter Unterstützung und geben Sie wichtigen Zusagen eine verlässliche Zeit. Die Übungen machen Flexibilität vertrauenswürdiger und lassen Raum für gemeinsames Abenteuer und praktische Anpassung."
+    ],
+    "actions": [
+      {
+        "context": "Sie möchten sofort etwas ausprobieren",
+        "step": "Prüfen Sie ein Risiko und eine Abbruchbedingung.",
+        "phrase": "Wir können es versuchen; wenn das passiert, hören wir auf."
+      },
+      {
+        "context": "Ein Aktivitätsplan ändert sich",
+        "step": "Erklären Sie die Auswirkungen und bestätigen Sie die Bereitschaft.",
+        "phrase": "Das dauert eine halbe Stunde länger. Passt das für alle?"
+      },
+      {
+        "context": "Sie möchten einen besorgten Freund in Bewegung bringen",
+        "step": "Fragen Sie, ob zuerst Reden oder Handeln gewünscht ist.",
+        "phrase": "Möchten Sie zu Ende erzählen oder spazieren gehen?"
+      }
+    ]
+  },
+  "ESFP": {
+    "highlights": [
+      "Durch Beteiligung und Reaktion Verbindung schaffen",
+      "Gesellschaft muss nicht sofort glücklich machen",
+      "Langfristigen Plänen kleine Rückmeldeschleifen geben"
+    ],
+    "sections": [
+      "Vielleicht bemerken Sie das gegenwärtige Erleben und die Reaktionen zwischen Menschen und lernen durch Beteiligung, was passt. Eine Reise weckt Gedanken an Essen, Aktivitäten und gemeinsame Unbeschwertheit. Lebendige Verbindung unterstützt Ihren Einsatz, doch Sie müssen nicht immer fröhlich sein. Ruhe, Müdigkeit und langfristige Sorgen sind ebenfalls echte Teile des Lebens.",
+      "Fotos und Empfehlungen helfen Ihnen vielleicht, einen Gruppenplan lebendig zu machen. Bei Treffen reagieren Sie auf die Stimmung und bevorzugen flexible Details. Trennen Sie Mitmachen vom Organisieren und prüfen Sie wichtige Zeiten und das Budget. Sie dürfen sich ausruhen, statt Freude vorzuspielen; Beziehungen brauchen Platz für Ihre wechselnde Energie.",
+      "Vielleicht bieten Sie einem besorgten Freund Gesellschaft, Aktivität und eine schnelle Reaktion. Er ist womöglich noch nicht bereit, sich besser zu fühlen. Fragen Sie, ob er weiterreden oder die Umgebung wechseln möchte. Gemeinsames Erleben kann helfen, ohne seine Geschichte zu übernehmen. Unterstützung kann bedeuten, dass er nicht allein ist, auch ohne sofortige Besserung.",
+      "Gemeinsame Erlebnisse, praktische Fürsorge und unmittelbarer Ausdruck schaffen für Sie vielleicht Verbindung. Das Planungs- oder Ruhebedürfnis eines anderen kann wie verlorene Wärme wirken. Fragen Sie, welchem Zweck dieses Bedürfnis dient, und versuchen Sie eine kleine Vereinbarung. Stabilität muss Neues nicht beseitigen, und Zuneigung darf anders ausgedrückt werden als auf Ihre Weise.",
+      "Beispiele, Austausch und konkrete Rückmeldung helfen vielleicht beim Lernen. Menschen und Bedürfnisse vor Ort sprechen Sie bei der Arbeit an, während wiederholte Aufgaben oder solche mit fernem Ergebnis von klaren Etappen profitieren. Schließen Sie einen kleinen Abschnitt ab und schreiben Sie den nächsten Schritt auf. Rückmeldung kann Ermutigung mit einer konkreten Änderung zum Ausprobieren verbinden.",
+      "Aufmerksamkeit für die Gegenwart unterstützt Anpassung, Herzlichkeit erleichtert Unvertrautes, und Beteiligung schafft gemeinsame Erfahrungen. Der Preis können unterdrücktes Unbehagen zugunsten der Stimmung, Ablenkung von Sorgen durch Aktivität oder zu viele Zusagen sein. Prüfen Sie Müdigkeit und unterscheiden Sie eine kurze Aufmunterung von einem Problem, das eigene Zeit braucht.",
+      "Geben Sie der gegenwärtigen Verbindung eine fortdauernde Struktur. Prüfen Sie vor dem Mitmachen Energie und Budget, lassen Sie beim Unterstützen Traurigkeit zu und legen Sie für eine längere Aufgabe eine kleine regelmäßige Handlung fest. Die Übungen erhalten Beteiligung und machen das Dranbleiben sichtbar. Ihr Beitrag umfasst Ehrlichkeit und Fürsorge, nicht nur Energie für die Runde."
+    ],
+    "actions": [
+      {
+        "context": "Mehrere Einladungen kommen",
+        "step": "Prüfen Sie Energie und Budget und bestätigen Sie dann eine.",
+        "phrase": "Hier kann ich diese Woche dabei sein; die anderen lasse ich offen."
+      },
+      {
+        "context": "Sie möchten einen Freund aufmuntern",
+        "step": "Fragen Sie, ob Reden oder eine andere Umgebung hilft.",
+        "phrase": "Es eilt nicht, sich besser zu fühlen. Reden oder spazieren gehen?"
+      },
+      {
+        "context": "Eine längere Aufgabe bleibt liegen",
+        "step": "Planen und dokumentieren Sie eine regelmäßige Handlung von zehn Minuten.",
+        "phrase": "Heute schließe ich diesen kleinen Abschnitt ab."
+      }
+    ]
+  }
+}

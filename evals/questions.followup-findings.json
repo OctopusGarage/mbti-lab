@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Historical exact findings from actual complete question-bank CLI reviews; not a current-source passing judgment. Redundant passing option records are omitted.",
+  "reviews": [
+    {
+      "locale": "fr",
+      "reviewedPairs": 93,
+      "evaluator": "OpenAI AI assistant",
+      "model": null,
+      "startedAt": "2026-10-20T06:48:51.194Z",
+      "completedAt": "2026-10-20T06:51:12.521Z",
+      "limitations": [
+        "This AI linguistic review may miss nuances or interpret ambiguous wording differently from native speakers.",
+        "An AI linguistic review cannot establish psychometric validity, scoring validity or measurement equivalence across cultures."
+      ],
+      "sourceHashes": {
+        "src/data/questions.js": "24a57b27c387d518195f366c595aa347a48be7b99891d8c81692b85b24b36374",
+        "evals/questions.rubric.json": "610d8af4aeaa079a2dbbbeec098d16152e4212f6c6d5b3cb24315c965a69a2a9",
+        "evals/questions.response.schema.json": "1783838e8ac0739564d00f0335665c05479472b14371dd18df043ec69601e321",
+        "src/data/translations/es.questions.json": "9956043b2c62c7f259cd16d431035c1c8502e3936954f3bbc122bcdcf17c1bd8",
+        "src/data/translations/fr.questions.json": "45ed55a45450854c3015ace2007d1cfbb338d167a493e501547ae42cc6775a3c",
+        "src/data/translations/de.questions.json": "29fe09f7b4ef3d91347fef1077d657f3939ccfe862d76127cfa59d8a95b25f2a",
+        "src/data/translations/pt.questions.json": "8020ff84dc782eb95ff2903d5f11dea95c89e46952ee0d6ec6263853b950b1f8",
+        "src/data/translations/ja.questions.json": "0641cf1206e8bd886f55a73cdf3c6fe46d4b2eb8a0c3e554ac1dfa39a7042ba3",
+        "src/data/translations/ko.questions.json": "d5babd48e44444682adefddf01cd00ddf5d9bcb13b16e012fd525515e47947cb"
+      },
+      "findings": [
+        {
+          "id": 6,
+          "option": "b",
+          "kind": "context",
+          "sourceQuote": "You often initiate conversations or invite friends to hang out.",
+          "translationQuote": "Vous engagez souvent la conversation ou proposez à des amis de sortir.",
+          "explanation": "The translation narrows inviting friends to spend time together to proposing an outing. Hanging out can also involve staying home or simply spending time together without going out.",
+          "suggestedTranslation": "Vous engagez souvent la conversation ou proposez à des amis de passer du temps ensemble."
+        },
+        {
+          "id": 79,
+          "option": "a",
+          "kind": "context",
+          "sourceQuote": "You like recording to-do items in a calendar or checklist.",
+          "translationQuote": "Vous aimez noter vos tâches dans un agenda ou une liste.",
+          "explanation": "The translation replaces a checklist with an unspecified list, omitting the explicit completion-tracking feature of the organizational tool named in the source.",
+          "suggestedTranslation": "Vous aimez noter vos tâches dans un agenda ou une liste de tâches à cocher."
+        }
+      ]
+    },
+    {
+      "locale": "de",
+      "reviewedPairs": 93,
+      "evaluator": "OpenAI AI assistant",
+      "model": null,
+      "startedAt": "2026-10-20T07:01:49.288Z",
+      "completedAt": "2026-10-20T07:06:20.708Z",
+      "limitations": [
+        "This AI linguistic review may miss nuances or interpret ambiguous wording differently from native speakers.",
+        "An AI linguistic review cannot establish psychometric validity, scoring validity or measurement equivalence across cultures."
+      ],
+      "sourceHashes": {
+        "src/data/questions.js": "24a57b27c387d518195f366c595aa347a48be7b99891d8c81692b85b24b36374",
+        "evals/questions.rubric.json": "610d8af4aeaa079a2dbbbeec098d16152e4212f6c6d5b3cb24315c965a69a2a9",
+        "evals/questions.response.schema.json": "1783838e8ac0739564d00f0335665c05479472b14371dd18df043ec69601e321",
+        "src/data/translations/es.questions.json": "9956043b2c62c7f259cd16d431035c1c8502e3936954f3bbc122bcdcf17c1bd8",
+        "src/data/translations/fr.questions.json": "d75a77bb4a975da6cabed5a3d1719442987a94905c9b3f12293af5eb0324f183",
+        "src/data/translations/de.questions.json": "29fe09f7b4ef3d91347fef1077d657f3939ccfe862d76127cfa59d8a95b25f2a",
+        "src/data/translations/pt.questions.json": "8020ff84dc782eb95ff2903d5f11dea95c89e46952ee0d6ec6263853b950b1f8",
+        "src/data/translations/ja.questions.json": "0641cf1206e8bd886f55a73cdf3c6fe46d4b2eb8a0c3e554ac1dfa39a7042ba3",
+        "src/data/translations/ko.questions.json": "d5babd48e44444682adefddf01cd00ddf5d9bcb13b16e012fd525515e47947cb"
+      },
+      "findings": [
+        {
+          "id": 11,
+          "option": "a",
+          "kind": "meaning",
+          "sourceQuote": "You are generally willing to share your personal life, even with people you do not know well.",
+          "translationQuote": "Sie erzählen in der Regel gern von Ihrem Privatleben, auch Menschen, die Sie nicht gut kennen.",
+          "explanation": "The source expresses general willingness to disclose personal information. 'Gern' expresses enjoyment or a positive inclination toward doing so, strengthening willingness into liking the activity.",
+          "suggestedTranslation": "Sie sind in der Regel bereit, von Ihrem Privatleben zu erzählen, auch Menschen, die Sie nicht gut kennen."
+        },
+        {
+          "id": 23,
+          "option": "b",
+          "kind": "context",
+          "sourceQuote": "Unexpected social engagements sometimes feel stressful.",
+          "translationQuote": "Unerwartete soziale Verpflichtungen empfinden Sie manchmal als stressig.",
+          "explanation": "'Verpflichtungen' introduces an obligation to participate. The source refers to unexpected social engagements without specifying that they are obligatory; this addition can make obligation, rather than unexpected social participation, the reason for stress.",
+          "suggestedTranslation": "Unerwartete Treffen mit anderen empfinden Sie manchmal als stressig."
+        }
+      ]
+    },
+    {
+      "locale": "ja",
+      "reviewedPairs": 93,
+      "evaluator": "OpenAI AI assistant",
+      "model": null,
+      "startedAt": "2026-10-20T07:05:33.932Z",
+      "completedAt": "2026-10-20T07:07:11.608Z",
+      "limitations": [
+        "This AI linguistic review may miss nuances or interpret ambiguous wording differently from native Japanese reviewers.",
+        "An AI linguistic review cannot establish psychometric validity, scoring validity or measurement equivalence across cultures."
+      ],
+      "sourceHashes": {
+        "src/data/questions.js": "24a57b27c387d518195f366c595aa347a48be7b99891d8c81692b85b24b36374",
+        "evals/questions.rubric.json": "610d8af4aeaa079a2dbbbeec098d16152e4212f6c6d5b3cb24315c965a69a2a9",
+        "evals/questions.response.schema.json": "1783838e8ac0739564d00f0335665c05479472b14371dd18df043ec69601e321",
+        "src/data/translations/es.questions.json": "9956043b2c62c7f259cd16d431035c1c8502e3936954f3bbc122bcdcf17c1bd8",
+        "src/data/translations/fr.questions.json": "d75a77bb4a975da6cabed5a3d1719442987a94905c9b3f12293af5eb0324f183",
+        "src/data/translations/de.questions.json": "29fe09f7b4ef3d91347fef1077d657f3939ccfe862d76127cfa59d8a95b25f2a",
+        "src/data/translations/pt.questions.json": "8020ff84dc782eb95ff2903d5f11dea95c89e46952ee0d6ec6263853b950b1f8",
+        "src/data/translations/ja.questions.json": "0641cf1206e8bd886f55a73cdf3c6fe46d4b2eb8a0c3e554ac1dfa39a7042ba3",
+        "src/data/translations/ko.questions.json": "d5babd48e44444682adefddf01cd00ddf5d9bcb13b16e012fd525515e47947cb"
+      },
+      "findings": [
+        {
+          "id": 10,
+          "option": "b",
+          "kind": "qualifier",
+          "sourceQuote": "You tend to have many different social circles.",
+          "translationQuote": "さまざまな交友グループを持つ傾向があります。",
+          "explanation": "The translation conveys variety but does not clearly retain the explicit large number of social circles expressed by 'many.'",
+          "suggestedTranslation": "さまざまな交友グループを数多く持つ傾向があります。"
+        },
+        {
+          "id": 60,
+          "option": "a",
+          "kind": "qualifier",
+          "sourceQuote": "You usually have strong personal positions on ethical issues.",
+          "translationQuote": "倫理的な問題について、はっきりした自分の立場を持つことが多いです。",
+          "explanation": "'はっきりした' conveys a clearly defined position but does not fully preserve the strength of conviction expressed by 'strong personal positions.' Someone can have a clear position without holding it strongly.",
+          "suggestedTranslation": "倫理的な問題について、たいてい自分なりの強い信念に基づく立場を持っています。"
+        },
+        {
+          "id": 65,
+          "option": "b",
+          "kind": "meaning",
+          "sourceQuote": "You believe emotions flow naturally and do not need to be deliberately controlled.",
+          "translationQuote": "感情は自然に湧くもので、意識して抑える必要はないと思います。",
+          "explanation": "The translation narrows deliberate emotional control to suppression ('抑える'). The source describes allowing emotions to flow without deliberate regulation more generally, rather than only believing they need not be suppressed.",
+          "suggestedTranslation": "感情は自然に流れるもので、意識してコントロールする必要はないと思います。"
+        }
+      ]
+    }
+  ]
+}

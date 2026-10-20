@@ -27,8 +27,9 @@ export async function seedResult(page, type = 'INFJ') {
   await expect(page.locator('.result-card')).toBeVisible()
 }
 export async function language(page, locale) {
-  if (await page.locator('html').getAttribute('lang') !== locale) await page.locator('.lang-toggle').click()
+  if (await page.locator('html').getAttribute('lang') !== locale) await page.locator('.lang-toggle').selectOption(locale)
   await expect(page.locator('html')).toHaveAttribute('lang', locale)
+  await expect(page.locator('.lang-toggle')).toBeEnabled()
 }
 export async function answer(page, index, choice = 'a') {
   await expect(page.getByRole('progressbar')).toHaveAttribute('aria-valuenow', String(index + 1))

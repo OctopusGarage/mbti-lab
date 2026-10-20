@@ -1,3 +1,5 @@
+import { resolveLocale } from '../i18n/locales.js'
+import { getTranslatedReport } from '../data/localizedContent.js'
 import { reportContent } from '../data/reportContent.js'
 
 export const SECTION_IDS = [
@@ -15,7 +17,11 @@ import { DIMENSIONS } from './dimensions.js'
 export function getReport(type, locale = 'zh') {
   if (typeof type !== 'string' || !Object.hasOwn(reportContent, type))
     return null
-  const language = locale === 'en' ? 'en' : 'zh'
+  const language = resolveLocale(locale) ?? 'en'
+  if (!['zh', 'en'].includes(language)) {
+    const translated = getTranslatedReport(type, language)
+    return translated ? { ...translated, sections: SECTION_IDS.map((id, index) => ({ id, text: translated.sections[index] })) } : null
+  }
   const index = language === 'en' ? 1 : 0
   const content = reportContent[type]
   return {

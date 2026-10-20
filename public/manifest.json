@@ -1,7 +1,7 @@
 {
   "name": "MBTI Lab",
   "short_name": "MBTI Lab",
-  "description": "专业双语 MBTI 人格测试 · Professional Bilingual Personality Test",
+  "description": "多语言 MBTI 人格探索 · Multilingual personality explorer",
   "start_url": "/mbti-lab/",
   "display": "standalone",
   "background_color": "#1a1a2e",

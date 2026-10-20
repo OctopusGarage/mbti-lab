@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-20T06:49:22.903Z",
+  "provenance": {
+    "method": "codex-cli",
+    "scope": "Exact issue records captured from six actual full93-pair CLI reviews before corrections; all locale reviewers completed. Aggregate rejected stale German source, so this is a findings-only historical record, not an accepted full judgment or current-source pass.",
+    "reviewedPairs": 558,
+    "limitations": [
+      "Complete temporary response files were removed on aggregate rejection; only these captured actual issue records are retained. Final complete six-bank review is rerun separately against frozen corrected sources."
+    ]
+  },
+  "reportedOptionFindings": 18,
+  "findings": [
+    {
+      "locale": "es",
+      "id": 35,
+      "option": "a",
+      "kind": "qualifier",
+      "sourceQuote": "You are more practical, and your ideas usually have concrete real-world grounding.",
+      "translationQuote": "Tiendes a ser una persona práctica y tus ideas suelen tener una base concreta en la realidad.",
+      "explanation": "The translation replaces the explicit comparative 'more practical' with a tendency to be practical. It preserves the usual grounding of ideas but loses the comparative degree of practicality.",
+      "suggestedTranslation": "Eres una persona más práctica y tus ideas suelen tener una base concreta en la realidad."
+    },
+    {
+      "locale": "ja",
+      "id": 1,
+      "option": "b",
+      "kind": "meaning",
+      "sourceQuote": "You eventually drift to a quiet corner to recharge at parties.",
+      "translationQuote": "パーティーでは、やがて静かな隅に移ってエネルギーを回復したくなります。",
+      "explanation": "The source describes actually withdrawing to a quiet corner. The translation describes wanting to do so, which can apply even when the person stays with the group.",
+      "suggestedTranslation": "パーティーでは、やがて静かな隅に移ってエネルギーを回復します。"
+    },
+    {
+      "locale": "ja",
+      "id": 7,
+      "option": "a",
+      "kind": "qualifier",
+      "sourceQuote": "In team meetings, you are often among the first to speak up.",
+      "translationQuote": "チームの会議では、早い段階で発言することが多いです。",
+      "explanation": "Speaking early in a meeting does not necessarily mean being among the first people to speak. The translation loses the explicit relative order.",
+      "suggestedTranslation": "チームの会議では、最初に発言する数人のうちの一人になることが多いです。"
+    },
+    {
+      "locale": "ja",
+      "id": 41,
+      "option": "a",
+      "kind": "qualifier",
+      "sourceQuote": "You prefer learning new knowledge you can directly apply.",
+      "translationQuote": "すぐに活用できる新しい知識を学ぶことを好みます。",
+      "explanation": "The source specifies direct applicability, whereas the translation specifies immediate applicability. Knowledge can be directly applicable without being usable immediately.",
+      "suggestedTranslation": "直接活用できる新しい知識を学ぶことを好みます。"
+    },
+    {
+      "locale": "ko",
+      "id": 21,
+      "option": "b",
+      "kind": "context",
+      "sourceQuote": "In unfamiliar social situations, you usually need time to loosen up.",
+      "translationQuote": "낯선 사람들과 어울리는 자리에서는 긴장을 푸는 데 시간이 필요합니다.",
+      "explanation": "The translation restricts unfamiliar social situations to gatherings with unfamiliar people. The source also covers unfamiliar settings or situations involving familiar people. It also omits 'usually,' making the need for time unqualified.",
+      "suggestedTranslation": "익숙하지 않은 사교적 상황에서는 대체로 긴장을 푸는 데 시간이 필요합니다."
+    },
+    {
+      "locale": "ko",
+      "id": 62,
+      "option": "a",
+      "kind": "meaning",
+      "sourceQuote": "You believe in empathy and are willing to be flexible with rules to accommodate special circumstances.",
+      "translationQuote": "공감을 중요하게 여기며, 특별한 사정을 배려하기 위해 규칙을 유연하게 적용할 수 있다고 생각합니다.",
+      "explanation": "The source expresses personal willingness to apply rules flexibly. The translation instead expresses a belief that flexible application is possible or permissible, which does not establish the respondent's willingness to do it.",
+      "suggestedTranslation": "공감을 중요하게 여기며, 특별한 사정을 배려하기 위해 규칙을 기꺼이 유연하게 적용할 의향이 있습니다."
+    },
+    {
+      "locale": "fr",
+      "id": 6,
+      "option": "a",
+      "kind": "context",
+      "sourceQuote": "You usually wait for others to reach out rather than initiating plans.",
+      "translationQuote": "Vous attendez généralement que les autres vous contactent plutôt que de proposer une sortie.",
+      "explanation": "Initiating plans includes arranging social activities generally, including gatherings at home. The translation narrows this to proposing an outing.",
+      "suggestedTranslation": "Vous attendez généralement que les autres vous contactent plutôt que de prendre l’initiative d’organiser quelque chose ensemble."
+    },
+    {
+      "locale": "fr",
+      "id": 68,
+      "option": "b",
+      "kind": "meaning",
+      "sourceQuote": "You tend to explain others' behavior logically rather than emotionally.",
+      "translationQuote": "Vous avez tendance à expliquer le comportement des autres par la logique plutôt que par les émotions.",
+      "explanation": "The source describes using logical rather than emotional reasoning when explaining behavior. The French wording instead suggests attributing others’ behavior to logic rather than emotions, changing the explanatory approach into a claim about what motivates their behavior.",
+      "suggestedTranslation": "Vous avez tendance à expliquer le comportement des autres en raisonnant de manière logique plutôt qu’émotionnelle."
+    },
+    {
+      "locale": "de",
+      "id": 2,
+      "option": "a",
+      "kind": "meaning",
+      "sourceQuote": "Spending an entire day alone usually feels fine, even enjoyable.",
+      "translationQuote": "Einen ganzen Tag allein zu verbringen, ist für Sie meist angenehm und kann Ihnen sogar Freude machen.",
+      "explanation": "The source allows feeling merely fine about solitude, with enjoyment as an additional possibility. The translation makes feeling pleasant the usual baseline, strengthening the positive response.",
+      "suggestedTranslation": "Einen ganzen Tag allein zu verbringen, ist für Sie meist völlig in Ordnung und kann sogar angenehm sein."
+    },
+    {
+      "locale": "de",
+      "id": 10,
+      "option": "b",
+      "kind": "context",
+      "sourceQuote": "You tend to have many different social circles.",
+      "translationQuote": "Sie haben eher viele verschiedene Freundeskreise.",
+      "explanation": "Social circles can include colleagues, acquaintances, and other groups. 'Freundeskreise' restricts these circles to friends.",
+      "suggestedTranslation": "Sie gehören eher vielen verschiedenen sozialen Kreisen an."
+    },
+    {
+      "locale": "de",
+      "id": 30,
+      "option": "a",
+      "kind": "context",
+      "sourceQuote": "When learning a new skill, you prefer figuring it out yourself and finding better ways.",
+      "translationQuote": "Wenn Sie etwas Neues lernen, probieren Sie lieber selbst aus und suchen nach besseren Wegen.",
+      "explanation": "The source specifically concerns acquiring a skill. 'Etwas Neues lernen' broadens the setting to learning anything, including facts or theoretical knowledge.",
+      "suggestedTranslation": "Wenn Sie eine neue Fertigkeit erlernen, finden Sie lieber selbst heraus, wie es geht, und suchen nach besseren Vorgehensweisen."
+    },
+    {
+      "locale": "de",
+      "id": 30,
+      "option": "b",
+      "kind": "context",
+      "sourceQuote": "When learning a new skill, you tend to follow instructions closely.",
+      "translationQuote": "Wenn Sie etwas Neues lernen, halten Sie sich eher genau an Anleitungen.",
+      "explanation": "The explicit skill-learning setting is broadened to any kind of new learning.",
+      "suggestedTranslation": "Wenn Sie eine neue Fertigkeit erlernen, halten Sie sich eher genau an Anleitungen."
+    },
+    {
+      "locale": "de",
+      "id": 59,
+      "option": "b",
+      "kind": "meaning",
+      "sourceQuote": "You are very careful when criticizing others, afraid of making them uncomfortable.",
+      "translationQuote": "Sie sind mit Kritik an anderen sehr vorsichtig, weil Sie ihnen kein unangenehmes Gefühl geben möchten.",
+      "explanation": "The source explicitly attributes caution to fear of causing discomfort. The translation substitutes a desire not to cause discomfort, losing the expressed apprehension.",
+      "suggestedTranslation": "Sie sind mit Kritik an anderen sehr vorsichtig, weil Sie befürchten, ihnen ein unangenehmes Gefühl zu geben."
+    },
+    {
+      "locale": "de",
+      "id": 60,
+      "option": "a",
+      "kind": "meaning",
+      "sourceQuote": "You usually have strong personal positions on ethical issues.",
+      "translationQuote": "Zu ethischen Fragen haben Sie meist klare persönliche Positionen.",
+      "explanation": "'Klare' describes clearly defined positions, whereas 'strong' describes firmly held convictions. A position can be clear without being strongly held.",
+      "suggestedTranslation": "Zu ethischen Fragen haben Sie meist feste persönliche Überzeugungen."
+    },
+    {
+      "locale": "de",
+      "id": 63,
+      "option": "a",
+      "kind": "meaning",
+      "sourceQuote": "You express care more naturally through actions than words.",
+      "translationQuote": "Sie zeigen Zuneigung natürlicher durch Taten als durch Worte.",
+      "explanation": "'Zuneigung' specifically means affection. The source's care also includes concern for someone's welfare and looking after them, so the translation narrows the feeling being expressed.",
+      "suggestedTranslation": "Sie zeigen eher auf natürliche Weise durch Taten als durch Worte, dass Ihnen jemand am Herzen liegt."
+    },
+    {
+      "locale": "de",
+      "id": 63,
+      "option": "b",
+      "kind": "meaning",
+      "sourceQuote": "You find it natural to express care through warm words.",
+      "translationQuote": "Es fällt Ihnen leicht, Zuneigung durch herzliche Worte auszudrücken.",
+      "explanation": "The translation restricts care to affection and describes ease rather than explicitly describing a natural way of expressing care.",
+      "suggestedTranslation": "Für Sie ist es natürlich, mit herzlichen Worten auszudrücken, dass Ihnen jemand am Herzen liegt."
+    },
+    {
+      "locale": "de",
+      "id": 72,
+      "option": "a",
+      "kind": "meaning",
+      "sourceQuote": "You prefer figuring things out as you go and refining the plan along the way.",
+      "translationQuote": "Sie finden Dinge lieber unterwegs heraus und verfeinern den Plan dabei.",
+      "explanation": "'Unterwegs' suggests being on the move or traveling and obscures the intended preference for figuring things out during the process of doing a task.",
+      "suggestedTranslation": "Sie finden lieber erst beim Vorgehen heraus, wie etwas funktioniert, und verfeinern den Plan im Laufe des Prozesses."
+    },
+    {
+      "locale": "de",
+      "id": 82,
+      "option": "a",
+      "kind": "qualifier",
+      "sourceQuote": "You tend to delay decisions as long as possible to keep options open.",
+      "translationQuote": "Sie schieben Entscheidungen möglichst lange auf, um sich Optionen offenzuhalten.",
+      "explanation": "The translation omits the explicit tendency qualifier and states the behavior categorically.",
+      "suggestedTranslation": "Sie neigen dazu, Entscheidungen möglichst lange aufzuschieben, um sich Optionen offenzuhalten."
+    }
+  ],
+  "localesWithoutReportedFindings": [
+    "pt"
+  ]
+}

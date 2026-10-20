@@ -1,0 +1,467 @@
+[
+  {
+    "id": 1,
+    "a": "Você ganha mais energia conforme a festa avança.",
+    "b": "Em festas, depois de um tempo você acaba procurando um canto tranquilo para recarregar as energias."
+  },
+  {
+    "id": 2,
+    "a": "Passar um dia inteiro sem companhia costuma ser tranquilo para você, até agradável.",
+    "b": "Passar um dia inteiro sem companhia faz você sentir solidão e tédio."
+  },
+  {
+    "id": 3,
+    "a": "Você prefere conversar com outras pessoas sobre suas ideias para organizá-las.",
+    "b": "Você prefere refletir por conta própria antes de compartilhar suas ideias."
+  },
+  {
+    "id": 4,
+    "a": "Conversar com pessoas desconhecidas exige um esforço consciente de você.",
+    "b": "Você consegue conversar e se divertir com facilidade com pessoas que acabou de conhecer."
+  },
+  {
+    "id": 5,
+    "a": "Você prefere atividades animadas em grupo a conversas a dois.",
+    "b": "Você prefere conversas profundas a dois a atividades em grupo."
+  },
+  {
+    "id": 6,
+    "a": "Você geralmente espera que outras pessoas entrem em contato, em vez de tomar a iniciativa de combinar algo.",
+    "b": "Você costuma puxar conversa ou convidar amigos para sair."
+  },
+  {
+    "id": 7,
+    "a": "Nas reuniões de equipe, você costuma estar entre as primeiras pessoas a falar.",
+    "b": "Nas reuniões de equipe, você geralmente escuta primeiro e depois decide se vai contribuir."
+  },
+  {
+    "id": 8,
+    "a": "Você trabalha com mais produtividade em ambientes silenciosos.",
+    "b": "Você trabalha com mais produtividade quando há muitas pessoas por perto."
+  },
+  {
+    "id": 9,
+    "a": "Depois de atividades sociais, você sente muita energia.",
+    "b": "Depois de atividades sociais, você sente que precisa descansar."
+  },
+  {
+    "id": 10,
+    "a": "Você prefere manter poucas amizades profundas.",
+    "b": "Você tende a ter vários círculos sociais diferentes."
+  },
+  {
+    "id": 11,
+    "a": "Você geralmente tem disposição para compartilhar sua vida pessoal, mesmo com pessoas que não conhece bem.",
+    "b": "Você tende a compartilhar sua vida privada apenas com pessoas próximas."
+  },
+  {
+    "id": 12,
+    "a": "Barulho e interrupções distraem você com facilidade.",
+    "b": "Você geralmente consegue manter o foco em ambientes barulhentos."
+  },
+  {
+    "id": 13,
+    "a": "Você gosta de falar ou fazer apresentações diante de muitas pessoas.",
+    "b": "Falar diante de muitas pessoas causa nervosismo ou desconforto em você."
+  },
+  {
+    "id": 14,
+    "a": "Você geralmente se descreveria como uma pessoa introvertida.",
+    "b": "Você geralmente se descreveria como uma pessoa extrovertida."
+  },
+  {
+    "id": 15,
+    "a": "Passar tempo com amigos aumenta sua motivação.",
+    "b": "Depois de passar tempo com amigos, você precisa ficar sem companhia para recarregar as energias."
+  },
+  {
+    "id": 16,
+    "a": "Você prefere encontros planejados com poucas pessoas.",
+    "b": "Você gosta de encontros espontâneos, combinados na hora."
+  },
+  {
+    "id": 17,
+    "a": "Você tende a sentir tédio quando trabalha sem companhia em uma sala silenciosa.",
+    "b": "Você sente mais concentração quando trabalha sem companhia em uma sala silenciosa."
+  },
+  {
+    "id": 18,
+    "a": "Você prefere trocar mensagens a fazer ligações.",
+    "b": "Para você, conversar por telefone é mais natural do que trocar mensagens."
+  },
+  {
+    "id": 19,
+    "a": "Depois de um período sem interação social, você sente inquietação.",
+    "b": "Você não sente inquietação mesmo depois de um longo período sem socializar."
+  },
+  {
+    "id": 20,
+    "a": "Você prefere trabalhar em um lugar silencioso, como uma biblioteca.",
+    "b": "Você gosta de trabalhar em uma cafeteria barulhenta."
+  },
+  {
+    "id": 21,
+    "a": "Você geralmente se sente muito à vontade em situações sociais.",
+    "b": "Em situações sociais pouco familiares, você geralmente precisa de tempo para se soltar."
+  },
+  {
+    "id": 22,
+    "a": "Em uma equipe, você prefere se concentrar nas suas próprias tarefas.",
+    "b": "Você gosta de assumir um papel de coordenação em equipes."
+  },
+  {
+    "id": 23,
+    "a": "Interações sociais não planejadas são agradáveis e satisfatórias para você.",
+    "b": "Compromissos sociais inesperados às vezes causam estresse em você."
+  },
+  {
+    "id": 24,
+    "a": "Você gosta de explorar conceitos abstratos e possibilidades.",
+    "b": "Você gosta de lidar com questões concretas e práticas."
+  },
+  {
+    "id": 25,
+    "a": "Você se baseia em dados e fatos específicos para tomar decisões.",
+    "b": "Você confia mais na sua intuição do que em evidências concretas."
+  },
+  {
+    "id": 26,
+    "a": "Você prefere pensar nas possibilidades futuras a pensar no que já aconteceu.",
+    "b": "Você se concentra mais no que aconteceu do que nas possibilidades futuras."
+  },
+  {
+    "id": 27,
+    "a": "Você tende a compreender primeiro os detalhes específicos e depois formar uma visão geral.",
+    "b": "Você gosta de começar pela visão geral antes de se concentrar nos detalhes."
+  },
+  {
+    "id": 28,
+    "a": "Você prefere tarefas abertas que exigem criatividade.",
+    "b": "Você prefere tarefas com etapas fixas e resultados previsíveis."
+  },
+  {
+    "id": 29,
+    "a": "Você prefere uma linguagem direta e clara.",
+    "b": "Metáforas e linguagem simbólica são naturais para você."
+  },
+  {
+    "id": 30,
+    "a": "Ao aprender uma nova habilidade, você prefere descobrir por conta própria e encontrar maneiras melhores de fazer.",
+    "b": "Ao aprender uma nova habilidade, você tende a seguir as instruções à risca."
+  },
+  {
+    "id": 31,
+    "a": "Você tende a se concentrar no que realmente está acontecendo no presente.",
+    "b": "Você costuma se perder imaginando ou sonhando com o futuro."
+  },
+  {
+    "id": 32,
+    "a": "Nas discussões, você prefere explorar teorias e princípios.",
+    "b": "Nas discussões, você prefere falar sobre exemplos concretos."
+  },
+  {
+    "id": 33,
+    "a": "Você confia em soluções tradicionais e comprovadas.",
+    "b": "Você gosta de experimentar soluções novas e fora do convencional."
+  },
+  {
+    "id": 34,
+    "a": "Você tende a deixar passar detalhes e a se concentrar na direção geral.",
+    "b": "Você presta muita atenção aos detalhes e raramente deixa passar pequenos erros."
+  },
+  {
+    "id": 35,
+    "a": "Você tem um jeito mais prático, e suas ideias geralmente têm uma base concreta na realidade.",
+    "b": "Você tem uma imaginação vívida e frequentemente tem ideias novas."
+  },
+  {
+    "id": 36,
+    "a": "Você não se incomoda com tarefas de resultados incertos que exigem exploração de longo prazo.",
+    "b": "Você prefere tarefas com resultados imediatos e claros."
+  },
+  {
+    "id": 37,
+    "a": "Ao ler, você costuma reparar nos detalhes específicos e na precisão.",
+    "b": "Ao ler, você se concentra na narrativa geral e nos temas."
+  },
+  {
+    "id": 38,
+    "a": "Você considera que modelos teóricos e princípios podem orientar ações práticas.",
+    "b": "Você acredita que o bom senso e a experiência prática importam mais do que a teoria."
+  },
+  {
+    "id": 39,
+    "a": "Você prefere se concentrar nas questões práticas do dia a dia.",
+    "b": "Você gosta de pensar em questões filosóficas ou existenciais profundas."
+  },
+  {
+    "id": 40,
+    "a": "Ao tomar decisões, você se baseia mais na avaliação das possibilidades futuras.",
+    "b": "Ao tomar decisões, você se baseia mais nas experiências anteriores."
+  },
+  {
+    "id": 41,
+    "a": "Você prefere adquirir conhecimentos novos que possa aplicar diretamente.",
+    "b": "Você gosta de adquirir conhecimentos que ampliam seu modo de pensar, mesmo sem utilidade imediata."
+  },
+  {
+    "id": 42,
+    "a": "Você prioriza a inovação e as possibilidades no trabalho.",
+    "b": "Você prioriza a praticidade e a eficiência no trabalho."
+  },
+  {
+    "id": 43,
+    "a": "Ao explicar algo, você prefere apresentar os fatos diretamente.",
+    "b": "Ao explicar algo, você prefere usar analogias e associações."
+  },
+  {
+    "id": 44,
+    "a": "Você gosta de ter horários variados e mudanças a cada dia.",
+    "b": "Você prefere ter uma rotina diária regular."
+  },
+  {
+    "id": 45,
+    "a": "Ao resolver problemas, você tende a se basear em informações concretas e observáveis.",
+    "b": "Ao resolver problemas, você tende a fazer inferências a partir de padrões conhecidos."
+  },
+  {
+    "id": 46,
+    "a": "Você se interessa mais pelo significado simbólico ou profundo por trás das coisas.",
+    "b": "Você se interessa pelo significado literal das coisas."
+  },
+  {
+    "id": 47,
+    "a": "Você gosta de melhorar e aperfeiçoar sistemas ou métodos existentes.",
+    "b": "Você prefere criar abordagens ou sistemas totalmente novos do zero."
+  },
+  {
+    "id": 48,
+    "a": "Ao tomar decisões, você prioriza o impacto nas pessoas.",
+    "b": "Ao tomar decisões, você prioriza a lógica e os fatos objetivos."
+  },
+  {
+    "id": 49,
+    "a": "Quando uma pessoa amiga desabafa com você, você prefere ajudá-la a encontrar uma solução.",
+    "b": "Quando uma pessoa amiga desabafa com você, você prefere primeiro compreender os sentimentos dela."
+  },
+  {
+    "id": 50,
+    "a": "As emoções de outras pessoas afetam você com facilidade.",
+    "b": "Você geralmente consegue manter objetividade e independência emocional."
+  },
+  {
+    "id": 51,
+    "a": "Você considera que a eficiência no trabalho importa mais do que manter a harmonia.",
+    "b": "Você considera que manter a harmonia no trabalho importa mais do que a eficiência."
+  },
+  {
+    "id": 52,
+    "a": "Você prefere trabalhos que envolvem ajudar ou apoiar outras pessoas.",
+    "b": "Você prefere trabalhos que envolvem analisar e otimizar sistemas."
+  },
+  {
+    "id": 53,
+    "a": "Mesmo que a verdade seja desconfortável, você considera que ela deve ser dita diretamente.",
+    "b": "Você considera que deve levar em conta o impacto emocional nas outras pessoas antes de dizer verdades desconfortáveis."
+  },
+  {
+    "id": 54,
+    "a": "Suas decisões são guiadas principalmente por valores pessoais.",
+    "b": "Suas decisões são guiadas principalmente por análise racional."
+  },
+  {
+    "id": 55,
+    "a": "Você consegue fazer críticas objetivas com relativa facilidade, sem se preocupar muito com o impacto emocional.",
+    "b": "Você tem dificuldade para criticar colegas porque não quer magoá-los."
+  },
+  {
+    "id": 56,
+    "a": "Nas discussões, você também presta atenção ao estado emocional da outra pessoa.",
+    "b": "Nas discussões, você se concentra na coerência lógica dos argumentos."
+  },
+  {
+    "id": 57,
+    "a": "Quando surge um conflito em uma equipe, você tende a se concentrar nos fatos e na lógica.",
+    "b": "Quando surge um conflito em uma equipe, você tende a se concentrar nos sentimentos e nas necessidades de todos."
+  },
+  {
+    "id": 58,
+    "a": "Você considera que ser uma pessoa querida importa mais do que ter razão.",
+    "b": "Você considera que ter razão importa mais do que ser uma pessoa querida."
+  },
+  {
+    "id": 59,
+    "a": "Você considera que dar um retorno honesto é mais importante do que fazer a outra pessoa se sentir confortável.",
+    "b": "Você toma muito cuidado ao criticar outras pessoas, por receio de deixá-las desconfortáveis."
+  },
+  {
+    "id": 60,
+    "a": "Você geralmente tem posições pessoais firmes sobre questões éticas.",
+    "b": "Você tem opiniões relativamente neutras e baseadas no contexto sobre questões morais."
+  },
+  {
+    "id": 61,
+    "a": "Resolver problemas complexos ou concluir tarefas desafiadoras dá a você uma sensação de realização.",
+    "b": "Ajudar outras pessoas a alcançar seus objetivos dá a você uma sensação de realização."
+  },
+  {
+    "id": 62,
+    "a": "Você acredita na empatia e tem disposição para flexibilizar regras em circunstâncias especiais.",
+    "b": "Você acredita na justiça — as regras devem ser aplicadas mesmo que prejudiquem alguém."
+  },
+  {
+    "id": 63,
+    "a": "Para você, é mais natural demonstrar carinho por meio de ações do que de palavras.",
+    "b": "Para você, é natural demonstrar carinho com palavras afetuosas."
+  },
+  {
+    "id": 64,
+    "a": "Ao tomar decisões, você escuta sua voz interior para garantir que elas estejam alinhadas com seus valores.",
+    "b": "Ao tomar decisões, você pondera repetidamente os prós e os contras para garantir que elas façam sentido logicamente."
+  },
+  {
+    "id": 65,
+    "a": "Você acredita que emoções genuínas devem ser expressas em momentos apropriados, e não demonstradas livremente.",
+    "b": "Você acredita que as emoções fluem naturalmente e não precisam ser controladas de propósito."
+  },
+  {
+    "id": 66,
+    "a": "Em uma equipe, você prefere assumir um papel de coordenação e apoio.",
+    "b": "Em uma equipe, você prefere assumir um papel analítico e estratégico."
+  },
+  {
+    "id": 67,
+    "a": "Mesmo que uma decisão desagrade à maioria, você a apoia se ela estiver certa.",
+    "b": "Você procura soluções que satisfaçam a maioria, mesmo que não sejam as melhores possíveis."
+  },
+  {
+    "id": 68,
+    "a": "Você tende a compreender o comportamento das outras pessoas por uma perspectiva emocional.",
+    "b": "Você tende a explicar o comportamento das outras pessoas pela lógica, em vez das emoções."
+  },
+  {
+    "id": 69,
+    "a": "Ao tomar decisões difíceis, você se apoia mais em uma análise sistemática.",
+    "b": "Ao tomar decisões difíceis, você se apoia mais na intuição emocional."
+  },
+  {
+    "id": 70,
+    "a": "Você considera razoável expressar uma posição emocional em discussões.",
+    "b": "Você considera adequado manter uma posição objetiva em discussões."
+  },
+  {
+    "id": 71,
+    "a": "Você gosta de planejar com antecedência e não gosta de tomar decisões na última hora.",
+    "b": "Você gosta de manter a flexibilidade e se adaptar às situações conforme elas surgem."
+  },
+  {
+    "id": 72,
+    "a": "Você prefere descobrir como fazer ao longo do caminho e ajustar o plano durante o processo.",
+    "b": "Você prefere ter todos os detalhes resolvidos antes de agir."
+  },
+  {
+    "id": 73,
+    "a": "Sua mesa ou seu espaço de trabalho geralmente está arrumado e organizado.",
+    "b": "Sua mesa ou seu espaço de trabalho parece bagunçado para outras pessoas, mas você sabe onde tudo está."
+  },
+  {
+    "id": 74,
+    "a": "Você às vezes procrastina, mas costuma trabalhar com eficiência pouco antes do prazo.",
+    "b": "Você gosta de concluir as tarefas o quanto antes e não deixá-las se acumular."
+  },
+  {
+    "id": 75,
+    "a": "Mudanças repentinas causam desconforto em você, e você precisa de tempo para se adaptar.",
+    "b": "Você se adapta com facilidade a mudanças repentinas e pode até achá-las empolgantes."
+  },
+  {
+    "id": 76,
+    "a": "Você tende a trabalhar em várias tarefas ao mesmo tempo.",
+    "b": "Você tende a se concentrar em concluir uma coisa de cada vez."
+  },
+  {
+    "id": 77,
+    "a": "Você prefere que as coisas tenham conclusões claras e um encerramento.",
+    "b": "Você gosta de histórias ou projetos em aberto que deixam espaço para a imaginação."
+  },
+  {
+    "id": 78,
+    "a": "Você costuma terminar as tarefas no último momento.",
+    "b": "Você geralmente conclui as tarefas no prazo ou até antes do previsto."
+  },
+  {
+    "id": 79,
+    "a": "Você gosta de anotar suas tarefas em uma agenda ou lista.",
+    "b": "Você se apoia mais na memória e na intuição e não gosta de fazer listas."
+  },
+  {
+    "id": 80,
+    "a": "Depois de tomar uma decisão, você às vezes quer continuar explorando outras possibilidades.",
+    "b": "Depois de tomar uma decisão, você raramente se arrepende ou quer reconsiderá-la."
+  },
+  {
+    "id": 81,
+    "a": "Você gosta de montar roteiros detalhados antes de viajar.",
+    "b": "Você prefere viagens espontâneas, sem planos fixos."
+  },
+  {
+    "id": 82,
+    "a": "Você tende a adiar decisões o máximo possível para manter as opções em aberto.",
+    "b": "Você tende a tomar decisões cedo para poder começar a avançar."
+  },
+  {
+    "id": 83,
+    "a": "Tarefas inacabadas deixam você com uma sensação de inquietação.",
+    "b": "Tarefas inacabadas não afetam muito seu humor."
+  },
+  {
+    "id": 84,
+    "a": "Você gosta de novidades e mudanças no dia a dia.",
+    "b": "Você gosta de uma rotina diária previsível e regular."
+  },
+  {
+    "id": 85,
+    "a": "Você vê os prazos como uma ferramenta que ajuda a manter o foco.",
+    "b": "Você vê os prazos como uma limitação estressante."
+  },
+  {
+    "id": 86,
+    "a": "Nos projetos, você gosta mais da fase de execução e ajustes.",
+    "b": "Nos projetos, você gosta mais da fase de planejamento e elaboração."
+  },
+  {
+    "id": 87,
+    "a": "Ao lidar com tarefas, você prefere primeiro decidir uma direção e depois executar.",
+    "b": "Ao lidar com tarefas, você prefere explorar primeiro e só depois decidir uma direção."
+  },
+  {
+    "id": 88,
+    "a": "Você considera que a melhor preparação é começar imediatamente e aprender ao longo do caminho.",
+    "b": "Você considera necessária uma preparação cuidadosa antes de começar algo."
+  },
+  {
+    "id": 89,
+    "a": "Você gosta de ter uma estrutura clara e previsibilidade no trabalho.",
+    "b": "Você gosta de ter certo grau de improvisação e flexibilidade no trabalho."
+  },
+  {
+    "id": 90,
+    "a": "Você consegue aceitar mudanças de planos sem sentir muita culpa.",
+    "b": "Você sente culpa quando não leva seus planos adiante."
+  },
+  {
+    "id": 91,
+    "a": "Você prefere avançar um projeto até certa etapa antes de começar o próximo.",
+    "b": "Você gosta de alternar entre vários projetos em andamento."
+  },
+  {
+    "id": 92,
+    "a": "Você considera que regras demais limitam a criatividade e a flexibilidade.",
+    "b": "Você considera que regras e procedimentos claros fazem o trabalho fluir melhor."
+  },
+  {
+    "id": 93,
+    "a": "No tempo livre, você tende a planejar suas atividades de lazer com antecedência.",
+    "b": "No tempo livre, você tende a decidir espontaneamente o que fazer."
+  }
+]

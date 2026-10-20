@@ -1,0 +1,139 @@
+{
+  "app": {
+    "title": "MBTI Lab",
+    "subtitle": "Professioneller Persönlichkeitstest · Entdecken Sie Ihr wahres Selbst",
+    "switchToEnglish": "Zu Englisch wechseln",
+    "switchToChinese": "Zu Chinesisch wechseln",
+    "language": "Sprache",
+    "languageLoading": "Sprache wird geladen…",
+    "languageError": "Diese Sprache konnte nicht geladen werden. Ihre aktuelle Sprache und Ihre Antworten bleiben erhalten. Versuchen Sie es erneut.",
+    "languageRetry": "Erneut versuchen",
+    "languageUnsaved": "Diese Sprache ist aktiv, aber Ihr Browser konnte die Einstellung nicht speichern."
+  },
+  "home": {
+    "startShort": "Kurzversion · 60 Fragen",
+    "startFull": "Vollversion · 93 Fragen",
+    "shortDesc": "~10–15 Minuten",
+    "fullDesc": "~20–25 Minuten",
+    "viewLastResult": "Letztes Ergebnis ansehen →",
+    "lastResultLabel": "Letztes Ergebnis:",
+    "browseTypes": "📖 Die 16 Typen entdecken",
+    "resume": "Fortsetzen · Frage {current} / {total}",
+    "restartConfirm": "Neu beginnen und Ihre unvollständige Auswertung ersetzen?",
+    "completedAt": "Abgeschlossen am",
+    "unknownDate": "Abschlusszeit unbekannt",
+    "resultSaved": "In diesem Browser gespeichert"
+  },
+  "test": {
+    "progress": "Frage {current} / {total}",
+    "prev": "← Zurück",
+    "or": "oder",
+    "invalidDraft": "Ihr gespeicherter Fortschritt konnte nicht wiederhergestellt werden. Beginnen Sie einen neuen Test.",
+    "storageWarning": "Der Fortschritt kann in diesem Browser nicht gespeichert werden. Beim Neuladen oder Schließen der Seite kann er verloren gehen.",
+    "finishError": "Ihr Ergebnis konnte nicht erstellt werden. Ihre Antworten bleiben erhalten; versuchen Sie es erneut.",
+    "progressLabel": "Fragenfortschritt",
+    "exit": "Zur Startseite",
+    "saved": "Ihr Fortschritt wurde in diesem Browser gespeichert. Sie können zur Startseite zurückkehren und später fortfahren."
+  },
+  "types": {
+    "backHome": "Startseite",
+    "title": "16 Persönlichkeitstypen",
+    "backToList": "Alle Typen",
+    "search": "Persönlichkeitstyp suchen",
+    "searchHint": "Typcode oder Persönlichkeitsname",
+    "noMatches": "Keine passenden Typen gefunden.",
+    "invalidType": "Dieser Link zu einem Typ ist ungültig. Wählen Sie einen Typ aus der Liste.",
+    "groups": {
+      "Analysts": "Analytiker",
+      "Diplomats": "Diplomaten",
+      "Sentinels": "Wächter",
+      "Explorers": "Entdecker"
+    }
+  },
+  "result": {
+    "yourType": "Ihr Persönlichkeitstyp",
+    "rarity": "Weltweite Seltenheit",
+    "description": "Persönlichkeitsprofil",
+    "strengths": "Zentrale Stärken",
+    "careers": "Berufliche Wege",
+    "famous": "Bekannte Persönlichkeiten mit Ihrem Typ",
+    "bestMatch": "Beste Übereinstimmung",
+    "cognitiveStack": "Kognitive Funktionen",
+    "shareBtn": "Teilen",
+    "retake": "Test wiederholen",
+    "notFound": "Kein Ergebnis gefunden.",
+    "backHome": "← Zur Startseite",
+    "dimLabel": {
+      "EI": [
+        "Extraversion E",
+        "Introversion I"
+      ],
+      "NS": [
+        "Intuition N",
+        "Sensorik S"
+      ],
+      "FT": [
+        "Fühlen F",
+        "Denken T"
+      ],
+      "JP": [
+        "Urteilen J",
+        "Wahrnehmen P"
+      ]
+    },
+    "unsaved": "Dieses Ergebnis ist jetzt verfügbar, konnte aber in diesem Browser nicht gespeichert werden.",
+    "radarNote": "Das Netzdiagramm zeigt die Anteile der Antworten für E, N, F und J, keine Fähigkeiten oder Genauigkeit."
+  },
+  "share": {
+    "shareResult": "Mein Ergebnis teilen",
+    "shareApp": "Freunden empfehlen",
+    "shareToX": "Auf X teilen",
+    "saveImage": "Bild speichern",
+    "copyLink": "Link kopieren",
+    "copied": "Kopiert ✓",
+    "xTextResult": "Mein MBTI-Typ ist {type}! Finden Sie Ihren heraus 👉 {url}",
+    "xTextApp": "Entdecken Sie diesen interessanten MBTI-Persönlichkeitstest! 👉 {url}",
+    "scanLabel": "Scannen, um den Test zu machen",
+    "retry": "Erneut versuchen",
+    "generating": "Bild wird vorbereitet…",
+    "imageError": "Das Bild konnte nicht erstellt werden. Versuchen Sie es erneut.",
+    "download": "Bild herunterladen",
+    "imageHint": "Sehen Sie sich das Bild an und laden Sie es herunter oder halten Sie es zum Speichern gedrückt.",
+    "copyFallback": "Kopieren fehlgeschlagen. Markieren und kopieren Sie diesen Link manuell.",
+    "close": "Schließen",
+    "copyResult": "Ergebnistext kopieren",
+    "captionPreview": "Vorschau des Textes zum Teilen",
+    "shareType": "Diesen Typ teilen",
+    "xTextType": "Entdecken Sie den Persönlichkeitstyp {type} 👉 {url}"
+  },
+  "report": {
+    "overview": "Drei Denkanstöße",
+    "contents": "Inhalt",
+    "dimensions": "Ihre Antwortanteile",
+    "showChart": "Netzdiagramm anzeigen",
+    "percentNote": "Die Prozentwerte beschreiben diese Antworten, keine Fähigkeiten, Genauigkeit oder Prozentränge in der Bevölkerung.",
+    "closeNote": "45–55 % ist eine Darstellungskonvention für ähnliche Anteile und kein statistisches Konfidenzintervall. Sie verändert weder die Bewertung noch die Typauswahl.",
+    "editorialNote": "Dies sind typbezogene Beispiele und Denkanstöße, keine aus Ihren Antworten ermittelten persönlichen Fakten oder Vorhersagen zu Beziehungen, Beruf oder Fähigkeiten. Behalten Sie, was für Sie stimmig ist.",
+    "cardLabel": "Selbstreflexion",
+    "cardNote": "Nutzen Sie diese Anregungen, um über konkrete Situationen nachzudenken, auch jenseits einer Typbezeichnung.",
+    "sections": {
+      "core": "Grundperspektive",
+      "daily": "Alltag",
+      "friendship": "Freundschaft",
+      "close": "Enge Beziehungen",
+      "work": "Lernen und Arbeiten",
+      "blindspots": "Stärken und blinde Flecken",
+      "growth": "Anregungen zum Ausprobieren"
+    },
+    "actions": "Aktionen zum Bericht",
+    "neighbors": "Benachbarte Typen erkunden",
+    "neighborNote": "Jeder folgende Typ unterscheidet sich um einen Buchstaben. Nutzen Sie die Beschreibungen zum Vergleich; sie sind weder die nächsthöchsten Ergebnisse noch Vorhersagen zur Passung oder eine Neueinstufung.",
+    "neighborDimensions": {
+      "EI": "Ausdruck und Ruhe: Vergleichen Sie das Nachdenken im Austausch mit der Möglichkeit, zuerst in Ruhe zu überlegen.",
+      "NS": "Informationen verstehen: Vergleichen Sie den Blick auf Möglichkeiten mit dem Blick auf konkrete Erfahrungen.",
+      "FT": "Meinungsverschiedenheiten: Vergleichen Sie die Auswirkungen auf Menschen mit der Begründung eines Vorgehens; beides kann wichtig sein.",
+      "JP": "Pläne machen: Vergleichen Sie klare Absprachen mit Spielraum für Anpassungen."
+    },
+    "closeLabel": "Beide Seiten liegen nah beieinander"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "INTJ": {
+    "nickname": "Arquiteto",
+    "strengths": [
+      "Visão estratégica",
+      "Autodisciplina",
+      "Análise perspicaz",
+      "Orientação para objetivos",
+      "Pensamento independente"
+    ]
+  },
+  "INTP": {
+    "nickname": "Lógico",
+    "strengths": [
+      "Rigor lógico",
+      "Pensamento criativo",
+      "Análise objetiva",
+      "Automotivação",
+      "Aprendizado aprofundado"
+    ]
+  },
+  "ENTJ": {
+    "nickname": "Comandante",
+    "strengths": [
+      "Liderança",
+      "Capacidade de decisão",
+      "Planejamento estratégico",
+      "Execução",
+      "Confiança"
+    ]
+  },
+  "ENTP": {
+    "nickname": "Debatedor",
+    "strengths": [
+      "Inovação",
+      "Raciocínio rápido",
+      "Boa expressão de ideias",
+      "Postura questionadora",
+      "Múltiplas perspectivas"
+    ]
+  },
+  "INFJ": {
+    "nickname": "Advogado",
+    "strengths": [
+      "Percepção profunda",
+      "Empatia",
+      "Visão",
+      "Convicção",
+      "Criatividade"
+    ]
+  },
+  "INFP": {
+    "nickname": "Mediador",
+    "strengths": [
+      "Sensibilidade profunda",
+      "Orientação por valores",
+      "Criatividade",
+      "Empatia",
+      "Adaptabilidade"
+    ]
+  },
+  "ENFJ": {
+    "nickname": "Protagonista",
+    "strengths": [
+      "Carisma",
+      "Coordenação",
+      "Empatia",
+      "Influência positiva",
+      "Comunicação"
+    ]
+  },
+  "ENFP": {
+    "nickname": "Ativista",
+    "strengths": [
+      "Entusiasmo contagiante",
+      "Criatividade sem limites",
+      "Carisma social",
+      "Curiosidade",
+      "Incentivo às outras pessoas"
+    ]
+  },
+  "ISTJ": {
+    "nickname": "Logístico",
+    "strengths": [
+      "Confiabilidade",
+      "Atenção aos detalhes",
+      "Forte capacidade de execução",
+      "Integridade",
+      "Organização"
+    ]
+  },
+  "ISFJ": {
+    "nickname": "Defensor",
+    "strengths": [
+      "Atenção às necessidades",
+      "Boa memória",
+      "Lealdade",
+      "Habilidades práticas",
+      "Apoio às outras pessoas"
+    ]
+  },
+  "ESTJ": {
+    "nickname": "Executivo",
+    "strengths": [
+      "Organização",
+      "Execução decidida",
+      "Atenção às regras",
+      "Forte senso de responsabilidade",
+      "Liderança"
+    ]
+  },
+  "ESFJ": {
+    "nickname": "Cônsul",
+    "strengths": [
+      "Cuidado",
+      "União da equipe",
+      "Dedicação",
+      "Habilidades sociais",
+      "Organização"
+    ]
+  },
+  "ISTP": {
+    "nickname": "Virtuoso",
+    "strengths": [
+      "Habilidade prática",
+      "Avaliação serena",
+      "Adaptabilidade",
+      "Domínio técnico",
+      "Resolução independente de problemas"
+    ]
+  },
+  "ISFP": {
+    "nickname": "Aventureiro",
+    "strengths": [
+      "Sensibilidade estética",
+      "Autenticidade",
+      "Adaptabilidade",
+      "Talento artístico",
+      "Aceitação das outras pessoas"
+    ]
+  },
+  "ESTP": {
+    "nickname": "Empreendedor",
+    "strengths": [
+      "Orientação para a ação",
+      "Observação perspicaz",
+      "Carisma",
+      "Capacidade de lidar com crises",
+      "Realismo"
+    ]
+  },
+  "ESFP": {
+    "nickname": "Animador",
+    "strengths": [
+      "Energia contagiante",
+      "Capacidade prática",
+      "Senso estético",
+      "Acolhimento",
+      "Improvisação"
+    ]
+  }
+}

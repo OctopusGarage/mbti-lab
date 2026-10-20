@@ -1,12 +1,12 @@
 # MBTI Lab
 
-A bilingual personality explorer with resumable assessments, detailed reports, and shareable cards.
+A multilingual personality explorer with resumable assessments, detailed reports, and shareable cards.
 
 [![CI](https://github.com/OctopusGarage/mbti-lab/actions/workflows/checks.yml/badge.svg)](https://github.com/OctopusGarage/mbti-lab/actions/workflows/checks.yml) [![Deployment](https://github.com/OctopusGarage/mbti-lab/actions/workflows/deploy.yml/badge.svg)](https://github.com/OctopusGarage/mbti-lab/actions/workflows/deploy.yml)
 
 [**Try the live demo →**](https://octopusgarage.github.io/mbti-lab/) · [Explore the 16 types](https://octopusgarage.github.io/mbti-lab/#/types) · [Development](#development)
 
-Choose a 60- or 93-question assessment, explore your result in English or Chinese, and export a card to share. The experience runs in your browser, with no account required.
+Choose a 60- or 93-question assessment, explore your result in one of eight languages, and export a card to share. The experience runs in your browser, with no account required.
 
 ## Live preview
 
@@ -33,10 +33,10 @@ The original 1080 × 1080 PNG includes a QR code back to MBTI Lab.
 
 - **Pick your pace.** Choose 60 or 93 questions, return to unfinished answers, or revisit your latest result.
 - **Read beyond the type code.** Each report includes three highlights, seven expandable chapters, and three practical exercises.
-- **Explore all 16 types.** Search English or Chinese names, open direct type links, and compare types that differ by one letter.
+- **Explore all 16 types.** Search type codes or localized names, open direct type links, and compare types that differ by one letter.
 - **See your answer patterns.** View dimension proportions and expand an optional radar chart for another perspective.
 - **Share selectively.** Preview a caption, copy a public type link, or export a PNG. Shared links and captions exclude answers and personal proportions.
-- **Use either language.** Switch between English and Chinese throughout the assessment and report. Reading controls support keyboard navigation and mobile layouts.
+- **Choose your language.** Use English, 简体中文, Español, Français, Deutsch, Português, 日本語, or 한국어 throughout the assessment, reports, and sharing. Your choice is remembered, and translations load as needed. Reading controls support keyboard navigation and mobile layouts.
 
 ## Data and interpretation
 
@@ -69,6 +69,7 @@ npm run preview
 ```sh
 npm test -- --run
 npm run eval:check
+npm run eval:questions:check
 npm run build
 npm run test:e2e:install
 npm run test:e2e
@@ -77,7 +78,7 @@ npm audit --audit-level=high
 
 Pull requests run unit tests, recorded AI-review validation, a dependency audit, a production build, and E2E tests in Chromium, Firefox, and WebKit. Pages deployment waits for the same verification gates.
 
-AI evaluation reviews all 16 reports in both languages. `eval:check` validates the recorded judgment and its source hashes; `eval:ai` requests fresh model reviews through an authenticated local Codex CLI. These reviews assess editorial quality, not the scientific validity of personality typing.
+AI evaluation reviews all 16 reports in all eight languages. `eval:check` validates the recorded judgment and its source hashes; `eval:ai` requests fresh model reviews through an authenticated local Codex CLI. `eval:questions` also reviews all 558 added question pairs for meaning, qualifiers, context, and unchanged A/B polarity; `eval:questions:check` validates its recorded evidence. These reviews assess editorial and translation quality, not the scientific validity of personality typing.
 
 See [testing and AI evaluation](docs/testing.md) for results, coverage, model-review requirements, and physical-device checks.
 

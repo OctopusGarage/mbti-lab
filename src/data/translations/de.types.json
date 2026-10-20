@@ -1,0 +1,162 @@
+{
+  "INTJ": {
+    "nickname": "Der Architekt",
+    "strengths": [
+      "Strategischer Weitblick",
+      "Selbstdisziplin",
+      "Scharfsinnige Analyse",
+      "Zielorientierung",
+      "Eigenständiges Denken"
+    ]
+  },
+  "INTP": {
+    "nickname": "Der Logiker",
+    "strengths": [
+      "Logische Genauigkeit",
+      "Kreatives Denken",
+      "Objektive Analyse",
+      "Eigenmotivation",
+      "Vertieftes Lernen"
+    ]
+  },
+  "ENTJ": {
+    "nickname": "Der Kommandeur",
+    "strengths": [
+      "Führungsstärke",
+      "Entschlossenheit",
+      "Strategische Planung",
+      "Umsetzungsstärke",
+      "Selbstvertrauen"
+    ]
+  },
+  "ENTP": {
+    "nickname": "Der Debattierer",
+    "strengths": [
+      "Innovationskraft",
+      "Schnelles Denken",
+      "Ausdrucksstärke",
+      "Bereitschaft zum Hinterfragen",
+      "Vielfältige Perspektiven"
+    ]
+  },
+  "INFJ": {
+    "nickname": "Der Advokat",
+    "strengths": [
+      "Einsicht",
+      "Einfühlungsvermögen",
+      "Weitblick",
+      "Überzeugungskraft",
+      "Kreativität"
+    ]
+  },
+  "INFP": {
+    "nickname": "Der Mediator",
+    "strengths": [
+      "Tiefe Sensibilität",
+      "Werteorientierung",
+      "Kreativität",
+      "Einfühlungsvermögen",
+      "Anpassungsfähigkeit"
+    ]
+  },
+  "ENFJ": {
+    "nickname": "Der Protagonist",
+    "strengths": [
+      "Charisma",
+      "Koordination",
+      "Einfühlungsvermögen",
+      "Positiver Einfluss",
+      "Kommunikation"
+    ]
+  },
+  "ENFP": {
+    "nickname": "Der Aktivist",
+    "strengths": [
+      "Ansteckende Begeisterung",
+      "Grenzenlose Kreativität",
+      "Zwischenmenschlicher Charme",
+      "Neugier",
+      "Andere ermutigen"
+    ]
+  },
+  "ISTJ": {
+    "nickname": "Der Logistiker",
+    "strengths": [
+      "Zuverlässigkeit",
+      "Detailgenauigkeit",
+      "Hohe Umsetzungsstärke",
+      "Integrität",
+      "Organisation"
+    ]
+  },
+  "ISFJ": {
+    "nickname": "Der Verteidiger",
+    "strengths": [
+      "Aufmerksamkeit",
+      "Gutes Gedächtnis",
+      "Loyalität",
+      "Praktische Fähigkeiten",
+      "Unterstützung anderer"
+    ]
+  },
+  "ESTJ": {
+    "nickname": "Der Exekutive",
+    "strengths": [
+      "Organisation",
+      "Entschlossene Umsetzung",
+      "Regelbewusstsein",
+      "Hohes Verantwortungsbewusstsein",
+      "Führungsstärke"
+    ]
+  },
+  "ESFJ": {
+    "nickname": "Der Konsul",
+    "strengths": [
+      "Fürsorglichkeit",
+      "Teamzusammenhalt",
+      "Hingabe",
+      "Soziale Fähigkeiten",
+      "Organisation"
+    ]
+  },
+  "ISTP": {
+    "nickname": "Der Virtuose",
+    "strengths": [
+      "Handwerkliches Geschick",
+      "Besonnenes Urteilen",
+      "Anpassungsfähigkeit",
+      "Technisches Können",
+      "Eigenständige Problemlösung"
+    ]
+  },
+  "ISFP": {
+    "nickname": "Der Abenteurer",
+    "strengths": [
+      "Ästhetisches Feingefühl",
+      "Authentizität",
+      "Anpassungsfähigkeit",
+      "Künstlerisches Talent",
+      "Akzeptanz anderer"
+    ]
+  },
+  "ESTP": {
+    "nickname": "Der Unternehmer",
+    "strengths": [
+      "Handlungsorientierung",
+      "Scharfe Beobachtung",
+      "Charisma",
+      "Krisenbewältigung",
+      "Realismus"
+    ]
+  },
+  "ESFP": {
+    "nickname": "Der Unterhalter",
+    "strengths": [
+      "Ansteckende Energie",
+      "Praktisches Können",
+      "Ästhetischer Geschmack",
+      "Herzlichkeit",
+      "Improvisation"
+    ]
+  }
+}

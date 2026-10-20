@@ -3,7 +3,12 @@
     "title": "MBTI Lab",
     "subtitle": "专业人格测试 · 发现真实的自己",
     "switchToEnglish": "切换到英文",
-    "switchToChinese": "切换到中文"
+    "switchToChinese": "切换到中文",
+    "language": "语言",
+    "languageLoading": "正在加载语言…",
+    "languageError": "无法加载该语言。当前语言和答案均已保留，请重试。",
+    "languageRetry": "重试",
+    "languageUnsaved": "当前语言已生效，但浏览器无法保存语言偏好。"
   },
   "home": {
     "startShort": "精简版 · 60 题",
@@ -35,7 +40,7 @@
     "title": "16 种人格类型",
     "backToList": "返回列表",
     "search": "搜索人格类型",
-    "searchHint": "输入类型代码或中英昵称",
+    "searchHint": "输入类型代码或人格名称",
     "noMatches": "没有找到匹配的类型。",
     "invalidType": "此类型链接无效，请从列表中选择。",
     "groups": {

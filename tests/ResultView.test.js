@@ -1,4 +1,4 @@
-import { mount } from '@vue/test-utils'
+import { mount, flushPromises } from '@vue/test-utils'
 import { nextTick } from 'vue'
 import { createI18n } from 'vue-i18n'
 import { createRouter, createMemoryHistory } from 'vue-router'
@@ -75,13 +75,15 @@ describe('ResultView empty state', () => {
     expect(empty.text()).toContain('暂无测试结果。')
 
     // zh → en via the language control in the page header
-    await wrapper.find('.lang-toggle').trigger('click')
+    await wrapper.find('.lang-toggle').setValue('en')
+    await flushPromises()
     expect(empty.text()).toContain('No result found.')
     expect(empty.find('a').text()).toBe('← Back to home')
     expect(linkHref(wrapper)).toBe('/')
 
     // en → zh toggles back
-    await wrapper.find('.lang-toggle').trigger('click')
+    await wrapper.find('.lang-toggle').setValue('zh')
+    await flushPromises()
     expect(empty.text()).toContain('暂无测试结果。')
     expect(empty.find('a').text()).toBe('← 返回首页')
   })

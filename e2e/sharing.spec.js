@@ -34,6 +34,7 @@ test('share dialog traps focus, protects private scores, copies and falls back a
   expect(await page.locator('#app').evaluate(element => element.inert)).toBe(false)
   await expect(page.locator('.dock-share')).toBeFocused()
   await page.goto('./#/types?type=INFJ')
+  await expect(page.locator('.detail-back')).toBeVisible()
   await page.locator('.dock-share').focus()
   await page.locator('.dock-share').press('Enter')
   await expect(page.locator('[data-action="save-image"]')).toHaveCount(0)

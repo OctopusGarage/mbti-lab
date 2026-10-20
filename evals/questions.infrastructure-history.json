@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-20T07:02:34.487Z",
+  "events": [
+    {
+      "locale": "de",
+      "sourceHash": "29fe09f7b4ef3d91347fef1077d657f3939ccfe862d76127cfa59d8a95b25f2a",
+      "event": "CLI rejected before producing any review",
+      "evidence": "ERROR: Selected model is at capacity. Please try a different model.",
+      "resolution": "Re-run missing full-bank review; no verdict inferred."
+    },
+    {
+      "locale": "ja",
+      "sourceHash": "0641cf1206e8bd886f55a73cdf3c6fe46d4b2eb8a0c3e554ac1dfa39a7042ba3",
+      "event": "Last temporary response removed when a different worker failed, before external checkpoint capture",
+      "evidence": "ja: 93 pairs reviewed, 4 findings",
+      "limitations": "Only this aggregate count was retained. Individual IDs, option quotations and judgments were lost. This is not a recoverable complete semantic evaluation and supplies no passing verdict.",
+      "resolution": "Full93-pair actual recovery review required; subsequent runner persists each complete actual response immediately before any aggregate failure.",
+      "recovery": "A subsequent complete actual Japanese review was persisted with558-pair aggregate and found3 concrete issues at IDs10B,60A,65B; exact full evidence retained in questions.followup-findings.json. All3 are corrected before fresh changed-bank re-evaluation. The lost original4 cannot be mapped to specific IDs and are not represented as recovered.",
+      "finalOutcome": "All concrete recovered findings were corrected. A subsequent actual full 93-pair review of the changed Japanese bank returned no findings; its complete current-source response is retained in questions.judgment.json. Original lost four findings remain unmapped rather than reconstructed."
+    }
+  ]
+}

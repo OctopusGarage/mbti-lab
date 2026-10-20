@@ -8,7 +8,7 @@
           @click="$emit('answer', 'a')"
         >
           <span class="option-letter">A</span>
-          <span class="option-text">{{ question[locale].a }}</span>
+          <span class="option-text">{{ questionText.a }}</span>
         </button>
         <div class="divider">{{ $t('test.or') }}</div>
         <button
@@ -18,7 +18,7 @@
           @click="$emit('answer', 'b')"
         >
           <span class="option-letter">B</span>
-          <span class="option-text">{{ question[locale].b }}</span>
+          <span class="option-text">{{ questionText.b }}</span>
         </button>
       </div>
     </div>
@@ -26,8 +26,11 @@
 
 <script setup>
 import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
+import { getQuestionText } from '../data/localizedContent.js'
 const { locale } = useI18n()
-defineProps({ question: Object, selected: String, disabled: Boolean })
+const props = defineProps({ question: Object, selected: String, disabled: Boolean })
+const questionText = computed(() => getQuestionText(props.question, locale.value))
 defineEmits(['answer'])
 </script>
 

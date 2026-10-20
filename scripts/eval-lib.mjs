@@ -4,6 +4,8 @@ import { fileURLToPath } from 'node:url'
 import { resolve } from 'node:path'
 import { getReport } from '../src/utils/report.js'
 import { types } from '../src/data/types.js'
+import { LOCALES } from '../src/i18n/locales.js'
+import { registerLocaleData, getTypePresentation } from '../src/data/localizedContent.js'
 
 export const ROOT = fileURLToPath(new URL('../', import.meta.url))
 export const ARTIFACT = 'evals/latest.judgment.json'
@@ -14,17 +16,21 @@ export function loadSuite() {
   const rubric = JSON.parse(read('evals/rubric.json'))
   const schema = JSON.parse(read('evals/judgment.schema.json'))
   const manifest = JSON.parse(read('evals/cases.json'))
-  const expected = Object.keys(types).flatMap((type) => ['zh', 'en'].map((locale) => `${type}.${locale}`))
-  if (expected.length !== 32 || manifest.cases.length !== 32 || new Set(manifest.cases.map((c) => c.id)).size !== 32 ||
+  const codes = LOCALES.map(({ code }) => code)
+  const expected = Object.keys(types).flatMap((type) => codes.map((locale) => `${type}.${locale}`))
+  if (expected.length !== 128 || manifest.cases.length !== expected.length || new Set(manifest.cases.map((c) => c.id)).size !== expected.length ||
     manifest.cases.some((c) => !expected.includes(c.id) || c.id !== `${c.type}.${c.locale}`)) {
-    throw new Error('Eval manifest must cover exactly all 16 types in both languages')
+    throw new Error('Eval manifest must cover exactly all 16 types in all eight supported languages')
   }
-  const locales = Object.fromEntries(['zh', 'en'].map((locale) => [locale, JSON.parse(read(`src/locales/${locale}.json`))]))
+  const locales = Object.fromEntries(codes.map((locale) => [locale, JSON.parse(read(`src/locales/${locale}.json`))]))
+  for (const locale of codes.filter(code => !['zh', 'en'].includes(code))) {
+    for (const kind of ['types', 'reports']) registerLocaleData(locale, kind, JSON.parse(read(`src/data/translations/${locale}.${kind}.json`)))
+  }
   const cases = manifest.cases.map(({ id, type, locale }) => {
     const payload = {
       id, type, locale,
       report: getReport(type, locale),
-      strengthTags: types[type].strengths[locale].slice(0, 4),
+      strengthTags: getTypePresentation(type, locale).strengths.slice(0, 4),
       framing: Object.fromEntries(['editorialNote', 'cardLabel', 'cardNote', 'percentNote', 'closeNote', 'neighborNote'].map((key) => [key, locales[locale].report[key]])),
     }
     return { ...payload, reportHash: hash(JSON.stringify(payload)) }
@@ -88,8 +94,8 @@ export function validateEvaluation(artifact, suite = loadSuite()) {
       if (!judgment.evidence.some((e) => e.caseId === item.id)) errors.push(`${item.id}.${criterion}: own-case evidence missing`)
       if (criterion === 'bilingualFidelity' && !judgment.evidence.some((e) => {
         const peer = byId.get(e.caseId)
-        return peer && peer.type === item.type && peer.locale !== item.locale
-      })) errors.push(`${item.id}.${criterion}: counterpart in other language missing`)
+        return peer && peer.type === item.type && peer.locale === (item.locale === 'en' ? 'zh' : 'en')
+      })) errors.push(`${item.id}.${criterion}: English source counterpart missing (Chinese counterpart required for English cases)`)
       if (criterion === 'typeDifferentiation' && !judgment.evidence.some((e) => {
         const peer = byId.get(e.caseId)
         return peer && peer.type !== item.type && peer.locale === item.locale
@@ -106,18 +112,19 @@ export function validateEvaluation(artifact, suite = loadSuite()) {
   return { passed: errors.length === 0, errors, summary: { cases: seen.size, criterionScores: scores.length, minimumScore: Math.min(...scores), meanScore: Number((scores.reduce((a, b) => a + b, 0) / scores.length).toFixed(2)) } }
 }
 
-export function validateJudgeResponse(response, cases) {
+export function validateJudgeResponse(response, cases, references = []) {
   const errors = []
   checkSchema(response, JSON.parse(read('evals/response.schema.json')), 'batch', errors)
   if (errors.length) return errors
   const expected = new Set(cases.map((item) => item.id))
+  const supplied = new Set([...cases, ...references].map(item => item.id))
   const seen = new Set()
   for (const result of response.results) {
     if (!expected.has(result.id)) errors.push(`Batch coverage: unexpected case ${result.id}`)
     if (seen.has(result.id)) errors.push(`Batch coverage: duplicate case ${result.id}`)
     seen.add(result.id)
     for (const judgment of Object.values(result.criteria)) {
-      for (const evidence of judgment.evidence) if (!expected.has(evidence.caseId)) errors.push(`Batch evidence references unsupplied case ${evidence.caseId}`)
+      for (const evidence of judgment.evidence) if (!supplied.has(evidence.caseId)) errors.push(`Batch evidence references unsupplied case ${evidence.caseId}`)
     }
   }
   for (const id of expected) if (!seen.has(id)) errors.push(`Batch coverage: missing case ${id}`)

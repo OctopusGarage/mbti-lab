@@ -4,13 +4,14 @@ import sharp from 'sharp'
 import jsQR from 'jsqr'
 
 // Every engine exercises one real export in reports.spec.js. The complete
-// 16-type × 2-locale raster/QR matrix runs once to keep local and CI cost bounded.
+// 16-type × 8-locale raster/QR matrix runs once to keep local and CI cost bounded.
 test.describe('PNG export matrix', () => {
   for (const type of TYPES) {
-    test(`${type}: both localized PNGs fit the card and contain a scannable canonical QR`, async ({ page }) => {
+    test(`${type}: all eight localized PNGs fit the card and contain a scannable canonical QR`, async ({ page }) => {
+      test.setTimeout(180_000)
       await page.setViewportSize({ width: 320, height: 800 })
       await seedResult(page, type)
-      for (const locale of ['zh','en']) {
+      for (const locale of ['zh','en','es','fr','de','pt','ja','ko']) {
         await language(page, locale)
         await page.locator('.dock-share').click()
         await page.locator('[data-action="save-image"]').click()

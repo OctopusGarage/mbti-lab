@@ -18,7 +18,7 @@
         <!-- type + nickname -->
         <div class="sc-hero">
           <div class="sc-type" :style="{ color: accent }">{{ type }}</div>
-          <div class="sc-nickname">{{ typeData.nickname[locale] }}</div>
+          <div class="sc-nickname">{{ typeData.nickname }}</div>
         </div>
 
         <!-- description -->
@@ -27,7 +27,7 @@
         <!-- strengths -->
         <div class="sc-strengths">
           <span
-            v-for="s in typeData.strengths[locale].slice(0, 4)"
+            v-for="s in typeData.strengths.slice(0, 4)"
             :key="s"
             class="sc-tag"
             >{{ s }}</span
@@ -53,7 +53,7 @@
 import { ref, computed, onMounted, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
 import QRCode from 'qrcode'
-import { types } from '../data/types.js'
+import { getTypePresentation } from '../data/localizedContent.js'
 import { APP_URL } from '../config.js'
 import { getShareTheme } from '../utils/shareTheme.js'
 import { getReport } from '../utils/report.js'
@@ -86,9 +86,9 @@ onMounted(() => {
 
 const typeData = computed(
   () =>
-    types[props.type] ?? {
-      nickname: { zh: '', en: '' },
-      strengths: { zh: [], en: [] },
+    getTypePresentation(props.type, locale.value) ?? {
+      nickname: '',
+      strengths: [],
     },
 )
 
@@ -191,7 +191,7 @@ defineExpose({ capture })
 .sc-body {
   position: relative;
   z-index: 1;
-  padding: 36px 40px;
+  padding: 28px 40px;
   height: 100%;
   display: flex;
   flex-direction: column;

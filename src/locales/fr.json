@@ -1,0 +1,139 @@
+{
+  "app": {
+    "title": "MBTI Lab",
+    "subtitle": "Test de personnalité professionnel · Découvrez qui vous êtes vraiment",
+    "switchToEnglish": "Passer à l’anglais",
+    "switchToChinese": "Passer au chinois",
+    "language": "Langue",
+    "languageLoading": "Chargement de la langue…",
+    "languageError": "Impossible de charger cette langue. Votre langue actuelle et vos réponses sont conservées. Réessayez.",
+    "languageRetry": "Réessayer",
+    "languageUnsaved": "Cette langue est active, mais votre navigateur n’a pas pu enregistrer votre préférence."
+  },
+  "home": {
+    "startShort": "Version courte · 60 questions",
+    "startFull": "Version complète · 93 questions",
+    "shortDesc": "~10–15 minutes",
+    "fullDesc": "~20–25 minutes",
+    "viewLastResult": "Voir le dernier résultat →",
+    "lastResultLabel": "Dernier résultat :",
+    "browseTypes": "📖 Découvrir les 16 types",
+    "resume": "Reprendre · Question {current} / {total}",
+    "restartConfirm": "Recommencer et remplacer votre évaluation inachevée ?",
+    "completedAt": "Terminé le",
+    "unknownDate": "Date de fin inconnue",
+    "resultSaved": "Enregistré dans ce navigateur"
+  },
+  "test": {
+    "progress": "Question {current} / {total}",
+    "prev": "← Précédente",
+    "or": "ou",
+    "invalidDraft": "Votre progression enregistrée n’a pas pu être restaurée. Commencez une nouvelle évaluation.",
+    "storageWarning": "Impossible d’enregistrer votre progression dans ce navigateur. Elle risque d’être perdue si vous actualisez ou fermez la page.",
+    "finishError": "Impossible de préparer votre résultat. Vos réponses sont conservées ; réessayez.",
+    "progressLabel": "Progression dans les questions",
+    "exit": "Retour à l’accueil",
+    "saved": "Votre progression est enregistrée dans ce navigateur. Vous pouvez revenir à l’accueil et reprendre plus tard."
+  },
+  "types": {
+    "backHome": "Accueil",
+    "title": "Les 16 types de personnalité",
+    "backToList": "Tous les types",
+    "search": "Rechercher un type de personnalité",
+    "searchHint": "Code du type ou nom de personnalité",
+    "noMatches": "Aucun type correspondant.",
+    "invalidType": "Ce lien vers un type est invalide. Choisissez un type dans la liste.",
+    "groups": {
+      "Analysts": "Analystes",
+      "Diplomats": "Diplomates",
+      "Sentinels": "Sentinelles",
+      "Explorers": "Explorateurs"
+    }
+  },
+  "result": {
+    "yourType": "Votre type de personnalité",
+    "rarity": "Rareté dans le monde",
+    "description": "Profil de personnalité",
+    "strengths": "Principaux atouts",
+    "careers": "Pistes professionnelles",
+    "famous": "Personnalités qui vous ressemblent",
+    "bestMatch": "Meilleure affinité",
+    "cognitiveStack": "Fonctions cognitives",
+    "shareBtn": "Partager",
+    "retake": "Refaire le test",
+    "notFound": "Aucun résultat trouvé.",
+    "backHome": "← Retour à l’accueil",
+    "dimLabel": {
+      "EI": [
+        "Extraversion E",
+        "Introversion I"
+      ],
+      "NS": [
+        "Intuition N",
+        "Sensation S"
+      ],
+      "FT": [
+        "Sentiment F",
+        "Pensée T"
+      ],
+      "JP": [
+        "Jugement J",
+        "Perception P"
+      ]
+    },
+    "unsaved": "Ce résultat est disponible, mais n’a pas pu être enregistré dans ce navigateur.",
+    "radarNote": "Le graphique radar représente les proportions de réponses E, N, F et J, et non des capacités ou un degré de précision."
+  },
+  "share": {
+    "shareResult": "Partager mon résultat",
+    "shareApp": "Recommander à des amis",
+    "shareToX": "Partager sur X",
+    "saveImage": "Enregistrer l’image",
+    "copyLink": "Copier le lien",
+    "copied": "Copié ✓",
+    "xTextResult": "Mon type MBTI est {type} ! Découvrez le vôtre 👉 {url}",
+    "xTextApp": "Découvrez ce test de personnalité MBTI intéressant ! 👉 {url}",
+    "scanLabel": "Scannez pour faire le test",
+    "retry": "Réessayer",
+    "generating": "Préparation de l’image…",
+    "imageError": "Impossible de générer l’image. Réessayez.",
+    "download": "Télécharger l’image",
+    "imageHint": "Prévisualisez l’image, puis téléchargez-la ou appuyez longuement pour l’enregistrer.",
+    "copyFallback": "La copie a échoué. Sélectionnez et copiez ce lien manuellement.",
+    "close": "Fermer",
+    "copyResult": "Copier le texte du résultat",
+    "captionPreview": "Aperçu du texte à partager",
+    "shareType": "Partager ce type",
+    "xTextType": "Découvrez le type de personnalité {type} 👉 {url}"
+  },
+  "report": {
+    "overview": "Trois pistes de réflexion",
+    "contents": "Sommaire",
+    "dimensions": "Vos proportions de réponses",
+    "showChart": "Afficher le graphique radar",
+    "percentNote": "Les pourcentages décrivent cet ensemble de réponses, et non des capacités, un degré de précision ou des rangs centiles dans la population.",
+    "closeNote": "La plage de 45 à 55 % est une convention d’affichage pour des proportions proches, et non un intervalle de confiance statistique. Elle ne modifie ni le calcul des scores ni le choix du type.",
+    "editorialNote": "Ces exemples et pistes de réflexion reposent sur les types. Ce ne sont ni des faits individuels déduits de vos réponses ni des prédictions sur vos relations, votre carrière ou vos capacités. Retenez ce qui vous parle.",
+    "cardLabel": "Réflexion personnelle",
+    "cardNote": "Appuyez-vous sur ces questions pour réfléchir à des situations réelles, au-delà d’une étiquette de type.",
+    "sections": {
+      "core": "Perspective générale",
+      "daily": "Vie quotidienne",
+      "friendship": "Amitié",
+      "close": "Relations proches",
+      "work": "Apprentissage et travail",
+      "blindspots": "Atouts et angles morts",
+      "growth": "Actions à essayer"
+    },
+    "actions": "Actions du rapport",
+    "neighbors": "Explorer les types voisins",
+    "neighborNote": "Chaque type ci-dessous diffère d’une lettre. Comparez leurs descriptions ; il ne s’agit ni des scores arrivés juste après le vôtre, ni de prédictions d’affinité, ni d’un reclassement.",
+    "neighborDimensions": {
+      "EI": "Expression et calme : comparez le fait de réfléchir en échangeant avec le fait de prendre d’abord le temps de la réflexion.",
+      "NS": "Comprendre l’information : comparez l’attention portée aux possibilités et celle portée à l’expérience concrète.",
+      "FT": "Désaccord : comparez l’impact sur les personnes et le raisonnement qui sous-tend une approche ; les deux peuvent compter.",
+      "JP": "Faire des projets : comparez des accords clairs et une marge d’adaptation."
+    },
+    "closeLabel": "Proportions proches des deux côtés"
+  }
+}

@@ -12,7 +12,7 @@
     "schemaVersion": {
       "type": "integer",
       "enum": [
-        1
+        2
       ]
     },
     "evaluatedAt": {
@@ -69,7 +69,29 @@
         "evals/rubric.json",
         "evals/cases.json",
         "evals/judgment.schema.json",
-        "evals/response.schema.json"
+        "evals/response.schema.json",
+        "src/data/localizedContent.js",
+        "src/i18n/locales.js",
+        "scripts/eval-lib.mjs",
+        "scripts/eval-ai.mjs",
+        "src/locales/es.json",
+        "src/data/translations/es.types.json",
+        "src/data/translations/es.reports.json",
+        "src/locales/fr.json",
+        "src/data/translations/fr.types.json",
+        "src/data/translations/fr.reports.json",
+        "src/locales/de.json",
+        "src/data/translations/de.types.json",
+        "src/data/translations/de.reports.json",
+        "src/locales/pt.json",
+        "src/data/translations/pt.types.json",
+        "src/data/translations/pt.reports.json",
+        "src/locales/ja.json",
+        "src/data/translations/ja.types.json",
+        "src/data/translations/ja.reports.json",
+        "src/locales/ko.json",
+        "src/data/translations/ko.types.json",
+        "src/data/translations/ko.reports.json"
       ],
       "properties": {
         "src/data/reportContent.js": {
@@ -111,13 +133,101 @@
         "evals/response.schema.json": {
           "type": "string",
           "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/data/localizedContent.js": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/i18n/locales.js": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "scripts/eval-lib.mjs": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "scripts/eval-ai.mjs": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/locales/es.json": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/data/translations/es.types.json": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/data/translations/es.reports.json": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/locales/fr.json": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/data/translations/fr.types.json": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/data/translations/fr.reports.json": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/locales/de.json": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/data/translations/de.types.json": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/data/translations/de.reports.json": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/locales/pt.json": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/data/translations/pt.types.json": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/data/translations/pt.reports.json": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/locales/ja.json": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/data/translations/ja.types.json": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/data/translations/ja.reports.json": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/locales/ko.json": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/data/translations/ko.types.json": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src/data/translations/ko.reports.json": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
         }
       }
     },
     "results": {
       "type": "array",
-      "minItems": 32,
-      "maxItems": 32,
+      "minItems": 128,
+      "maxItems": 128,
       "items": {
         "type": "object",
         "additionalProperties": false,

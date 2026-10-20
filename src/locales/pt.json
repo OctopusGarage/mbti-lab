@@ -1,0 +1,139 @@
+{
+  "app": {
+    "title": "MBTI Lab",
+    "subtitle": "Teste profissional de personalidade · Descubra quem você realmente é",
+    "switchToEnglish": "Mudar para inglês",
+    "switchToChinese": "Mudar para chinês",
+    "language": "Idioma",
+    "languageLoading": "Carregando idioma…",
+    "languageError": "Não foi possível carregar este idioma. Seu idioma atual e suas respostas foram mantidos. Tente novamente.",
+    "languageRetry": "Tentar novamente",
+    "languageUnsaved": "Este idioma está ativo, mas seu navegador não conseguiu salvar a preferência."
+  },
+  "home": {
+    "startShort": "Curto · 60 perguntas",
+    "startFull": "Completo · 93 perguntas",
+    "shortDesc": "~10–15 minutos",
+    "fullDesc": "~20–25 minutos",
+    "viewLastResult": "Ver último resultado →",
+    "lastResultLabel": "Último resultado:",
+    "browseTypes": "📖 Conheça os 16 tipos",
+    "resume": "Continuar · Pergunta {current} / {total}",
+    "restartConfirm": "Começar de novo e substituir sua avaliação inacabada?",
+    "completedAt": "Concluído",
+    "unknownDate": "Data de conclusão desconhecida",
+    "resultSaved": "Salvo neste navegador"
+  },
+  "test": {
+    "progress": "Pergunta {current} / {total}",
+    "prev": "← Anterior",
+    "or": "ou",
+    "invalidDraft": "Não foi possível restaurar seu progresso salvo. Comece uma nova avaliação.",
+    "storageWarning": "Não é possível salvar o progresso neste navegador. Atualizar ou fechar a página pode fazer com que ele se perca.",
+    "finishError": "Não foi possível preparar seu resultado. Suas respostas foram mantidas; tente novamente.",
+    "progressLabel": "Progresso das perguntas",
+    "exit": "Voltar ao início",
+    "saved": "Progresso salvo neste navegador. Você pode voltar ao início e continuar depois."
+  },
+  "types": {
+    "backHome": "Início",
+    "title": "16 tipos de personalidade",
+    "backToList": "Todos os tipos",
+    "search": "Encontre um tipo de personalidade",
+    "searchHint": "Código do tipo ou nome da personalidade",
+    "noMatches": "Nenhum tipo correspondente encontrado.",
+    "invalidType": "Este link de tipo é inválido. Escolha um tipo na lista.",
+    "groups": {
+      "Analysts": "Analistas",
+      "Diplomats": "Diplomatas",
+      "Sentinels": "Sentinelas",
+      "Explorers": "Exploradores"
+    }
+  },
+  "result": {
+    "yourType": "Seu tipo de personalidade",
+    "rarity": "Raridade global",
+    "description": "Perfil de personalidade",
+    "strengths": "Principais pontos fortes",
+    "careers": "Caminhos profissionais",
+    "famous": "Pessoas famosas como você",
+    "bestMatch": "Melhor combinação",
+    "cognitiveStack": "Sequência de funções cognitivas",
+    "shareBtn": "Compartilhar",
+    "retake": "Refazer o teste",
+    "notFound": "Nenhum resultado encontrado.",
+    "backHome": "← Voltar ao início",
+    "dimLabel": {
+      "EI": [
+        "Extroversão E",
+        "Introversão I"
+      ],
+      "NS": [
+        "Intuição N",
+        "Observação S"
+      ],
+      "FT": [
+        "Sentimento F",
+        "Pensamento T"
+      ],
+      "JP": [
+        "Julgamento J",
+        "Prospecção P"
+      ]
+    },
+    "unsaved": "Este resultado está disponível agora, mas não pôde ser salvo neste navegador.",
+    "radarNote": "O gráfico de radar mostra as proporções de respostas E, N, F e J, e não capacidade ou precisão."
+  },
+  "share": {
+    "shareResult": "Compartilhar meu resultado",
+    "shareApp": "Recomendar para amigos",
+    "shareToX": "Compartilhar no X",
+    "saveImage": "Salvar imagem",
+    "copyLink": "Copiar link",
+    "copied": "Copiado ✓",
+    "xTextResult": "Meu tipo MBTI é {type}! Venha descobrir o seu 👉 {url}",
+    "xTextApp": "Confira este teste interessante de personalidade MBTI! 👉 {url}",
+    "scanLabel": "Escaneie para fazer o teste",
+    "retry": "Tentar novamente",
+    "generating": "Preparando imagem…",
+    "imageError": "Não foi possível gerar a imagem. Tente novamente.",
+    "download": "Baixar imagem",
+    "imageHint": "Confira a imagem e depois baixe ou toque e segure para salvar.",
+    "copyFallback": "Não foi possível copiar. Selecione e copie este link manualmente.",
+    "close": "Fechar",
+    "copyResult": "Copiar texto do resultado",
+    "captionPreview": "Prévia do texto de compartilhamento",
+    "shareType": "Compartilhar este tipo",
+    "xTextType": "Conheça o tipo de personalidade {type} 👉 {url}"
+  },
+  "report": {
+    "overview": "Três pontos para refletir",
+    "contents": "Conteúdo",
+    "dimensions": "Suas proporções de respostas",
+    "showChart": "Mostrar gráfico de radar",
+    "percentNote": "As porcentagens descrevem este conjunto de respostas, e não capacidade, precisão ou percentis da população.",
+    "closeNote": "45–55% é uma convenção de exibição para proporções próximas, e não um intervalo de confiança estatístico. Isso não altera a pontuação nem a seleção do tipo.",
+    "editorialNote": "Estes são exemplos e propostas de reflexão baseados no tipo, e não fatos individuais detectados nas suas respostas ou previsões sobre relacionamentos, carreiras ou capacidade. Aproveite o que fizer sentido para você.",
+    "cardLabel": "Autorreflexão",
+    "cardNote": "Use estas propostas para refletir sobre situações reais, além do rótulo de um tipo.",
+    "sections": {
+      "core": "Perspectiva central",
+      "daily": "Vida cotidiana",
+      "friendship": "Amizade",
+      "close": "Relacionamentos próximos",
+      "work": "Aprendizado e trabalho",
+      "blindspots": "Pontos fortes e pontos cegos",
+      "growth": "Ações para experimentar"
+    },
+    "actions": "Ações do relatório",
+    "neighbors": "Explore tipos próximos",
+    "neighborNote": "Cada tipo abaixo difere por uma letra. Use as descrições para comparar; elas não representam as próximas maiores pontuações, previsões de compatibilidade ou uma reclassificação.",
+    "neighborDimensions": {
+      "EI": "Expressão e silêncio: compare elaborar ideias por meio da interação com reservar um tempo para refletir primeiro.",
+      "NS": "Compreensão das informações: compare a atenção às possibilidades com a atenção à experiência concreta.",
+      "FT": "Discordância: compare o impacto nas pessoas com o raciocínio por trás de uma abordagem; ambos podem importar.",
+      "JP": "Planejamento: compare acordos claros com espaço para se adaptar."
+    },
+    "closeLabel": "Proporções próximas dos dois lados"
+  }
+}

@@ -46,6 +46,7 @@ import {
   useRoute,
   onBeforeRouteLeave,
   onBeforeRouteUpdate,
+  isNavigationFailure,
 } from 'vue-router'
 import ProgressBar from '../components/ProgressBar.vue'
 import QuestionCard from '../components/QuestionCard.vue'
@@ -76,18 +77,25 @@ const currentQuestion = computed(
   () => questions.value[currentIndex.value] ?? null,
 )
 let timer = null
+let finishing = false
 function persist() {
   available.value = drafts.save(mode.value, answers.value, currentIndex.value)
 }
-function finish() {
+async function finish() {
+  if (finishing) return
+  finishing = true
+  busy.value = true
   try {
     failure.value = false
     const saved = useResultStore().submit(result.value)
+    const navigation = await router.replace({ path: '/result', query: saved ? {} : { unsaved: '1' } })
+    if (isNavigationFailure(navigation)) throw new Error('Report navigation failed')
     drafts.clear()
-    router.replace({ path: '/result', query: saved ? {} : { unsaved: '1' } })
   } catch {
     failure.value = true
     busy.value = false
+  } finally {
+    finishing = false
   }
 }
 function advance() {
@@ -104,10 +112,10 @@ function advance() {
 function cancel() {
   clearTimeout(timer)
   timer = null
-  busy.value = false
+  busy.value = finishing
 }
 function onAnswer(choice) {
-  if (busy.value || !['a', 'b'].includes(choice)) return
+  if (busy.value || finishing || !['a', 'b'].includes(choice)) return
   busy.value = true
   answer(choice, false)
   persist()

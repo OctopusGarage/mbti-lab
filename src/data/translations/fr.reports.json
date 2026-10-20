@@ -1,0 +1,530 @@
+{
+  "INTJ": {
+    "highlights": [
+      "Définir le cap avant le parcours",
+      "Rendre votre raisonnement visible",
+      "Tester les projets à long terme par petites étapes"
+    ],
+    "sections": [
+      "Avant de commencer, vous vous demandez peut-être ce que l’activité doit apporter. Pour un voyage, la question du repos, du lien ou de la découverte précède celle des réservations d’hôtel. Le cap et le jugement indépendant comptent pour vous. C’est un point de départ possible pour vos décisions, sans prétendre que vous prédisez l’avenir ou devez transformer la vie en projet.",
+      "Dans une discussion animée sur le week-end, vous comparez peut-être le budget, la distance et les programmes incompatibles avant de publier une courte proposition. Les autres voient la réponse sans voir votre raisonnement. Expliquez une raison et laissez un détail ouvert aux changements. Votre préparation devient alors une ressource pour le groupe plutôt qu’une décision prise à sa place.",
+      "Une difficulté récurrente peut attirer votre attention sur un schéma. Vous souhaitez une solution durable, alors que votre ami a peut-être d’abord besoin de faire une place à sa déception. Demandez si, aujourd’hui, écouter ou analyser serait utile. Vous pouvez demander à aller au bout d’une idée tout en laissant de la place aux émotions ; examiner un problème n’exige pas de définir la personne.",
+      "Vous exprimez peut-être votre affection en tenant vos promesses, en organisant ou en apportant une aide concrète. Une personne proche peut avoir besoin de contacts fréquents. Des attentes non exprimées peuvent faire passer le silence pour de la distance et les questions pour de l’ingérence. Précisez la durée de vos moments de solitude et reprenez vous-même contact. Les projets d’avenir ne rassurent que si chacun peut les négocier.",
+      "Un cadre peut faciliter votre apprentissage ; des objectifs clairs et des décisions autonomes peuvent faciliter votre travail. Distinguez le but final, les éléments dont vous disposez et le premier livrable. Testez une hypothèse pendant que le cadre se construit. Dites à vos collègues ce qui est fixé et ce qui reste provisoire pour qu’ils sachent où leurs retours peuvent compter.",
+      "La réflexion à long terme repère les risques, l’indépendance résiste à la pression du groupe et la planification réduit le travail à refaire. Quand les éléments manquent, ces atouts peuvent devenir une optimisation interminable ou de l’impatience envers les autres. Le stress peut accentuer cette réaction. Avant d’écarter une inquiétude, demandez quelle contrainte l’autre perçoit. Un plan révisé utilisable peut valoir mieux qu’un plan complet auquel personne n’adhère.",
+      "Rendez votre raisonnement accessible : un objectif, une raison et une question encore ouverte. Faites un petit essai avant de vous engager sur chaque détail. Dans vos relations, entraînez-vous à comprendre le vécu avant de chercher une solution. Choisissez un exercice ci-dessous ; progresser n’a pas à devenir un nouveau projet exhaustif."
+    ],
+    "actions": [
+      {
+        "context": "Un projet ne démarre pas",
+        "step": "Consacrez vingt minutes à tester une hypothèse sur une version réduite.",
+        "phrase": "Je vais confronter cette partie aux conditions réelles."
+      },
+      {
+        "context": "Un ami évoque à nouveau une difficulté",
+        "step": "Demandez quel soutien il souhaite avant de proposer une solution.",
+        "phrase": "Est-ce qu’une écoute ou une recherche de pistes vous aiderait ?"
+      },
+      {
+        "context": "Un partenaire de travail propose un autre chemin",
+        "step": "Expliquez une raison et demandez quelles contraintes vous échappent.",
+        "phrase": "Voici mon raisonnement. Quelle condition m’échappe ?"
+      }
+    ]
+  },
+  "INTP": {
+    "highlights": [
+      "Examiner les prémisses",
+      "Suivre sa curiosité en profondeur",
+      "Donner à la réflexion un chemin vers l’action"
+    ],
+    "sections": [
+      "Vous prenez peut-être plus de plaisir à comprendre les fondements d’une question qu’à choisir rapidement une réponse. Si l’on vous demande quel est le meilleur restaurant, vous commencez par définir les critères. Examiner les présupposés peut aider, mais ne garantit pas de meilleures conclusions. Certaines décisions quotidiennes gagnent à recevoir une réponse suffisante qui permet de passer à la suite.",
+      "Une affirmation familière peut vous donner envie de chercher une exception ; une discussion sur un film peut vous mener aux règles de son univers. À l’inverse, trop de choix peuvent retarder un simple achat. Vérifiez si la conversation est un échange informel ou une analyse. Donnez un point d’entrée à votre curiosité et une condition d’arrêt claire aux décisions ordinaires.",
+      "Un sujet qui vous passionne peut vous rendre bavard, alors qu’il vous est plus difficile de prendre part aux conversations légères. Votre attention peut se manifester par des informations et des explications, même si votre ami a d’abord besoin d’une réponse émotionnelle. Reformulez ce qui le préoccupe avant d’analyser. Si un concept ne passe pas, essayez un exemple quotidien plutôt que de supposer que l’autre refuse de réfléchir.",
+      "Vous souhaitez peut-être à la fois réfléchir sans interruption et accéder sincèrement au monde intérieur d’un proche. Une solitude inexpliquée peut être vécue comme une disparition. Convenez du moment où vous reprendrez contact. Les émotions peuvent s’exprimer de façon provisoire ; attendre de pouvoir les expliquer entièrement peut faire patienter l’autre bien plus longtemps que vous ne le pensez.",
+      "Une question d’apprentissage peut ouvrir de nombreuses pistes. La recherche d’une meilleure explication peut vous pousser à reprendre un travail de fond en comble, alors que vos collègues ont besoin d’une date de livraison. Séparez exploration et livraison, et gardez les questions supplémentaires pour un autre cycle. Vérifiez à la fois que le résultat répond à la tâche réelle et que son raisonnement est élégant.",
+      "La curiosité trouve des alternatives, la logique détecte les lacunes et l’indépendance préserve la possibilité du désaccord. Sous pression, elles peuvent devenir des recherches sans fin, des reprises répétées ou des décisions repoussées. Un périmètre flou et des ressources manquantes comptent aussi. Repérez les inconnues qui influencent vraiment le choix, puis faites un petit pas réversible pour en apprendre davantage.",
+      "Laissez l’exploration et l’action se nourrir mutuellement. Fixez une condition d’arrêt, testez une réponse, puis étudiez ce que l’essai révèle. Commencez vos explications par un exemple et votre conclusion actuelle. Dans vos relations, exprimez un besoin sans exiger d’en avoir une théorie complète. Les exercices suivants préservent la curiosité tout en rendant la prochaine étape plus fiable."
+    ],
+    "actions": [
+      {
+        "context": "La recherche n’en finit pas",
+        "step": "Choisissez deux critères essentiels, puis testez une option réversible.",
+        "phrase": "Ces deux conditions suffisent pour un premier essai."
+      },
+      {
+        "context": "Une explication est difficile à suivre",
+        "step": "Commencez par un exemple du quotidien et proposez davantage de détails.",
+        "phrase": "Voici un exemple. Le raisonnement vous serait-il utile ?"
+      },
+      {
+        "context": "Vous avez besoin de calme",
+        "step": "Donnez une heure de fin à la pause et reprenez vous-même contact.",
+        "phrase": "J’ai besoin d’une demi-heure pour réfléchir, puis je reviens."
+      }
+    ]
+  },
+  "ENTJ": {
+    "highlights": [
+      "Transformer les envies en prochaines étapes",
+      "Vérifier si le silence vaut accord",
+      "Suivre la capacité disponible autant que l’avancement"
+    ],
+    "sections": [
+      "Vous transformez peut-être une envie en objectif et cherchez les ressources pour avancer. Un voyage devient des dates, un budget et des responsabilités. L’élan compte, mais ne vous rend pas responsable de chaque décision. Certaines conversations consistent à imaginer ensemble, et certaines émotions ne sont pas prêtes à devenir des tâches. Vérifiez l’intention avant d’organiser.",
+      "Quand une discussion de groupe piétine, vous résumez peut-être les options et proposez une échéance. Vous repérez les blocages et coordonnez naturellement. Les autres peuvent l’apprécier ou avoir encore besoin d’espace pour exprimer leurs inquiétudes. Prévoyez un temps pour les questions et confirmez les responsabilités ; le silence ne signifie pas forcément l’accord avec la direction choisie.",
+      "Un ami en difficulté peut recevoir de votre part une aide pratique, des contacts ou un découpage des tâches. Demandez quelle difficulté il souhaite aborder et jusqu’où il veut votre participation. Si vos conseils ne sont pas suivis, explorez l’obstacle. Une conversation peut offrir une présence sans résultat mesurable ; une relation n’est pas un décompte de problèmes résolus.",
+      "Vous souhaitez peut-être aborder explicitement les désaccords importants. Une personne proche peut avoir besoin de plus de temps pour comprendre ses émotions. Distinguez l’envie de résoudre le problème de l’exigence d’une réponse immédiate. Pour vos projets communs, discutez des capacités disponibles autant que des objectifs. Participer aux décisions peut rassurer davantage qu’un plan complet fourni à la place de l’autre.",
+      "Des responsabilités et des résultats clairs peuvent faciliter votre apprentissage et votre travail. Une répartition ambiguë peut vous inciter à tout reprendre en main. Vérifiez où le soutien manque, laissez vos collègues choisir leurs méthodes et convenez des résultats attendus et des points d’étape. Gardez des apprentissages sans pression dont la valeur n’est pas encore évidente ; des intérêts peuvent apparaître hors du plan initial.",
+      "L’organisation et l’esprit de décision peuvent sortir une équipe de l’immobilisme. Ils peuvent aussi réduire trop tôt les options, précipiter l’adaptation ou compenser des ressources insuffisantes par du surmenage. Distinguez les contraintes réelles des habitudes familières. Sous pression, la fermeté peut signaler la fatigue. Le repos et une nouvelle répartition peuvent aider davantage qu’une exigence supplémentaire de volonté personnelle.",
+      "Laissez les autres influer sur la direction de votre élan. Écoutez les inquiétudes avant de proposer une décision et demandez l’accord avant de prendre en charge le soutien. Préservez du temps qui n’a pas à prouver sa productivité. Les exercices suivants relient objectifs, consentement, liberté dans la collaboration et capacité personnelle."
+    ],
+    "actions": [
+      {
+        "context": "Une discussion piétine",
+        "step": "Écoutez une préoccupation de chaque personne avant de résumer les choix.",
+        "phrase": "De quelle condition n’avons-nous pas encore parlé ?"
+      },
+      {
+        "context": "Vous voulez prendre en charge le problème d’un ami",
+        "step": "Demandez quelle participation il souhaite de votre part.",
+        "phrase": "Jusqu’où souhaitez-vous mon aide ?"
+      },
+      {
+        "context": "Vous compensez sans cesse les manques dans l’équipe",
+        "step": "Choisissez une tâche à redistribuer en précisant qui en est responsable.",
+        "phrase": "Il faut réattribuer cette tâche ; ma capacité s’arrête ici."
+      }
+    ]
+  },
+  "ENTP": {
+    "highlights": [
+      "Les nouveaux angles donnent envie de s’impliquer",
+      "Distinguer les idées des promesses",
+      "Laisser un résultat visible de l’exploration"
+    ],
+    "sections": [
+      "Vous vous demandez peut-être d’abord comment faire autrement. Un itinéraire fixé évoque des alternatives ; une règle invite à chercher un cas pour l’éprouver. De nouveaux angles entretiennent votre intérêt, mais vous n’avez pas à rouvrir chaque accord. Distinguez les questions qui méritent une exploration des arrangements qui fonctionnent déjà suffisamment bien.",
+      "Une idée dans une discussion de groupe peut vite en faire naître trois autres. Vous imaginez peut-être tandis qu’une autre personne réserve déjà. Présentez une recherche d’idées comme telle, et un engagement comme un engagement. Les nouvelles expériences peuvent conserver leur part d’aventure, tandis qu’une heure de rendez-vous fiable évite une attente indéfinie à tous.",
+      "Les questions, l’humour et les points de vue opposés peuvent animer vos conversations. Lorsqu’un ami raconte une expérience douloureuse, le débat peut ressembler à une demande de preuves. Vérifiez si vous discutez d’une idée ou écoutez un récit personnel. Reconnaissez sa situation avant de soulever une exception ; la compréhension peut aussi nourrir un échange vivant.",
+      "Dans une relation proche, vous souhaitez peut-être de la nouveauté et de la place pour des idées qui évoluent. L’autre peut avoir besoin de contacts prévisibles. Distinguez les espaces de souplesse des promesses importantes et tenez vous-même les engagements fixés. Lors d’un conflit, décrivez l’impact entendu avant de chercher une autre interprétation. Reconnaître une erreur précise laisse de la place aux négociations futures.",
+      "Apprendre peut vous amener à relier rapidement plusieurs domaines. Démarrer et débloquer un problème peuvent vous intéresser davantage qu’un travail répétitif de finition. Gardez une liste d’expériences et choisissez une idée par cycle. Vos partenaires peuvent compléter vos atouts, mais vous restez responsable de votre part convenue jusqu’au bout, sans présumer qu’un autre terminera chaque essai.",
+      "Les associations d’idées révèlent des alternatives, la vivacité gère les changements et les questions dévoilent les présupposés. Elles peuvent aussi multiplier les pistes, faire varier les plans ou produire des explications habiles qui évitent les responsabilités. La surcharge compte aussi. Suspendez l’ajout d’options et dressez la liste de vos promesses, en précisant celles que vous tiendrez ou retirerez explicitement.",
+      "Donnez aux idées un point d’aboutissement : une petite expérience et une condition d’arrêt. Distinguez débat et écoute, et laissez votre ami confirmer ce que vous avez compris. Maintenez un engagement important tout en négociant d’autres souplesses. Ces exercices permettent aux autres de participer à votre curiosité en confiance et montrent quelles explorations ont produit quelque chose d’utile."
+    ],
+    "actions": [
+      {
+        "context": "Plusieurs directions apparaissent",
+        "step": "Testez-en une pendant trente minutes et notez les autres pour plus tard.",
+        "phrase": "Cette fois, nous testons cette idée ; les autres peuvent attendre."
+      },
+      {
+        "context": "Un ami évoque une blessure",
+        "step": "Reformulez l’impact, puis demandez si un autre point de vue serait utile.",
+        "phrase": "Cela vous a vraiment fait mal. Ai-je bien compris ?"
+      },
+      {
+        "context": "Vous voulez modifier un programme",
+        "step": "Maintenez un engagement confirmé tout en négociant les changements.",
+        "phrase": "L’heure du rendez-vous reste la même. Souhaitez-vous revoir l’itinéraire ?"
+      }
+    ]
+  },
+  "INFJ": {
+    "highlights": [
+      "Repérer le sens dans les expériences",
+      "Vérifier sa compréhension auprès de la personne",
+      "L’écoute approfondie a besoin de limites"
+    ],
+    "sections": [
+      "Vous remarquez peut-être ce qu’un événement signifie pour une personne et cherchez un fil conducteur. Un changement d’emploi soulève des questions sur la vie que votre ami souhaite, au-delà du revenu. Le sens soutient votre attention, mais ne vous permet pas de lire dans les pensées. Vérifiez votre interprétation auprès de la personne dont vous cherchez à comprendre le vécu.",
+      "Dans une discussion sur le week-end, vous observez peut-être les intérêts de chacun avant de suggérer un programme agréable. Les sujets familiers invitent à approfondir ; un bruit continu peut appeler un moment de solitude. L’attention à l’ambiance peut discrètement devenir un rôle de coordination que personne ne vous a attribué. Incluez votre préférence et acceptez qu’une activité réponde à certains besoins plutôt qu’à tous.",
+      "Vous reliez peut-être des détails issus de plusieurs conversations avec un ami. Cela peut donner le sentiment d’être compris, ou défini trop tôt. Présentez le schéma sous forme de question. Expliquez quand vous avez besoin d’une pause après une écoute approfondie. Une réponse durable et délimitée crée plus de continuité qu’une écoute jusqu’à l’épuisement suivie d’une disparition.",
+      "Vous espérez peut-être qu’un proche comprenne vos sous-entendus et partage une direction. Des espoirs non exprimés peuvent transformer un petit décalage en sentiment de ne pas être reconnu. Formulez la réponse souhaitée sous forme de demande précise. Discutez d’un problème à la fois et laissez place à des besoins différents. La compréhension se construit ; un signal manqué ne peut expliquer toute une relation.",
+      "Savoir pourquoi un travail compte peut soutenir votre effort. Vous transformez peut-être des retours dispersés en orientation, mais leur mise en œuvre nécessite toujours des faits, du temps et des responsables. Définissez une première étape observable. Partagez vos questions avant que le plan soit abouti et envisagez les ajustements pratiques comme une aide possible pour concrétiser ce qui vous tient à cœur.",
+      "L’observation attentive révèle des besoins inexprimés ; une compréhension dans la durée relie les expériences. Le coût peut être la surinterprétation, des attentes élevées ou le fait de porter les émotions des autres. Sous stress, distinguez faits, suppositions et responsabilités. Posez une question concrète plutôt que de prolonger indéfiniment un récit inquiétant.",
+      "Laissez de la place à la vérification de votre compréhension. Présentez une supposition comme telle, exprimez vos besoins en comportements concrets et testez une direction par un petit résultat. Une présence ordinaire peut compter sans conversation profonde. Ces exercices relient le sens aux limites et à l’action, sans exiger une explication complète avant de parler."
+    ],
+    "actions": [
+      {
+        "context": "Vous percevez quelque chose d’inexprimé",
+        "step": "Partagez une observation et invitez l’autre à la corriger.",
+        "phrase": "Je me demande si vous hésitez. Est-ce que je me trompe ?"
+      },
+      {
+        "context": "L’écoute vous laisse fatigué",
+        "step": "Précisez le temps qu’il vous reste et convenez d’un prochain échange.",
+        "phrase": "J’ai encore dix minutes ; pouvons-nous reprendre demain ?"
+      },
+      {
+        "context": "Vous espérez que quelqu’un vous comprendra",
+        "step": "Transformez cet espoir en demande précise.",
+        "phrase": "J’aimerais un peu de compagnie aujourd’hui, sans conseils pour le moment."
+      }
+    ]
+  },
+  "INFP": {
+    "highlights": [
+      "Vérifier si un choix vous ressemble",
+      "Exprimer ses préférences pour pouvoir les négocier",
+      "Les petits gestes n’ont pas à attendre la bonne humeur"
+    ],
+    "sections": [
+      "Vous vous demandez peut-être si un choix correspond à ce qui compte pour vous avant de l’intégrer à des plans extérieurs. Un voyage évoque des sensations et de la liberté d’exploration. L’accord intérieur soutient l’effort, mais chaque tâche n’a pas à sembler exceptionnelle. Ce profil ne peut définir vos valeurs ; un travail nécessaire qui ne vous intéresse pas actuellement peut lui aussi commencer en douceur.",
+      "Vous sentez peut-être quelle activité vous préférez avant de pouvoir l’expliquer. Une promenade suscite des associations d’idées, tandis que vos programmes quotidiens gagnent à rester adaptables. Le silence ne communique pas votre préférence aux autres. Exprimez une chose qui vous plaît et une condition inconfortable, sans devoir proposer un programme de remplacement complet.",
+      "Le vécu d’un ami peut vous inciter à comprendre ses émotions et à résister aux étiquettes simplistes. Vous appréciez que la complexité ait sa place. Une attention profonde peut aussi faire passer vos propres besoins au second plan. Vous pouvez comprendre sans être d’accord. Si les conseils arrivent trop vite, demandez à être écouté d’abord plutôt que d’espérer que votre déception explique ce besoin.",
+      "Vous souhaitez peut-être qu’un proche écoute équitablement vos pensées encore incertaines. Son manque de disponibilité ou une réponse abrupte peuvent sembler prouver que vous ne comptez pas. Vérifiez ce qui s’est passé avant d’en décrire l’impact. Expliquez votre besoin d’espace comme votre besoin d’attention ; les différences n’exigent pas des démonstrations d’engagement identiques.",
+      "Les récits, les centres d’intérêt et les buts personnels peuvent faciliter votre apprentissage. Les tâches déconnectées de vos préoccupations et les retours uniquement négatifs peuvent rendre le démarrage difficile. Trouvez un besoin concret auquel la tâche répond et réduisez la première action à dix minutes. Un brouillon invite à la révision sans donner à autrui le dernier mot sur le sens de votre travail.",
+      "L’attention aux valeurs protège la sincérité, l’imagination ouvre des possibilités et l’empathie laisse de la place aux vécus. Elles peuvent aussi s’accompagner d’autocritique, de l’attente du bon état d’esprit ou de l’évitement d’un refus. Le sommeil, la pression et la difficulté de la tâche comptent. Distinguez l’insatisfaction face à un résultat du jugement sur votre personne entière, puis modifiez une condition sur laquelle vous pouvez agir.",
+      "Rendez une chose qui vous tient à cœur concrète par une petite pratique. Lorsque vous posez une limite, dites ce que vous pouvez offrir sans justifier longuement votre refus. Retenez un élément utile d’un retour et évaluez le reste. Ces exercices donnent aux besoins et aux idées une forme négociable tout en préservant leur sens personnel."
+    ],
+    "actions": [
+      {
+        "context": "Une idée importante n’a pas encore pris forme",
+        "step": "Passez dix minutes à rédiger un paragraphe ou une ébauche.",
+        "phrase": "Je peux lui donner un début imparfait."
+      },
+      {
+        "context": "Un refus vous semble blessant",
+        "step": "Précisez votre capacité et la part que vous pouvez offrir.",
+        "phrase": "Je ne peux pas tout faire, mais je peux aider sur cette partie."
+      },
+      {
+        "context": "Un retour devient un jugement sur vous-même",
+        "step": "Choisissez une modification concrète du travail, puis prenez le temps d’accueillir vos émotions.",
+        "phrase": "Cette partie peut changer ; elle ne représente pas toute mon identité."
+      }
+    ]
+  },
+  "ENFJ": {
+    "highlights": [
+      "Repérer le cap commun et la participation",
+      "Écouter avant d’encourager",
+      "Rendre l’attention réciproque"
+    ],
+    "sections": [
+      "Vous remarquez peut-être la direction commune et la possibilité pour chacun de participer librement. Un voyage soulève à la fois des questions d’organisation et une attention pour la personne qui ne s’est pas exprimée. Soutenir la participation est utile, mais vous n’êtes pas responsable du développement ni de l’humeur de chacun. Une implication moindre peut refléter d’autres priorités plutôt qu’un besoin d’encouragement supplémentaire.",
+      "Vous invitez peut-être les membres discrets à s’exprimer dans une discussion de groupe et transformez des avis dispersés en proposition utilisable. Lors des rencontres, vous aidez les nouveaux venus à entrer dans la conversation. Entretenir constamment l’ambiance peut devenir fatigant. Choisissez la coordination que vous souhaitez offrir et partagez le reste. Une pause peut aussi laisser le temps de réfléchir.",
+      "Vous rappelez peut-être à un ami découragé ses atouts et les possibilités à venir. L’encouragement peut arriver avant qu’il ait fini de décrire sa perte. Écoutez d’abord et posez des questions sur la suite. Un conseil n’a pas besoin d’être suivi pour valider l’amitié. Partagez aussi vos difficultés afin que l’attention circule dans les deux sens.",
+      "Vous souhaitez peut-être de la continuité et que les besoins importants soient abordés à temps. Une réponse brève ou un moment de solitude peuvent vous inciter à poser plus de questions pour vous rassurer. Convenez de la fréquence des contacts et distinguez l’attention des vérifications répétées. Dites ce qui aiderait, accueillez une autre approche et essayez un accord temporaire plutôt que de maintenir chaque attente par des suppositions.",
+      "Un public clairement défini et un but partagé peuvent motiver votre apprentissage et votre travail. Vous savez peut-être coordonner les désaccords et faire des retours, mais acceptez trop pour éviter de décevoir. Vérifiez le temps et les ressources avant de vous engager. Dans vos retours, distinguez encouragements, observations et changements demandés ; l’élan de l’équipe n’a pas à dépendre de votre gestion de l’énergie de chacun.",
+      "Le lien aide à construire l’accord, l’expression clarifie la direction et le soutien aide à démarrer. Le coût peut être une responsabilité excessive, l’absorption des insatisfactions ou le fait de taire un désaccord nécessaire. Vérifiez si la tâche vous appartient et si l’aide a été demandée. Un périmètre clair et le désaccord peuvent rendre la coopération plus durable sans forcément l’affaiblir.",
+      "Donnez une limite claire à votre attention. Demandez quelle aide est souhaitée, prenez le temps de vérifier votre agenda avant d’accepter et exprimez votre position avant d’inviter les réactions. Ces exercices préservent le lien tout en rendant votre capacité réelle visible. Les personnes que vous soutenez peuvent alors aussi devenir des partenaires pour vous soutenir."
+    ],
+    "actions": [
+      {
+        "context": "Une demande supplémentaire arrive",
+        "step": "Vérifiez votre agenda et proposez un périmètre clair.",
+        "phrase": "Je vais vérifier mes disponibilités et confirmer ce soir."
+      },
+      {
+        "context": "Vous voulez encourager immédiatement",
+        "step": "Reformulez le vécu avant d’aborder la suite.",
+        "phrase": "Souhaitez-vous finir de raconter avant que nous fassions des projets ?"
+      },
+      {
+        "context": "Vous avez aussi besoin de soutien",
+        "step": "Formulez une demande d’écoute concrète et limitée.",
+        "phrase": "Pourriez-vous m’écouter dix minutes ? Je ressens aussi de la fatigue."
+      }
+    ]
+  },
+  "ENFP": {
+    "highlights": [
+      "Trouver de l’énergie dans les possibilités et le lien",
+      "Vérifier sa capacité avant de s’engager",
+      "Donner à l’inspiration une petite étape visible"
+    ],
+    "sections": [
+      "Vous remarquez peut-être les possibilités et les liens avec des personnes ou des idées qui comptent pour vous. Un voyage évoque des expériences et des récits. L’intérêt peut donner de l’énergie à l’effort, mais vous n’avez pas à être enthousiaste en permanence. L’énergie et les circonstances comptent aussi ; le calme et la répétition peuvent être des choix dans votre vie.",
+      "Une idée dans une discussion de groupe peut en appeler beaucoup d’autres. Vous aidez les autres à envisager des expériences nouvelles, tandis que les détails pratiques peuvent rester en retrait de l’enthousiasme. Distinguez intérêt et engagement, et gardez une routine pour les horaires, les transports et le budget. Exprimez votre besoin de repos plutôt que de continuer à jouer votre version pleine d’entrain.",
+      "L’histoire d’un ami peut vite vous rappeler un vécu similaire ou une nouvelle possibilité. Une implication chaleureuse aide, mais une réponse rapide peut détourner ce qu’il souhaitait raconter. Demandez ce qu’il veut encore ajouter avant de partager votre association. Laissez la confiance se construire par des échanges réciproques, au-delà de l’enthousiasme d’une seule conversation.",
+      "Vous souhaitez peut-être pouvoir grandir et explorer tout en gardant un contact émotionnel sincère. Des arrangements stables peuvent sembler limitants, tandis que des changements fréquents peuvent déstabiliser un proche. Fixez ce qui demande de la fiabilité et négociez le reste. Discutez d’un événement à la fois plutôt que de toutes les inquiétudes futures. La liberté et une attention fiable peuvent coexister dans un accord ajustable.",
+      "L’intérêt peut lancer rapidement l’apprentissage, surtout lorsque les connaissances se relient à la vie. Un nouveau travail porteur de sens peut nécessiter une structure pour les finitions répétitives. Décomposez une idée en trois étapes visibles et prévoyez un point de suivi. Clarifiez votre part et votre date de livraison pour que vos partenaires puissent suivre le cheminement qui a eu lieu dans votre tête.",
+      "Les associations ouvrent des perspectives, la chaleur crée des liens et la souplesse permet de changer de route. Le coût peut être trop de promesses, la confusion entre enthousiasme et capacité ou l’abandon d’une direction après une déception. Le manque de repos compte aussi. Parmi vos engagements actuels, décidez lesquels garder, suspendre ou terminer. Achever une tâche peut libérer de la place pour explorer.",
+      "Protégez la capacité qui soutient l’enthousiasme. Laissez un délai de confirmation aux invitations, laissez les autres finir leurs récits et donnez à un projet important une petite action régulière. Ces exercices permettent aux intérêts et aux promesses de se soutenir sans que votre énergie soit la seule chose qui les maintienne ensemble."
+    ],
+    "actions": [
+      {
+        "context": "Une invitation vous enthousiasme",
+        "step": "Vérifiez vos engagements actuels avant de confirmer.",
+        "phrase": "J’aimerais beaucoup venir ; je confirmerai demain."
+      },
+      {
+        "context": "Un récit suscite beaucoup d’associations",
+        "step": "Demandez si la personne a terminé avant d’ajouter les vôtres.",
+        "phrase": "Y a-t-il autre chose que vous souhaitez dire ?"
+      },
+      {
+        "context": "Votre intérêt pour un projet diminue",
+        "step": "Faites un minimum de dix minutes et notez l’action suivante.",
+        "phrase": "Ce petit pas suffit aujourd’hui ; la suite est notée."
+      }
+    ]
+  },
+  "ISTJ": {
+    "highlights": [
+      "Vérifier les conditions et les engagements",
+      "Expliquer les changements pour rester fiable",
+      "Actualiser l’expérience par de petits essais"
+    ],
+    "sections": [
+      "Vous vérifiez peut-être les conditions connues et les engagements clairs avant d’agir. Un voyage évoque les dates, le transport et le budget réel. L’expérience aide votre jugement, mais la familiarité ne rend pas une méthode juste pour toujours. C’est un point de départ pour l’observation, sans prétendre que vous résistez à la nouveauté. Des conditions modifiées méritent une nouvelle vérification.",
+      "Dans un projet de groupe, vous suivez peut-être discrètement le lieu de départ et les préparatifs manquants. Tenir ses promesses et maintenir l’ordre peuvent réduire les frictions. Les autres peuvent voir le sérieux sans percevoir l’effort derrière la stabilité. Exprimez tôt les exigences essentielles et distinguez les besoins de sécurité ou d’horaires des préférences personnelles.",
+      "Vous soutenez peut-être un ami par une méthode éprouvée ou une tâche pratique. Vérifiez d’abord ce qui rend sa situation différente. Une action fiable peut s’accompagner d’une brève expression orale d’affection. Lorsqu’un ami souhaite davantage discuter, un horaire précis peut donner à cet échange une place fiable dans la relation.",
+      "La ponctualité, l’attention quotidienne et les promesses tenues peuvent vous rassurer. Un proche peut avoir besoin de plus d’expression émotionnelle ou de nouveauté. Expliquez les accords importants et la façon de signaler les changements ; demandez quelle réponse il souhaite. La stabilité peut reposer sur des changements compréhensibles et une fiabilité continue plutôt que sur des plans immuables.",
+      "Des étapes claires peuvent soutenir votre apprentissage ; des normes et des responsabilités définies peuvent soutenir votre travail. Distinguez les vérifications nécessaires des étapes devenues inutiles. Essayez une méthode peu coûteuse et évaluez le résultat. Partagez l’avancement et les risques avant la fin pour que vos partenaires puissent apporter les ressources manquantes pendant qu’elles sont encore utiles.",
+      "L’attention aux détails évite les oublis, la fiabilité crée des attentes et la pratique régulière construit l’expérience. Le coût peut être l’inquiétude face au changement, la méfiance envers d’autres méthodes ou un travail prolongé pour maintenir chaque norme. Vérifiez aussi les ressources. Préservez la contrainte importante tout en acceptant l’imperfection d’étapes moins essentielles.",
+      "Laissez la fiabilité inclure la souplesse : une petite marge, une vérification des conditions modifiées et une expérience peu coûteuse. Parlez de votre affection plutôt que de compter sur les actes pour expliquer chaque émotion. Les exercices suivants préservent les normes et les promesses tout en réduisant la charge de tout maintenir seul."
+    ],
+    "actions": [
+      {
+        "context": "Un programme change",
+        "step": "Demandez pourquoi et gardez une condition essentielle.",
+        "phrase": "L’horaire peut changer ; prévenez-moi simplement à l’avance."
+      },
+      {
+        "context": "Vous faites tous les préparatifs",
+        "step": "Confiez une vérification à un partenaire volontaire.",
+        "phrase": "Pourriez-vous prendre en charge cette vérification ?"
+      },
+      {
+        "context": "Une nouvelle méthode semble incertaine",
+        "step": "Testez une étape à faible risque et comparez le résultat.",
+        "phrase": "Essayons cette petite partie et voyons ce qui se passe."
+      }
+    ]
+  },
+  "ISFJ": {
+    "highlights": [
+      "L’attention se niche souvent dans les détails",
+      "Rendre visibles les efforts invisibles",
+      "Inclure sa propre capacité"
+    ],
+    "sections": [
+      "Vous remarquez peut-être les besoins immédiats et les moyens pratiques de faciliter la vie. Un voyage évoque la fatigue, les besoins alimentaires et les préparatifs. L’expérience familière soutient l’attention et la continuité, mais ce profil ne vous attribue pas un rôle de soutien attitré. Leurs responsabilités peuvent rester les leurs ; vos besoins ont aussi leur place dans le programme.",
+      "Vous vous souvenez peut-être des préférences en choisissant un lieu et rangez après une rencontre. Un travail utile peut rester invisible, laissant les autres ignorer son coût. Dites ce que vous souhaitez offrir et ce qui doit être partagé. Acceptez une autre méthode ; un événement imparfait ne signifie pas que vous avez manqué d’attention.",
+      "Une écoute patiente et le fait de reprendre des nouvelles peuvent rassurer un ami. La peur de blesser peut vous empêcher d’exprimer votre propre avis. Compréhension et désaccord peuvent coexister. Vérifiez votre énergie et le temps disponible pour un soutien répété. Refuser une demande ne revient pas à rejeter l’amitié et n’exige pas de compenser par davantage d’efforts.",
+      "Vous exprimez peut-être votre affection par les tâches quotidiennes et les détails retenus, et souhaitez que cet effort soit reconnu. Si cette reconnaissance est tenue pour acquise, le ressentiment peut grandir. Demandez une réponse précise ou une tâche partagée plutôt qu’une preuve générale d’affection. Demandez comment l’autre exprime son attention et redistribuez ensemble les responsabilités.",
+      "Les démonstrations et les étapes reproductibles peuvent faciliter votre apprentissage. La qualité et la considération soutiennent votre travail, mais vous résolvez peut-être les difficultés seul pour ne pas peser sur vos collègues. Partagez tôt votre charge réelle. Une révision ne rejette pas forcément tous vos efforts ; renseignez-vous sur le niveau attendu plutôt que de tenter de deviner chaque attente.",
+      "L’attention aux détails remarque les petits besoins, la patience soutient la continuité et les promesses rendent le quotidien fiable. Le coût peut être un surmenage caché, une fatigue ignorée ou trop d’engagements. Précisez à qui revient chaque tâche et confiez à quelqu’un d’autre une tâche qui peut être partagée. Une attention qui inclut votre capacité a plus de chances de rester réciproque.",
+      "Rendez l’attention visible et négociable. Vérifiez votre énergie avant de dire oui, demandez une action concrète et acceptez une aide différente de votre méthode. Ces exercices relient la fiabilité aux limites, vous laissant aussi recevoir de l’attention au lieu de seulement la préparer pour les autres."
+    ],
+    "actions": [
+      {
+        "context": "Vous voulez dire oui immédiatement",
+        "step": "Vérifiez votre énergie et proposez une part réaliste.",
+        "phrase": "Je peux aider sur cette partie aujourd’hui ; il faut une autre solution pour le reste."
+      },
+      {
+        "context": "Votre effort semble passer inaperçu",
+        "step": "Demandez le partage d’une responsabilité concrète.",
+        "phrase": "Pourriez-vous vous charger du rangement la prochaine fois ?"
+      },
+      {
+        "context": "L’aide diffère de votre méthode",
+        "step": "Vérifiez le résultat nécessaire sans tout refaire.",
+        "phrase": "Cela fonctionne aussi. Merci d’avoir pris cette partie en charge."
+      }
+    ]
+  },
+  "ESTJ": {
+    "highlights": [
+      "Réduire les suppositions par la clarté",
+      "Expliquer le but des règles",
+      "S’accorder sur les résultats sans fixer chaque méthode"
+    ],
+    "sections": [
+      "Vous remarquez peut-être d’abord l’organisation, les responsabilités et les règles applicables. Un voyage évoque les dates, le budget et les responsables pour éviter à chacun de deviner. Des accords clairs aident à avancer, mais chaque contexte n’exige pas un processus uniforme. De nouvelles conditions et des besoins différents méritent de pouvoir faire évoluer les normes familières.",
+      "Vous résumez peut-être les options et attribuez les responsabilités quand une discussion se prolonge. La coordination évite la confusion, mais la participation doit encore être confirmée. Laissez du temps pour les questions et distinguez les conditions nécessaires des méthodes adaptables. Expliquer la raison d’une règle aide à soulever les difficultés avant la réalisation.",
+      "Un ami peut recevoir de votre part des étapes pratiques ou une aide pour une première action. Vérifiez s’il souhaite agir ou prendre le temps d’exprimer sa déception. En cas de désaccord, gardez les éléments factuels visibles tout en écoutant les contraintes. Une autre méthode peut aussi être responsable, surtout si elle donne le résultat convenu.",
+      "Des promesses tenues et des tâches quotidiennes accomplies peuvent exprimer pour vous l’engagement. Un proche peut aussi souhaiter une réponse émotionnelle. Discutez de la volonté et de la fatigue en même temps que de la répartition du travail. Essayez un accord et réévaluez-le ; le changement exige de communiquer, mais ne signifie pas automatiquement un manque de fiabilité.",
+      "Des normes claires et des vérifications de l’avancement peuvent soutenir le travail et l’apprentissage. Clarifiez ensemble un objectif ambigu avant l’exécution tout en laissant de la place aux nouveaux éléments. Convenez de points d’étape sans prescrire chaque méthode. Décrivez une erreur observée et le changement demandé plutôt que de transformer un échec en jugement sur l’attitude.",
+      "L’organisation réduit les lacunes, la responsabilité soutient l’achèvement et la franchise réduit les suppositions. Elles peuvent devenir des exigences prématurées d’uniformité, de l’impatience ou des reprises en main répétées. Vérifiez les ressources autant que le rythme. Demandez ce qui bloque et quelles normes comptent, puis accordez à une autre méthode un petit essai équitable.",
+      "Mettez la structure au service des personnes. Expliquez son but, accueillez des alternatives réalisables et vérifiez si l’aide est souhaitée. Définissez un domaine dans lequel vos collègues peuvent décider seuls et faites-en le bilan ensemble. Ces exercices gardent la clarté tout en permettant aux autres d’assumer leur part ; un processus ajustable peut être plus durable qu’une surveillance constante."
+    ],
+    "actions": [
+      {
+        "context": "Vous voulez clore une discussion",
+        "step": "Donnez une occasion d’exprimer les contraintes.",
+        "phrase": "Quelle difficulté pratique devrions-nous aborder d’abord ?"
+      },
+      {
+        "context": "Un collègue utilise une autre méthode",
+        "step": "Accordez-vous sur le résultat et un point d’étape, puis essayez-la une fois.",
+        "phrase": "L’objectif est commun ; testons votre méthode."
+      },
+      {
+        "context": "Un ami a besoin de soutien",
+        "step": "Vérifiez l’intention avant de découper les tâches.",
+        "phrase": "Est-ce qu’une écoute ou une activité ensemble vous aiderait ?"
+      }
+    ]
+  },
+  "ESFJ": {
+    "highlights": [
+      "Créer du lien par les réponses quotidiennes",
+      "Le silence ne signifie pas forcément la distance",
+      "Concrétiser l’attention et le travail partagé"
+    ],
+    "sections": [
+      "Vous remarquez peut-être si chacun se sent inclus et si les arrangements pratiques répondent aux besoins. Un voyage évoque les disponibilités et les contraintes individuelles. Des habitudes communes et des réponses à temps peuvent vous rassurer, mais plaire à tous n’est pas votre rôle. Vos propres besoins différents ont aussi leur place dans la relation.",
+      "Vous prenez peut-être des nouvelles d’un membre discret du groupe et vous souvenez des préférences lors d’une rencontre. Les détails attentionnés facilitent la participation, mais peuvent devenir du travail invisible. Définissez votre part et invitez une contribution précise. Acceptez le silence sans chercher immédiatement à réparer l’ambiance ; il n’est pas nécessaire d’afficher un enthousiasme constant pour avoir sa place.",
+      "Vous offrez peut-être rapidement de la compagnie et des conseils pratiques tout en souhaitant une réponse claire. Un temps plus long pour assimiler n’est pas forcément de la distance. Demandez les préférences de contact plutôt que d’envoyer davantage de messages pour éprouver le lien. Désaccord et amitié peuvent coexister. Précisez votre temps disponible pour que le soutien soit durable pour vous deux.",
+      "Le contact quotidien, les détails retenus et les arrangements communs peuvent compter pour vous. Une réponse courte peut vous faire douter de vous. Vérifiez l’énergie et les habitudes avant de demander la réponse souhaitée. Rendez les tâches et les projets explicites au lieu de les attribuer à la personne qui les remarque la première. Les demandes précises permettent d’aborder l’insatisfaction avant qu’elle devienne une accusation générale.",
+      "Des partenaires, des destinataires et des étapes clairement définis peuvent soutenir votre effort. Soutenir tout le monde peut interrompre votre propre concentration. Définissez et expliquez un créneau protégé. Les retours ont besoin de faits et de demandes autant que d’encouragements. Lorsque vous recevez une critique, demandez un exemple précis pour que les révisions portent sur le travail plutôt que sur votre sentiment d’être apprécié.",
+      "La considération aide à participer, la coopération facilite les tâches et l’attention apportée à temps rassure. Le coût peut être de se sentir responsable de chaque expression, de chercher sans cesse à être rassuré ou de multiplier les engagements. Des rôles flous comptent aussi. Vérifiez le besoin et votre périmètre avant d’aider ; toute insatisfaction ne vous revient pas à réparer.",
+      "Faites de l’harmonie une coopération négociable. Exprimez votre capacité, vérifiez une supposition sur la relation par une question directe et demandez une contribution précise à une activité. Ces exercices gardent la chaleur tout en montrant que vous avez votre propre temps, vos opinions et des moments où vous avez besoin de soutien."
+    ],
+    "actions": [
+      {
+        "context": "Les réponses vous semblent trop brèves",
+        "step": "Demandez quel contact convient au lieu de le mettre à l’épreuve.",
+        "phrase": "Comment garderons-nous le contact lorsque vous aurez beaucoup à faire ?"
+      },
+      {
+        "context": "Vous gérez tous les préparatifs",
+        "step": "Demandez une contribution définie.",
+        "phrase": "Pourriez-vous confirmer le nombre de personnes pendant que je m’occupe du lieu ?"
+      },
+      {
+        "context": "Les demandes interrompent votre concentration",
+        "step": "Précisez un créneau protégé et l’heure de votre réponse.",
+        "phrase": "Je travaille sur ceci jusqu’à quinze heures ; je pourrai répondre ensuite."
+      }
+    ]
+  },
+  "ISTP": {
+    "highlights": [
+      "Comprendre par l’observation et la pratique",
+      "Rendre visibles les progrès essentiels",
+      "Négocier explicitement l’autonomie"
+    ],
+    "sections": [
+      "Vous examinez peut-être le fonctionnement d’un problème et ce qui peut être testé directement. Pour un voyage, les conditions pratiques comptent, tandis que certains choix peuvent attendre l’arrivée. L’observation sur le terrain soutient la compréhension, sans impliquer de l’indifférence au sens ou aux émotions. Certains vécus ont besoin d’écoute, et certaines promesses demandent plus que de décider plus tard.",
+      "Vous confirmez peut-être les conditions essentielles de transport et de rendez-vous sans rédiger un itinéraire complet. Face à un appareil en panne, vous inspectez avant d’expliquer. Dites aux autres ce que vous vérifiez et quand vous répondrez pour que le silence ne devienne pas de l’incertitude. Précisez les détails adaptables avant qu’un changement de dernière minute soit nécessaire.",
+      "Vous soutenez peut-être un ami en faisant quelque chose ensemble ou en réglant une difficulté pratique. Il peut avoir besoin de quelques mots pour savoir que vous l’avez entendu. Reformulez un problème et demandez si agir serait utile. S’accorder sur la durée et la forme de la discussion peut laisser leur place au soutien pratique comme à la communication.",
+      "Vous avez peut-être besoin d’autonomie et n’aimez pas les vérifications constantes. Un proche a tout de même besoin de savoir quand le contact reprendra et quelles promesses restent valables. Donnez un cadre temporel à la solitude. Après avoir réglé un problème, vérifiez aussi son impact émotionnel ; la réparation pratique peut être terminée avant que l’autre ait fini d’expliquer son vécu.",
+      "La démonstration, la pratique et les retours visibles peuvent faciliter l’apprentissage. Au travail, convenez des résultats et des points d’étape pour que les autres voient l’avancement sans longs comptes rendus. Testez une nouvelle méthode à faible risque. Lorsque d’autres sont concernés, confirmez les conditions et leur consentement plutôt que de supposer qu’une expérience personnelle convient à tous.",
+      "L’observation localise les problèmes, l’action souple gère les changements et la pratique autonome trouve des méthodes utilisables. Le coût peut être des explications insuffisantes ou des conversations reportées. Le stress peut accentuer le retrait. Vérifiez la réponse nécessaire et ce que vous pouvez offrir ; une communication courte et concrète peut réduire l’incertitude sans devenir une longue discussion.",
+      "Donnez à l’autonomie des repères clairs : un point sur l’avancement, une heure de retour après la solitude et une question sur le soutien souhaité. Expliquez une fois à l’avance un arrangement qui revient souvent. Ces exercices rendent vos actions compréhensibles et la coopération plus facile, sans vous demander de parler constamment."
+    ],
+    "actions": [
+      {
+        "context": "Vous réparez quelque chose en silence",
+        "step": "Donnez une information sur l’avancement et une heure de réponse.",
+        "phrase": "Je vérifie la cause ; je vous donne des nouvelles dans une demi-heure."
+      },
+      {
+        "context": "Vous avez besoin de solitude",
+        "step": "Dites quand le contact reprendra et revenez à ce moment-là.",
+        "phrase": "J’ai besoin d’une heure de pause, puis nous pourrons parler."
+      },
+      {
+        "context": "Le problème est réglé, mais la blessure reste",
+        "step": "Demandez quel impact n’a pas encore été entendu.",
+        "phrase": "C’est réglé. Que souhaitez-vous encore que je comprenne ?"
+      }
+    ]
+  },
+  "ISFP": {
+    "highlights": [
+      "Découvrir ses préférences par l’expérience",
+      "Accompagner les petits gestes de mots",
+      "Exprimer ses limites avant l’épuisement"
+    ],
+    "sections": [
+      "Vous remarquez peut-être si une expérience vous met à l’aise et correspond à ce qui compte pour vous. Un voyage évoque l’environnement et le rythme avant une argumentation détaillée. La sensibilité soutient vos choix, mais vous pouvez aussi expliquer vos préférences par des conditions et des exemples à une personne qui ne ressent pas la même chose.",
+      "Vous préférez peut-être une activité sans vouloir que la discussion devienne une compétition. Les détails sensoriels d’une promenade ou d’un moment passé à cuisiner ensemble peuvent inviter à participer. De petits gestes attentionnés expriment l’affection. Dites quelle expérience vous souhaitez et quelle condition éviter ; sinon, les autres peuvent croire que toutes les options vous conviennent autant.",
+      "Vous respectez peut-être les choix d’un ami et offrez une présence calme ou une activité partagée. Une réponse brève et précise l’aide tout de même à savoir qu’il a été entendu. Un désaccord peut exprimer votre ressenti ou votre limite sans prouver qu’il a entièrement tort. Demandez une pause dans une conversation insistante et convenez du moment où la reprendre.",
+      "Vous souhaitez peut-être de l’espace pour votre rythme et vos préférences, en exprimant votre affection par de petits gestes. Un proche peut aussi avoir besoin de mots. Partagez un ressenti bref et provisoire plutôt que d’attendre une clarté complète. Expliquez que l’espace n’est pas un rejet et gardez certains choix autonomes. Respecter la différence commence par savoir où elle se situe.",
+      "L’expérience directe et la pratique visible peuvent soutenir l’apprentissage. Quand un retour professionnel est vague, demandez un exemple concret et le périmètre de révision. Commencez par une action à votre portée et observez son effet. L’expression personnelle et les besoins d’un public peuvent coexister grâce à une révision négociée.",
+      "La sensibilité remarque les changements, la sincérité protège les choix et la souplesse répond au présent. Le coût peut être une communication tardive, l’interprétation du désaccord comme un rejet ou l’acceptation pour éviter le conflit. La fatigue compte aussi. Distinguez un état temporaire d’un besoin durable et formulez une demande précise avant d’atteindre votre limite.",
+      "Donnez aux émotions une forme compréhensible : une préférence observable, une limite claire et une distinction entre modifier le travail et vous rejeter vous-même. Ces exercices relient expérience et communication pour que vous puissiez garder votre rythme tout en aidant les autres à organiser les choses avec vous."
+    ],
+    "actions": [
+      {
+        "context": "Un programme oublie votre préférence",
+        "step": "Exprimez une expérience souhaitée et une condition.",
+        "phrase": "Je préfère un endroit calme ; l’horaire peut rester souple."
+      },
+      {
+        "context": "Le désaccord vous pousse à vous retirer",
+        "step": "Exprimez un besoin sans mettre fin à toute la conversation.",
+        "phrase": "J’ai besoin d’un rythme plus lent. Pouvons-nous reprendre dans dix minutes ?"
+      },
+      {
+        "context": "Un retour vous semble personnel",
+        "step": "Demandez un périmètre de révision précis.",
+        "phrase": "Quelle partie faut-il modifier ? J’aimerais garder cet axe."
+      }
+    ]
+  },
+  "ESTP": {
+    "highlights": [
+      "Apprendre par des essais pratiques",
+      "Associer les autres aux changements",
+      "L’action comprend le suivi jusqu’au bout"
+    ],
+    "sections": [
+      "Vous remarquez peut-être les conditions utilisables et un geste pratique qui met les choses en mouvement. La participation directe et les retours rapides facilitent le jugement, mais aller plus vite n’est pas toujours mieux. Lorsque des coûts, des risques ou les engagements d’autres personnes sont concernés, vérifiez les conditions et leur accord avant d’agir.",
+      "Vous proposez peut-être de commencer à un endroit et de décider de la prochaine étape une fois sur place. L’improvisation peut résoudre un problème tout en surprenant une personne qui s’est préparée. Clarifiez les horaires fixes, les coûts et les détails adaptables. Donnez à chacun une occasion de confirmer pour que le changement reste une expérience partagée plutôt qu’une instruction soudaine.",
+      "Vous invitez peut-être un ami inquiet à marcher ou à faire une activité. Il peut avoir besoin de finir de parler d’abord. Demandez si parler ou bouger aiderait. L’humour peut apaiser la tension s’il est bienvenu ; un silence peut aussi être une pause nécessaire. Rester présent face à une expression plus lente est une forme concrète de participation.",
+      "Les expériences partagées et les réponses directes peuvent compter dans une relation proche. Les projets à long terme peuvent sembler moins urgents que le présent, mais une réponse absente peut être ressentie comme un manque d’engagement. Définissez ce que vous pouvez promettre et ce qui reste souple. Après avoir réglé le problème visible, reconnaissez aussi son impact.",
+      "La pratique et les retours immédiats peuvent faciliter l’apprentissage. Vous savez peut-être gérer l’imprévu au travail, tandis que les tâches répétées gagnent à être vérifiées régulièrement. Définissez un petit résultat visible et contrôlez la finition. Des traces écrites permettent à la personne suivante de prendre le relais. Donnez aux expériences risquées une condition d’arrêt et une responsabilité claire.",
+      "L’action rompt l’immobilisme, l’improvisation gère le changement et l’observation ancre la discussion. Le coût peut être un suivi sous-estimé, des promesses avant de vérifier sa capacité ou des activités pour éviter une conversation difficile. Faites une courte pause pour nommer le vrai problème. Vérifier les effets ultérieurs fait aussi partie d’une action responsable.",
+      "Ajoutez confirmation et achèvement à l’action rapide. Vérifiez une condition essentielle avant un essai, demandez quel soutien est souhaité et donnez aux promesses importantes un horaire fiable. Ces exercices rendent la souplesse plus digne de confiance tout en laissant place à l’aventure partagée et aux ajustements pratiques."
+    ],
+    "actions": [
+      {
+        "context": "Vous voulez essayer immédiatement",
+        "step": "Vérifiez un risque et une condition d’arrêt.",
+        "phrase": "Nous pouvons essayer ; nous nous arrêterons si cela se produit."
+      },
+      {
+        "context": "Le programme d’une activité change",
+        "step": "Expliquez l’impact et confirmez l’accord.",
+        "phrase": "Cela ajoute une demi-heure. Est-ce que cela convient à tout le monde ?"
+      },
+      {
+        "context": "Vous voulez mettre un ami inquiet en mouvement",
+        "step": "Demandez s’il préfère d’abord parler ou agir.",
+        "phrase": "Souhaitez-vous finir de parler ou aller marcher ?"
+      }
+    ]
+  },
+  "ESFP": {
+    "highlights": [
+      "Créer du lien par la participation et les réponses",
+      "La compagnie n’a pas à apporter un bonheur immédiat",
+      "Donner aux projets à long terme de petits retours réguliers"
+    ],
+    "sections": [
+      "Vous remarquez peut-être l’expérience présente et les réponses entre les personnes, découvrant ce qui convient en participant. Un voyage évoque la nourriture, les activités et une aisance partagée. Un lien vivant soutient l’effort, mais vous n’avez pas à être joyeux tout le temps. Le calme, la fatigue et les préoccupations à long terme font aussi partie de la vie.",
+      "Les photos et les recommandations vous aident peut-être à donner vie à un projet de groupe. Lors des rencontres, vous réagissez à l’ambiance tout en préférant des détails adaptables. Distinguez participation et organisation, et vérifiez les horaires et le budget importants. Vous pouvez vous reposer plutôt que jouer la joie ; les relations ont besoin de place pour votre énergie changeante.",
+      "Vous offrez peut-être à un ami inquiet de la compagnie, une activité et une réponse rapide. Il n’est pas forcément prêt à aller mieux. Demandez s’il souhaite continuer à parler ou changer de cadre. Une expérience partagée peut aider sans prendre le contrôle de son récit. Le soutien peut signifier qu’il n’est pas seul, même sans amélioration immédiate.",
+      "Les expériences partagées, l’attention pratique et l’expression immédiate peuvent créer du lien pour vous. Le besoin d’organisation ou de calme d’une personne peut sembler une perte de chaleur. Demandez à quoi répond ce besoin et essayez un petit accord. La stabilité n’a pas à supprimer la nouveauté, et l’affection peut s’exprimer autrement que vous ne le faites.",
+      "Les exemples, les échanges et les retours concrets peuvent faciliter l’apprentissage. Les personnes et les besoins sur place vous mobilisent au travail, tandis que les tâches répétitives ou aux résultats lointains gagnent à avoir des jalons clairs. Terminez un petit bloc et notez l’étape suivante. Un retour peut combiner encouragement et changement précis à essayer.",
+      "L’attention au présent soutient l’adaptation, la chaleur facilite les situations nouvelles et la participation construit des expériences communes. Le coût peut être de réprimer son inconfort pour garder l’ambiance, d’éviter les inquiétudes par l’activité ou d’accepter trop de choses. Vérifiez la fatigue et distinguez un bref regain d’humeur d’un problème qui demande son propre temps.",
+      "Donnez au lien présent une structure qui dure. Vérifiez votre énergie et votre budget avant de participer, laissez place à la tristesse dans le soutien et prévoyez une petite action régulière pour une tâche longue. Ces exercices préservent l’implication tout en rendant le suivi visible. Votre contribution comprend l’honnêteté et l’attention, au-delà de l’énergie apportée au groupe."
+    ],
+    "actions": [
+      {
+        "context": "Plusieurs invitations arrivent",
+        "step": "Vérifiez votre énergie et votre budget, puis confirmez-en une.",
+        "phrase": "Je peux participer à celle-ci cette semaine ; je laisse les autres en suspens."
+      },
+      {
+        "context": "Vous voulez remonter le moral d’un ami",
+        "step": "Demandez si parler ou changer de cadre serait utile.",
+        "phrase": "Rien ne presse pour aller mieux. Parler ou marcher ?"
+      },
+      {
+        "context": "Une tâche longue reste en attente",
+        "step": "Programmez et consignez une action régulière de dix minutes.",
+        "phrase": "Aujourd’hui, je vais terminer ce petit bloc."
+      }
+    ]
+  }
+}

@@ -1,0 +1,467 @@
+[
+  {
+    "id": 1,
+    "a": "Je länger eine Feier dauert, desto mehr Energie bekommen Sie.",
+    "b": "Auf Feiern ziehen Sie sich irgendwann in eine ruhige Ecke zurück, um neue Kraft zu sammeln."
+  },
+  {
+    "id": 2,
+    "a": "Einen ganzen Tag allein zu verbringen, ist für Sie meist völlig in Ordnung und kann sogar angenehm sein.",
+    "b": "Wenn Sie einen ganzen Tag allein verbringen, fühlen Sie sich einsam und gelangweilt."
+  },
+  {
+    "id": 3,
+    "a": "Sie sprechen Ihre Gedanken lieber mit anderen durch, um sie zu ordnen.",
+    "b": "Sie denken lieber erst allein über etwas nach, bevor Sie es mit anderen teilen."
+  },
+  {
+    "id": 4,
+    "a": "Mit Fremden zu sprechen, erfordert von Ihnen bewusste Anstrengung.",
+    "b": "Sie kommen mit Menschen, die Sie gerade erst kennengelernt haben, leicht und gern ins Gespräch."
+  },
+  {
+    "id": 5,
+    "a": "Sie bevorzugen lebhafte Gruppenaktivitäten gegenüber Gesprächen zu zweit.",
+    "b": "Sie bevorzugen tiefgehende Gespräche zu zweit gegenüber Gruppenaktivitäten."
+  },
+  {
+    "id": 6,
+    "a": "Meist warten Sie darauf, dass andere sich melden, statt selbst etwas vorzuschlagen.",
+    "b": "Sie beginnen häufig Gespräche oder laden Freunde zu gemeinsamen Unternehmungen ein."
+  },
+  {
+    "id": 7,
+    "a": "In Teambesprechungen gehören Sie oft zu den Ersten, die sich zu Wort melden.",
+    "b": "In Teambesprechungen hören Sie meist erst zu und entscheiden dann, ob Sie etwas beitragen."
+  },
+  {
+    "id": 8,
+    "a": "In einer ruhigen Umgebung arbeiten Sie produktiver.",
+    "b": "Sie arbeiten produktiver, wenn viele Menschen um Sie herum sind."
+  },
+  {
+    "id": 9,
+    "a": "Nach sozialen Aktivitäten fühlen Sie sich voller Energie.",
+    "b": "Nach sozialen Aktivitäten haben Sie das Gefühl, sich ausruhen zu müssen."
+  },
+  {
+    "id": 10,
+    "a": "Sie pflegen lieber wenige, dafür enge Freundschaften.",
+    "b": "Sie gehören eher vielen verschiedenen sozialen Kreisen an."
+  },
+  {
+    "id": 11,
+    "a": "Sie sind in der Regel bereit, von Ihrem Privatleben zu erzählen, auch Menschen, die Sie nicht gut kennen.",
+    "b": "Sie teilen Ihr Privatleben eher nur mit Menschen, die Ihnen nahestehen."
+  },
+  {
+    "id": 12,
+    "a": "Lärm und Unterbrechungen lenken Sie leicht ab.",
+    "b": "In einer lauten Umgebung können Sie meist konzentriert bleiben."
+  },
+  {
+    "id": 13,
+    "a": "Sie sprechen oder präsentieren gern vor einem größeren Publikum.",
+    "b": "Vor einem größeren Publikum zu sprechen, macht Sie nervös oder ist Ihnen unangenehm."
+  },
+  {
+    "id": 14,
+    "a": "Sie würden sich meist als introvertierten Menschen beschreiben.",
+    "b": "Sie würden sich meist als kontaktfreudigen Menschen beschreiben."
+  },
+  {
+    "id": 15,
+    "a": "Zeit mit Freunden erfüllt Sie mit Motivation.",
+    "b": "Nach Zeit mit Freunden brauchen Sie Ruhe für sich, um neue Kraft zu schöpfen."
+  },
+  {
+    "id": 16,
+    "a": "Sie bevorzugen geplante Treffen im kleinen Kreis.",
+    "b": "Sie mögen spontane, ungeplante Treffen."
+  },
+  {
+    "id": 17,
+    "a": "Wenn Sie allein in einem ruhigen Raum arbeiten, langweilen Sie sich eher.",
+    "b": "Wenn Sie allein in einem ruhigen Raum arbeiten, können Sie sich am besten konzentrieren."
+  },
+  {
+    "id": 18,
+    "a": "Sie schreiben lieber Nachrichten, als zu telefonieren.",
+    "b": "Telefonieren fühlt sich für Sie natürlicher an, als Nachrichten zu schreiben."
+  },
+  {
+    "id": 19,
+    "a": "Nach einer Zeit ohne soziale Kontakte werden Sie unruhig.",
+    "b": "Auch nach längerer Zeit ohne soziale Kontakte werden Sie nicht unruhig."
+  },
+  {
+    "id": 20,
+    "a": "Sie arbeiten lieber an einem ruhigen Ort, etwa in einer Bibliothek.",
+    "b": "Sie arbeiten gern in einem lauten Café."
+  },
+  {
+    "id": 21,
+    "a": "In sozialen Situationen fühlen Sie sich im Allgemeinen sehr wohl.",
+    "b": "In ungewohnten sozialen Situationen brauchen Sie meist Zeit, um locker zu werden."
+  },
+  {
+    "id": 22,
+    "a": "In einem Team konzentrieren Sie sich lieber auf Ihre eigenen Aufgaben.",
+    "b": "In einem Team übernehmen Sie gern eine koordinierende Rolle."
+  },
+  {
+    "id": 23,
+    "a": "Ungeplante soziale Begegnungen empfinden Sie als angenehm und bereichernd.",
+    "b": "Unerwartete Treffen mit anderen empfinden Sie manchmal als stressig."
+  },
+  {
+    "id": 24,
+    "a": "Sie beschäftigen sich gern mit abstrakten Konzepten und Möglichkeiten.",
+    "b": "Sie beschäftigen sich gern mit konkreten, praktischen Angelegenheiten."
+  },
+  {
+    "id": 25,
+    "a": "Bei Entscheidungen verlassen Sie sich auf konkrete Daten und Fakten.",
+    "b": "Sie vertrauen Ihrer Intuition mehr als konkreten Belegen."
+  },
+  {
+    "id": 26,
+    "a": "Sie denken lieber über zukünftige Möglichkeiten nach als über bereits Geschehenes.",
+    "b": "Sie beschäftigen sich mehr mit dem, was geschehen ist, als mit zukünftigen Möglichkeiten."
+  },
+  {
+    "id": 27,
+    "a": "Sie erfassen eher zuerst einzelne Details und bilden sich dann einen Überblick.",
+    "b": "Sie beginnen gern mit dem Gesamtbild, bevor Sie sich auf Details konzentrieren."
+  },
+  {
+    "id": 28,
+    "a": "Sie bevorzugen offene Aufgaben, die Kreativität erfordern.",
+    "b": "Sie bevorzugen Aufgaben mit festen Schritten und vorhersehbaren Ergebnissen."
+  },
+  {
+    "id": 29,
+    "a": "Sie bevorzugen eine direkte und klare Sprache.",
+    "b": "Metaphern und bildhafte Sprache fühlen sich für Sie natürlich an."
+  },
+  {
+    "id": 30,
+    "a": "Wenn Sie eine neue Fertigkeit erlernen, finden Sie lieber selbst heraus, wie es geht, und suchen nach besseren Vorgehensweisen.",
+    "b": "Wenn Sie eine neue Fertigkeit erlernen, halten Sie sich eher genau an Anleitungen."
+  },
+  {
+    "id": 31,
+    "a": "Sie konzentrieren sich eher auf das, was gerade tatsächlich geschieht.",
+    "b": "Sie verlieren sich oft in Vorstellungen oder Tagträumen über die Zukunft."
+  },
+  {
+    "id": 32,
+    "a": "In Diskussionen beschäftigen Sie sich lieber mit Theorien und Prinzipien.",
+    "b": "In Diskussionen sprechen Sie lieber über konkrete Beispiele."
+  },
+  {
+    "id": 33,
+    "a": "Sie vertrauen bewährten, traditionellen Lösungen.",
+    "b": "Sie probieren gern neue, unkonventionelle Lösungen aus."
+  },
+  {
+    "id": 34,
+    "a": "Sie übersehen eher Details und konzentrieren sich auf die allgemeine Richtung.",
+    "b": "Sie achten sehr auf Details und übersehen selten kleine Fehler."
+  },
+  {
+    "id": 35,
+    "a": "Sie sind eher praktisch veranlagt, und Ihre Ideen beruhen meist auf konkreten Gegebenheiten.",
+    "b": "Sie haben eine lebhafte Fantasie und kommen häufig auf neue Ideen."
+  },
+  {
+    "id": 36,
+    "a": "Aufgaben mit ungewissen Ergebnissen, die eine langfristige Erkundung erfordern, machen Ihnen nichts aus.",
+    "b": "Sie bevorzugen Aufgaben mit unmittelbaren, klaren Ergebnissen."
+  },
+  {
+    "id": 37,
+    "a": "Beim Lesen achten Sie oft auf einzelne Details und Genauigkeit.",
+    "b": "Beim Lesen konzentrieren Sie sich auf die übergreifende Erzählung und die Themen."
+  },
+  {
+    "id": 38,
+    "a": "Sie denken, dass theoretische Modelle und Prinzipien praktisches Handeln leiten können.",
+    "b": "Sie glauben, dass gesunder Menschenverstand und praktische Erfahrung wichtiger sind als Theorie."
+  },
+  {
+    "id": 39,
+    "a": "Sie beschäftigen sich lieber mit praktischen Problemen im Alltag.",
+    "b": "Sie denken gern über tiefgehende philosophische Fragen oder Sinnfragen nach."
+  },
+  {
+    "id": 40,
+    "a": "Bei Entscheidungen verlassen Sie sich stärker auf Ihre Einschätzung zukünftiger Möglichkeiten.",
+    "b": "Bei Entscheidungen verlassen Sie sich stärker auf frühere Erfahrungen."
+  },
+  {
+    "id": 41,
+    "a": "Sie erwerben lieber neues Wissen, das Sie direkt anwenden können.",
+    "b": "Sie erwerben gern Wissen, das Ihren Horizont erweitert, auch wenn es nicht sofort nützlich ist."
+  },
+  {
+    "id": 42,
+    "a": "Bei Ihrer Arbeit stehen Innovation und Möglichkeiten im Vordergrund.",
+    "b": "Bei Ihrer Arbeit stehen praktische Umsetzbarkeit und Effizienz im Vordergrund."
+  },
+  {
+    "id": 43,
+    "a": "Wenn Sie etwas erklären, nennen Sie lieber direkt die Fakten.",
+    "b": "Wenn Sie etwas erklären, verwenden Sie lieber Analogien und gedankliche Verknüpfungen."
+  },
+  {
+    "id": 44,
+    "a": "Sie mögen abwechslungsreiche Tagesabläufe und tägliche Veränderungen.",
+    "b": "Sie bevorzugen einen regelmäßigen Tagesablauf."
+  },
+  {
+    "id": 45,
+    "a": "Beim Lösen von Problemen stützen Sie sich eher auf beobachtbare, konkrete Informationen.",
+    "b": "Beim Lösen von Problemen ziehen Sie eher Schlüsse aus bekannten Mustern."
+  },
+  {
+    "id": 46,
+    "a": "Sie interessieren sich mehr für die symbolische oder tiefere Bedeutung hinter den Dingen.",
+    "b": "Sie interessieren sich für die wörtliche Bedeutung der Dinge."
+  },
+  {
+    "id": 47,
+    "a": "Sie verbessern und verfeinern gern bestehende Systeme oder Methoden.",
+    "b": "Sie entwickeln lieber völlig neue Ansätze oder Systeme von Grund auf."
+  },
+  {
+    "id": 48,
+    "a": "Bei Entscheidungen geben Sie den Auswirkungen auf Menschen Vorrang.",
+    "b": "Bei Entscheidungen geben Sie Logik und objektiven Fakten Vorrang."
+  },
+  {
+    "id": 49,
+    "a": "Wenn ein Freund Ihnen sein Leid klagt, helfen Sie ihm lieber, eine Lösung zu finden.",
+    "b": "Wenn ein Freund Ihnen sein Leid klagt, versuchen Sie lieber zuerst, seine Gefühle zu verstehen."
+  },
+  {
+    "id": 50,
+    "a": "Die Gefühle anderer beeinflussen Sie leicht.",
+    "b": "Meist können Sie emotional sachlich und unabhängig bleiben."
+  },
+  {
+    "id": 51,
+    "a": "Sie finden, dass Effizienz bei der Arbeit wichtiger ist als ein harmonisches Miteinander.",
+    "b": "Sie finden, dass ein harmonisches Miteinander bei der Arbeit wichtiger ist als Effizienz."
+  },
+  {
+    "id": 52,
+    "a": "Sie bevorzugen Arbeit, bei der Sie anderen helfen oder sie unterstützen.",
+    "b": "Sie bevorzugen Arbeit, bei der Sie Systeme analysieren und optimieren."
+  },
+  {
+    "id": 53,
+    "a": "Sie finden, dass man die Wahrheit direkt aussprechen sollte, auch wenn sie unangenehm ist.",
+    "b": "Sie finden, dass man vor dem Aussprechen unangenehmer Wahrheiten deren emotionale Wirkung auf andere bedenken sollte."
+  },
+  {
+    "id": 54,
+    "a": "Ihre Entscheidungen werden vor allem von Ihren persönlichen Werten geleitet.",
+    "b": "Ihre Entscheidungen werden vor allem von rationaler Analyse geleitet."
+  },
+  {
+    "id": 55,
+    "a": "Es fällt Ihnen recht leicht, sachliche Kritik zu äußern, ohne sich große Sorgen über deren emotionale Wirkung zu machen.",
+    "b": "Es fällt Ihnen schwer, Kollegen zu kritisieren, weil Sie sie nicht verletzen möchten."
+  },
+  {
+    "id": 56,
+    "a": "In Diskussionen achten Sie auch auf die Gefühlslage Ihres Gegenübers.",
+    "b": "In Diskussionen konzentrieren Sie sich auf die logische Schlüssigkeit der Argumente."
+  },
+  {
+    "id": 57,
+    "a": "Bei Konflikten im Team konzentrieren Sie sich eher auf Fakten und Logik.",
+    "b": "Bei Konflikten im Team konzentrieren Sie sich eher auf die Gefühle und Bedürfnisse aller Beteiligten."
+  },
+  {
+    "id": 58,
+    "a": "Sie finden es wichtiger, gemocht zu werden, als recht zu haben.",
+    "b": "Sie finden es wichtiger, recht zu haben, als gemocht zu werden."
+  },
+  {
+    "id": 59,
+    "a": "Sie finden ehrliche Rückmeldungen wichtiger als das angenehme Gefühl Ihres Gegenübers.",
+    "b": "Sie sind mit Kritik an anderen sehr vorsichtig, weil Sie befürchten, ihnen ein unangenehmes Gefühl zu geben."
+  },
+  {
+    "id": 60,
+    "a": "Zu ethischen Fragen haben Sie meist feste persönliche Überzeugungen.",
+    "b": "Zu moralischen Fragen vertreten Sie vergleichsweise neutrale, vom Kontext abhängige Positionen."
+  },
+  {
+    "id": 61,
+    "a": "Komplexe Probleme zu lösen oder anspruchsvolle Aufgaben zu bewältigen, gibt Ihnen ein Gefühl von Erfolg.",
+    "b": "Anderen beim Erreichen ihrer Ziele zu helfen, gibt Ihnen ein Gefühl von Erfolg."
+  },
+  {
+    "id": 62,
+    "a": "Sie setzen auf Einfühlungsvermögen und sind bereit, Regeln für besondere Umstände flexibel auszulegen.",
+    "b": "Sie setzen auf Fairness: Regeln sollten auch dann durchgesetzt werden, wenn sie jemanden benachteiligen."
+  },
+  {
+    "id": 63,
+    "a": "Sie zeigen eher auf natürliche Weise durch Taten als durch Worte, dass Ihnen jemand am Herzen liegt.",
+    "b": "Für Sie ist es natürlich, mit herzlichen Worten auszudrücken, dass Ihnen jemand am Herzen liegt."
+  },
+  {
+    "id": 64,
+    "a": "Bei Entscheidungen hören Sie auf Ihre innere Stimme, damit diese Ihren Werten entsprechen.",
+    "b": "Bei Entscheidungen wägen Sie wiederholt Vor- und Nachteile ab, um sicherzustellen, dass sie logisch richtig sind."
+  },
+  {
+    "id": 65,
+    "a": "Sie finden, dass echte Gefühle in passenden Momenten ausgedrückt und nicht ungehemmt gezeigt werden sollten.",
+    "b": "Sie finden, dass Gefühle natürlich fließen und nicht bewusst kontrolliert werden müssen."
+  },
+  {
+    "id": 66,
+    "a": "In einem Team übernehmen Sie lieber eine koordinierende und unterstützende Rolle.",
+    "b": "In einem Team übernehmen Sie lieber eine analytische und strategische Rolle."
+  },
+  {
+    "id": 67,
+    "a": "Sie unterstützen eine richtige Entscheidung auch dann, wenn sie die meisten Menschen verärgert.",
+    "b": "Sie suchen Lösungen, die die meisten Menschen zufriedenstellen, auch wenn sie nicht optimal sind."
+  },
+  {
+    "id": 68,
+    "a": "Sie verstehen das Verhalten anderer eher aus einer emotionalen Perspektive.",
+    "b": "Sie erklären das Verhalten anderer eher logisch als emotional."
+  },
+  {
+    "id": 69,
+    "a": "Bei schwierigen Entscheidungen verlassen Sie sich stärker auf eine systematische Analyse.",
+    "b": "Bei schwierigen Entscheidungen verlassen Sie sich stärker auf Ihre emotionale Intuition."
+  },
+  {
+    "id": 70,
+    "a": "Sie finden es angemessen, in Auseinandersetzungen einen emotionalen Standpunkt auszudrücken.",
+    "b": "Sie finden es angemessen, in Auseinandersetzungen einen objektiven Standpunkt beizubehalten."
+  },
+  {
+    "id": 71,
+    "a": "Sie planen gern im Voraus und entscheiden ungern in letzter Minute.",
+    "b": "Sie bleiben gern flexibel und passen sich Situationen an, sobald sie entstehen."
+  },
+  {
+    "id": 72,
+    "a": "Sie finden lieber erst beim Vorgehen heraus, wie etwas funktioniert, und verfeinern den Plan im Laufe des Prozesses.",
+    "b": "Sie klären lieber alle Details, bevor Sie handeln."
+  },
+  {
+    "id": 73,
+    "a": "Ihr Schreibtisch oder Arbeitsplatz ist meist ordentlich und gut organisiert.",
+    "b": "Ihr Schreibtisch oder Arbeitsplatz wirkt auf andere unordentlich, aber Sie wissen, wo alles ist."
+  },
+  {
+    "id": 74,
+    "a": "Sie schieben Dinge manchmal auf, arbeiten aber kurz vor einer Frist oft effizient.",
+    "b": "Sie erledigen Aufgaben gern so früh wie möglich, damit sie sich nicht ansammeln."
+  },
+  {
+    "id": 75,
+    "a": "Plötzliche Veränderungen sind Ihnen unangenehm, und Sie brauchen Zeit, sich anzupassen.",
+    "b": "Sie passen sich plötzlichen Veränderungen leicht an und finden sie vielleicht sogar spannend."
+  },
+  {
+    "id": 76,
+    "a": "Sie bearbeiten eher mehrere Aufgaben gleichzeitig.",
+    "b": "Sie konzentrieren sich eher darauf, eine Sache nach der anderen abzuschließen."
+  },
+  {
+    "id": 77,
+    "a": "Sie mögen klare Ergebnisse und einen eindeutigen Abschluss.",
+    "b": "Sie mögen offene Geschichten oder Projekte, die Raum für Fantasie lassen."
+  },
+  {
+    "id": 78,
+    "a": "Sie erledigen Aufgaben oft im letzten Moment.",
+    "b": "Sie erledigen Aufgaben meist pünktlich oder sogar vorzeitig."
+  },
+  {
+    "id": 79,
+    "a": "Sie halten Aufgaben gern in einem Kalender oder auf einer Liste fest.",
+    "b": "Sie verlassen sich stärker auf Ihr Gedächtnis und Bauchgefühl und erstellen ungern Listen."
+  },
+  {
+    "id": 80,
+    "a": "Nach einer Entscheidung möchten Sie manchmal weitere Möglichkeiten erkunden.",
+    "b": "Nach einer Entscheidung bereuen Sie diese selten oder möchten sie selten noch einmal überdenken."
+  },
+  {
+    "id": 81,
+    "a": "Sie erstellen vor einer Reise gern einen detaillierten Reiseplan.",
+    "b": "Sie reisen lieber spontan und ohne feste Pläne."
+  },
+  {
+    "id": 82,
+    "a": "Sie neigen dazu, Entscheidungen möglichst lange aufzuschieben, um sich Optionen offenzuhalten.",
+    "b": "Sie treffen Entscheidungen eher früh, damit Sie vorankommen können."
+  },
+  {
+    "id": 83,
+    "a": "Unerledigte Aufgaben lassen Ihnen keine Ruhe.",
+    "b": "Unerledigte Aufgaben beeinflussen Ihre Stimmung kaum."
+  },
+  {
+    "id": 84,
+    "a": "Sie mögen Neues und Veränderungen in Ihrem Alltag.",
+    "b": "Sie mögen einen vorhersehbaren, regelmäßigen Tagesablauf."
+  },
+  {
+    "id": 85,
+    "a": "Sie sehen Fristen als Hilfsmittel, um sich zu konzentrieren.",
+    "b": "Sie sehen Fristen als belastende Einschränkung."
+  },
+  {
+    "id": 86,
+    "a": "Bei Projekten mögen Sie die Umsetzung und Anpassung am liebsten.",
+    "b": "Bei Projekten mögen Sie die Planung und Gestaltung am liebsten."
+  },
+  {
+    "id": 87,
+    "a": "Bei Aufgaben legen Sie lieber zuerst eine Richtung fest und setzen sie dann um.",
+    "b": "Bei Aufgaben erkunden Sie lieber erst Möglichkeiten, bevor Sie eine Richtung festlegen."
+  },
+  {
+    "id": 88,
+    "a": "Sie finden, die beste Vorbereitung ist, sofort anzufangen und dabei zu lernen.",
+    "b": "Sie finden, dass eine gründliche Vorbereitung nötig ist, bevor man etwas beginnt."
+  },
+  {
+    "id": 89,
+    "a": "Sie mögen klare Strukturen und Vorhersehbarkeit bei Ihrer Arbeit.",
+    "b": "Sie mögen ein gewisses Maß an Improvisation und Flexibilität bei Ihrer Arbeit."
+  },
+  {
+    "id": 90,
+    "a": "Sie können Planänderungen akzeptieren, ohne sich deshalb allzu schuldig zu fühlen.",
+    "b": "Sie fühlen sich schuldig, wenn Sie Ihre Pläne nicht einhalten."
+  },
+  {
+    "id": 91,
+    "a": "Sie bringen lieber ein Projekt bis zu einem bestimmten Stand voran, bevor Sie das nächste beginnen.",
+    "b": "Sie wechseln gern zwischen mehreren laufenden Projekten."
+  },
+  {
+    "id": 92,
+    "a": "Sie finden, dass zu viele Regeln Kreativität und Flexibilität einschränken.",
+    "b": "Sie finden, dass klare Regeln und Abläufe die Arbeit erleichtern."
+  },
+  {
+    "id": 93,
+    "a": "In Ihrer Freizeit planen Sie Ihre Aktivitäten eher im Voraus.",
+    "b": "In Ihrer Freizeit entscheiden Sie eher spontan, was Sie unternehmen."
+  }
+]

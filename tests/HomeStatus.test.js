@@ -64,7 +64,8 @@ it('shows a real completion time and saved status, translating the date without 
   expect(wrapper.find('.result-save-state').text()).toBe(
     'Saved in this browser',
   )
-  await wrapper.find('.lang-toggle').trigger('click')
+  await wrapper.find('.lang-toggle').setValue('zh')
+  await flushPromises()
   expect(wrapper.find('.result-completed').text()).toContain('年')
   expect(JSON.parse(localStorage.getItem('mbti_lab_result'))).toEqual(entry)
 })

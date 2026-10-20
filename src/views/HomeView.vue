@@ -89,6 +89,7 @@ import SharePanel from '../components/SharePanel.vue'
 import { useResultStore } from '../composables/useResultStore.js'
 import { useDraftStore } from '../composables/useDraftStore.js'
 import { useI18n } from 'vue-i18n'
+import { dateLocale } from '../i18n/locales.js'
 
 const router = useRouter()
 const { peek, isPersisted } = useResultStore()
@@ -107,7 +108,7 @@ const completedDate = computed(() => {
 })
 const formattedDate = computed(() =>
   completedDate.value
-    ? new Intl.DateTimeFormat(locale.value === 'en' ? 'en-US' : 'zh-CN', {
+    ? new Intl.DateTimeFormat(dateLocale(locale.value), {
         year: 'numeric',
         month: 'short',
         day: 'numeric',

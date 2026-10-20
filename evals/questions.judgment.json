@@ -1,0 +1,3472 @@
+{
+  "schemaVersion": 1,
+  "evaluatedAt": "2026-10-20T07:12:03.426Z",
+  "provenance": {
+    "method": "codex-cli",
+    "evaluatedAtMeaning": "Artifact merge creation time; per-locale startedAt and completedAt retain the original actual reviewer timestamps.",
+    "evaluator": "Six independent full-question-bank Codex CLI linguistic reviews, at most three concurrent; existing authenticated CLI and configured model. Source-current complete checkpoints may resume interrupted runs; no selection between competing judgments.",
+    "limitations": [
+      "An AI linguistic review cannot establish psychometric validity, scoring validity or measurement equivalence across cultures."
+    ],
+    "selectedLocales": [
+      "de",
+      "ja"
+    ],
+    "reviewedLocales": [
+      "de",
+      "ja"
+    ],
+    "checkpointLocales": [],
+    "reusedLocales": [
+      "es",
+      "fr",
+      "pt",
+      "ko"
+    ],
+    "resumedCheckpoints": true,
+    "priorArtifactHash": "ad249e7e45186a405dafd9bf405210c917fdc5a08d4c829e21a36b5136d9338f",
+    "currentRunnerWorkerLimit": 2,
+    "historicalMaximumConcurrency": 3,
+    "concurrencyNote": "Current runner uses at most 2 workers. Reused actual judgments preserve their original timestamps and may originate from earlier 3-worker runs; the full history never exceeded 3 concurrent question reviewers."
+  },
+  "sourceHashes": {
+    "src/data/questions.js": "24a57b27c387d518195f366c595aa347a48be7b99891d8c81692b85b24b36374",
+    "evals/questions.rubric.json": "610d8af4aeaa079a2dbbbeec098d16152e4212f6c6d5b3cb24315c965a69a2a9",
+    "evals/questions.response.schema.json": "1783838e8ac0739564d00f0335665c05479472b14371dd18df043ec69601e321",
+    "src/data/translations/es.questions.json": "9956043b2c62c7f259cd16d431035c1c8502e3936954f3bbc122bcdcf17c1bd8",
+    "src/data/translations/fr.questions.json": "d75a77bb4a975da6cabed5a3d1719442987a94905c9b3f12293af5eb0324f183",
+    "src/data/translations/de.questions.json": "1f095bf2f3139e17c6380ada46b1437e64fc75f92f81f740a376ebb12f01d994",
+    "src/data/translations/pt.questions.json": "8020ff84dc782eb95ff2903d5f11dea95c89e46952ee0d6ec6263853b950b1f8",
+    "src/data/translations/ja.questions.json": "cfc90eb2ce74522858d5deb7698bf1c2877444a348b3e1b91d18eaee62966a22",
+    "src/data/translations/ko.questions.json": "d5babd48e44444682adefddf01cd00ddf5d9bcb13b16e012fd525515e47947cb"
+  },
+  "results": [
+    {
+      "locale": "es",
+      "evaluator": "OpenAI AI assistant",
+      "model": null,
+      "limitations": [
+        "This AI linguistic review reflects semantic judgments about the supplied text; human reviewers may identify additional regional nuances.",
+        "An AI linguistic review cannot establish psychometric validity, scoring validity or measurement equivalence across cultures."
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 2,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 3,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 4,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 5,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 6,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 7,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 8,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 9,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 10,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 11,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 12,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 13,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 14,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 15,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 16,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 17,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 18,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 19,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 20,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 21,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 22,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 23,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 24,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 25,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 26,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 27,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 28,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 29,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 30,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 31,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 32,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 33,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 34,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 35,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 36,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 37,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 38,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 39,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 40,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 41,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 42,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 43,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 44,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 45,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 46,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 47,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 48,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 49,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 50,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 51,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 52,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 53,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 54,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 55,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 56,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 57,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 58,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 59,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 60,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 61,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 62,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 63,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 64,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 65,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 66,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 67,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 68,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 69,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 70,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 71,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 72,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 73,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 74,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 75,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 76,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 77,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 78,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 79,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 80,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 81,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 82,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 83,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 84,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 85,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 86,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 87,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 88,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 89,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 90,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 91,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 92,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 93,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        }
+      ],
+      "startedAt": "2026-10-20T06:48:51.182Z",
+      "completedAt": "2026-10-20T06:50:23.387Z"
+    },
+    {
+      "locale": "fr",
+      "evaluator": "OpenAI AI assistant",
+      "model": null,
+      "limitations": [
+        "This AI linguistic review may miss subtle ambiguities or differences in how French speakers interpret wording.",
+        "An AI linguistic review cannot establish psychometric validity, scoring validity or measurement equivalence across cultures."
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 2,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 3,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 4,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 5,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 6,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 7,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 8,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 9,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 10,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 11,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 12,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 13,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 14,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 15,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 16,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 17,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 18,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 19,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 20,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 21,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 22,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 23,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 24,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 25,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 26,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 27,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 28,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 29,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 30,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 31,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 32,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 33,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 34,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 35,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 36,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 37,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 38,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 39,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 40,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 41,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 42,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 43,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 44,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 45,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 46,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 47,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 48,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 49,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 50,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 51,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 52,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 53,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 54,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 55,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 56,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 57,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 58,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 59,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 60,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 61,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 62,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 63,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 64,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 65,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 66,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 67,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 68,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 69,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 70,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 71,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 72,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 73,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 74,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 75,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 76,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 77,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 78,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 79,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 80,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 81,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 82,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 83,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 84,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 85,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 86,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 87,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 88,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 89,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 90,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 91,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 92,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 93,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        }
+      ],
+      "startedAt": "2026-10-20T07:01:49.285Z",
+      "completedAt": "2026-10-20T07:05:33.927Z"
+    },
+    {
+      "locale": "de",
+      "evaluator": "AI assistant performing an independent English–German semantic review",
+      "model": null,
+      "limitations": [
+        "AI linguistic judgments can miss nuances and should not replace independent human review.",
+        "This review cannot establish psychometric validity, scoring validity, or measurement equivalence across cultures."
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 2,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 3,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 4,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 5,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 6,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 7,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 8,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 9,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 10,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 11,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 12,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 13,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 14,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 15,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 16,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 17,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 18,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 19,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 20,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 21,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 22,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 23,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 24,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 25,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 26,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 27,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 28,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 29,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 30,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 31,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 32,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 33,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 34,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 35,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 36,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 37,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 38,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 39,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 40,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 41,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 42,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 43,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 44,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 45,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 46,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 47,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 48,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 49,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 50,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 51,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 52,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 53,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 54,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 55,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 56,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 57,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 58,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 59,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 60,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 61,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 62,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 63,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 64,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 65,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 66,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 67,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 68,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 69,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 70,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 71,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 72,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 73,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 74,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 75,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 76,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 77,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 78,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 79,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 80,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 81,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 82,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 83,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 84,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 85,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 86,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 87,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 88,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 89,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 90,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 91,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 92,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 93,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        }
+      ],
+      "startedAt": "2026-10-20T07:08:27.544Z",
+      "completedAt": "2026-10-20T07:11:28.019Z"
+    },
+    {
+      "locale": "pt",
+      "evaluator": "ChatGPT, AI linguistic evaluator",
+      "model": null,
+      "limitations": [
+        "This is an AI semantic review; human Portuguese-language review may identify nuances it misses.",
+        "The translations predominantly use Brazilian Portuguese. Regional suitability across Portuguese-speaking populations has not been established.",
+        "An AI linguistic review cannot establish psychometric validity, scoring validity or measurement equivalence across cultures."
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 2,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 3,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 4,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 5,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 6,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 7,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 8,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 9,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 10,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 11,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 12,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 13,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 14,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 15,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 16,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 17,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 18,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 19,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 20,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 21,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 22,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 23,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 24,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 25,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 26,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 27,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 28,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 29,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 30,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 31,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 32,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 33,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 34,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 35,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 36,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 37,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 38,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 39,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 40,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 41,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 42,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 43,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 44,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 45,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 46,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 47,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 48,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 49,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 50,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 51,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 52,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 53,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 54,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 55,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 56,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 57,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 58,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 59,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 60,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 61,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 62,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 63,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 64,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 65,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 66,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 67,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 68,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 69,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 70,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 71,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 72,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 73,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 74,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 75,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 76,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 77,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 78,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 79,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 80,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 81,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 82,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 83,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 84,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 85,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 86,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 87,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 88,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 89,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 90,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 91,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 92,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 93,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        }
+      ],
+      "startedAt": "2026-10-20T06:50:23.470Z",
+      "completedAt": "2026-10-20T06:54:17.642Z"
+    },
+    {
+      "locale": "ja",
+      "evaluator": "OpenAI AI assistant",
+      "model": null,
+      "limitations": [
+        "An AI linguistic review cannot establish psychometric validity, scoring validity, or measurement equivalence across cultures.",
+        "Judgments are based on the supplied text, without respondent testing or independent human validation."
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 2,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 3,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 4,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 5,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 6,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 7,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 8,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 9,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 10,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 11,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 12,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 13,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 14,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 15,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 16,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 17,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 18,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 19,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 20,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 21,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 22,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 23,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 24,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 25,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 26,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 27,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 28,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 29,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 30,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 31,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 32,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 33,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 34,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 35,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 36,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 37,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 38,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 39,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 40,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 41,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 42,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 43,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 44,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 45,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 46,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 47,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 48,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 49,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 50,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 51,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 52,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 53,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 54,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 55,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 56,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 57,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 58,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 59,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 60,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 61,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 62,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 63,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 64,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 65,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 66,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 67,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 68,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 69,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 70,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 71,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 72,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 73,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 74,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 75,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 76,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 77,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 78,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 79,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 80,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 81,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 82,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 83,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 84,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 85,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 86,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 87,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 88,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 89,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 90,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 91,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 92,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 93,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        }
+      ],
+      "startedAt": "2026-10-20T07:08:27.548Z",
+      "completedAt": "2026-10-20T07:12:03.425Z"
+    },
+    {
+      "locale": "ko",
+      "evaluator": "OpenAI AI assistant",
+      "model": null,
+      "limitations": [
+        "This is an AI linguistic review; nuanced Korean usage may warrant additional review by a native-speaking human.",
+        "An AI linguistic review cannot establish psychometric validity, scoring validity or measurement equivalence across cultures."
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 2,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 3,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 4,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 5,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 6,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 7,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 8,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 9,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 10,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 11,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 12,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 13,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 14,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 15,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 16,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 17,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 18,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 19,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 20,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 21,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 22,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 23,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 24,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 25,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 26,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 27,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 28,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 29,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 30,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 31,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 32,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 33,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 34,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 35,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 36,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 37,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 38,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 39,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 40,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 41,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 42,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 43,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 44,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 45,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 46,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 47,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 48,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 49,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 50,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 51,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 52,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 53,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 54,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 55,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 56,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 57,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 58,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 59,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 60,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 61,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 62,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 63,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 64,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 65,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 66,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 67,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 68,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 69,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 70,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 71,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 72,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 73,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 74,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 75,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 76,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 77,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 78,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 79,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 80,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 81,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 82,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 83,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 84,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 85,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 86,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 87,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 88,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 89,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 90,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 91,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 92,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        },
+        {
+          "id": 93,
+          "a": "pass",
+          "b": "pass",
+          "issues": []
+        }
+      ],
+      "startedAt": "2026-10-20T06:58:57.720Z",
+      "completedAt": "2026-10-20T07:00:39.483Z"
+    }
+  ]
+}

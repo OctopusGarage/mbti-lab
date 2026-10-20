@@ -15,6 +15,14 @@ Vue Router uses hash navigation under `/mbti-lab/` so direct links work on stati
 
 The home page does not load report text, ECharts, or html2canvas. Reports share their content model; ECharts loads only when the radar is expanded, and html2canvas loads on image capture.
 
+## Languages
+
+`src/i18n/locales.js` lists English, Simplified Chinese, Spanish, French, German, Brazilian Portuguese, Japanese, and Korean. The original Chinese default is preserved. A supported `lang` hash-query parameter takes priority over the saved `mbti_lab_locale` preference; regional codes normalize to supported base languages.
+
+`src/i18n/resources.js` loads the selected language's UI and type metadata first, question text on assessment entry, and full reports on report/library entry. Other languages remain unloaded. Route guards prepare resources before displaying a page. The native language selector commits a change after loading succeeds, preserves drafts and results, and supports retry after failure. If preference storage is denied, the language still works for the current session and a notice explains the limitation.
+
+The additional question files contain only stable IDs and translated A/B strings. Dimensions, polarity, short/full selection, answer values, and scoring remain in the original bank. `localizedContent.js` provides the loaded text; `report.js` preserves one report shape across languages. Public type links include the selected language without exposing answers or proportions.
+
 ## Scoring and persistence
 
 `src/composables/useTest.js` owns question selection and the original scoring rules. Each side of a dimension is rounded independently, so a pair can total 101. A leading-side percentage of 50 still wins the original tie rule. The inclusive 45–55% close range is a display convention, not a confidence interval, and does not change the type.
@@ -25,7 +33,7 @@ The home page does not load report text, ECharts, or html2canvas. Reports share 
 
 ## Reports and reading
 
-`src/utils/report.js` and `src/data/reportContent.js` provide three highlights, seven chapters, and three context/action/example exercises per type in Chinese and English. The content adapts the reference fork's R2 editorial stories while retaining this project's type names and colors. English is a concise adaptation rather than a sentence-for-sentence translation.
+`src/utils/report.js` and `src/data/reportContent.js` provide three highlights, seven chapters, and three context/action/example exercises per type in Chinese and English, with six additional complete translations in `src/data/translations/`. The content adapts the reference fork's R2 editorial stories while retaining this project's type names and colors. English is a concise adaptation rather than a sentence-for-sentence translation.
 
 Reports present reflection prompts rather than measured personal facts. Unsourced rarity, celebrity, career-prescription, best-match, and cognitive-stack claims are not rendered. Legacy metadata remains in `src/data/types.js` for compatibility.
 

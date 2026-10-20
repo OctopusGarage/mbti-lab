@@ -1,10 +1,18 @@
 <template>
+  <div v-if="languageNavigation.failedRoute" class="language-navigation-error" role="alert">
+    {{ $t('app.languageError') }}
+    <button @click="retryLanguage">{{ $t('app.languageRetry') }}</button>
+    <button @click="languageNavigation.failedRoute = ''">{{ $t('share.close') }}</button>
+  </div>
   <RouterView />
   <div class="og-brand">🐙 OctopusGarage</div>
 </template>
 
 <script setup>
-import { RouterView } from 'vue-router'
+import { RouterView, useRouter } from 'vue-router'
+import { languageNavigation } from './i18n/resources.js'
+const router = useRouter()
+function retryLanguage() { router.push(languageNavigation.failedRoute) }
 </script>
 
 <style>
@@ -43,7 +51,7 @@ body {
   z-index: 50;
 }
 
-:where(button, a, textarea, input, summary):focus-visible {
+:where(button, a, textarea, input, select, summary):focus-visible {
   outline: 3px solid var(--blue-mid);
   outline-offset: 3px;
 }
@@ -55,4 +63,9 @@ body {
     scroll-behavior: auto !important;
   }
 }
+</style>
+
+<style>
+.language-navigation-error { position: relative; z-index: 150; background: var(--cream); color: var(--ink); padding: 16px 24px; font-size: 14px; line-height: 1.6; }
+.language-navigation-error button { min-height: 44px; margin: 4px; padding: 8px 12px; font: inherit; cursor: pointer; }
 </style>

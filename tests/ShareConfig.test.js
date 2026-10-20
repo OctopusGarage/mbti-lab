@@ -36,3 +36,9 @@ it('uses the central address through interpolation in both languages', () => {
     expect(JSON.stringify(messages)).not.toContain('octopusgarage.github.io')
   }
 })
+
+it('keeps the selected language in a public type link without leaking URL state', async () => {
+  const { typeShareUrl } = await import('../src/config.js')
+  expect(typeShareUrl('infj', 'https://example.org/app?answers=secret#/result', 'pt-BR')).toBe('https://example.org/app/#/types?type=INFJ&lang=pt')
+  expect(typeShareUrl('infj', 'https://example.org', '../bad')).toBe('https://example.org/#/types?type=INFJ')
+})
