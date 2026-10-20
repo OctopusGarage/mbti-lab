@@ -13,7 +13,8 @@
     "test:e2e:install": "playwright install chromium firefox webkit",
     "test:e2e:ui": "playwright test --ui",
     "eval:check": "node scripts/eval-check.mjs",
-    "eval:ai": "node scripts/eval-ai.mjs"
+    "eval:ai": "node scripts/eval-ai.mjs",
+    "docs:screenshots": "node scripts/capture-readme.mjs"
   },
   "dependencies": {
     "echarts": "^6.1.0",
