@@ -25,7 +25,7 @@
 
 | Take an assessment | Read your report | Explore the library |
 | :---: | :---: | :---: |
-| <a href="docs/images/assessment.png"><img src="docs/images/assessment.png" width="240" alt="English assessment, question 7 of 60, with two answer choices and saved progress" /></a> | <a href="docs/images/report.png"><img src="docs/images/report.png" width="240" alt="English ENFJ report with reflection prompts, answer proportions, and reading controls" /></a> | <a href="docs/images/types.png"><img src="docs/images/types.png" width="240" alt="Chinese type-library search with five matching profiles" /></a> |
+| <a href="docs/images/assessment.png"><img src="docs/images/assessment.png" width="240" alt="English assessment, question 7 of 60, with two answer choices and saved progress" /></a> | <a href="docs/images/report.png"><img src="docs/images/report.png" width="240" alt="English ENFJ report with reflection prompts, answer proportions, and reading controls" /></a> | <a href="docs/images/types.png"><img src="docs/images/types.png" width="240" alt="Chinese type-library search with four matching profiles" /></a> |
 
 Captured from the live app on **20 October 2026**. The report is computed from a scripted demonstration assessment. [Capture provenance and refresh instructions](docs/screenshots.md).
 
@@ -42,7 +42,7 @@ The original PNG is 1080 × 1080. Its QR code opens the app; shared type links o
 
 ## The experience
 
-| | |
+| Capability | Details |
 | --- | --- |
 | **Start, pause, return** | Choose 60 or 93 questions, resume a saved draft, and reopen your latest result. |
 | **Read beyond four letters** | Each type has three highlights, seven expandable chapters, and three practical exercises. Dimension bars and an optional radar chart describe your answer patterns. |

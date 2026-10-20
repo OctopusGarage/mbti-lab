@@ -1,0 +1,763 @@
+{
+  "evaluator": "OpenAI ChatGPT",
+  "model": null,
+  "limitations": [
+    "This evaluation covers only the eight Japanese target cases in batch 14/16 and their eight supplied English counterparts; it cannot establish a result for all 128 cases.",
+    "Same-language differentiation comparisons are limited to the eight supplied Japanese types, using one-letter neighbors.",
+    "This is AI editorial language review, without independent native-speaker validation, user testing, UI inspection or psychometric assessment.",
+    "All supplied highlights, seven sections, three actions, four strength tags and framing fields were reviewed. Source freshness and hashes were not independently verified."
+  ],
+  "results": [
+    {
+      "id": "ISTJ.ja",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Tentative descriptions explicitly reject novelty aversion as a fixed trait. Advice distinguishes essential constraints from preferences and asks for willing cooperation. Strength tags such as reliable execution remain broad ability associations, acceptable under the explicit reflection framing but not measured findings. Percentage and neighbor notes avoid statistical or compatibility claims.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.ja",
+              "path": "report.sections.0.text",
+              "quote": "これは観察の出発点であり、新しいことを拒むという意味ではありません。"
+            },
+            {
+              "caseId": "ISTJ.ja",
+              "path": "framing.editorialNote",
+              "quote": "あなたの回答から検出した個人の事実や、人間関係・キャリア・能力に関する予測ではありません。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All highlights, sections and actions preserve the English emphasis on checking changed conditions, expressing care, sharing unfinished progress and testing low-risk alternatives. The willing-partner boundary, strength tags and framing survive without meaningful omission or reversal.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.ja",
+              "path": "report.sections.4.text",
+              "quote": "必要な確認と、役目を終えた手順を分けましょう。"
+            },
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.sections.4.text",
+              "quote": "Separate necessary checks from steps that have outlived their use."
+            },
+            {
+              "caseId": "ISTJ.ja",
+              "path": "report.actions.1.step",
+              "quote": "協力する意思のある相手に、確認を一つ担当してもらいましょう。"
+            },
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.actions.1.step",
+              "quote": "Assign one check to a willing partner."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor ISFJ, ISTJ attends to dependable conditions, standards and updating established procedures. ISFJ attends to unnoticed care work and preserving personal capacity. Their suggested changes therefore differ concretely rather than merely recommending kindness or planning.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.ja",
+              "path": "report.sections.5.text",
+              "quote": "重要な制約は守りながら、重要度の低い手順には不完全さを許してみてください。"
+            },
+            {
+              "caseId": "ISFJ.ja",
+              "path": "report.sections.5.text",
+              "quote": "それぞれの仕事が誰の責任かを明らかにし、分担できる仕事を一つ手放しましょう。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action provides a clear trigger, a small observable step and usable wording: negotiate one condition after change, delegate one check with consent, or compare a small trial. All three directly reduce the report's burden of maintaining reliability alone.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.ja",
+              "path": "report.actions.0.phrase",
+              "quote": "時間は変えても大丈夫なので、事前に知らせてください。"
+            },
+            {
+              "caseId": "ISTJ.ja",
+              "path": "report.actions.1.phrase",
+              "quote": "この確認は、責任を持って担当してもらえますか？"
+            },
+            {
+              "caseId": "ISTJ.ja",
+              "path": "report.actions.2.step",
+              "quote": "リスクの小さい手順を試し、結果を比べましょう。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The strength tags are broad reflective associations; they should not be interpreted as demonstrated reliability or execution ability.",
+        "No material Japanese omission, reversal or unsafe recommendation was identified."
+      ]
+    },
+    {
+      "id": "ISFJ.ja",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly refuses to assign a caretaker role and protects refusal without compensatory effort. It supports reciprocal responsibility rather than obligatory self-sacrifice. The strong-memory tag is an ability association, so the explicit reflection framing is important and limits the safety score to 4.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.ja",
+              "path": "report.sections.0.text",
+              "quote": "このプロフィールが世話役を割り当てるわけではありません。"
+            },
+            {
+              "caseId": "ISFJ.ja",
+              "path": "report.sections.2.text",
+              "quote": "一つの依頼を断ることは、友情を拒むことではありませんし、余分な努力で埋め合わせる必要もありません。"
+            },
+            {
+              "caseId": "ISFJ.ja",
+              "path": "framing.cardNote",
+              "quote": "タイプのラベルだけにとらわれず、実際の場面を振り返るために活用してください。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "The Japanese preserves every section's practical care situations, recognition requests, workload disclosure and limits. Highlights, all three actions, tags and framing retain the source meaning. Rendering capacity through energy and available effort is natural here and does not remove the boundary.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.ja",
+              "path": "report.sections.2.text",
+              "quote": "理解と異論は両立できます。"
+            },
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.sections.2.text",
+              "quote": "Understanding and disagreement can coexist."
+            },
+            {
+              "caseId": "ISFJ.ja",
+              "path": "report.actions.2.step",
+              "quote": "すべてをやり直さず、必要な結果になっているかを確かめましょう。"
+            },
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.actions.2.step",
+              "quote": "Check the necessary outcome without redoing everything."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ISFJ and one-letter neighbor ESFJ both discuss care, but ISFJ centers invisible practical labor, immediate acceptance and redoing others' help. ESFJ instead centers social response, interpreting brief replies and protecting focus from requests. The exercises make this distinction observable.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.ja",
+              "path": "report.actions.2.step",
+              "quote": "すべてをやり直さず、必要な結果になっているかを確かめましょう。"
+            },
+            {
+              "caseId": "ESFJ.ja",
+              "path": "report.actions.0.step",
+              "quote": "関係を試すより、無理のない連絡の仕方を尋ねましょう。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All three exercises have recognizable situations and manageable responses: offer a realistic portion, request a named shared task, and inspect the outcome without redoing it. Their example phrases make boundaries and receiving help practical without requiring extra compensatory work.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.ja",
+              "path": "report.actions.0.phrase",
+              "quote": "今日はこの部分なら手伝えるよ。残りは別の方法を考えよう。"
+            },
+            {
+              "caseId": "ISFJ.ja",
+              "path": "report.actions.1.phrase",
+              "quote": "次は片づけを担当してもらえる？"
+            },
+            {
+              "caseId": "ISFJ.ja",
+              "path": "report.actions.2.phrase",
+              "quote": "このやり方でも大丈夫だね。担当してくれてありがとう。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The strong-memory tag remains an unmeasured ability association despite otherwise careful limits.",
+        "The translation consistently preserves permission to refuse care work and accept different methods."
+      ]
+    },
+    {
+      "id": "ESTJ.ja",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Coordination is explicitly bounded by participation checks, willingness, fatigue and independent decision-making. A single error is not treated as evidence of character. Organization and decisive-execution tags remain generalized capacities under reflection framing, rather than established individual abilities.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.ja",
+              "path": "report.sections.1.text",
+              "quote": "調整は混乱を防ぎますが、参加には本人の確認が必要です。"
+            },
+            {
+              "caseId": "ESTJ.ja",
+              "path": "report.sections.4.text",
+              "quote": "一度の失敗から態度を決めつけるより、観察した間違いと求める変更を具体的に伝えましょう。"
+            },
+            {
+              "caseId": "ESTJ.ja",
+              "path": "framing.editorialNote",
+              "quote": "ここにあるのはタイプに基づく例と振り返りのための問いです。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All highlights, sections and exercises preserve the English distinction between agreed outcomes and flexible methods. Consent, emotional response, resource checks and fair trials survive. Strength tags and statistical/reflection notes retain their source functions without substantive drift.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.ja",
+              "path": "report.sections.4.text",
+              "quote": "方法をすべて指定せず、確認の機会を合意してください。"
+            },
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.sections.4.text",
+              "quote": "Agree on checkpoints without prescribing every method."
+            },
+            {
+              "caseId": "ESTJ.ja",
+              "path": "report.actions.2.phrase",
+              "quote": "話を聞くのと、一緒に何かするのと、どちらが助けになる？"
+            },
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.actions.2.phrase",
+              "quote": "Would listening or doing something together help?"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against one-letter neighbor ISTJ, ESTJ focuses on organizing other people's participation and granting discretion within shared outcomes. ISTJ focuses on checking established conditions and personally testing unfamiliar procedures. The distinct delegation and trial contexts go beyond generic planning.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.ja",
+              "path": "report.sections.6.text",
+              "quote": "同僚が自分で決められる範囲を定め、一緒に見直しましょう。"
+            },
+            {
+              "caseId": "ISTJ.ja",
+              "path": "report.actions.2.context",
+              "quote": "新しい方法に不安を感じるとき"
+            },
+            {
+              "caseId": "ISTJ.ja",
+              "path": "report.actions.2.step",
+              "quote": "リスクの小さい手順を試し、結果を比べましょう。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The three actions specify discussion closure, a colleague's alternative method and a friend's support need. Each offers a bounded behavior and a usable question or invitation. Outcome/checkpoint alignment is more detailed than its example phrase, but the complete action supplies what is needed.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.ja",
+              "path": "report.actions.0.phrase",
+              "quote": "まず対処すべき、実務上の難しさは何ですか？"
+            },
+            {
+              "caseId": "ESTJ.ja",
+              "path": "report.actions.1.step",
+              "quote": "成果と確認の機会について認識を合わせ、一度試してみましょう。"
+            },
+            {
+              "caseId": "ESTJ.ja",
+              "path": "report.actions.2.step",
+              "quote": "作業を分ける前に、何を求めているかを確かめましょう。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The report meaningfully tempers its organizational strength tags with consent and independent ownership.",
+        "No material fidelity or actionability defect was identified."
+      ]
+    },
+    {
+      "id": "ESFJ.ja",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report rejects compulsory enthusiasm and responsibility for everyone's dissatisfaction. It recommends asking about communication preferences rather than testing affection. Caring, dedication and cohesion tags remain broad reflective associations; explicit framing prevents treating them as measured traits.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.ja",
+              "path": "report.sections.1.text",
+              "quote": "仲間でいるために、いつも熱意を見せる必要はありません。"
+            },
+            {
+              "caseId": "ESFJ.ja",
+              "path": "report.sections.5.text",
+              "quote": "すべての不満をあなたが解決する必要はありません。"
+            },
+            {
+              "caseId": "ESFJ.ja",
+              "path": "framing.editorialNote",
+              "quote": "あなたの回答から検出した個人の事実や、人間関係・キャリア・能力に関する予測ではありません。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "All highlights, sections and actions preserve the core recommendations, autonomy and scope limits. Minor drift remains: the Japanese wording for self-doubt is less clear than the English, and the social-skills tag becomes sociability, shifting competence toward disposition. Neither reverses the practical guidance.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.ja",
+              "path": "report.sections.3.text",
+              "quote": "短い返事が、自分への不安につながることもあります。"
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.sections.3.text",
+              "quote": "A short reply can prompt self-doubt."
+            },
+            {
+              "caseId": "ESFJ.ja",
+              "path": "report.sections.2.text",
+              "quote": "つながりを確かめるためにメッセージを増やすより、どんな連絡の仕方がよいか尋ねましょう。"
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.sections.2.text",
+              "quote": "Ask about contact preferences rather than sending more messages to test the bond."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor ESTJ, ESFJ notices inclusion, short replies and relational reassurance. ESTJ notices operational constraints and how to coordinate methods around outcomes. Their first exercises concretely contrast contact negotiation with eliciting practical obstacles.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.ja",
+              "path": "report.actions.0.phrase",
+              "quote": "忙しいときは、どんなふうに連絡を取り合おうか？"
+            },
+            {
+              "caseId": "ESTJ.ja",
+              "path": "report.actions.0.phrase",
+              "quote": "まず対処すべき、実務上の難しさは何ですか？"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All three actions combine a specific trigger with a feasible communication step and concrete wording. Contact preferences, dividing venue preparation and a stated response time directly address the report's reassurance, invisible-work and focus concerns without requiring others to respond immediately.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.ja",
+              "path": "report.actions.0.step",
+              "quote": "関係を試すより、無理のない連絡の仕方を尋ねましょう。"
+            },
+            {
+              "caseId": "ESFJ.ja",
+              "path": "report.actions.1.phrase",
+              "quote": "私が会場を手配する間、人数の確認をお願いできる？"
+            },
+            {
+              "caseId": "ESFJ.ja",
+              "path": "report.actions.2.phrase",
+              "quote": "3時まではこの作業に集中します。その後なら返事ができます。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The self-doubt sentence would be clearer if it explicitly described becoming unsure of oneself.",
+        "The social-skills strength tag is rendered as sociability, a minor meaning shift.",
+        "The report strongly preserves permission for quiet and limits on emotional responsibility."
+      ]
+    },
+    {
+      "id": "ISTP.ja",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report rejects emotional indifference as an inference, protects autonomy and explicitly requires consent for experiments affecting others. The high-technical-skill and calm-judgment tags are stronger ability associations than the prose establishes; reflection framing makes them acceptable but warrants a score of 4.",
+          "evidence": [
+            {
+              "caseId": "ISTP.ja",
+              "path": "report.sections.0.text",
+              "quote": "意味や気持ちに無関心だという意味ではありません。"
+            },
+            {
+              "caseId": "ISTP.ja",
+              "path": "report.sections.4.text",
+              "quote": "個人的な実験を全員が受け入れると決めつけず、条件と同意を確認してください。"
+            },
+            {
+              "caseId": "ISTP.ja",
+              "path": "framing.editorialNote",
+              "quote": "あなたの回答から検出した個人の事実や、人間関係・キャリア・能力に関する予測ではありません。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "The complete Japanese case preserves hands-on investigation, visible progress, bounded solitude and listening after practical repair. The metaphor about an interface for autonomy becomes clear natural prose. All actions, highlights, tags and framing retain their central meanings and consent boundaries.",
+          "evidence": [
+            {
+              "caseId": "ISTP.ja",
+              "path": "report.sections.3.text",
+              "quote": "実際の修理が終わっても、相手はまだ自分の体験を話し終えていないことがあります。"
+            },
+            {
+              "caseId": "ISTP.en",
+              "path": "report.sections.3.text",
+              "quote": "the practical repair may finish before the other person has finished explaining their experience."
+            },
+            {
+              "caseId": "ISTP.ja",
+              "path": "report.sections.6.text",
+              "quote": "自分で動ける自由を周囲にも分かる形にしましょう。"
+            },
+            {
+              "caseId": "ISTP.en",
+              "path": "report.sections.6.text",
+              "quote": "Give autonomy a clear interface"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "One-letter neighbor ISFP emphasizes comfort, personal values and expressing preferences or boundaries. ISTP emphasizes mechanisms, testing and making silent practical work legible. Their actions address different observable communication gaps.",
+          "evidence": [
+            {
+              "caseId": "ISTP.ja",
+              "path": "report.sections.0.text",
+              "quote": "問題の仕組みと、直接試せることを調べることがあるかもしれません。"
+            },
+            {
+              "caseId": "ISFP.ja",
+              "path": "report.sections.0.text",
+              "quote": "体験が心地よく、自分の大切なものに合っているかに気づくことがあるかもしれません。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action has a recognizable context, one feasible step and a usable phrase. The half-hour update and one-hour break supply observable timing; the final question distinguishes practical resolution from unheard impact. The actions do not demand constant conversation.",
+          "evidence": [
+            {
+              "caseId": "ISTP.ja",
+              "path": "report.actions.0.phrase",
+              "quote": "原因を調べています。30分後に状況をお伝えします。"
+            },
+            {
+              "caseId": "ISTP.ja",
+              "path": "report.actions.1.step",
+              "quote": "いつまた話せるかを伝え、その時間に戻りましょう。"
+            },
+            {
+              "caseId": "ISTP.ja",
+              "path": "report.actions.2.phrase",
+              "quote": "問題への対処は済んだよ。ほかに分かっておいてほしいことはある？"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The high-technical-skill tag should remain an optional association, not evidence of actual technical proficiency.",
+        "The translation handles autonomy and emotional follow-up clearly and faithfully."
+      ]
+    },
+    {
+      "id": "ISFP.ja",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report supports personal preferences, independent choices, pauses and early boundaries without portraying disagreement as pathology. The artistic-talent tag is an unmeasured ability association; the explicit reflection framing prevents interpreting it as an individual finding but limits the score.",
+          "evidence": [
+            {
+              "caseId": "ISFP.ja",
+              "path": "report.sections.3.text",
+              "quote": "一人の空間が欲しいことは拒絶ではないと説明し、自分だけで決める選択も残してください。"
+            },
+            {
+              "caseId": "ISFP.ja",
+              "path": "framing.editorialNote",
+              "quote": "あなたの回答から検出した個人の事実や、人間関係・キャリア・能力に関する予測ではありません。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "All sections, highlights and actions preserve the source's preferences, provisional feelings, revision scope and limits. Minor Japanese awkwardness remains: the final example's wording for keeping a focus is stilted, and 'one's own space' sounds more spatial than the source's broader personal space. These do not remove the permission or recommendation.",
+          "evidence": [
+            {
+              "caseId": "ISFP.ja",
+              "path": "report.actions.2.phrase",
+              "quote": "どの部分を変えればよいですか？ この重点は残したいと思っています。"
+            },
+            {
+              "caseId": "ISFP.en",
+              "path": "report.actions.2.phrase",
+              "quote": "Which part should change? I would like to keep this focus."
+            },
+            {
+              "caseId": "ISFP.ja",
+              "path": "report.sections.3.text",
+              "quote": "今の気持ちを短く、暫定的な形で伝えてみましょう。"
+            },
+            {
+              "caseId": "ISFP.en",
+              "path": "report.sections.3.text",
+              "quote": "Share a short provisional feeling rather than waiting for complete clarity."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against one-letter neighbor ISTP, ISFP asks how to communicate desired experiences and protect expression during revision. ISTP asks how to communicate investigation progress and resume contact after solitude. The distinction is grounded in preferences versus practical troubleshooting, not generic sensitivity.",
+          "evidence": [
+            {
+              "caseId": "ISFP.ja",
+              "path": "report.actions.0.phrase",
+              "quote": "静かな場所がいいな。時間は合わせられるよ。"
+            },
+            {
+              "caseId": "ISTP.ja",
+              "path": "report.actions.0.phrase",
+              "quote": "原因を調べています。30分後に状況をお伝えします。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "All three actions provide clear contexts, small requests and example phrases. Stating a quiet-place preference and negotiating a ten-minute pause are immediately usable. The revision question is also usable, but its second sentence is less idiomatic and would benefit from naming the specific focus being retained.",
+          "evidence": [
+            {
+              "caseId": "ISFP.ja",
+              "path": "report.actions.0.step",
+              "quote": "したい体験を一つ、条件を一つ伝えましょう。"
+            },
+            {
+              "caseId": "ISFP.ja",
+              "path": "report.actions.1.phrase",
+              "quote": "もう少しゆっくり話したい。10分後に続けてもいい？"
+            },
+            {
+              "caseId": "ISFP.ja",
+              "path": "report.actions.2.phrase",
+              "quote": "どの部分を変えればよいですか？ この重点は残したいと思っています。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The final example phrase is understandable but sounds translated; a more idiomatic reference to the point or element being retained would improve usability.",
+        "The artistic-talent tag is not substantiated as an individual ability.",
+        "No material permission loss or translation reversal was identified."
+      ]
+    },
+    {
+      "id": "ESTP.ja",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly rejects speed as automatically preferable and requires willingness, risk checks, stopping conditions and ownership. Humor is conditional on being welcomed. Charisma and crisis-handling tags remain generalized capacities under reflection framing; they are not supported as measured individual abilities.",
+          "evidence": [
+            {
+              "caseId": "ESTP.ja",
+              "path": "report.sections.0.text",
+              "quote": "費用やリスク、ほかの人の約束に関わる場合は、動く前に条件と本人の意思を確かめましょう。"
+            },
+            {
+              "caseId": "ESTP.ja",
+              "path": "report.sections.4.text",
+              "quote": "リスクのある実験には、中止条件と明確な責任の所在を用意してください。"
+            },
+            {
+              "caseId": "ESTP.ja",
+              "path": "framing.cardNote",
+              "quote": "タイプのラベルだけにとらわれず、実際の場面を振り返るために活用してください。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All highlights, sections and actions retain practical trials, shared confirmation, listening before activity and follow-through. The Japanese preserves the stopping-condition requirement and conditional welcome for humor. Tags and framing retain the source meanings without meaningful loss or reversal.",
+          "evidence": [
+            {
+              "caseId": "ESTP.ja",
+              "path": "report.sections.2.text",
+              "quote": "ユーモアは歓迎されれば緊張を和らげますが、沈黙も必要な休止になることがあります。"
+            },
+            {
+              "caseId": "ESTP.en",
+              "path": "report.sections.2.text",
+              "quote": "Humor can ease tension if it is welcome; a silence may also be a needed pause."
+            },
+            {
+              "caseId": "ESTP.ja",
+              "path": "report.actions.1.phrase",
+              "quote": "これだと30分長くなるけれど、みんな大丈夫？"
+            },
+            {
+              "caseId": "ESTP.en",
+              "path": "report.actions.1.phrase",
+              "quote": "This adds half an hour. Does that work for everyone?"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "One-letter neighbor ESFP also values shared activity, but ESTP foregrounds practical trials, changing plans, risk and completion. ESFP foregrounds emotional atmosphere, permission not to be cheerful and managing invitation load. The first actions make the contrast concrete.",
+          "evidence": [
+            {
+              "caseId": "ESTP.ja",
+              "path": "report.actions.0.step",
+              "quote": "リスクを一つと、中止する条件を確かめましょう。"
+            },
+            {
+              "caseId": "ESFP.ja",
+              "path": "report.actions.0.step",
+              "quote": "元気と予算を確認し、一つ参加を確定しましょう。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "All three actions supply a trigger, feasible step and usable phrase. The changed-plan example quantifies the impact, and the friendship example offers a genuine choice. The trial example leaves both the risk and stopping condition as placeholders, making it less ready to use than the other two, though the step clearly requires defining them.",
+          "evidence": [
+            {
+              "caseId": "ESTP.ja",
+              "path": "report.actions.0.phrase",
+              "quote": "試してみよう。ただ、こうなったら中止しよう。"
+            },
+            {
+              "caseId": "ESTP.ja",
+              "path": "report.actions.1.step",
+              "quote": "影響を説明し、みんなの意思を確認しましょう。"
+            },
+            {
+              "caseId": "ESTP.ja",
+              "path": "report.actions.2.phrase",
+              "quote": "最後まで話したい？ それとも散歩に行く？"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The first action would be stronger with one concrete low-risk trial and an explicit stopping threshold.",
+        "The report consistently makes participation and practical experimentation conditional on consent.",
+        "Crisis-handling and charisma tags remain reflective associations rather than demonstrated capacities."
+      ]
+    },
+    {
+      "id": "ESFP.ja",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly permits quiet, fatigue and sadness, rejects compulsory cheerfulness and avoids promising that support will improve mood. Energy and practical/aesthetic strength tags remain broad associations under explicit reflection framing rather than measured abilities.",
+          "evidence": [
+            {
+              "caseId": "ESFP.ja",
+              "path": "report.sections.0.text",
+              "quote": "いつも陽気でいる必要はありません。"
+            },
+            {
+              "caseId": "ESFP.ja",
+              "path": "report.sections.2.text",
+              "quote": "すぐによくならなくても、一人ではないと感じてもらうことが支援になる場合もあります。"
+            },
+            {
+              "caseId": "ESFP.ja",
+              "path": "framing.editorialNote",
+              "quote": "あなたの回答から検出した個人の事実や、人間関係・キャリア・能力に関する予測ではありません。"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All highlights, sections and actions preserve participation, changing energy, support without instant happiness and small repeated work blocks. The Japanese naturally expands feedback loops into opportunities to check responses. Tags and framing preserve their meanings, and no material boundary or recommendation is lost.",
+          "evidence": [
+            {
+              "caseId": "ESFP.ja",
+              "path": "report.sections.1.text",
+              "quote": "楽しそうに振る舞い続ける代わりに、休んでもかまいません。"
+            },
+            {
+              "caseId": "ESFP.en",
+              "path": "report.sections.1.text",
+              "quote": "You can rest instead of performing happiness"
+            },
+            {
+              "caseId": "ESFP.ja",
+              "path": "report.actions.2.step",
+              "quote": "定期的に10分取り組む予定を入れ、実行を記録しましょう。"
+            },
+            {
+              "caseId": "ESFP.en",
+              "path": "report.actions.2.step",
+              "quote": "Schedule and record a ten-minute regular action."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor ESTP, ESFP focuses on emotional atmosphere and distinguishing a brief mood lift from concerns needing attention. ESTP focuses on underestimated follow-up and specifying conditions for action. Despite shared walk-or-talk advice, the reports' central attention and corrective exercises remain distinct.",
+          "evidence": [
+            {
+              "caseId": "ESFP.ja",
+              "path": "report.sections.5.text",
+              "quote": "一時的に気分が上向くことと、きちんと時間を取って向き合う必要がある問題を区別しましょう。"
+            },
+            {
+              "caseId": "ESTP.ja",
+              "path": "report.sections.5.text",
+              "quote": "後から生じる影響の確認も、責任ある行動の一部です。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each exercise provides a specific situation, small observable behavior and usable wording. Confirming one invitation after checking resources, offering support without rushing recovery and scheduling a recorded ten-minute work block directly address the report. The regular interval remains user-selectable without making the task vague or burdensome.",
+          "evidence": [
+            {
+              "caseId": "ESFP.ja",
+              "path": "report.actions.0.phrase",
+              "quote": "今週はこれに参加できるよ。ほかはまだ決めずにおくね。"
+            },
+            {
+              "caseId": "ESFP.ja",
+              "path": "report.actions.1.phrase",
+              "quote": "すぐ元気にならなくて大丈夫。話す？ それとも散歩する？"
+            },
+            {
+              "caseId": "ESFP.ja",
+              "path": "report.actions.2.step",
+              "quote": "定期的に10分取り組む予定を入れ、実行を記録しましょう。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The report effectively counters pressure to entertain others or create immediate happiness.",
+        "The friendship exercise overlaps with ESTP, but energy budgeting and repeated work blocks provide concrete additional differentiation.",
+        "No material translation or actionability defect was identified."
+      ]
+    }
+  ]
+}

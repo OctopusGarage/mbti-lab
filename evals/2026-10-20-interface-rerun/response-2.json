@@ -1,0 +1,805 @@
+{
+  "evaluator": "OpenAI ChatGPT, AI editorial evaluator",
+  "model": null,
+  "limitations": [
+    "Batch 3/16 evaluates only the eight specified English targets; the eight Chinese cases serve as source references.",
+    "Comparisons are limited to the eight supplied types in English and their Chinese counterparts, not all sixteen types or eight languages.",
+    "This is AI language and editorial review, without independent native-speaker validation.",
+    "All supplied highlights, sections, actions, strength tags and framing were reviewed. UI rendering, psychometric validity and external verification are outside scope.",
+    "No tools were invoked, files changed or hashes independently verified. These judgments do not establish completion or passage of the full 128-case evaluation."
+  ],
+  "results": [
+    {
+      "id": "INTJ.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report presents optional tendencies, explicitly rejects prediction, and protects collaborative choice and relationship negotiation. All framing notes appropriately limit interpretation. The four strength tags remain broad aspirational attributes rather than demonstrated abilities; the framing makes them acceptable, but their categorical wording limits the score.",
+          "evidence": [
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "not a claim that you predict the future"
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.3.text",
+              "quote": "only when both people can negotiate them"
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "strengthTags.0",
+              "quote": "Strategic vision"
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "framing.editorialNote",
+              "quote": "not individual facts detected from your answers"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "All three highlights, seven sections and three actions preserve the Chinese source's direction-first planning, visible reasoning, consent before analysis and small validation steps. Tags and framing are substantively aligned. Compression drops the shopping example, the work frustration about unexplained changes, and the explicit invitation to ask about present feelings during future planning. These narrow the illustration without removing the central recommendations.",
+          "evidence": [
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.3.text",
+              "quote": "Give a time frame for solitude and reconnect yourself."
+            },
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.sections.3.text",
+              "quote": "需要独处时说清时间范围，并主动回来连接"
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.actions.0.step",
+              "quote": "Spend twenty minutes testing one assumption in a small version."
+            },
+            {
+              "caseId": "INTJ.zh",
+              "path": "report.actions.0.step",
+              "quote": "用20分钟做一个可验证的小版本，只检查一个假设。"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against one-letter neighbor INTP.en, INTJ centers choosing a direction and exposing the reasoning behind an already condensed proposal. INTP centers questioning criteria and stopping expanding inquiry. Their practical interventions address different bottlenecks even though both recommend experiments.",
+          "evidence": [
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.6.text",
+              "quote": "one goal, one reason and one question still open"
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.6.text",
+              "quote": "Set a stopping condition, test an answer"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action has a clear trigger, a small observable step and a usable phrase: a twenty-minute assumption test, a support-preference question, and sharing one reason while asking for overlooked constraints. These directly address the report's planning and communication situations without requiring agreement or guaranteed results.",
+          "evidence": [
+            {
+              "caseId": "INTJ.en",
+              "path": "report.actions.0.step",
+              "quote": "Spend twenty minutes testing one assumption in a small version."
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.actions.1.phrase",
+              "quote": "Would listening or working out options help?"
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.actions.2.phrase",
+              "quote": "This is my reason. What condition am I missing?"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Minor source examples and the present-feelings check are omitted.",
+        "Strength tags should be understood through the explicit reflection framing, not as assessed capacities."
+      ]
+    },
+    {
+      "id": "INTP.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The text rejects intellectual superiority, acknowledges scope and resource constraints, and discourages blaming listeners. Solitude includes a reconnection commitment. All framing notes limit assessment and prediction. Tags such as logical rigor and objective analysis are categorical aspirations rather than established individual abilities.",
+          "evidence": [
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.0.text",
+              "quote": "it does not guarantee superior conclusions"
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.2.text",
+              "quote": "instead of assuming the listener is unwilling to think"
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "strengthTags.2",
+              "quote": "Objective analysis"
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "framing.cardNote",
+              "quote": "reflect on real situations, beyond a type label"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The highlights, seven sections and actions retain premise checking, branching curiosity, delivery boundaries and provisional emotional expression. Tags and framing align. The friendship section omits the source's explicit permission question before analysis, and the close section compresses the distinction between a temporary break and long-term avoidance. Neither becomes contrary advice, but both lose useful relational precision.",
+          "evidence": [
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.2.text",
+              "quote": "Reflect the concern before offering analysis."
+            },
+            {
+              "caseId": "INTP.zh",
+              "path": "report.sections.2.text",
+              "quote": "试着复述对方最在意的一件事，再询问是否想听分析。"
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.actions.2.step",
+              "quote": "Give the break an end time and reconnect yourself."
+            },
+            {
+              "caseId": "INTP.zh",
+              "path": "report.actions.2.step",
+              "quote": "给独处一个结束时间，并主动联系。"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor INTJ.en, INTP focuses on defining criteria, exploring explanatory branches and stopping research. INTJ focuses on intended outcomes and making condensed planning judgments accessible. The distinction changes both what receives attention and what intervention is recommended.",
+          "evidence": [
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.0.text",
+              "quote": "Asked for the best restaurant, you first define the criteria."
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.0.text",
+              "quote": "what the activity is meant to accomplish"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All three actions are feasible and observable: select two essential criteria and try a reversible option, explain through an everyday example with an invitation for detail, and specify a quiet break's end before reconnecting. Each supplies a matching phrase and follows a report situation.",
+          "evidence": [
+            {
+              "caseId": "INTP.en",
+              "path": "report.actions.0.step",
+              "quote": "Choose two essential criteria, then test a reversible option."
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.actions.1.phrase",
+              "quote": "Here is an example. Would the reasoning help?"
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.actions.2.phrase",
+              "quote": "I need half an hour to think, then I will come back."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Restore the friendship section's explicit permission question for closer source fidelity.",
+        "The actions preserve curiosity while providing concrete stopping and reconnection conditions."
+      ]
+    },
+    {
+      "id": "ENTJ.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report consistently separates organizing from entitlement to control. It respects consent, slower emotional processing, colleagues' methods and personal capacity, and treats rest as ordinary reflective advice. All framing notes are appropriately bounded. Leadership and execution tags remain unmeasured aspirational labels.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.1.text",
+              "quote": "silence is not necessarily agreement"
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.3.text",
+              "quote": "Separate wanting resolution from demanding an immediate answer."
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "strengthTags.2",
+              "quote": "Strategic planning"
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "framing.editorialNote",
+              "quote": "predictions about relationships, careers or ability"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "All highlights, sections and actions preserve the source's momentum, consent, collaborative autonomy and capacity checks. Tags and framing remain aligned. The close section omits scheduling a discussion when both can participate; the blindspots section also drops the explicit question about what slowing down might reveal. These are useful details lost through otherwise natural compression.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.3.text",
+              "quote": "Separate wanting resolution from demanding an immediate answer."
+            },
+            {
+              "caseId": "ENTJ.zh",
+              "path": "report.sections.3.text",
+              "quote": "约一个双方能投入的时间"
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.actions.1.phrase",
+              "quote": "How far would you like my help to go?"
+            },
+            {
+              "caseId": "ENTJ.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "你希望我帮到哪一步？"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against one-letter neighbor ENFJ.en, ENTJ emphasizes stalled decisions, ownership and taking over resource gaps. ENFJ emphasizes participation, encouragement and maintaining others' morale. The respective recommendations redistribute tasks versus checking responsibility for emotional coordination.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.4.text",
+              "quote": "Ambiguous responsibilities can tempt you to take over."
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.sections.4.text",
+              "quote": "team momentum need not depend on you managing every person’s energy"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The three contexts lead to bounded interventions: one concern per participant before summarizing, permission before helping, and one task selected for agreed redistribution. Example phrases are usable and protect agency. Redistribution requires collaboration, but clear ownership makes this a feasible negotiation rather than an assumed unilateral transfer.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.actions.0.step",
+              "quote": "Hear one concern from each person before summarizing choices."
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.actions.1.phrase",
+              "quote": "How far would you like my help to go?"
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.actions.2.step",
+              "quote": "Choose one task to redistribute with clear ownership."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The English close section would benefit from retaining the source's mutually scheduled discussion.",
+        "Consent and resource limits are integrated into the organizing theme rather than appended as generic cautions."
+      ]
+    },
+    {
+      "id": "ENTP.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report avoids glorifying contrarianism, distinguishes personal experience from debate, and explicitly retains responsibility for agreed completion. It protects negotiation and acknowledges overload. Framing consistently limits interpretation. The four strength tags are broad positive assertions acceptable only as framed reflection prompts.",
+          "evidence": [
+            {
+              "caseId": "ENTP.en",
+              "path": "report.sections.2.text",
+              "quote": "debate may sound like a demand for proof"
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.sections.4.text",
+              "quote": "own your agreed share of completion"
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "strengthTags.3",
+              "quote": "Challenger mindset"
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "framing.editorialNote",
+              "quote": "type-based examples and reflection prompts"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The three highlights, seven sections and actions retain brainstorming versus commitment, listening before counterargument, experiment limits and responsibility for finishing. Tags and framing align. The friendship section drops the explicit point that not every rebuttable detail needs immediate correction, and work compresses judging continuation by a visible result. Central permission, boundary and practical guidance survive.",
+          "evidence": [
+            {
+              "caseId": "ENTP.en",
+              "path": "report.sections.1.text",
+              "quote": "Label a brainstorm as a brainstorm and a commitment as a commitment."
+            },
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.sections.1.text",
+              "quote": "说清“这是脑洞”还是“我愿意落实”"
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.actions.1.step",
+              "quote": "Reflect the impact, then ask whether another viewpoint would help."
+            },
+            {
+              "caseId": "ENTP.zh",
+              "path": "report.actions.1.step",
+              "quote": "先复述影响，再询问是否讨论其他视角。"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor ENFP.en, ENTP specifically addresses argumentative responses that make hurt feel subject to proof. ENFP addresses associative storytelling that redirects the speaker. The corrective action therefore checks understanding and permission for another viewpoint versus making room for the story to finish.",
+          "evidence": [
+            {
+              "caseId": "ENTP.en",
+              "path": "report.sections.2.text",
+              "quote": "Check whether you are discussing an idea or hearing a personal account."
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.2.text",
+              "quote": "Ask what else they want to add before sharing your association."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "All three actions have recognizable situations, manageable steps and usable phrases: a thirty-minute experiment, reflecting hurt before asking permission for alternatives, and retaining a confirmed commitment while negotiating changes. The listening phrase illustrates only the reflection portion, leaving the permission question to the step. Also, a declarative statement of hurt is slightly less tentative than the report's emphasis on checking understanding.",
+          "evidence": [
+            {
+              "caseId": "ENTP.en",
+              "path": "report.actions.0.step",
+              "quote": "Test one for thirty minutes and list the others for later."
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.actions.1.phrase",
+              "quote": "This really hurt you. Have I understood?"
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.actions.2.phrase",
+              "quote": "The meeting time stays. Shall we revisit the route?"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The listening action could include an explicit example question asking whether another perspective is welcome.",
+        "The distinction between exploration and responsibility is concrete and sustained."
+      ]
+    },
+    {
+      "id": "INFJ.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly rejects mind reading, invites correction and protects listening boundaries. All framing notes reject individual assessment and predictive interpretation. The unqualified claim that observation reveals unspoken needs and the insight/empathy/vision tags are somewhat stronger than the otherwise tentative prose; surrounding checks keep them within acceptable reflection framing.",
+          "evidence": [
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "it does not let you read minds"
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.5.text",
+              "quote": "Careful observation reveals unspoken needs"
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.2.text",
+              "quote": "Offer the pattern as a question."
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "framing.editorialNote",
+              "quote": "not individual facts detected from your answers"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "All highlights, sections and actions preserve meaning seeking, checking interpretations, concrete requests and sustainable listening. Tags and framing align. Compression removes some nuance about self-directed high expectations and deciding how much responsibility to assume. The blindspots wording strengthens Chinese 'helps discover' into 'reveals,' a minor certainty shift moderated elsewhere by explicit uncertainty.",
+          "evidence": [
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.5.text",
+              "quote": "Careful observation reveals unspoken needs"
+            },
+            {
+              "caseId": "INFJ.zh",
+              "path": "report.sections.5.text",
+              "quote": "敏锐观察有助于发现没被表达的需要"
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "report.actions.0.step",
+              "quote": "Offer one observation and invite correction."
+            },
+            {
+              "caseId": "INFJ.zh",
+              "path": "report.actions.0.step",
+              "quote": "只提出一个观察，让对方确认或纠正。"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against one-letter neighbor INFP.en, INFJ attends to inferred patterns across another person's experiences and recommends checking the interpretation. INFP attends to personal value alignment and recommends articulating preferences or beginning meaningful work. This is a concrete difference in attention and intervention, beyond shared empathy.",
+          "evidence": [
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.2.text",
+              "quote": "connect details across several conversations"
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.sections.0.text",
+              "quote": "whether a choice fits what matters to you"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action supplies a specific social situation, one limited behavior and a natural phrase: checking one inferred hesitation, setting ten minutes of remaining listening time and proposing reconnection, and requesting companionship without advice. Correction and scheduling remain open to the other person rather than guaranteed.",
+          "evidence": [
+            {
+              "caseId": "INFJ.en",
+              "path": "report.actions.0.phrase",
+              "quote": "I wonder if you are hesitant. Am I mistaken?"
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "report.actions.1.phrase",
+              "quote": "I have ten more minutes; can we continue tomorrow?"
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "report.actions.2.phrase",
+              "quote": "I would like some company today, without advice yet."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Replace 'reveals unspoken needs' with a more tentative formulation consistent with the source and the mind-reading safeguard.",
+        "The three actions model correction, boundaries and explicit needs particularly well."
+      ]
+    },
+    {
+      "id": "INFP.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The text protects individual values, permits disagreement and refusal, separates work criticism from personal worth, and acknowledges sleep, pressure and task difficulty. All framing notes are appropriately limited. The sensitivity, creativity and empathy tags are aspirational descriptions rather than assessed traits; refusal guidance could more clearly allow declining without offering partial help.",
+          "evidence": [
+            {
+              "caseId": "INFP.en",
+              "path": "report.sections.0.text",
+              "quote": "This profile cannot define your values"
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.sections.2.text",
+              "quote": "You can understand without agreeing."
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "strengthTags.0",
+              "quote": "Deep sensitivity"
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "framing.cardNote",
+              "quote": "beyond a type label"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The highlights, seven sections and overall action recommendations preserve authenticity, negotiated preferences, small starts and feedback boundaries. Tags and framing align. Action two's context is less faithful: the Chinese explicitly concerns wanting to refuse while fearing harm to another person; English can sound like receiving a hurtful refusal. The step and phrase restore the intended speaker role, so this is localized ambiguity rather than an advice reversal. The close section also omits explicitly clarifying that space does not end contact.",
+          "evidence": [
+            {
+              "caseId": "INFP.en",
+              "path": "report.actions.1.context",
+              "quote": "A refusal feels hurtful"
+            },
+            {
+              "caseId": "INFP.zh",
+              "path": "report.actions.1.context",
+              "quote": "想拒绝又担心伤人"
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.actions.1.phrase",
+              "quote": "I cannot do all of this, but I can help with this part."
+            },
+            {
+              "caseId": "INFP.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "这次我做不了全部，但可以帮这一点。"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor INFJ.en, INFP emphasizes internal authenticity, unspoken preferences and self-judgment after feedback. INFJ emphasizes interpreting another person's experience and testing those interpretations. The respective requests make one's own preference discussable versus invite correction of a guess about someone else.",
+          "evidence": [
+            {
+              "caseId": "INFP.en",
+              "path": "report.sections.1.text",
+              "quote": "Offer one thing you like and one uncomfortable condition"
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.6.text",
+              "quote": "Introduce a guess as a guess"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "The ten-minute draft and one concrete feedback revision are small, observable steps with matching phrases. The refusal action also provides an executable capacity statement, but its context is ambiguous about who is refusing. Offering a part is useful when genuinely available, although a complete refusal should also remain possible. These are minor clarity and agency limitations rather than unusable advice.",
+          "evidence": [
+            {
+              "caseId": "INFP.en",
+              "path": "report.actions.0.step",
+              "quote": "Spend ten minutes making one paragraph or rough draft."
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.actions.1.step",
+              "quote": "State your capacity and the part you can offer."
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.actions.2.phrase",
+              "quote": "This part can change; it is not my whole identity."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Revise action two's context to 'You want to refuse but worry about hurting someone.'",
+        "Clarify that partial help is optional rather than a requirement for a valid refusal."
+      ]
+    },
+    {
+      "id": "ENFJ.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report rejects responsibility for everyone's growth or mood, permits different priorities and dissent, and makes care reciprocal. Contact expectations are negotiated rather than imposed. All framing notes constrain interpretation. Charisma and positive influence remain broad unmeasured strength labels under that framing.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.sections.0.text",
+              "quote": "you are not responsible for everyone’s development or mood"
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.sections.3.text",
+              "quote": "distinguish care from repeated checking"
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "strengthTags.3",
+              "quote": "Positive influence"
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "framing.editorialNote",
+              "quote": "Keep what resonates."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "All highlights, seven sections and actions retain willing participation, listening before encouragement, schedule checks, reciprocal support and negotiated contact. Tags and framing align. Some specificity is compressed: the source's concern about turning others' dissatisfaction into personal failure becomes 'absorbing dissatisfaction,' and the final section softens the warning against smoothing every disagreement into consensus. The central boundaries survive.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.sections.5.text",
+              "quote": "absorbing dissatisfaction"
+            },
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.sections.5.text",
+              "quote": "把别人的不满意当成自己的失败"
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.actions.2.phrase",
+              "quote": "Could you hear me for ten minutes? I am tired too."
+            },
+            {
+              "caseId": "ENFJ.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "今天能听我讲十分钟吗？我也有点累。"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against one-letter neighbor ENTJ.en, ENFJ focuses on inviting participation and prematurely encouraging someone through a loss. ENTJ focuses on resources, task breakdown and taking over. ENFJ's support intervention therefore addresses being heard and receiving reciprocal listening, rather than primarily negotiating operational involvement.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.sections.2.text",
+              "quote": "Encouragement can arrive before they have finished describing the loss."
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.2.text",
+              "quote": "practical help, contacts or a task breakdown"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "All three actions are feasible: check a schedule and define scope, reflect before discussing next steps, and request ten minutes of listening. Each has a concrete context and usable phrase. The first phrase models a deferred answer rather than the eventual scope statement; the second models giving the speaker room rather than the prescribed reflection itself. The steps supply those missing components, so the actions remain usable.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.actions.0.phrase",
+              "quote": "I will check my time and confirm tonight."
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.actions.1.step",
+              "quote": "Reflect the experience before asking about next steps."
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.actions.2.phrase",
+              "quote": "Could you hear me for ten minutes? I am tired too."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The first two action phrases demonstrate only part of their corresponding steps.",
+        "The source's link between others' dissatisfaction and personal failure is less explicit in English."
+      ]
+    },
+    {
+      "id": "ENFP.en",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report permits calm, rest and repetition, checks capacity before promises, and protects a friend's conversational space. All framing notes reject individual assessment and prediction. 'Boundless creativity' is an absolute promotional tag that sits uneasily beside the report's capacity limits. Explicit reflection framing prevents treating it as a measured ability, but more bounded wording would improve safety and consistency.",
+          "evidence": [
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.0.text",
+              "quote": "you do not have to be enthusiastic at all times"
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.1.text",
+              "quote": "State a need for rest"
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "strengthTags.1",
+              "quote": "Boundless creativity"
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "framing.editorialNote",
+              "quote": "not individual facts detected from your answers"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The highlights, seven sections and three actions preserve possibility and connection, capacity checks, letting stories finish, stable negotiated commitments and minimum project steps. Tags and framing align, including the source's own creativity hyperbole. Work compresses a visible result for each of three steps into 'three visible steps' and changes setting a reminder into scheduling a check-in. These remain useful approximations with slightly less procedural detail.",
+          "evidence": [
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.4.text",
+              "quote": "Break an idea into three visible steps and schedule a check-in."
+            },
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.sections.4.text",
+              "quote": "把一个大想法变成三步，每步留可见成果，并给下一次检查设置提醒。"
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.actions.2.step",
+              "quote": "Complete a ten-minute minimum and note the next action."
+            },
+            {
+              "caseId": "ENFP.zh",
+              "path": "report.actions.2.step",
+              "quote": "完成十分钟的最低版本并记录下一步。"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor ENTP.en, ENFP focuses on excitement exceeding capacity and associative personal stories interrupting another person's account. ENTP focuses on debate, exceptions and alternatives evading settled commitments. The recommended conversational intervention makes space to finish versus checking impact before offering another viewpoint.",
+          "evidence": [
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.2.text",
+              "quote": "a fast response can redirect what they wanted to say"
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.sections.2.text",
+              "quote": "debate may sound like a demand for proof"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action includes a clear situation, a small observable step and a fitting phrase: review commitments before confirming tomorrow, ask whether a speaker has more to say, and complete a ten-minute minimum while recording the next action. The project action is modest and practical, and the wider report permits pausing or ending commitments rather than requiring persistence regardless of capacity.",
+          "evidence": [
+            {
+              "caseId": "ENFP.en",
+              "path": "report.actions.0.phrase",
+              "quote": "I would love to join; I will confirm tomorrow."
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.actions.1.phrase",
+              "quote": "Is there anything else you want to say?"
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.actions.2.step",
+              "quote": "Complete a ten-minute minimum and note the next action."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Replace 'Boundless creativity' with a bounded aspirational tag.",
+        "The work section slightly reduces the source's specificity about visible outputs and reminders."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,745 @@
+{
+  "evaluator": "OpenAI ChatGPT",
+  "model": null,
+  "limitations": [
+    "This batch evaluates only the eight specified Chinese targets, using the eight supplied English counterparts as references.",
+    "Type comparisons are limited to the eight supplied Chinese types; no claims are made about differentiation across all 16 types or eight languages.",
+    "This is AI language and editorial review, without independent native-speaker validation, user testing, UI inspection or psychometric assessment.",
+    "All supplied highlights, seven sections, three actions, four strength tags and framing notes were reviewed. Source freshness and hashes were not independently verified; no tools were invoked."
+  ],
+  "results": [
+    {
+      "id": "ISTJ.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The sections consistently qualify tendencies and allow revision of familiar methods. All framing notes distinguish reflection, answer distributions and comparison conventions from measured abilities or predictions. The four categorical strength tags, especially strong execution, remain aspirational under that framing rather than established personal facts.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "类型提示的是关注起点，不能证明哪种做法永远正确"
+            },
+            {
+              "caseId": "ISTJ.zh",
+              "path": "framing.editorialNote",
+              "quote": "不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "All highlights, seven sections and three actions retain the English focus on conditions, dependable communication and low-risk updating. Tags and framing preserve their central meanings. One small loss is that the preparation action no longer explicitly specifies a willing partner, although its example asks rather than commands.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.actions.1.step",
+              "quote": "列出一项让伙伴确认的任务。"
+            },
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.actions.1.step",
+              "quote": "Assign one check to a willing partner."
+            },
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "这部分你能负责核对吗？"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor ISFJ, this profile starts with logistical conditions and explicit commitments rather than attendees' fatigue and dietary needs. Its experiments update procedures, while ISFJ's exercises redistribute care work and protect capacity.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你会问日期、交通和实际预算"
+            },
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "你想到谁容易累、有什么饮食限制、需要带什么"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action has a recognizable trigger, a bounded step and a usable phrase: retain one essential constraint after a change, request one preparation check, and test one low-risk step. These directly implement flexibility and shared responsibility without demanding wholesale personality change.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "时间可以调，但请提前告诉我。"
+            },
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.actions.2.step",
+              "quote": "先在低风险步骤试一次并比较结果。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Restore explicit willingness in the shared-preparation step for closer alignment with English.",
+        "Strength tags should retain their visible reflection framing, particularly the execution-ability wording."
+      ]
+    },
+    {
+      "id": "ISFJ.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly rejects an obligatory caretaker role, permits refusal without compensatory labor and includes the reader's capacity. All framing notes preserve reflective interpretation. The strong-memory and practical-ability tags are categorical strengths rather than demonstrated abilities, limiting the safety score to 4.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "这不意味着你天生应该承担照顾者角色"
+            },
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.sections.2.text",
+              "quote": "也不需要补偿成更多额外帮助"
+            },
+            {
+              "caseId": "ISFJ.zh",
+              "path": "framing.cardNote",
+              "quote": "不必把自己固定在类型标签里"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All three highlights, seven sections and three actions preserve practical care, invisible effort, reciprocal responsibility and capacity checks. Chinese adds compatible detail, including explicitly wanting rest in the cleanup request. Tags and all framing notes maintain the English boundaries and interpretation.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.sections.2.text",
+              "quote": "拒绝某一时段的请求，不等于拒绝友情"
+            },
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.sections.2.text",
+              "quote": "Declining one request does not reject the friendship"
+            },
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.actions.2.step",
+              "quote": "只确认必要结果，不把全部重做。"
+            },
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.actions.2.step",
+              "quote": "Check the necessary outcome without redoing everything."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against one-letter neighbor ESFJ, ISFJ emphasizes sustained, often invisible preparation and difficulty receiving differently performed help. ESFJ foregrounds response frequency and group participation. Their actions accordingly distinguish accepting help from negotiating contact rhythms.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.actions.2.step",
+              "quote": "只确认必要结果，不把全部重做。"
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.actions.0.step",
+              "quote": "询问偏好的联系节奏，不连续试探。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All three actions are small and feasible: offer only a realistic portion of help, ask for a defined cleanup contribution, and check essential outcomes without redoing another person's work. Their phrases make limits and appreciation explicit and reinforce the report's reciprocity theme.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "我今天能帮这一部分，其余需要另安排。"
+            },
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "下次你能负责收尾吗？我也想休息。"
+            },
+            {
+              "caseId": "ISFJ.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "这样也可以，谢谢你接手这一块。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The explicit rejection of an assigned caregiver role is a substantive safeguard.",
+        "The strong-memory tag is unsupported as an individual ability and depends on the supplied reflection framing."
+      ]
+    },
+    {
+      "id": "ESTJ.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report gives participants a say, checks willingness and fatigue, and discourages turning errors into character judgments. All framing notes reject predictive interpretation. Organization and decisive-execution tags remain broad aspirational labels under that framing rather than assessed competencies.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.sections.3.text",
+              "quote": "讨论分工时同时问是否累、是否愿意"
+            },
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.sections.4.text",
+              "quote": "不把一次失误扩写成人的态度"
+            },
+            {
+              "caseId": "ESTJ.zh",
+              "path": "framing.editorialNote",
+              "quote": "不是从你的答案逐条检测出的个人事实"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The highlights, all seven sections and three action steps preserve organization, flexible methods, consent and outcome-based collaboration. Tags and framing remain aligned. The final action's phrase '陪你听' is awkward and less clearly expresses listening to the friend than the English alternative.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "你现在需要我陪你听，还是一起做？"
+            },
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.actions.2.phrase",
+              "quote": "Would listening or doing something together help?"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor ISTJ, ESTJ focuses on coordinating other people and allowing alternative methods within shared outcomes. ISTJ focuses on checking established conditions and managing personal uncertainty about unfamiliar methods. The difference is visible in their distinct trial exercises.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.actions.1.step",
+              "quote": "只对齐成果和检查时间，试行一轮。"
+            },
+            {
+              "caseId": "ISTJ.zh",
+              "path": "report.actions.2.step",
+              "quote": "先在低风险步骤试一次并比较结果。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "The three actions offer concrete contexts and bounded steps: invite concerns before closure, agree on outcome and checkpoint, and ask what support is wanted. The first two phrases are immediately usable. The third needs a minor wording repair because '陪你听' can imply listening alongside the friend rather than listening to them.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "定这个方案前，有什么实际困难？"
+            },
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "目标一致，这轮按你的方法试。"
+            },
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "你现在需要我陪你听，还是一起做？"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Replace '陪你听' with a natural expression such as '听你说' in the support example.",
+        "The report usefully separates accountability for results from control over everyone's method."
+      ]
+    },
+    {
+      "id": "ESFJ.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The text permits quiet, disagreement, protected work time and refusal; it does not make other people's moods the reader's obligation. All framing notes limit personal and predictive interpretations. Social-ability and loyalty/dedication tags remain categorical and require this framing, especially because dedication could otherwise reinforce the burden the report rejects.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.sections.0.text",
+              "quote": "不能把维护关系变成义务"
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.sections.5.text",
+              "quote": "不是每个不满都能由你修复"
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "framing.cardNote",
+              "quote": "不必把自己固定在类型标签里"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "All highlights, seven sections and three actions preserve inclusion, contact preferences, shared work and protected attention. Framing remains equivalent. The Chinese loyalty/dedication tag adds loyalty to the English 'Dedication'; this is a minor expansion rather than a reversal, but slightly strengthens the identity claim.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.sections.2.text",
+              "quote": "可以问他希望怎样联系，而不是用更多讯息试探"
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.sections.2.text",
+              "quote": "Ask about contact preferences rather than sending more messages to test the bond."
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "我三点前在做这项，之后可以回复你。"
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.actions.2.phrase",
+              "quote": "I am working on this until three; then I can reply."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against one-letter neighbor ESTJ, ESFJ attends to silence, connection and unwanted reassurance-seeking, while ESTJ attends to decision closure, constraints and execution methods. Their questions have different practical purposes rather than merely expressing generic kindness.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "你忙的时候，我们怎样联系会舒服？"
+            },
+            {
+              "caseId": "ESTJ.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "定这个方案前，有什么实际困难？"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action supplies a concrete context, observable step and natural phrase: ask once about contact rhythm, request headcount confirmation while handling the venue, and state a focus block with a reply time. These preserve both parties' agency and implement the report's boundaries.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.actions.0.step",
+              "quote": "询问偏好的联系节奏，不连续试探。"
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "你能负责确认人数吗？我安排地点。"
+            },
+            {
+              "caseId": "ESFJ.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "我三点前在做这项，之后可以回复你。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The loyalty addition in the Chinese dedication tag slightly expands the source.",
+        "Quiet participation and delayed replies are explicitly allowed, reducing pressure to perform constant sociability."
+      ]
+    },
+    {
+      "id": "ISTP.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Autonomy is balanced with reliable communication, and experiments affecting others require permission. Feelings are not dismissed after practical repair. All framing notes reject ability predictions, but the technical-specialization and hands-on-ability tags remain categorical competence labels rather than measured strengths.",
+          "evidence": [
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.sections.4.text",
+              "quote": "先确认许可与条件，不能把个人试验默认为大家都能接受"
+            },
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.sections.3.text",
+              "quote": "事情修好了，情绪未必已经结束"
+            },
+            {
+              "caseId": "ISTP.zh",
+              "path": "framing.editorialNote",
+              "quote": "也不是关系、职业或能力预测"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "The three highlights, seven sections and three actions preserve hands-on observation, visible progress, time-bounded solitude and attention to emotional aftermath. Tags convey the same broad strengths, and all framing notes preserve the English interpretation limits. Chinese elaborations do not change permissions or recommendations.",
+          "evidence": [
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.sections.4.text",
+              "quote": "先确认许可与条件，不能把个人试验默认为大家都能接受"
+            },
+            {
+              "caseId": "ISTP.en",
+              "path": "report.sections.4.text",
+              "quote": "confirm the conditions and consent rather than assuming a personal experiment is acceptable to everyone"
+            },
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.actions.1.step",
+              "quote": "说明什么时候恢复联系并按时回来。"
+            },
+            {
+              "caseId": "ISTP.en",
+              "path": "report.actions.1.step",
+              "quote": "State when contact resumes and return then."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor ISFP, ISTP attends to problem mechanics and making task progress legible; ISFP attends to preferences, experience and negotiating expression. Their actions distinguish status updates from asking about revision scope while retaining a personal focus.",
+          "evidence": [
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "我在查原因，半小时后告诉你。"
+            },
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "你想调整哪一部分？我想保留这个重点。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All three exercises give specific situations and small, observable responses: one progress update with a deadline, one stated solitude interval, and one question about remaining emotional impact. Example phrases are natural, feasible and consistent with bounded communication rather than constant availability.",
+          "evidence": [
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "我在查原因，半小时后告诉你。"
+            },
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "我休息一小时，之后我们再聊。"
+            },
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "事情处理了，你还有哪部分想说？"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The report clearly distinguishes completing a practical repair from finishing a relational conversation.",
+        "Technical competence tags require the accompanying reflection framing and should not be presented as assessed skills."
+      ]
+    },
+    {
+      "id": "ISFP.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The sections support early boundaries, noncoercive disagreement and separation of work feedback from personal worth. All framing notes establish optional reflection. The artistic-talent tag implies an innate ability more strongly than the prose warrants; under explicit framing it is an aspirational tag, not a measured finding.",
+          "evidence": [
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.sections.5.text",
+              "quote": "边界不需要等到忍无可忍才能成立"
+            },
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.sections.6.text",
+              "quote": "先区分作品调整和个人价值"
+            },
+            {
+              "caseId": "ISFP.zh",
+              "path": "framing.editorialNote",
+              "quote": "不是从你的答案逐条检测出的个人事实，也不是关系、职业或能力预测"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "All highlights, seven sections and three actions retain experiential preferences, early expression, pauses and negotiated revisions. Tags and framing remain aligned. The third highlight shifts English exhaustion to the Chinese threshold of being unable to tolerate more; the section's fatigue discussion preserves the capacity theme, but the emphasis is slightly more conflict-oriented.",
+          "evidence": [
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.highlights.2",
+              "quote": "边界不用等到忍无可忍"
+            },
+            {
+              "caseId": "ISFP.en",
+              "path": "report.highlights.2",
+              "quote": "State limits before exhaustion"
+            },
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.sections.5.text",
+              "quote": "先判断哪些是当前状态、哪些是持续需要"
+            },
+            {
+              "caseId": "ISFP.en",
+              "path": "report.sections.5.text",
+              "quote": "Distinguish temporary state from continuing need"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against one-letter neighbor ISTP, ISFP's central question concerns comfort and personal values rather than how a problem operates. Its actions make preferences and revision boundaries explicit, while ISTP's make diagnostic work and return times visible.",
+          "evidence": [
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.sections.0.text",
+              "quote": "眼前体验是否舒服、是否符合自己在乎的东西"
+            },
+            {
+              "caseId": "ISTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "眼前问题怎样运作、哪里可以直接试一下"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "The three contexts and steps are feasible and connect closely to the report. The pause request specifies ten minutes, and the feedback phrase asks for revision scope while naming a retained focus. The first phrase expresses quietness and time flexibility but leaves the requested separate avoidance condition implicit.",
+          "evidence": [
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.actions.0.step",
+              "quote": "说出一个喜欢的体验和一个避开条件。"
+            },
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "我想选安静一点的地方，时间可以灵活。"
+            },
+            {
+              "caseId": "ISFP.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "我需要慢一点说，十分钟后继续好吗？"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The artistic-talent tag is stronger than an observational preference and depends on reflection framing.",
+        "The first action example could explicitly name something to avoid, matching its step more completely.",
+        "The third highlight shifts emphasis slightly from exhaustion to intolerable discomfort."
+      ]
+    },
+    {
+      "id": "ESTP.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report checks consent, costs, reversibility and stopping conditions, and does not prescribe activity or humor when unwelcome. All framing notes constrain predictive readings. Charisma and crisis-handling tags remain broad aspirational strengths, not established personal capabilities.",
+          "evidence": [
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.sections.0.text",
+              "quote": "仍需要先确认条件和大家愿不愿意"
+            },
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.sections.4.text",
+              "quote": "明确停止条件和责任范围"
+            },
+            {
+              "caseId": "ESTP.zh",
+              "path": "framing.editorialNote",
+              "quote": "也不是关系、职业或能力预测"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All three highlights, seven sections and three actions retain practical trials, shared confirmation and follow-through. Chinese elaborations preserve English consent and risk boundaries, including permission to finish talking before an activity. The four strength tags and all framing notes remain semantically aligned.",
+          "evidence": [
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.actions.1.step",
+              "quote": "告知影响并确认参与者愿意。"
+            },
+            {
+              "caseId": "ESTP.en",
+              "path": "report.actions.1.step",
+              "quote": "Explain the impact and confirm willingness."
+            },
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.sections.2.text",
+              "quote": "不是每个沉默都需要快速打破"
+            },
+            {
+              "caseId": "ESTP.en",
+              "path": "report.sections.2.text",
+              "quote": "a silence may also be a needed pause"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor ESFP, ESTP centers on usable conditions, trials and risk control. ESFP centers on interpersonal response, participation and pressure to sustain a cheerful atmosphere. Their first exercises distinguish stopping a trial from limiting social commitments through budget and energy checks.",
+          "evidence": [
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.actions.0.step",
+              "quote": "确认一个风险和停止条件再动手。"
+            },
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.actions.0.step",
+              "quote": "检查预算与精力，只确认一项。"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "All three actions have clear contexts and feasible steps. The schedule-change example quantifies the impact, and the friend-support example offers a genuine choice. The trial phrase leaves its stopping condition as '这个情况'; it is a usable template but needs a concrete trigger supplied in context.",
+          "evidence": [
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "可以先试，出现这个情况就停。"
+            },
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "这样会晚半小时，大家接受吗？"
+            },
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.actions.2.phrase",
+              "quote": "你想先聊完，还是出去走一会儿？"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The first action would be more immediately usable with an example of a concrete stopping trigger.",
+        "Risk and consent safeguards are integrated into the advice rather than relying solely on framing."
+      ]
+    },
+    {
+      "id": "ESFP.zh",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The text explicitly permits fatigue, quiet and sadness, rejects a duty to entertain, and frames support as company rather than guaranteed emotional improvement. All framing notes reject measured or predictive interpretation. The four positive strength tags remain aspirational, especially practical ability and aesthetic taste.",
+          "evidence": [
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.sections.1.text",
+              "quote": "不想表演开心时可以直接休息"
+            },
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.sections.2.text",
+              "quote": "若这次没有明显改善，不等于陪伴失败"
+            },
+            {
+              "caseId": "ESFP.zh",
+              "path": "framing.editorialNote",
+              "quote": "不是从你的答案逐条检测出的个人事实"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "The highlights, seven sections and three actions preserve present connection, permission not to be cheerful, capacity checks and small ongoing task routines. Chinese additions remain compatible with the English recommendations. All strength tags and framing notes retain the same central meanings and limits.",
+          "evidence": [
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.sections.2.text",
+              "quote": "对方不一定准备好马上开心起来"
+            },
+            {
+              "caseId": "ESFP.en",
+              "path": "report.sections.2.text",
+              "quote": "They may not be ready to feel better."
+            },
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.actions.2.step",
+              "quote": "安排十分钟固定动作并记录完成。"
+            },
+            {
+              "caseId": "ESFP.en",
+              "path": "report.actions.2.step",
+              "quote": "Schedule and record a ten-minute regular action."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against one-letter neighbor ESTP, ESFP examines emotional atmosphere and the pressure to appear happy, while ESTP examines improvisation that surprises prepared participants. Both discuss activities, but their attention and corrective recommendations differ concretely.",
+          "evidence": [
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.sections.1.text",
+              "quote": "把愿意参与和愿意负责分开"
+            },
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.sections.1.text",
+              "quote": "不想表演开心时可以直接休息"
+            },
+            {
+              "caseId": "ESTP.zh",
+              "path": "report.sections.1.text",
+              "quote": "把固定时间、费用和可以变动的部分讲清"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All three actions specify recognizable triggers and modest observable steps: confirm one invitation after checking resources, ask what kind of company a friend wants, and schedule and record ten minutes on a delayed task. Natural example phrases preserve choice without promising mood improvement or effortless completion.",
+          "evidence": [
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.actions.0.phrase",
+              "quote": "这周我参加这一场，其他先不答应。"
+            },
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.actions.1.phrase",
+              "quote": "不用急着好起来，你想聊还是走走？"
+            },
+            {
+              "caseId": "ESFP.zh",
+              "path": "report.actions.2.step",
+              "quote": "安排十分钟固定动作并记录完成。"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Permission to rest and to accompany sadness directly counters pressure to provide constant entertainment.",
+        "The reflective framing remains necessary for interpreting the positive ability and taste tags."
+      ]
+    }
+  ]
+}

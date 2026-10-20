@@ -1,0 +1,604 @@
+{
+  "evaluator": "OpenAI assistant",
+  "model": null,
+  "limitations": [
+    "This judgment covers only the eight Korean target cases in batch 15/16; the eight English cases serve only as source references.",
+    "Same-language differentiation is limited to the eight supplied Korean types, using one-letter neighbors where available.",
+    "This is AI language and editorial review, without independent native-speaker validation, external verification, UI inspection or psychometric assessment.",
+    "All supplied highlights, seven sections, three actions, four strength tags and framing notes were considered. Source freshness and full 128-case coverage cannot be established by this batch."
+  ],
+  "results": [
+    {
+      "id": "INTJ.ko",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Optional tendencies, negotiated plans and requested support preserve autonomy. The four tags describe aspirational strengths rather than demonstrated individual abilities under the explicit framing. Some declarative benefits in blindspots remain broad.",
+          "evidence": [
+            {
+              "caseId": "INTJ.ko",
+              "path": "report.sections.0.text",
+              "quote": "미래를 예측한다거나 삶을 프로젝트로 만들어야 한다는 뜻은 아닙니다."
+            },
+            {
+              "caseId": "INTJ.ko",
+              "path": "framing.editorialNote",
+              "quote": "응답에서 찾아낸 개인의 사실이나 관계, 진로, 능력에 대한 예측이 아닙니다."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "Highlights, actions, tags and framing closely preserve the source. All seven sections retain their practical recommendations. In blindspots, the final comparison shifts from a complete but unshared plan to a perfect plan that is difficult to use together, slightly changing the communication emphasis.",
+          "evidence": [
+            {
+              "caseId": "INTJ.ko",
+              "path": "report.sections.5.text",
+              "quote": "함께 쓰기 어려운 완벽한 계획보다 실행할 수 있도록 수정한 계획이 나을 수 있습니다."
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.5.text",
+              "quote": "A usable revised plan can beat a complete but unshared one."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with INTP, INTJ centers direction, assumptions within a developing framework and making settled versus provisional decisions visible. INTP instead emphasizes containing branching inquiry and separating exploration from delivery.",
+          "evidence": [
+            {
+              "caseId": "INTJ.ko",
+              "path": "report.sections.4.text",
+              "quote": "최종 목표와 현재의 증거, 첫 결과물을 구분하세요."
+            },
+            {
+              "caseId": "INTP.ko",
+              "path": "report.sections.4.text",
+              "quote": "탐색과 전달을 구분하고 추가 질문은 다음 차례를 위해 남겨 두세요."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All three actions specify a recognizable trigger, a manageable step and usable speech: a twenty-minute assumption test, a support-preference question and a reason-plus-constraint exchange. They directly implement the report's recommendations.",
+          "evidence": [
+            {
+              "caseId": "INTJ.ko",
+              "path": "report.actions.0.step",
+              "quote": "20분 동안 작은 형태로 가정 하나를 검증해 보세요."
+            },
+            {
+              "caseId": "INTJ.ko",
+              "path": "report.actions.2.phrase",
+              "quote": "제 생각의 근거는 이거예요. 제가 놓친 조건이 있을까요?"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Minor fidelity drift in the final blindspots comparison; no material boundary or recommendation is lost.",
+        "Strength tags remain aspirational under the reflection framing."
+      ]
+    },
+    {
+      "id": "INTP.ko",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The text rejects intellectual superiority, recognizes resource and scope constraints, and encourages communicating needs. The four ability-like tags, especially objective analysis, warrant the supplied reflection framing and are not evidence of measured competence.",
+          "evidence": [
+            {
+              "caseId": "INTP.ko",
+              "path": "report.sections.0.text",
+              "quote": "전제를 살피는 일은 도움이 되지만 더 나은 결론을 보장하지는 않습니다."
+            },
+            {
+              "caseId": "INTP.ko",
+              "path": "framing.editorialNote",
+              "quote": "이 내용은 유형에 따른 예시와 성찰 질문입니다."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The highlights, seven sections, actions, tags and framing preserve the source's reasoning, stopping conditions and reconnection boundary. The opening of close is slightly awkward: sharing a loved one's inner thoughts is less natural and precise than the source's desire for honest access to their inner world.",
+          "evidence": [
+            {
+              "caseId": "INTP.ko",
+              "path": "report.sections.3.text",
+              "quote": "가까운 사람의 속마음을 솔직하게 나누는 관계를 모두 원할 수 있습니다."
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.3.text",
+              "quote": "You may want both uninterrupted thinking and honest access to a loved one’s inner world."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "INTP foregrounds the premises and criteria behind a question, whereas INTJ foregrounds the purpose and direction of an activity. Their work recommendations also distinguish stopping inquiry from testing a strategic framework.",
+          "evidence": [
+            {
+              "caseId": "INTP.ko",
+              "path": "report.sections.0.text",
+              "quote": "가장 좋은 식당을 물으면 먼저 기준을 정합니다."
+            },
+            {
+              "caseId": "INTJ.ko",
+              "path": "report.sections.0.text",
+              "quote": "여행이라면 호텔을 예약하기 전에 휴식, 교류, 새로운 발견 중 무엇이 목적인지 생각합니다."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action is feasible and observable: select two criteria and test reversibly, explain through an everyday example, or announce a timed break and initiate reconnection. The example phrases support those steps without demanding perfect understanding.",
+          "evidence": [
+            {
+              "caseId": "INTP.ko",
+              "path": "report.actions.0.step",
+              "quote": "필수 기준 두 가지를 고른 뒤 되돌릴 수 있는 선택지를 시험해 보세요."
+            },
+            {
+              "caseId": "INTP.ko",
+              "path": "report.actions.2.phrase",
+              "quote": "30분 동안 생각할 시간이 필요해. 그 뒤에 돌아올게."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The opening sentence of close would benefit from more natural Korean wording about mutual openness.",
+        "No material omission or reversal was identified."
+      ]
+    },
+    {
+      "id": "ENTJ.ko",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Consent, space for concerns, collaborative method choice and capacity limits consistently constrain the organizing tendency. Leadership and execution tags remain aspirational under the reflection framing. Fatigue and rest are presented as ordinary contextual considerations, not diagnosis or treatment.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.ko",
+              "path": "report.sections.1.text",
+              "quote": "침묵이 반드시 자신이 정한 방향에 대한 동의는 아닙니다."
+            },
+            {
+              "caseId": "ENTJ.ko",
+              "path": "framing.editorialNote",
+              "quote": "응답에서 찾아낸 개인의 사실이나 관계, 진로, 능력에 대한 예측이 아닙니다."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All highlights, seven sections, three actions, four tags and framing notes closely preserve the English source. Korean retains the distinction between organizing and taking over, the warning about silence, and redistribution rather than personal willpower.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.ko",
+              "path": "report.sections.5.text",
+              "quote": "개인의 의지력을 더 요구하기보다 휴식과 업무 재분배가 도움이 될 수 있습니다."
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.5.text",
+              "quote": "Rest and redistribution can help more than another demand for personal willpower."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with INTJ, ENTJ focuses on coordinating other people's participation, ownership and capacity. INTJ focuses on exposing the reasoning behind an independently prepared proposal. These produce distinct group-discussion actions.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.ko",
+              "path": "report.actions.0.step",
+              "quote": "선택지를 요약하기 전에 각 사람의 우려를 하나씩 들어 보세요."
+            },
+            {
+              "caseId": "INTJ.ko",
+              "path": "report.sections.1.text",
+              "quote": "이유 하나를 설명하고 세부 사항 하나는 바꿀 수 있도록 열어 두세요."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The three actions give clear situations and bounded interventions: collect concerns, ask the desired extent of help, and select one task for redistribution with ownership. Each includes practical language and supports consent or sustainable capacity.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.ko",
+              "path": "report.actions.2.step",
+              "quote": "책임자를 명확히 정해 재분배할 업무 하나를 고르세요."
+            },
+            {
+              "caseId": "ENTJ.ko",
+              "path": "report.actions.2.phrase",
+              "quote": "이 일은 다시 배분해야 해요. 제가 감당할 수 있는 범위는 여기까지예요."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The task-redistribution action appropriately asks for one concrete change rather than assuming unilateral control of the team.",
+        "Ability-like strength tags rely on the explicit reflection framing."
+      ]
+    },
+    {
+      "id": "ENTP.ko",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report protects personal accounts from unwanted debate and makes responsibility for commitments explicit. Innovation, quick thinking, expression and challenge-oriented tags are framed as reflection, not established abilities. Some declarative strengths remain generalized.",
+          "evidence": [
+            {
+              "caseId": "ENTP.ko",
+              "path": "report.sections.2.text",
+              "quote": "지금 아이디어를 논의하는지 개인의 경험을 듣는지 확인하세요."
+            },
+            {
+              "caseId": "ENTP.ko",
+              "path": "framing.editorialNote",
+              "quote": "이 내용은 유형에 따른 예시와 성찰 질문입니다."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "All highlights, sections, actions and framing retain the source's exploration-versus-commitment distinction and accountability. The fourth tag shifts challenger mindset toward a spirit of taking on challenges; the questioning-of-assumptions sense is weaker, although the main report preserves it.",
+          "evidence": [
+            {
+              "caseId": "ENTP.ko",
+              "path": "report.sections.0.text",
+              "quote": "정해진 경로를 보면 대안이, 규칙을 보면 시험해 볼 사례가 떠오릅니다."
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.sections.0.text",
+              "quote": "A fixed route suggests alternatives; a rule invites a test case."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ENTP and ENFP both generate associations, but ENTP addresses debating a painful account and testing exceptions. ENFP instead addresses redirecting a friend's story through personal associations. Their listening interventions target different conversational habits.",
+          "evidence": [
+            {
+              "caseId": "ENTP.ko",
+              "path": "report.sections.2.text",
+              "quote": "토론으로 반응하면 증거를 요구하는 것처럼 들릴 수 있습니다."
+            },
+            {
+              "caseId": "ENFP.ko",
+              "path": "report.sections.2.text",
+              "quote": "자신의 연상을 이야기하기 전에 더 덧붙이고 싶은 것이 있는지 물어보세요."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All three actions are concrete: test one direction for thirty minutes, reflect hurt before checking whether another perspective would help, and preserve a confirmed commitment while negotiating changes. The second phrase demonstrates reflection and checking understanding; the step supplies the subsequent permission question.",
+          "evidence": [
+            {
+              "caseId": "ENTP.ko",
+              "path": "report.actions.0.step",
+              "quote": "하나를 30분 동안 시험하고 나머지는 나중을 위해 적어 두세요."
+            },
+            {
+              "caseId": "ENTP.ko",
+              "path": "report.actions.2.phrase",
+              "quote": "만나는 시간은 그대로 두고 경로를 다시 생각해 볼까?"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The fourth strength tag slightly weakens the source's emphasis on challenging assumptions.",
+        "The second action's example phrase covers only the first part of its step, but remains usable alongside the explicit permission instruction."
+      ]
+    },
+    {
+      "id": "INFJ.ko",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly rejects mind-reading and repeatedly requires checking interpretations. Listening limits and specific requests protect both parties. Insight and empathy tags and the declarative claim about revealing unspoken needs remain broad, but the reflection framing and correction invitations prevent their presentation as measured powers.",
+          "evidence": [
+            {
+              "caseId": "INFJ.ko",
+              "path": "report.sections.0.text",
+              "quote": "의미는 관심을 기울이는 데 도움이 되지만 속마음을 읽게 해 주지는 않습니다."
+            },
+            {
+              "caseId": "INFJ.ko",
+              "path": "framing.editorialNote",
+              "quote": "응답에서 찾아낸 개인의 사실이나 관계, 진로, 능력에 대한 예측이 아닙니다."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "Highlights, all sections, actions, tags and framing preserve the source's meaning, correction and boundary recommendations. The work section's final sentence is syntactically heavy and less fluent than the English, though its recommendation to accept practical revisions survives.",
+          "evidence": [
+            {
+              "caseId": "INFJ.ko",
+              "path": "report.sections.4.text",
+              "quote": "현실적인 수정도 소중히 여기는 가치를 실현하는 데 도움이 될 수 있다고 생각해 보세요."
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.4.text",
+              "quote": "consider practical revisions as possible help in realizing the value you care about."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against INFP, INFJ emphasizes interpreting patterns across another person's experiences and submitting that interpretation for correction. INFP emphasizes preserving personal meaning and expressing preferences before a complete alternative is available.",
+          "evidence": [
+            {
+              "caseId": "INFJ.ko",
+              "path": "report.sections.2.text",
+              "quote": "발견한 패턴을 질문으로 건네 보세요."
+            },
+            {
+              "caseId": "INFP.ko",
+              "path": "report.sections.1.text",
+              "quote": "완전한 대안을 준비하지 않아도 좋아하는 것 하나와 불편한 조건 하나를 말해 보세요."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The three actions translate the report into observable behavior: offer one tentative observation, state remaining listening time and arrange reconnection, or request company without advice. Their phrases are natural, bounded and open to the other person's response.",
+          "evidence": [
+            {
+              "caseId": "INFJ.ko",
+              "path": "report.actions.0.step",
+              "quote": "관찰한 점 하나를 말하고 틀렸다면 바로잡아 달라고 해 보세요."
+            },
+            {
+              "caseId": "INFJ.ko",
+              "path": "report.actions.1.phrase",
+              "quote": "10분 정도 더 이야기할 수 있어. 내일 이어서 이야기해도 될까?"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The final work sentence would benefit from simpler Korean syntax.",
+        "The broad claim about recognizing unspoken needs is balanced by explicit warnings against mind-reading and invitations to correction."
+      ]
+    },
+    {
+      "id": "INFP.ko",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The profile explicitly declines to define the reader's values, separates understanding from agreement and avoids equating feedback with identity. Sensitivity, values, creativity and empathy tags are aspirational under the supplied framing. Ordinary emotional processing is not medicalized.",
+          "evidence": [
+            {
+              "caseId": "INFP.ko",
+              "path": "report.sections.0.text",
+              "quote": "이 설명이 자신의 가치관을 규정할 수는 없습니다."
+            },
+            {
+              "caseId": "INFP.ko",
+              "path": "framing.editorialNote",
+              "quote": "이 내용은 유형에 따른 예시와 성찰 질문입니다."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All highlights, seven sections, three actions, tags and framing preserve the English source's central situations and recommendations. The Korean keeps both permission to begin imperfectly and ownership of a work's personal meaning, without losing boundaries or the distinction between an outcome and the whole self.",
+          "evidence": [
+            {
+              "caseId": "INFP.ko",
+              "path": "report.sections.4.text",
+              "quote": "초안은 수정을 가능하게 하면서도 작업의 의미를 결정할 최종 권한까지 다른 사람에게 넘기지는 않습니다."
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.sections.4.text",
+              "quote": "A draft invites revision without giving someone else the final authority over what your work means."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with INFJ, INFP focuses on feedback becoming global self-judgment and on protecting personal values through a small revision. INFJ focuses on separating observed facts from interpretations and responsibilities when understanding others.",
+          "evidence": [
+            {
+              "caseId": "INFP.ko",
+              "path": "report.sections.5.text",
+              "quote": "결과가 마음에 들지 않는 것과 자신 전체를 평가하는 일을 구분하고 바꿀 수 있는 조건 하나를 조정하세요."
+            },
+            {
+              "caseId": "INFJ.ko",
+              "path": "report.sections.5.text",
+              "quote": "스트레스를 받을 때는 사실과 추측, 책임을 구분하세요."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action names a specific difficulty and a small response: a ten-minute draft, a capacity statement with a bounded offer, and one revision followed by space for feelings. The sample phrases make the actions easy to rehearse and preserve agency.",
+          "evidence": [
+            {
+              "caseId": "INFP.ko",
+              "path": "report.actions.0.step",
+              "quote": "10분 동안 문단 하나나 거친 초안을 만들어 보세요."
+            },
+            {
+              "caseId": "INFP.ko",
+              "path": "report.actions.2.phrase",
+              "quote": "이 부분은 바꿀 수 있어. 내 정체성 전체에 관한 이야기는 아니야."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The refusal exercise offers partial help as a practice, without the wider report making help obligatory.",
+        "No material translation omission or reversal was identified."
+      ]
+    },
+    {
+      "id": "ENFJ.ko",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report protects voluntary participation, checks whether help was requested and rejects responsibility for everyone's mood. Charisma and positive-influence tags remain broad aspirational descriptors under explicit reflection framing rather than demonstrated interpersonal effects.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.ko",
+              "path": "report.sections.0.text",
+              "quote": "모든 사람의 성장이나 기분을 책임지는 것은 아닙니다."
+            },
+            {
+              "caseId": "ENFJ.ko",
+              "path": "report.sections.5.text",
+              "quote": "그 일이 자신의 책임인지, 상대가 도움을 요청했는지 확인하세요."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "The highlights, seven sections, all actions, tags and framing closely preserve the English source. Korean retains listening before encouragement, reciprocal care, negotiated contact and the distinction between encouragement, observations and requested changes.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.ko",
+              "path": "report.sections.4.text",
+              "quote": "피드백에서는 격려와 관찰, 요청하는 변화를 구분하세요."
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.sections.4.text",
+              "quote": "Separate encouragement, observations and requested changes in feedback"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with ENTJ, ENFJ highlights premature encouragement and emotional participation; ENTJ highlights taking over practical problem-solving. Their friendship recommendations therefore address distinct ways of overstepping rather than merely repeating generic kindness.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.ko",
+              "path": "report.sections.2.text",
+              "quote": "상실을 다 말하기 전에 격려가 도착할 수도 있습니다."
+            },
+            {
+              "caseId": "ENTJ.ko",
+              "path": "report.sections.2.text",
+              "quote": "어떤 어려움을 다루고 싶은지, 어느 정도까지 관여해 주길 원하는지 물어보세요."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The three actions give feasible responses to extra requests, premature encouragement and needing support. Checking a schedule, reflecting before planning and requesting ten minutes of listening are concrete. The first phrase initiates the schedule check; its step supplies the subsequent scope-setting requirement.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.ko",
+              "path": "report.actions.0.step",
+              "quote": "일정을 확인하고 도울 수 있는 범위를 명확히 제안하세요."
+            },
+            {
+              "caseId": "ENFJ.ko",
+              "path": "report.actions.2.phrase",
+              "quote": "나도 지쳐서 그런데 10분만 내 이야기를 들어 줄 수 있을까?"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The first action's example phrase postpones confirmation rather than demonstrating the eventual scope offer; the complete step remains clear.",
+        "The framing appropriately limits the strength tags' ability-like implications."
+      ]
+    },
+    {
+      "id": "ENFP.ko",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly permits calm, repetition and rest instead of requiring a lively persona. It distinguishes enthusiasm from capacity and supports negotiated reliability. Enthusiasm, creativity, social charm and curiosity tags remain aspirational under reflection framing.",
+          "evidence": [
+            {
+              "caseId": "ENFP.ko",
+              "path": "report.sections.0.text",
+              "quote": "흥미는 노력에 활력을 주지만 언제나 열정적일 필요는 없습니다."
+            },
+            {
+              "caseId": "ENFP.ko",
+              "path": "framing.editorialNote",
+              "quote": "응답에서 찾아낸 개인의 사실이나 관계, 진로, 능력에 대한 예측이 아닙니다."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All highlights, seven sections, actions and framing preserve the source's situations, permission to rest, listening boundaries and practical structure. The creativity tag naturally softens the English exaggeration 'Boundless' to abundant creativity without changing its central meaning.",
+          "evidence": [
+            {
+              "caseId": "ENFP.ko",
+              "path": "report.sections.1.text",
+              "quote": "계속 활기찬 모습을 보여 주려 하기보다 쉬어야 한다고 말하세요."
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.1.text",
+              "quote": "State a need for rest rather than continuing to perform the lively version of yourself."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with ENTP, ENFP centers enthusiasm exceeding capacity and completing a minimum when interest fades. ENTP centers proliferation of competing experiments and accountability for changing plans. The actions supply concretely different responses.",
+          "evidence": [
+            {
+              "caseId": "ENFP.ko",
+              "path": "report.actions.2.step",
+              "quote": "최소한 10분 분량을 끝내고 다음 행동을 적으세요."
+            },
+            {
+              "caseId": "ENTP.ko",
+              "path": "report.actions.0.step",
+              "quote": "하나를 30분 동안 시험하고 나머지는 나중을 위해 적어 두세요."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All three actions pair a clear trigger with a small observable step and usable wording: check existing commitments before accepting, let another person finish before adding associations, and complete a ten-minute minimum while recording the next action. They align with capacity, reciprocal listening and follow-through.",
+          "evidence": [
+            {
+              "caseId": "ENFP.ko",
+              "path": "report.actions.0.step",
+              "quote": "확답하기 전에 기존 약속을 확인하세요."
+            },
+            {
+              "caseId": "ENFP.ko",
+              "path": "report.actions.2.phrase",
+              "quote": "오늘은 이 작은 단계면 충분해. 다음 할 일은 적어 뒀어."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The Korean creativity tag usefully reduces the source tag's hyperbole.",
+        "The ten-minute minimum is a bounded practice supported by the report's explicit permission to rest."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,775 @@
+{
+  "evaluator": "OpenAI AI assistant",
+  "model": null,
+  "limitations": [
+    "This batch evaluates exactly eight Portuguese targets against their eight supplied English counterparts; it does not establish a decision for all 128 cases.",
+    "Same-language differentiation is limited to the eight Portuguese types supplied, with one-letter neighbors used for comparison.",
+    "This is AI language and editorial review, without independent native-speaker validation. Portuguese regional preferences may vary.",
+    "All supplied highlights, seven sections, three actions, four strength tags and framing notes were reviewed as text. UI rendering, psychometric validity and contextual metadata are outside this judgment.",
+    "No tools or external verification were used; source freshness and supplied hashes were not independently verified."
+  ],
+  "results": [
+    {
+      "id": "INTJ.pt",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report rejects foresight claims, makes support conditional on the friend's wishes and preserves joint negotiation. All framing notes appropriately limit individual, ability, percentage and neighbor interpretations. The four strength tags remain aspirational labels; self-discipline in particular should not be interpreted as an assessed personal capability.",
+          "evidence": [
+            {
+              "caseId": "INTJ.pt",
+              "path": "report.sections.0.text",
+              "quote": "não uma afirmação de que você prevê o futuro"
+            },
+            {
+              "caseId": "INTJ.pt",
+              "path": "strengthTags.1",
+              "quote": "Autodisciplina"
+            },
+            {
+              "caseId": "INTJ.pt",
+              "path": "framing.editorialNote",
+              "quote": "não fatos individuais detectados nas suas respostas"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All highlights, sections, actions, tags and framing retain the English situations and recommendations. The translation preserves the distinction between a shared planning resource and unilateral decisions, the solitude/reconnection boundary and testing an assumption before elaborating a framework. 'Modelo de referência' is a reasonable contextual rendering of 'framework'.",
+          "evidence": [
+            {
+              "caseId": "INTJ.pt",
+              "path": "report.sections.1.text",
+              "quote": "Explique um motivo e deixe um detalhe aberto a mudanças."
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.1.text",
+              "quote": "Explain one reason and leave one detail open to change."
+            },
+            {
+              "caseId": "INTJ.pt",
+              "path": "report.sections.3.text",
+              "quote": "tome a iniciativa de retomar o contato"
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.3.text",
+              "quote": "reconnect yourself"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor INTP, INTJ emphasizes choosing a direction, exposing the reasoning behind a proposal and keeping plans revisable. INTP emphasizes determining when inquiry has become sufficient and separating exploration from delivery. These are distinct decision problems and interventions despite shared small-experiment advice.",
+          "evidence": [
+            {
+              "caseId": "INTJ.pt",
+              "path": "report.sections.6.text",
+              "quote": "um objetivo, um motivo e uma pergunta ainda em aberto"
+            },
+            {
+              "caseId": "INTP.pt",
+              "path": "report.sections.4.text",
+              "quote": "Separe exploração de entrega e guarde outras perguntas para uma próxima rodada."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action has a clear trigger, observable step and usable phrase: a twenty-minute assumption test, asking a friend which support they want and sharing a reason while inviting missing constraints. The steps directly implement the report and preserve others' choices.",
+          "evidence": [
+            {
+              "caseId": "INTJ.pt",
+              "path": "report.actions.0.step",
+              "quote": "Dedique vinte minutos a testar uma hipótese em uma versão pequena."
+            },
+            {
+              "caseId": "INTJ.pt",
+              "path": "report.actions.1.phrase",
+              "quote": "Ajudaria mais eu escutar ou pensarmos em opções?"
+            },
+            {
+              "caseId": "INTJ.pt",
+              "path": "report.actions.2.step",
+              "quote": "Compartilhe um motivo e pergunte sobre limitações que você não considerou."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The direct wording of the strength labels warrants the explicit reflection framing already supplied; no material translation omission or unsafe recommendation was found."
+      ]
+    },
+    {
+      "id": "INTP.pt",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly denies superior conclusions, discourages judging another person's willingness to think and recognizes scope and resource constraints. Reflection and statistical framing are sound. The four tags, especially objective analysis, are positive prompts rather than demonstrated abilities.",
+          "evidence": [
+            {
+              "caseId": "INTP.pt",
+              "path": "report.sections.0.text",
+              "quote": "não garante conclusões superiores"
+            },
+            {
+              "caseId": "INTP.pt",
+              "path": "strengthTags.2",
+              "quote": "Análise objetiva"
+            },
+            {
+              "caseId": "INTP.pt",
+              "path": "framing.cardNote",
+              "quote": "Use estas propostas para refletir sobre situações reais"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "The highlights and all seven sections preserve inquiry, conversational context, emotional acknowledgment, provisional feelings and delivery limits. All three actions, four tags and framing retain their source meanings. 'Compreender a lógica de uma pergunta' naturally clarifies the somewhat abstract English 'why a question works' without changing the practical point.",
+          "evidence": [
+            {
+              "caseId": "INTP.pt",
+              "path": "report.sections.3.text",
+              "quote": "Os sentimentos podem ser expressos de forma provisória"
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.3.text",
+              "quote": "Feelings can be expressed in a provisional form"
+            },
+            {
+              "caseId": "INTP.pt",
+              "path": "report.actions.0.step",
+              "quote": "Escolha dois critérios essenciais e teste uma opção reversível."
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.actions.0.step",
+              "quote": "Choose two essential criteria, then test a reversible option."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "INTP's one-letter comparison with INTJ distinguishes repeated rebuilding and delivery delay from long-range planning that is insufficiently shared. The INTP recommendation is to stop branching and deliver against the actual task; INTJ asks the reader to expose settled and provisional parts so others can contribute.",
+          "evidence": [
+            {
+              "caseId": "INTP.pt",
+              "path": "report.sections.4.text",
+              "quote": "Explicações melhores podem levar você a querer refazer o trabalho"
+            },
+            {
+              "caseId": "INTJ.pt",
+              "path": "report.sections.4.text",
+              "quote": "Diga aos colegas o que está definido e o que é provisório"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The three contexts lead to feasible behaviors: select two criteria and try something reversible, explain with an everyday example before offering detail, and give a quiet break an end time followed by self-initiated reconnection. Each phrase can be used directly; the half-hour example makes the boundary especially concrete.",
+          "evidence": [
+            {
+              "caseId": "INTP.pt",
+              "path": "report.actions.0.phrase",
+              "quote": "Estas duas condições bastam para uma primeira tentativa."
+            },
+            {
+              "caseId": "INTP.pt",
+              "path": "report.actions.1.step",
+              "quote": "Comece com um exemplo cotidiano e ofereça mais detalhes."
+            },
+            {
+              "caseId": "INTP.pt",
+              "path": "report.actions.2.phrase",
+              "quote": "Preciso de meia hora para pensar, depois eu volto."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Inclusive phrasing such as 'pessoa amiga' is understandable but occasionally heavier than ordinary conversational Portuguese."
+      ]
+    },
+    {
+      "id": "ENTJ.pt",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Consent, participation and capacity are consistently protected: silence is not agreement, friends choose the extent of help and colleagues choose methods. Rest and redistribution counter overwork rather than glorifying it. Leadership and execution tags remain broad aspirations under explicit reflection framing, not measured competencies.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.pt",
+              "path": "report.sections.1.text",
+              "quote": "o silêncio não significa necessariamente concordância"
+            },
+            {
+              "caseId": "ENTJ.pt",
+              "path": "strengthTags.0",
+              "quote": "Liderança"
+            },
+            {
+              "caseId": "ENTJ.pt",
+              "path": "framing.editorialNote",
+              "quote": "previsões sobre relacionamentos, carreiras ou capacidade"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All highlights, seven sections and three actions preserve the source's progression from organizing to obtaining consent, protecting collaborators' freedom and recognizing finite capacity. The four tags and all framing notes are faithful. 'Responsáveis e resultados bem definidos' makes clear ownership natural in Portuguese without losing accountability.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.pt",
+              "path": "report.sections.3.text",
+              "quote": "Separe o desejo de resolver da exigência de uma resposta imediata."
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.3.text",
+              "quote": "Separate wanting resolution from demanding an immediate answer."
+            },
+            {
+              "caseId": "ENTJ.pt",
+              "path": "report.sections.5.text",
+              "quote": "Descansar e redistribuir tarefas pode ajudar mais"
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.5.text",
+              "quote": "Rest and redistribution can help more"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against one-letter neighbor ENFJ, ENTJ focuses on taking over decisions, assigning ownership and covering resource gaps. ENFJ focuses on managing participation and atmosphere, accepting too much to avoid disappointment and making emotional care reciprocal. Their shared boundary advice addresses different concrete burdens.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.pt",
+              "path": "report.sections.4.text",
+              "quote": "Responsabilidades ambíguas podem levar você a assumir o controle."
+            },
+            {
+              "caseId": "ENFJ.pt",
+              "path": "report.sections.4.text",
+              "quote": "talvez aceite coisas demais para evitar decepções"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The three actions operationalize participatory decisions, consent to help and workload boundaries. Hearing one concern per participant is observable; asking the desired involvement avoids unsolicited takeover; selecting one task for redistribution is bounded and paired with a clear capacity statement. Redistribution requires coordination, which the wording acknowledges rather than guaranteeing.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.pt",
+              "path": "report.actions.0.step",
+              "quote": "Escute uma preocupação de cada pessoa antes de resumir as escolhas."
+            },
+            {
+              "caseId": "ENTJ.pt",
+              "path": "report.actions.1.phrase",
+              "quote": "Até onde você gostaria que minha ajuda fosse?"
+            },
+            {
+              "caseId": "ENTJ.pt",
+              "path": "report.actions.2.step",
+              "quote": "Escolha uma tarefa para redistribuir, com responsabilidade bem definida."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "'Você percebe gargalos e coordena com naturalidade' is more categorical than the surrounding tentative prose, although the explicit reflection framing keeps it within the criterion."
+      ]
+    },
+    {
+      "id": "ENTP.pt",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report protects personal testimony from debate, requires responsibility for agreed work and permits explicit withdrawal of promises. Novelty never excuses disregarding others' time or hurt. All framing notes provide appropriate limits. Innovation and quick-thinking tags are aspirational rather than established abilities.",
+          "evidence": [
+            {
+              "caseId": "ENTP.pt",
+              "path": "report.sections.2.text",
+              "quote": "debater pode soar como uma exigência de provas"
+            },
+            {
+              "caseId": "ENTP.pt",
+              "path": "strengthTags.1",
+              "quote": "Raciocínio rápido"
+            },
+            {
+              "caseId": "ENTP.pt",
+              "path": "framing.editorialNote",
+              "quote": "Aproveite o que fizer sentido para você."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The three highlights, seven sections, all actions, tags and framing preserve the source's situations, boundaries and practical recommendations. There is no reversal. Several expressions are less idiomatic: 'Novas experiências podem continuar tendo aventura' is a literal rendering of 'stay adventurous', and 'organizar as pontas de todas as tentativas' is cumbersome. 'Combinações' is less clear than 'acordos' for arrangements.",
+          "evidence": [
+            {
+              "caseId": "ENTP.pt",
+              "path": "report.sections.1.text",
+              "quote": "Novas experiências podem continuar tendo aventura"
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.sections.1.text",
+              "quote": "New experiences can stay adventurous"
+            },
+            {
+              "caseId": "ENTP.pt",
+              "path": "report.actions.2.phrase",
+              "quote": "O horário do encontro continua o mesmo. Vamos rever o caminho?"
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.actions.2.phrase",
+              "quote": "The meeting time stays. Shall we revisit the route?"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor ENFP, ENTP foregrounds competing viewpoints, testing rules and the risk that debate demands proof of someone's pain. ENFP foregrounds autobiographical associations interrupting a friend's story. The corresponding listening interventions differ: confirm impact before another viewpoint versus let the storyteller finish before adding an association.",
+          "evidence": [
+            {
+              "caseId": "ENTP.pt",
+              "path": "report.sections.2.text",
+              "quote": "Verifique se vocês estão discutindo uma ideia ou escutando um relato pessoal."
+            },
+            {
+              "caseId": "ENFP.pt",
+              "path": "report.sections.2.text",
+              "quote": "Pergunte o que mais ela quer acrescentar antes de compartilhar sua associação."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All three actions specify recognizable triggers, small behaviors and usable phrases. The thirty-minute experiment constrains branching; reflecting hurt and then asking permission constrains debate; retaining a confirmed meeting time makes flexibility compatible with reliability. The second sample phrase covers acknowledgment while the step supplies the subsequent permission question.",
+          "evidence": [
+            {
+              "caseId": "ENTP.pt",
+              "path": "report.actions.0.step",
+              "quote": "Teste uma por trinta minutos e anote as outras para depois."
+            },
+            {
+              "caseId": "ENTP.pt",
+              "path": "report.actions.1.step",
+              "quote": "Mostre que compreendeu o impacto e depois pergunte se outra perspectiva ajudaria."
+            },
+            {
+              "caseId": "ENTP.pt",
+              "path": "report.actions.2.phrase",
+              "quote": "O horário do encontro continua o mesmo."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Light idiomatic editing would improve the adventure and unfinished-experiment wording without changing the recommendations."
+      ]
+    },
+    {
+      "id": "INFJ.pt",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report directly rejects mind-reading, treats interpretations as correctable and makes listening boundaries explicit. It also discourages explaining an entire relationship through one missed signal. The four positive tags, including deep perception, need the supplied reflection framing to avoid suggesting special measured insight; the complete case supplies that framing.",
+          "evidence": [
+            {
+              "caseId": "INFJ.pt",
+              "path": "report.sections.0.text",
+              "quote": "não permite ler pensamentos"
+            },
+            {
+              "caseId": "INFJ.pt",
+              "path": "strengthTags.0",
+              "quote": "Percepção profunda"
+            },
+            {
+              "caseId": "INFJ.pt",
+              "path": "framing.cardNote",
+              "quote": "além do rótulo de um tipo"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "All highlights, sections, actions and framing preserve meaning-seeking, checking interpretations, bounded listening and concrete requests. Tags are semantically aligned, though 'Percepção profunda' adds emphasis to 'Insight'. The first action phrase is understandable but 'está com alguma hesitação' is less idiomatic than the English; it still clearly invites correction rather than claiming knowledge.",
+          "evidence": [
+            {
+              "caseId": "INFJ.pt",
+              "path": "report.actions.0.phrase",
+              "quote": "Fiquei pensando se você está com alguma hesitação. Entendi errado?"
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "report.actions.0.phrase",
+              "quote": "I wonder if you are hesitant. Am I mistaken?"
+            },
+            {
+              "caseId": "INFJ.pt",
+              "path": "report.sections.6.text",
+              "quote": "Apresente uma suposição como suposição"
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.6.text",
+              "quote": "Introduce a guess as a guess"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "The comparison with one-letter neighbor INFP is concrete: INFJ examines patterns inferred across another person's experiences and asks that person to confirm them. INFP checks personal value alignment and makes one's own preferences communicable. The distinct interventions address overinterpretation versus unexpressed preferences.",
+          "evidence": [
+            {
+              "caseId": "INFJ.pt",
+              "path": "report.sections.2.text",
+              "quote": "Apresente o padrão como uma pergunta."
+            },
+            {
+              "caseId": "INFP.pt",
+              "path": "report.sections.1.text",
+              "quote": "Diga uma coisa de que você gosta e uma condição desconfortável"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The actions turn an impression into a correctable question, fatigue into a timed boundary with reconnection and an implicit hope into a specific request for company without advice. All have recognizable contexts and usable examples. The mild awkwardness of the hesitation phrase does not prevent carrying out the action.",
+          "evidence": [
+            {
+              "caseId": "INFJ.pt",
+              "path": "report.actions.0.step",
+              "quote": "Apresente uma observação e convide a pessoa a corrigir sua impressão."
+            },
+            {
+              "caseId": "INFJ.pt",
+              "path": "report.actions.1.phrase",
+              "quote": "Tenho mais dez minutos; podemos continuar amanhã?"
+            },
+            {
+              "caseId": "INFJ.pt",
+              "path": "report.actions.2.phrase",
+              "quote": "Hoje eu gostaria de companhia, ainda sem conselhos."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The hesitation example would benefit from more conversational Portuguese. Its explicit correction invitation is worth preserving.",
+        "The blind-spot statement about revealing unspoken needs is categorical, but the surrounding instructions consistently require verification."
+      ]
+    },
+    {
+      "id": "INFP.pt",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly refuses to define the reader's values, separates understanding from agreement and protects identity from negative feedback. Sleep, pressure and task difficulty broaden explanations beyond type. All framing notes are appropriately bounded; the four sensitivity, values, creativity and empathy tags remain reflective aspirations.",
+          "evidence": [
+            {
+              "caseId": "INFP.pt",
+              "path": "report.sections.0.text",
+              "quote": "Este perfil não pode definir seus valores"
+            },
+            {
+              "caseId": "INFP.pt",
+              "path": "strengthTags.0",
+              "quote": "Sensibilidade profunda"
+            },
+            {
+              "caseId": "INFP.pt",
+              "path": "framing.editorialNote",
+              "quote": "exemplos e propostas de reflexão baseados no tipo"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All three highlights, seven sections, three actions, tags and framing preserve the English account of authenticity, preference expression, imperfect starts, refusal and feedback. 'Escute com abertura pensamentos ainda em formação' naturally conveys a fair hearing for tentative thoughts. The emotion-processing step remains explicit rather than being compressed into productivity advice.",
+          "evidence": [
+            {
+              "caseId": "INFP.pt",
+              "path": "report.actions.2.step",
+              "quote": "Escolha uma revisão concreta no trabalho e depois abra espaço para elaborar suas emoções."
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.actions.2.step",
+              "quote": "Choose one concrete revision to the work, then make space to process your emotions."
+            },
+            {
+              "caseId": "INFP.pt",
+              "path": "report.sections.2.text",
+              "quote": "Você pode compreender sem concordar."
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.sections.2.text",
+              "quote": "You can understand without agreeing."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against one-letter neighbor INFJ, INFP centers personal value alignment, waiting for the right mood and treating feedback as a judgment of the whole self. INFJ centers verifying inferred patterns and distinguishing facts from guesses about others. INFP's small imperfect draft and identity boundary are distinct from INFJ's interpretation checks.",
+          "evidence": [
+            {
+              "caseId": "INFP.pt",
+              "path": "report.sections.5.text",
+              "quote": "Separe não gostar de um resultado de julgar quem você é por inteiro"
+            },
+            {
+              "caseId": "INFJ.pt",
+              "path": "report.sections.5.text",
+              "quote": "separe fatos, suposições e responsabilidades"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action supplies a concrete trigger and feasible response: write for ten minutes, state capacity and an available contribution, or choose one revision before making emotional space. The sample phrases support imperfect action, a bounded refusal and separation of work from identity. The report also clarifies that refusal does not require prolonged justification.",
+          "evidence": [
+            {
+              "caseId": "INFP.pt",
+              "path": "report.actions.0.step",
+              "quote": "Dedique dez minutos a produzir um parágrafo ou um rascunho."
+            },
+            {
+              "caseId": "INFP.pt",
+              "path": "report.actions.1.phrase",
+              "quote": "Não consigo fazer tudo isso, mas posso ajudar com esta parte."
+            },
+            {
+              "caseId": "INFP.pt",
+              "path": "report.actions.2.phrase",
+              "quote": "Esta parte pode mudar; ela não é minha identidade inteira."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The offered partial contribution is a useful refusal example; it should remain an available option rather than an obligation to compensate for saying no, consistent with the growth section."
+      ]
+    },
+    {
+      "id": "ENFJ.pt",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report respects voluntary participation, explicitly removes responsibility for everyone's mood and asks whether help was requested. It promotes reciprocal support and distinguishes care from repeated checking. All framing notes limit interpretation appropriately. Charisma and positive influence remain aspirational tags rather than assessed interpersonal powers.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.pt",
+              "path": "report.sections.0.text",
+              "quote": "você não é responsável pelo desenvolvimento ou pelo humor de todas as pessoas"
+            },
+            {
+              "caseId": "ENFJ.pt",
+              "path": "strengthTags.3",
+              "quote": "Influência positiva"
+            },
+            {
+              "caseId": "ENFJ.pt",
+              "path": "framing.editorialNote",
+              "quote": "não fatos individuais detectados nas suas respostas"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "The highlights, all sections, actions, four tags and framing preserve the source's participation, listening, reciprocal care and capacity boundaries. 'Um público definido' reasonably conveys 'a clear audience' in the work context. The slightly formal 'Também estou sentindo cansaço' retains the English example's acknowledgment of shared fatigue.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.pt",
+              "path": "report.sections.3.text",
+              "quote": "diferenciem cuidado de verificações repetidas"
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.sections.3.text",
+              "quote": "distinguish care from repeated checking"
+            },
+            {
+              "caseId": "ENFJ.pt",
+              "path": "report.actions.2.phrase",
+              "quote": "Você poderia me escutar por dez minutos? Também estou sentindo cansaço."
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.actions.2.phrase",
+              "quote": "Could you hear me for ten minutes? I am tired too."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor ENTJ, ENFJ specifically addresses premature encouragement, maintaining group atmosphere and making care reciprocal. ENTJ addresses taking control of a friend's task and determining the authorized extent of practical help. These differ in both interpersonal attention and the intervention proposed.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.pt",
+              "path": "report.sections.2.text",
+              "quote": "O incentivo pode chegar antes que ela termine de descrever a perda."
+            },
+            {
+              "caseId": "ENTJ.pt",
+              "path": "report.sections.2.text",
+              "quote": "Pergunte de qual dificuldade ela quer cuidar e até que ponto deseja seu envolvimento."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "All three actions provide contexts, feasible steps and usable phrases. Listening before planning and requesting ten minutes of support are especially complete. The extra-request action instructs the reader to offer clear scope, but its sample phrase only delays confirmation; an additional example stating the eventual scope would make that action more self-contained. This limitation is also present in the English source.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.pt",
+              "path": "report.actions.0.step",
+              "quote": "Confira sua agenda e ofereça um escopo claro."
+            },
+            {
+              "caseId": "ENFJ.pt",
+              "path": "report.actions.0.phrase",
+              "quote": "Vou conferir meu tempo e confirmar hoje à noite."
+            },
+            {
+              "caseId": "ENFJ.pt",
+              "path": "report.actions.1.phrase",
+              "quote": "Você gostaria de terminar de me contar antes de planejarmos?"
+            },
+            {
+              "caseId": "ENFJ.pt",
+              "path": "report.actions.2.step",
+              "quote": "Faça um pedido concreto e delimitado para que escutem você."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The first action's phrase would be stronger with a concrete example of the scope offered after checking availability.",
+        "Some direct ability wording, such as coordinating disagreement, relies on the explicit reflection framing for appropriate interpretation."
+      ]
+    },
+    {
+      "id": "ENFP.pt",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly permits calm, repetition and rest; it separates excitement from actual capacity and supports negotiated reliability. The complete framing rejects measured ability and prediction interpretations. 'Criatividade sem limites' is an inflated absolute within an aspirational tag, limiting the safety score to 4; under the explicit reflection framing it does not constitute a deterministic ability prediction.",
+          "evidence": [
+            {
+              "caseId": "ENFP.pt",
+              "path": "report.sections.0.text",
+              "quote": "você não precisa sentir entusiasmo o tempo todo"
+            },
+            {
+              "caseId": "ENFP.pt",
+              "path": "strengthTags.1",
+              "quote": "Criatividade sem limites"
+            },
+            {
+              "caseId": "ENFP.pt",
+              "path": "framing.editorialNote",
+              "quote": "não fatos individuais detectados nas suas respostas ou previsões sobre relacionamentos, carreiras ou capacidade"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All highlights, seven sections, three actions, four tags and framing preserve the English situations, permissions and boundaries. The distinction between interest and commitment, reciprocal trust, reliable arrangements and a small regular project action survives clearly. The exaggerated creativity tag is inherited faithfully from the English source rather than introduced by translation.",
+          "evidence": [
+            {
+              "caseId": "ENFP.pt",
+              "path": "report.sections.1.text",
+              "quote": "Diga quando precisar descansar, em vez de continuar encenando sua versão mais animada."
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.1.text",
+              "quote": "State a need for rest rather than continuing to perform the lively version of yourself."
+            },
+            {
+              "caseId": "ENFP.pt",
+              "path": "strengthTags.1",
+              "quote": "Criatividade sem limites"
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "strengthTags.1",
+              "quote": "Boundless creativity"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against one-letter neighbor ENTP, ENFP emphasizes excitement outrunning capacity and associations redirecting a friend's story. ENTP emphasizes competing viewpoints, debate versus testimony and deliberate experimentation. ENFP's invitation-confirmation interval and project continuity step differ concretely from ENTP's thirty-minute selection among competing directions.",
+          "evidence": [
+            {
+              "caseId": "ENFP.pt",
+              "path": "report.actions.0.step",
+              "quote": "Confira os compromissos já assumidos antes de confirmar."
+            },
+            {
+              "caseId": "ENFP.pt",
+              "path": "report.sections.2.text",
+              "quote": "uma resposta rápida pode redirecionar o que ela queria dizer"
+            },
+            {
+              "caseId": "ENTP.pt",
+              "path": "report.sections.2.text",
+              "quote": "debater pode soar como uma exigência de provas"
+            },
+            {
+              "caseId": "ENTP.pt",
+              "path": "report.actions.0.step",
+              "quote": "Teste uma por trinta minutos e anote as outras para depois."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The three actions identify distinct triggers and observable responses: check existing commitments before accepting, invite the storyteller to finish and complete a ten-minute minimum while recording the next step. Each has a usable phrase. The project action leaves the specific work unit to the reader, but its time limit and recorded next action make it sufficiently concrete and feasible.",
+          "evidence": [
+            {
+              "caseId": "ENFP.pt",
+              "path": "report.actions.0.phrase",
+              "quote": "Eu adoraria participar; confirmo amanhã."
+            },
+            {
+              "caseId": "ENFP.pt",
+              "path": "report.actions.1.phrase",
+              "quote": "Tem mais alguma coisa que você quer dizer?"
+            },
+            {
+              "caseId": "ENFP.pt",
+              "path": "report.actions.2.step",
+              "quote": "Conclua um mínimo de dez minutos e anote a próxima ação."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Replacing the absolute creativity tag with a less inflated aspiration would improve editorial restraint in both supplied languages.",
+        "'Conclua um mínimo de dez minutos' is understandable but less idiomatic than wording that explicitly says to work on the project for ten minutes."
+      ]
+    }
+  ]
+}

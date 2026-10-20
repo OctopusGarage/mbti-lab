@@ -1,0 +1,274 @@
+{
+  "evaluatedAt": "2026-10-20T07:56:56.859Z",
+  "applicationCommit": "818e28fefeb4b33eca1ae472c224e5c48e105896",
+  "method": "16 fresh Codex CLI batches using the existing runner; no retries or score selection",
+  "model": null,
+  "cases": 128,
+  "criterionScores": 512,
+  "minimumScore": 4,
+  "meanScore": 4.56,
+  "judgment": {
+    "file": "judgment.json",
+    "sha256": "625c1a9a41ef48436298e26342131045dd311803c121527dbe52e3438028d7c1"
+  },
+  "sourceHashes": {
+    "src/data/reportContent.js": "f48ac4e452c78466ddd20201480ede9010b51341f21354eff08987c5dbe13894",
+    "src/utils/report.js": "d0e100bc97c46435a5be13947d7ece6041142b70ee7743890de17e9886de4809",
+    "src/utils/dimensions.js": "8620162afd15f50c6193e3f7cb297f6310465205d207721802058f199e95daea",
+    "src/data/types.js": "52cec301b880e774700ef2544b27b2fe26ca5615f9f3cc13c2e28fc7c87f1f19",
+    "src/locales/zh.json": "f0a3c698dd76adbca4431b23804cceb8386c7b5b847b23cb94065a1be80f443c",
+    "src/locales/en.json": "4a9e668b2791e210bbdef61fc42d5a1b851715f639b11910f29b12cf2a40a0aa",
+    "evals/rubric.json": "53077005ef4786f40c120ebef43606274a3189e37c9d975a88f5abffcec83bae",
+    "evals/cases.json": "c8904c1c614114621bd78291e6f795034d9e3b3aa0b9ecc7919d3c1f811b9545",
+    "evals/judgment.schema.json": "0c69b08e4649f95f6a9cf89d7bb2138bdb4b59edaaee59687aaa14fc50f2126c",
+    "evals/response.schema.json": "6d538f609c17898d633286a28072682e14902483f9c50b5f23f697020afc506e",
+    "src/data/localizedContent.js": "88c93d87de71e4b4c49f99a7fc766b2888ad02fa89ae16336a6e37b3e8baa6bd",
+    "src/i18n/locales.js": "6b588696c755826312d33b9446b0db19e9ea60cbc360523d9b77bc27e07e8ac8",
+    "scripts/eval-lib.mjs": "a83ebb057b3576a6b6d1666c5fbae322a22a7d2d2bbf0dc12dbee755250f1a3d",
+    "scripts/eval-ai.mjs": "3ebbc1da9e47abeadf08b0140a9338ab3a3971be9c22a912f5fb0586243985eb",
+    "src/locales/es.json": "3f19c911cf46b797885464d4396a4e7c6ea4a24708683bf12af8bb2e84c02179",
+    "src/data/translations/es.types.json": "d525a1d4fd6684f4f8677141655a1eab6c9fb58a189e910c6a8331f857610bb6",
+    "src/data/translations/es.reports.json": "e163bd3d5166ed14527cb869f7253c690ad18f954a0b7b9c0453f236bef9c2e5",
+    "src/locales/fr.json": "2eb4117919809824c66737375e6c173651959d5c21cd71f2d2f015c69bfd9c38",
+    "src/data/translations/fr.types.json": "771a9d2334159d2769d95f3d93f3754d5c6f6a1730d899e430a6ddacbb48315e",
+    "src/data/translations/fr.reports.json": "b3096cc13052e4cba9c9bb83d567cdb9a318c1cda8c077b7ae25d1fccf63d542",
+    "src/locales/de.json": "1fa78bb517031bb5dde3fd2a67252b67a31dbccebe1db7a17e18bb2b5ad8a0c7",
+    "src/data/translations/de.types.json": "6229d4557125e720f005f6ec1d22f4f1aefb0abc4d96f2479798c35557e5d6a8",
+    "src/data/translations/de.reports.json": "a43392f6e1e66f0cb54bc0965d3be127ef5470fb1c38a41b27e2647aeb666d70",
+    "src/locales/pt.json": "9e1fb804fdb873c63456d81cd310a437e365f79cbcce741a4c14b4bdc719a8f0",
+    "src/data/translations/pt.types.json": "49b7a9a9faeda78c1faf10224a0586025fe36d103ea7ffd35bb5b75c5d9703cb",
+    "src/data/translations/pt.reports.json": "bde3c29cc0dbe24df1fc6edb40c4f1df6d81d43faace6d4353b36b39ed8a7555",
+    "src/locales/ja.json": "fddddf89dcc4db63ca95fdfdb6ad72c09222cbe2802491fa89930ccd704b5f99",
+    "src/data/translations/ja.types.json": "94dc7445e3db13e0c1ca25a618dfbafccf3df633c052e631a36c233e2496f636",
+    "src/data/translations/ja.reports.json": "5bedf0c18530345a2478b08b88d32c371c3945786559c87a6d025d50875ee77c",
+    "src/locales/ko.json": "1487ca1650fa4dab1b0cadec00b3d065656515cd2459470fa5e2dc246cd500a7",
+    "src/data/translations/ko.types.json": "bd99db2709a1022a64d1ac67815e34ed4e2ca90a32d01b703547b59ebc37e8f1",
+    "src/data/translations/ko.reports.json": "46a2f19c8136d71e530bf1308c129ef12c69f83bb8da7f9af324b2d3959024f4"
+  },
+  "responses": [
+    {
+      "file": "response-0.json",
+      "sha256": "e7c83e4b41fbda26de5dc2861b07199370578fbfad7174f09b39fea8d118563a",
+      "caseIds": [
+        "INTJ.zh",
+        "INTP.zh",
+        "ENTJ.zh",
+        "ENTP.zh",
+        "INFJ.zh",
+        "INFP.zh",
+        "ENFJ.zh",
+        "ENFP.zh"
+      ]
+    },
+    {
+      "file": "response-1.json",
+      "sha256": "41863e070ea396d24adc4dc69fe4651bc79f18d640e2aa5ee6f3c07d53401ee2",
+      "caseIds": [
+        "ISTJ.zh",
+        "ISFJ.zh",
+        "ESTJ.zh",
+        "ESFJ.zh",
+        "ISTP.zh",
+        "ISFP.zh",
+        "ESTP.zh",
+        "ESFP.zh"
+      ]
+    },
+    {
+      "file": "response-2.json",
+      "sha256": "729e1323994e7831743fa98fe9a808461537251f070cbef645bed3bc5d339f57",
+      "caseIds": [
+        "INTJ.en",
+        "INTP.en",
+        "ENTJ.en",
+        "ENTP.en",
+        "INFJ.en",
+        "INFP.en",
+        "ENFJ.en",
+        "ENFP.en"
+      ]
+    },
+    {
+      "file": "response-3.json",
+      "sha256": "903ad1b2df75b66dfaa0b91edcb518b42e4e340f4fba18b5c58330ab1ead37e8",
+      "caseIds": [
+        "ISTJ.en",
+        "ISFJ.en",
+        "ESTJ.en",
+        "ESFJ.en",
+        "ISTP.en",
+        "ISFP.en",
+        "ESTP.en",
+        "ESFP.en"
+      ]
+    },
+    {
+      "file": "response-4.json",
+      "sha256": "d8b1e0c12768db1d114778dfe6c152c927c6a69aaf4691168f5923a5cfb66b23",
+      "caseIds": [
+        "INTJ.es",
+        "INTP.es",
+        "ENTJ.es",
+        "ENTP.es",
+        "INFJ.es",
+        "INFP.es",
+        "ENFJ.es",
+        "ENFP.es"
+      ]
+    },
+    {
+      "file": "response-5.json",
+      "sha256": "d87c077b5805c445e19c86cfa0a179d4b13b827e6a7128b6f00903c6bc3eb030",
+      "caseIds": [
+        "ISTJ.es",
+        "ISFJ.es",
+        "ESTJ.es",
+        "ESFJ.es",
+        "ISTP.es",
+        "ISFP.es",
+        "ESTP.es",
+        "ESFP.es"
+      ]
+    },
+    {
+      "file": "response-6.json",
+      "sha256": "88857fc904df6904cc3e4b2c2cf0df83071d02c6583ea449f4dce4ce774fc067",
+      "caseIds": [
+        "INTJ.fr",
+        "INTP.fr",
+        "ENTJ.fr",
+        "ENTP.fr",
+        "INFJ.fr",
+        "INFP.fr",
+        "ENFJ.fr",
+        "ENFP.fr"
+      ]
+    },
+    {
+      "file": "response-7.json",
+      "sha256": "585fb965f66572cb821291bd9ac7ece5a0997d03528c675de8dfe7ca47f56908",
+      "caseIds": [
+        "ISTJ.fr",
+        "ISFJ.fr",
+        "ESTJ.fr",
+        "ESFJ.fr",
+        "ISTP.fr",
+        "ISFP.fr",
+        "ESTP.fr",
+        "ESFP.fr"
+      ]
+    },
+    {
+      "file": "response-8.json",
+      "sha256": "575a510b05e53a1847ca61d75d9a9c2b7d3693579ce8badca4c85f146f28e9b4",
+      "caseIds": [
+        "INTJ.de",
+        "INTP.de",
+        "ENTJ.de",
+        "ENTP.de",
+        "INFJ.de",
+        "INFP.de",
+        "ENFJ.de",
+        "ENFP.de"
+      ]
+    },
+    {
+      "file": "response-9.json",
+      "sha256": "199084cb13486f9ae74ca62ccdcbb88d6ed34c4fced682848251a983f15d08e0",
+      "caseIds": [
+        "ISTJ.de",
+        "ISFJ.de",
+        "ESTJ.de",
+        "ESFJ.de",
+        "ISTP.de",
+        "ISFP.de",
+        "ESTP.de",
+        "ESFP.de"
+      ]
+    },
+    {
+      "file": "response-10.json",
+      "sha256": "fe01cb776df5c85128dcc3afc172d660a155167b3c32be56cab1495d1367ff5f",
+      "caseIds": [
+        "INTJ.pt",
+        "INTP.pt",
+        "ENTJ.pt",
+        "ENTP.pt",
+        "INFJ.pt",
+        "INFP.pt",
+        "ENFJ.pt",
+        "ENFP.pt"
+      ]
+    },
+    {
+      "file": "response-11.json",
+      "sha256": "d3a8be282a521d663d72d436ee78edfc3dcb2de21d8bb47689ecbe7fa61996dc",
+      "caseIds": [
+        "ISTJ.pt",
+        "ISFJ.pt",
+        "ESTJ.pt",
+        "ESFJ.pt",
+        "ISTP.pt",
+        "ISFP.pt",
+        "ESTP.pt",
+        "ESFP.pt"
+      ]
+    },
+    {
+      "file": "response-12.json",
+      "sha256": "1cc56d7a356b0fc56985b9a45dcefc1346b994b8a62e156d443bc95782b05e90",
+      "caseIds": [
+        "INTJ.ja",
+        "INTP.ja",
+        "ENTJ.ja",
+        "ENTP.ja",
+        "INFJ.ja",
+        "INFP.ja",
+        "ENFJ.ja",
+        "ENFP.ja"
+      ]
+    },
+    {
+      "file": "response-13.json",
+      "sha256": "343d978889e2adead5b42624b8b9e358812fc9915e60acf22ee1e28bead3cf3f",
+      "caseIds": [
+        "ISTJ.ja",
+        "ISFJ.ja",
+        "ESTJ.ja",
+        "ESFJ.ja",
+        "ISTP.ja",
+        "ISFP.ja",
+        "ESTP.ja",
+        "ESFP.ja"
+      ]
+    },
+    {
+      "file": "response-14.json",
+      "sha256": "e8e8a25ecde9fe69cfffa3ad44f3198f306a30600083d8d3406490f379d18c72",
+      "caseIds": [
+        "INTJ.ko",
+        "INTP.ko",
+        "ENTJ.ko",
+        "ENTP.ko",
+        "INFJ.ko",
+        "INFP.ko",
+        "ENFJ.ko",
+        "ENFP.ko"
+      ]
+    },
+    {
+      "file": "response-15.json",
+      "sha256": "b0183598d1b8e4cdbf637ac747f7f97203a68124473a47b7cf19a973cc00d939",
+      "caseIds": [
+        "ISTJ.ko",
+        "ISFJ.ko",
+        "ESTJ.ko",
+        "ESFJ.ko",
+        "ISTP.ko",
+        "ISFP.ko",
+        "ESTP.ko",
+        "ESFP.ko"
+      ]
+    }
+  ]
+}

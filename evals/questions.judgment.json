@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "evaluatedAt": "2026-10-20T07:12:03.426Z",
+  "evaluatedAt": "2026-10-20T07:43:57.350Z",
   "provenance": {
     "method": "codex-cli",
     "evaluatedAtMeaning": "Artifact merge creation time; per-locale startedAt and completedAt retain the original actual reviewer timestamps.",
@@ -9,25 +9,28 @@
       "An AI linguistic review cannot establish psychometric validity, scoring validity or measurement equivalence across cultures."
     ],
     "selectedLocales": [
-      "de",
-      "ja"
-    ],
-    "reviewedLocales": [
-      "de",
-      "ja"
-    ],
-    "checkpointLocales": [],
-    "reusedLocales": [
       "es",
       "fr",
+      "de",
       "pt",
+      "ja",
       "ko"
     ],
-    "resumedCheckpoints": true,
-    "priorArtifactHash": "ad249e7e45186a405dafd9bf405210c917fdc5a08d4c829e21a36b5136d9338f",
+    "reviewedLocales": [],
+    "checkpointLocales": [
+      "es",
+      "fr",
+      "de",
+      "pt",
+      "ja",
+      "ko"
+    ],
     "currentRunnerWorkerLimit": 2,
     "historicalMaximumConcurrency": 3,
-    "concurrencyNote": "Current runner uses at most 2 workers. Reused actual judgments preserve their original timestamps and may originate from earlier 3-worker runs; the full history never exceeded 3 concurrent question reviewers."
+    "concurrencyNote": "Current runner uses at most 2 workers. Reused actual judgments preserve original timestamps and may originate from earlier 3-worker runs; the full history never exceeded 3 question reviewers concurrently.",
+    "reusedLocales": [],
+    "resumedCheckpoints": true,
+    "priorArtifactHash": null
   },
   "sourceHashes": {
     "src/data/questions.js": "24a57b27c387d518195f366c595aa347a48be7b99891d8c81692b85b24b36374",

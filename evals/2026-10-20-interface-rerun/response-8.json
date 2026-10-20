@@ -1,0 +1,779 @@
+{
+  "evaluator": "OpenAI ChatGPT",
+  "model": null,
+  "limitations": [
+    "This evaluation covers exactly the eight German target cases in batch 9/16 and their supplied English counterparts; it cannot establish a pass for the complete 128-case evaluation.",
+    "Same-language differentiation comparisons are limited to the eight supplied German intuitive types, using one-letter neighbors.",
+    "This is AI editorial language review, without independent native-speaker validation. Judgments concern the supplied wording, not psychometric validity or UI rendering.",
+    "No tools were invoked, files changed, external sources consulted, or source freshness and hashes independently verified."
+  ],
+  "results": [
+    {
+      "id": "INTJ.de",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The seven sections use reflective situations, explicitly reject prediction, and protect negotiated decisions, emotional space and consent before analysis. All framing notes appropriately limit interpretation of answers, percentages and neighboring types. The four strength tags remain categorical shorthand, particularly self-discipline and analytical ability, but explicit reflection framing prevents their presentation as measured individual facts.",
+          "evidence": [
+            {
+              "caseId": "INTJ.de",
+              "path": "framing.editorialNote",
+              "quote": "keine aus Ihren Antworten ermittelten persönlichen Fakten oder Vorhersagen zu Beziehungen, Beruf oder Fähigkeiten"
+            },
+            {
+              "caseId": "INTJ.de",
+              "path": "strengthTags.2",
+              "quote": "Scharfsinnige Analyse"
+            },
+            {
+              "caseId": "INTJ.de",
+              "path": "report.sections.3.text",
+              "quote": "Zukunftspläne geben nur dann Sicherheit, wenn beide darüber verhandeln können."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All three highlights, seven sections, three action triplets, four tags and six framing fields preserve the English content. Direction before logistics, visible reasoning, listening before solutions, time-bounded solitude and provisional work assumptions survive intact. The German rendering of an unshared plan as one nobody supports makes the intended collaborative meaning clear.",
+          "evidence": [
+            {
+              "caseId": "INTJ.de",
+              "path": "report.sections.1.text",
+              "quote": "Erklären Sie einen Grund und lassen Sie ein Detail veränderbar."
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.sections.1.text",
+              "quote": "Explain one reason and leave one detail open to change."
+            },
+            {
+              "caseId": "INTJ.de",
+              "path": "report.actions.1.step",
+              "quote": "Fragen Sie vor einem Lösungsvorschlag, welche Unterstützung er möchte."
+            },
+            {
+              "caseId": "INTJ.en",
+              "path": "report.actions.1.step",
+              "quote": "Ask what support they want before offering a solution."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against one-letter neighbor INTP.de, INTJ.de emphasizes the intended destination, planning assumptions and explaining a proposed route. INTP.de instead questions how the problem is framed and uses sufficient criteria and stopping conditions to end exploration. These differences shape both attention and concrete recommendations.",
+          "evidence": [
+            {
+              "caseId": "INTJ.de",
+              "path": "report.sections.4.text",
+              "quote": "Trennen Sie das langfristige Ziel, die derzeitigen Belege und das erste abzuliefernde Ergebnis."
+            },
+            {
+              "caseId": "INTP.de",
+              "path": "report.sections.0.text",
+              "quote": "Fragt jemand nach dem besten Restaurant, klären Sie zuerst die Kriterien."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All three actions give distinct triggers and feasible steps: test one stalled-plan assumption for twenty minutes, ask a repeatedly troubled friend what support they want, and explain one reason while inviting a collaborator's missing constraint. Each has a usable example phrase and connects directly to the report without requiring a comprehensive planning exercise.",
+          "evidence": [
+            {
+              "caseId": "INTJ.de",
+              "path": "report.actions.0.step",
+              "quote": "Prüfen Sie zwanzig Minuten lang eine Annahme anhand einer kleinen Version."
+            },
+            {
+              "caseId": "INTJ.de",
+              "path": "report.actions.1.phrase",
+              "quote": "Würde Zuhören helfen oder das gemeinsame Suchen nach Möglichkeiten?"
+            },
+            {
+              "caseId": "INTJ.de",
+              "path": "report.actions.2.phrase",
+              "quote": "Das ist meine Begründung. Welche Bedingung übersehe ich?"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Formal Sie-address in examples involving friends is grammatically valid but sounds more distant than ordinary German friendship dialogue.",
+        "The strength tags should retain their supplied reflection framing wherever displayed."
+      ]
+    },
+    {
+      "id": "INTP.de",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly denies superior conclusions, discourages dismissing listeners, permits provisional feelings and recognizes resource constraints alongside personal tendencies. The framing correctly distinguishes reflection from detected facts and ability scores. All four tags are acceptable under that framing, although objective analysis and self-motivation remain aspirational rather than established abilities.",
+          "evidence": [
+            {
+              "caseId": "INTP.de",
+              "path": "report.sections.0.text",
+              "quote": "Annahmen zu prüfen kann helfen, garantiert aber keine überlegenen Schlussfolgerungen."
+            },
+            {
+              "caseId": "INTP.de",
+              "path": "strengthTags.2",
+              "quote": "Objektive Analyse"
+            },
+            {
+              "caseId": "INTP.de",
+              "path": "framing.percentNote",
+              "quote": "keine Fähigkeiten, Genauigkeit oder Prozentränge in der Bevölkerung"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "The full German case preserves the source's premise-checking emphasis, curiosity-versus-delivery tension, emotional acknowledgment and self-initiated reconnection. Highlights, all seven sections, all three actions, tags and framing retain the central situations, permissions and practical boundaries. German phrasing is occasionally technical but does not materially change the advice.",
+          "evidence": [
+            {
+              "caseId": "INTP.de",
+              "path": "report.sections.4.text",
+              "quote": "Trennen Sie Erkundung und Abgabe und heben Sie weitere Fragen für die nächste Runde auf."
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.sections.4.text",
+              "quote": "Separate exploration from delivery and save further questions for another round."
+            },
+            {
+              "caseId": "INTP.de",
+              "path": "report.actions.2.step",
+              "quote": "Nennen Sie ein Ende der Pause und melden Sie sich selbst wieder."
+            },
+            {
+              "caseId": "INTP.en",
+              "path": "report.actions.2.step",
+              "quote": "Give the break an end time and reconnect yourself."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor INTJ.de, INTP.de centers open-ended inquiry, rebuilding explanations and deciding when enough investigation is enough. INTJ.de centers an eventual goal, present evidence and a first deliverable. The criteria-based reversible trial is a concrete distinction from testing a strategic planning assumption.",
+          "evidence": [
+            {
+              "caseId": "INTP.de",
+              "path": "report.actions.0.step",
+              "quote": "Wählen Sie zwei wesentliche Kriterien und testen Sie dann eine umkehrbare Möglichkeit."
+            },
+            {
+              "caseId": "INTJ.de",
+              "path": "report.sections.4.text",
+              "quote": "Trennen Sie das langfristige Ziel, die derzeitigen Belege und das erste abzuliefernde Ergebnis."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The three contexts are recognizable and the steps observable: select two research criteria and try a reversible option, explain through an everyday example while offering detail, and give a quiet break an end time with active return. Each example phrase is usable and preserves the other person's choice about further explanation.",
+          "evidence": [
+            {
+              "caseId": "INTP.de",
+              "path": "report.actions.0.phrase",
+              "quote": "Diese beiden Bedingungen reichen für einen ersten Versuch."
+            },
+            {
+              "caseId": "INTP.de",
+              "path": "report.actions.1.phrase",
+              "quote": "Hier ist ein Beispiel. Würde die Begründung helfen?"
+            },
+            {
+              "caseId": "INTP.de",
+              "path": "report.actions.2.phrase",
+              "quote": "Ich brauche eine halbe Stunde zum Nachdenken, dann komme ich zurück."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Abbruchbedingung is understandable but has a technical register for everyday reflection.",
+        "Objective analysis is a framed strength label, not evidence that the individual reasons objectively."
+      ]
+    },
+    {
+      "id": "ENTJ.de",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report consistently constrains organizing behavior with consent, shared ownership, room for emotions and capacity limits. It rejects equating silence with agreement and productivity with relational value. All framing fields are appropriately restrictive. Leadership and execution tags remain broad positive attributes, acceptable as reflection prompts rather than measured capacities.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.de",
+              "path": "report.sections.1.text",
+              "quote": "Schweigen bedeutet nicht unbedingt Zustimmung zu Ihrer gewählten Richtung."
+            },
+            {
+              "caseId": "ENTJ.de",
+              "path": "strengthTags.0",
+              "quote": "Führungsstärke"
+            },
+            {
+              "caseId": "ENTJ.de",
+              "path": "framing.cardNote",
+              "quote": "Nutzen Sie diese Anregungen, um über konkrete Situationen nachzudenken, auch jenseits einer Typbezeichnung."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "All highlights, sections, actions, tags and framing preserve the English situations, consent checks and capacity boundaries. A minor tonal shift occurs when firmness becomes Härte, suggesting harshness rather than mere firmness. Anpassung beschleunigen also conveys the source's concern about rushing adjustment less clearly. Neither alters the practical recommendation to rest and redistribute work.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.de",
+              "path": "report.sections.5.text",
+              "quote": "Unter Druck kann Härte auf Müdigkeit hindeuten."
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.5.text",
+              "quote": "Under pressure, firmness may signal fatigue."
+            },
+            {
+              "caseId": "ENTJ.de",
+              "path": "report.sections.5.text",
+              "quote": "Anpassung beschleunigen"
+            },
+            {
+              "caseId": "ENTJ.en",
+              "path": "report.sections.5.text",
+              "quote": "rush adjustment"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against one-letter neighbor ENFJ.de, ENTJ.de foregrounds bottlenecks, deadlines, task ownership and redistribution. ENFJ.de foregrounds participation, encouragement arriving too early and reciprocal emotional support. Both discuss capacity, but their motivating situations and corrective actions remain concretely distinct.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.de",
+              "path": "report.actions.2.step",
+              "quote": "Wählen Sie eine Aufgabe zur Neuverteilung mit klarer Zuständigkeit."
+            },
+            {
+              "caseId": "ENFJ.de",
+              "path": "report.actions.2.step",
+              "quote": "Bitten Sie konkret und zeitlich begrenzt ums Zuhören."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All three actions connect recognizable situations to small interventions and usable speech: collect concerns before summarizing a stalled discussion, ask the desired extent of help before taking over, and select one team task for reassignment with ownership. They preserve consent and establish a capacity boundary without promising cooperation or results.",
+          "evidence": [
+            {
+              "caseId": "ENTJ.de",
+              "path": "report.actions.0.step",
+              "quote": "Hören Sie von jeder Person ein Bedenken an, bevor Sie Möglichkeiten zusammenfassen."
+            },
+            {
+              "caseId": "ENTJ.de",
+              "path": "report.actions.1.phrase",
+              "quote": "Wie weit soll meine Hilfe gehen?"
+            },
+            {
+              "caseId": "ENTJ.de",
+              "path": "report.actions.2.phrase",
+              "quote": "Wir müssen das neu verteilen; hier endet meine Kapazität."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Consider Festigkeit or entschlossenes Auftreten for firmness; Härte adds a harsher interpersonal implication.",
+        "The discussion exercise is feasible for an ordinary small group; hearing every person may require adaptation in a large meeting."
+      ]
+    },
+    {
+      "id": "ENTP.de",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The complete case treats exploratory behavior as optional, distinguishes debate from hearing hurt, and emphasizes responsibility for promises and completion. It supports negotiating flexibility rather than unilaterally changing agreements. The tags imply positive abilities but sit within explicit reflection framing; the critique of responsibility avoidance describes a possible behavior rather than a demeaning identity.",
+          "evidence": [
+            {
+              "caseId": "ENTP.de",
+              "path": "report.sections.2.text",
+              "quote": "Prüfen Sie, ob Sie eine Idee diskutieren oder einen persönlichen Bericht hören."
+            },
+            {
+              "caseId": "ENTP.de",
+              "path": "strengthTags.1",
+              "quote": "Schnelles Denken"
+            },
+            {
+              "caseId": "ENTP.de",
+              "path": "framing.editorialNote",
+              "quote": "Behalten Sie, was für Sie stimmig ist."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The highlights, seven sections, three actions, tags and framing retain the source's exploratory focus, accountability, consent and stable commitments. Some German is conspicuously literal: Probleme aufbrechen is awkward for breaking through problems, and Landepunkt is a strained metaphor for giving ideas a landing place. The intended actions remain understandable; no boundary or recommendation is reversed.",
+          "evidence": [
+            {
+              "caseId": "ENTP.de",
+              "path": "report.sections.4.text",
+              "quote": "Anfangen und Probleme aufbrechen"
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.sections.4.text",
+              "quote": "Starting and breaking through problems"
+            },
+            {
+              "caseId": "ENTP.de",
+              "path": "report.sections.6.text",
+              "quote": "Geben Sie Ideen einen Landepunkt: ein kleines Experiment und eine Abbruchbedingung."
+            },
+            {
+              "caseId": "ENTP.en",
+              "path": "report.sections.6.text",
+              "quote": "Give ideas a landing place: a small experiment and a stopping condition."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "One-letter neighbor ENFP.de also explores possibilities, but ENTP.de specifically addresses counterarguments, debate and reinterpretations that can displace acknowledgment of hurt. ENFP.de addresses personal associations that interrupt another person's story. Their listening corrections target different conversational mechanisms.",
+          "evidence": [
+            {
+              "caseId": "ENTP.de",
+              "path": "report.sections.2.text",
+              "quote": "kann eine Debatte wie eine Beweisforderung klingen"
+            },
+            {
+              "caseId": "ENFP.de",
+              "path": "report.sections.2.text",
+              "quote": "eine schnelle Antwort kann seine Erzählung umlenken"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action has a clear trigger, manageable step and example phrase: test one direction for thirty minutes while parking others, reflect a friend's hurt before asking about another viewpoint, and preserve a confirmed meeting commitment while negotiating route changes. The hurt example performs acknowledgment and verification; the step separately supplies the permission question.",
+          "evidence": [
+            {
+              "caseId": "ENTP.de",
+              "path": "report.actions.0.step",
+              "quote": "Testen Sie eine dreißig Minuten lang und notieren Sie die übrigen für später."
+            },
+            {
+              "caseId": "ENTP.de",
+              "path": "report.actions.1.step",
+              "quote": "Geben Sie die Auswirkungen wieder und fragen Sie dann, ob eine andere Sicht helfen würde."
+            },
+            {
+              "caseId": "ENTP.de",
+              "path": "report.actions.2.phrase",
+              "quote": "Die Treffzeit bleibt. Wollen wir die Route noch einmal besprechen?"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Probleme aufbrechen and Landepunkt merit idiomatic revision.",
+        "Formal Sie-address makes the otherwise useful friendship example sound unusually distant."
+      ]
+    },
+    {
+      "id": "INFJ.de",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly rejects mind-reading, makes interpretations correctable and protects listening limits and direct requests. It discourages explaining an entire relationship through one missed signal. All framing notes preserve optional reflection. Insight, empathy, vision and persuasive power remain broad aspirational tags rather than demonstrated personal abilities.",
+          "evidence": [
+            {
+              "caseId": "INFJ.de",
+              "path": "report.sections.0.text",
+              "quote": "Bedeutung unterstützt Ihre Aufmerksamkeit, erlaubt aber kein Gedankenlesen."
+            },
+            {
+              "caseId": "INFJ.de",
+              "path": "strengthTags.3",
+              "quote": "Überzeugungskraft"
+            },
+            {
+              "caseId": "INFJ.de",
+              "path": "framing.editorialNote",
+              "quote": "keine aus Ihren Antworten ermittelten persönlichen Fakten"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "All highlights, sections, actions and framing retain the English emphasis on meaning, checking interpretations, boundaries and concrete requests. One visible strength tag changes meaning: Überzeugungskraft denotes persuasive power, whereas Conviction denotes firmly held belief or commitment. This localized drift warrants revision but does not undermine the report's central situations or advice.",
+          "evidence": [
+            {
+              "caseId": "INFJ.de",
+              "path": "strengthTags.3",
+              "quote": "Überzeugungskraft"
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "strengthTags.3",
+              "quote": "Conviction"
+            },
+            {
+              "caseId": "INFJ.de",
+              "path": "report.sections.5.text",
+              "quote": "Trennen Sie unter Stress Fakten, Vermutungen und Verantwortlichkeiten."
+            },
+            {
+              "caseId": "INFJ.en",
+              "path": "report.sections.5.text",
+              "quote": "Under stress, separate facts, guesses and responsibilities."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor INFP.de, INFJ.de emphasizes inferred patterns across another person's experiences and checking that interpretation with them. INFP.de emphasizes whether choices fit personal values and states that the profile cannot define those values. The resulting actions differ: invite correction of an inference versus give a meaningful idea an imperfect beginning.",
+          "evidence": [
+            {
+              "caseId": "INFJ.de",
+              "path": "report.sections.2.text",
+              "quote": "Bieten Sie das Muster als Frage an."
+            },
+            {
+              "caseId": "INFP.de",
+              "path": "report.sections.0.text",
+              "quote": "Dieses Profil kann Ihre Werte nicht bestimmen"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "All three actions provide recognizable contexts, small steps and usable phrases: check an interpretation, limit listening time and arrange reconnection, and request company without immediate advice. The first step asks for an observation, but its example supplies an inference about hesitation rather than observable behavior. Inviting correction keeps it useful, though an actual observation would better operationalize the instruction.",
+          "evidence": [
+            {
+              "caseId": "INFJ.de",
+              "path": "report.actions.0.step",
+              "quote": "Teilen Sie eine Beobachtung und laden Sie zur Korrektur ein."
+            },
+            {
+              "caseId": "INFJ.de",
+              "path": "report.actions.0.phrase",
+              "quote": "Ich frage mich, ob Sie zögern. Liege ich falsch?"
+            },
+            {
+              "caseId": "INFJ.de",
+              "path": "report.actions.1.phrase",
+              "quote": "Ich habe noch zehn Minuten; können wir morgen weitersprechen?"
+            },
+            {
+              "caseId": "INFJ.de",
+              "path": "report.actions.2.phrase",
+              "quote": "Ich hätte heute gern etwas Gesellschaft, zunächst ohne Ratschläge."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Translate Conviction with wording about personal conviction or commitment rather than persuasive ability.",
+        "The first action would be more concrete if its phrase named an observed pause or behavior before proposing hesitation; this limitation is also present in the English source."
+      ]
+    },
+    {
+      "id": "INFP.de",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report protects personal authority over values, permits necessary work without special feelings, distinguishes understanding from agreement and separates feedback from whole-self judgment. Sleep, pressure and task difficulty prevent an exclusively type-based explanation. The four positive tags remain framed reflections rather than measured sensitivity, creativity or empathy.",
+          "evidence": [
+            {
+              "caseId": "INFP.de",
+              "path": "report.sections.0.text",
+              "quote": "Dieses Profil kann Ihre Werte nicht bestimmen"
+            },
+            {
+              "caseId": "INFP.de",
+              "path": "strengthTags.0",
+              "quote": "Tiefe Sensibilität"
+            },
+            {
+              "caseId": "INFP.de",
+              "path": "framing.cardNote",
+              "quote": "auch jenseits einer Typbezeichnung"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "The full case preserves all three highlights, seven sections, three action triplets, tags and framing. Personal authenticity, stating preferences without a complete alternative, asking to be heard, checking an apparent rejection and making a ten-minute start all remain intact. Neither emotional autonomy nor the permission to set limits is weakened.",
+          "evidence": [
+            {
+              "caseId": "INFP.de",
+              "path": "report.sections.2.text",
+              "quote": "Sie können verstehen, ohne zuzustimmen."
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.sections.2.text",
+              "quote": "You can understand without agreeing."
+            },
+            {
+              "caseId": "INFP.de",
+              "path": "report.sections.6.text",
+              "quote": "ohne das Nein ausführlich beweisen zu müssen"
+            },
+            {
+              "caseId": "INFP.en",
+              "path": "report.sections.6.text",
+              "quote": "without proving the refusal at length"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against one-letter neighbor INFJ.de, INFP.de organizes reflection around personal congruence, preferences, mood-dependent starts and feedback becoming self-judgment. INFJ.de organizes it around interpreting patterns in others and testing those interpretations. The distinction goes beyond shared empathy and boundary advice.",
+          "evidence": [
+            {
+              "caseId": "INFP.de",
+              "path": "report.actions.2.context",
+              "quote": "Rückmeldung wird zum Selbsturteil"
+            },
+            {
+              "caseId": "INFJ.de",
+              "path": "report.sections.2.text",
+              "quote": "Vielleicht verknüpfen Sie Details aus mehreren Gesprächen mit einem Freund."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The three actions offer clear triggers, feasible steps and matching language: create a paragraph or rough draft in ten minutes, state capacity with a limited offer when refusing feels hurtful, and choose one concrete revision before allowing emotional processing. The report explicitly removes any requirement to justify a refusal at length, keeping the partial-offer exercise from becoming a universal obligation.",
+          "evidence": [
+            {
+              "caseId": "INFP.de",
+              "path": "report.actions.0.step",
+              "quote": "Erstellen Sie in zehn Minuten einen Absatz oder einen groben Entwurf."
+            },
+            {
+              "caseId": "INFP.de",
+              "path": "report.actions.1.phrase",
+              "quote": "Ich kann nicht alles übernehmen, aber bei diesem Teil helfen."
+            },
+            {
+              "caseId": "INFP.de",
+              "path": "report.actions.2.phrase",
+              "quote": "Dieser Teil kann sich ändern; er ist nicht meine ganze Identität."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The refusal exercise assumes some help is available; the broader report's boundary framing should remain visible so a complete refusal remains legitimate.",
+        "The third example is useful self-talk, although its identity language is more abstract than ordinary conversational German."
+      ]
+    },
+    {
+      "id": "ENFJ.de",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report respects voluntary participation, rejects responsibility for everyone's mood, permits advice to be declined and encourages reciprocal support. Capacity checks and requested help protect autonomy throughout. The four tags, especially charisma and positive influence, are broad positive descriptions but remain acceptable under the explicit non-measurement and reflection framing.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.de",
+              "path": "report.sections.0.text",
+              "quote": "Sie sind nicht für die Entwicklung oder Stimmung aller verantwortlich."
+            },
+            {
+              "caseId": "ENFJ.de",
+              "path": "strengthTags.3",
+              "quote": "Positiver Einfluss"
+            },
+            {
+              "caseId": "ENFJ.de",
+              "path": "framing.neighborNote",
+              "quote": "weder die nächsthöchsten Ergebnisse noch Vorhersagen zur Passung oder eine Neueinstufung"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All highlights, seven sections, three actions, four tags and framing fields preserve the English content. Willing participation, listening before encouragement, negotiated contact frequency, checking resources and receiving support remain clear. The German addition of a temporally limited listening request naturally expresses the source's limited request rather than changing its scope.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.de",
+              "path": "report.sections.2.text",
+              "quote": "Ein Rat muss nicht angenommen werden, um die Freundschaft zu bestätigen."
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.sections.2.text",
+              "quote": "Advice need not be adopted to validate the friendship."
+            },
+            {
+              "caseId": "ENFJ.de",
+              "path": "report.actions.2.step",
+              "quote": "Bitten Sie konkret und zeitlich begrenzt ums Zuhören."
+            },
+            {
+              "caseId": "ENFJ.en",
+              "path": "report.actions.2.step",
+              "quote": "Make a concrete, limited request for listening."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with one-letter neighbor ENTJ.de, ENFJ.de focuses on encouragement, maintaining group atmosphere and making care reciprocal. ENTJ.de focuses on organizing stalled decisions and redistributing task ownership. Their shared concern with overcommitment is expressed through distinct social situations and corrective behavior.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.de",
+              "path": "report.sections.2.text",
+              "quote": "Ermutigung kann kommen, bevor er seinen Verlust zu Ende beschrieben hat."
+            },
+            {
+              "caseId": "ENTJ.de",
+              "path": "report.sections.1.text",
+              "quote": "Stockt ein Gruppenchat, fassen Sie vielleicht Möglichkeiten zusammen und schlagen eine Frist vor."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "All three actions supply a context and feasible intervention: check a calendar and offer scope, reflect before encouraging, and request ten minutes of listening. Each includes usable speech. Minor incompleteness remains because the first phrase postpones confirmation without modeling the promised scope, and the second asks permission to continue without modeling the requested reflection. The steps themselves supply the missing instructions.",
+          "evidence": [
+            {
+              "caseId": "ENFJ.de",
+              "path": "report.actions.0.step",
+              "quote": "Prüfen Sie Ihren Kalender und bieten Sie einen klaren Umfang an."
+            },
+            {
+              "caseId": "ENFJ.de",
+              "path": "report.actions.0.phrase",
+              "quote": "Ich prüfe meine Zeit und bestätige es heute Abend."
+            },
+            {
+              "caseId": "ENFJ.de",
+              "path": "report.actions.1.phrase",
+              "quote": "Möchten Sie erst zu Ende erzählen, bevor wir planen?"
+            },
+            {
+              "caseId": "ENFJ.de",
+              "path": "report.actions.2.phrase",
+              "quote": "Könnten Sie mir zehn Minuten zuhören? Ich bin auch müde."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The first two action phrases could model their complete steps more directly by naming a limited offer and reflecting one aspect of the experience.",
+        "These minor example-to-step gaps are inherited from the English source."
+      ]
+    },
+    {
+      "id": "ENFP.de",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly permits calm, repetition and rest, distinguishes enthusiasm from capacity and supports negotiated reliability and reciprocal conversation. Framing clearly rejects detected ability and relationship predictions. Grenzenlose Kreativität is an exaggerated aspirational tag and an editorial weakness, but the complete framed case does not present it as a measured unlimited ability.",
+          "evidence": [
+            {
+              "caseId": "ENFP.de",
+              "path": "strengthTags.1",
+              "quote": "Grenzenlose Kreativität"
+            },
+            {
+              "caseId": "ENFP.de",
+              "path": "report.sections.0.text",
+              "quote": "Sie müssen nicht immer begeistert sein."
+            },
+            {
+              "caseId": "ENFP.de",
+              "path": "framing.editorialNote",
+              "quote": "keine aus Ihren Antworten ermittelten persönlichen Fakten oder Vorhersagen zu Beziehungen, Beruf oder Fähigkeiten"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All highlights, seven sections, action contexts, steps and phrases, strength tags and framing preserve the English source. Interest versus commitment, permission to stop performing enthusiasm, letting stories finish, adjustable agreements and routine follow-through remain intact. The exaggerated creativity tag is faithfully inherited from English rather than introduced by translation.",
+          "evidence": [
+            {
+              "caseId": "ENFP.de",
+              "path": "report.sections.1.text",
+              "quote": "Sprechen Sie Ihr Ruhebedürfnis aus, statt weiter die lebhafte Version Ihrer selbst darzustellen."
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "report.sections.1.text",
+              "quote": "State a need for rest rather than continuing to perform the lively version of yourself."
+            },
+            {
+              "caseId": "ENFP.de",
+              "path": "strengthTags.1",
+              "quote": "Grenzenlose Kreativität"
+            },
+            {
+              "caseId": "ENFP.en",
+              "path": "strengthTags.1",
+              "quote": "Boundless creativity"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Against one-letter neighbor ENTP.de, ENFP.de centers warm personal associations, excitement exceeding capacity and maintaining a small action after interest fades. ENTP.de centers alternative viewpoints, debate, experiment selection and preserving commitments while renegotiating plans. Their overlapping exploration theme still yields different conversational and work interventions.",
+          "evidence": [
+            {
+              "caseId": "ENFP.de",
+              "path": "report.actions.2.context",
+              "quote": "Das Interesse an einem Projekt lässt nach"
+            },
+            {
+              "caseId": "ENFP.de",
+              "path": "report.actions.2.step",
+              "quote": "Erledigen Sie ein Minimum von zehn Minuten und notieren Sie den nächsten Schritt."
+            },
+            {
+              "caseId": "ENTP.de",
+              "path": "report.actions.0.step",
+              "quote": "Testen Sie eine dreißig Minuten lang und notieren Sie die übrigen für später."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action supplies a recognizable situation, small observable step and usable phrase: check existing promises before confirming an exciting invitation, ask whether a storyteller has finished before adding associations, and complete ten minutes while recording the next project step. The modest commitments fit the report's capacity and rest framing without guaranteeing renewed enthusiasm.",
+          "evidence": [
+            {
+              "caseId": "ENFP.de",
+              "path": "report.actions.0.phrase",
+              "quote": "Ich wäre gern dabei; ich bestätige es morgen."
+            },
+            {
+              "caseId": "ENFP.de",
+              "path": "report.actions.1.phrase",
+              "quote": "Gibt es noch etwas, das Sie sagen möchten?"
+            },
+            {
+              "caseId": "ENFP.de",
+              "path": "report.actions.2.phrase",
+              "quote": "Dieser kleine Schritt reicht heute; der nächste ist aufgeschrieben."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Grenzenlose Kreativität is promotional exaggeration; a bounded creativity label would better match the otherwise careful reflection framing.",
+        "Formal Sie-address in the storytelling example is less natural for close friends, though its permission-seeking meaning is clear."
+      ]
+    }
+  ]
+}

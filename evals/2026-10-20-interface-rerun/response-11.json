@@ -1,0 +1,798 @@
+{
+  "evaluator": "ChatGPT, AI editorial evaluator",
+  "model": null,
+  "limitations": [
+    "This evaluation covers exactly eight Portuguese targets in batch 12/16 and their eight supplied English counterparts; it cannot establish a pass for all 128 cases.",
+    "Same-language differentiation is limited to the eight supplied Portuguese types. All comparisons below use one-letter neighbors.",
+    "This is AI language review, without independent native-speaker validation. Portuguese regional preferences may affect judgments of naturalness.",
+    "All supplied highlights, seven sections, three actions, four strength tags and framing fields were reviewed. No tools, external verification, rendering assessment, psychometric validation or hash verification were performed."
+  ],
+  "results": [
+    {
+      "id": "ISTJ.pt",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report frames familiar methods as revisable, separates essential constraints from preferences, and encourages willing delegation. All framing notes reject individual measurement and predictive interpretations. The execution-ability tag remains an unqualified aspiration, acceptable within that framing but unsuitable as evidence of measured ability.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.pt",
+              "path": "report.sections.0.text",
+              "quote": "Esse é um ponto de partida para observar, e não uma afirmação de que você resiste a novidades."
+            },
+            {
+              "caseId": "ISTJ.pt",
+              "path": "strengthTags.2",
+              "quote": "Forte capacidade de execução"
+            },
+            {
+              "caseId": "ISTJ.pt",
+              "path": "framing.editorialNote",
+              "quote": "não fatos individuais detectados nas suas respostas ou previsões sobre relacionamentos, carreiras ou capacidade."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All three highlights, seven sections and three actions preserve the English situations, qualifications and recommendations. The separation of timing and safety needs from preferences, willing delegation, early progress sharing and low-risk experimentation survives. Tags and framing retain their source meanings; minor lexical choices introduce no material drift.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.pt",
+              "path": "report.sections.1.text",
+              "quote": "diferencie necessidades de segurança ou horário de preferências pessoais."
+            },
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.sections.1.text",
+              "quote": "distinguish safety or timing needs from personal preferences."
+            },
+            {
+              "caseId": "ISTJ.pt",
+              "path": "report.actions.1.step",
+              "quote": "Passe uma verificação para alguém que tenha disposição para ajudar."
+            },
+            {
+              "caseId": "ISTJ.en",
+              "path": "report.actions.1.step",
+              "quote": "Assign one check to a willing partner."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with ESTJ.pt, this case emphasizes personally checking known commitments and maintaining dependable preparation. ESTJ emphasizes organizing other people's participation and allowing independent methods. The related planning themes lead to distinct attention and practical interventions.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.pt",
+              "path": "report.sections.1.text",
+              "quote": "você talvez acompanhe discretamente o ponto de partida e os preparativos que faltam."
+            },
+            {
+              "caseId": "ESTJ.pt",
+              "path": "report.sections.1.text",
+              "quote": "Você talvez resuma opções e distribua responsabilidades quando a discussão se prolonga."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action names a concrete trigger, a small observable step and usable speech: negotiate one condition after a change, delegate one check to a willing helper, or test one low-risk part. The examples connect directly to flexible reliability without requiring perfection or unilateral control.",
+          "evidence": [
+            {
+              "caseId": "ISTJ.pt",
+              "path": "report.actions.0.phrase",
+              "quote": "O horário pode mudar; por favor, me avise antes."
+            },
+            {
+              "caseId": "ISTJ.pt",
+              "path": "report.actions.1.step",
+              "quote": "Passe uma verificação para alguém que tenha disposição para ajudar."
+            },
+            {
+              "caseId": "ISTJ.pt",
+              "path": "report.actions.2.step",
+              "quote": "Teste uma etapa de baixo risco e compare o resultado."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The ability-oriented execution tag is a minor framing limitation; the report does not substantiate an individual ability assessment."
+      ]
+    },
+    {
+      "id": "ISFJ.pt",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly refuses to assign a caretaker role, permits refusal without compensatory work, and protects the reader's capacity. Report and card framing support optional reflection. The memory and practical-skills tags are broad ability labels, keeping the complete case below an unqualified safety score of 5.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.pt",
+              "path": "report.sections.0.text",
+              "quote": "o perfil não atribui a você o papel de cuidar de todos."
+            },
+            {
+              "caseId": "ISFJ.pt",
+              "path": "strengthTags.1",
+              "quote": "Boa memória"
+            },
+            {
+              "caseId": "ISFJ.pt",
+              "path": "framing.cardNote",
+              "quote": "Use estas propostas para refletir sobre situações reais, além do rótulo de um tipo."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All highlights, sections and actions faithfully retain the source's invisible-care workload, noncompensatory refusal, specific requests and acceptance of different methods. Tags and all framing fields preserve the source's limits. 'Boa memória' mildly softens 'Strong memory' without changing the central claim.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.pt",
+              "path": "report.sections.2.text",
+              "quote": "Recusar um pedido não rejeita a amizade nem exige compensação com esforço extra."
+            },
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.sections.2.text",
+              "quote": "Declining one request does not reject the friendship or require compensation through extra effort."
+            },
+            {
+              "caseId": "ISFJ.pt",
+              "path": "report.actions.2.step",
+              "quote": "Confira o resultado necessário sem refazer tudo."
+            },
+            {
+              "caseId": "ISFJ.en",
+              "path": "report.actions.2.step",
+              "quote": "Check the necessary outcome without redoing everything."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ISFJ.pt focuses on unnoticed practical care and the cost of quietly providing it. Its one-letter neighbor ESFJ.pt adds a distinct concern with interpreting contact, quietness and response speed. Accepting differently performed help contrasts concretely with asking about contact preferences.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.pt",
+              "path": "report.sections.1.text",
+              "quote": "O trabalho de ajudar pode ficar invisível, sem que as outras pessoas percebam seu custo."
+            },
+            {
+              "caseId": "ESFJ.pt",
+              "path": "report.sections.2.text",
+              "quote": "Pergunte sobre as preferências de contato, em vez de mandar mais mensagens para testar o vínculo."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All three exercises are feasible and observable: offer a bounded portion after checking energy, request a named shared task, and assess another helper's result without redoing it. Each has a recognizable context and a natural example phrase. None makes reciprocal care an obligation.",
+          "evidence": [
+            {
+              "caseId": "ISFJ.pt",
+              "path": "report.actions.0.phrase",
+              "quote": "Posso ajudar com esta parte hoje; o restante precisa de outro plano."
+            },
+            {
+              "caseId": "ISFJ.pt",
+              "path": "report.actions.1.phrase",
+              "quote": "Você poderia cuidar da limpeza da próxima vez?"
+            },
+            {
+              "caseId": "ISFJ.pt",
+              "path": "report.actions.2.phrase",
+              "quote": "Assim também funciona. Agradeço por cuidar desta parte."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The memory and practical-skills tags should remain reflection prompts; they are not demonstrated abilities."
+      ]
+    },
+    {
+      "id": "ESTJ.pt",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The case counters coercive organization by requiring participation confirmation, checking whether help is wanted, and separating errors from judgments of attitude. All framing notes preserve nonpredictive reflection. Broad execution and responsibility tags are acceptable aspirations within that context, rather than verified personal strengths.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.pt",
+              "path": "report.sections.1.text",
+              "quote": "a participação ainda precisa ser confirmada."
+            },
+            {
+              "caseId": "ESTJ.pt",
+              "path": "report.sections.4.text",
+              "quote": "em vez de transformar uma falha em um julgamento de atitude."
+            },
+            {
+              "caseId": "ESTJ.pt",
+              "path": "strengthTags.1",
+              "quote": "Execução decidida"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "The highlights, seven sections, actions, tags and framing retain the source's outcome alignment, consent and flexibility. A minor grammatical inconsistency in growth switches from singular 'Defina' to plural 'avaliem'; the shared-review meaning remains recoverable. 'Esclareça' slightly narrows mutual goal alignment, but no central recommendation or boundary is lost.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.pt",
+              "path": "report.sections.6.text",
+              "quote": "Defina uma área em que os colegas possam decidir de forma independente e avaliem juntos."
+            },
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.sections.6.text",
+              "quote": "Define an area colleagues can decide independently and review it together."
+            },
+            {
+              "caseId": "ESTJ.pt",
+              "path": "report.actions.1.step",
+              "quote": "Alinhem o resultado e o ponto de acompanhamento e depois façam um teste."
+            },
+            {
+              "caseId": "ESTJ.en",
+              "path": "report.actions.1.step",
+              "quote": "Align outcome and checkpoint, then try it once."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Unlike ISTJ.pt's focus on personally maintaining preparation and updating familiar methods, ESTJ.pt addresses how a coordinator defines standards for others. Agreeing on checkpoints without prescribing methods and avoiding constant supervision are concrete editorial distinctions.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.pt",
+              "path": "report.sections.4.text",
+              "quote": "Combinem pontos de acompanhamento sem determinar todos os métodos."
+            },
+            {
+              "caseId": "ISTJ.pt",
+              "path": "report.sections.4.text",
+              "quote": "Separe verificações necessárias de etapas que já perderam a utilidade."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The three actions provide usable contexts and small steps: invite one practical constraint before closing discussion, agree on outcome and checkpoint before a trial, and ask what support a friend wants. Each example phrase makes the step easy to initiate while preserving the other person's choice.",
+          "evidence": [
+            {
+              "caseId": "ESTJ.pt",
+              "path": "report.actions.0.phrase",
+              "quote": "Que dificuldade prática devemos resolver primeiro?"
+            },
+            {
+              "caseId": "ESTJ.pt",
+              "path": "report.actions.1.phrase",
+              "quote": "O objetivo é o mesmo; vamos testar seu método."
+            },
+            {
+              "caseId": "ESTJ.pt",
+              "path": "report.actions.2.phrase",
+              "quote": "Ajudaria mais eu escutar ou fazermos algo juntos?"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Smooth the change of grammatical subject in the growth section so that joint review is explicit.",
+        "Strength tags remain aspirational under the supplied framing."
+      ]
+    },
+    {
+      "id": "ESFJ.pt",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The case rejects compulsory enthusiasm, relationship testing and responsibility for every dissatisfaction. It protects focused work and shared responsibility, while all framing notes reject measurement and compatibility predictions. 'Habilidades sociais' remains a broad ability label whose acceptable reading depends on the reflection framing.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.pt",
+              "path": "report.sections.1.text",
+              "quote": "as pessoas não precisam demonstrar entusiasmo constante para fazer parte."
+            },
+            {
+              "caseId": "ESFJ.pt",
+              "path": "report.sections.5.text",
+              "quote": "nem toda insatisfação cabe a você resolver."
+            },
+            {
+              "caseId": "ESFJ.pt",
+              "path": "strengthTags.3",
+              "quote": "Habilidades sociais"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "All highlights, sections and actions preserve inclusion, contact preferences, explicit chores, protected work time and noncompulsory support. Tags and framing remain faithful. Some wording is stiff: 'sensação de aprovação' is less idiomatic than the source, and 'testá-la' briefly obscures that the issue is testing contact or the bond rather than testing a communication method. The surrounding text resolves the meaning.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.pt",
+              "path": "report.actions.0.step",
+              "quote": "Pergunte sobre uma forma confortável de manter contato, em vez de testá-la."
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.actions.0.step",
+              "quote": "Ask about comfortable contact instead of testing it."
+            },
+            {
+              "caseId": "ESFJ.pt",
+              "path": "report.sections.4.text",
+              "quote": "em vez da sua sensação de aprovação."
+            },
+            {
+              "caseId": "ESFJ.en",
+              "path": "report.sections.4.text",
+              "quote": "instead of your sense of approval."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ESFJ.pt treats brief replies and group atmosphere as situations requiring explicit contact preferences and permission for quiet. ISFJ.pt instead centers hidden practical work, restrained disagreement and accepting help performed differently. These are distinct social situations despite their shared care-and-boundaries theme.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.pt",
+              "path": "report.actions.0.context",
+              "quote": "As respostas parecem breves demais"
+            },
+            {
+              "caseId": "ISFJ.pt",
+              "path": "report.actions.2.context",
+              "quote": "A ajuda é diferente do seu método"
+            },
+            {
+              "caseId": "ESFJ.pt",
+              "path": "report.sections.1.text",
+              "quote": "Permita o silêncio sem tentar consertar o clima imediatamente"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "All actions are small and concrete: negotiate contact when replies feel brief, request a defined preparation task, and name both a protected work period and response time. The example phrases operationalize each step. The first step's pronoun awkwardness does not prevent using its clear example question.",
+          "evidence": [
+            {
+              "caseId": "ESFJ.pt",
+              "path": "report.actions.0.phrase",
+              "quote": "Como podemos manter contato quando você estiver sem tempo?"
+            },
+            {
+              "caseId": "ESFJ.pt",
+              "path": "report.actions.1.phrase",
+              "quote": "Você poderia confirmar o número de pessoas enquanto eu organizo o local?"
+            },
+            {
+              "caseId": "ESFJ.pt",
+              "path": "report.actions.2.phrase",
+              "quote": "Estou trabalhando nisto até as três; depois posso responder."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Clarifying the referent of 'testá-la' and smoothing 'sensação de aprovação' would improve Portuguese naturalness.",
+        "The social-skills tag is not supported as an individually measured ability."
+      ]
+    },
+    {
+      "id": "ISTP.pt",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "Autonomy is balanced with communicated return times, kept promises and consent before experiments affect others. Practical repair is explicitly distinguished from hearing emotional impact. The framing limits individual claims, but 'Domínio técnico' remains a strong ability label rather than an established personal fact.",
+          "evidence": [
+            {
+              "caseId": "ISTP.pt",
+              "path": "report.sections.4.text",
+              "quote": "confirme as condições e o consentimento"
+            },
+            {
+              "caseId": "ISTP.pt",
+              "path": "report.sections.3.text",
+              "quote": "Depois de resolver uma questão, verifique também seu impacto emocional"
+            },
+            {
+              "caseId": "ISTP.pt",
+              "path": "strengthTags.3",
+              "quote": "Domínio técnico"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All highlights, sections and actions preserve observation, practical support, brief progress communication, bounded solitude and consent. Replacing the source's interface metaphor with a clear form of communication is natural and faithful. Tags and every framing note retain the English meanings and limits.",
+          "evidence": [
+            {
+              "caseId": "ISTP.pt",
+              "path": "report.sections.6.text",
+              "quote": "Dê à autonomia uma forma clara de comunicação"
+            },
+            {
+              "caseId": "ISTP.en",
+              "path": "report.sections.6.text",
+              "quote": "Give autonomy a clear interface"
+            },
+            {
+              "caseId": "ISTP.pt",
+              "path": "report.actions.1.step",
+              "quote": "Diga quando vai retomar o contato e volte nesse horário."
+            },
+            {
+              "caseId": "ISTP.en",
+              "path": "report.actions.1.step",
+              "quote": "State when contact resumes and return then."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "ISTP.pt foregrounds inspecting mechanisms and making practical progress visible. Its one-letter neighbor ISFP.pt foregrounds experiential comfort, personal meaning and expressing preferences. Their exercises consequently differ: provide a repair update versus articulate a desired environment or revision boundary.",
+          "evidence": [
+            {
+              "caseId": "ISTP.pt",
+              "path": "report.sections.0.text",
+              "quote": "Você talvez examine como um problema funciona e o que pode ser testado diretamente."
+            },
+            {
+              "caseId": "ISFP.pt",
+              "path": "report.sections.0.text",
+              "quote": "Você talvez perceba se uma experiência é confortável e combina com o que importa para você."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each exercise has a recognizable situation, a feasible communication step and an example phrase. A half-hour update, an hour's break with return, and a question about unheard impact directly address the report's communication gaps. The final exercise preserves the distinction between resolving a practical issue and resolving emotional hurt.",
+          "evidence": [
+            {
+              "caseId": "ISTP.pt",
+              "path": "report.actions.0.phrase",
+              "quote": "Estou verificando a causa; trago uma atualização em meia hora."
+            },
+            {
+              "caseId": "ISTP.pt",
+              "path": "report.actions.1.phrase",
+              "quote": "Preciso de uma hora de pausa, depois podemos conversar."
+            },
+            {
+              "caseId": "ISTP.pt",
+              "path": "report.actions.2.phrase",
+              "quote": "O que mais você gostaria que eu compreendesse?"
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Technical mastery is a particularly strong strength tag; its acceptable use depends on retaining the explicit reflection framing."
+      ]
+    },
+    {
+      "id": "ISFP.pt",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report supports independent choices, pauses with agreed continuation, early boundaries and separating criticism of work from rejection of self. It makes no clinical or guaranteed outcome claims, and all framing fields constrain interpretation. 'Talento artístico' is an unsupported ability attribution if detached from that framing.",
+          "evidence": [
+            {
+              "caseId": "ISFP.pt",
+              "path": "report.sections.3.text",
+              "quote": "preserve algumas escolhas como decisões independentes suas."
+            },
+            {
+              "caseId": "ISFP.pt",
+              "path": "strengthTags.3",
+              "quote": "Talento artístico"
+            },
+            {
+              "caseId": "ISFP.pt",
+              "path": "framing.editorialNote",
+              "quote": "Aproveite o que fizer sentido para você."
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "All highlights, sections, actions, tags and framing preserve experiential preferences, personal boundaries, provisional feelings and negotiated revision. Minor Portuguese stiffness appears in 'Diga uma experiência' and 'Peça um escopo', which are less idiomatic ways to express naming a desired experience and clarifying revision scope. No material permission, condition or recommendation is omitted.",
+          "evidence": [
+            {
+              "caseId": "ISFP.pt",
+              "path": "report.sections.1.text",
+              "quote": "Diga uma experiência que você deseja e uma condição que quer evitar"
+            },
+            {
+              "caseId": "ISFP.en",
+              "path": "report.sections.1.text",
+              "quote": "State one experience you want and one condition to avoid"
+            },
+            {
+              "caseId": "ISFP.pt",
+              "path": "report.actions.2.step",
+              "quote": "Peça um escopo específico para a revisão."
+            },
+            {
+              "caseId": "ISFP.en",
+              "path": "report.actions.2.step",
+              "quote": "Ask for specific revision scope."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 5,
+          "rationale": "Compared with ISTP.pt, this case makes personal comfort and meaning the object of clarification rather than a mechanism or repair. Its feedback exercise asks what can change while retaining a chosen focus; ISTP's practical-repair exercise asks what emotional impact remains unheard. The distinction extends beyond generic sensitivity or flexibility.",
+          "evidence": [
+            {
+              "caseId": "ISFP.pt",
+              "path": "report.actions.2.phrase",
+              "quote": "Qual parte precisa mudar? Eu gostaria de manter este foco."
+            },
+            {
+              "caseId": "ISTP.pt",
+              "path": "report.actions.2.context",
+              "quote": "A questão foi resolvida, mas a mágoa continua"
+            },
+            {
+              "caseId": "ISTP.pt",
+              "path": "report.actions.2.step",
+              "quote": "Pergunte que impacto ainda não foi escutado."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The three actions translate preferences, conflict and feedback into observable requests. Each includes a recognizable trigger and a usable phrase: specify quiet surroundings with flexible timing, request a calmer pace with a ten-minute return, and identify revision scope while stating what to retain. They preserve negotiation and agency.",
+          "evidence": [
+            {
+              "caseId": "ISFP.pt",
+              "path": "report.actions.0.phrase",
+              "quote": "Prefiro um lugar tranquilo; o horário pode ser flexível."
+            },
+            {
+              "caseId": "ISFP.pt",
+              "path": "report.actions.1.phrase",
+              "quote": "Preciso de um ritmo mais calmo. Podemos continuar em dez minutos?"
+            },
+            {
+              "caseId": "ISFP.pt",
+              "path": "report.actions.2.phrase",
+              "quote": "Qual parte precisa mudar? Eu gostaria de manter este foco."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "A few literal constructions could be made more idiomatic without changing the advice.",
+        "The artistic-talent tag is aspirational, not an established individual trait."
+      ]
+    },
+    {
+      "id": "ESTP.pt",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report consistently adds willingness, cost checks, stopping conditions and follow-through to fast action, and it permits a friend to finish speaking. Explicit framing prevents a measured-ability reading. Nevertheless, the declarative assertion about unexpected work and crisis-handling tag are stronger than the surrounding tentative language; neither amounts here to a guaranteed prediction.",
+          "evidence": [
+            {
+              "caseId": "ESTP.pt",
+              "path": "report.sections.0.text",
+              "quote": "verifique as condições e a disposição delas antes de agir."
+            },
+            {
+              "caseId": "ESTP.pt",
+              "path": "report.sections.4.text",
+              "quote": "Você consegue lidar com trabalhos inesperados"
+            },
+            {
+              "caseId": "ESTP.pt",
+              "path": "strengthTags.3",
+              "quote": "Capacidade de lidar com crises"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 5,
+          "rationale": "All highlights, sections and actions closely preserve the source's practical trials, shared confirmation, slower emotional expression, records and stopping conditions. The stronger declarative work sentence is inherited from English rather than introduced by translation. Tags and all framing fields retain source scope and meaning.",
+          "evidence": [
+            {
+              "caseId": "ESTP.pt",
+              "path": "report.sections.4.text",
+              "quote": "Você consegue lidar com trabalhos inesperados"
+            },
+            {
+              "caseId": "ESTP.en",
+              "path": "report.sections.4.text",
+              "quote": "You can handle unexpected work"
+            },
+            {
+              "caseId": "ESTP.pt",
+              "path": "report.actions.1.step",
+              "quote": "Explique o impacto e confirme a disposição das pessoas."
+            },
+            {
+              "caseId": "ESTP.en",
+              "path": "report.actions.1.step",
+              "quote": "Explain the impact and confirm willingness."
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "ESTP.pt distinguishes itself from ESFP.pt through practical trial conditions, risk, records and consequences of rapid changes. ESFP emphasizes emotional atmosphere, permission not to perform happiness and small routines for distant tasks. The distinction is concrete, although their friend-support actions substantially overlap in offering conversation or a walk.",
+          "evidence": [
+            {
+              "caseId": "ESTP.pt",
+              "path": "report.sections.4.text",
+              "quote": "Dê aos experimentos arriscados uma condição de parada e uma responsabilidade clara."
+            },
+            {
+              "caseId": "ESFP.pt",
+              "path": "report.sections.1.text",
+              "quote": "Você pode descansar em vez de encenar felicidade"
+            },
+            {
+              "caseId": "ESTP.pt",
+              "path": "report.actions.2.phrase",
+              "quote": "Você gostaria de terminar de falar ou dar uma caminhada?"
+            },
+            {
+              "caseId": "ESFP.pt",
+              "path": "report.actions.1.phrase",
+              "quote": "Não há pressa para se sentir melhor. Conversar ou caminhar?"
+            }
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "All three actions supply context, an observable step and usable example speech. Confirming an added half-hour and checking a friend's preference are particularly concrete. The first action meets the criterion but its example leaves both the risk and stopping trigger as placeholders, requiring more reader adaptation than the other exercises.",
+          "evidence": [
+            {
+              "caseId": "ESTP.pt",
+              "path": "report.actions.0.step",
+              "quote": "Verifique um risco e uma condição de parada."
+            },
+            {
+              "caseId": "ESTP.pt",
+              "path": "report.actions.0.phrase",
+              "quote": "Podemos tentar; paramos se isto acontecer."
+            },
+            {
+              "caseId": "ESTP.pt",
+              "path": "report.actions.1.phrase",
+              "quote": "Isso acrescenta meia hora. Funciona para todo mundo?"
+            },
+            {
+              "caseId": "ESTP.pt",
+              "path": "report.actions.2.step",
+              "quote": "Pergunte primeiro se ela prefere conversar ou fazer algo."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "Make the unexpected-work ability sentence tentative, consistently with the report's reflective stance.",
+        "A named low-risk example and observable stopping trigger would strengthen the first action.",
+        "The friend-support exercise overlaps closely with ESFP.pt, although the broader reports remain distinguishable."
+      ]
+    },
+    {
+      "id": "ESFP.pt",
+      "criteria": {
+        "editorialSafety": {
+          "score": 4,
+          "rationale": "The report explicitly permits sadness, fatigue, quiet and rest, and avoids making the reader responsible for producing happiness. It checks energy and budget and respects a friend's story. All framing notes constrain interpretation, while the practical-ability and infectious-energy tags remain broad aspirations rather than measured attributes.",
+          "evidence": [
+            {
+              "caseId": "ESFP.pt",
+              "path": "report.sections.0.text",
+              "quote": "você não precisa demonstrar alegria o tempo todo."
+            },
+            {
+              "caseId": "ESFP.pt",
+              "path": "report.sections.2.text",
+              "quote": "Uma experiência compartilhada pode ajudar sem tomar conta da história dela."
+            },
+            {
+              "caseId": "ESFP.pt",
+              "path": "strengthTags.1",
+              "quote": "Capacidade prática"
+            }
+          ]
+        },
+        "bilingualFidelity": {
+          "score": 4,
+          "rationale": "All highlights, sections and actions preserve participation, permission not to feel better immediately, energy and budget limits, and regular small steps. Tags and framing retain their source meaning. 'Pequenos ciclos de retorno' is opaque for feedback loops, and the work section shifts 'on-site needs' toward needs of the moment; these are minor clarity and specificity losses.",
+          "evidence": [
+            {
+              "caseId": "ESFP.pt",
+              "path": "report.highlights.2",
+              "quote": "Dê aos planos de longo prazo pequenos ciclos de retorno"
+            },
+            {
+              "caseId": "ESFP.en",
+              "path": "report.highlights.2",
+              "quote": "Give long-term plans small feedback loops"
+            },
+            {
+              "caseId": "ESFP.pt",
+              "path": "report.sections.4.text",
+              "quote": "As pessoas e as necessidades do momento envolvem você no trabalho"
+            },
+            {
+              "caseId": "ESFP.en",
+              "path": "report.sections.4.text",
+              "quote": "People and on-site needs engage you at work"
+            }
+          ]
+        },
+        "typeDifferentiation": {
+          "score": 4,
+          "rationale": "Compared with ESTP.pt, ESFP.pt addresses pressure to sustain a cheerful atmosphere and uses energy checks and regular ten-minute task blocks. ESTP instead emphasizes risk checks and consent to changed plans. The emotional and task-maintenance focus is concrete, although the conversation-or-walk support exercise is nearly shared.",
+          "evidence": [
+            {
+              "caseId": "ESFP.pt",
+              "path": "report.sections.5.text",
+              "quote": "reprimir o desconforto para manter o clima"
+            },
+            {
+              "caseId": "ESFP.pt",
+              "path": "report.actions.2.step",
+              "quote": "Agende e registre uma ação regular de dez minutos."
+            },
+            {
+              "caseId": "ESTP.pt",
+              "path": "report.actions.0.step",
+              "quote": "Verifique um risco e uma condição de parada."
+            }
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "Each action supplies context, a small feasible step and usable speech. Choosing one invitation after resource checks, asking what kind of support helps, and scheduling and recording a recurring ten-minute action all connect directly to the report. The final phrase alone omits recurrence, but the accompanying step clearly supplies it.",
+          "evidence": [
+            {
+              "caseId": "ESFP.pt",
+              "path": "report.actions.0.step",
+              "quote": "Confira energia e orçamento e então confirme um."
+            },
+            {
+              "caseId": "ESFP.pt",
+              "path": "report.actions.0.phrase",
+              "quote": "Posso participar deste nesta semana; vou deixar os outros em aberto."
+            },
+            {
+              "caseId": "ESFP.pt",
+              "path": "report.actions.1.phrase",
+              "quote": "Não há pressa para se sentir melhor. Conversar ou caminhar?"
+            },
+            {
+              "caseId": "ESFP.pt",
+              "path": "report.actions.2.step",
+              "quote": "Agende e registre uma ação regular de dez minutos."
+            }
+          ]
+        }
+      },
+      "criticalFlags": [],
+      "findings": [
+        "The third highlight could express feedback loops more plainly, and the work section slightly loses the source's on-site specificity.",
+        "The friend-support exercise overlaps with ESTP.pt; permission to stop performing happiness provides a clearer distinctive theme.",
+        "Strength tags should retain the explicit reflection framing."
+      ]
+    }
+  ]
+}
