@@ -1,8 +1,10 @@
 <template>
   <div class="language-picker">
+    <AppIcon class="language-globe" icon="globe" :size="15" />
     <select ref="selectEl" class="lang-toggle" :value="locale" :disabled="loading" :aria-label="t('app.language')" @change="choose($event.target.value)">
       <option v-for="language in LOCALES" :key="language.code" :value="language.code" :lang="language.code">{{ language.label }}</option>
     </select>
+    <AppIcon class="language-chevron" icon="chevron-down" :size="13" />
     <p v-if="loading" class="language-message" role="status">{{ t('app.languageLoading') }}</p>
     <p v-else-if="failed" class="language-message" role="alert">
       {{ t('app.languageError') }}
@@ -14,6 +16,7 @@
 
 <script setup>
 import { ref, inject, onUnmounted, watch } from 'vue'
+import AppIcon from './AppIcon.vue'
 import { useI18n } from 'vue-i18n'
 import { routerKey, routeLocationKey, matchedRouteKey, onBeforeRouteLeave } from 'vue-router'
 import { LOCALES, resolveLocale, saveLocalePreference } from '../i18n/locales.js'
@@ -59,34 +62,42 @@ async function choose(value) {
 
 <style scoped>
 .language-picker { position: relative; flex: 0 0 auto; }
+.language-globe, .language-chevron { position: absolute; top: 50%; transform: translateY(-50%); color: var(--text-secondary); pointer-events: none; }
+.language-globe { left: 13px; }
+.language-chevron { right: 12px; }
 .lang-toggle {
-  min-width: 96px;
-  width: min(140px, 36vw);
+  appearance: none;
+  -webkit-appearance: none;
+  width: min(148px, 39vw);
+  min-width: 108px;
   min-height: 44px;
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid var(--cream-border);
-  border-radius: 20px;
-  padding: 8px 10px;
+  padding: 10px 28px 10px 35px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--surface);
+  color: var(--text);
   font: inherit;
-  font-size: 13px;
-  color: var(--ink);
+  font-size: 12px;
+  font-weight: 500;
   cursor: pointer;
+  transition: border-color var(--duration-fast), box-shadow var(--duration-fast);
 }
-.lang-toggle:disabled { cursor: progress; }
+.lang-toggle:disabled { cursor: progress; opacity: .65; }
+@media (hover: hover) { .lang-toggle:hover { border-color: #b5b7bd; } }
 .language-message {
   position: absolute;
-  top: calc(100% + 8px);
+  top: calc(100% + 10px);
   right: 0;
   z-index: 100;
-  width: min(300px, calc(100vw - 48px));
-  background: var(--cream);
-  color: var(--ink);
-  border: 1px solid var(--cream-border);
-  padding: 12px;
-  border-radius: 12px;
+  width: min(320px, calc(100vw - 40px));
+  background: var(--surface);
+  color: var(--text-secondary);
+  border: 1px solid var(--line);
+  padding: 16px;
+  border-radius: var(--radius-md);
   font-size: 13px;
-  line-height: 1.6;
-  box-shadow: var(--shadow);
+  line-height: 1.7;
+  box-shadow: 0 12px 36px rgba(25,35,55,.12);
 }
-.language-message button { min-height: 44px; padding: 8px; margin-top: 4px; font: inherit; cursor: pointer; }
+.language-message button { min-height: 44px; padding: 8px 16px; margin-top: 8px; font: inherit; border: 0; border-radius: 12px; background: var(--accent-soft); color: var(--accent); }
 </style>

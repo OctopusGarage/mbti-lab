@@ -25,7 +25,7 @@
       class="section cream-section report-section"
       :open="section.id === 'core'"
     >
-      <summary>{{ $t('report.sections.' + section.id) }}</summary>
+      <summary><span>{{ $t('report.sections.' + section.id) }}</span><AppIcon icon="chevron-down" :size="20" /></summary>
       <p>{{ section.text }}</p>
       <div v-if="section.id === 'growth'" class="growth-actions">
         <article
@@ -44,6 +44,7 @@
 
 <script setup>
 import { nextTick, ref } from 'vue'
+import AppIcon from './AppIcon.vue'
 defineProps({ report: { type: Object, required: true } })
 const sections = {}
 const contentsEl = ref(null)
@@ -63,69 +64,25 @@ defineExpose({ contents })
 </script>
 
 <style scoped>
-.section {
-  padding: 24px;
-}
-.cream-section {
-  background: var(--cream);
-}
-.section-title {
-  color: var(--gold);
-  font-size: 15px;
-  margin-bottom: 12px;
-}
-.contents-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.contents-links button {
-  min-height: 44px;
-  border: 1px solid var(--cream-border);
-  border-radius: 12px;
-  padding: 8px 12px;
-  background: white;
-  color: var(--blue);
-  font: inherit;
-  cursor: pointer;
-}
-.report-contents {
-  scroll-margin-top: 80px;
-}
-.report-section {
-  border-top: 1px solid var(--cream-border);
-  scroll-margin-top: 80px;
-}
-summary {
-  min-height: 44px;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--blue);
-  padding: 8px 0;
-}
-.report-section p {
-  line-height: 1.85;
-  margin-top: 14px;
-  overflow-wrap: anywhere;
-}
-.growth-actions {
-  display: grid;
-  gap: 20px;
-  margin-top: 24px;
-}
-.growth-action {
-  padding-top: 20px;
-  border-top: 1px solid var(--cream-border);
-}
-.growth-action h3 {
-  font-size: 16px;
-}
-blockquote {
-  border-left: 3px solid var(--gold);
-  padding: 12px 16px;
-  margin-top: 12px;
-  background: white;
-  line-height: 1.7;
-}
+.report-reader { display: grid; gap: 12px; }
+.section { background: var(--surface); border-radius: var(--radius-md); padding: 12px 36px; }
+.report-contents { padding: 30px 36px 32px; margin-bottom: 8px; scroll-margin-top: 92px; }
+.section-title { color: var(--text); font-size: 18px; font-weight: 600; letter-spacing: -.025em; margin-bottom: 18px; }
+.contents-links { display: flex; flex-wrap: wrap; gap: 8px; }
+.contents-links button { min-height: 44px; border: 1px solid transparent; border-radius: 22px; padding: 9px 15px; background: var(--surface-secondary); color: var(--text-secondary); font: inherit; font-size: 13px; font-weight: 500; cursor: pointer; transition: color var(--duration-fast), background var(--duration-fast), transform var(--duration-fast); }
+.contents-links button:active { transform: scale(.96); }
+.report-section { scroll-margin-top: 92px; }
+summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 64px; cursor: pointer; list-style: none; font-size: 19px; font-weight: 600; letter-spacing: -.025em; color: var(--text); padding: 14px 0; }
+summary::-webkit-details-marker { display: none; }
+summary svg { color: var(--text-secondary); flex-shrink: 0; transition: transform var(--duration-normal) var(--ease-out); }
+.report-section[open] summary svg { transform: rotate(180deg); }
+.report-section p { color: var(--text-secondary); line-height: 1.95; font-size: 15px; padding-bottom: 20px; margin-top: 8px; overflow-wrap: anywhere; }
+.growth-actions { display: grid; gap: 20px; margin: 4px 0 20px; }
+.growth-action { padding: 22px; background: var(--surface-secondary); border-radius: var(--radius-sm); }
+.growth-action h3 { font-size: 15px; font-weight: 600; color: var(--text); }
+.growth-action p { font-size: 14px; padding-bottom: 0; margin-top: 8px; }
+blockquote { border-left: 2px solid var(--accent); padding: 2px 0 2px 16px; margin: 18px 0 0; color: var(--text); font-size: 14px; line-height: 1.85; }
+@media (hover: hover) { .contents-links button:hover { background: var(--accent-soft); color: var(--accent); } summary:hover { color: var(--accent); } }
+@media (max-width: 540px) { .section { padding: 8px 22px; } .report-contents { padding: 26px 22px; } summary { font-size: 18px; min-height: 60px; } .contents-links { gap: 7px; } .contents-links button { padding-inline: 13px; } .growth-action { padding: 18px; } }
+@media (prefers-reduced-motion: reduce) { summary svg, .contents-links button { transition: none; } }
 </style>

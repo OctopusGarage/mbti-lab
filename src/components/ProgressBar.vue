@@ -22,31 +22,14 @@
 import { computed } from 'vue'
 const props = defineProps({ current: Number, total: Number })
 const pct = computed(() =>
-  Math.round(((props.current + 1) / props.total) * 100),
+  props.total > 0 ? Math.min(100, Math.max(0, Math.round(((props.current + 1) / props.total) * 100))) : 0,
 )
 </script>
 
 <style scoped>
-.progress-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.progress-label {
-  font-size: 13px;
-  color: var(--ink-light);
-  letter-spacing: 0.3px;
-}
-.progress-track {
-  height: 4px;
-  background: var(--blue-light);
-  border-radius: 4px;
-  overflow: hidden;
-}
-.progress-fill {
-  height: 100%;
-  background: var(--blue-mid);
-  border-radius: 4px;
-  transition: width 0.4s ease;
-}
+.progress-wrap { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.progress-label { font-size: 12px; font-weight: 500; line-height: 1.5; color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+.progress-track { height: 4px; background: rgba(29,29,31,.08); border-radius: 4px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--accent); border-radius: 4px; transition: width 280ms var(--ease-out); }
+@media (prefers-reduced-motion: reduce) { .progress-fill { transition: none; } }
 </style>

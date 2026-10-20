@@ -1,17 +1,12 @@
 <template>
   <div ref="cardEl" class="share-card">
     <div class="sc-bg" :style="bgStyle">
-      <!-- decorative circles -->
-      <div class="circle c1" :style="{ background: accent }" />
-      <div class="circle c2" />
-      <div class="circle c3" :style="{ background: accent }" />
-
       <div class="sc-body">
         <!-- top bar -->
         <div class="sc-topbar">
           <div class="sc-site-group">
             <span class="sc-site">MBTI Lab</span>
-            <span class="sc-brand">🐙 OctopusGarage</span>
+            <span class="sc-brand">OctopusGarage</span>
           </div>
         </div>
 
@@ -97,7 +92,7 @@ const highlights = computed(
 )
 
 const theme = computed(() => getShareTheme(props.type))
-const bgStyle = computed(() => theme.value.bgStyle)
+const bgStyle = computed(() => ({ background: '#17191f' }))
 const accent = computed(() => theme.value.accent)
 
 async function capture() {
@@ -144,154 +139,22 @@ defineExpose({ capture })
 </script>
 
 <style scoped>
-.share-card {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 540px;
-  visibility: hidden;
-  pointer-events: none;
-  z-index: -1;
-}
-
-.sc-bg {
-  width: 540px;
-  height: 540px;
-  position: relative;
-  overflow: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-}
-
-.circle {
-  position: absolute;
-  border-radius: 50%;
-  opacity: 0.12;
-}
-.c1 {
-  width: 320px;
-  height: 320px;
-  top: -80px;
-  right: -80px;
-}
-.c2 {
-  width: 200px;
-  height: 200px;
-  background: white;
-  bottom: -60px;
-  left: -40px;
-}
-.c3 {
-  width: 100px;
-  height: 100px;
-  bottom: 120px;
-  right: 60px;
-  opacity: 0.08;
-}
-
-.sc-body {
-  position: relative;
-  z-index: 1;
-  padding: 28px 40px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  color: white;
-  box-sizing: border-box;
-}
-
-.sc-topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.sc-site-group {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-.sc-site {
-  font-size: 13px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.45);
-  font-weight: 600;
-}
-.sc-brand {
-  font-size: 9px;
-  letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.25);
-}
-.sc-hero {
-  margin-bottom: 16px;
-}
-.sc-type {
-  font-size: 80px;
-  font-weight: 900;
-  letter-spacing: 6px;
-  line-height: 1;
-}
-.sc-nickname {
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.75);
-  margin-top: 4px;
-  letter-spacing: 0.5px;
-}
-
-.sc-desc {
-  font-size: 12.5px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.55);
-  margin-bottom: 16px;
-  flex: 1;
-  min-height: 0;
-  overflow: hidden;
-  overflow-wrap: anywhere;
-}
-
-.sc-strengths {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 16px;
-}
-.sc-tag {
-  font-size: 11px;
-  padding: 5px 12px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.8);
-  letter-spacing: 0.3px;
-}
-
-.sc-editorial-note {
-  font-size: 11px;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.65);
-  margin-bottom: 18px;
-  overflow-wrap: anywhere;
-}
-.sc-note-label {
-  display: block;
-  color: #e2c96e;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.sc-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.sc-url-label {
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.25);
-  letter-spacing: 1px;
-}
-.sc-qr {
-  width: 80px;
-  height: 80px;
-  border-radius: 4px;
-}
+.share-card { position: fixed; left: 0; top: 0; width: 540px; visibility: hidden; pointer-events: none; z-index: -1; }
+.sc-bg { width: 540px; height: 540px; position: relative; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+.sc-body { position: relative; padding: 28px 40px; height: 100%; display: flex; flex-direction: column; color: #f5f5f7; box-sizing: border-box; }
+.sc-topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+.sc-site-group { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.sc-site { font-size: 13px; font-weight: 600; letter-spacing: -.2px; color: #f5f5f7; }
+.sc-brand { font-size: 10px; color: #a5a8b2; }
+.sc-hero { margin-bottom: 14px; }
+.sc-type { font-size: 72px; font-weight: 700; letter-spacing: -3px; line-height: 1.05; }
+.sc-nickname { font-size: 20px; color: #f5f5f7; margin-top: 4px; letter-spacing: -.4px; line-height: 1.5; }
+.sc-desc { font-size: 13px; line-height: 1.65; color: #c5c7ce; margin-bottom: 16px; flex: 1; min-height: 0; overflow: hidden; overflow-wrap: anywhere; }
+.sc-strengths { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 12px; }
+.sc-tag { font-size: 11px; line-height: 1.2; padding: 5px 10px; border-radius: 8px; border: 1px solid #41434b; background: #23252c; color: #e1e2e7; }
+.sc-editorial-note { font-size: 11px; line-height: 1.55; color: #b5b8c2; margin-bottom: 16px; overflow-wrap: anywhere; }
+.sc-note-label { display: block; color: #f5f5f7; font-weight: 600; margin-bottom: 4px; }
+.sc-footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 8px; border-top: 1px solid #363840; }
+.sc-url-label { max-width: 280px; font-size: 11px; line-height: 1.6; color: #b5b8c2; }
+.sc-qr { width: 80px; height: 80px; flex-shrink: 0; border-radius: 12px; }
 </style>

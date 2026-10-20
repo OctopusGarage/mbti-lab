@@ -7,7 +7,7 @@
           v-for="(letter, i) in typeLetters"
           :key="i"
           class="type-letter"
-          :style="{ animationDelay: i * 0.15 + 's' }"
+          :style="{ animationDelay: i * 0.045 + 's' }"
           >{{ letter }}</span
         >
       </h1>
@@ -28,7 +28,7 @@
       <DimensionBars :percents="percents" />
       <p class="percent-note">{{ $t('report.closeNote') }}</p>
       <details class="chart-details" @toggle="chartOpen = $event.target.open">
-        <summary>{{ $t('report.showChart') }}</summary>
+        <summary><span>{{ $t('report.showChart') }}</span><AppIcon icon="chevron-down" :size="18" /></summary>
         <RadarChart v-if="chartOpen" :percents="percents" />
         <p class="percent-note">{{ $t('result.radarNote') }}</p>
       </details>
@@ -43,7 +43,8 @@
             class="neighbor-type"
             @click="$emit('neighbor', neighbor.type)"
           >
-            {{ neighbor.type }} · {{ getTypePresentation(neighbor.type, locale)?.nickname }}
+            <span>{{ neighbor.type }} · {{ getTypePresentation(neighbor.type, locale)?.nickname }}</span>
+            <AppIcon icon="arrow-right" :size="17" />
           </button>
           <p>{{ $t('report.neighborDimensions.' + neighbor.dimension) }}</p>
         </li>
@@ -55,6 +56,7 @@
 <script setup>
 import { computed, ref, defineAsyncComponent } from 'vue'
 import { useI18n } from 'vue-i18n'
+import AppIcon from './AppIcon.vue'
 import DimensionBars from './DimensionBars.vue'
 import ReportReader from './ReportReader.vue'
 import { getReport, getNeighbors } from '../utils/report.js'
@@ -76,115 +78,33 @@ const neighbors = computed(() => getNeighbors(props.type))
 </script>
 
 <style scoped>
-.result-card {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-/* Hero */
-.type-hero {
-  text-align: center;
-  padding: 48px 24px 40px;
-  background: linear-gradient(160deg, #1a1a2e, #2d3a8c);
-  color: white;
-}
-.type-letters {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 12px;
-}
-.type-letter {
-  font-size: 52px;
-  font-weight: 900;
-  letter-spacing: 2px;
-  color: #e2c96e;
-  opacity: 0;
-  animation: letterReveal 0.4s forwards;
-}
-@keyframes letterReveal {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.type-nickname {
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 8px;
-}
-
-/* Sections */
-.section {
-  padding: 28px 24px;
-}
-.cream-section {
-  background: var(--cream);
-}
-
-.section-title {
-  font-size: 14px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 12px;
-}
-.viz-section {
-  background: white;
-}
-
-.report-highlights {
-  padding-left: 22px;
-  line-height: 1.8;
-}
-.report-highlights li + li {
-  margin-top: 8px;
-}
-.editorial-note,
-.percent-note {
-  color: var(--ink-light);
-  font-size: 13px;
-  line-height: 1.8;
-  margin-top: 16px;
-}
-.chart-details {
-  margin-top: 20px;
-}
-.chart-details summary {
-  min-height: 44px;
-  padding: 12px 0;
-  cursor: pointer;
-  color: var(--blue);
-  font-weight: 600;
-}
-.chart-details .radar-chart {
-  margin: auto;
-}
-.neighbors ul {
-  display: grid;
-  gap: 20px;
-  list-style: none;
-  margin-top: 20px;
-}
-.neighbors li p {
-  font-size: 14px;
-  line-height: 1.8;
-  margin-top: 6px;
-}
-.neighbor-type {
-  min-height: 44px;
-  padding: 8px 12px;
-  border: 1px solid var(--cream-border);
-  background: white;
-  color: var(--blue);
-  border-radius: 12px;
-  font: inherit;
-  cursor: pointer;
-  text-align: left;
-}
+.result-card { display: flex; flex-direction: column; gap: 20px; width: 100%; max-width: 840px; margin: 0 auto; }
+.type-hero { text-align: center; padding: 44px 24px 42px; }
+.type-letters { display: flex; justify-content: center; gap: 1px; margin: 0 0 12px; line-height: 1; }
+.type-letter { font-size: clamp(80px, 15vw, 136px); font-weight: 750; letter-spacing: -.065em; color: var(--text); animation: letterReveal 480ms var(--ease-out) both; }
+.type-letter:last-child { margin-right: .065em; }
+@keyframes letterReveal { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+.type-nickname { font-size: clamp(20px, 3vw, 27px); font-weight: 500; letter-spacing: -.035em; color: var(--text-secondary); }
+.section { padding: 32px 36px; border-radius: var(--radius-lg); background: var(--surface); }
+.section-title { font-size: 21px; font-weight: 650; letter-spacing: -.035em; color: var(--text); margin-bottom: 18px; line-height: 1.4; }
+.report-highlights { padding-left: 21px; line-height: 1.9; color: var(--text); }
+.report-highlights li { padding-left: 4px; }
+.report-highlights li::marker { color: var(--accent); }
+.report-highlights li + li { margin-top: 12px; }
+.editorial-note, .percent-note { color: var(--text-secondary); font-size: 13px; line-height: 1.8; margin-top: 18px; }
+.viz-section > .percent-note:first-of-type { margin: -5px 0 28px; }
+.chart-details { margin-top: 24px; border-top: 1px solid var(--line); }
+.chart-details summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; list-style: none; min-height: 52px; padding: 12px 0; cursor: pointer; color: var(--accent); font-size: 14px; font-weight: 550; }
+.chart-details summary::-webkit-details-marker { display: none; }
+.chart-details summary svg { flex-shrink: 0; transition: transform var(--duration-normal) var(--ease-out); }
+.chart-details[open] summary svg { transform: rotate(180deg); }
+.chart-details .radar-chart { margin: 12px auto; }
+.neighbors ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; list-style: none; padding: 0; margin: 24px 0 0; }
+.neighbors li p { font-size: 12px; color: var(--text-secondary); line-height: 1.7; margin: 8px 4px 0; }
+.neighbor-type { display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; min-height: 50px; padding: 12px 14px; border: 1px solid var(--line); background: var(--surface); color: var(--text); border-radius: var(--radius-sm); font: inherit; font-size: 13px; font-weight: 550; cursor: pointer; text-align: left; transition: background var(--duration-fast), transform var(--duration-fast); }
+.neighbor-type svg { flex-shrink: 0; color: var(--text-secondary); }
+.neighbor-type:active { transform: scale(.98); }
+@media (hover: hover) { .neighbor-type:hover { background: var(--surface-secondary); } }
+@media (max-width: 540px) { .result-card { gap: 14px; } .section { padding: 26px 22px; border-radius: var(--radius-md); } .type-hero { padding: 32px 12px 30px; } .section-title { font-size: 20px; } .neighbors ul { grid-template-columns: 1fr; gap: 18px; } }
+@media (prefers-reduced-motion: reduce) { .type-letter { animation: none; } .chart-details summary svg, .neighbor-type { transition: none; } }
 </style>

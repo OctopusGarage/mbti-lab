@@ -1,0 +1,77 @@
+{
+  "capturedAt": "2026-10-20T07:33:58.969Z",
+  "source": "Local production preview; not a deployed-site capture",
+  "baseURL": "http://127.0.0.1:4199/mbti-lab/",
+  "entry": "/mbti-lab/assets/index-BvhmYdxR.js",
+  "browser": "156.0.8078.4",
+  "sample": "All A answers to the 60-question assessment; demonstration only, not a personal assessment.",
+  "screenshots": [
+    {
+      "file": "home-desktop.png",
+      "description": "Local production build: Chinese desktop home",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "zh",
+      "url": "http://127.0.0.1:4199/mbti-lab/#/"
+    },
+    {
+      "file": "home-mobile.png",
+      "description": "Local production build: Chinese mobile home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "locale": "zh",
+      "url": "http://127.0.0.1:4199/mbti-lab/#/"
+    },
+    {
+      "file": "assessment-mobile.png",
+      "description": "Local English assessment, question 7 of 60",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "locale": "en",
+      "url": "http://127.0.0.1:4199/mbti-lab/#/test?mode=short"
+    },
+    {
+      "file": "report-mobile.png",
+      "description": "Local ENFJ report computed from scripted all-A answers",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "locale": "en",
+      "url": "http://127.0.0.1:4199/mbti-lab/#/result"
+    },
+    {
+      "file": "share-mobile.png",
+      "description": "Local mobile share sheet",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "locale": "en",
+      "url": "http://127.0.0.1:4199/mbti-lab/#/result"
+    },
+    {
+      "file": "share-card.png",
+      "description": "Unmodified local PNG export from the scripted assessment",
+      "locale": "en",
+      "type": "ENFJ",
+      "url": "http://127.0.0.1:4199/mbti-lab/#/result"
+    },
+    {
+      "file": "library-desktop.png",
+      "description": "Local Chinese library with all 16 types",
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "locale": "zh",
+      "url": "http://127.0.0.1:4199/mbti-lab/#/types?lang=zh"
+    }
+  ]
+}

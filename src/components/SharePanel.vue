@@ -13,7 +13,7 @@
           :aria-label="$t('share.close')"
           @click="$emit('close')"
         >
-          ×
+          <AppIcon icon="close" :size="18" />
         </button>
         <div class="sp-handle" />
         <div v-if="failedText">
@@ -41,6 +41,7 @@
               data-action="copy-result"
               @click="copyResult"
             >
+              <AppIcon :icon="copied === 'result' ? 'check' : 'copy'" :size="18" />
               {{
                 copied === 'result'
                   ? $t('share.copied')
@@ -54,7 +55,7 @@
               data-action="share-result-x"
               @click="shareResultToX"
             >
-              <span class="sp-icon-x">𝕏</span>
+              <span class="sp-icon-x" aria-hidden="true">𝕏</span>
               {{ $t('share.shareToX') }}
             </button>
             <button
@@ -63,7 +64,7 @@
               data-action="save-image"
               @click="saveImage"
             >
-              <span class="sp-icon-save">↓</span>
+              <span class="sp-icon-save"><AppIcon icon="download" :size="18" /></span>
               {{ $t('share.saveImage') }}
             </button>
           </div>
@@ -75,11 +76,11 @@
         </div>
         <div class="sp-row">
           <button class="sp-btn" data-action="share-app-x" @click="shareAppToX">
-            <span class="sp-icon-x">𝕏</span>
+            <span class="sp-icon-x" aria-hidden="true">𝕏</span>
             {{ $t('share.shareToX') }}
           </button>
           <button class="sp-btn" data-action="copy-link" @click="copyLink">
-            <span class="sp-icon-link">🔗</span>
+            <span class="sp-icon-link"><AppIcon :icon="copied === 'link' ? 'check' : 'copy'" :size="18" /></span>
             {{ copied === 'link' ? $t('share.copied') : $t('share.copyLink') }}
           </button>
         </div>
@@ -90,6 +91,7 @@
 
 <script setup>
 import { ref, computed, watch, onMounted, onUnmounted, nextTick } from 'vue'
+import AppIcon from './AppIcon.vue'
 import { useI18n } from 'vue-i18n'
 import { APP_URL, typeShareUrl } from '../config.js'
 
@@ -214,144 +216,24 @@ function saveImage() {
 </script>
 
 <style scoped>
-.caption-preview {
-  display: grid;
-  gap: 12px;
-  margin: 12px 0;
-}
-.share-text-preview {
-  padding: 12px;
-  border-radius: 12px;
-  background: var(--cream);
-  color: var(--ink);
-  font-size: 14px;
-  line-height: 1.7;
-  overflow-wrap: anywhere;
-  white-space: pre-wrap;
-}
-
-.sp-sheet {
-  position: relative;
-  max-height: 90dvh;
-  overflow-y: auto;
-}
-.sp-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 44px;
-  height: 44px;
-  border: 0;
-  border-radius: 50%;
-  background: white;
-  font-size: 26px;
-  cursor: pointer;
-}
-textarea {
-  width: 100%;
-  min-height: 70px;
-  margin: 12px 0;
-  font: inherit;
-}
-
-.sp-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  z-index: 200;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.sp-sheet {
-  width: 100%;
-  max-width: 480px;
-  background: white;
-  border-radius: 20px 20px 0 0;
-  padding: 16px 20px calc(40px + env(safe-area-inset-bottom));
-  animation: slide-up 0.25s ease;
-}
-
-@keyframes slide-up {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-.sp-handle {
-  width: 36px;
-  height: 4px;
-  background: #e0e0e0;
-  border-radius: 4px;
-  margin: 0 auto 20px;
-}
-
-.sp-label {
-  font-size: 10px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: #999;
-  margin-bottom: 10px;
-}
-
-.sp-divider {
-  height: 1px;
-  background: #f0f0f0;
-  margin: 16px 0;
-}
-
-.sp-row {
-  display: flex;
-  gap: 10px;
-}
-
-.sp-btn {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 13px 14px;
-  background: #f5f5f5;
-  border: none;
-  border-radius: 12px;
-  font-size: 13px;
-  font-weight: 500;
-  color: #1a1a2e;
-  cursor: pointer;
-  transition: background 0.15s;
-}
-.sp-btn:hover {
-  background: #ebebeb;
-}
-
-.sp-icon-x {
-  width: 28px;
-  height: 28px;
-  background: #000;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 13px;
-  font-weight: 800;
-  flex-shrink: 0;
-}
-
-.sp-icon-save,
-.sp-icon-link {
-  width: 28px;
-  height: 28px;
-  background: #e0e8ff;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
-  flex-shrink: 0;
-}
+.sp-overlay { position: fixed; inset: 0; z-index: 200; display: flex; align-items: flex-end; justify-content: center; background: rgba(20,25,35,.28); backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px); animation: overlay-in 180ms ease-out; }
+.sp-sheet { position: relative; width: 100%; max-width: 480px; max-height: calc(100dvh - 20px); overflow-y: auto; overscroll-behavior: contain; border: 1px solid var(--line); background: var(--surface); border-radius: 32px 32px 0 0; padding: 22px 24px calc(30px + env(safe-area-inset-bottom)); box-shadow: 0 24px 90px rgba(20,25,35,.16); animation: sheet-in 260ms var(--ease-out); }
+.sp-close { position: absolute; display: grid; place-items: center; top: 14px; right: 14px; width: 44px; height: 44px; border: 0; border-radius: 50%; background: var(--surface-secondary); color: var(--text-secondary); cursor: pointer; }
+.sp-handle { width: 36px; height: 5px; background: #d0d1d6; border-radius: 5px; margin: 0 auto 30px; }
+.sp-label { padding-right: 32px; color: var(--text); font-size: 18px; font-weight: 650; letter-spacing: -.025em; line-height: 1.5; margin-bottom: 16px; }
+.caption-preview { display: grid; gap: 12px; margin: 12px 0; }
+.share-text-preview { padding: 18px; border-radius: 18px; border: 1px solid var(--line); background: var(--canvas); color: var(--text-secondary); font-size: 14px; line-height: 1.75; overflow-wrap: anywhere; white-space: pre-wrap; }
+.sp-btn { display: flex; align-items: center; justify-content: center; flex: 1; min-width: 0; min-height: 50px; gap: 9px; padding: 13px 14px; border: 1px solid var(--line); border-radius: 15px; background: var(--surface); color: var(--text); font-size: 13px; font-weight: 550; line-height: 1.5; cursor: pointer; overflow-wrap: anywhere; }
+[data-action="copy-result"] { border-color: transparent; background: var(--accent); color: #fff; }
+@media (hover: hover) { .sp-btn:hover { background: var(--surface-secondary); } [data-action="copy-result"]:hover { background: #0066cc; } .sp-close:hover { color: var(--text); background: #e7e8ec; } }
+.sp-row { display: flex; gap: 10px; }
+.sp-divider { height: 1px; background: var(--line); margin: 24px 0; }
+.sp-icon-x, .sp-icon-save, .sp-icon-link { display: grid; place-items: center; flex-shrink: 0; width: 24px; height: 24px; }
+.sp-icon-x { font-size: 18px; font-weight: 500; }
+textarea { width: 100%; min-height: 100px; margin: 12px 0; border: 1px solid var(--line); border-radius: 14px; padding: 14px; background: var(--canvas); color: var(--text); font: inherit; font-size: 13px; line-height: 1.7; resize: vertical; }
+[role="status"] { margin-top: 32px; font-size: 13px; line-height: 1.6; color: var(--text-secondary); }
+@keyframes overlay-in { from { opacity: 0; } }
+@keyframes sheet-in { from { opacity: 0; transform: translateY(24px); } }
+@media (min-width: 640px) { .sp-overlay { align-items: center; padding: 28px; } .sp-sheet { max-height: calc(100dvh - 56px); border-radius: 30px; padding: 28px; } .sp-handle { visibility: hidden; margin-bottom: 20px; } }
+@media (prefers-reduced-motion: reduce) { .sp-overlay, .sp-sheet { animation: none; } }
 </style>

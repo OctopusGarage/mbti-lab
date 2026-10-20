@@ -20,6 +20,9 @@ function buildOption(percents) {
   const p = percents
   return {
     animation: !window.matchMedia?.('(prefers-reduced-motion: reduce)').matches,
+    animationDuration: 360,
+    animationDurationUpdate: 260,
+    animationEasing: 'cubicOut',
     radar: {
       indicator: [
         { name: 'E', max: 100 },
@@ -29,10 +32,10 @@ function buildOption(percents) {
       ],
       shape: 'polygon',
       splitNumber: 3,
-      axisName: { color: '#5c6bc0', fontSize: 11, fontWeight: 600 },
-      splitLine: { lineStyle: { color: '#e0e4f5' } },
-      splitArea: { areaStyle: { color: ['#f7f8ff', '#eef0fb'] } },
-      axisLine: { lineStyle: { color: '#e0e4f5' } },
+      axisName: { color: '#0071e3', fontSize: 11, fontWeight: 600 },
+      splitLine: { lineStyle: { color: '#e3e5e9' } },
+      splitArea: { areaStyle: { color: ['#fafbfc', '#f1f5fa'] } },
+      axisLine: { lineStyle: { color: '#e3e5e9' } },
     },
     series: [{
       type: 'radar',
@@ -43,9 +46,9 @@ function buildOption(percents) {
           p.FT.F,
           p.JP.J,
         ],
-        areaStyle: { color: 'rgba(92,107,192,0.18)' },
-        lineStyle: { color: '#5c6bc0', width: 2 },
-        itemStyle: { color: '#5c6bc0' },
+        areaStyle: { color: 'rgba(0,113,227,0.12)' },
+        lineStyle: { color: '#0071e3', width: 2 },
+        itemStyle: { color: '#0071e3' },
       }],
     }],
   }
@@ -67,5 +70,5 @@ onUnmounted(() => { observer?.disconnect(); chart?.dispose(); chart = null })
 </script>
 
 <style scoped>
-.radar-chart { width: 200px; max-width: 100%; flex: 0 0 auto; height: 200px; }
+.radar-chart { width: 260px; max-width: 100%; height: 240px; margin-inline: auto; }
 </style>

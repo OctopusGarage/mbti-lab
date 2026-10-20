@@ -10,7 +10,7 @@ await mkdir(directory, { recursive: true })
 const browser = await chromium.launch()
 try {
   const context = await browser.newContext({
-    viewport: { width: 1080, height: 600 },
+    viewport: { width: 1440, height: 820 },
     deviceScaleFactor: 1,
     reducedMotion: 'reduce',
   })
@@ -59,6 +59,8 @@ try {
   await expect(page.locator('.report-section')).toHaveCount(7)
   await capture('report.png', 'English ENFJ report computed from the scripted assessment')
   await page.locator('.dock-share').click()
+  await expect(page.locator('.sp-sheet')).toBeVisible()
+  await capture('sharing.png', 'Live result-sharing dialog with public type links and image export')
   await page.locator('[data-action="save-image"]').click()
   const preview = page.locator('.export-preview img')
   await expect(preview).toBeVisible({ timeout: 60_000 })
