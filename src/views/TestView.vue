@@ -170,7 +170,7 @@ onBeforeRouteLeave(cancel)
 onUnmounted(cancel)
 </script>
 <style scoped>
-.test-page { min-height: 100dvh; display: flex; flex-direction: column; background: var(--canvas); }
+.test-page { min-height: var(--page-min-height); display: flex; flex-direction: column; background: var(--canvas); }
 .test-header { width: 100%; max-width: 1080px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 28px 40px; gap: 40px; }
 .test-header > :first-child { flex: 1; max-width: 600px; }
 .test-main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 50px 24px 40px; }

@@ -143,7 +143,7 @@ function groupColor(label) {
 </script>
 
 <style scoped>
-.types-page { min-height: 100dvh; background: var(--canvas); display: flex; flex-direction: column; }
+.types-page { min-height: var(--page-min-height); background: var(--canvas); display: flex; flex-direction: column; }
 .has-report { padding-bottom: calc(116px + env(safe-area-inset-bottom)); }
 .types-header { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 24px; padding: 20px 32px 24px; width: 100%; max-width: 1104px; margin-inline: auto; }
 .back-btn { display: inline-flex; align-items: center; gap: 8px; justify-self: start; min-height: 44px; font-size: 13px; color: var(--text-secondary); text-decoration: none; }

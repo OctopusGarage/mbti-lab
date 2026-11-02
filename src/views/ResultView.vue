@@ -108,7 +108,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.result-page { min-height: 100dvh; padding: 0 24px; display: flex; flex-direction: column; background: var(--canvas); position: relative; }
+.result-page { min-height: var(--page-min-height); padding: 0 24px; display: flex; flex-direction: column; background: var(--canvas); position: relative; }
 .has-report { padding-bottom: calc(116px + env(safe-area-inset-bottom)); }
 .result-header { display: flex; justify-content: flex-end; width: 100%; max-width: 1040px; margin-inline: auto; padding: 20px 0 0; min-height: 64px; }
 .actions { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 28px 16px 20px; }
