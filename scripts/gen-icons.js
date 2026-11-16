@@ -4,7 +4,7 @@ import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const svg = readFileSync(resolve(__dirname, 'icon.svg'))
+const source = readFileSync(resolve(__dirname, 'icon-master.png'))
 const out = resolve(__dirname, '../public')
 
 const sizes = [
@@ -15,6 +15,6 @@ const sizes = [
 ]
 
 for (const { name, size } of sizes) {
-  await sharp(svg).resize(size, size).png().toFile(`${out}/${name}`)
+  await sharp(source).resize(size, size).png().toFile(`${out}/${name}`)
   console.log(`✓ ${name}`)
 }

@@ -163,3 +163,12 @@ it('uses the same concise reflection highlights as the expanded report', async (
     wrapper.unmount()
   }
 })
+it('includes a personality introduction alongside reflection highlights', async () => {
+  const { getReport } = await import('../src/utils/report.js')
+  const wrapper = mountCard('INFJ')
+  try {
+    expect(wrapper.find('.sc-introduction').text().length).toBeGreaterThan(20)
+    expect(getReport('INFJ', 'zh').sections[0].text).toContain(wrapper.find('.sc-introduction').text())
+    expect(wrapper.findAll('.sc-highlight')).toHaveLength(3)
+  } finally { wrapper.unmount() }
+})

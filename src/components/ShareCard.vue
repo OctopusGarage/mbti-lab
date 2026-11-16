@@ -17,7 +17,8 @@
         </div>
 
         <!-- description -->
-        <div class="sc-desc">{{ highlights.join(' · ') }}</div>
+        <p class="sc-introduction">{{ introduction }}</p>
+        <div class="sc-desc"><div v-for="highlight in highlights" :key="highlight" class="sc-highlight"><span :style="{ background: accent }" />{{ highlight }}</div></div>
 
         <!-- strengths -->
         <div class="sc-strengths">
@@ -63,7 +64,7 @@ let qrReady = null
 function prepareQr() {
   if (!qrReady) {
     qrReady = QRCode.toDataURL(APP_URL, {
-      width: 160,
+      width: 224,
       margin: 4,
       color: { dark: '#111111', light: '#ffffff' },
     }).then((url) => {
@@ -87,6 +88,10 @@ const typeData = computed(
     },
 )
 
+const introduction = computed(() => {
+  const core = getReport(props.type, locale.value)?.sections[0]?.text ?? ''
+  return (core.match(/[^.!?。！？]+[.!?。！？]+(?:[”’"])?|[^.!?。！？]+$/gu) ?? [core]).slice(0, 1).join('').trim()
+})
 const highlights = computed(
   () => getReport(props.type, locale.value)?.highlights ?? [],
 )
@@ -113,7 +118,7 @@ async function capture() {
   // translations cannot silently produce clipped PNGs.
   const card = cardEl.value
   for (const element of card.querySelectorAll(
-    '.sc-body, .sc-desc, .sc-nickname, .sc-strengths, .sc-editorial-note',
+    '.sc-body, .sc-introduction, .sc-desc, .sc-nickname, .sc-strengths, .sc-editorial-note',
   )) {
     if (
       element.scrollHeight > element.clientHeight + 1 ||
@@ -140,14 +145,14 @@ defineExpose({ capture })
 
 <style scoped>
 .share-card { position: fixed; left: 0; top: 0; width: 540px; visibility: hidden; pointer-events: none; z-index: -1; }
-.sc-bg { width: 540px; height: 540px; position: relative; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
-.sc-body { position: relative; padding: 28px 40px; height: 100%; display: flex; flex-direction: column; color: #f5f5f7; box-sizing: border-box; }
+.sc-bg { width: 540px; height: 720px; position: relative; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+.sc-body { position: relative; padding: 32px 40px; height: 100%; display: flex; flex-direction: column; color: #f5f5f7; box-sizing: border-box; }
 .sc-topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
 .sc-site-group { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
 .sc-site { font-size: 13px; font-weight: 600; letter-spacing: -.2px; color: #f5f5f7; }
 .sc-brand { font-size: 10px; color: #a5a8b2; }
 .sc-hero { margin-bottom: 14px; }
-.sc-type { font-size: 72px; font-weight: 700; letter-spacing: -3px; line-height: 1.05; }
+.sc-type { font-size: 88px; font-weight: 700; letter-spacing: -3px; line-height: 1.05; }
 .sc-nickname { font-size: 20px; color: #f5f5f7; margin-top: 4px; letter-spacing: -.4px; line-height: 1.5; }
 .sc-desc { font-size: 13px; line-height: 1.65; color: #c5c7ce; margin-bottom: 16px; flex: 1; min-height: 0; overflow: hidden; overflow-wrap: anywhere; }
 .sc-strengths { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 12px; }
@@ -156,5 +161,9 @@ defineExpose({ capture })
 .sc-note-label { display: block; color: #f5f5f7; font-weight: 600; margin-bottom: 4px; }
 .sc-footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 8px; border-top: 1px solid #363840; }
 .sc-url-label { max-width: 280px; font-size: 11px; line-height: 1.6; color: #b5b8c2; }
-.sc-qr { width: 80px; height: 80px; flex-shrink: 0; border-radius: 12px; }
+.sc-qr { width: 112px; height: 112px; flex-shrink: 0; border-radius: 0; }
+.sc-introduction { font-size: 14px; line-height: 1.75; color: #e1e2e7; margin: 0 0 18px; overflow-wrap: anywhere; }
+.sc-desc { flex: 1; }
+.sc-highlight { display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px; }
+.sc-highlight span { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
 </style>

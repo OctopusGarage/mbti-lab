@@ -5,6 +5,8 @@ import SharePanel from '../src/components/SharePanel.vue'
 import zh from '../src/locales/zh.json'
 import en from '../src/locales/en.json'
 
+vi.mock('../src/utils/appShareCard.js', () => ({ renderAppCard: vi.fn().mockResolvedValue('data:image/png;base64,YQ==') }))
+
 let wrapper
 afterEach(() => {
   wrapper?.unmount()

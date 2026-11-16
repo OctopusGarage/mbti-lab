@@ -31,6 +31,15 @@
           <div class="sp-label" data-section="result">
             {{ $t(personal ? 'share.shareResult' : 'share.shareType') }}
           </div>
+            <button
+              v-if="onSaveImage"
+              class="sp-btn"
+              data-action="save-image"
+              @click="saveImage"
+            >
+              <span class="sp-icon-save"><AppIcon icon="download" :size="18" /></span>
+              {{ t('share.saveImage') }}
+            </button>
           <section
             class="caption-preview"
             :aria-label="$t('share.captionPreview')"
@@ -58,15 +67,7 @@
               <span class="sp-icon-x" aria-hidden="true">𝕏</span>
               {{ $t('share.shareToX') }}
             </button>
-            <button
-              v-if="onSaveImage"
-              class="sp-btn"
-              data-action="save-image"
-              @click="saveImage"
-            >
-              <span class="sp-icon-save"><AppIcon icon="download" :size="18" /></span>
-              {{ $t('share.saveImage') }}
-            </button>
+
           </div>
           <div class="sp-divider" />
         </template>
@@ -84,6 +85,7 @@
             {{ copied === 'link' ? $t('share.copied') : $t('share.copyLink') }}
           </button>
         </div>
+        <AppQrShare />
       </div>
     </div>
   </Teleport>
@@ -92,7 +94,9 @@
 <script setup>
 import { ref, computed, watch, onMounted, onUnmounted, nextTick } from 'vue'
 import AppIcon from './AppIcon.vue'
+import AppQrShare from './AppQrShare.vue'
 import { useI18n } from 'vue-i18n'
+import shareMessages from '../i18n/shareMessages.js'
 import { APP_URL, typeShareUrl } from '../config.js'
 
 const props = defineProps({
@@ -102,7 +106,7 @@ const props = defineProps({
 })
 const emit = defineEmits(['close'])
 
-const { t, locale } = useI18n()
+const { t, locale } = useI18n({ useScope: 'local', messages: shareMessages, missingWarn: false, fallbackWarn: false })
 const copied = ref('')
 const failedText = ref('')
 const manualLink = ref(null)
@@ -173,7 +177,7 @@ function handleKeydown(e) {
   if (e.key === 'Escape') emit('close')
   if (e.key === 'Tab') {
     const controls = [
-      ...sheet.value.querySelectorAll('button, textarea'),
+      ...sheet.value.querySelectorAll('button, textarea, a[href]'),
     ].filter((element) => !element.disabled)
     const first = controls[0],
       last = controls.at(-1)
@@ -224,6 +228,7 @@ function saveImage() {
 .caption-preview { display: grid; gap: 12px; margin: 12px 0; }
 .share-text-preview { padding: 18px; border-radius: 18px; border: 1px solid var(--line); background: var(--canvas); color: var(--text-secondary); font-size: 14px; line-height: 1.75; overflow-wrap: anywhere; white-space: pre-wrap; }
 .sp-btn { display: flex; align-items: center; justify-content: center; flex: 1; min-width: 0; min-height: 50px; gap: 9px; padding: 13px 14px; border: 1px solid var(--line); border-radius: 15px; background: var(--surface); color: var(--text); font-size: 13px; font-weight: 550; line-height: 1.5; cursor: pointer; overflow-wrap: anywhere; }
+[data-action="save-image"] { width: 100%; background: var(--accent); color: white; border-color: transparent; }
 [data-action="copy-result"] { border-color: transparent; background: var(--accent); color: #fff; }
 @media (hover: hover) { .sp-btn:hover { background: var(--surface-secondary); } [data-action="copy-result"]:hover { background: #0066cc; } .sp-close:hover { color: var(--text); background: #e7e8ec; } }
 .sp-row { display: flex; gap: 10px; }

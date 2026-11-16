@@ -30,7 +30,7 @@ test.describe('PNG export matrix', () => {
         expect(src).toMatch(/^data:image\/png;base64,/)
         const png = Buffer.from(src.split(',')[1], 'base64')
         const { data, info } = await sharp(png).ensureAlpha().raw().toBuffer({ resolveWithObject: true })
-        expect([info.width, info.height]).toEqual([1080,1080])
+        expect([info.width, info.height]).toEqual([1080,1440])
         expect(jsQR(new Uint8ClampedArray(data), info.width, info.height)?.data).toBe(CANONICAL)
         const download = page.waitForEvent('download')
         await page.locator('.export-preview a').click()
