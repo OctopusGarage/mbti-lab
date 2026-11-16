@@ -5,6 +5,7 @@
     </header>
 
     <template v-if="result">
+      <PersonalityPreview :type="result.type" />
       <ResultCard
         ref="reader"
         :type="result.type"
@@ -59,6 +60,7 @@ import { ref, onMounted, onUnmounted, watch, nextTick } from 'vue'
 import LangToggle from '../components/LangToggle.vue'
 import ResultCard from '../components/ResultCard.vue'
 import ShareCard from '../components/ShareCard.vue'
+import PersonalityPreview from '../components/PersonalityPreview.vue'
 import SharePanel from '../components/SharePanel.vue'
 import { useResultStore } from '../composables/useResultStore.js'
 import ReportDock from '../components/ReportDock.vue'

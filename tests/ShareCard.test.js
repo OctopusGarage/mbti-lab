@@ -5,12 +5,7 @@ import ShareCard from '../src/components/ShareCard.vue'
 import zh from '../src/locales/zh.json'
 import en from '../src/locales/en.json'
 
-// qrcode generates a data URL — mock it to return a stable string
-vi.mock('qrcode', () => ({
-  default: {
-    toDataURL: vi.fn().mockResolvedValue('data:image/png;base64,MOCK'),
-  },
-}))
+vi.mock('../src/utils/brandedQr.js', () => ({ brandedQr: vi.fn().mockResolvedValue('data:image/png;base64,MOCK') }))
 
 function mountCard(type = 'INFJ') {
   const i18n = createI18n({ legacy: false, locale: 'zh', messages: { zh, en } })
@@ -43,17 +38,11 @@ vi.mock('html2canvas', () => ({
 }))
 it('returns a preview image with a visible clone and an opaque high contrast QR', async () => {
   const { default: html2canvas } = await import('html2canvas')
-  const { default: QRCode } = await import('qrcode')
+  const { brandedQr } = await import('../src/utils/brandedQr.js')
   const wrapper = mountCard()
   try {
     expect(await wrapper.vm.capture()).toBe('data:image/png;base64,EXPORT')
-    expect(QRCode.toDataURL).toHaveBeenCalledWith(
-      expect.any(String),
-      expect.objectContaining({
-        margin: 4,
-        color: { dark: '#111111', light: '#ffffff' },
-      }),
-    )
+    expect(brandedQr).toHaveBeenCalledWith(expect.any(String), 224)
     const clone = document.createElement('div')
     const card = document.createElement('div')
     card.className = 'share-card'
@@ -65,8 +54,8 @@ it('returns a preview image with a visible clone and an opaque high contrast QR'
   }
 })
 it('allows retry after QR generation fails', async () => {
-  const { default: QRCode } = await import('qrcode')
-  QRCode.toDataURL.mockRejectedValueOnce(Error('QR unavailable'))
+  const { brandedQr } = await import('../src/utils/brandedQr.js')
+  brandedQr.mockRejectedValueOnce(Error('QR unavailable'))
   const wrapper = mountCard()
   try {
     await flushPromises()
