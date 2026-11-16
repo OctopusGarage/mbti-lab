@@ -37,10 +37,10 @@ describe('SharePanel', () => {
     expect(!!document.querySelector('[data-section="app"]')).toBe(true)
   })
 
-  it('shows both sections when type is provided', () => {
+  it('shows only result sharing when type is provided', () => {
     mountPanel({ type: 'INFJ' })
     expect(!!document.querySelector('[data-section="result"]')).toBe(true)
-    expect(!!document.querySelector('[data-section="app"]')).toBe(true)
+    expect(!!document.querySelector('[data-section="app"]')).toBe(false)
   })
 
   it('opens X with type-specific text when sharing result', async () => {
@@ -87,12 +87,12 @@ describe('SharePanel', () => {
     expect(wrapper.emitted('close')).toBeTruthy()
   })
 
-  it('calls onSaveImage and emits close when save image is clicked', async () => {
+  it('calls onSaveImage without dismissing the card', async () => {
     const onSaveImage = vi.fn()
     mountPanel({ type: 'INFJ', onSaveImage })
     await document.querySelector('[data-action="save-image"]').click()
     expect(onSaveImage).toHaveBeenCalled()
-    expect(wrapper.emitted('close')).toBeTruthy()
+    expect(wrapper.emitted('close')).toBeFalsy()
   })
 })
 
@@ -122,7 +122,7 @@ it('traps keyboard focus, isolates the background and restores focus on close', 
     expect(background.inert).toBe(true)
     expect(document.body.style.overflow).toBe('hidden')
     const first = document.querySelector('.sp-close')
-    const last = document.querySelector('[data-action="copy-link"]')
+    const last = document.querySelector('[data-action="share-app-x"]')
     expect(document.activeElement).toBe(first)
     document.dispatchEvent(
       new KeyboardEvent('keydown', {

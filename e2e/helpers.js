@@ -22,6 +22,8 @@ export { expect }
 
 export async function seedResult(page, type = 'INFJ') {
   await page.goto('./')
+  // The load event can precede the router's asynchronous initial navigation.
+  await expect(page.locator('.home')).toBeVisible()
   await page.evaluate(result => localStorage.setItem('mbti_lab_result', JSON.stringify(result)), { ...sample, type })
   await page.goto('./#/result')
   await expect(page.locator('.result-card')).toBeVisible()

@@ -153,14 +153,13 @@ it('retains the result on capture failure and offers a retry', async () => {
       ResultCard: true,
       SharePanel: {
         template:
-          '<button class="save-test" @click="onSaveImage()">save</button>',
+          '<div><slot name="card" /></div>',
         props: ['onSaveImage'],
       },
       ShareCard: { template: '<div/>', methods: { capture } },
     },
   })
   await wrapper.find('.btn-share').trigger('click')
-  await wrapper.find('.save-test').trigger('click')
   const { flushPromises } = await import('@vue/test-utils')
   await flushPromises()
   expect(wrapper.find('[role="alert"]').text()).toContain('Could not generate')

@@ -12,7 +12,7 @@
         :percents="result.percents"
         @neighbor="readNeighbor"
       />
-      <ReportDock @contents="reader?.contents?.()" @share="showPanel = true" />
+      <ReportDock @contents="reader?.contents?.()" @share="openShare" />
 
       <div class="actions">
         <router-link to="/" class="btn-retake">{{
@@ -20,31 +20,28 @@
         }}</router-link>
       </div>
 
-      <SharePanel
-        v-if="showPanel"
-        :type="result.type"
-        :onSaveImage="saveImage"
-        @close="showPanel = false"
-      />
-
+      <SharePanel v-if="showPanel" :type="result.type" :onSaveImage="saveImage" @close="closeShare">
+        <template #card>
+          <div v-if="!image" class="card-preparing">
+            <PersonalityPreview :type="result.type" />
+            <p v-if="generating" role="status">{{ $t('share.generating') }}</p>
+            <div v-if="exportFailed" role="alert">
+              {{ $t('share.imageError') }}
+              <button class="retry-export" @click="saveImage">{{ $t('share.retry') }}</button>
+            </div>
+          </div>
+          <div v-else class="export-preview">
+            <img :src="image" :alt="result.type" />
+            <div class="export-actions">
+              <button v-if="canShareImage" class="native-result" :disabled="sharing" @click="shareImage">{{ t('share.shareCard') }}</button>
+              <a :href="image" data-action="save-image" :download="`mbti-${result.type}.png`">{{ $t('share.download') }}</a>
+            </div>
+            <p class="export-hint">{{ t('share.cardHint') }}</p>
+            <p v-if="shareFailed" role="status">{{ t('share.nativeError') }}</p>
+          </div>
+        </template>
+      </SharePanel>
       <p v-if="unsaved" role="status">{{ $t('result.unsaved') }}</p>
-      <p v-if="generating" role="status">{{ $t('share.generating') }}</p>
-      <div v-if="exportFailed" role="alert">
-        {{ $t('share.imageError') }}
-        <button class="retry-export" @click="saveImage">
-          {{ $t('share.retry') }}
-        </button>
-      </div>
-      <div v-if="image" ref="preview" class="export-preview" tabindex="-1" :aria-label="$t('share.shareResult')">
-        <h2>{{ $t('share.shareResult') }}</h2>
-        <p>{{ $t('share.imageHint') }}</p>
-        <img :src="image" :alt="result.type" />
-        <button v-if="canShareImage" class="native-result" :disabled="sharing" @click="shareImage">{{ t('share.shareCard') }}</button>
-        <p v-if="shareFailed" role="status">{{ t('share.nativeError') }}</p>
-        <a :href="image" :download="`mbti-${result.type}.png`">{{
-          $t('share.download')
-        }}</a>
-      </div>
       <ShareCard ref="shareCardRef" :type="result.type" />
     </template>
 
@@ -80,7 +77,15 @@ const showPanel = ref(false)
 const generating = ref(false)
 const exportFailed = ref(false)
 const image = ref('')
-const preview = ref(null)
+function openShare() {
+  showPanel.value = true
+  if (!image.value) saveImage()
+}
+function closeShare() {
+  showPanel.value = false
+  revision++
+  generating.value = false
+}
 const canShareImage = ref(false), sharing = ref(false), shareFailed = ref(false)
 let imageFile = null
 async function shareImage() {
@@ -98,6 +103,8 @@ watch(locale, () => {
   image.value = ''
   imageFile = null; canShareImage.value = false; shareFailed.value = false
   exportFailed.value = false
+  generating.value = false
+  if (showPanel.value) nextTick(saveImage)
 })
 onUnmounted(() => {
   revision++
@@ -118,14 +125,12 @@ async function saveImage() {
         imageFile = new File([bytes], `mbti-${result.value.type}.png`, { type: 'image/png' })
         canShareImage.value = typeof navigator.share === 'function' && !!navigator.canShare?.({ files: [imageFile] })
       } catch { canShareImage.value = false }
-      await nextTick()
-      preview.value?.focus({ preventScroll: true })
-      preview.value?.scrollIntoView?.({ behavior: 'instant', block: 'start' })
+
     }
   } catch {
     if (revision === currentRevision) exportFailed.value = true
   } finally {
-    generating.value = false
+    if (revision === currentRevision) generating.value = false
   }
 }
 
@@ -144,15 +149,20 @@ onMounted(() => {
 .btn-retake:hover { color: var(--accent); background: var(--accent-soft); }
 .no-result { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; color: var(--text-secondary); padding-bottom: 80px; }
 .no-result a { color: var(--accent); min-height: 44px; display: inline-flex; align-items: center; text-decoration: none; }
-.export-preview { display: grid; gap: 16px; padding: 24px; text-align: center; width: 100%; max-width: 600px; margin-inline: auto; background: var(--surface); border-radius: var(--radius-lg); }
-.export-preview img { max-width: 100%; height: auto; margin: auto; border-radius: var(--radius-sm); }
+.export-preview { display: grid; gap: 12px; text-align: center; width: 100%; margin-inline: auto; }
+.export-preview img { height: auto; margin: auto; }
 .export-preview a { color: var(--accent); padding: 10px; }
 [role='status'], [role='alert'] { padding: 16px 24px; text-align: center; color: var(--text-secondary); font-size: 14px; }
 .retry-export { border: 0; background: var(--accent-soft); color: var(--accent); min-height: 44px; padding: 10px 16px; margin: 8px; border-radius: 22px; font: inherit; cursor: pointer; }
 @media (max-width: 540px) { .result-page { padding-inline: 16px; } .result-header { padding-top: 16px; min-height: 58px; } }
 @media (prefers-reduced-motion: reduce) { .btn-retake { transition: none; } }
-.export-preview { scroll-margin-top: 24px; }
-.export-preview h2 { font-size: 22px; letter-spacing: -.5px; }
 .native-result { min-height: 48px; padding: 12px 20px; border: 0; border-radius: 16px; background: var(--accent); color: white; font: inherit; cursor: pointer; }
 .native-result:disabled { opacity: .5; cursor: wait; }
+.export-preview img { width: auto; max-width: 100%; max-height: 56dvh; border-radius: 18px; box-shadow: 0 8px 24px rgba(30,35,50,.1); }
+.export-actions { display: flex; gap: 10px; }
+.export-actions > * { flex: 1; display: flex; align-items: center; justify-content: center; min-height: 48px; border-radius: 14px; font-size: 14px; text-decoration: none; }
+.export-actions a { border: 1px solid var(--line); background: var(--accent); color: white; }
+.export-actions:has(.native-result) a { background: var(--surface); color: var(--text); }
+.export-hint { font-size: 12px; color: var(--text-secondary); line-height: 1.6; }
+.card-preparing :deep(.personality-preview) { margin: 0 auto; max-width: 320px; }
 </style>

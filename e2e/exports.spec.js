@@ -14,7 +14,6 @@ test.describe('PNG export matrix', () => {
       for (const locale of ['zh','en','es','fr','de','pt','ja','ko']) {
         await language(page, locale)
         await page.locator('.dock-share').click()
-        await page.locator('[data-action="save-image"]').click()
         const preview = page.locator('.export-preview img')
         await expect(preview).toBeVisible()
         await expect(page.getByRole('alert')).toHaveCount(0)
@@ -39,6 +38,7 @@ test.describe('PNG export matrix', () => {
         const file = await download
         expect(file.suggestedFilename()).toBe(`mbti-${type}.png`)
         expect(await readFile(await file.path())).toEqual(png)
+        await page.locator(".sp-close").click()
       }
     })
   }

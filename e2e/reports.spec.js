@@ -105,7 +105,6 @@ test('production chunks load report, chart and PNG renderer only when requested'
   expect(chunks.some(url => /RadarChart-/.test(url))).toBe(true)
   expect(chunks.some(url => /html2canvas/.test(url))).toBe(false)
   await page.locator('.dock-share').click()
-  await page.locator('[data-action="save-image"]').click()
   await expect(page.locator('.export-preview img')).toBeVisible()
   expect(chunks.some(url => /html2canvas/.test(url))).toBe(true)
 })

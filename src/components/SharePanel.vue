@@ -1,91 +1,34 @@
 <template>
   <Teleport to="body">
     <div class="sp-overlay" @click.self="$emit('close')">
-      <div
-        ref="sheet"
-        class="sp-sheet"
-        role="dialog"
-        aria-modal="true"
-        :aria-label="$t('share.shareApp')"
-      >
-        <button
-          class="sp-close"
-          :aria-label="$t('share.close')"
-          @click="$emit('close')"
-        >
-          <AppIcon icon="close" :size="18" />
-        </button>
-        <div class="sp-handle" />
+      <div ref="sheet" class="sp-sheet" role="dialog" aria-modal="true" :aria-label="$t(type ? (personal ? 'share.shareResult' : 'share.shareType') : 'share.shareApp')">
+        <header class="sp-heading">
+          <h2 class="sp-label" :data-section="type ? 'result' : 'app'">{{ $t(type ? (personal ? 'share.shareResult' : 'share.shareType') : 'share.shareApp') }}</h2>
+          <button class="sp-close" :aria-label="$t('share.close')" @click="$emit('close')"><AppIcon icon="close" :size="18" /></button>
+        </header>
+        <template v-if="type">
+          <slot name="card">
+            <button v-if="onSaveImage" class="sp-btn" data-action="save-image" @click="saveImage">{{ t('share.saveImage') }}</button>
+          </slot>
+          <button class="sp-btn sp-link" data-action="copy-link" @click="copyLink"><AppIcon :icon="copied === 'link' ? 'check' : 'copy'" :size="18" />{{ copied === 'link' ? $t('share.copied') : $t('share.copyLink') }}</button>
+          <details class="sp-secondary">
+            <summary>{{ $t('share.captionPreview') }}</summary>
+            <p class="share-text-preview">{{ resultText }}</p>
+            <div class="sp-row">
+              <button class="sp-btn" data-action="copy-result" @click="copyResult">{{ copied === 'result' ? $t('share.copied') : $t('share.copyResult') }}</button>
+              <button class="sp-btn" data-action="share-result-x" @click="shareResultToX">{{ $t('share.shareToX') }}</button>
+            </div>
+          </details>
+        </template>
+        <template v-else>
+          <button class="sp-btn sp-link" data-action="copy-link" @click="copyLink"><AppIcon :icon="copied === 'link' ? 'check' : 'copy'" :size="18" />{{ copied === 'link' ? $t('share.copied') : $t('share.copyLink') }}</button>
+          <AppQrShare />
+          <button class="sp-btn sp-link" data-action="share-app-x" @click="shareAppToX">{{ $t('share.shareToX') }}</button>
+        </template>
         <div v-if="failedText">
           <p role="status">{{ $t('share.copyFallback') }}</p>
-          <textarea
-            ref="manualLink"
-            :value="failedText"
-            readonly
-            :aria-label="$t('share.copyFallback')"
-            @focus="$event.target.select()"
-          />
+          <textarea ref="manualLink" :value="failedText" readonly :aria-label="$t('share.copyFallback')" @focus="$event.target.select()" />
         </div>
-
-        <template v-if="type">
-          <div class="sp-label" data-section="result">
-            {{ $t(personal ? 'share.shareResult' : 'share.shareType') }}
-          </div>
-            <button
-              v-if="onSaveImage"
-              class="sp-btn"
-              data-action="save-image"
-              @click="saveImage"
-            >
-              <span class="sp-icon-save"><AppIcon icon="download" :size="18" /></span>
-              {{ t('share.saveImage') }}
-            </button>
-          <section
-            class="caption-preview"
-            :aria-label="$t('share.captionPreview')"
-          >
-            <p class="share-text-preview">{{ resultText }}</p>
-            <button
-              class="sp-btn"
-              data-action="copy-result"
-              @click="copyResult"
-            >
-              <AppIcon :icon="copied === 'result' ? 'check' : 'copy'" :size="18" />
-              {{
-                copied === 'result'
-                  ? $t('share.copied')
-                  : $t('share.copyResult')
-              }}
-            </button>
-          </section>
-          <div class="sp-row">
-            <button
-              class="sp-btn"
-              data-action="share-result-x"
-              @click="shareResultToX"
-            >
-              <span class="sp-icon-x" aria-hidden="true">𝕏</span>
-              {{ $t('share.shareToX') }}
-            </button>
-
-          </div>
-          <div class="sp-divider" />
-        </template>
-
-        <div class="sp-label" data-section="app">
-          {{ $t('share.shareApp') }}
-        </div>
-        <div class="sp-row">
-          <button class="sp-btn" data-action="share-app-x" @click="shareAppToX">
-            <span class="sp-icon-x" aria-hidden="true">𝕏</span>
-            {{ $t('share.shareToX') }}
-          </button>
-          <button class="sp-btn" data-action="copy-link" @click="copyLink">
-            <span class="sp-icon-link"><AppIcon :icon="copied === 'link' ? 'check' : 'copy'" :size="18" /></span>
-            {{ copied === 'link' ? $t('share.copied') : $t('share.copyLink') }}
-          </button>
-        </div>
-        <AppQrShare />
       </div>
     </div>
   </Teleport>
@@ -167,7 +110,7 @@ async function copyText(text, action) {
   }
 }
 function copyLink() {
-  return copyText(APP_URL, 'link')
+  return copyText(props.type ? typeShareUrl(props.type, APP_URL, locale.value) : APP_URL, 'link')
 }
 function copyResult() {
   return copyText(resultText.value, 'result')
@@ -177,8 +120,8 @@ function handleKeydown(e) {
   if (e.key === 'Escape') emit('close')
   if (e.key === 'Tab') {
     const controls = [
-      ...sheet.value.querySelectorAll('button, textarea, a[href]'),
-    ].filter((element) => !element.disabled)
+      ...sheet.value.querySelectorAll('button, textarea, a[href], summary'),
+    ].filter((element) => !element.disabled && (!element.closest('details:not([open])') || element.tagName === 'SUMMARY'))
     const first = controls[0],
       last = controls.at(-1)
     if (e.shiftKey && document.activeElement === first) {
@@ -215,7 +158,6 @@ onUnmounted(() => {
 
 function saveImage() {
   props.onSaveImage?.()
-  emit('close')
 }
 </script>
 
@@ -223,22 +165,26 @@ function saveImage() {
 .sp-overlay { position: fixed; inset: 0; z-index: 200; display: flex; align-items: flex-end; justify-content: center; background: rgba(20,25,35,.28); backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px); animation: overlay-in 180ms ease-out; }
 .sp-sheet { position: relative; width: 100%; max-width: 480px; max-height: calc(100dvh - 20px); overflow-y: auto; overscroll-behavior: contain; border: 1px solid var(--line); background: var(--surface); border-radius: 32px 32px 0 0; padding: 22px 24px calc(30px + env(safe-area-inset-bottom)); box-shadow: 0 24px 90px rgba(20,25,35,.16); animation: sheet-in 260ms var(--ease-out); }
 .sp-close { position: absolute; display: grid; place-items: center; top: 14px; right: 14px; width: 44px; height: 44px; border: 0; border-radius: 50%; background: var(--surface-secondary); color: var(--text-secondary); cursor: pointer; }
-.sp-handle { width: 36px; height: 5px; background: #d0d1d6; border-radius: 5px; margin: 0 auto 30px; }
 .sp-label { padding-right: 32px; color: var(--text); font-size: 18px; font-weight: 650; letter-spacing: -.025em; line-height: 1.5; margin-bottom: 16px; }
-.caption-preview { display: grid; gap: 12px; margin: 12px 0; }
 .share-text-preview { padding: 18px; border-radius: 18px; border: 1px solid var(--line); background: var(--canvas); color: var(--text-secondary); font-size: 14px; line-height: 1.75; overflow-wrap: anywhere; white-space: pre-wrap; }
 .sp-btn { display: flex; align-items: center; justify-content: center; flex: 1; min-width: 0; min-height: 50px; gap: 9px; padding: 13px 14px; border: 1px solid var(--line); border-radius: 15px; background: var(--surface); color: var(--text); font-size: 13px; font-weight: 550; line-height: 1.5; cursor: pointer; overflow-wrap: anywhere; }
 [data-action="save-image"] { width: 100%; background: var(--accent); color: white; border-color: transparent; }
 [data-action="copy-result"] { border-color: transparent; background: var(--accent); color: #fff; }
 @media (hover: hover) { .sp-btn:hover { background: var(--surface-secondary); } [data-action="copy-result"]:hover { background: #0066cc; } .sp-close:hover { color: var(--text); background: #e7e8ec; } }
 .sp-row { display: flex; gap: 10px; }
-.sp-divider { height: 1px; background: var(--line); margin: 24px 0; }
-.sp-icon-x, .sp-icon-save, .sp-icon-link { display: grid; place-items: center; flex-shrink: 0; width: 24px; height: 24px; }
-.sp-icon-x { font-size: 18px; font-weight: 500; }
 textarea { width: 100%; min-height: 100px; margin: 12px 0; border: 1px solid var(--line); border-radius: 14px; padding: 14px; background: var(--canvas); color: var(--text); font: inherit; font-size: 13px; line-height: 1.7; resize: vertical; }
-[role="status"] { margin-top: 32px; font-size: 13px; line-height: 1.6; color: var(--text-secondary); }
+[role="status"] { margin-top: 12px; font-size: 13px; line-height: 1.6; color: var(--text-secondary); }
 @keyframes overlay-in { from { opacity: 0; } }
 @keyframes sheet-in { from { opacity: 0; transform: translateY(24px); } }
-@media (min-width: 640px) { .sp-overlay { align-items: center; padding: 28px; } .sp-sheet { max-height: calc(100dvh - 56px); border-radius: 30px; padding: 28px; } .sp-handle { visibility: hidden; margin-bottom: 20px; } }
+@media (min-width: 640px) { .sp-overlay { align-items: center; padding: 28px; } .sp-sheet { max-height: calc(100dvh - 56px); border-radius: 30px; padding: 28px; } }
 @media (prefers-reduced-motion: reduce) { .sp-overlay, .sp-sheet { animation: none; } }
+.sp-heading { position: sticky; top: -22px; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 8px 0 14px; background: var(--surface); }
+.sp-heading .sp-label { margin: 0; padding: 0; }
+.sp-heading .sp-close { position: static; flex-shrink: 0; }
+.sp-link { width: 100%; margin-top: 12px; }
+.sp-secondary { margin-top: 18px; border-top: 1px solid var(--line); padding-top: 8px; }
+.sp-secondary summary { padding: 12px 0; color: var(--text-secondary); font-size: 13px; cursor: pointer; }
+
+@media (max-width: 639px) { .sp-sheet { padding-inline: 16px; border-radius: 24px 24px 0 0; } }
+@media (min-width: 640px) { .sp-heading { top: -28px; } }
 </style>

@@ -49,7 +49,7 @@ async function open(capture = vi.fn()) {
           SharePanel: {
             props: ['onSaveImage'],
             template:
-              '<button class="capture" @click="onSaveImage()">save</button>',
+              `<div><button class="close-share" @click="$emit('close')">close</button><slot name="card" /></div>`,
           },
           ShareCard: { template: '<div/>', methods: { capture } },
         },
@@ -72,13 +72,10 @@ it('discards a pending capture after switching language and allows a fresh expor
     .mockResolvedValue('data:image/png;base64,NEW')
   await open(capture)
   await wrapper.find('.btn-share').trigger('click')
-  await wrapper.find('.capture').trigger('click')
   await wrapper.find('.lang-toggle').setValue('zh')
   await flushPromises()
   resolve('data:image/png;base64,OLD')
   await flushPromises()
-  expect(wrapper.find('.export-preview').exists()).toBe(false)
-  await wrapper.find('.capture').trigger('click')
   await flushPromises()
   expect(wrapper.find('.export-preview img').attributes('src')).toBe(
     'data:image/png;base64,NEW',
@@ -102,4 +99,37 @@ it('warns after reload when a session result has no persisted history', async ()
   sessionStorage.setItem('mbti_result', JSON.stringify(result))
   await open()
   expect(wrapper.find('[role="status"]').text()).toContain(en.result.unsaved)
+})
+
+it('shows the card immediately, exports automatically and reuses the image on reopen', async () => {
+  sessionStorage.setItem('mbti_result', JSON.stringify(result))
+  let resolve
+  const capture = vi.fn(() => new Promise(done => { resolve = done }))
+  await open(capture)
+  await wrapper.find('.btn-share').trigger('click')
+  expect(wrapper.find('.card-preparing .personality-preview').exists()).toBe(true)
+  expect(capture).toHaveBeenCalledTimes(1)
+  resolve('data:image/png;base64,NEW')
+  await flushPromises()
+  expect(wrapper.find('.export-preview img').attributes('src')).toBe('data:image/png;base64,NEW')
+  await wrapper.find('.close-share').trigger('click')
+  expect(wrapper.find('.export-preview').exists()).toBe(false)
+  await wrapper.find('.btn-share').trigger('click')
+  expect(wrapper.find('.export-preview img').exists()).toBe(true)
+  expect(capture).toHaveBeenCalledTimes(1)
+})
+it('ignores a capture that finishes after the dialog closes', async () => {
+  sessionStorage.setItem('mbti_result', JSON.stringify(result))
+  let resolve
+  const capture = vi.fn().mockImplementationOnce(() => new Promise(done => { resolve = done }))
+    .mockResolvedValue('data:image/png;base64,NEW')
+  await open(capture)
+  await wrapper.find('.btn-share').trigger('click')
+  await wrapper.find('.close-share').trigger('click')
+  resolve('data:image/png;base64,OLD')
+  await flushPromises()
+  expect(wrapper.find('.export-preview').exists()).toBe(false)
+  await wrapper.find('.btn-share').trigger('click')
+  await flushPromises()
+  expect(wrapper.find('.export-preview img').attributes('src')).toBe('data:image/png;base64,NEW')
 })
